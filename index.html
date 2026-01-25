@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Quiz - YouTube Edition</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #222; color: white; }
+        
+        /* Container für den Player und das Overlay */
+        #player-container {
+            position: relative;
+            width: 640px;
+            height: 360px;
+            margin: 20px auto;
+            background: #000;
+        }
+
+        /* Das eigentliche YouTube Video (wird von JS hier rein geladen) */
+        #player { width: 100%; height: 100%; }
+
+        /* Der "Vorhang", der das Video verdeckt */
+        #curtain {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 10; /* Muss über dem Player liegen */
+        }
+
+        .hidden { display: none !important; }
+        
+        input { padding: 10px; font-size: 16px; width: 300px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff0055; color: white; border: none; }
+        #status { margin: 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+
+    <h1>Guess the Song!</h1>
+
+    <div id="player-container">
+        <div id="player"></div>
+        <div id="curtain">🎵 Musik lädt...</div>
+    </div>
+
+    <div id="game-controls">
+        <p id="status">Klicke Start um zu beginnen</p>
+        <button id="start-btn" onclick="startGame()">Runde Starten</button>
+        
+        <div id="guess-area" class="hidden">
+            <input type="text" id="guess-input" placeholder="Wie heißt der Song?">
+            <button onclick="checkAnswer()">Raten</button>
+            <button onclick="reveal()">Auflösen</button>
+        </div>
+    </div>
+
+    <script>
+        // 1. Die Playlist (Hier später mehr Songs hinzufügen)
+        const songs = [
+            {
+                videoId: "9bZkp7q19f0", // PSY - GANGNAM STYLE
+                start: 72,              // Startet bei Sekunde 72 (Refrain)
+                end: 85,                // Endet bei Sekunde 85
+                title: "Gangnam Style",
+                artist: "Psy"
+            },
+            {
+                videoId: "kffacxfA7G4", // Justin Bieber - Baby
+                start: 13,
+                end: 25,
+                title: "Baby",
+                artist: "Justin Bieber"
+            }
+        ];
+
+        let player;
+        let currentSong;
+        let timer;
+
+        // 2. YouTube IFrame API laden
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: '', // Wird später gesetzt
+                playerVars: { 
+                    'controls': 0, // Keine Youtube-Controls anzeigen
+                    'showinfo': 0, 
+                    'rel': 0 
+                },
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerStateChange(event) {
+            // Wenn das Video läuft und das Ende des Ausschnitts erreicht ist -> Stoppen
+            if (event.data == YT.PlayerState.PLAYING && currentSong) {
+                checkTime();
+            }
+        }
+
+        function checkTime() {
+            // Prüfen ob wir das Ende des Snippets erreicht haben
+            if(player.getCurrentTime() > currentSong.end) {
+                player.pauseVideo();
+            } else {
+                // Weiter prüfen alle 100ms
+                if(player.getPlayerState() == 1) { // 1 = playing
+                    setTimeout(checkTime, 100);
+                }
+            }
+        }
+
+        // 3. Spiel-Logik
+        function startGame() {
+            // Zufälligen Song wählen
+            currentSong = songs[Math.floor(Math.random() * songs.length)];
+            
+            // Vorhang ZIEHEN (Verstecken)
+            document.getElementById('curtain').classList.remove('hidden');
+            document.getElementById('curtain').innerText = "🔊 Hör gut zu...";
+            
+            // UI anpassen
+            document.getElementById('start-btn').classList.add('hidden');
+            document.getElementById('guess-area').classList.remove('hidden');
+            document.getElementById('status').innerText = "Song läuft...";
+            document.getElementById('guess-input').value = "";
+
+            // Video laden und springen
+            player.loadVideoById({
+                videoId: currentSong.videoId,
+                startSeconds: currentSong.start,
+                endSeconds: currentSong.end // Optionaler Parameter für Autostop
+            });
+            // player.playVideo() passiert oft automatisch durch loadVideoById
+        }
+
+        function checkAnswer() {
+            let userGuess = document.getElementById('guess-input').value.toLowerCase();
+            // Einfache Prüfung (enthält den Titel?)
+            if (userGuess.includes(currentSong.title.toLowerCase())) {
+                document.getElementById('status').innerText = "✅ Richtig! Es ist " + currentSong.title;
+                reveal();
+            } else {
+                document.getElementById('status').innerText = "❌ Leider falsch. Probier es nochmal!";
+            }
+        }
+
+        function reveal() {
+            // Vorhang ÖFFNEN (Video zeigen)
+            document.getElementById('curtain').classList.add('hidden');
+            document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title;
+            // Video nochmal abspielen (optional)
+            // player.seekTo(currentSong.start);
+            // player.playVideo();
+            
+            // UI Reset vorbereiten
+            document.getElementById('start-btn').classList.remove('hidden');
+            document.getElementById('start-btn').innerText = "Nächster Song";
+            document.getElementById('guess-area').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
