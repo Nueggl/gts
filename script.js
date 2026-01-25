@@ -11,7 +11,7 @@ async function loadSongs() {
         console.log('Songs loaded:', songs);
     } catch (error) {
         console.error('Error loading songs:', error);
-        document.getElementById('status').innerText = "Fehler beim Laden der Songs.";
+        document.getElementById('status').innerHTML = "Fehler beim Laden der Songs.<br><small>Falls du die Datei lokal öffnest, nutze einen Webserver (z.B. Live Server).</small>";
     }
 }
 
