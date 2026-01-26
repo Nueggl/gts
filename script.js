@@ -40,7 +40,8 @@ function startGame() {
     document.getElementById('start-btn').classList.add('hidden');
     document.getElementById('guess-area').classList.remove('hidden');
     document.getElementById('status').innerText = "Song läuft...";
-    document.getElementById('guess-input').value = "";
+    document.getElementById('guess-title').value = "";
+    document.getElementById('guess-artist').value = "";
 
     // Audio abspielen
     audioPlayer = new Audio(currentSong.audioUrl);
@@ -56,22 +57,69 @@ function startGame() {
 }
 
 function checkAnswer() {
-    let userGuess = document.getElementById('guess-input').value.toLowerCase();
-    // Einfache Prüfung (enthält den Titel?)
-    if (userGuess.includes(currentSong.title.toLowerCase())) {
-        document.getElementById('status').innerText = "✅ Richtig! Es ist " + currentSong.title;
-        reveal();
+    let guessTitle = document.getElementById('guess-title').value;
+    let guessArtist = document.getElementById('guess-artist').value;
+
+    let titleCorrect = checkSimilarity(guessTitle, currentSong.title);
+    let artistCorrect = checkSimilarity(guessArtist, currentSong.artist);
+
+    if (titleCorrect && artistCorrect) {
+        document.getElementById('status').innerText = "✅ Richtig! Es ist " + currentSong.title + " von " + currentSong.artist;
+        reveal(false);
     } else {
         document.getElementById('status').innerText = "❌ Leider falsch. Probier es nochmal!";
     }
 }
 
-function reveal() {
+function checkSimilarity(s1, s2) {
+    s1 = s1.toLowerCase().trim();
+    s2 = s2.toLowerCase().trim();
+
+    if (s1 === s2) return true; // Exact match
+
+    const len = Math.max(s1.length, s2.length);
+    if (len === 0) return false;
+
+    const dist = levenshtein(s1, s2);
+
+    // Allow up to 3 typos or 30% difference
+    return dist <= 3 && (dist / len) <= 0.3;
+}
+
+function levenshtein(a, b) {
+    const matrix = [];
+    for (let i = 0; i <= b.length; i++) {
+        matrix[i] = [i];
+    }
+    for (let j = 0; j <= a.length; j++) {
+        matrix[0][j] = j;
+    }
+    for (let i = 1; i <= b.length; i++) {
+        for (let j = 1; j <= a.length; j++) {
+            if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                matrix[i][j] = matrix[i - 1][j - 1];
+            } else {
+                matrix[i][j] = Math.min(
+                    matrix[i - 1][j - 1] + 1, // substitution
+                    Math.min(
+                        matrix[i][j - 1] + 1, // insertion
+                        matrix[i - 1][j] + 1  // deletion
+                    )
+                );
+            }
+        }
+    }
+    return matrix[b.length][a.length];
+}
+
+function reveal(updateStatus = true) {
     // Vorhang ÖFFNEN (Cover zeigen)
     document.getElementById('curtain').classList.add('hidden');
     document.getElementById('cover-art').classList.remove('hidden');
 
-    document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title;
+    if (updateStatus) {
+        document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title;
+    }
 
     // UI Reset vorbereiten
     document.getElementById('start-btn').classList.remove('hidden');
