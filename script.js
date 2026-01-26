@@ -1,7 +1,6 @@
 let songs = [];
-let player;
+let audioPlayer;
 let currentSong;
-let timer;
 
 // Load songs from JSON
 async function loadSongs() {
@@ -9,69 +8,10 @@ async function loadSongs() {
         const response = await fetch('songs.json');
         songs = await response.json();
         console.log('Songs loaded:', songs);
+        document.getElementById('curtain').innerText = "Bereit zum Starten";
     } catch (error) {
         console.error('Error loading songs:', error);
         document.getElementById('status').innerHTML = "Fehler beim Laden der Songs.<br><small>Falls du die Datei lokal öffnest, nutze einen Webserver (z.B. Live Server).</small>";
-    }
-}
-
-// 2. YouTube IFrame API laden
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-// Ensure firstScriptTag exists, otherwise append to head/body (though normally there's always one script tag if we insert this file)
-if (firstScriptTag) {
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-} else {
-    document.body.appendChild(tag);
-}
-
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '360',
-        width: '640',
-        videoId: '', // Wird später gesetzt
-        playerVars: {
-            'controls': 0, // Keine Youtube-Controls anzeigen
-            'showinfo': 0,
-            'rel': 0,
-            'origin': window.location.origin // Wichtig für CORS / Embedding
-        },
-        events: {
-            'onStateChange': onPlayerStateChange,
-            'onError': onPlayerError
-        }
-    });
-}
-
-function onPlayerError(event) {
-    console.error("YouTube Player Error:", event.data);
-    let errorMsg = "Ein Fehler ist aufgetreten.";
-    if (event.data === 150 || event.data === 101) {
-        errorMsg = "Dieses Video darf nicht eingebettet werden.";
-    }
-    document.getElementById('status').innerText = "⚠️ " + errorMsg;
-}
-
-function onPlayerStateChange(event) {
-    // Wenn das Video läuft und das Ende des Ausschnitts erreicht ist -> Stoppen
-    if (event.data == YT.PlayerState.PLAYING && currentSong) {
-        player.unMute(); // Sicherstellen, dass der Ton an ist
-        player.setVolume(100);
-        checkTime();
-    }
-}
-
-function checkTime() {
-    // Prüfen ob wir das Ende des Snippets erreicht haben
-    if(player && currentSong && player.getCurrentTime() > currentSong.end) {
-        player.pauseVideo();
-    } else {
-        // Weiter prüfen alle 100ms
-        if(player && player.getPlayerState() == 1) { // 1 = playing
-            setTimeout(checkTime, 100);
-        }
     }
 }
 
@@ -81,12 +21,20 @@ function startGame() {
         alert("Songs werden noch geladen oder konnten nicht geladen werden.");
         return;
     }
+
+    // Stop previous audio if playing
+    if (audioPlayer) {
+        audioPlayer.pause();
+    }
+
     // Zufälligen Song wählen
     currentSong = songs[Math.floor(Math.random() * songs.length)];
 
     // Vorhang ZIEHEN (Verstecken)
     document.getElementById('curtain').classList.remove('hidden');
     document.getElementById('curtain').innerText = "🔊 Hör gut zu...";
+    document.getElementById('cover-art').classList.add('hidden');
+    document.getElementById('cover-art').src = currentSong.coverUrl; // Preload cover
 
     // UI anpassen
     document.getElementById('start-btn').classList.add('hidden');
@@ -94,16 +42,17 @@ function startGame() {
     document.getElementById('status').innerText = "Song läuft...";
     document.getElementById('guess-input').value = "";
 
-    // Video laden und springen
-    if (player && typeof player.loadVideoById === 'function') {
-        player.loadVideoById({
-            videoId: currentSong.videoId,
-            startSeconds: currentSong.start,
-            endSeconds: currentSong.end // Optionaler Parameter für Autostop
-        });
-    } else {
-        console.error("Player noch nicht bereit.");
-    }
+    // Audio abspielen
+    audioPlayer = new Audio(currentSong.audioUrl);
+    audioPlayer.play().catch(e => {
+        console.error("Audio playback error:", e);
+        document.getElementById('status').innerText = "⚠️ Fehler beim Abspielen: " + e.message;
+    });
+
+    // Optional: Stop after 30s (preview length is usually 30s anyway)
+    audioPlayer.onended = () => {
+        document.getElementById('status').innerText = "Musik zu Ende. Weißt du es?";
+    };
 }
 
 function checkAnswer() {
@@ -118,12 +67,11 @@ function checkAnswer() {
 }
 
 function reveal() {
-    // Vorhang ÖFFNEN (Video zeigen)
+    // Vorhang ÖFFNEN (Cover zeigen)
     document.getElementById('curtain').classList.add('hidden');
+    document.getElementById('cover-art').classList.remove('hidden');
+
     document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title;
-    // Video nochmal abspielen (optional)
-    // player.seekTo(currentSong.start);
-    // player.playVideo();
 
     // UI Reset vorbereiten
     document.getElementById('start-btn').classList.remove('hidden');
