@@ -35,17 +35,30 @@ function onYouTubeIframeAPIReady() {
         playerVars: {
             'controls': 0, // Keine Youtube-Controls anzeigen
             'showinfo': 0,
-            'rel': 0
+            'rel': 0,
+            'origin': window.location.origin // Wichtig für CORS / Embedding
         },
         events: {
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange,
+            'onError': onPlayerError
         }
     });
+}
+
+function onPlayerError(event) {
+    console.error("YouTube Player Error:", event.data);
+    let errorMsg = "Ein Fehler ist aufgetreten.";
+    if (event.data === 150 || event.data === 101) {
+        errorMsg = "Dieses Video darf nicht eingebettet werden.";
+    }
+    document.getElementById('status').innerText = "⚠️ " + errorMsg;
 }
 
 function onPlayerStateChange(event) {
     // Wenn das Video läuft und das Ende des Ausschnitts erreicht ist -> Stoppen
     if (event.data == YT.PlayerState.PLAYING && currentSong) {
+        player.unMute(); // Sicherstellen, dass der Ton an ist
+        player.setVolume(100);
         checkTime();
     }
 }
