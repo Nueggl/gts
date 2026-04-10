@@ -1,6 +1,25 @@
 let songs = [];
-let audioPlayer;
+let player;
 let currentSong;
+
+// DOM Element caching
+let statusEl;
+let curtainEl;
+let startBtnEl;
+let guessAreaEl;
+let guessTitleEl;
+let guessArtistEl;
+
+document.addEventListener('DOMContentLoaded', () => {
+    statusEl = document.getElementById('status');
+    curtainEl = document.getElementById('curtain');
+    startBtnEl = document.getElementById('start-btn');
+    guessAreaEl = document.getElementById('guess-area');
+    guessTitleEl = document.getElementById('guess-title');
+    guessArtistEl = document.getElementById('guess-artist');
+
+    loadSongs();
+});
 
 // Load songs from JSON
 async function loadSongs() {
@@ -8,10 +27,68 @@ async function loadSongs() {
         const response = await fetch('songs.json');
         songs = await response.json();
         console.log('Songs loaded:', songs);
-        document.getElementById('curtain').innerText = "Bereit zum Starten";
+        if (curtainEl) curtainEl.innerText = "Bereit zum Starten";
     } catch (error) {
         console.error('Error loading songs:', error);
-        document.getElementById('status').innerHTML = "Fehler beim Laden der Songs.<br><small>Falls du die Datei lokal öffnest, nutze einen Webserver (z.B. Live Server).</small>";
+        if (statusEl) statusEl.innerHTML = "Fehler beim Laden der Songs.<br><small>Falls du die Datei lokal öffnest, nutze einen Webserver (z.B. Live Server).</small>";
+    }
+}
+
+// 2. YouTube IFrame API laden
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+if (firstScriptTag) {
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+} else {
+    document.body.appendChild(tag);
+}
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        height: '360',
+        width: '640',
+        videoId: '', // Wird später gesetzt
+        playerVars: {
+            'controls': 0, // Keine Youtube-Controls anzeigen
+            'showinfo': 0,
+            'rel': 0,
+            'origin': window.location.origin // Wichtig für CORS / Embedding
+        },
+        events: {
+            'onStateChange': onPlayerStateChange,
+            'onError': onPlayerError
+        }
+    });
+}
+
+function onPlayerError(event) {
+    console.error("YouTube Player Error:", event.data);
+    let errorMsg = "Ein Fehler ist aufgetreten.";
+    if (event.data === 150 || event.data === 101) {
+        errorMsg = "Dieses Video darf nicht eingebettet werden.";
+    }
+    if (statusEl) statusEl.innerText = "⚠️ " + errorMsg;
+}
+
+function onPlayerStateChange(event) {
+    // Wenn das Video läuft und das Ende des Ausschnitts erreicht ist -> Stoppen
+    if (event.data == YT.PlayerState.PLAYING && currentSong) {
+        player.unMute(); // Sicherstellen, dass der Ton an ist
+        player.setVolume(100);
+        checkTime();
+    }
+}
+
+function checkTime() {
+    // Prüfen ob wir das Ende des Snippets erreicht haben
+    if(player && currentSong && player.getCurrentTime() > currentSong.end) {
+        player.pauseVideo();
+    } else {
+        // Weiter prüfen alle 100ms
+        if(player && player.getPlayerState() == 1) { // 1 = playing
+            setTimeout(checkTime, 100);
+        }
     }
 }
 
@@ -22,52 +99,46 @@ function startGame() {
         return;
     }
 
-    // Stop previous audio if playing
-    if (audioPlayer) {
-        audioPlayer.pause();
-    }
-
     // Zufälligen Song wählen
     currentSong = songs[Math.floor(Math.random() * songs.length)];
 
     // Vorhang ZIEHEN (Verstecken)
-    document.getElementById('curtain').classList.remove('hidden');
-    document.getElementById('curtain').innerText = "🔊 Hör gut zu...";
-    document.getElementById('cover-art').classList.add('hidden');
-    document.getElementById('cover-art').src = currentSong.coverUrl; // Preload cover
+    if (curtainEl) {
+        curtainEl.classList.remove('hidden');
+        curtainEl.innerText = "🔊 Hör gut zu...";
+    }
 
     // UI anpassen
-    document.getElementById('start-btn').classList.add('hidden');
-    document.getElementById('guess-area').classList.remove('hidden');
-    document.getElementById('status').innerText = "Song läuft...";
-    document.getElementById('guess-title').value = "";
-    document.getElementById('guess-artist').value = "";
+    if (startBtnEl) startBtnEl.classList.add('hidden');
+    if (guessAreaEl) guessAreaEl.classList.remove('hidden');
+    if (statusEl) statusEl.innerText = "Song läuft...";
+    if (guessTitleEl) guessTitleEl.value = "";
+    if (guessArtistEl) guessArtistEl.value = "";
 
-    // Audio abspielen
-    audioPlayer = new Audio(currentSong.audioUrl);
-    audioPlayer.play().catch(e => {
-        console.error("Audio playback error:", e);
-        document.getElementById('status').innerText = "⚠️ Fehler beim Abspielen: " + e.message;
-    });
-
-    // Optional: Stop after 30s (preview length is usually 30s anyway)
-    audioPlayer.onended = () => {
-        document.getElementById('status').innerText = "Musik zu Ende. Weißt du es?";
-    };
+    // Video laden und springen
+    if (player && typeof player.loadVideoById === 'function') {
+        player.loadVideoById({
+            videoId: currentSong.videoId,
+            startSeconds: currentSong.start,
+            endSeconds: currentSong.end // Optionaler Parameter für Autostop
+        });
+    } else {
+        console.error("Player noch nicht bereit.");
+    }
 }
 
 function checkAnswer() {
-    let guessTitle = document.getElementById('guess-title').value;
-    let guessArtist = document.getElementById('guess-artist').value;
+    let guessTitle = guessTitleEl ? guessTitleEl.value : "";
+    let guessArtist = guessArtistEl ? guessArtistEl.value : "";
 
     let titleCorrect = checkSimilarity(guessTitle, currentSong.title);
     let artistCorrect = checkSimilarity(guessArtist, currentSong.artist);
 
     if (titleCorrect && artistCorrect) {
-        document.getElementById('status').innerText = "✅ Richtig! Es ist " + currentSong.title + " von " + currentSong.artist;
+        if (statusEl) statusEl.innerText = "✅ Richtig! Es ist " + currentSong.title + " von " + currentSong.artist;
         reveal(false);
     } else {
-        document.getElementById('status').innerText = "❌ Leider falsch. Probier es nochmal!";
+        if (statusEl) statusEl.innerText = "❌ Leider falsch. Probier es nochmal!";
     }
 }
 
@@ -113,19 +184,17 @@ function levenshtein(a, b) {
 }
 
 function reveal(updateStatus = true) {
-    // Vorhang ÖFFNEN (Cover zeigen)
-    document.getElementById('curtain').classList.add('hidden');
-    document.getElementById('cover-art').classList.remove('hidden');
+    // Vorhang ÖFFNEN (Video zeigen)
+    if (curtainEl) curtainEl.classList.add('hidden');
 
-    if (updateStatus) {
-        document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title;
+    if (updateStatus && statusEl) {
+        statusEl.innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title;
     }
 
     // UI Reset vorbereiten
-    document.getElementById('start-btn').classList.remove('hidden');
-    document.getElementById('start-btn').innerText = "Nächster Song";
-    document.getElementById('guess-area').classList.add('hidden');
+    if (startBtnEl) {
+        startBtnEl.classList.remove('hidden');
+        startBtnEl.innerText = "Nächster Song";
+    }
+    if (guessAreaEl) guessAreaEl.classList.add('hidden');
 }
-
-// Initialize
-loadSongs();
