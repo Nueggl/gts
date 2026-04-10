@@ -64,8 +64,12 @@ function checkAnswer() {
     let artistCorrect = checkSimilarity(guessArtist, currentSong.artist);
 
     if (titleCorrect && artistCorrect) {
-        document.getElementById('status').innerText = "✅ Richtig! Es ist " + currentSong.title + " von " + currentSong.artist;
+        document.getElementById('status').innerText = "✅ Richtig! Es ist " + currentSong.title + " von " + currentSong.artist + " (" + currentSong.year + ", " + currentSong.album + ")";
         reveal(false);
+    } else if (titleCorrect) {
+        document.getElementById('status').innerText = "✅ Titel stimmt! Aber der Interpret ist leider falsch.";
+    } else if (artistCorrect) {
+        document.getElementById('status').innerText = "✅ Interpret stimmt! Aber der Titel ist leider falsch.";
     } else {
         document.getElementById('status').innerText = "❌ Leider falsch. Probier es nochmal!";
     }
@@ -74,6 +78,14 @@ function checkAnswer() {
 function checkSimilarity(s1, s2) {
     s1 = s1.toLowerCase().trim();
     s2 = s2.toLowerCase().trim();
+
+    // Remove text in parentheses
+    s1 = s1.replace(/\([^)]*\)/g, '').trim();
+    s2 = s2.replace(/\([^)]*\)/g, '').trim();
+
+    // Remove punctuation
+    s1 = s1.replace(/[^\w\s\u00C0-\u017F]/g, '').replace(/\s+/g, ' ');
+    s2 = s2.replace(/[^\w\s\u00C0-\u017F]/g, '').replace(/\s+/g, ' ');
 
     if (s1 === s2) return true; // Exact match
 
@@ -118,7 +130,7 @@ function reveal(updateStatus = true) {
     document.getElementById('cover-art').classList.remove('hidden');
 
     if (updateStatus) {
-        document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title;
+        document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title + " (" + currentSong.year + ", " + currentSong.album + ")";
     }
 
     // UI Reset vorbereiten
