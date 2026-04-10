@@ -16,19 +16,23 @@ for line in lines:
         artist = parts[1].strip()
         songs_to_fetch.append({"title": title, "artist": artist})
 
-# Also include the ones already in songs.json if we want to add the new fields
+# Load existing songs to avoid fetching them again
 try:
     with open("songs.json", "r") as f:
         existing_songs = json.load(f)
 except FileNotFoundError:
     existing_songs = []
 
-for song in existing_songs:
-    if song not in songs_to_fetch:
-        songs_to_fetch.insert(0, song)
-
 new_songs = []
 seen = set()
+
+# Add existing songs to the new list and mark them as seen
+for song in existing_songs:
+    if "title" in song and "artist" in song:
+        key = f"{song['title'].lower()} - {song['artist'].lower()}"
+        if key not in seen:
+            new_songs.append(song)
+            seen.add(key)
 
 for song in songs_to_fetch:
     title = song["title"]
