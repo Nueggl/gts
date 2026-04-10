@@ -1,16 +1,14 @@
 [
     {
-        "videoId": "9bZkp7q19f0",
-        "start": 72,
-        "end": 85,
         "title": "Gangnam Style",
-        "artist": "Psy"
+        "artist": "Psy",
+        "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/65/ae/3d65ae0a-7b2c-f14d-5680-cdafaa8cfb2d/mzaf_11206445915046452880.plus.aac.p.m4a",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7c/52/87/7c5287bc-818f-55ed-e607-08b052963632/12UMGIM50914.rgb.jpg/600x600bb.jpg"
     },
     {
-        "videoId": "kffacxfA7G4",
-        "start": 13,
-        "end": 25,
         "title": "Baby",
-        "artist": "Justin Bieber"
+        "artist": "Justin Bieber",
+        "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/66/d3/8966d3cb-68eb-5f2c-fef8-4ac420721387/mzaf_3044382270474258872.plus.aac.p.m4a",
+        "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b9/0a/b4/b90ab45a-07b1-0bcc-331c-c496a21d07e4/10UMGIM01134.rgb.jpg/600x600bb.jpg"
     }
 ]

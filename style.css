@@ -12,6 +12,14 @@ body { font-family: sans-serif; text-align: center; background: #222; color: whi
 /* Das eigentliche YouTube Video (wird von JS hier rein geladen) */
 #player { width: 100%; height: 100%; }
 
+/* Das Album Cover (Audio Modus) */
+#cover-art {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 /* Der "Vorhang", der das Video verdeckt */
 #curtain {
     position: absolute;

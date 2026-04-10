@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song Quiz - YouTube Edition</title>
+    <title>Song Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <h1>Guess the Song!</h1>
 
     <div id="player-container">
-        <div id="player"></div>
+        <img id="cover-art" src="" alt="Album Cover" class="hidden">
         <div id="curtain">🎵 Musik lädt...</div>
     </div>
 
@@ -20,7 +20,9 @@
         <button id="start-btn" onclick="startGame()">Runde Starten</button>
         
         <div id="guess-area" class="hidden">
-            <input type="text" id="guess-input" placeholder="Wie heißt der Song?">
+            <input type="text" id="guess-title" placeholder="Titel">
+            <input type="text" id="guess-artist" placeholder="Interpret">
+            <br><br>
             <button onclick="checkAnswer()">Raten</button>
             <button onclick="reveal()">Auflösen</button>
         </div>
