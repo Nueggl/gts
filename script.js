@@ -266,7 +266,7 @@ function adminReveal() {
         return;
     }
 
-    document.getElementById('admin-debug').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title + " (" + currentSong.year + ", " + currentSong.album + ")";
+    document.getElementById('admin-debug').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title + " (" + currentSong.year + ", " + currentSong.album + ", " + currentSong.genre + ")";
 }
 
 // Initialize
