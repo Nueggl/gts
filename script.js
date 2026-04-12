@@ -139,5 +139,15 @@ function reveal(updateStatus = true) {
     document.getElementById('guess-area').classList.add('hidden');
 }
 
+//Admin
+function adminReveal() {
+    if (!currentSong) {
+        document.getElementById('admin-debug').innerText = "Noch kein Song geladen.";
+        return;
+    }
+
+    document.getElementById('admin-debug').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title + " (" + currentSong.year + ", " + currentSong.album + ")";
+}
+
 // Initialize
 loadSongs();
