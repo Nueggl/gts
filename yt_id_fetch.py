@@ -1,9 +1,11 @@
 import json
 import time
 from googleapiclient.discovery import build
+from config_yt import API_KEY
+
 
 # DEIN API KEY HIER EINTRAGEN
-API_KEY = "AIzaSyATcXivuyDCt4Us26qGoe36dZgTcX-SfOc"
+API_KEY = API_KEY
 
 def get_youtube_id(artist, title):
     youtube = build("youtube", "v3", developerKey=API_KEY)
