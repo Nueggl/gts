@@ -6,9 +6,10 @@ import re
 import sys
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from config_yt import API_KEY
 
 # --- KONFIGURATION ---
-YOUTUBE_API_KEY = "AIzaSyATcXivuyDCt4Us26qGoe36dZgTcX-SfOc"
+YOUTUBE_API_KEY = API_KEY
 
 def get_youtube_id(artist, title):
     try:
