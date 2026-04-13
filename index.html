@@ -68,10 +68,20 @@
             <button onclick="reveal()">Auflösen</button>
             <button onclick="adminReveal()">Admin auflösen</button>
 
+            <!-- KI Tipp -->
+            <div style="margin-top: 10px;">
+                <button id="tipp-btn-allgemein" onclick="holeTippVonKI('allgemein')">Allg. Tipp 🤖</button>
+                <button id="tipp-btn-interpret" onclick="holeTippVonKI('interpret')">Tipp zum Interpret 👤</button>
+                <button id="tipp-btn-titel" onclick="holeTippVonKI('titel')">Tipp zum Titel 🎵</button>
+            </div>
+            <div id="tipp-container" style="margin-top: 15px; text-align: left; background: #333; padding: 10px; border-radius: 5px; display: none;">
+                </div>
+            <!-- Admin Debug Info -->
             <p id="admin-debug"></p>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="ki-tipps.js"></script>
 </body>
 </html>

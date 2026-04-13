@@ -163,6 +163,14 @@ function startGame() {
     document.getElementById('guess-title').value = "";
     document.getElementById('guess-artist').value = "";
 
+    // UI anpassen
+    const tippContainer = document.getElementById('tipp-container');
+    tippContainer.innerHTML = ""; // Löscht alle bisherigen Tipps aus der Box
+    tippContainer.style.display = "none"; // Macht die Box wieder unsichtbar
+    document.getElementById('tipp-btn-allgemein').textContent = "Allg. Tipp 🤖";
+    document.getElementById('tipp-btn-interpret').textContent = "Tipp zum Interpret 👤";
+    document.getElementById('tipp-btn-titel').textContent = "Tipp zum Titel 🎵";
+
     // Audio abspielen
     audioPlayer = new Audio(currentSong.audioUrl);
     audioPlayer.play().catch(e => {
@@ -174,24 +182,63 @@ function startGame() {
     audioPlayer.onended = () => {
         document.getElementById('status').innerText = "Musik zu Ende. Weißt du es?";
     };
+
+    const guessTitle = document.getElementById('guess-title');
+    const guessArtist = document.getElementById('guess-artist');
+
+    // Felder zurücksetzen
+    guessTitle.value = "";
+    guessTitle.readOnly = false;
+    guessTitle.style.backgroundColor = ""; // Standardfarbe
+    guessTitle.style.color = "";
+
+    guessArtist.value = "";
+    guessArtist.readOnly = false;
+    guessArtist.style.backgroundColor = "";
+    guessArtist.style.color = "";
 }
 
 function checkAnswer() {
-    let guessTitle = document.getElementById('guess-title').value;
-    let guessArtist = document.getElementById('guess-artist').value;
+    const guessTitle = document.getElementById('guess-title');
+    const guessArtist = document.getElementById('guess-artist');
+    
+    const titleVal = guessTitle.value.trim().toLowerCase();
+    const artistVal = guessArtist.value.trim().toLowerCase();
 
-    let titleCorrect = checkSimilarity(guessTitle, currentSong.title);
-    let artistCorrect = checkSimilarity(guessArtist, currentSong.artist);
+    // Levenshtein-Check (max 2 Fehler)
+    const titleCorrect = levenshtein(titleVal, currentSong.title.toLowerCase()) <= 2;
+    const artistCorrect = levenshtein(artistVal, currentSong.artist.toLowerCase()) <= 2;
+
+    // --- VISUELLES FEEDBACK & LOCK-LOGIK ---
+
+    if (titleCorrect) {
+        guessTitle.style.backgroundColor = "#28a745"; // Grün
+        guessTitle.style.color = "white";
+        guessTitle.readOnly = true; // Feld sperren
+    }
+
+    if (artistCorrect) {
+        guessArtist.style.backgroundColor = "#28a745"; // Grün
+        guessArtist.style.color = "white";
+        guessArtist.readOnly = true; // Feld sperren
+    }
+
+    // --- GEWINN-LOGIK ---
 
     if (titleCorrect && artistCorrect) {
-        document.getElementById('status').innerText = "✅ Richtig! Es ist " + currentSong.title + " von " + currentSong.artist + " (" + currentSong.year + ", " + currentSong.album + ")";
-        reveal(false);
-    } else if (titleCorrect) {
-        document.getElementById('status').innerText = "✅ Titel stimmt! Aber der Interpret ist leider falsch.";
-    } else if (artistCorrect) {
-        document.getElementById('status').innerText = "✅ Interpret stimmt! Aber der Titel ist leider falsch.";
+        document.getElementById('status').innerText = "Richtig! Es ist " + currentSong.artist + " - " + currentSong.title;
+        reveal(false); // Vorhang auf, aber Status-Text oben nicht überschreiben
     } else {
-        document.getElementById('status').innerText = "❌ Leider falsch. Probier es nochmal!";
+        // Kleiner Hinweis, falls man nur eines von beiden hat
+        if (titleCorrect && !artistCorrect) {
+            document.getElementById('status').innerText = "Titel ist richtig! Wer ist der Interpret?";
+            guessArtist.focus(); // Cursor direkt ins fehlende Feld setzen
+        } else if (!titleCorrect && artistCorrect) {
+            document.getElementById('status').innerText = "Interpret ist richtig! Wie heißt der Song?";
+            guessTitle.focus(); // Cursor direkt ins fehlende Feld setzen
+        } else {
+            document.getElementById('status').innerText = "Leider falsch, versuch es weiter!";
+        }
     }
 }
 
