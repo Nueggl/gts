@@ -10,7 +10,7 @@ from youtubesearchpython import VideosSearch
 def get_youtube_id_scraper(artist, title):
     try:
         # Suchbegriff für URLs formatieren (Leerzeichen zu %20 etc.)
-        search_query = urllib.parse.quote(f"{artist} {title} Official Audio")
+        search_query = urllib.parse.quote(f"{artist} {title} lyrics")
         url = f"https://www.youtube.com/results?search_query={search_query}"
         
         # Wir tun so, als wären wir ein normaler Chrome-Browser
@@ -40,12 +40,12 @@ import os
 
 all_songs = []
 # Prüfen, ob die Datei existiert und nicht komplett leer ist
-if os.path.exists("songs.json") and os.path.getsize("songs.json") > 0:
+if os.path.exists("songs_lyrics.json") and os.path.getsize("songs_lyrics.json") > 0:
     try:
-        with open("songs.json", "r", encoding="utf-8") as f:
+        with open("songs_lyrics.json", "r", encoding="utf-8") as f:
             all_songs = json.load(f)
     except json.JSONDecodeError:
-        print("Warnung: songs.json war beschädigt/leer. Fange mit neuer Liste an.")
+        print("Warnung: songs_lyrics.json war beschädigt/leer. Fange mit neuer Liste an.")
         all_songs = []
 
 with open("list1.txt", "r", encoding="utf-8") as f:
@@ -99,7 +99,7 @@ for line in lines:
                     all_songs.append(new_entry)
                     
                     # SOFORT SPEICHERN
-                    with open("songs.json", "w", encoding="utf-8") as f:
+                    with open("songs_lyrics.json", "w", encoding="utf-8") as f:
                         json.dump(all_songs, f, indent=4, ensure_ascii=False)
                     
                     print(f" -> Gespeichert: {yt_id}")
