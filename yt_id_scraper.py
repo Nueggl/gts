@@ -7,6 +7,25 @@ import re
 from youtubesearchpython import VideosSearch
 
 
+def check_youtube_playability(video_id):
+    """
+    Prüft über die YouTube oEmbed API, ob das Video eingebettet werden darf.
+    Gibt True zurück, wenn es eingebettet werden kann, sonst False.
+    """
+    url = f"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={video_id}&format=json"
+    req = urllib.request.Request(
+        url,
+        headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+    )
+    try:
+        urllib.request.urlopen(req)
+        return True
+    except urllib.error.HTTPError as e:
+        # 401 Unauthorized bedeutet meist, dass das Einbetten deaktiviert ist
+        return False
+    except Exception as e:
+        return False
+
 def get_youtube_id_scraper(artist, title):
     try:
         # Suchbegriff für URLs formatieren (Leerzeichen zu %20 etc.)
@@ -24,11 +43,21 @@ def get_youtube_id_scraper(artist, title):
             html = response.read().decode()
             
             # Im HTML nach dem Muster "videoId":"..." suchen
-            video_ids = re.findall(r'"videoId":"(.{11})"', html)
+            raw_ids = re.findall(r'"videoId":"(.{11})"', html)
             
-            if video_ids:
-                # Den ersten Treffer zurückgeben
-                return video_ids[0]
+            # Duplikate entfernen, aber die Reihenfolge beibehalten
+            video_ids = list(dict.fromkeys(raw_ids))
+
+            # Die Top 5 Ergebnisse prüfen
+            for vid in video_ids[:5]:
+                # Kurze Pause
+                time.sleep(random.uniform(0.5, 1.2))
+
+                if check_youtube_playability(vid):
+                    print(f"   ✅ {vid} ist abspielbar!")
+                    return vid
+                else:
+                    print(f"   ❌ {vid} ist blockiert. Prüfe nächstes...")
                 
     except Exception as e:
         print(f"Scraper-Fehler für {title}: {e}")
