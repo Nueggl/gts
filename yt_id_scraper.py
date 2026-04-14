@@ -7,31 +7,79 @@ import re
 from youtubesearchpython import VideosSearch
 
 
-def get_youtube_id_scraper(artist, title):
+import urllib.request
+import urllib.error
+
+def check_youtube_playability_oembed(video_id):
+    """
+    Prüft über die offizielle YouTube oEmbed-API, ob ein Video einbettbar ist.
+    Gibt True zurück, wenn YouTube den Embed-Code liefert, sonst False.
+    """
+    # Das ist die offizielle API-URL von YouTube für oEmbed-Anfragen
+    url = f"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={video_id}&format=json"
+    
+    # Ein User-Agent ist trotzdem gut, damit YouTube die Anfrage nicht als reinen Bot-Spam blockt
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    
     try:
-        # Suchbegriff für URLs formatieren (Leerzeichen zu %20 etc.)
-        search_query = urllib.parse.quote(f"{artist} {title} lyrics")
+        # Wir versuchen, die Daten abzurufen
+        with urllib.request.urlopen(req) as response:
+            # Wenn die Antwort den Status-Code 200 (OK) hat, dürfen wir es einbetten!
+            if response.getcode() == 200:
+                return True
+                
+    except urllib.error.HTTPError as e:
+        # Wenn YouTube einen HTTP-Fehler zurückgibt, ist das Video gesperrt.
+        # 401 (Unauthorized) = Einbetten vom Uploader deaktiviert
+        # 404 (Not Found) = Video existiert nicht, ist privat oder länderspezifisch gesperrt
+        if e.code in [401, 404, 403]:
+            return False
+            
+    except Exception as e:
+        # Bei sonstigen Fehlern (z.B. keine Internetverbindung) gehen wir auf Nummer sicher
+        print(f"Netzwerk- oder unerwarteter Fehler bei Video {video_id}: {e}")
+        return False
+        
+    return False
+
+# --- Test ---
+# print(check_youtube_playability_oembed("dQw4w9WgXcQ")) # Einbettbares Video (Rickroll) -> True
+# print(check_youtube_playability_oembed("irgendeine_gesperrte_id")) -> False
+
+def get_youtube_id_scraper(artist, title):
+    """Sucht nach Videos und gibt das erste zurück, das nicht gesperrt ist."""
+    try:
+        search_query = urllib.parse.quote(f"{artist} {title} audio lyrics")
         url = f"https://www.youtube.com/results?search_query={search_query}"
         
-        # Wir tun so, als wären wir ein normaler Chrome-Browser
         req = urllib.request.Request(
             url, 
-            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
         )
         
-        # HTML der Suchseite herunterladen
         with urllib.request.urlopen(req) as response:
-            html = response.read().decode()
+            html = response.read().decode('utf-8', errors='ignore')
             
-            # Im HTML nach dem Muster "videoId":"..." suchen
-            video_ids = re.findall(r'"videoId":"(.{11})"', html)
+            # Alle Video-IDs auf der Suchseite finden
+            raw_ids = re.findall(r'"videoId":"(.{11})"', html)
             
-            if video_ids:
-                # Den ersten Treffer zurückgeben
-                return video_ids[0]
+            # Duplikate entfernen, aber die Reihenfolge (beste Treffer zuerst) beibehalten
+            video_ids = list(dict.fromkeys(raw_ids))
+            
+            # Die Top 5 Ergebnisse prüfen
+            for vid in video_ids[:5]:
+                # Kurze Pause, damit YouTube uns nicht für einen Spam-Bot hält
+                time.sleep(random.uniform(0.5, 1.2))
                 
+                if check_youtube_playability_oembed(vid):
+                    print(f"   ✅ {vid} ist abspielbar!")
+                    return vid
+                else:
+                    print(f"   ❌ {vid} ist blockiert. Prüfe nächstes...")
+                    
     except Exception as e:
         print(f"Scraper-Fehler für {title}: {e}")
+        
     return None
 
 # 1. Dateien laden
@@ -48,7 +96,7 @@ if os.path.exists("songs_lyrics.json") and os.path.getsize("songs_lyrics.json") 
         print("Warnung: songs_lyrics.json war beschädigt/leer. Fange mit neuer Liste an.")
         all_songs = []
 
-with open("list1.txt", "r", encoding="utf-8") as f:
+with open("list.txt", "r", encoding="utf-8") as f:
     lines = f.readlines()
 
 # 2. Hauptschleife
