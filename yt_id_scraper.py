@@ -77,7 +77,7 @@ if os.path.exists("songs_lyrics.json") and os.path.getsize("songs_lyrics.json") 
         print("Warnung: songs_lyrics.json war beschädigt/leer. Fange mit neuer Liste an.")
         all_songs = []
 
-with open("list1.txt", "r", encoding="utf-8") as f:
+with open("list.txt", "r", encoding="utf-8") as f:
     lines = f.readlines()
 
 # 2. Hauptschleife
