@@ -22,7 +22,7 @@ async function holeTippVonKI(tippArt) {
     ladeText.textContent = "Die KI durchsucht ihre Plattenkiste...";
     tippContainer.appendChild(ladeText);
 
-    const apiKey = "AIzaSyBJNjxKbAlGyIu7AJgntmKjOx-LRJVpkJg"; 
+    const apiKey = CONFIG.GEMINI_KEY; 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent?key=${apiKey}`;
 
     if (currentSong !== letzterGespielterSong) {
