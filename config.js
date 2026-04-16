@@ -1,0 +1,5 @@
+const CONFIG = {
+    //GEMINI_KEY: "AIzaSyD8Y89I0-qFBbLbuMk-MZyBuV-Lib_cDvI",
+    GEMINI_KEY: "AIzaSyBOGXV43NNoeMjTG7DAbNZuU6Z8oF48VEo",
+    YT_KEY: "AIzaSyATcXivuyDCt4Us26qGoe36dZgTcX-SfOc"
+};

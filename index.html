@@ -10,12 +10,53 @@
 
     <h1>Guess the Song!</h1>
 
-    <div id="player-container">
+    <div id="start-screen">
+        <h2>Einstellungen</h2>
+
+        <div class="filter-group">
+            <label>Jahre (Slider):</label>
+            <div class="range-slider">
+                <input type="range" id="year-min" min="1940" max="2030" value="1940">
+                <input type="range" id="year-max" min="1940" max="2030" value="2030">
+                <div class="slider-track"></div>
+                <div class="slider-range" id="slider-range"></div>
+            </div>
+            <div class="slider-values">
+                <span id="year-min-val">1940</span> - <span id="year-max-val">2030</span>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <label>Jahrzehnte (Auswahl):</label>
+            <div id="decade-filters" class="checkbox-group">
+                <label><input type="checkbox" value="1940"> 1940er</label>
+                <label><input type="checkbox" value="1950"> 1950er</label>
+                <label><input type="checkbox" value="1960"> 1960er</label>
+                <label><input type="checkbox" value="1970"> 1970er</label>
+                <label><input type="checkbox" value="1980"> 1980er</label>
+                <label><input type="checkbox" value="1990"> 1990er</label>
+                <label><input type="checkbox" value="2000"> 2000er</label>
+                <label><input type="checkbox" value="2010"> 2010er</label>
+                <label><input type="checkbox" value="2020"> 2020er</label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <label>Genre:</label>
+            <div id="genre-filters" class="checkbox-group">
+                <!-- Wird per JS befüllt -->
+            </div>
+        </div>
+
+        <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled>Lade Songs...</button>
+    </div>
+
+    <div id="player-container" class="hidden">
         <img id="cover-art" src="" alt="Album Cover" class="hidden">
         <div id="curtain">🎵 Musik lädt...</div>
     </div>
 
-    <div id="game-controls">
+    <div id="game-controls" class="hidden">
         <p id="status">Klicke Start um zu beginnen</p>
         <button id="start-btn" onclick="startGame()">Runde Starten</button>
         
@@ -25,9 +66,23 @@
             <br><br>
             <button onclick="checkAnswer()">Raten</button>
             <button onclick="reveal()">Auflösen</button>
+            <button onclick="adminReveal()">Admin auflösen</button>
+
+            <!-- KI Tipp -->
+            <div style="margin-top: 10px;">
+                <button id="tipp-btn-allgemein" onclick="holeTippVonKI('allgemein')">Allg. Tipp 🤖</button>
+                <button id="tipp-btn-interpret" onclick="holeTippVonKI('interpret')">Tipp zum Interpret 👤</button>
+                <button id="tipp-btn-titel" onclick="holeTippVonKI('titel')">Tipp zum Titel 🎵</button>
+            </div>
+            <div id="tipp-container" style="margin-top: 15px; text-align: left; background: #333; padding: 10px; border-radius: 5px; display: none;">
+                </div>
+            <!-- Admin Debug Info -->
+            <p id="admin-debug"></p>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="ki-tipps.js"></script>
+    <script src="config.js"></script>
 </body>
 </html>
