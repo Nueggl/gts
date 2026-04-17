@@ -1,3 +1,4 @@
--Fehler bei Eingabe ermöglichen
--Tags für songs? maybe release datum --> kategorien für verschiedene Modi
 -mehr songs hinzufügen
+-songliste im menü
+-fehlertoleranz verbessern (zb klammern im titel ignorieren)
+-UI verschönern

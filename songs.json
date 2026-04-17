@@ -2239,5 +2239,14 @@
         "year": 1957,
         "album": "Here's Little Richard (Deluxe Edition)",
         "genre": "Rock"
+    },
+    {
+        "title": "ALL THE LOVE (feat. Andre Troutman)",
+        "artist": "Kanye West",
+        "spotifyUri": "spotify:track:2SjnvpedDUU0Ga69bxnoCa",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
+        "year": 2026,
+        "album": "BULLY",
+        "genre": "Hip-Hop/Rap"
     }
 ]
