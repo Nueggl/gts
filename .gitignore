@@ -1,2 +1,7 @@
 config.js
 config_yt.py
+config_secrets.py
+
+# Python Cache
+__pycache__/
+*.pyc
