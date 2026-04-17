@@ -44,8 +44,11 @@
         <div class="filter-group">
             <label>Genre:</label>
             <div id="genre-filters" class="checkbox-group">
-                <!-- Wird per JS befüllt -->
-            </div>
+                </div>
+        </div>
+
+        <div class="filter-group">
+            <label><input type="checkbox" id="admin-mode-toggle"> Admin-Modus aktivieren</label>
         </div>
 
         <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled>Lade Songs...</button>
@@ -57,6 +60,8 @@
     </div>
 
     <div id="game-controls" class="hidden">
+        <button id="home-btn" onclick="goHome()" style="background-color: #6c757d; margin-bottom: 15px; width: 100%; cursor: pointer; border-radius: 5px; color: white; border: none; padding: 10px;">🏠 Hauptmenü</button>
+        
         <p id="status">Klicke Start um zu beginnen</p>
         <button id="start-btn" onclick="startGame()">Runde Starten</button>
         
@@ -66,26 +71,28 @@
             <br><br>
             <button onclick="checkAnswer()">Raten</button>
             <button onclick="reveal()">Auflösen</button>
-            <button onclick="adminReveal()">Admin auflösen</button>
+            <button id="admin-reveal-btn" onclick="adminReveal()" class="hidden">Admin auflösen</button>
 
-            <!-- KI Tipp -->
             <div style="margin-top: 10px;">
                 <button id="tipp-btn-allgemein" onclick="holeTippVonKI('allgemein')">Allg. Tipp 🤖</button>
                 <button id="tipp-btn-interpret" onclick="holeTippVonKI('interpret')">Tipp zum Interpret 👤</button>
                 <button id="tipp-btn-titel" onclick="holeTippVonKI('titel')">Tipp zum Titel 🎵</button>
             </div>
-            <div id="tipp-container" style="margin-top: 15px; text-align: left; background: #333; padding: 10px; border-radius: 5px; display: none;">
-                </div>
-            <!-- Admin Debug Info -->
+            <div id="tipp-container" style="margin-top: 15px; text-align: left; background: #333; padding: 10px; border-radius: 5px; display: none;"></div>
+            
             <p id="admin-debug"></p>
+
+            <div id="ui-debug-console" class="hidden" style="margin-top: 20px; background: #000; color: #0f0; font-family: monospace; padding: 10px; font-size: 12px; text-align: left; max-height: 150px; overflow-y: auto; border: 1px solid #444;">
+                <strong>Debug Console:</strong>
+                <div id="debug-log-list"></div>
+            </div>
         </div>
     </div>
 
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="config.js"></script>
+    <script src="spotify.js"></script>
     <script src="script.js"></script>
     <script src="ki-tipps.js"></script>
-    <script src="config.js"></script>
-
-    <script src="https://sdk.scdn.co/spotify-player.js"></script>
-    <script src="spotify.js"></script>
 </body>
 </html>
