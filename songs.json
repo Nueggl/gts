@@ -2248,5 +2248,68 @@
         "year": 2026,
         "album": "BULLY",
         "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Do You Really Want To Hurt Me",
+        "artist": "Culture Club",
+        "spotifyUri": "spotify:track:1I6q6nwNjNgik1Qe8Oi0Y7",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2733236b9c08b319f7e50e74f53",
+        "year": 1982,
+        "album": "Kissing To Be Clever",
+        "genre": "Pop"
+    },
+    {
+        "title": "Hyper Hyper",
+        "artist": "Scooter",
+        "spotifyUri": "spotify:track:1wgU6uZHM3y5pMSDpWXDs6",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273a7384ca4fffc829f2f721032",
+        "year": 2008,
+        "album": "Jumping All over the World - Whatever You Want",
+        "genre": "Pop"
+    },
+    {
+        "title": "Move Your Ass!",
+        "artist": "Scooter",
+        "spotifyUri": "spotify:track:1Nz3w0r1tB87rfXRcuJB9y",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273caddad34ba08839e757b7a12",
+        "year": 2013,
+        "album": "20 Years Of Hardcore (Remastered)",
+        "genre": "Pop"
+    },
+    {
+        "title": "How Much Is The Fish?",
+        "artist": "Scooter",
+        "spotifyUri": "spotify:track:73aOM4jyU3begiIYxYUd89",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273dad3539832612d6ed91a24f5",
+        "year": 1998,
+        "album": "No Time To Chill",
+        "genre": "Dance"
+    },
+    {
+        "title": "Wahnsinn",
+        "artist": "Wolfgang Petry",
+        "spotifyUri": "spotify:track:2Nv773K16hckJrb3Ir7wOu",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2731f2b3f5e2c428b1313b29d39",
+        "year": 2010,
+        "album": "Ich will mehr",
+        "genre": "German Pop"
+    },
+    {
+        "title": "Verlieben, verloren, vergessen, verzeih'n",
+        "artist": "Wolfgang Petry",
+        "spotifyUri": "spotify:track:5SYHMGmqS3cOOKuCarASBT",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f456700bac85ae760842a218",
+        "year": 1992,
+        "album": "Verlieben, Verloren, ...",
+        "genre": "German Pop"
+    },
+    {
+        "title": "Ice Ice Baby",
+        "artist": "Vanilla Ice",
+        "spotifyUri": "spotify:track:3XVozq1aeqsJwpXrEZrDJ9",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2730d441bd2334134eca6761fc4",
+        "year": 1990,
+        "album": "Vanilla Ice Is Back! - Hip Hop Classics",
+        "genre": "Hip-Hop/Rap"
     }
 ]
