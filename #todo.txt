@@ -1,4 +1,5 @@
 -mehr songs hinzufügen
--songliste im menü
--fehlertoleranz verbessern (zb klammern im titel ignorieren)
 -UI verschönern
+-musik überblenden
+-buchstaben tipp
+-hintergund gif

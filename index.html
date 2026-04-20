@@ -12,7 +12,7 @@
 
     <div id="start-screen">
         <h2>Einstellungen</h2>
-
+        
         <div class="filter-group">
             <label>Jahre (Slider):</label>
             <div class="range-slider">
@@ -27,7 +27,7 @@
         </div>
 
         <div class="filter-group">
-            <label>Jahrzehnte (Auswahl):</label>
+            <label>Jahrzehnte:</label>
             <div id="decade-filters" class="checkbox-group">
                 <label><input type="checkbox" value="1940"> 1940er</label>
                 <label><input type="checkbox" value="1950"> 1950er</label>
@@ -43,15 +43,36 @@
 
         <div class="filter-group">
             <label>Genre:</label>
-            <div id="genre-filters" class="checkbox-group">
-                </div>
+            <div id="genre-filters" class="checkbox-group"></div>
         </div>
 
         <div class="filter-group">
             <label><input type="checkbox" id="admin-mode-toggle"> Admin-Modus aktivieren</label>
         </div>
 
-        <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled>Lade Songs...</button>
+        <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled style="margin-bottom: 10px;">Lade Songs...</button>
+        <button onclick="showSongList()" style="background-color: #17a2b8; width: 100%;">Alle Songs anzeigen 📋</button>
+    </div>
+
+    <div id="song-list-screen" class="hidden">
+        <button onclick="goHome()" style="background-color: #6c757d; margin-bottom: 15px;">🏠 Zurück</button>
+        <h2>Bibliothek</h2>
+        <input type="text" id="song-search" placeholder="Suche nach Titel, Interpret, Album..." oninput="filterSongList()">
+        <div style="overflow-x: auto; max-height: 60vh; border: 1px solid #444;">
+            <table id="library-table">
+                <thead>
+                    <tr>
+                        <th>Cover</th>
+                        <th onclick="sortSongs('title')">Titel ↕️</th>
+                        <th onclick="sortSongs('artist')">Interpret ↕️</th>
+                        <th onclick="sortSongs('album')">Album ↕️</th>
+                        <th onclick="sortSongs('year')">Jahr ↕️</th>
+                        <th onclick="sortSongs('genre')">Genre ↕️</th>
+                    </tr>
+                </thead>
+                <tbody id="library-body"></tbody>
+            </table>
+        </div>
     </div>
 
     <div id="player-container" class="hidden">
@@ -60,7 +81,7 @@
     </div>
 
     <div id="game-controls" class="hidden">
-        <button id="home-btn" onclick="goHome()" style="background-color: #6c757d; margin-bottom: 15px; width: 100%; cursor: pointer; border-radius: 5px; color: white; border: none; padding: 10px;">🏠 Hauptmenü</button>
+        <button id="home-btn" onclick="goHome()" style="background-color: #6c757d; margin-bottom: 15px; width: 100%;">🏠 Hauptmenü</button>
         
         <p id="status">Klicke Start um zu beginnen</p>
         <button id="start-btn" onclick="startGame()">Runde Starten</button>

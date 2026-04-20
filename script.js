@@ -2,6 +2,7 @@ let songs = [];
 let filteredSongs = [];
 let currentSong;
 let adminMode = false;
+let currentSort = { column: null, direction: 'asc' };
 
 // Songs beim Start laden
 async function loadSongs() {
@@ -10,18 +11,70 @@ async function loadSongs() {
         songs = await response.json();
         console.log('Songs geladen:', songs);
         setupFilters();
-
         const btn = document.getElementById('apply-filters-btn');
         btn.innerText = "Spiel starten";
         btn.disabled = false;
-
     } catch (error) {
         console.error('Fehler beim Laden:', error);
         document.getElementById('status').innerHTML = "Fehler beim Laden der songs.json.";
     }
 }
 
-// Filter UI Initialisierung
+// --- BIBLIOTHEK LOGIK ---
+function showSongList() {
+    document.getElementById('start-screen').classList.add('hidden');
+    document.getElementById('song-list-screen').classList.remove('hidden');
+    renderSongTable(songs);
+}
+
+function renderSongTable(data) {
+    const tbody = document.getElementById('library-body');
+    tbody.innerHTML = '';
+    data.forEach(song => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td><img src="${song.coverUrl}" style="width: 40px; border-radius: 3px;"></td>
+            <td>${song.title}</td>
+            <td>${song.artist}</td>
+            <td>${song.album}</td>
+            <td>${song.year}</td>
+            <td>${song.genre}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+function filterSongList() {
+    const query = document.getElementById('song-search').value.toLowerCase();
+    const filtered = songs.filter(s => 
+        s.title.toLowerCase().includes(query) || 
+        s.artist.toLowerCase().includes(query) || 
+        s.album.toLowerCase().includes(query) ||
+        s.genre.toLowerCase().includes(query)
+    );
+    renderSongTable(filtered);
+}
+
+function sortSongs(column) {
+    if (currentSort.column === column) {
+        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+    } else {
+        currentSort.column = column;
+        currentSort.direction = 'asc';
+    }
+
+    const sorted = [...songs].sort((a, b) => {
+        let valA = a[column];
+        let valB = b[column];
+        if (typeof valA === 'string') { valA = valA.toLowerCase(); valB = valB.toLowerCase(); }
+        if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
+        if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
+        return 0;
+    });
+    renderSongTable(sorted);
+}
+
+// --- SPIEL LOGIK ---
 function setupFilters() {
     const years = songs.map(s => s.year).filter(y => y);
     const minYear = Math.min(...years);
@@ -40,10 +93,8 @@ function setupFilters() {
         let min = parseInt(yearMinInput.value);
         let max = parseInt(yearMaxInput.value);
         if (min > max) { [min, max] = [max, min]; }
-
         yearMinVal.innerText = min;
         yearMaxVal.innerText = max;
-
         const range = maxYear - minYear;
         const leftPercent = ((min - minYear) / range) * 100;
         const rightPercent = ((maxYear - max) / range) * 100;
@@ -55,7 +106,6 @@ function setupFilters() {
     yearMaxInput.addEventListener('input', updateSlider);
     updateSlider();
 
-    // Genres dynamisch aus JSON laden
     const genres = [...new Set(songs.map(s => s.genre).filter(g => g))].sort();
     const genreContainer = document.getElementById('genre-filters');
     genreContainer.innerHTML = '';
@@ -70,9 +120,7 @@ function setupFilters() {
     });
 }
 
-// Start-Funktion mit Filter-Check
 function applyFiltersAndStart() {
-    // Admin Check
     adminMode = document.getElementById('admin-mode-toggle').checked;
     const adminBtn = document.getElementById('admin-reveal-btn');
     const debugConsole = document.getElementById('ui-debug-console');
@@ -88,7 +136,6 @@ function applyFiltersAndStart() {
 
     const minYear = parseInt(document.getElementById('year-min-val').innerText);
     const maxYear = parseInt(document.getElementById('year-max-val').innerText);
-    
     const selectedDecades = Array.from(document.querySelectorAll('#decade-filters input:checked')).map(cb => parseInt(cb.value));
     const selectedGenres = Array.from(document.querySelectorAll('#genre-filters input:checked')).map(cb => cb.value);
 
@@ -98,9 +145,7 @@ function applyFiltersAndStart() {
             const songDecade = Math.floor(song.year / 10) * 10;
             if (!selectedDecades.includes(songDecade)) return false;
         }
-        if (selectedGenres.length > 0) {
-            if (!selectedGenres.includes(song.genre)) return false;
-        }
+        if (selectedGenres.length > 0 && !selectedGenres.includes(song.genre)) return false;
         return true;
     });
 
@@ -118,8 +163,7 @@ function applyFiltersAndStart() {
 function startGame() {
     if (filteredSongs.length === 0) return;
     currentSong = filteredSongs[Math.floor(Math.random() * filteredSongs.length)];
-
-    // UI Reset
+    
     document.getElementById('curtain').classList.remove('hidden');
     document.getElementById('curtain').innerText = "🔊 Hör gut zu...";
     document.getElementById('cover-art').classList.add('hidden');
@@ -135,42 +179,75 @@ function startGame() {
     document.getElementById('guess-artist').readOnly = false;
     document.getElementById('guess-title').style.backgroundColor = "";
     document.getElementById('guess-artist').style.backgroundColor = "";
+    document.getElementById('tipp-container').style.display = 'none';
+    document.getElementById('tipp-container').innerHTML = '';
 
     const randomStart = Math.floor(Math.random() * 60) + 20;
-
     if (currentSong.spotifyUri) {
         uiLog(`Spiele: ${currentSong.artist} - ${currentSong.title} (${currentSong.year})`);
         spieleSong(currentSong.spotifyUri, randomStart);
-    } else {
-        uiLog("Fehler: Keine spotifyUri gefunden!");
     }
 }
 
+function cleanTitleString(str) {
+    return str
+        .replace(/\(.*?\)/g, '')   // Entfernt alles in ( )
+        .replace(/\[.*?\]/g, '')   // Entfernt alles in [ ]
+        .replace(/\s-.*$/, '')     // Entfernt " - " und alles danach
+        .trim()                    // Entfernt Leerzeichen am Rand
+        .toLowerCase();
+}
+
+function checkArtistMatch(guessRaw, artistString) {
+    const guess = guessRaw.trim().toLowerCase();
+    const fullArtistRaw = artistString.trim().toLowerCase();
+
+    // Versuch 1: Passt die Eingabe auf den komplett ungeteilten String? (Distanz <= 2)
+    if (levenshtein(guess, fullArtistRaw) <= 2) return true;
+
+    // Versuch 2: Wir teilen den String auf
+    // RegEx trennt bei " & ", " feat. ", " ft. " oder Kommas
+    const artists = artistString.split(/\s*(?:&|feat\.|ft\.|,\s+)\s+/i);
+    
+    for (let artist of artists) {
+        const cleanArtist = artist.trim().toLowerCase();
+        if (cleanArtist.length > 0 && levenshtein(guess, cleanArtist) <= 2) {
+            return true; // Treffer bei einem der Teil-Künstler!
+        }
+    }
+    return false;
+}
+
 function checkAnswer() {
-    const titleCorrect = levenshtein(document.getElementById('guess-title').value.trim().toLowerCase(), currentSong.title.toLowerCase()) <= 2;
-    const artistCorrect = levenshtein(document.getElementById('guess-artist').value.trim().toLowerCase(), currentSong.artist.toLowerCase()) <= 2;
+    const guessTitleRaw = document.getElementById('guess-title').value;
+    const guessArtistRaw = document.getElementById('guess-artist').value;
 
-    if (titleCorrect) {
-        document.getElementById('guess-title').style.backgroundColor = "#28a745";
-        document.getElementById('guess-title').readOnly = true;
-    }
-    if (artistCorrect) {
-        document.getElementById('guess-artist').style.backgroundColor = "#28a745";
-        document.getElementById('guess-artist').readOnly = true;
-    }
+    // Wir waschen sowohl die Eingabe als auch die Lösung
+    const cleanGuessTitle = cleanTitleString(guessTitleRaw);
+    const cleanActualTitle = cleanTitleString(currentSong.title);
 
+    // Titel vergleichen
+    const titleCorrect = levenshtein(cleanGuessTitle, cleanActualTitle) <= 2;
+    // Interpret vergleichen
+    const artistCorrect = checkArtistMatch(guessArtistRaw, currentSong.artist);
+
+    if (titleCorrect) { 
+        document.getElementById('guess-title').style.backgroundColor = "#28a745"; 
+        document.getElementById('guess-title').readOnly = true; 
+    }
+    if (artistCorrect) { 
+        document.getElementById('guess-artist').style.backgroundColor = "#28a745"; 
+        document.getElementById('guess-artist').readOnly = true; 
+    }
     if (titleCorrect && artistCorrect) { reveal(false); }
 }
 
 function reveal(updateStatus = true) {
-    if (typeof stoppeSpotify === "function") stoppeSpotify();
+    //if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('curtain').classList.add('hidden');
     document.getElementById('cover-art').classList.remove('hidden');
-    if (updateStatus) {
-        document.getElementById('status').innerText = `Lösung: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album})`;
-    } else {
-        document.getElementById('status').innerText = `Richtig gelöst! ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album})`;
-    }
+    if (updateStatus) document.getElementById('status').innerText = `Lösung: ${currentSong.artist} - ${currentSong.title}`;
+    else document.getElementById('status').innerText = "Richtig gelöst!";
     document.getElementById('start-btn').classList.remove('hidden');
     document.getElementById('start-btn').innerText = "Nächster Song";
     document.getElementById('guess-area').classList.add('hidden');
@@ -181,6 +258,7 @@ function goHome() {
     document.getElementById('start-screen').classList.remove('hidden');
     document.getElementById('player-container').classList.add('hidden');
     document.getElementById('game-controls').classList.add('hidden');
+    document.getElementById('song-list-screen').classList.add('hidden');
     uiLog("Zurück zum Menü.");
 }
 
@@ -195,7 +273,7 @@ function uiLog(message) {
 
 function adminReveal() {
     if (!currentSong) return;
-    document.getElementById('admin-debug').innerText = `Admin-Info: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album})`;
+    document.getElementById('admin-debug').innerText = `Admin-Info: ${currentSong.artist} - ${currentSong.title}`;
     uiLog("Lösung per Admin-Button angezeigt.");
 }
 
