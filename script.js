@@ -5,6 +5,7 @@ let revealedTitleCount = 0;
 let revealedArtistCount = 0;
 let adminMode = false;
 let currentSort = { column: null, direction: 'asc' };
+const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif"];
 
 
 function setTokenWithExpiry(token) {
@@ -192,9 +193,11 @@ function startGame() {
     currentSong = filteredSongs[Math.floor(Math.random() * filteredSongs.length)];
     
     document.getElementById('curtain').classList.remove('hidden');
-    document.getElementById('curtain').innerText = "🔊 Hör gut zu...";
     document.getElementById('cover-art').classList.add('hidden');
     document.getElementById('cover-art').src = currentSong.coverUrl;
+    
+    const randomGif = gifListe[Math.floor(Math.random() * gifListe.length)];
+    document.getElementById('curtain-gif').src = `GIFs/${randomGif}`;
     document.getElementById('start-btn').classList.add('hidden');
     document.getElementById('guess-area').classList.remove('hidden');
     document.getElementById('status').innerText = "Song läuft...";
@@ -365,5 +368,51 @@ function zeigeBuchstabe(typ) {
     
     document.getElementById(displayElementId).innerText = prefix + displayString;
 }
+
+// --- EVENT LISTENERS FÜR DIE ENTER-TASTE ---
+document.getElementById('guess-title').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        checkAnswer();
+    }
+});
+
+document.getElementById('guess-artist').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        checkAnswer();
+    }
+});
+
+// --- ENTER-TASTE FÜR NÄCHSTEN SONG ---
+// --- GLOBALE TASTEN-EVENTS (Enter & Shift+Enter) ---
+document.addEventListener('keydown', function (e) {
+    
+    // FALL 1: Shift + Enter wird gedrückt -> AUFLÖSEN
+    if (e.key === 'Enter' && e.shiftKey) {
+        const guessArea = document.getElementById('guess-area');
+        
+        // Nur auflösen, wenn die Rate-Area gerade sichtbar ist
+        if (guessArea && !guessArea.classList.contains('hidden')) {
+            e.preventDefault(); // Verhindert z.B. das Einfügen von Zeilenumbrüchen
+            console.log("Auflösen per Tastenkombination!");
+            reveal(); // Ruft deine bestehende Auflösen-Funktion auf
+        }
+    }
+    
+    // FALL 2: NUR Enter wird gedrückt -> NÄCHSTER SONG
+    else if (e.key === 'Enter' && !e.shiftKey) {
+        const startBtn = document.getElementById('start-btn');
+        const guessArea = document.getElementById('guess-area');
+        
+        // Wir prüfen: Ist der Button sichtbar UND die Rate-Area versteckt?
+        if (startBtn && !startBtn.classList.contains('hidden') && guessArea && guessArea.classList.contains('hidden')) {
+            e.preventDefault();
+            startGame(); // Nächste Runde starten!
+        }
+    }
+});
 
 loadSongs();

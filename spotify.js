@@ -179,15 +179,53 @@ window.onSpotifyWebPlaybackSDKReady = () => {
 };
 
 // --- 5. FUNKTIONEN FÜRS SPIEL ---
+// --- 5. FUNKTIONEN FÜRS SPIEL ---
+// --- 5. FUNKTIONEN FÜRS SPIEL ---
 function spieleSong(spotifyUri, startSekunde) {
-    if (!deviceId || !token) {
+    if (!deviceId || !token || !spotifyPlayer) {
         console.error("⚠️ Spotify Player nicht bereit oder nicht eingeloggt!");
         return;
     }
 
     const startPunktMs = startSekunde * 1000; 
-    console.log("Spiele Song:", spotifyUri, "ab Sekunde:", startSekunde);
+    console.log("Lade Song:", spotifyUri, "ab Sekunde:", startSekunde);
 
+    // 1. Schauen, wie laut der Player gerade ist
+    spotifyPlayer.getVolume().then(volume => {
+        let aktuelleLautstaerke = volume;
+        
+        // Wenn er sowieso schon (fast) stumm ist, direkt loslegen
+        if (aktuelleLautstaerke <= 0.05) {
+            starteNeuenSong(spotifyUri, startPunktMs);
+            return;
+        }
+
+        // 2. FADE-OUT EFFEKT (0,25 Sekunden)
+        const outSchritte = 10;
+        const outZeitProSchritt = 25; // 10 * 25ms = 250ms (0,25 Sekunden)
+        const verringerung = aktuelleLautstaerke / outSchritte;
+
+        const fadeOutInterval = setInterval(() => {
+            aktuelleLautstaerke -= verringerung;
+            
+            if (aktuelleLautstaerke <= 0) {
+                aktuelleLautstaerke = 0;
+                clearInterval(fadeOutInterval); // Fade-Out stoppen
+                
+                // Jetzt ist es stumm -> Neuen Song laden!
+                spotifyPlayer.setVolume(0).then(() => {
+                    starteNeuenSong(spotifyUri, startPunktMs);
+                });
+            } else {
+                spotifyPlayer.setVolume(aktuelleLautstaerke);
+            }
+        }, outZeitProSchritt);
+    });
+}
+
+// Hilfsfunktion: Übernimmt das Laden und Einblenden
+function starteNeuenSong(spotifyUri, startPunktMs) {
+    // WICHTIG: Die echte Spotify URL mit ${deviceId}
     fetch(`https://api.spotify.com/v1/me/player/play?device_id=${deviceId}`, {
         method: 'PUT',
         body: JSON.stringify({ 
@@ -201,7 +239,25 @@ function spieleSong(spotifyUri, startSekunde) {
     }).then(response => {
         if (!response.ok) {
             console.error("Spotify Play Fehler:", response.status);
+            return;
         }
+        
+        // 3. FADE-IN EFFEKT (1 Sekunde)
+        let aktuelleLautstaerke = 0;
+        const zielLautstaerke = 0.5; // Standard-Lautstärke (50%)
+        const schritte = 20;
+        const zeitProSchritt = 50; // 20 * 50ms = 1000ms (1 Sekunde)
+        const erhoehung = zielLautstaerke / schritte;
+
+        const fadeInInterval = setInterval(() => {
+            aktuelleLautstaerke += erhoehung;
+            
+            if (aktuelleLautstaerke >= zielLautstaerke) {
+                aktuelleLautstaerke = zielLautstaerke;
+                clearInterval(fadeInInterval);
+            }
+            spotifyPlayer.setVolume(aktuelleLautstaerke);
+        }, zeitProSchritt);
     });
 }
 

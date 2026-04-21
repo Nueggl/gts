@@ -206,3 +206,33 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
     color: white;
     border-radius: 5px;
 }
+
+/* --- GIF Vorhang Design --- */
+#curtain {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Damit das GIF nicht über die runden Ecken ragt */
+    min-height: 250px; /* Oder wie groß deine Cover-Box auch immer ist */
+}
+
+#curtain-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Schneidet das GIF perfekt zu, ohne es zu stauchen */
+    z-index: 1;
+    opacity: 0.6; /* Macht das GIF etwas dunkler, damit man den Text gut lesen kann */
+}
+
+#curtain-text {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9); /* Starker Schatten für Lesbarkeit */
+}

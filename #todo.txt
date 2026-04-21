@@ -1,6 +1,2 @@
 -mehr songs hinzufügen
 -UI verschönern
--musik überblenden
--buchstaben tipp
--hintergund gif
--enter taste
