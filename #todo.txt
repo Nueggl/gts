@@ -3,3 +3,4 @@
 -musik überblenden
 -buchstaben tipp
 -hintergund gif
+-enter taste

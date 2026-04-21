@@ -1,8 +1,35 @@
 let songs = [];
 let filteredSongs = [];
 let currentSong;
+let revealedTitleCount = 0;
+let revealedArtistCount = 0;
 let adminMode = false;
 let currentSort = { column: null, direction: 'asc' };
+
+
+function setTokenWithExpiry(token) {
+    const now = new Date();
+    // 3600000 ms = 60 Minuten
+    const item = {
+        token: token,
+        expiry: now.getTime() + 3600000, 
+    };
+    localStorage.setItem("spotify_access_token", JSON.stringify(item));
+}
+
+function getValidToken() {
+    const itemStr = localStorage.getItem("spotify_access_token");
+    if (!itemStr) return null;
+    
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+    
+    if (now.getTime() > item.expiry) {
+        localStorage.removeItem("spotify_access_token");
+        return null;
+    }
+    return item.token;
+}
 
 // Songs beim Start laden
 async function loadSongs() {
@@ -181,6 +208,10 @@ function startGame() {
     document.getElementById('guess-artist').style.backgroundColor = "";
     document.getElementById('tipp-container').style.display = 'none';
     document.getElementById('tipp-container').innerHTML = '';
+    revealedTitleCount = 0;
+    revealedArtistCount = 0;
+    document.getElementById('tipp-display-interpret').innerText = "";
+    document.getElementById('tipp-display-titel').innerText = "";
 
     const randomStart = Math.floor(Math.random() * 60) + 20;
     if (currentSong.spotifyUri) {
@@ -195,7 +226,7 @@ function cleanTitleString(str) {
         .replace(/\[.*?\]/g, '')   // Entfernt alles in [ ]
         .replace(/\s-.*$/, '')     // Entfernt " - " und alles danach
         .trim()                    // Entfernt Leerzeichen am Rand
-        .toLowerCase();
+        //.toLowerCase();
 }
 
 function checkArtistMatch(guessRaw, artistString) {
@@ -227,7 +258,7 @@ function checkAnswer() {
     const cleanActualTitle = cleanTitleString(currentSong.title);
 
     // Titel vergleichen
-    const titleCorrect = levenshtein(cleanGuessTitle, cleanActualTitle) <= 2;
+    const titleCorrect = levenshtein(cleanGuessTitle.toLowerCase(), cleanActualTitle.toLowerCase()) <= 2;
     // Interpret vergleichen
     const artistCorrect = checkArtistMatch(guessArtistRaw, currentSong.artist);
 
@@ -246,8 +277,8 @@ function reveal(updateStatus = true) {
     //if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('curtain').classList.add('hidden');
     document.getElementById('cover-art').classList.remove('hidden');
-    if (updateStatus) document.getElementById('status').innerText = `Lösung: ${currentSong.artist} - ${currentSong.title}`;
-    else document.getElementById('status').innerText = "Richtig gelöst!";
+    if (updateStatus) document.getElementById('status').innerText = `Lösung: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album})`;
+    else document.getElementById('status').innerText = `Richtig gelöst! Es war: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album})`;
     document.getElementById('start-btn').classList.remove('hidden');
     document.getElementById('start-btn').innerText = "Nächster Song";
     document.getElementById('guess-area').classList.add('hidden');
@@ -288,6 +319,51 @@ function levenshtein(a, b) {
         }
     }
     return matrix[b.length][a.length];
+}
+
+// --- BUCHSTABEN RATE-LOGIK---
+function zeigeBuchstabe(typ) {
+    if (!currentSong) return;
+    
+    let targetString = "";
+    let currentCount = 0;
+    let displayElementId = "";
+    let prefix = "";
+
+    if (typ === 'titel') {
+        revealedTitleCount++;
+        targetString = cleanTitleString(currentSong.title); 
+        currentCount = revealedTitleCount;
+        displayElementId = "tipp-display-titel";
+        prefix = "Titel: ";
+    } else {
+        revealedArtistCount++;
+        targetString = currentSong.artist.trim();
+        currentCount = revealedArtistCount;
+        displayElementId = "tipp-display-interpret";
+        prefix = "Interpret: ";
+    }
+
+    if (currentCount > targetString.length) currentCount = targetString.length;
+
+    let masked = "";
+    for (let i = 0; i < targetString.length; i++) {
+        const char = targetString[i];
+        // Leerzeichen, Bindestriche, Punkte & Co IMMER zeigen
+        // Alles andere nur, wenn der Zähler es erreicht hat
+        if (char === ' ' || char === '-' || char === '&' || char === '.' || i < currentCount) {
+            masked += char;
+        } else {
+            masked += '_';
+        }
+    }
+
+    // Wir setzen Leerzeichen zwischen die Zeichen für bessere Lesbarkeit
+    // Ein echtes Leerzeichen im Wort machen wir zu drei Leerzeichen, 
+    // damit man die Wortgrenzen deutlich sieht.
+    const displayString = masked.split('').map(char => char === ' ' ? ' \u00A0 ' : char).join(' ');
+    
+    document.getElementById(displayElementId).innerText = prefix + displayString;
 }
 
 loadSongs();

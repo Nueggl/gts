@@ -7,7 +7,7 @@ let token;
 let deviceId;
 let spotifyPlayer;
 
-// --- 1. PKCE HILFSFUNKTIONEN (Kryptografie) ---
+// --- 1. PKCE & LOKALER SPEICHER HILFSFUNKTIONEN ---
 function generateRandomString(length) {
     let text = '';
     let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -30,10 +30,35 @@ async function generateCodeChallenge(codeVerifier) {
     return base64encode(digest);
 }
 
+// Speichert den Token mit einem Zeitstempel (Ablauf in 60 Min)
+function setTokenWithExpiry(accessToken) {
+    const now = new Date();
+    const item = {
+        token: accessToken,
+        expiry: now.getTime() + 3600000, // 3.600.000 ms = 1 Stunde
+    };
+    localStorage.setItem("spotify_access_token", JSON.stringify(item));
+}
+
+// Prüft, ob ein gültiger (nicht abgelaufener) Token existiert
+function getValidToken() {
+    const itemStr = localStorage.getItem("spotify_access_token");
+    if (!itemStr) return null;
+    
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+    
+    if (now.getTime() > item.expiry) {
+        localStorage.removeItem("spotify_access_token");
+        return null;
+    }
+    return item.token;
+}
+
 // --- 2. LOGIN STARTEN ---
 async function loginWithSpotify() {
     let codeVerifier = generateRandomString(128);
-    // Wir speichern den Verifier kurz im Browser, damit wir ihn nach dem Neuladen noch haben
+    // Wir speichern den Verifier kurz im Browser
     localStorage.setItem('code_verifier', codeVerifier);
 
     let codeChallenge = await generateCodeChallenge(codeVerifier);
@@ -51,12 +76,22 @@ async function loginWithSpotify() {
     window.location = 'https://accounts.spotify.com/authorize?' + args;
 }
 
-// --- 3. TOKEN ABRUFEN (Nach dem Redirect) ---
+// --- 3. TOKEN ABRUFEN ODER AUS DEM CACHE LADEN ---
 const urlParams = new URLSearchParams(window.location.search);
 let code = urlParams.get('code');
+let cachedToken = getValidToken();
 
-if (code) {
-    // Wir haben den Code aus der URL! Jetzt tauschen wir ihn gegen den Token.
+if (cachedToken) {
+    // FALL 1: Wir haben einen gültigen Token gespeichert!
+    token = cachedToken;
+    console.log("♻️ Nutze gespeicherten Token aus dem Browser (gültig für < 60 Min)");
+    
+    // Falls das SDK schon da ist, direkt starten
+    if (window.Spotify) {
+        initSpotifyPlayer();
+    }
+} else if (code) {
+    // FALL 2: Wir haben den Code aus der URL! Jetzt tauschen wir ihn gegen den Token.
     let codeVerifier = localStorage.getItem('code_verifier');
 
     let body = new URLSearchParams({
@@ -82,10 +117,13 @@ if (code) {
         token = data.access_token;
         console.log("✅ Spotify Token erfolgreich über PKCE erhalten!");
         
-        // URL wieder sauber machen, damit wir bei F5 nicht nochmal versuchen den Code zu tauschen
+        // --- NEU: Den frischen Token abspeichern ---
+        setTokenWithExpiry(token);
+
+        // URL wieder sauber machen
         window.history.replaceState({}, document.title, window.location.pathname);
         
-        // Wenn wir den Token haben, bauen wir den Player auf (sofern das SDK schon geladen ist)
+        // Wenn wir den Token haben, bauen wir den Player auf
         if (window.Spotify) {
             initSpotifyPlayer();
         }
@@ -94,7 +132,7 @@ if (code) {
         console.error('Fehler beim Token-Abruf:', error);
     });
 } else if (!token) {
-    // Wenn wir weder Token noch Code haben, zeigen wir den Login Button
+    // FALL 3: Weder Token noch Code da -> Login Button zeigen
     const loginBtn = document.createElement('button');
     loginBtn.innerText = "🎧 Mit Spotify verbinden";
     loginBtn.style.padding = "15px 30px";
@@ -107,7 +145,7 @@ if (code) {
     loginBtn.style.margin = "20px";
     loginBtn.style.fontWeight = "bold";
     
-    loginBtn.onclick = loginWithSpotify; // Ruft unsere neue PKCE Funktion auf
+    loginBtn.onclick = loginWithSpotify; 
     document.body.prepend(loginBtn);
 }
 
@@ -133,7 +171,6 @@ function initSpotifyPlayer() {
     spotifyPlayer.connect();
 }
 
-// Diese Funktion ruft Spotify auf, wenn das Skript von deren Server geladen ist
 window.onSpotifyWebPlaybackSDKReady = () => {
     // Falls der Token schon da ist, direkt starten
     if (token) {
@@ -148,9 +185,7 @@ function spieleSong(spotifyUri, startSekunde) {
         return;
     }
 
-    // Umrechnung in Millisekunden für Spotify
     const startPunktMs = startSekunde * 1000; 
-
     console.log("Spiele Song:", spotifyUri, "ab Sekunde:", startSekunde);
 
     fetch(`https://api.spotify.com/v1/me/player/play?device_id=${deviceId}`, {
@@ -168,13 +203,6 @@ function spieleSong(spotifyUri, startSekunde) {
             console.error("Spotify Play Fehler:", response.status);
         }
     });
-}
-
-// Stopp-Funktion bleibt gleich
-function stoppeSpotify() {
-    if (spotifyPlayer) {
-        spotifyPlayer.pause();
-    }
 }
 
 function stoppeSpotify() {

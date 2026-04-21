@@ -81,15 +81,17 @@
     </div>
 
     <div id="game-controls" class="hidden">
-        <button id="home-btn" onclick="goHome()" style="background-color: #6c757d; margin-bottom: 15px; width: 100%;">🏠 Hauptmenü</button>
-        
+        <button id="home-btn" onclick="goHome()" style="background-color: #6c757d; width: fit-content; padding: 5px 10px; font-size: 0.8em; cursor: pointer; border-radius: 5px; color: white; border: none; position: absolute; top: 10px; left: 10px;">🏠 Home</button>        
         <p id="status">Klicke Start um zu beginnen</p>
         <button id="start-btn" onclick="startGame()">Runde Starten</button>
         
         <div id="guess-area" class="hidden">
             <input type="text" id="guess-title" placeholder="Titel">
             <input type="text" id="guess-artist" placeholder="Interpret">
-            <br><br>
+
+            <p id="tipp-display-interpret" style="color: #ffc107; font-family: monospace; font-size: 1.2em; margin: 5px 0; min-height: 20px;"></p>
+            <p id="tipp-display-titel" style="color: #ffc107; font-family: monospace; font-size: 1.2em; margin: 5px 0; min-height: 20px;"></p>            
+            
             <button onclick="checkAnswer()">Raten</button>
             <button onclick="reveal()">Auflösen</button>
             <button id="admin-reveal-btn" onclick="adminReveal()" class="hidden">Admin auflösen</button>
@@ -98,6 +100,9 @@
                 <button id="tipp-btn-allgemein" onclick="holeTippVonKI('allgemein')">Allg. Tipp 🤖</button>
                 <button id="tipp-btn-interpret" onclick="holeTippVonKI('interpret')">Tipp zum Interpret 👤</button>
                 <button id="tipp-btn-titel" onclick="holeTippVonKI('titel')">Tipp zum Titel 🎵</button>
+
+                <button onclick="zeigeBuchstabe('interpret')" style="background-color: #ffc107; color: black; margin-top: 5px;">🔤 Interpret</button>
+                <button onclick="zeigeBuchstabe('titel')" style="background-color: #ffc107; color: black; margin-top: 5px;">🔤 Titel</button>
             </div>
             <div id="tipp-container" style="margin-top: 15px; text-align: left; background: #333; padding: 10px; border-radius: 5px; display: none;"></div>
             
