@@ -1,5 +1,6 @@
 import urllib.request
 import urllib.parse
+import urllib.error  # <-- NEU: Damit wir die Fehlercodes (wie 429) und Header genau auslesen können
 import json
 import base64
 import time
@@ -57,24 +58,22 @@ def build_database():
         songs_db = []
         print("🆕 Keine Datenbank gefunden. Erstelle eine neue.")
 
-    # NEU: Wir erstellen ein Set mit allen URIs, die wir schon haben!
-    # (Ein 'Set' ist in Python extrem schnell beim Durchsuchen)
     vorhandene_uris = set()
     for song in songs_db:
         if 'spotifyUri' in song and song['spotifyUri']:
             vorhandene_uris.add(song['spotifyUri'])
 
     # --- 2. Neue Liste einlesen ---
-    print("🧹 Lese list1.txt...")
+    print("🧹 Lese list90s.txt...")
     try:
         with open('list90s.txt', 'r', encoding='utf-8') as f:
             song_lines = [line.strip() for line in f if line.strip()]
     except FileNotFoundError:
-        print("❌ list1.txt nicht gefunden!")
+        print("❌ list90s.txt nicht gefunden!")
         return
     
     if not song_lines:
-        print("❌ Keine Songs in list1.txt gefunden.")
+        print("❌ Keine Songs in der Liste gefunden.")
         return
 
     not_found = []
@@ -93,7 +92,6 @@ def build_database():
         
         print(f"[{index + 1}/{len(song_lines)}] Suche: {artist_query} - {title_query}...")
         
-        # Zuerst Spotify fragen, um die exakte URI zu bekommen
         query = urllib.parse.quote(f"track:{title_query} artist:{artist_query}")
         url = f"https://api.spotify.com/v1/search?q={query}&type=track&limit=1"
         req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
@@ -107,13 +105,11 @@ def build_database():
                     track = tracks[0]
                     gefunde_uri = track['uri']
 
-                    # --- NEU: Der absolut kugelsichere Dubletten-Check! ---
                     if gefunde_uri in vorhandene_uris:
                         print(f"   ⏩ Überspringe: Ist als '{track['name']}' schon in der Datenbank!")
-                        time.sleep(0.1) # Kurze Pause und direkt zum nächsten Song
+                        time.sleep(0.1) 
                         continue
 
-                    # Wenn die URI neu ist, machen wir mit iTunes weiter
                     echtes_genre = get_itunes_genre(artist_query, title_query)
                     
                     release_date = track['album']['release_date']
@@ -130,16 +126,24 @@ def build_database():
                     }
                     
                     songs_db.append(new_song)
-                    vorhandene_uris.add(gefunde_uri) # Die neue URI direkt in unser Gedächtnis aufnehmen
+                    vorhandene_uris.add(gefunde_uri) 
                     hinzugefuegt += 1
                     print(f"   ✅ Hinzugefügt! (Genre: {echtes_genre})")
                 else:
                     print("   ❌ Nicht auf Spotify gefunden.")
                     not_found.append(line)
+                    
+        # --- NEU: Hier fangen wir den 429 Fehler ab und lesen den Header ---
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                wartezeit = e.headers.get('Retry-After', 'Unbekannt')
+                print(f"   🛑 LIMIT ERREICHT (429)! Spotify fordert eine Pause von: {wartezeit} Sekunden.")
+            else:
+                print(f"   ❌ API HTTP-Fehler: {e}")
         except Exception as e:
-            print(f"   ❌ API Fehler: {e}")
+            print(f"   ❌ Allgemeiner Fehler: {e}")
             
-        time.sleep(0.2)
+        time.sleep(1)
 
     # --- 4. Speichern ---
     if hinzugefuegt > 0:
@@ -148,7 +152,7 @@ def build_database():
             json.dump(songs_db, file, indent=4, ensure_ascii=False)
         print(f"🎉 Fertig! Datenbank enthält jetzt insgesamt {len(songs_db)} Songs.")
     else:
-        print("\n✅ Keine neuen Songs zum Hinzufügen gefunden. Datenbank ist bereits aktuell.")
+        print("\n✅ Keine neuen Songs zum Hinzufügen gefunden.")
 
 if __name__ == "__main__":
     build_database()
