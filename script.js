@@ -5,7 +5,7 @@ let revealedTitleCount = 0;
 let revealedArtistCount = 0;
 let adminMode = false;
 let currentSort = { column: null, direction: 'asc' };
-const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif"];
+const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif", "gif8.gif"];
 
 
 function setTokenWithExpiry(token) {
