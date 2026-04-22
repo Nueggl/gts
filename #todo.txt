@@ -1,2 +1,3 @@
 -mehr songs hinzufügen
 -UI verschönern
+-90s Songs vervollständigen (ab zeile 177, 176 ist schon drin)
