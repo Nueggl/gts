@@ -66,7 +66,7 @@ def build_database():
     # --- 2. Neue Liste einlesen ---
     print("🧹 Lese list90s.txt...")
     try:
-        with open('list90s.txt', 'r', encoding='utf-8') as f:
+        with open('list20s.txt', 'r', encoding='utf-8') as f:
             song_lines = [line.strip() for line in f if line.strip()]
     except FileNotFoundError:
         print("❌ list90s.txt nicht gefunden!")
@@ -143,7 +143,7 @@ def build_database():
         except Exception as e:
             print(f"   ❌ Allgemeiner Fehler: {e}")
             
-        time.sleep(1)
+        time.sleep(1.2)
 
     # --- 4. Speichern ---
     if hinzugefuegt > 0:
