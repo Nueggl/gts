@@ -13111,5 +13111,1247 @@
         "year": 2015,
         "album": "Skrillex and Diplo present Jack Ü",
         "genre": "Dance"
+    },
+    {
+        "title": "Heat Waves",
+        "artist": "Glass Animals",
+        "spotifyUri": "spotify:track:3USxtqRwSYz57Ewm6wWRMp",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273712701c5e263efc8726b1464",
+        "year": 2020,
+        "album": "Dreamland",
+        "genre": "Alternative"
+    },
+    {
+        "title": "vampire",
+        "artist": "Olivia Rodrigo",
+        "spotifyUri": "spotify:track:1kuGVB7EU95pJObxwvfwKS",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d",
+        "year": 2023,
+        "album": "GUTS",
+        "genre": "Pop"
+    },
+    {
+        "title": "Flowers",
+        "artist": "Miley Cyrus",
+        "spotifyUri": "spotify:track:7DSAEUvxU8FajXtRloy8M0",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27366fd0917f38d472c8576754e",
+        "year": 2023,
+        "album": "Endless Summer Vacation",
+        "genre": "Pop"
+    },
+    {
+        "title": "Fortnight (feat. Post Malone)",
+        "artist": "Taylor Swift",
+        "spotifyUri": "spotify:track:2OzhQlSqBEmt7hmkYxfT6m",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33",
+        "year": 2024,
+        "album": "THE TORTURED POETS DEPARTMENT",
+        "genre": "Pop"
+    },
+    {
+        "title": "Kiss Me More (feat. SZA)",
+        "artist": "Doja Cat",
+        "spotifyUri": "spotify:track:3DarAbFujv6eYNliUTyqtz",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27314b7b2a920a41166d53ddd49",
+        "year": 2021,
+        "album": "Planet Her",
+        "genre": "Pop"
+    },
+    {
+        "title": "Paint The Town Red",
+        "artist": "Doja Cat",
+        "spotifyUri": "spotify:track:2IGMVunIBsBLtEQyoI1Mu7",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273e69a141e4ffe839c38c4c228",
+        "year": 2023,
+        "album": "Paint The Town Red",
+        "genre": "Rap"
+    },
+    {
+        "title": "Say So",
+        "artist": "Doja Cat",
+        "spotifyUri": "spotify:track:3Dv1eDb0MEgF93GpLXlucZ",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273d0bbfea6226b5c3707de92ed",
+        "year": 2019,
+        "album": "Hot Pink",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "MONTERO (Call Me By Your Name)",
+        "artist": "Lil Nas X",
+        "spotifyUri": "spotify:track:1SC5rEoYDGUK4NfG82494W",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f27e4bdc58ebe249a6b90da0",
+        "year": 2021,
+        "album": "MONTERO",
+        "genre": "Pop"
+    },
+    {
+        "title": "INDUSTRY BABY (feat. Jack Harlow)",
+        "artist": "Lil Nas X",
+        "spotifyUri": "spotify:track:5Z9KJZvQzH6PFmb8SNkxuk",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f27e4bdc58ebe249a6b90da0",
+        "year": 2021,
+        "album": "MONTERO",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "First Class",
+        "artist": "Jack Harlow",
+        "spotifyUri": "spotify:track:0wHFktze2PHC5jDt3B17DC",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2739ba41d0446dee0141062bbe1",
+        "year": 2022,
+        "album": "Come Home The Kids Miss You",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Lovin On Me",
+        "artist": "Jack Harlow",
+        "spotifyUri": "spotify:track:4xhsWYTOGcal8zt0J161CU",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2733a5390aae0708eefa335b4bf",
+        "year": 2023,
+        "album": "Lovin On Me",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Easy On Me",
+        "artist": "Adele",
+        "spotifyUri": "spotify:track:46IZ0fSY2mpAiktS3KOqds",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7",
+        "year": 2021,
+        "album": "30",
+        "genre": "Pop"
+    },
+    {
+        "title": "Bad Habits",
+        "artist": "Ed Sheeran",
+        "spotifyUri": "spotify:track:3rmo8F54jFF8OgYsqTxm5d",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273dc806722f6802a8ea9953c89",
+        "year": 2021,
+        "album": "=",
+        "genre": "Pop"
+    },
+    {
+        "title": "Shivers",
+        "artist": "Ed Sheeran",
+        "spotifyUri": "spotify:track:50nfwKoDiSYg8zOCREWAm5",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273dc806722f6802a8ea9953c89",
+        "year": 2021,
+        "album": "=",
+        "genre": "Pop"
+    },
+    {
+        "title": "WAP (feat. Megan Thee Stallion)",
+        "artist": "Cardi B",
+        "spotifyUri": "spotify:track:4Oun2ylbjFKMPTiaSbbCih",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273a761e55b720a0778f2170dc9",
+        "year": 2020,
+        "album": "WAP (feat. Megan Thee Stallion)",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Up",
+        "artist": "Cardi B",
+        "spotifyUri": "spotify:track:3tNTSlc98zRMRAV4ooy6fT",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273762cb4007f96ee44852f263e",
+        "year": 2025,
+        "album": "AM I THE DRAMA? (Beat Edition)",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Savage Remix (feat. Beyoncé)",
+        "artist": "Megan Thee Stallion",
+        "spotifyUri": "spotify:track:5v4GgrXPMghOnBBLmveLac",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27361f4bf9bb1dcda5e5e115f46",
+        "year": 2020,
+        "album": "Savage Remix (feat. Beyoncé)",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "TEXAS HOLD 'EM",
+        "artist": "Beyoncé",
+        "spotifyUri": "spotify:track:0Z7nGFVCLfixWctgePsRk9",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273585092635309cc99caf097fa",
+        "year": 2024,
+        "album": "TEXAS HOLD 'EM",
+        "genre": "Country"
+    },
+    {
+        "title": "BREAK MY SOUL",
+        "artist": "Beyoncé",
+        "spotifyUri": "spotify:track:5pyoxDZ1PX0KxBxiRVxA4U",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27369a3c061676c2020adfe8315",
+        "year": 2022,
+        "album": "RENAISSANCE",
+        "genre": "Pop"
+    },
+    {
+        "title": "Espresso",
+        "artist": "Sabrina Carpenter",
+        "spotifyUri": "spotify:track:2qSkIjg1o9h3YT9RAgYN75",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5",
+        "year": 2024,
+        "album": "Espresso",
+        "genre": "Pop"
+    },
+    {
+        "title": "Please Please Please",
+        "artist": "Sabrina Carpenter",
+        "spotifyUri": "spotify:track:2tHwzyyOLoWSFqYNjeVMzj",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273fd8d7a8d96871e791cb1f626",
+        "year": 2024,
+        "album": "Short n' Sweet",
+        "genre": "Pop"
+    },
+    {
+        "title": "Taste",
+        "artist": "Sabrina Carpenter",
+        "spotifyUri": "spotify:track:5G2f63n7IPVPPjfNIGih7Q",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273fd8d7a8d96871e791cb1f626",
+        "year": 2024,
+        "album": "Short n' Sweet",
+        "genre": "Pop"
+    },
+    {
+        "title": "Beautiful Things",
+        "artist": "Benson Boone",
+        "spotifyUri": "spotify:track:3xkHsmpQCBMytMJNiDf3Ii",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273831949037a1db10b87b005fa",
+        "year": 2024,
+        "album": "Fireworks & Rollerblades",
+        "genre": "Pop"
+    },
+    {
+        "title": "Lose Control",
+        "artist": "Teddy Swims",
+        "spotifyUri": "spotify:track:17phhZDn6oGtzMe56NuWvj",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273ebea8d4457c4db5b2088f287",
+        "year": 2023,
+        "album": "I've Tried Everything But Therapy (Part 1)",
+        "genre": "Pop"
+    },
+    {
+        "title": "Too Sweet",
+        "artist": "Hozier",
+        "spotifyUri": "spotify:track:19XpFsce28aByvCC4g89tJ",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273b07bd43d1bec442c7fcc4d1e",
+        "year": 2024,
+        "album": "Unreal Unearth: Unaired",
+        "genre": "Alternative"
+    },
+    {
+        "title": "A Bar Song (Tipsy)",
+        "artist": "Shaboozey",
+        "spotifyUri": "spotify:track:2FQrifJ1N335Ljm3TjTVVf",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2",
+        "year": 2024,
+        "album": "A Bar Song (Tipsy)",
+        "genre": "Dance"
+    },
+    {
+        "title": "I Had Some Help (Feat. Morgan Wallen)",
+        "artist": "Post Malone",
+        "spotifyUri": "spotify:track:7221xIgOnuakPdLqT0F3nP",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27397306976e3eb8aad53b754eb",
+        "year": 2024,
+        "album": "I Had Some Help",
+        "genre": "Country"
+    },
+    {
+        "title": "Last Night",
+        "artist": "Morgan Wallen",
+        "spotifyUri": "spotify:track:583dMdiUquLMenarTp7PQm",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c37a94d92b0a874ba2419ed7",
+        "year": 2023,
+        "album": "One Thing At A Time",
+        "genre": "Country"
+    },
+    {
+        "title": "Fast Car",
+        "artist": "Luke Combs",
+        "spotifyUri": "spotify:track:1Lo0QY9cvc8sUB2vnIOxDT",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2734f279906df8721c0534c0245",
+        "year": 2023,
+        "album": "Gettin' Old",
+        "genre": "Country"
+    },
+    {
+        "title": "Something in the Orange",
+        "artist": "Zach Bryan",
+        "spotifyUri": "spotify:track:3WMj8moIAXJhHsyLaqIIHI",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273e772398dc2edb9fc416b9cd1",
+        "year": 2022,
+        "album": "Something in the Orange",
+        "genre": "Country"
+    },
+    {
+        "title": "I Remember Everything (feat. Kacey Musgraves)",
+        "artist": "Zach Bryan",
+        "spotifyUri": "spotify:track:4KULAymBBJcPRpk1yO4dOG",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2733bd1de7368f5f1efd1d787b3",
+        "year": 2023,
+        "album": "Zach Bryan",
+        "genre": "Country"
+    },
+    {
+        "title": "Stick Season",
+        "artist": "Noah Kahan",
+        "spotifyUri": "spotify:track:0mflMxspEfB0VbI1kyLiAv",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2736ee35072df1af802cca09918",
+        "year": 2022,
+        "album": "Stick Season",
+        "genre": "Alternative"
+    },
+    {
+        "title": "Dial Drunk (with Post Malone)",
+        "artist": "Noah Kahan",
+        "spotifyUri": "spotify:track:22VHOlVYBqytsrAqV8yXBK",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f519f148d88bf65074b4a3a9",
+        "year": 2023,
+        "album": "Dial Drunk (with Post Malone)",
+        "genre": "Alternative"
+    },
+    {
+        "title": "Not Like Us",
+        "artist": "Kendrick Lamar",
+        "spotifyUri": "spotify:track:6AI3ezQ4o3HUoP6Dhudph3",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2731ea0c62b2339cbf493a999ad",
+        "year": 2024,
+        "album": "Not Like Us",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Like That",
+        "artist": "Future",
+        "spotifyUri": "spotify:track:2tudvzsrR56uom6smgOcSf",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273cec3fc072352b5f4f637d9fa",
+        "year": 2024,
+        "album": "WE DON'T TRUST YOU",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "MILLION DOLLAR BABY",
+        "artist": "Tommy Richman",
+        "spotifyUri": "spotify:track:5AJ9hqTS2wcFQCELCFRO7A",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27301c0cd5da820e6128655854f",
+        "year": 2024,
+        "album": "MILLION DOLLAR BABY",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Good Luck, Babe!",
+        "artist": "Chappell Roan",
+        "spotifyUri": "spotify:track:0WbMK4wrZ1wFSty9F7FCgu",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27391b4bc7c88d91a42e0f3a8b7",
+        "year": 2024,
+        "album": "Good Luck, Babe!",
+        "genre": "Pop"
+    },
+    {
+        "title": "HOT TO GO!",
+        "artist": "Chappell Roan",
+        "spotifyUri": "spotify:track:4xdBrk0nFZaP54vvZj0yx7",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27396fa88fb1789be437d5cb4b6",
+        "year": 2023,
+        "album": "The Rise and Fall of a Midwest Princess",
+        "genre": "Pop"
+    },
+    {
+        "title": "BIRDS OF A FEATHER",
+        "artist": "Billie Eilish",
+        "spotifyUri": "spotify:track:6dOtVTDdiauQNBQEDOtlAB",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62",
+        "year": 2024,
+        "album": "HIT ME HARD AND SOFT",
+        "genre": "Alternative"
+    },
+    {
+        "title": "LUNCH",
+        "artist": "Billie Eilish",
+        "spotifyUri": "spotify:track:629DixmZGHc7ILtEntuiWE",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62",
+        "year": 2024,
+        "album": "HIT ME HARD AND SOFT",
+        "genre": "Alternative"
+    },
+    {
+        "title": "What Was I Made For? [From The Motion Picture \"Barbie\"]",
+        "artist": "Billie Eilish",
+        "spotifyUri": "spotify:track:6wf7Yu7cxBSPrRlWeSeK0Q",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273ed317ec13d3de9e01fb99c9e",
+        "year": 2023,
+        "album": "What Was I Made For? [From The Motion Picture \"Barbie\"]",
+        "genre": "Pop"
+    },
+    {
+        "title": "Happier Than Ever",
+        "artist": "Billie Eilish",
+        "spotifyUri": "spotify:track:4RVwu0g32PAqgUiJoXsdF8",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e",
+        "year": 2021,
+        "album": "Happier Than Ever",
+        "genre": "Alternative"
+    },
+    {
+        "title": "Die With A Smile",
+        "artist": "Lady Gaga",
+        "spotifyUri": "spotify:track:2plbrEY59IikOBgBGLjaoe",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27382ea2e9e1858aa012c57cd45",
+        "year": 2024,
+        "album": "Die With A Smile",
+        "genre": "Pop"
+    },
+    {
+        "title": "APT.",
+        "artist": "ROSÉ",
+        "spotifyUri": "spotify:track:5vNRhkKd0yEAg8suGBpjeY",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27346085aa1855bd888abc51a5a",
+        "year": 2024,
+        "album": "APT.",
+        "genre": "Pop"
+    },
+    {
+        "title": "Leave The Door Open",
+        "artist": "Bruno Mars",
+        "spotifyUri": "spotify:track:02VBYrHfVwfEWXk5DXyf0T",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2731756c2022529aacfa98d2eb8",
+        "year": 2021,
+        "album": "An Evening With Silk Sonic",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "Kill Bill",
+        "artist": "SZA",
+        "spotifyUri": "spotify:track:3OHfY25tqY28d16oZczHc8",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273bc18bdade69ec5ef0bb25b17",
+        "year": 2022,
+        "album": "SOS",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "Snooze",
+        "artist": "SZA",
+        "spotifyUri": "spotify:track:4iZ4pt7kvcaH6Yo8UoZ4s2",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273bc18bdade69ec5ef0bb25b17",
+        "year": 2022,
+        "album": "SOS",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "Good Days",
+        "artist": "SZA",
+        "spotifyUri": "spotify:track:4PMqSO5qyjpvzhlLI5GnID",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273bc18bdade69ec5ef0bb25b17",
+        "year": 2022,
+        "album": "SOS",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "greedy",
+        "artist": "Tate McRae",
+        "spotifyUri": "spotify:track:3rUGC1vUpkDG9CZFHMur1t",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2735f677b5d3b81f08badd0775b",
+        "year": 2023,
+        "album": "greedy",
+        "genre": "Pop"
+    },
+    {
+        "title": "exes",
+        "artist": "Tate McRae",
+        "spotifyUri": "spotify:track:4E63weMCaNZuGPEFMnuEi8",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c4258b134ff5756932f9c46f",
+        "year": 2023,
+        "album": "THINK LATER",
+        "genre": "Pop"
+    },
+    {
+        "title": "Water",
+        "artist": "Tyla",
+        "spotifyUri": "spotify:track:5aIVCx5tnk0ntmdiinnYvw",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273d20231861e86a6f74ef2393e",
+        "year": 2023,
+        "album": "Water",
+        "genre": "Pop"
+    },
+    {
+        "title": "Rush",
+        "artist": "Ayra Starr",
+        "spotifyUri": "spotify:track:1xs8bOvm3IzEYmcLJVOc34",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2734828f4b04d92d6641be98cc5",
+        "year": 2022,
+        "album": "19 & Dangerous (Deluxe)",
+        "genre": "Afrobeats"
+    },
+    {
+        "title": "Calm Down (with Selena Gomez)",
+        "artist": "Rema",
+        "spotifyUri": "spotify:track:0WtM2NBVQNNJLh6scP13H8",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273a3a7f38ea2033aa501afd4cf",
+        "year": 2022,
+        "album": "Calm Down (with Selena Gomez)",
+        "genre": "Afrobeats"
+    },
+    {
+        "title": "Last Last",
+        "artist": "Burna Boy",
+        "spotifyUri": "spotify:track:57DarSfRMIVRCeDBGW0l5S",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27321315ced0015f33e514be031",
+        "year": 2022,
+        "album": "Love, Damini",
+        "genre": "Afro-fusion"
+    },
+    {
+        "title": "Essence (feat. Tems)",
+        "artist": "Wizkid",
+        "spotifyUri": "spotify:track:5FG7Tl93LdH117jEKYl3Cm",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273b5b1023769a6bf19b14d66ab",
+        "year": 2020,
+        "album": "Made In Lagos",
+        "genre": "Pop"
+    },
+    {
+        "title": "Boy's a liar Pt. 2",
+        "artist": "PinkPantheress",
+        "spotifyUri": "spotify:track:5CCr8msaN3MhgqBoa9yWhH",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27315a9d5a02103c2d683c07fb4",
+        "year": 2023,
+        "album": "Heaven knows",
+        "genre": "Pop"
+    },
+    {
+        "title": "Munch (Feelin’ U)",
+        "artist": "Ice Spice",
+        "spotifyUri": "spotify:track:1jOgJN75btuUONIdf57vHz",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273e9d19bd4ea1bbcc22d6c646d",
+        "year": 2022,
+        "album": "Munch (Feelin’ U)",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Creepin' (with The Weeknd & 21 Savage)",
+        "artist": "Metro Boomin",
+        "spotifyUri": "spotify:track:2dHHgzDwk4BJdRwy9uXhTO",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c4fee55d7b51479627c31f89",
+        "year": 2022,
+        "album": "HEROES & VILLAINS",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "I'm Good (Blue)",
+        "artist": "David Guetta",
+        "spotifyUri": "spotify:track:4uUG5RXrOk84mYEfFvj3cK",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f24c7321eabddffc3829676b",
+        "year": 2022,
+        "album": "I'm Good (Blue)",
+        "genre": "Dance"
+    },
+    {
+        "title": "Unholy (feat. Kim Petras)",
+        "artist": "Sam Smith",
+        "spotifyUri": "spotify:track:3nqQXoyQOWXiESFLlDF1hG",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273a935e4689f15953311772cc4",
+        "year": 2022,
+        "album": "Unholy (feat. Kim Petras)",
+        "genre": "Pop"
+    },
+    {
+        "title": "About Damn Time",
+        "artist": "Lizzo",
+        "spotifyUri": "spotify:track:6HMtHNpW6YPi1hrw9tgF8P",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273719683dadb742c14a81be63d",
+        "year": 2022,
+        "album": "Special",
+        "genre": "Pop"
+    },
+    {
+        "title": "WAIT FOR U (feat. Drake & Tems)",
+        "artist": "Future",
+        "spotifyUri": "spotify:track:59nOXPmaKlBfGMDeOVGrIK",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2731692599c8c0f98e470c68106",
+        "year": 2022,
+        "album": "I NEVER LIKED YOU",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Super Freaky Girl",
+        "artist": "Nicki Minaj",
+        "spotifyUri": "spotify:track:4C6Uex2ILwJi9sZXRdmqXp",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c2b3ab9829aefad24fa2c1bc",
+        "year": 2022,
+        "album": "Super Freaky Girl",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "First Person Shooter (feat. J. Cole)",
+        "artist": "Drake",
+        "spotifyUri": "spotify:track:7aqfrAY2p9BUSiupwk3svU",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2737d384516b23347e92a587ed1",
+        "year": 2023,
+        "album": "For All The Dogs",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Rich Flex",
+        "artist": "Drake",
+        "spotifyUri": "spotify:track:1bDbXMyjaUIooNwFE9wn0N",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27302854a7060fccc1a66a4b5ad",
+        "year": 2022,
+        "album": "Her Loss",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Jimmy Cooks (feat. 21 Savage)",
+        "artist": "Drake",
+        "spotifyUri": "spotify:track:3F5CgOj3wFlRv51JsHbxhe",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2738dc0d801766a5aa6a33cbe37",
+        "year": 2022,
+        "album": "Honestly, Nevermind",
+        "genre": "Dance"
+    },
+    {
+        "title": "fukumean",
+        "artist": "Gunna",
+        "spotifyUri": "spotify:track:4rXLjWdF2ZZpXCVTfWcshS",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2731e0b04676fae1205f4853706",
+        "year": 2023,
+        "album": "a Gift & a Curse",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "DÁKITI",
+        "artist": "Bad Bunny",
+        "spotifyUri": "spotify:track:47EiUVwUp4C9fGccaPuUCS",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27334c8199b0b3b3fb42b8a98a8",
+        "year": 2020,
+        "album": "DÁKITI",
+        "genre": "Dance"
+    },
+    {
+        "title": "Me Porto Bonito",
+        "artist": "Bad Bunny",
+        "spotifyUri": "spotify:track:6Sq7ltF9Qa7SNFBsV5Cogx",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
+        "year": 2022,
+        "album": "Un Verano Sin Ti",
+        "genre": "Música Mexicana"
+    },
+    {
+        "title": "Tití Me Preguntó",
+        "artist": "Bad Bunny",
+        "spotifyUri": "spotify:track:1IHWl5LamUGEuP4ozKQSXZ",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
+        "year": 2022,
+        "album": "Un Verano Sin Ti",
+        "genre": "Hip-Hop"
+    },
+    {
+        "title": "MONACO",
+        "artist": "Bad Bunny",
+        "spotifyUri": "spotify:track:4MjDJD8cW7iVeWInc2Bdyj",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2732ea1f035463d11e1fc3b193d",
+        "year": 2023,
+        "album": "nadie sabe lo que va a pasar mañana",
+        "genre": "Latin"
+    },
+    {
+        "title": "Ella Baila Sola",
+        "artist": "Eslabon Armado",
+        "spotifyUri": "spotify:track:3dnP0JxCgygwQH9Gm7q7nb",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2732071a0c79802d9375a53bfef",
+        "year": 2023,
+        "album": "Ella Baila Sola",
+        "genre": "Música Mexicana"
+    },
+    {
+        "title": "La Diabla",
+        "artist": "Xavi",
+        "spotifyUri": "spotify:track:0R6NfOiLzLj4O5VbYSJAjf",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2731501c770de50a22b25d67611",
+        "year": 2023,
+        "album": "La Diabla",
+        "genre": "Música Mexicana"
+    },
+    {
+        "title": "Gata Only",
+        "artist": "FloyyMenor",
+        "spotifyUri": "spotify:track:6XjDF6nds4DE2BBbagZol6",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c4583f3ad76630879a75450a",
+        "year": 2024,
+        "album": "Gata Only",
+        "genre": "Latin"
+    },
+    {
+        "title": "Si Antes Te Hubiera Conocido",
+        "artist": "KAROL G",
+        "spotifyUri": "spotify:track:73scB4Q4fcOmnsBVZPmk32",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2736c0294796e2ee5cf87a47b5f",
+        "year": 2025,
+        "album": "Tropicoqueta",
+        "genre": "Latin"
+    },
+    {
+        "title": "PROVENZA",
+        "artist": "KAROL G",
+        "spotifyUri": "spotify:track:3HqcNJdZ2seoGxhn0wVNDK",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27382de1ca074ae63cb18fce335",
+        "year": 2023,
+        "album": "MAÑANA SERÁ BONITO",
+        "genre": "Urbano latino"
+    },
+    {
+        "title": "Shakira: Bzrp Music Sessions, Vol. 53/66",
+        "artist": "Bizarrap",
+        "spotifyUri": "spotify:track:4nrPB8O7Y7wsOCJdgXkthe",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273fdecba1ff443653b79ebb189",
+        "year": 2023,
+        "album": "Shakira: Bzrp Music Sessions, Vol. 53/66",
+        "genre": "Pop Latino"
+    },
+    {
+        "title": "LALA",
+        "artist": "Myke Towers",
+        "spotifyUri": "spotify:track:7ABLbnD53cQK00mhcaOUVG",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273d646ace05ec913ac690a00c3",
+        "year": 2023,
+        "album": "LA VIDA ES UNA",
+        "genre": "Afro-Pop"
+    },
+    {
+        "title": "un x100to",
+        "artist": "Grupo Frontera",
+        "spotifyUri": "spotify:track:6pD0ufEQq0xdHSsRbg9LBK",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273716c0b0ad51594ff788b5f06",
+        "year": 2023,
+        "album": "un x100to",
+        "genre": "Música Mexicana"
+    },
+    {
+        "title": "Dynamite",
+        "artist": "BTS",
+        "spotifyUri": "spotify:track:5QDLhrAOJJdNAmCTJ8xMyW",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c07d5d2fdc02ae252fcd07e5",
+        "year": 2020,
+        "album": "BE",
+        "genre": "K-Pop"
+    },
+    {
+        "title": "Butter",
+        "artist": "BTS",
+        "spotifyUri": "spotify:track:6jjYDGxVJsWS0a5wlVF5vS",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27317db30ce3f081d6818a8ad49",
+        "year": 2022,
+        "album": "Proof",
+        "genre": "K-Pop"
+    },
+    {
+        "title": "Seven (feat. Latto) (Explicit Ver.)",
+        "artist": "Jung Kook",
+        "spotifyUri": "spotify:track:2HRgqmZQC0MC7GeNuDIXHN",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273741fd4807f442af3f7359316",
+        "year": 2023,
+        "album": "GOLDEN",
+        "genre": "K-Pop"
+    },
+    {
+        "title": "Cupid - Twin Version",
+        "artist": "FIFTY FIFTY",
+        "spotifyUri": "spotify:track:53DDMPqgMWNrEeE3NjThKE",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273eb535219dc875690e09dd8f9",
+        "year": 2023,
+        "album": "The Beginning",
+        "genre": "K-Pop"
+    },
+    {
+        "title": "Super Shy",
+        "artist": "NewJeans",
+        "spotifyUri": "spotify:track:5sdQOyqq2IDhvmx2lHOpwd",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2733d98a0ae7c78a3a9babaf8af",
+        "year": 2023,
+        "album": "NewJeans 'Super Shy'",
+        "genre": "K-Pop"
+    },
+    {
+        "title": "Rockstar",
+        "artist": "LISA",
+        "spotifyUri": "spotify:track:65ZihkVQO3KqPj7ZKxmcev",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27395ce3d848f4e452489d4a12c",
+        "year": 2025,
+        "album": "Alter Ego",
+        "genre": "Pop"
+    },
+    {
+        "title": "Magnetic",
+        "artist": "ILLIT",
+        "spotifyUri": "spotify:track:1aKvZDoLGkNMxoRYgkckZG",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f037c5fb9de6c78726cb8e2c",
+        "year": 2024,
+        "album": "SUPER REAL ME",
+        "genre": "K-Pop"
+    },
+    {
+        "title": "Pink Venom",
+        "artist": "BLACKPINK",
+        "spotifyUri": "spotify:track:5zwwW9Oq7ubSxoCGyW1nbY",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273002ef53878df1b4e91c15406",
+        "year": 2022,
+        "album": "BORN PINK",
+        "genre": "K-Pop"
+    },
+    {
+        "title": "360",
+        "artist": "Charli xcx",
+        "spotifyUri": "spotify:track:4w2GLmK2wnioVnb5CPQeex",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f88b43d15fd14e9525338b59",
+        "year": 2024,
+        "album": "BRAT",
+        "genre": "Dance"
+    },
+    {
+        "title": "Guess featuring billie eilish",
+        "artist": "Charli xcx",
+        "spotifyUri": "spotify:track:0IsIY8pfu1yaGkPUD7pkDx",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2738ac99f88ebc09b1f1637dc00",
+        "year": 2024,
+        "album": "Brat and it’s completely different but also still brat",
+        "genre": "Dance"
+    },
+    {
+        "title": "Dance The Night - From Barbie The Album",
+        "artist": "Dua Lipa",
+        "spotifyUri": "spotify:track:1vYXt7VSjH9JIM5oRRo7vA",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2733781a47fee690ad0b5c6c071",
+        "year": 2023,
+        "album": "Dance The Night (From Barbie The Album)",
+        "genre": "Pop"
+    },
+    {
+        "title": "Houdini",
+        "artist": "Dua Lipa",
+        "spotifyUri": "spotify:track:5x9ElMtD3xy0verHZWOGqr",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27345b408502b599fe9cd5a5508",
+        "year": 2024,
+        "album": "Radical Optimism",
+        "genre": "Pop"
+    },
+    {
+        "title": "positions",
+        "artist": "Ariana Grande",
+        "spotifyUri": "spotify:track:35mvY5S1H3J2QZyna3TFe0",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27355b8f4c3458e256eca14f18f",
+        "year": 2020,
+        "album": "Positions",
+        "genre": "Pop"
+    },
+    {
+        "title": "we can't be friends (wait for your love)",
+        "artist": "Ariana Grande",
+        "spotifyUri": "spotify:track:51ZQ1vr10ffzbwIjDCwqm4",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2738b58d20f1b77295730db15b4",
+        "year": 2024,
+        "album": "eternal sunshine",
+        "genre": "Pop"
+    },
+    {
+        "title": "yes, and?",
+        "artist": "Ariana Grande",
+        "spotifyUri": "spotify:track:7gaA3wERFkFkgivjwbSvkG",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2736b0b6e20fdb1ee07de7e92d6",
+        "year": 2024,
+        "album": "yes, and?",
+        "genre": "Pop"
+    },
+    {
+        "title": "Rain On Me (with Ariana Grande)",
+        "artist": "Lady Gaga",
+        "spotifyUri": "spotify:track:7ju97lgwC2rKQ6wwsf9no9",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2736040effba89b9b00a6f6743a",
+        "year": 2020,
+        "album": "Chromatica",
+        "genre": "Pop"
+    },
+    {
+        "title": "Hold Me Closer",
+        "artist": "Elton John",
+        "spotifyUri": "spotify:track:72yP0DUlWPyH8P7IoxskwN",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2735d872e7b0c1ba964541f07e8",
+        "year": 2022,
+        "album": "Hold Me Closer",
+        "genre": "Pop"
+    },
+    {
+        "title": "Cold Heart - PNAU Remix",
+        "artist": "Elton John",
+        "spotifyUri": "spotify:track:6zSpb8dQRaw0M1dK8PBwQz",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2739f5cce8304c42d3a5463fd23",
+        "year": 2021,
+        "album": "Cold Heart (PNAU Remix)",
+        "genre": "Pop"
+    },
+    {
+        "title": "Escapism.",
+        "artist": "RAYE",
+        "spotifyUri": "spotify:track:5mHdCZtVyb4DcJw8799hZp",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27394e5237ce925531dbb38e75f",
+        "year": 2023,
+        "album": "My 21st Century Blues",
+        "genre": "Pop"
+    },
+    {
+        "title": "Prada",
+        "artist": "cassö",
+        "spotifyUri": "spotify:track:59NraMJsLaMCVtwXTSia8i",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273e4b7dccdfd54375ded9ccc5c",
+        "year": 2023,
+        "album": "Prada",
+        "genre": "Dance"
+    },
+    {
+        "title": "i like the way you kiss me",
+        "artist": "Artemas",
+        "spotifyUri": "spotify:track:2GxrNKugF82CnoRFbQfzPf",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27318f3449e90684e2a89636898",
+        "year": 2024,
+        "album": "i like the way you kiss me",
+        "genre": "Pop"
+    },
+    {
+        "title": "End of Beginning",
+        "artist": "Djo",
+        "spotifyUri": "spotify:track:3qhlB30KknSejmIvZZLjOD",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273fddfffec51b4580acae727c1",
+        "year": 2022,
+        "album": "DECIDE",
+        "genre": "Alternative"
+    },
+    {
+        "title": "Glimpse of Us",
+        "artist": "Joji",
+        "spotifyUri": "spotify:track:2mlNgAeIBnL78ZriXgrRHz",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273cdd1a8a427b3f81f4f4f4f7d",
+        "year": 2022,
+        "album": "SMITHEREENS",
+        "genre": "Pop"
+    },
+    {
+        "title": "Romantic Homicide",
+        "artist": "d4vd",
+        "spotifyUri": "spotify:track:1xK59OXxi2TAAAbmZK0kBL",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273bd1a52b3d5903ee01c216da0",
+        "year": 2022,
+        "album": "Romantic Homicide",
+        "genre": "Alternative"
+    },
+    {
+        "title": "Until I Found You",
+        "artist": "Stephen Sanchez",
+        "spotifyUri": "spotify:track:0T5iIrXA4p5GsubkhuBIKV",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2738792c3e96f8ab97a767c5d0c",
+        "year": 2021,
+        "album": "Until I Found You",
+        "genre": "Singer/Songwriter"
+    },
+    {
+        "title": "golden hour",
+        "artist": "JVKE",
+        "spotifyUri": "spotify:track:5odlY52u43F5BjByhxg7wg",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273c2504e80ba2f258697ab2954",
+        "year": 2022,
+        "album": "this is what ____ feels like (Vol. 1-4)",
+        "genre": "Pop"
+    },
+    {
+        "title": "My Love Mine All Mine",
+        "artist": "Mitski",
+        "spotifyUri": "spotify:track:3vkCueOmm7xQDoJ17W1Pm3",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27334f21d3047d85440dfa37f10",
+        "year": 2023,
+        "album": "The Land Is Inhospitable and So Are We",
+        "genre": "Alternative"
+    },
+    {
+        "title": "Strangers",
+        "artist": "Kenya Grace",
+        "spotifyUri": "spotify:track:5mjYQaktjmjcMKcUIcqz4s",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273217205b69fbd0277fa4e0504",
+        "year": 2023,
+        "album": "Strangers",
+        "genre": "Dance"
+    },
+    {
+        "title": "(It Goes Like) Nanana - Edit",
+        "artist": "Peggy Gou",
+        "spotifyUri": "spotify:track:23RoR84KodL5HWvUTneQ1w",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27388d71aadd009fe1a83df88f2",
+        "year": 2023,
+        "album": "(It Goes Like) Nanana [Edit]",
+        "genre": "Dance"
+    },
+    {
+        "title": "Rush",
+        "artist": "Troye Sivan",
+        "spotifyUri": "spotify:track:4ZnkygoWLzcGbQYCm3lkae",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27367103283a4eb57578a428252",
+        "year": 2023,
+        "album": "Something To Give Each Other",
+        "genre": "Pop"
+    },
+    {
+        "title": "Diet Pepsi",
+        "artist": "Addison Rae",
+        "spotifyUri": "spotify:track:6ouhsRJ7gExB7LCYjITk4Y",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273089511953028cbfeb095c593",
+        "year": 2025,
+        "album": "Addison",
+        "genre": "Pop"
+    },
+    {
+        "title": "That’s So True",
+        "artist": "Gracie Abrams",
+        "spotifyUri": "spotify:track:7ne4VBA60CxGM75vw0EYad",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2731dac3694b3289cd903cb3acf",
+        "year": 2024,
+        "album": "The Secret of Us (Deluxe)",
+        "genre": "Pop"
+    },
+    {
+        "title": "I Love You, I'm Sorry",
+        "artist": "Gracie Abrams",
+        "spotifyUri": "spotify:track:51rfRCiUSvxXlCSCfIztBy",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2736e2101520787791370f4a96b",
+        "year": 2024,
+        "album": "The Secret of Us",
+        "genre": "Pop"
+    },
+    {
+        "title": "The Emptiness Machine",
+        "artist": "Linkin Park",
+        "spotifyUri": "spotify:track:1EDPVGbyPKJPeGqATwXZvN",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2738be9eeb8f19696ef2fd3b6b4",
+        "year": 2024,
+        "album": "From Zero",
+        "genre": "Alternative"
+    },
+    {
+        "title": "Padam Padam",
+        "artist": "Kylie Minogue",
+        "spotifyUri": "spotify:track:44MuEHdlociG8KjhPhOVw5",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27397382c8f649a621b96bbb819",
+        "year": 2023,
+        "album": "Tension (Deluxe)",
+        "genre": "Pop"
+    },
+    {
+        "title": "Beggin'",
+        "artist": "Måneskin",
+        "spotifyUri": "spotify:track:3Wrjm47oTz2sjIgck11l5e",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273fa0ab3a28b5c52d8a5f97045",
+        "year": 2017,
+        "album": "Chosen",
+        "genre": "Pop"
+    },
+    {
+        "title": "Mood (feat. iann dior)",
+        "artist": "24kGoldn",
+        "spotifyUri": "spotify:track:4jPy3l0RUwlUI9T5XHBW2m",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273b4141fad9af613c35f55d589",
+        "year": 2021,
+        "album": "El Dorado",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "ROCKSTAR (feat. Roddy Ricch)",
+        "artist": "DaBaby",
+        "spotifyUri": "spotify:track:7ytR5pFWmSjzHJIeQkgog4",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27320e08c8cc23f404d723b5647",
+        "year": 2020,
+        "album": "BLAME IT ON BABY",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Big Energy",
+        "artist": "Latto",
+        "spotifyUri": "spotify:track:4pi1G1x8tl9VfdD9bL3maT",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273cb5aad0f63a70faabe29acd9",
+        "year": 2022,
+        "album": "777",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "F.N.F. (Let's Go)",
+        "artist": "Hitkidd",
+        "spotifyUri": "spotify:track:1vrFJDrysqmsNAgyjBzx4f",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2730e5c94e31e8c84ecf8eb39bd",
+        "year": 2022,
+        "album": "F.N.F. (Let's Go)",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Yeah Glo!",
+        "artist": "GloRilla",
+        "spotifyUri": "spotify:track:5A8xI7PN4WDe9e61xEdt94",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273bd9951bb4c9813bc540bde1d",
+        "year": 2024,
+        "album": "Ehhthang Ehhthang",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Made For Me",
+        "artist": "Muni Long",
+        "spotifyUri": "spotify:track:0WIv5qV41y6YjjB9V1biuC",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2730969013bba974a554fdf09e3",
+        "year": 2023,
+        "album": "Made For Me",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "On My Mama",
+        "artist": "Victoria Monét",
+        "spotifyUri": "spotify:track:1o8Z7GD1CeOaVBEyuzu4HO",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f78d52ba1650ad1142c6cd6c",
+        "year": 2023,
+        "album": "On My Mama",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "Doja",
+        "artist": "Central Cee",
+        "spotifyUri": "spotify:track:3LtpKP5abr2qqjunvjlX5i",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27391de4cb28d9066225b55e603",
+        "year": 2022,
+        "album": "Doja",
+        "genre": "Hip-Hop/Rap"
+    },
+    {
+        "title": "Sprinter",
+        "artist": "Dave",
+        "spotifyUri": "spotify:track:6NYbDTmstd7JSUWl2hVBqR",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273dd9f1f94f2f9a10310a3d525",
+        "year": 2023,
+        "album": "Sprinter",
+        "genre": "Dance"
+    },
+    {
+        "title": "love nwantiti (ah ah ah)",
+        "artist": "CKay",
+        "spotifyUri": "spotify:track:2Xr1dTzJee307rmrkt8c0g",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273405fdad252857e01dbced96a",
+        "year": 2019,
+        "album": "CKay The First",
+        "genre": "Afrobeats"
+    },
+    {
+        "title": "soso",
+        "artist": "OMAH LAY",
+        "spotifyUri": "spotify:track:1wADwLSkYhrSmy4vdy6BRn",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27315ceaa196b94c1f61db08d7b",
+        "year": 2022,
+        "album": "Boy Alone",
+        "genre": "Worldwide"
+    },
+    {
+        "title": "you broke me first",
+        "artist": "Tate McRae",
+        "spotifyUri": "spotify:track:4l0RmWt52FxpVxMNni6i63",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2737e2764c2192137c81a9e2cab",
+        "year": 2021,
+        "album": "TOO YOUNG TO BE SAD",
+        "genre": "Pop"
+    },
+    {
+        "title": "abcdefu",
+        "artist": "GAYLE",
+        "spotifyUri": "spotify:track:4fouWK6XVHhzl78KzQ1UjL",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27357bfb98039e11d9fcb2f4760",
+        "year": 2021,
+        "album": "abcdefu",
+        "genre": "Pop"
+    },
+    {
+        "title": "Ghost",
+        "artist": "Justin Bieber",
+        "spotifyUri": "spotify:track:6I3mqTwhRpn34SLVafSH7G",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273e6f407c7f3a0ec98845e4431",
+        "year": 2021,
+        "album": "Justice",
+        "genre": "Pop"
+    },
+    {
+        "title": "Late Night Talking",
+        "artist": "Harry Styles",
+        "spotifyUri": "spotify:track:1qEmFfgcLObUfQm0j1W2CK",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27382ce362511fb3d9dda6578ee",
+        "year": 2022,
+        "album": "Harry's House",
+        "genre": "Pop"
+    },
+    {
+        "title": "Used To Be Young",
+        "artist": "Miley Cyrus",
+        "spotifyUri": "spotify:track:41WQUSINanQHfhfKpFDsms",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b27366fd0917f38d472c8576754e",
+        "year": 2023,
+        "album": "Endless Summer Vacation",
+        "genre": "Pop"
+    },
+    {
+        "title": "Chemical",
+        "artist": "Post Malone",
+        "spotifyUri": "spotify:track:5w40ZYhbBMAlHYNDaVJIUu",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273f76f8deeba5370c98ad38f1c",
+        "year": 2023,
+        "album": "Chemical",
+        "genre": "Pop"
+    },
+    {
+        "title": "Take My Breath",
+        "artist": "The Weeknd",
+        "spotifyUri": "spotify:track:2vgUijXOTRMnWXDtvgMp2b",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
+        "year": 2022,
+        "album": "Dawn FM",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "Die For You - Remix",
+        "artist": "The Weeknd",
+        "spotifyUri": "spotify:track:7oDd86yk8itslrA9HRP2ki",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2738de12a274f6e1df6634f57ec",
+        "year": 2023,
+        "album": "Die For You (Remix)",
+        "genre": "R&B/Soul"
+    },
+    {
+        "title": "Karma",
+        "artist": "Taylor Swift",
+        "spotifyUri": "spotify:track:7KokYm8cMIXCsGVmUvKtqf",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5",
+        "year": 2022,
+        "album": "Midnights",
+        "genre": "Pop"
+    },
+    {
+        "title": "Is It Over Now? (Taylor's Version) (From The Vault)",
+        "artist": "Taylor Swift",
+        "spotifyUri": "spotify:track:1Iq8oo9XkmmvCQiGOfORiz",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273904445d70d04eb24d6bb79ac",
+        "year": 2023,
+        "album": "1989 (Taylor's Version)",
+        "genre": "Pop"
+    },
+    {
+        "title": "Anti-Hero",
+        "artist": "Taylor Swift",
+        "spotifyUri": "spotify:track:0V3wPSX9ygBnCm8psDIegu",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5",
+        "year": 2022,
+        "album": "Midnights",
+        "genre": "Pop"
+    },
+    {
+        "title": "Savage Love (Laxed - Siren Beat)",
+        "artist": "Jawsh 685",
+        "spotifyUri": "spotify:track:1xQ6trAsedVPCdbtDAmk0c",
+        "coverUrl": "https://i.scdn.co/image/ab67616d0000b2730f619e50cfa37c94e3f8300e",
+        "year": 2020,
+        "album": "Savage Love (Laxed - Siren Beat)",
+        "genre": "Pop"
     }
 ]

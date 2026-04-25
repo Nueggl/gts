@@ -1,3 +1,4 @@
--mehr songs hinzufügen
 -UI verschönern
--20s Songs hinzugügen + listx.txt
+-filtern nach aufrufen? od insg popularität (--> maybe KI schätzen lassen um api limits zu vermeiden)
+-dauer des songs einstellen; stelle des songs einstellen (random, anfang, ...)
+-diagram zum einstellen der wsk der jahrzehnte
