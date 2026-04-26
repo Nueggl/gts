@@ -99,6 +99,11 @@ async function holeTippVonKI(tippArt) {
         });
 
         const ergebnis = await antwort.json();
+
+        if (!ergebnis.candidates || ergebnis.candidates.length === 0) {
+            throw new Error("Die KI-Server sind gerade überlastet (Fehler 503) oder haben keine Antwort geschickt.");
+        }
+
         const finalerTipp = ergebnis.candidates[0].content.parts[0].text;
         
         kiChatVerlauf.push({ role: "model", parts: [{ text: finalerTipp }] });
@@ -129,7 +134,7 @@ async function holeTippVonKI(tippArt) {
 
     } catch (fehler) {
         console.error(fehler);
-        document.getElementById("lade-indikator").textContent = "Die KI hat gerade Ladehemmungen.";
+        document.getElementById("lade-indikator").textContent = "KI hat gerade keinen Bock. Entweder du probierst nochmal oder du lässt es :)";
     } finally {
         btnAllgemein.disabled = false;
         btnInterpret.disabled = false;

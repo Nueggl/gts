@@ -1,28 +1,109 @@
 let songs = [];
 let filteredSongs = [];
 let currentSong;
+let revealedTitleCount = 0;
+let revealedArtistCount = 0;
+let adminMode = false;
+let currentSort = { column: null, direction: 'asc' };
+const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif", "gif8.gif"];
 
-// Load songs from JSON
+
+function setTokenWithExpiry(token) {
+    const now = new Date();
+    // 3600000 ms = 60 Minuten
+    const item = {
+        token: token,
+        expiry: now.getTime() + 3600000, 
+    };
+    localStorage.setItem("spotify_access_token", JSON.stringify(item));
+}
+
+function getValidToken() {
+    const itemStr = localStorage.getItem("spotify_access_token");
+    if (!itemStr) return null;
+    
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+    
+    if (now.getTime() > item.expiry) {
+        localStorage.removeItem("spotify_access_token");
+        return null;
+    }
+    return item.token;
+}
+
+// Songs beim Start laden
 async function loadSongs() {
     try {
         const response = await fetch('songs.json');
         songs = await response.json();
-        console.log('Songs loaded:', songs);
+        console.log('Songs geladen:', songs);
         setupFilters();
-
         const btn = document.getElementById('apply-filters-btn');
         btn.innerText = "Spiel starten";
         btn.disabled = false;
-
     } catch (error) {
-        console.error('Error loading songs:', error);
-        document.getElementById('status').innerHTML = "Fehler beim Laden der Songs.<br><small>Falls du die Datei lokal öffnest, nutze einen Webserver (z.B. Live Server).</small>";
+        console.error('Fehler beim Laden:', error);
+        document.getElementById('status').innerHTML = "Fehler beim Laden der songs.json.";
     }
 }
 
-// Filter logic
+// --- BIBLIOTHEK LOGIK ---
+function showSongList() {
+    document.getElementById('start-screen').classList.add('hidden');
+    document.getElementById('song-list-screen').classList.remove('hidden');
+    renderSongTable(songs);
+}
+
+function renderSongTable(data) {
+    const tbody = document.getElementById('library-body');
+    tbody.innerHTML = '';
+    data.forEach(song => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td><img src="${song.coverUrl}" style="width: 40px; border-radius: 3px;"></td>
+            <td>${song.title}</td>
+            <td>${song.artist}</td>
+            <td>${song.album}</td>
+            <td>${song.year}</td>
+            <td>${song.genre}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+function filterSongList() {
+    const query = document.getElementById('song-search').value.toLowerCase();
+    const filtered = songs.filter(s => 
+        s.title.toLowerCase().includes(query) || 
+        s.artist.toLowerCase().includes(query) || 
+        s.album.toLowerCase().includes(query) ||
+        s.genre.toLowerCase().includes(query)
+    );
+    renderSongTable(filtered);
+}
+
+function sortSongs(column) {
+    if (currentSort.column === column) {
+        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+    } else {
+        currentSort.column = column;
+        currentSort.direction = 'asc';
+    }
+
+    const sorted = [...songs].sort((a, b) => {
+        let valA = a[column];
+        let valB = b[column];
+        if (typeof valA === 'string') { valA = valA.toLowerCase(); valB = valB.toLowerCase(); }
+        if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
+        if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
+        return 0;
+    });
+    renderSongTable(sorted);
+}
+
+// --- SPIEL LOGIK ---
 function setupFilters() {
-    // Determine min and max year
     const years = songs.map(s => s.year).filter(y => y);
     const minYear = Math.min(...years);
     const maxYear = Math.max(...years);
@@ -33,32 +114,18 @@ function setupFilters() {
     const yearMaxVal = document.getElementById('year-max-val');
     const sliderRange = document.getElementById('slider-range');
 
-    yearMinInput.min = minYear;
-    yearMinInput.max = maxYear;
-    yearMinInput.value = minYear;
-
-    yearMaxInput.min = minYear;
-    yearMaxInput.max = maxYear;
-    yearMaxInput.value = maxYear;
+    yearMinInput.min = minYear; yearMinInput.max = maxYear; yearMinInput.value = minYear;
+    yearMaxInput.min = minYear; yearMaxInput.max = maxYear; yearMaxInput.value = maxYear;
 
     function updateSlider() {
         let min = parseInt(yearMinInput.value);
         let max = parseInt(yearMaxInput.value);
-
-        if (min > max) {
-            // Swap values if min crosses max
-            let tmp = min;
-            min = max;
-            max = tmp;
-        }
-
+        if (min > max) { [min, max] = [max, min]; }
         yearMinVal.innerText = min;
         yearMaxVal.innerText = max;
-
         const range = maxYear - minYear;
         const leftPercent = ((min - minYear) / range) * 100;
         const rightPercent = ((maxYear - max) / range) * 100;
-
         sliderRange.style.left = leftPercent + '%';
         sliderRange.style.right = rightPercent + '%';
     }
@@ -67,7 +134,6 @@ function setupFilters() {
     yearMaxInput.addEventListener('input', updateSlider);
     updateSlider();
 
-    // Populate genres
     const genres = [...new Set(songs.map(s => s.genre).filter(g => g))].sort();
     const genreContainer = document.getElementById('genre-filters');
     genreContainer.innerHTML = '';
@@ -83,214 +149,273 @@ function setupFilters() {
 }
 
 function applyFiltersAndStart() {
-    const minInput = parseInt(document.getElementById('year-min').value);
-    const maxInput = parseInt(document.getElementById('year-max').value);
-    const selectedMinYear = Math.min(minInput, maxInput);
-    const selectedMaxYear = Math.max(minInput, maxInput);
+    adminMode = document.getElementById('admin-mode-toggle').checked;
+    const adminBtn = document.getElementById('admin-reveal-btn');
+    const debugConsole = document.getElementById('ui-debug-console');
 
-    const decadeCheckboxes = document.querySelectorAll('#decade-filters input:checked');
-    const selectedDecades = Array.from(decadeCheckboxes).map(cb => parseInt(cb.value));
+    if (adminMode) {
+        adminBtn.classList.remove('hidden');
+        debugConsole.classList.remove('hidden');
+        uiLog("Admin-Modus aktiviert.");
+    } else {
+        adminBtn.classList.add('hidden');
+        debugConsole.classList.add('hidden');
+    }
 
-    const genreCheckboxes = document.querySelectorAll('#genre-filters input:checked');
-    const selectedGenres = Array.from(genreCheckboxes).map(cb => cb.value);
+    const minYear = parseInt(document.getElementById('year-min-val').innerText);
+    const maxYear = parseInt(document.getElementById('year-max-val').innerText);
+    const selectedDecades = Array.from(document.querySelectorAll('#decade-filters input:checked')).map(cb => parseInt(cb.value));
+    const selectedGenres = Array.from(document.querySelectorAll('#genre-filters input:checked')).map(cb => cb.value);
 
     filteredSongs = songs.filter(song => {
-        if (!song.year || song.year < selectedMinYear || song.year > selectedMaxYear) return false;
+        if (!song.year || song.year < minYear || song.year > maxYear) return false;
         if (selectedDecades.length > 0) {
             const songDecade = Math.floor(song.year / 10) * 10;
             if (!selectedDecades.includes(songDecade)) return false;
         }
-        if (selectedGenres.length > 0) {
-            if (!song.genre || !selectedGenres.includes(song.genre)) return false;
-        }
+        if (selectedGenres.length > 0 && !selectedGenres.includes(song.genre)) return false;
         return true;
     });
 
     if (filteredSongs.length === 0) {
-        alert("Keine Songs mit diesen Filtern gefunden! Bitte wähle andere Kriterien.");
+        alert("Keine Songs für diese Filter gefunden!");
         return;
     }
 
-    // Hide Start Screen, Show Player
     document.getElementById('start-screen').classList.add('hidden');
     document.getElementById('player-container').classList.remove('hidden');
     document.getElementById('game-controls').classList.remove('hidden');
-
     startGame();
 }
 
-// 3. Spiel-Logik
 function startGame() {
-    if (filteredSongs.length === 0) {
-        alert("Fehler: Keine gefilterten Songs vorhanden.");
-        return;
-    }
-
-    // Zufälligen Song wählen
+    if (filteredSongs.length === 0) return;
     currentSong = filteredSongs[Math.floor(Math.random() * filteredSongs.length)];
-
-    // Vorhang ZIEHEN (Verstecken)
+    
     document.getElementById('curtain').classList.remove('hidden');
-    document.getElementById('curtain').innerText = "🔊 Hör gut zu...";
     document.getElementById('cover-art').classList.add('hidden');
-    document.getElementById('cover-art').src = currentSong.coverUrl; // Preload cover
-
-    // UI anpassen
+    document.getElementById('cover-art').src = currentSong.coverUrl;
+    
+    const randomGif = gifListe[Math.floor(Math.random() * gifListe.length)];
+    document.getElementById('curtain-gif').src = `GIFs/${randomGif}`;
     document.getElementById('start-btn').classList.add('hidden');
     document.getElementById('guess-area').classList.remove('hidden');
     document.getElementById('status').innerText = "Song läuft...";
+    document.getElementById('admin-debug').innerText = "";
     
-    // Tipps und Felder zurücksetzen
-    const tippContainer = document.getElementById('tipp-container');
-    if(tippContainer) {
-        tippContainer.innerHTML = ""; 
-        tippContainer.style.display = "none"; 
-    }
-    const tippBtnAllg = document.getElementById('tipp-btn-allgemein');
-    const tippBtnInt = document.getElementById('tipp-btn-interpret');
-    const tippBtnTit = document.getElementById('tipp-btn-titel');
-    if(tippBtnAllg) tippBtnAllg.textContent = "Allg. Tipp 🤖";
-    if(tippBtnInt) tippBtnInt.textContent = "Tipp zum Interpret 👤";
-    if(tippBtnTit) tippBtnTit.textContent = "Tipp zum Titel 🎵";
+    document.getElementById('guess-title').value = "";
+    document.getElementById('guess-artist').value = "";
+    document.getElementById('guess-title').readOnly = false;
+    document.getElementById('guess-artist').readOnly = false;
+    document.getElementById('guess-title').style.backgroundColor = "";
+    document.getElementById('guess-artist').style.backgroundColor = "";
+    document.getElementById('tipp-container').style.display = 'none';
+    document.getElementById('tipp-container').innerHTML = '';
+    revealedTitleCount = 0;
+    revealedArtistCount = 0;
+    document.getElementById('tipp-display-interpret').innerText = "";
+    document.getElementById('tipp-display-titel').innerText = "";
+    document.getElementById('tipp-btn-allgemein').innerText = "Allg. Tipp 🤖";
+    document.getElementById('tipp-btn-interpret').innerText = "Tipp zum Interpret 👤";
+    document.getElementById('tipp-btn-titel').innerText = "Tipp zum Titel 🎵";
 
-    const guessTitle = document.getElementById('guess-title');
-    const guessArtist = document.getElementById('guess-artist');
-
-    guessTitle.value = "";
-    guessTitle.readOnly = false;
-    guessTitle.style.backgroundColor = ""; 
-    guessTitle.style.color = "";
-
-    guessArtist.value = "";
-    guessArtist.readOnly = false;
-    guessArtist.style.backgroundColor = "";
-    guessArtist.style.color = "";
-
-
-    // 1. Zufälligen Startpunkt berechnen (z.B. zwischen 20 und 80 Sekunden)
-    const zufallsSekunde = Math.floor(Math.random() * 60) + 20;
-
-    // 2. Den Song aus der JSON an den Player übergeben
-    // Wir nutzen hier 'spotifyUri', so wie es dein Python-Skript speichert
+    const randomStart = Math.floor(Math.random() * 60) + 20;
     if (currentSong.spotifyUri) {
-        spieleSong(currentSong.spotifyUri, zufallsSekunde);
-    } else {
-        console.error("Fehler: Dieser Song hat keine spotifyUri in der JSON!");
-        document.getElementById('status').innerText = "Fehler: Song-Daten unvollständig.";
+        uiLog(`Spiele: ${currentSong.artist} - ${currentSong.title} (${currentSong.year})`);
+        spieleSong(currentSong.spotifyUri, randomStart);
     }
+}
+
+function cleanTitleString(str) {
+    return str
+        .replace(/\(.*?\)/g, '')   // Entfernt alles in ( )
+        .replace(/\[.*?\]/g, '')   // Entfernt alles in [ ]
+        .replace(/\s-.*$/, '')     // Entfernt " - " und alles danach
+        .trim()                    // Entfernt Leerzeichen am Rand
+        //.toLowerCase();
+}
+
+function checkArtistMatch(guessRaw, artistString) {
+    const guess = guessRaw.trim().toLowerCase();
+    const fullArtistRaw = artistString.trim().toLowerCase();
+
+    // Versuch 1: Passt die Eingabe auf den komplett ungeteilten String? (Distanz <= 2)
+    if (levenshtein(guess, fullArtistRaw) <= 2) return true;
+
+    // Versuch 2: Wir teilen den String auf
+    // RegEx trennt bei " & ", " feat. ", " ft. " oder Kommas
+    const artists = artistString.split(/\s*(?:&|feat\.|ft\.|,\s+)\s+/i);
+    
+    for (let artist of artists) {
+        const cleanArtist = artist.trim().toLowerCase();
+        if (cleanArtist.length > 0 && levenshtein(guess, cleanArtist) <= 2) {
+            return true; // Treffer bei einem der Teil-Künstler!
+        }
+    }
+    return false;
 }
 
 function checkAnswer() {
-    const guessTitle = document.getElementById('guess-title');
-    const guessArtist = document.getElementById('guess-artist');
-    
-    const titleVal = guessTitle.value.trim().toLowerCase();
-    const artistVal = guessArtist.value.trim().toLowerCase();
+    const guessTitleRaw = document.getElementById('guess-title').value;
+    const guessArtistRaw = document.getElementById('guess-artist').value;
 
-    // Levenshtein-Check (max 2 Fehler)
-    const titleCorrect = levenshtein(titleVal, currentSong.title.toLowerCase()) <= 2;
-    const artistCorrect = levenshtein(artistVal, currentSong.artist.toLowerCase()) <= 2;
+    // Wir waschen sowohl die Eingabe als auch die Lösung
+    const cleanGuessTitle = cleanTitleString(guessTitleRaw);
+    const cleanActualTitle = cleanTitleString(currentSong.title);
 
-    if (titleCorrect) {
-        guessTitle.style.backgroundColor = "#28a745"; 
-        guessTitle.style.color = "white";
-        guessTitle.readOnly = true; 
+    // Titel vergleichen
+    const titleCorrect = levenshtein(cleanGuessTitle.toLowerCase(), cleanActualTitle.toLowerCase()) <= 2;
+    // Interpret vergleichen
+    const artistCorrect = checkArtistMatch(guessArtistRaw, currentSong.artist);
+
+    if (titleCorrect) { 
+        document.getElementById('guess-title').style.backgroundColor = "#28a745"; 
+        document.getElementById('guess-title').readOnly = true; 
     }
-
-    if (artistCorrect) {
-        guessArtist.style.backgroundColor = "#28a745"; 
-        guessArtist.style.color = "white";
-        guessArtist.readOnly = true; 
+    if (artistCorrect) { 
+        document.getElementById('guess-artist').style.backgroundColor = "#28a745"; 
+        document.getElementById('guess-artist').readOnly = true; 
     }
-
-    if (titleCorrect && artistCorrect) {
-        document.getElementById('status').innerText = "Richtig! Es ist " + currentSong.artist + " - " + currentSong.title;
-        reveal(false); 
-    } else {
-        if (titleCorrect && !artistCorrect) {
-            document.getElementById('status').innerText = "Titel ist richtig! Wer ist der Interpret?";
-            guessArtist.focus(); 
-        } else if (!titleCorrect && artistCorrect) {
-            document.getElementById('status').innerText = "Interpret ist richtig! Wie heißt der Song?";
-            guessTitle.focus(); 
-        } else {
-            document.getElementById('status').innerText = "Leider falsch, versuch es weiter!";
-        }
-    }
-}
-
-function checkSimilarity(s1, s2) {
-    s1 = s1.toLowerCase().trim();
-    s2 = s2.toLowerCase().trim();
-
-    s1 = s1.replace(/\([^)]*\)/g, '').trim();
-    s2 = s2.replace(/\([^)]*\)/g, '').trim();
-
-    s1 = s1.replace(/[^\w\s\u00C0-\u017F]/g, '').replace(/\s+/g, ' ');
-    s2 = s2.replace(/[^\w\s\u00C0-\u017F]/g, '').replace(/\s+/g, ' ');
-
-    if (s1 === s2) return true; 
-
-    const len = Math.max(s1.length, s2.length);
-    if (len === 0) return false;
-
-    const dist = levenshtein(s1, s2);
-    return dist <= 3 && (dist / len) <= 0.3;
-}
-
-function levenshtein(a, b) {
-    const matrix = [];
-    for (let i = 0; i <= b.length; i++) {
-        matrix[i] = [i];
-    }
-    for (let j = 0; j <= a.length; j++) {
-        matrix[0][j] = j;
-    }
-    for (let i = 1; i <= b.length; i++) {
-        for (let j = 1; j <= a.length; j++) {
-            if (b.charAt(i - 1) === a.charAt(j - 1)) {
-                matrix[i][j] = matrix[i - 1][j - 1];
-            } else {
-                matrix[i][j] = Math.min(
-                    matrix[i - 1][j - 1] + 1, 
-                    Math.min(
-                        matrix[i][j - 1] + 1, 
-                        matrix[i - 1][j] + 1  
-                    )
-                );
-            }
-        }
-    }
-    return matrix[b.length][a.length];
+    if (titleCorrect && artistCorrect) { reveal(false); }
 }
 
 function reveal(updateStatus = true) {
-    // --- NEU: SPOTIFY MUSIK STOPPEN ---
-    stoppeSpotify();
-
-    // Vorhang ÖFFNEN (Cover zeigen)
+    //if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('curtain').classList.add('hidden');
     document.getElementById('cover-art').classList.remove('hidden');
-
-    if (updateStatus) {
-        document.getElementById('status').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title + " (" + currentSong.year + ", " + currentSong.album + ")";
-    }
-
-    // UI Reset vorbereiten
+    if (updateStatus) document.getElementById('status').innerText = `Lösung: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album})`;
+    else document.getElementById('status').innerText = `Richtig gelöst! Es war: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album})`;
     document.getElementById('start-btn').classList.remove('hidden');
     document.getElementById('start-btn').innerText = "Nächster Song";
     document.getElementById('guess-area').classList.add('hidden');
 }
 
-//Admin
-function adminReveal() {
-    if (!currentSong) {
-        document.getElementById('admin-debug').innerText = "Noch kein Song geladen.";
-        return;
-    }
-
-    document.getElementById('admin-debug').innerText = "Lösung: " + currentSong.artist + " - " + currentSong.title + " (" + currentSong.year + ", " + currentSong.album + ", " + currentSong.genre + ")";
+function goHome() {
+    if (typeof stoppeSpotify === "function") stoppeSpotify();
+    document.getElementById('start-screen').classList.remove('hidden');
+    document.getElementById('player-container').classList.add('hidden');
+    document.getElementById('game-controls').classList.add('hidden');
+    document.getElementById('song-list-screen').classList.add('hidden');
+    uiLog("Zurück zum Menü.");
 }
 
-// Initialize
+function uiLog(message) {
+    if (!adminMode) return;
+    const logList = document.getElementById('debug-log-list');
+    const entry = document.createElement('div');
+    entry.style.borderBottom = "1px solid #222";
+    entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+    logList.prepend(entry);
+}
+
+function adminReveal() {
+    if (!currentSong) return;
+    document.getElementById('admin-debug').innerText = `Admin-Info: ${currentSong.artist} - ${currentSong.title}`;
+    uiLog("Lösung per Admin-Button angezeigt.");
+}
+
+function levenshtein(a, b) {
+    const matrix = [];
+    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+    for (let i = 1; i <= b.length; i++) {
+        for (let j = 1; j <= a.length; j++) {
+            if (b.charAt(i - 1) === a.charAt(j - 1)) matrix[i][j] = matrix[i - 1][j - 1];
+            else matrix[i][j] = Math.min(matrix[i - 1][j - 1] + 1, Math.min(matrix[i][j - 1] + 1, matrix[i - 1][j] + 1));
+        }
+    }
+    return matrix[b.length][a.length];
+}
+
+// --- BUCHSTABEN RATE-LOGIK---
+function zeigeBuchstabe(typ) {
+    if (!currentSong) return;
+    
+    let targetString = "";
+    let currentCount = 0;
+    let displayElementId = "";
+    let prefix = "";
+
+    if (typ === 'titel') {
+        revealedTitleCount++;
+        targetString = cleanTitleString(currentSong.title); 
+        currentCount = revealedTitleCount;
+        displayElementId = "tipp-display-titel";
+        prefix = "Titel: ";
+    } else {
+        revealedArtistCount++;
+        targetString = currentSong.artist.trim();
+        currentCount = revealedArtistCount;
+        displayElementId = "tipp-display-interpret";
+        prefix = "Interpret: ";
+    }
+
+    if (currentCount > targetString.length) currentCount = targetString.length;
+
+    let masked = "";
+    for (let i = 0; i < targetString.length; i++) {
+        const char = targetString[i];
+        // Leerzeichen, Bindestriche, Punkte & Co IMMER zeigen
+        // Alles andere nur, wenn der Zähler es erreicht hat
+        if (char === ' ' || char === '-' || char === '&' || char === '.' || i < currentCount) {
+            masked += char;
+        } else {
+            masked += '_';
+        }
+    }
+
+    // Wir setzen Leerzeichen zwischen die Zeichen für bessere Lesbarkeit
+    // Ein echtes Leerzeichen im Wort machen wir zu drei Leerzeichen, 
+    // damit man die Wortgrenzen deutlich sieht.
+    const displayString = masked.split('').map(char => char === ' ' ? ' \u00A0 ' : char).join(' ');
+    
+    document.getElementById(displayElementId).innerText = prefix + displayString;
+}
+
+// --- EVENT LISTENERS FÜR DIE ENTER-TASTE ---
+document.getElementById('guess-title').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        checkAnswer();
+    }
+});
+
+document.getElementById('guess-artist').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopPropagation();
+        checkAnswer();
+    }
+});
+
+// --- ENTER-TASTE FÜR NÄCHSTEN SONG ---
+// --- GLOBALE TASTEN-EVENTS (Enter & Shift+Enter) ---
+document.addEventListener('keydown', function (e) {
+    
+    // FALL 1: Shift + Enter wird gedrückt -> AUFLÖSEN
+    if (e.key === 'Enter' && e.shiftKey) {
+        const guessArea = document.getElementById('guess-area');
+        
+        // Nur auflösen, wenn die Rate-Area gerade sichtbar ist
+        if (guessArea && !guessArea.classList.contains('hidden')) {
+            e.preventDefault(); // Verhindert z.B. das Einfügen von Zeilenumbrüchen
+            console.log("Auflösen per Tastenkombination!");
+            reveal(); // Ruft deine bestehende Auflösen-Funktion auf
+        }
+    }
+    
+    // FALL 2: NUR Enter wird gedrückt -> NÄCHSTER SONG
+    else if (e.key === 'Enter' && !e.shiftKey) {
+        const startBtn = document.getElementById('start-btn');
+        const guessArea = document.getElementById('guess-area');
+        
+        // Wir prüfen: Ist der Button sichtbar UND die Rate-Area versteckt?
+        if (startBtn && !startBtn.classList.contains('hidden') && guessArea && guessArea.classList.contains('hidden')) {
+            e.preventDefault();
+            startGame(); // Nächste Runde starten!
+        }
+    }
+});
+
 loadSongs();

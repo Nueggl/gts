@@ -1,3 +1,4 @@
--Fehler bei Eingabe ermöglichen
--Tags für songs? maybe release datum --> kategorien für verschiedene Modi
--mehr songs hinzufügen
+-UI verschönern
+-filtern nach aufrufen? od insg popularität (--> maybe KI schätzen lassen um api limits zu vermeiden)
+-dauer des songs einstellen; stelle des songs einstellen (random, anfang, ...)
+-diagram zum einstellen der wsk der jahrzehnte
