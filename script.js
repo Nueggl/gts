@@ -215,6 +215,9 @@ function startGame() {
     revealedArtistCount = 0;
     document.getElementById('tipp-display-interpret').innerText = "";
     document.getElementById('tipp-display-titel').innerText = "";
+    document.getElementById('tipp-btn-allgemein').innerText = "Allg. Tipp 🤖";
+    document.getElementById('tipp-btn-interpret').innerText = "Tipp zum Interpret 👤";
+    document.getElementById('tipp-btn-titel').innerText = "Tipp zum Titel 🎵";
 
     const randomStart = Math.floor(Math.random() * 60) + 20;
     if (currentSong.spotifyUri) {
