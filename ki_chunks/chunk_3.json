@@ -1,0 +1,502 @@
+[
+    {
+        "t": "I Walk the Line",
+        "a": "Johnny Cash",
+        "p": 82
+    },
+    {
+        "t": "Man in Black",
+        "a": "Johnny Cash",
+        "p": 60
+    },
+    {
+        "t": "Sunday Morning Coming Down - Live at Ryman Auditorium, Nashville, TN - July 1970",
+        "a": "Johnny Cash",
+        "p": 45
+    },
+    {
+        "t": "Crazy - Single Version",
+        "a": "Patsy Cline",
+        "p": 75
+    },
+    {
+        "t": "I Fall To Pieces - Single Version",
+        "a": "Patsy Cline",
+        "p": 65
+    },
+    {
+        "t": "Stand By Your Man",
+        "a": "Tammy Wynette",
+        "p": 70
+    },
+    {
+        "t": "He Stopped Loving Her Today",
+        "a": "George Jones",
+        "p": 55
+    },
+    {
+        "t": "Your Cheatin' Heart",
+        "a": "Hank Williams",
+        "p": 65
+    },
+    {
+        "t": "I'm So Lonesome I Could Cry",
+        "a": "Hank Williams",
+        "p": 60
+    },
+    {
+        "t": "Hey, Good Lookin'",
+        "a": "Hank Williams",
+        "p": 70
+    },
+    {
+        "t": "Jambalaya (On The Bayou)",
+        "a": "Hank Williams",
+        "p": 55
+    },
+    {
+        "t": "Blue Eyes Crying In the Rain",
+        "a": "Willie Nelson",
+        "p": 60
+    },
+    {
+        "t": "On the Road Again",
+        "a": "Willie Nelson",
+        "p": 80
+    },
+    {
+        "t": "Always On My Mind",
+        "a": "Willie Nelson",
+        "p": 75
+    },
+    {
+        "t": "Mammas Don't Let Your Babies Grow up to Be Cowboys",
+        "a": "Waylon Jennings",
+        "p": 65
+    },
+    {
+        "t": "Luckenbach, Texas (Back to the Basics of Love) (feat. Willie Nelson)",
+        "a": "Waylon Jennings",
+        "p": 50
+    },
+    {
+        "t": "Good Hearted Woman",
+        "a": "Waylon Jennings",
+        "p": 45
+    },
+    {
+        "t": "I've Always Been Crazy",
+        "a": "Waylon Jennings",
+        "p": 40
+    },
+    {
+        "t": "The Gambler",
+        "a": "Kenny Rogers",
+        "p": 85
+    },
+    {
+        "t": "Lucille",
+        "a": "Kenny Rogers",
+        "p": 65
+    },
+    {
+        "t": "Coward Of The County",
+        "a": "Kenny Rogers",
+        "p": 55
+    },
+    {
+        "t": "Islands In the Stream",
+        "a": "Dolly Parton",
+        "p": 82
+    },
+    {
+        "t": "Rhinestone Cowboy",
+        "a": "Glen Campbell",
+        "p": 75
+    },
+    {
+        "t": "Wichita Lineman - Remastered 2001",
+        "a": "Glen Campbell",
+        "p": 65
+    },
+    {
+        "t": "Galveston - Remastered 2001",
+        "a": "Glen Campbell",
+        "p": 45
+    },
+    {
+        "t": "By The Time I Get To Phoenix - Remastered 2001",
+        "a": "Glen Campbell",
+        "p": 50
+    },
+    {
+        "t": "Gentle On My Mind - Remastered 2001",
+        "a": "Glen Campbell",
+        "p": 55
+    },
+    {
+        "t": "Suspicious Minds",
+        "a": "Elvis Presley",
+        "p": 88
+    },
+    {
+        "t": "Jailhouse Rock",
+        "a": "Elvis Presley",
+        "p": 92
+    },
+    {
+        "t": "Hound Dog",
+        "a": "Elvis Presley",
+        "p": 90
+    },
+    {
+        "t": "Can't Help Falling in Love",
+        "a": "Elvis Presley",
+        "p": 94
+    },
+    {
+        "t": "Love Me Tender",
+        "a": "Elvis Presley",
+        "p": 85
+    },
+    {
+        "t": "Heartbreak Hotel",
+        "a": "Elvis Presley",
+        "p": 82
+    },
+    {
+        "t": "Don't Be Cruel",
+        "a": "Elvis Presley",
+        "p": 78
+    },
+    {
+        "t": "All Shook Up",
+        "a": "Elvis Presley",
+        "p": 75
+    },
+    {
+        "t": "Return to Sender - From \"Girls! Girls! Girls!\"",
+        "a": "Elvis Presley",
+        "p": 70
+    },
+    {
+        "t": "Are You Lonesome Tonight?",
+        "a": "Elvis Presley",
+        "p": 68
+    },
+    {
+        "t": "It's Now or Never",
+        "a": "Elvis Presley",
+        "p": 72
+    },
+    {
+        "t": "A Little Less Conversation - JXL Radio Edit Remix",
+        "a": "Elvis Presley",
+        "p": 75
+    },
+    {
+        "t": "In the Ghetto",
+        "a": "Elvis Presley",
+        "p": 75
+    },
+    {
+        "t": "Blue Suede Shoes",
+        "a": "Elvis Presley",
+        "p": 88
+    },
+    {
+        "t": "That's All Right",
+        "a": "Elvis Presley",
+        "p": 70
+    },
+    {
+        "t": "Good Morning Judge",
+        "a": "Wynonie Harris",
+        "p": 25
+    },
+    {
+        "t": "Rocket 88 - Single Version",
+        "a": "Jackie Brenston & His Delta Cats",
+        "p": 38
+    },
+    {
+        "t": "Tutti Frutti",
+        "a": "Little Richard",
+        "p": 85
+    },
+    {
+        "t": "Long Tall Sally (The Thing)",
+        "a": "Little Richard",
+        "p": 75
+    },
+    {
+        "t": "Good Golly Miss Molly",
+        "a": "Little Richard",
+        "p": 75
+    },
+    {
+        "t": "Lucille",
+        "a": "Little Richard",
+        "p": 65
+    },
+    {
+        "t": "Rip It Up",
+        "a": "Little Richard",
+        "p": 55
+    },
+    {
+        "t": "ALL THE LOVE (feat. Andre Troutman)",
+        "a": "Kanye West",
+        "p": 15
+    },
+    {
+        "t": "Do You Really Want To Hurt Me",
+        "a": "Culture Club",
+        "p": 78
+    },
+    {
+        "t": "Hyper Hyper",
+        "a": "Scooter",
+        "p": 65
+    },
+    {
+        "t": "Move Your Ass!",
+        "a": "Scooter",
+        "p": 55
+    },
+    {
+        "t": "How Much Is The Fish?",
+        "a": "Scooter",
+        "p": 68
+    },
+    {
+        "t": "Wahnsinn",
+        "a": "Wolfgang Petry",
+        "p": 60
+    },
+    {
+        "t": "Verlieben, verloren, vergessen, verzeih'n",
+        "a": "Wolfgang Petry",
+        "p": 55
+    },
+    {
+        "t": "Ice Ice Baby",
+        "a": "Vanilla Ice",
+        "p": 85
+    },
+    {
+        "t": "Stayin' Alive - From \"Saturday Night Fever\" Soundtrack",
+        "a": "Bee Gees",
+        "p": 98
+    },
+    {
+        "t": "Go Your Own Way - 2004 Remaster",
+        "a": "Fleetwood Mac",
+        "p": 88
+    },
+    {
+        "t": "Don't Stop 'Til You Get Enough",
+        "a": "Michael Jackson",
+        "p": 92
+    },
+    {
+        "t": "Another Brick in the Wall, Pt. 2",
+        "a": "Pink Floyd",
+        "p": 95
+    },
+    {
+        "t": "I Will Survive",
+        "a": "Gloria Gaynor",
+        "p": 96
+    },
+    {
+        "t": "Night Fever - From \"Saturday Night Fever\" Soundtrack",
+        "a": "Bee Gees",
+        "p": 85
+    },
+    {
+        "t": "Dreams - 2004 Remaster",
+        "a": "Fleetwood Mac",
+        "p": 94
+    },
+    {
+        "t": "September",
+        "a": "Earth, Wind & Fire",
+        "p": 96
+    },
+    {
+        "t": "Heart Of Glass",
+        "a": "Blondie",
+        "p": 86
+    },
+    {
+        "t": "Mamma Mia",
+        "a": "ABBA",
+        "p": 92
+    },
+    {
+        "t": "Y.M.C.A",
+        "a": "Village People",
+        "p": 95
+    },
+    {
+        "t": "Le Freak - 2018 Remaster",
+        "a": "CHIC",
+        "p": 82
+    },
+    {
+        "t": "Rocket Man (I Think It's Going To Be A Long, Long Time)",
+        "a": "Elton John",
+        "p": 92
+    },
+    {
+        "t": "Tiny Dancer",
+        "a": "Elton John",
+        "p": 88
+    },
+    {
+        "t": "Your Song",
+        "a": "Elton John",
+        "p": 85
+    },
+    {
+        "t": "Life on Mars? - 2015 Remaster",
+        "a": "David Bowie",
+        "p": 86
+    },
+    {
+        "t": "Starman - 2012 Remaster",
+        "a": "David Bowie",
+        "p": 85
+    },
+    {
+        "t": "Kashmir - Remaster",
+        "a": "Led Zeppelin",
+        "p": 85
+    },
+    {
+        "t": "Immigrant Song - Remaster",
+        "a": "Led Zeppelin",
+        "p": 88
+    },
+    {
+        "t": "Black Dog - Remaster",
+        "a": "Led Zeppelin",
+        "p": 82
+    },
+    {
+        "t": "We Will Rock You - Remastered 2011",
+        "a": "Queen",
+        "p": 98
+    },
+    {
+        "t": "We Are The Champions - Remastered 2011",
+        "a": "Queen",
+        "p": 98
+    },
+    {
+        "t": "Don't Stop Me Now - Remastered 2011",
+        "a": "Queen",
+        "p": 94
+    },
+    {
+        "t": "Killer Queen - Remastered 2011",
+        "a": "Queen",
+        "p": 82
+    },
+    {
+        "t": "Somebody To Love - Remastered 2011",
+        "a": "Queen",
+        "p": 88
+    },
+    {
+        "t": "Waterloo",
+        "a": "ABBA",
+        "p": 85
+    },
+    {
+        "t": "Take A Chance On Me",
+        "a": "ABBA",
+        "p": 82
+    },
+    {
+        "t": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+        "a": "ABBA",
+        "p": 88
+    },
+    {
+        "t": "Knowing Me, Knowing You",
+        "a": "ABBA",
+        "p": 75
+    },
+    {
+        "t": "How Deep Is Your Love",
+        "a": "Bee Gees",
+        "p": 85
+    },
+    {
+        "t": "Jive Talkin'",
+        "a": "Bee Gees",
+        "p": 70
+    },
+    {
+        "t": "Tragedy",
+        "a": "Bee Gees",
+        "p": 75
+    },
+    {
+        "t": "Wish You Were Here",
+        "a": "Pink Floyd",
+        "p": 92
+    },
+    {
+        "t": "Money",
+        "a": "Pink Floyd",
+        "p": 86
+    },
+    {
+        "t": "Comfortably Numb",
+        "a": "Pink Floyd",
+        "p": 90
+    },
+    {
+        "t": "Take It Easy - 2013 Remaster",
+        "a": "Eagles",
+        "p": 82
+    },
+    {
+        "t": "Desperado - 2013 Remaster",
+        "a": "Eagles",
+        "p": 75
+    },
+    {
+        "t": "One of These Nights - 2013 Remaster",
+        "a": "Eagles",
+        "p": 72
+    },
+    {
+        "t": "The Chain - 2004 Remaster",
+        "a": "Fleetwood Mac",
+        "p": 88
+    },
+    {
+        "t": "Don't Stop - 2004 Remaster",
+        "a": "Fleetwood Mac",
+        "p": 80
+    },
+    {
+        "t": "Rhiannon",
+        "a": "Fleetwood Mac",
+        "p": 80
+    },
+    {
+        "t": "Sir Duke",
+        "a": "Stevie Wonder",
+        "p": 82
+    },
+    {
+        "t": "Isn't She Lovely",
+        "a": "Stevie Wonder",
+        "p": 88
+    }
+]

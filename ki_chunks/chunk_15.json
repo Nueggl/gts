@@ -1,0 +1,502 @@
+[
+    {
+        "t": "Centuries",
+        "a": "Fall Out Boy",
+        "p": 65
+    },
+    {
+        "t": "My Songs Know What You Did In The Dark (Light Em Up)",
+        "a": "Fall Out Boy",
+        "p": 62
+    },
+    {
+        "t": "Geronimo",
+        "a": "Sheppard",
+        "p": 45
+    },
+    {
+        "t": "Brave",
+        "a": "Sara Bareilles",
+        "p": 55
+    },
+    {
+        "t": "Fight Song",
+        "a": "Rachel Platten",
+        "p": 58
+    },
+    {
+        "t": "Try Everything - aus \"Zoomania\"",
+        "a": "Shakira",
+        "p": 48
+    },
+    {
+        "t": "CAN'T STOP THE FEELING! (from DreamWorks Animation's \"TROLLS\")",
+        "a": "Justin Timberlake",
+        "p": 82
+    },
+    {
+        "t": "Mirrors",
+        "a": "Justin Timberlake",
+        "p": 72
+    },
+    {
+        "t": "Suit & Tie (feat. JAY-Z)",
+        "a": "Justin Timberlake",
+        "p": 64
+    },
+    {
+        "t": "Earned It (Fifty Shades Of Grey)",
+        "a": "The Weeknd",
+        "p": 68
+    },
+    {
+        "t": "Die Young",
+        "a": "Kesha",
+        "p": 65
+    },
+    {
+        "t": "Glad You Came",
+        "a": "The Wanted",
+        "p": 65
+    },
+    {
+        "t": "What Makes You Beautiful",
+        "a": "One Direction",
+        "p": 85
+    },
+    {
+        "t": "Story of My Life",
+        "a": "One Direction",
+        "p": 68
+    },
+    {
+        "t": "Drag Me Down",
+        "a": "One Direction",
+        "p": 60
+    },
+    {
+        "t": "Perfect",
+        "a": "One Direction",
+        "p": 58
+    },
+    {
+        "t": "Best Song Ever",
+        "a": "One Direction",
+        "p": 62
+    },
+    {
+        "t": "Jealous",
+        "a": "Nick Jonas",
+        "p": 55
+    },
+    {
+        "t": "Sucker",
+        "a": "Jonas Brothers",
+        "p": 68
+    },
+    {
+        "t": "Meant to Be (feat. Florida Georgia Line)",
+        "a": "Bebe Rexha",
+        "p": 58
+    },
+    {
+        "t": "Trap Queen",
+        "a": "Fetty Wap",
+        "p": 75
+    },
+    {
+        "t": "Panda",
+        "a": "Desiigner",
+        "p": 65
+    },
+    {
+        "t": "Mask Off",
+        "a": "Future",
+        "p": 70
+    },
+    {
+        "t": "XO Tour Llif3",
+        "a": "Lil Uzi Vert",
+        "p": 74
+    },
+    {
+        "t": "The Box",
+        "a": "Roddy Ricch",
+        "p": 72
+    },
+    {
+        "t": "Gucci Gang",
+        "a": "Lil Pump",
+        "p": 55
+    },
+    {
+        "t": "SAD!",
+        "a": "XXXTENTACION",
+        "p": 75
+    },
+    {
+        "t": "Jocelyn Flores",
+        "a": "XXXTENTACION",
+        "p": 68
+    },
+    {
+        "t": "ROXANNE",
+        "a": "Arizona Zervas",
+        "p": 50
+    },
+    {
+        "t": "Sweet but Psycho",
+        "a": "Ava Max",
+        "p": 68
+    },
+    {
+        "t": "Let Me Go (with Alesso, Florida Georgia Line & watt)",
+        "a": "Hailee Steinfeld",
+        "p": 45
+    },
+    {
+        "t": "Starving",
+        "a": "Hailee Steinfeld",
+        "p": 55
+    },
+    {
+        "t": "The Middle",
+        "a": "Zedd",
+        "p": 65
+    },
+    {
+        "t": "Clarity (feat. Foxes) - Tiësto Remix",
+        "a": "Zedd",
+        "p": 60
+    },
+    {
+        "t": "Stay",
+        "a": "Zedd",
+        "p": 62
+    },
+    {
+        "t": "Scars To Your Beautiful",
+        "a": "Alessia Cara",
+        "p": 55
+    },
+    {
+        "t": "Here",
+        "a": "Alessia Cara",
+        "p": 58
+    },
+    {
+        "t": "Issues",
+        "a": "Julia Michaels",
+        "p": 55
+    },
+    {
+        "t": "Say You Won't Let Go",
+        "a": "James Arthur",
+        "p": 78
+    },
+    {
+        "t": "Hold Back The River",
+        "a": "James Bay",
+        "p": 62
+    },
+    {
+        "t": "Budapest",
+        "a": "George Ezra",
+        "p": 68
+    },
+    {
+        "t": "Shotgun",
+        "a": "George Ezra",
+        "p": 65
+    },
+    {
+        "t": "More Than You Know",
+        "a": "Axwell /\\ Ingrosso",
+        "p": 68
+    },
+    {
+        "t": "Sun Is Shining",
+        "a": "Axwell /\\ Ingrosso",
+        "p": 62
+    },
+    {
+        "t": "Heroes (we could be)",
+        "a": "Alesso",
+        "p": 65
+    },
+    {
+        "t": "Hall of Fame (feat. will.i.am)",
+        "a": "The Script",
+        "p": 75
+    },
+    {
+        "t": "Superheroes",
+        "a": "The Script",
+        "p": 58
+    },
+    {
+        "t": "Me, Myself & I",
+        "a": "G-Eazy",
+        "p": 65
+    },
+    {
+        "t": "Timber",
+        "a": "Pitbull",
+        "p": 82
+    },
+    {
+        "t": "Side To Side",
+        "a": "Ariana Grande",
+        "p": 70
+    },
+    {
+        "t": "This Is What You Came For",
+        "a": "Calvin Harris",
+        "p": 75
+    },
+    {
+        "t": "Somebody That I Used To Know",
+        "a": "Gotye",
+        "p": 88
+    },
+    {
+        "t": "Work",
+        "a": "Rihanna",
+        "p": 76
+    },
+    {
+        "t": "Problem",
+        "a": "Ariana Grande",
+        "p": 72
+    },
+    {
+        "t": "Baby",
+        "a": "Justin Bieber",
+        "p": 88
+    },
+    {
+        "t": "F**kin' Perfect - Radio Edit",
+        "a": "P!nk",
+        "p": 65
+    },
+    {
+        "t": "Where Are Ü Now (with Justin Bieber)",
+        "a": "Jack Ü",
+        "p": 68
+    },
+    {
+        "t": "Heat Waves",
+        "a": "Glass Animals",
+        "p": 84
+    },
+    {
+        "t": "vampire",
+        "a": "Olivia Rodrigo",
+        "p": 74
+    },
+    {
+        "t": "Flowers",
+        "a": "Miley Cyrus",
+        "p": 86
+    },
+    {
+        "t": "Fortnight (feat. Post Malone)",
+        "a": "Taylor Swift",
+        "p": 65
+    },
+    {
+        "t": "Kiss Me More (feat. SZA)",
+        "a": "Doja Cat",
+        "p": 72
+    },
+    {
+        "t": "Paint The Town Red",
+        "a": "Doja Cat",
+        "p": 75
+    },
+    {
+        "t": "Say So",
+        "a": "Doja Cat",
+        "p": 78
+    },
+    {
+        "t": "MONTERO (Call Me By Your Name)",
+        "a": "Lil Nas X",
+        "p": 76
+    },
+    {
+        "t": "INDUSTRY BABY (feat. Jack Harlow)",
+        "a": "Lil Nas X",
+        "p": 74
+    },
+    {
+        "t": "First Class",
+        "a": "Jack Harlow",
+        "p": 68
+    },
+    {
+        "t": "Lovin On Me",
+        "a": "Jack Harlow",
+        "p": 65
+    },
+    {
+        "t": "Easy On Me",
+        "a": "Adele",
+        "p": 75
+    },
+    {
+        "t": "Bad Habits",
+        "a": "Ed Sheeran",
+        "p": 74
+    },
+    {
+        "t": "Shivers",
+        "a": "Ed Sheeran",
+        "p": 68
+    },
+    {
+        "t": "WAP (feat. Megan Thee Stallion)",
+        "a": "Cardi B",
+        "p": 78
+    },
+    {
+        "t": "Up",
+        "a": "Cardi B",
+        "p": 62
+    },
+    {
+        "t": "Savage Remix (feat. Beyoncé)",
+        "a": "Megan Thee Stallion",
+        "p": 68
+    },
+    {
+        "t": "TEXAS HOLD 'EM",
+        "a": "Beyoncé",
+        "p": 70
+    },
+    {
+        "t": "BREAK MY SOUL",
+        "a": "Beyoncé",
+        "p": 65
+    },
+    {
+        "t": "Espresso",
+        "a": "Sabrina Carpenter",
+        "p": 82
+    },
+    {
+        "t": "Please Please Please",
+        "a": "Sabrina Carpenter",
+        "p": 74
+    },
+    {
+        "t": "Taste",
+        "a": "Sabrina Carpenter",
+        "p": 72
+    },
+    {
+        "t": "Beautiful Things",
+        "a": "Benson Boone",
+        "p": 76
+    },
+    {
+        "t": "Lose Control",
+        "a": "Teddy Swims",
+        "p": 75
+    },
+    {
+        "t": "Too Sweet",
+        "a": "Hozier",
+        "p": 74
+    },
+    {
+        "t": "A Bar Song (Tipsy)",
+        "a": "Shaboozey",
+        "p": 78
+    },
+    {
+        "t": "I Had Some Help (Feat. Morgan Wallen)",
+        "a": "Post Malone",
+        "p": 72
+    },
+    {
+        "t": "Last Night",
+        "a": "Morgan Wallen",
+        "p": 80
+    },
+    {
+        "t": "Fast Car",
+        "a": "Luke Combs",
+        "p": 70
+    },
+    {
+        "t": "Something in the Orange",
+        "a": "Zach Bryan",
+        "p": 68
+    },
+    {
+        "t": "I Remember Everything (feat. Kacey Musgraves)",
+        "a": "Zach Bryan",
+        "p": 66
+    },
+    {
+        "t": "Stick Season",
+        "a": "Noah Kahan",
+        "p": 75
+    },
+    {
+        "t": "Dial Drunk (with Post Malone)",
+        "a": "Noah Kahan",
+        "p": 62
+    },
+    {
+        "t": "Not Like Us",
+        "a": "Kendrick Lamar",
+        "p": 82
+    },
+    {
+        "t": "Like That",
+        "a": "Future",
+        "p": 65
+    },
+    {
+        "t": "MILLION DOLLAR BABY",
+        "a": "Tommy Richman",
+        "p": 62
+    },
+    {
+        "t": "Good Luck, Babe!",
+        "a": "Chappell Roan",
+        "p": 76
+    },
+    {
+        "t": "HOT TO GO!",
+        "a": "Chappell Roan",
+        "p": 72
+    },
+    {
+        "t": "BIRDS OF A FEATHER",
+        "a": "Billie Eilish",
+        "p": 78
+    },
+    {
+        "t": "LUNCH",
+        "a": "Billie Eilish",
+        "p": 65
+    },
+    {
+        "t": "What Was I Made For? [From The Motion Picture \"Barbie\"]",
+        "a": "Billie Eilish",
+        "p": 75
+    },
+    {
+        "t": "Happier Than Ever",
+        "a": "Billie Eilish",
+        "p": 72
+    },
+    {
+        "t": "Die With A Smile",
+        "a": "Lady Gaga",
+        "p": 74
+    }
+]

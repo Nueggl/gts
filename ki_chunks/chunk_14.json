@@ -1,0 +1,502 @@
+[
+    {
+        "t": "We Don't Talk Anymore (feat. Selena Gomez)",
+        "a": "Charlie Puth",
+        "p": 78
+    },
+    {
+        "t": "Lean On (feat. MØ & DJ Snake)",
+        "a": "Major Lazer",
+        "p": 88
+    },
+    {
+        "t": "Cold Water (feat. Justin Bieber & MØ)",
+        "a": "Major Lazer",
+        "p": 76
+    },
+    {
+        "t": "Let Me Love You - Tiësto's AFTR:HRS Mix",
+        "a": "DJ Snake",
+        "p": 80
+    },
+    {
+        "t": "Taki Taki (feat. Selena Gomez, Ozuna & Cardi B)",
+        "a": "DJ Snake",
+        "p": 84
+    },
+    {
+        "t": "Sorry Not Sorry",
+        "a": "Demi Lovato",
+        "p": 68
+    },
+    {
+        "t": "Cool for the Summer",
+        "a": "Demi Lovato",
+        "p": 72
+    },
+    {
+        "t": "Waka Waka (This Time for Africa) - K-Mix",
+        "a": "Shakira",
+        "p": 96
+    },
+    {
+        "t": "Danza Kuduro",
+        "a": "Don Omar",
+        "p": 90
+    },
+    {
+        "t": "Bailando - Spanish Version",
+        "a": "Enrique Iglesias",
+        "p": 88
+    },
+    {
+        "t": "Mi Gente",
+        "a": "J Balvin",
+        "p": 85
+    },
+    {
+        "t": "Échame La Culpa",
+        "a": "Luis Fonsi",
+        "p": 68
+    },
+    {
+        "t": "I Took A Pill In Ibiza - Seeb Remix",
+        "a": "Mike Posner",
+        "p": 85
+    },
+    {
+        "t": "Cheerleader (Felix Jaehn Remix) - Radio Edit",
+        "a": "OMI",
+        "p": 86
+    },
+    {
+        "t": "Stressed Out",
+        "a": "Twenty One Pilots",
+        "p": 88
+    },
+    {
+        "t": "Ride",
+        "a": "Twenty One Pilots",
+        "p": 80
+    },
+    {
+        "t": "Heathens",
+        "a": "Twenty One Pilots",
+        "p": 82
+    },
+    {
+        "t": "Feel It Still",
+        "a": "Portugal. The Man",
+        "p": 75
+    },
+    {
+        "t": "Cake By The Ocean",
+        "a": "DNCE",
+        "p": 70
+    },
+    {
+        "t": "Shut Up and Dance",
+        "a": "WALK THE MOON",
+        "p": 84
+    },
+    {
+        "t": "Pompeii",
+        "a": "Bastille",
+        "p": 85
+    },
+    {
+        "t": "Riptide",
+        "a": "Vance Joy",
+        "p": 84
+    },
+    {
+        "t": "Let Her Go",
+        "a": "Passenger",
+        "p": 88
+    },
+    {
+        "t": "Ho Hey",
+        "a": "The Lumineers",
+        "p": 82
+    },
+    {
+        "t": "Little Talks",
+        "a": "Of Monsters and Men",
+        "p": 78
+    },
+    {
+        "t": "Some Nights",
+        "a": "fun.",
+        "p": 78
+    },
+    {
+        "t": "We Are Young (feat. Janelle Monáe)",
+        "a": "fun.",
+        "p": 86
+    },
+    {
+        "t": "Pumped Up Kicks",
+        "a": "Foster The People",
+        "p": 88
+    },
+    {
+        "t": "Take Care",
+        "a": "Drake",
+        "p": 82
+    },
+    {
+        "t": "Hold On, We're Going Home",
+        "a": "Drake",
+        "p": 84
+    },
+    {
+        "t": "Born This Way",
+        "a": "Lady Gaga",
+        "p": 90
+    },
+    {
+        "t": "The Edge Of Glory",
+        "a": "Lady Gaga",
+        "p": 78
+    },
+    {
+        "t": "Applause",
+        "a": "Lady Gaga",
+        "p": 76
+    },
+    {
+        "t": "Million Reasons",
+        "a": "Lady Gaga",
+        "p": 65
+    },
+    {
+        "t": "Sign of the Times",
+        "a": "Harry Styles",
+        "p": 85
+    },
+    {
+        "t": "PILLOWTALK",
+        "a": "ZAYN",
+        "p": 80
+    },
+    {
+        "t": "I Don't Care",
+        "a": "Ed Sheeran",
+        "p": 84
+    },
+    {
+        "t": "Galway Girl",
+        "a": "Ed Sheeran",
+        "p": 78
+    },
+    {
+        "t": "Symphony (feat. Zara Larsson)",
+        "a": "Clean Bandit",
+        "p": 78
+    },
+    {
+        "t": "Rockabye (feat. Sean Paul & Anne-Marie)",
+        "a": "Clean Bandit",
+        "p": 85
+    },
+    {
+        "t": "Rather Be (feat. Jess Glynne)",
+        "a": "Clean Bandit",
+        "p": 86
+    },
+    {
+        "t": "Faded",
+        "a": "Alan Walker",
+        "p": 88
+    },
+    {
+        "t": "Animals",
+        "a": "Martin Garrix",
+        "p": 86
+    },
+    {
+        "t": "Scared to Be Lonely",
+        "a": "Martin Garrix",
+        "p": 68
+    },
+    {
+        "t": "In the Name of Love",
+        "a": "Martin Garrix",
+        "p": 76
+    },
+    {
+        "t": "How Deep Is Your Love",
+        "a": "Calvin Harris",
+        "p": 82
+    },
+    {
+        "t": "One Kiss (with Dua Lipa)",
+        "a": "Calvin Harris",
+        "p": 85
+    },
+    {
+        "t": "Someone You Loved",
+        "a": "Lewis Capaldi",
+        "p": 90
+    },
+    {
+        "t": "Love Lies",
+        "a": "Khalid",
+        "p": 76
+    },
+    {
+        "t": "Young Dumb & Broke",
+        "a": "Khalid",
+        "p": 78
+    },
+    {
+        "t": "Talk (feat. Disclosure)",
+        "a": "Khalid",
+        "p": 68
+    },
+    {
+        "t": "Unforgettable",
+        "a": "French Montana",
+        "p": 84
+    },
+    {
+        "t": "I'm the One (feat. Justin Bieber, Quavo, Chance the Rapper & Lil Wayne)",
+        "a": "DJ Khaled",
+        "p": 82
+    },
+    {
+        "t": "Wild Thoughts (feat. Rihanna & Bryson Tiller)",
+        "a": "DJ Khaled",
+        "p": 82
+    },
+    {
+        "t": "Needed Me",
+        "a": "Rihanna",
+        "p": 78
+    },
+    {
+        "t": "Bitch Better Have My Money",
+        "a": "Rihanna",
+        "p": 82
+    },
+    {
+        "t": "FourFiveSeconds",
+        "a": "Rihanna",
+        "p": 84
+    },
+    {
+        "t": "Love The Way You Lie",
+        "a": "Eminem",
+        "p": 92
+    },
+    {
+        "t": "The Monster (feat. Rihanna)",
+        "a": "Eminem",
+        "p": 86
+    },
+    {
+        "t": "Not Afraid",
+        "a": "Eminem",
+        "p": 88
+    },
+    {
+        "t": "Rap God",
+        "a": "Eminem",
+        "p": 85
+    },
+    {
+        "t": "Love Me Like You Do - From \"Fifty Shades Of Grey\"",
+        "a": "Ellie Goulding",
+        "p": 88
+    },
+    {
+        "t": "Burn",
+        "a": "Ellie Goulding",
+        "p": 78
+    },
+    {
+        "t": "Lights - Single Version",
+        "a": "Ellie Goulding",
+        "p": 80
+    },
+    {
+        "t": "Just Give Me a Reason (feat. Nate Ruess)",
+        "a": "P!nk",
+        "p": 86
+    },
+    {
+        "t": "Try",
+        "a": "P!nk",
+        "p": 80
+    },
+    {
+        "t": "Raise Your Glass",
+        "a": "P!nk",
+        "p": 82
+    },
+    {
+        "t": "What About Us",
+        "a": "P!nk",
+        "p": 80
+    },
+    {
+        "t": "DJ Got Us Fallin' In Love (feat. Pitbull)",
+        "a": "USHER",
+        "p": 88
+    },
+    {
+        "t": "Scream & Shout",
+        "a": "will.i.am",
+        "p": 85
+    },
+    {
+        "t": "Super Bass",
+        "a": "Nicki Minaj",
+        "p": 88
+    },
+    {
+        "t": "Starships",
+        "a": "Nicki Minaj",
+        "p": 86
+    },
+    {
+        "t": "Anaconda",
+        "a": "Nicki Minaj",
+        "p": 85
+    },
+    {
+        "t": "Into You",
+        "a": "Ariana Grande",
+        "p": 82
+    },
+    {
+        "t": "Bang Bang",
+        "a": "Jessie J",
+        "p": 85
+    },
+    {
+        "t": "Price Tag",
+        "a": "Jessie J",
+        "p": 84
+    },
+    {
+        "t": "Domino",
+        "a": "Jessie J",
+        "p": 78
+    },
+    {
+        "t": "Rude",
+        "a": "MAGIC!",
+        "p": 86
+    },
+    {
+        "t": "Stolen Dance",
+        "a": "Milky Chance",
+        "p": 85
+    },
+    {
+        "t": "Are You With Me",
+        "a": "Lost Frequencies",
+        "p": 72
+    },
+    {
+        "t": "Ain't Nobody (Loves Me Better) (feat. Jasmine Thompson)",
+        "a": "Felix Jaehn",
+        "p": 74
+    },
+    {
+        "t": "Sugar (feat. Francesco Yates)",
+        "a": "Robin Schulz",
+        "p": 80
+    },
+    {
+        "t": "Prayer in C - Robin Schulz Radio Edit",
+        "a": "Lilly Wood and The Prick",
+        "p": 84
+    },
+    {
+        "t": "Waves [feat. Chris Brown & T.I.] - Robin Schulz Remix",
+        "a": "Mr. Probz",
+        "p": 84
+    },
+    {
+        "t": "Give Me Everything (feat. Nayer)",
+        "a": "Pitbull",
+        "p": 90
+    },
+    {
+        "t": "Time of Our Lives",
+        "a": "Pitbull",
+        "p": 88
+    },
+    {
+        "t": "Feel This Moment (feat. Christina Aguilera)",
+        "a": "Pitbull",
+        "p": 85
+    },
+    {
+        "t": "International Love (feat. Chris Brown)",
+        "a": "Pitbull",
+        "p": 84
+    },
+    {
+        "t": "Yeah 3x",
+        "a": "Chris Brown",
+        "p": 78
+    },
+    {
+        "t": "Look At Me Now (feat. Lil' Wayne & Busta Rhymes)",
+        "a": "Chris Brown",
+        "p": 80
+    },
+    {
+        "t": "a thousand years",
+        "a": "Christina Perri",
+        "p": 88
+    },
+    {
+        "t": "jar of hearts",
+        "a": "Christina Perri",
+        "p": 80
+    },
+    {
+        "t": "Dynamite",
+        "a": "Taio Cruz",
+        "p": 88
+    },
+    {
+        "t": "Break Your Heart",
+        "a": "Taio Cruz",
+        "p": 84
+    },
+    {
+        "t": "Talk Dirty (feat. 2 Chainz)",
+        "a": "Jason Derulo",
+        "p": 82
+    },
+    {
+        "t": "Want to Want Me",
+        "a": "Jason Derulo",
+        "p": 80
+    },
+    {
+        "t": "Wiggle (feat. Snoop Dogg)",
+        "a": "Jason Derulo",
+        "p": 82
+    },
+    {
+        "t": "Trumpets",
+        "a": "Jason Derulo",
+        "p": 78
+    },
+    {
+        "t": "Lush Life",
+        "a": "Zara Larsson",
+        "p": 84
+    },
+    {
+        "t": "High Hopes",
+        "a": "Panic! At The Disco",
+        "p": 88
+    }
+]

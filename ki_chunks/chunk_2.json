@@ -1,0 +1,502 @@
+[
+    {
+        "t": "I Knew You Were Trouble.",
+        "a": "Taylor Swift",
+        "p": 68
+    },
+    {
+        "t": "We Are Never Ever Getting Back Together (Taylor's Version)",
+        "a": "Taylor Swift",
+        "p": 70
+    },
+    {
+        "t": "Cruel Summer",
+        "a": "Taylor Swift",
+        "p": 74
+    },
+    {
+        "t": "Sorry",
+        "a": "Justin Bieber",
+        "p": 68
+    },
+    {
+        "t": "Love Yourself",
+        "a": "Justin Bieber",
+        "p": 72
+    },
+    {
+        "t": "What Do You Mean?",
+        "a": "Justin Bieber",
+        "p": 65
+    },
+    {
+        "t": "Hello",
+        "a": "Adele",
+        "p": 88
+    },
+    {
+        "t": "Set Fire to the Rain",
+        "a": "Adele",
+        "p": 75
+    },
+    {
+        "t": "Skyfall",
+        "a": "Adele",
+        "p": 72
+    },
+    {
+        "t": "Chandelier",
+        "a": "Sia",
+        "p": 78
+    },
+    {
+        "t": "Cheap Thrills (feat. Sean Paul)",
+        "a": "Sia",
+        "p": 72
+    },
+    {
+        "t": "Take Me To Church",
+        "a": "Hozier",
+        "p": 76
+    },
+    {
+        "t": "Radioactive",
+        "a": "Imagine Dragons",
+        "p": 78
+    },
+    {
+        "t": "Demons",
+        "a": "Imagine Dragons",
+        "p": 72
+    },
+    {
+        "t": "Believer",
+        "a": "Imagine Dragons",
+        "p": 76
+    },
+    {
+        "t": "Thunder",
+        "a": "Imagine Dragons",
+        "p": 68
+    },
+    {
+        "t": "Counting Stars",
+        "a": "OneRepublic",
+        "p": 75
+    },
+    {
+        "t": "Apologize",
+        "a": "Timbaland",
+        "p": 78
+    },
+    {
+        "t": "Secrets",
+        "a": "OneRepublic",
+        "p": 62
+    },
+    {
+        "t": "Viva La Vida",
+        "a": "Coldplay",
+        "p": 86
+    },
+    {
+        "t": "Fix You",
+        "a": "Coldplay",
+        "p": 80
+    },
+    {
+        "t": "Yellow",
+        "a": "Coldplay",
+        "p": 82
+    },
+    {
+        "t": "The Scientist",
+        "a": "Coldplay",
+        "p": 76
+    },
+    {
+        "t": "Paradise",
+        "a": "Coldplay",
+        "p": 70
+    },
+    {
+        "t": "A Sky Full of Stars",
+        "a": "Coldplay",
+        "p": 72
+    },
+    {
+        "t": "Something Just Like This",
+        "a": "The Chainsmokers",
+        "p": 68
+    },
+    {
+        "t": "Wake Me Up",
+        "a": "Avicii",
+        "p": 85
+    },
+    {
+        "t": "Levels - Radio Edit",
+        "a": "Avicii",
+        "p": 80
+    },
+    {
+        "t": "Hey Brother",
+        "a": "Avicii",
+        "p": 72
+    },
+    {
+        "t": "Titanium (feat. Sia)",
+        "a": "David Guetta",
+        "p": 76
+    },
+    {
+        "t": "Without You (feat. Usher)",
+        "a": "David Guetta",
+        "p": 55
+    },
+    {
+        "t": "Summer",
+        "a": "Calvin Harris",
+        "p": 65
+    },
+    {
+        "t": "Feel So Close - Radio Edit",
+        "a": "Calvin Harris",
+        "p": 62
+    },
+    {
+        "t": "We Found Love",
+        "a": "Rihanna",
+        "p": 78
+    },
+    {
+        "t": "Diamonds",
+        "a": "Rihanna",
+        "p": 80
+    },
+    {
+        "t": "Umbrella",
+        "a": "Rihanna",
+        "p": 88
+    },
+    {
+        "t": "Don't Stop Believin' (2022 Remaster)",
+        "a": "Journey",
+        "p": 95
+    },
+    {
+        "t": "Livin' On A Prayer",
+        "a": "Bon Jovi",
+        "p": 94
+    },
+    {
+        "t": "Sweet Home Alabama",
+        "a": "Lynyrd Skynyrd",
+        "p": 90
+    },
+    {
+        "t": "Back In Black",
+        "a": "AC/DC",
+        "p": 93
+    },
+    {
+        "t": "Highway to Hell",
+        "a": "AC/DC",
+        "p": 92
+    },
+    {
+        "t": "Thunderstruck",
+        "a": "AC/DC",
+        "p": 86
+    },
+    {
+        "t": "You Shook Me All Night Long",
+        "a": "AC/DC",
+        "p": 78
+    },
+    {
+        "t": "Hells Bells",
+        "a": "AC/DC",
+        "p": 72
+    },
+    {
+        "t": "Enter Sandman - Remastered 2021",
+        "a": "Metallica",
+        "p": 90
+    },
+    {
+        "t": "Nothing Else Matters - Remastered 2021",
+        "a": "Metallica",
+        "p": 92
+    },
+    {
+        "t": "Master Of Puppets",
+        "a": "Metallica",
+        "p": 82
+    },
+    {
+        "t": "One",
+        "a": "Metallica",
+        "p": 76
+    },
+    {
+        "t": "The Unforgiven - Remastered 2021",
+        "a": "Metallica",
+        "p": 72
+    },
+    {
+        "t": "Smells Like Teen Spirit",
+        "a": "Nirvana",
+        "p": 97
+    },
+    {
+        "t": "Come As You Are",
+        "a": "Nirvana",
+        "p": 85
+    },
+    {
+        "t": "Lithium",
+        "a": "Nirvana",
+        "p": 75
+    },
+    {
+        "t": "In Bloom",
+        "a": "Nirvana",
+        "p": 66
+    },
+    {
+        "t": "Heart-Shaped Box",
+        "a": "Heart-Shaped Tracks",
+        "p": 12
+    },
+    {
+        "t": "Black Hole Sun",
+        "a": "Soundgarden",
+        "p": 78
+    },
+    {
+        "t": "Alive",
+        "a": "Pearl Jam",
+        "p": 76
+    },
+    {
+        "t": "Jeremy",
+        "a": "Pearl Jam",
+        "p": 70
+    },
+    {
+        "t": "Even Flow",
+        "a": "Pearl Jam",
+        "p": 68
+    },
+    {
+        "t": "Plush",
+        "a": "Stone Temple Pilots",
+        "p": 65
+    },
+    {
+        "t": "Interstate Love Song - 2019 Remaster",
+        "a": "Stone Temple Pilots",
+        "p": 62
+    },
+    {
+        "t": "Creep",
+        "a": "TLC",
+        "p": 62
+    },
+    {
+        "t": "Waterfalls",
+        "a": "TLC",
+        "p": 82
+    },
+    {
+        "t": "No Scrubs",
+        "a": "TLC",
+        "p": 86
+    },
+    {
+        "t": "I Swear",
+        "a": "All-4-One",
+        "p": 68
+    },
+    {
+        "t": "End Of The Road",
+        "a": "Boyz II Men",
+        "p": 78
+    },
+    {
+        "t": "I'll Make Love To You",
+        "a": "Boyz II Men",
+        "p": 75
+    },
+    {
+        "t": "Water Runs Dry",
+        "a": "Boyz II Men",
+        "p": 42
+    },
+    {
+        "t": "On Bended Knee",
+        "a": "Boyz II Men",
+        "p": 38
+    },
+    {
+        "t": "Motownphilly",
+        "a": "Boyz II Men",
+        "p": 48
+    },
+    {
+        "t": "A Thousand Miles",
+        "a": "Vanessa Carlton",
+        "p": 72
+    },
+    {
+        "t": "Complicated",
+        "a": "Avril Lavigne",
+        "p": 76
+    },
+    {
+        "t": "Sk8er Boi",
+        "a": "Avril Lavigne",
+        "p": 74
+    },
+    {
+        "t": "I'm with You",
+        "a": "Avril Lavigne",
+        "p": 64
+    },
+    {
+        "t": "Since U Been Gone",
+        "a": "Kelly Clarkson",
+        "p": 76
+    },
+    {
+        "t": "Because of You",
+        "a": "Kelly Clarkson",
+        "p": 68
+    },
+    {
+        "t": "Breakaway",
+        "a": "Kelly Clarkson",
+        "p": 65
+    },
+    {
+        "t": "Toxic",
+        "a": "Britney Spears",
+        "p": 88
+    },
+    {
+        "t": "...Baby One More Time",
+        "a": "Britney Spears",
+        "p": 94
+    },
+    {
+        "t": "Oops!...I Did It Again",
+        "a": "Britney Spears",
+        "p": 86
+    },
+    {
+        "t": "Genie In a Bottle",
+        "a": "Christina Aguilera",
+        "p": 75
+    },
+    {
+        "t": "Beautiful",
+        "a": "Christina Aguilera",
+        "p": 72
+    },
+    {
+        "t": "Fighter",
+        "a": "Christina Aguilera",
+        "p": 68
+    },
+    {
+        "t": "Dirrty (feat. Redman)",
+        "a": "Christina Aguilera",
+        "p": 58
+    },
+    {
+        "t": "Lady Marmalade - Single Edit",
+        "a": "Christina Aguilera",
+        "p": 78
+    },
+    {
+        "t": "Crazy In Love (feat. JAY-Z)",
+        "a": "Beyoncé",
+        "p": 88
+    },
+    {
+        "t": "Single Ladies (Put a Ring on It)",
+        "a": "Beyoncé",
+        "p": 90
+    },
+    {
+        "t": "Halo",
+        "a": "Beyoncé",
+        "p": 85
+    },
+    {
+        "t": "Irreplaceable",
+        "a": "Beyoncé",
+        "p": 74
+    },
+    {
+        "t": "If I Were a Boy",
+        "a": "Beyoncé",
+        "p": 62
+    },
+    {
+        "t": "Listen (From the Motion Picture \"Dreamgirls\")",
+        "a": "Beyoncé",
+        "p": 45
+    },
+    {
+        "t": "Love On Top",
+        "a": "Beyoncé",
+        "p": 75
+    },
+    {
+        "t": "Drunk in Love (feat. JAY-Z)",
+        "a": "Beyoncé",
+        "p": 70
+    },
+    {
+        "t": "Formation",
+        "a": "Beyoncé",
+        "p": 68
+    },
+    {
+        "t": "Run the World (Girls)",
+        "a": "Beyoncé",
+        "p": 72
+    },
+    {
+        "t": "I Will Always Love You",
+        "a": "Dolly Parton",
+        "p": 72
+    },
+    {
+        "t": "Jolene",
+        "a": "Dolly Parton",
+        "p": 88
+    },
+    {
+        "t": "9 to 5",
+        "a": "Dolly Parton",
+        "p": 82
+    },
+    {
+        "t": "Ring of Fire",
+        "a": "Johnny Cash",
+        "p": 86
+    },
+    {
+        "t": "Folsom Prison Blues - Live at Folsom State Prison, Folsom, CA - January 1968",
+        "a": "Johnny Cash",
+        "p": 82
+    },
+    {
+        "t": "Hurt",
+        "a": "Johnny Cash",
+        "p": 88
+    }
+]

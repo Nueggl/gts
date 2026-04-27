@@ -1,0 +1,502 @@
+[
+    {
+        "t": "We Are The World",
+        "a": "U.S.A. For Africa",
+        "p": 92
+    },
+    {
+        "t": "99 Luftballons",
+        "a": "Nena",
+        "p": 90
+    },
+    {
+        "t": "Der Kommissar",
+        "a": "Falco",
+        "p": 68
+    },
+    {
+        "t": "Rock Me Amadeus",
+        "a": "Falco",
+        "p": 85
+    },
+    {
+        "t": "Major Tom (Coming Home)",
+        "a": "Peter Schilling",
+        "p": 74
+    },
+    {
+        "t": "The Safety Dance",
+        "a": "Men Without Hats",
+        "p": 78
+    },
+    {
+        "t": "Somebody's Watching Me",
+        "a": "Rockwell",
+        "p": 82
+    },
+    {
+        "t": "Break My Stride",
+        "a": "Matthew Wilder",
+        "p": 76
+    },
+    {
+        "t": "You Spin Me Round (Like a Record)",
+        "a": "Dead Or Alive",
+        "p": 86
+    },
+    {
+        "t": "Never Ending Story",
+        "a": "Limahl",
+        "p": 82
+    },
+    {
+        "t": "Tarzan Boy",
+        "a": "Baltimora",
+        "p": 68
+    },
+    {
+        "t": "Maria Magdalena",
+        "a": "Sandra",
+        "p": 65
+    },
+    {
+        "t": "You're My Heart, You're My Soul",
+        "a": "Modern Talking",
+        "p": 85
+    },
+    {
+        "t": "Brother Louie",
+        "a": "Modern Talking",
+        "p": 80
+    },
+    {
+        "t": "Cheri Cheri Lady",
+        "a": "Modern Talking",
+        "p": 78
+    },
+    {
+        "t": "Touch Me (I Want Your Body)",
+        "a": "Samantha Fox",
+        "p": 65
+    },
+    {
+        "t": "I Should Be so Lucky",
+        "a": "Kylie Minogue",
+        "p": 75
+    },
+    {
+        "t": "Better The Devil You Know",
+        "a": "Loco - Motion",
+        "p": 55
+    },
+    {
+        "t": "Whenever You Need Somebody",
+        "a": "Rick Astley",
+        "p": 45
+    },
+    {
+        "t": "Venus",
+        "a": "Bananarama",
+        "p": 82
+    },
+    {
+        "t": "Cruel Summer",
+        "a": "Bananarama",
+        "p": 78
+    },
+    {
+        "t": "Kids In America",
+        "a": "Kim Wilde",
+        "p": 84
+    },
+    {
+        "t": "You Keep Me Hangin On",
+        "a": "Kim Wilde",
+        "p": 75
+    },
+    {
+        "t": "Cambodia - Single Version",
+        "a": "Kim Wilde",
+        "p": 68
+    },
+    {
+        "t": "Owner of a Lonely Heart",
+        "a": "Yes",
+        "p": 85
+    },
+    {
+        "t": "Heat Of The Moment",
+        "a": "Asia",
+        "p": 76
+    },
+    {
+        "t": "The Final Countdown",
+        "a": "Europe",
+        "p": 95
+    },
+    {
+        "t": "Carrie",
+        "a": "Europe",
+        "p": 68
+    },
+    {
+        "t": "Sister Christian",
+        "a": "Night Ranger",
+        "p": 75
+    },
+    {
+        "t": "Keep on Loving You",
+        "a": "REO Speedwagon",
+        "p": 80
+    },
+    {
+        "t": "Can't Fight This Feeling",
+        "a": "REO Speedwagon",
+        "p": 82
+    },
+    {
+        "t": "Faithfully (2023 Remaster)",
+        "a": "Journey",
+        "p": 74
+    },
+    {
+        "t": "We Belong",
+        "a": "Pat Benatar",
+        "p": 75
+    },
+    {
+        "t": "Hit Me With Your Best Shot",
+        "a": "Pat Benatar",
+        "p": 88
+    },
+    {
+        "t": "Love Is A Battlefield",
+        "a": "Pat Benatar",
+        "p": 84
+    },
+    {
+        "t": "Shadows Of The Night",
+        "a": "Pat Benatar",
+        "p": 65
+    },
+    {
+        "t": "Alone",
+        "a": "Heart",
+        "p": 86
+    },
+    {
+        "t": "These Dreams",
+        "a": "Heart",
+        "p": 76
+    },
+    {
+        "t": "I'm So Excited",
+        "a": "The Pointer Sisters",
+        "p": 90
+    },
+    {
+        "t": "Jump (For My Love) - Single Remix",
+        "a": "The Pointer Sisters",
+        "p": 82
+    },
+    {
+        "t": "Automatic",
+        "a": "The Pointer Sisters",
+        "p": 66
+    },
+    {
+        "t": "Flashdance...What a Feeling - Radio Edit",
+        "a": "Irene Cara",
+        "p": 92
+    },
+    {
+        "t": "Fame",
+        "a": "Irene Cara",
+        "p": 88
+    },
+    {
+        "t": "Don't Give Up",
+        "a": "Peter Gabriel & Kate Bush",
+        "p": 70
+    },
+    {
+        "t": "Sunglasses At Night",
+        "a": "Corey Hart",
+        "p": 80
+    },
+    {
+        "t": "Everybody Hurts",
+        "a": "R.E.M.",
+        "p": 92
+    },
+    {
+        "t": "Man On The Moon",
+        "a": "R.E.M.",
+        "p": 82
+    },
+    {
+        "t": "Karma Police",
+        "a": "Radiohead",
+        "p": 85
+    },
+    {
+        "t": "Paranoid Android",
+        "a": "Radiohead",
+        "p": 78
+    },
+    {
+        "t": "Give It Away",
+        "a": "Red Hot Chili Peppers",
+        "p": 85
+    },
+    {
+        "t": "Scar Tissue",
+        "a": "Red Hot Chili Peppers",
+        "p": 88
+    },
+    {
+        "t": "Californication",
+        "a": "Red Hot Chili Peppers",
+        "p": 94
+    },
+    {
+        "t": "Basket Case",
+        "a": "Green Day",
+        "p": 92
+    },
+    {
+        "t": "When I Come Around",
+        "a": "Green Day",
+        "p": 85
+    },
+    {
+        "t": "Good Riddance (Time of Your Life)",
+        "a": "Green Day",
+        "p": 95
+    },
+    {
+        "t": "Self Esteem",
+        "a": "The Offspring",
+        "p": 84
+    },
+    {
+        "t": "The Kids Aren't Alright",
+        "a": "The Offspring",
+        "p": 82
+    },
+    {
+        "t": "Pretty Fly (For A White Guy)",
+        "a": "The Offspring",
+        "p": 88
+    },
+    {
+        "t": "All The Small Things",
+        "a": "blink-182",
+        "p": 94
+    },
+    {
+        "t": "What's My Age Again?",
+        "a": "blink-182",
+        "p": 88
+    },
+    {
+        "t": "Don't Look Back In Anger - Remastered",
+        "a": "Oasis",
+        "p": 92
+    },
+    {
+        "t": "Champagne Supernova - Remastered",
+        "a": "Oasis",
+        "p": 88
+    },
+    {
+        "t": "Bitter Sweet Symphony - Remastered 2016",
+        "a": "The Verve",
+        "p": 95
+    },
+    {
+        "t": "Song 2 - 2012 Remaster",
+        "a": "Blur",
+        "p": 92
+    },
+    {
+        "t": "Girls & Boys",
+        "a": "Blur",
+        "p": 78
+    },
+    {
+        "t": "Parklife - 2012 Remaster",
+        "a": "Blur",
+        "p": 70
+    },
+    {
+        "t": "Common People - Full Length Version",
+        "a": "Pulp",
+        "p": 82
+    },
+    {
+        "t": "Zombie - 2025 Remastered",
+        "a": "The Cranberries",
+        "p": 96
+    },
+    {
+        "t": "Linger",
+        "a": "The Cranberries",
+        "p": 90
+    },
+    {
+        "t": "Dreams",
+        "a": "The Cranberries",
+        "p": 86
+    },
+    {
+        "t": "Don't Speak",
+        "a": "No Doubt",
+        "p": 94
+    },
+    {
+        "t": "Just A Girl",
+        "a": "No Doubt",
+        "p": 88
+    },
+    {
+        "t": "Spiderwebs",
+        "a": "No Doubt",
+        "p": 82
+    },
+    {
+        "t": "You Oughta Know - 2015 Remaster",
+        "a": "Alanis Morissette",
+        "p": 90
+    },
+    {
+        "t": "Ironic - 2015 Remaster",
+        "a": "Alanis Morissette",
+        "p": 92
+    },
+    {
+        "t": "Hand in My Pocket - 2015 Remaster",
+        "a": "Alanis Morissette",
+        "p": 72
+    },
+    {
+        "t": "Torn",
+        "a": "Natalie Imbruglia",
+        "p": 90
+    },
+    {
+        "t": "What's Up?",
+        "a": "4 Non Blondes",
+        "p": 92
+    },
+    {
+        "t": "Two Princes",
+        "a": "Spin Doctors",
+        "p": 86
+    },
+    {
+        "t": "Runaway Train (2022 Remaster)",
+        "a": "Soul Asylum",
+        "p": 82
+    },
+    {
+        "t": "Mr. Jones",
+        "a": "Counting Crows",
+        "p": 88
+    },
+    {
+        "t": "Iris",
+        "a": "The Goo Goo Dolls",
+        "p": 96
+    },
+    {
+        "t": "Slide",
+        "a": "The Goo Goo Dolls",
+        "p": 80
+    },
+    {
+        "t": "Fly Away",
+        "a": "Lenny Kravitz",
+        "p": 88
+    },
+    {
+        "t": "Are You Gonna Go My Way",
+        "a": "Lenny Kravitz",
+        "p": 86
+    },
+    {
+        "t": "All Star",
+        "a": "Smash Mouth",
+        "p": 96
+    },
+    {
+        "t": "Walkin' On The Sun",
+        "a": "Smash Mouth",
+        "p": 74
+    },
+    {
+        "t": "Steal My Sunshine",
+        "a": "LEN",
+        "p": 84
+    },
+    {
+        "t": "Tubthumping - Radio Edit",
+        "a": "Chumbawamba",
+        "p": 90
+    },
+    {
+        "t": "Breakfast At Tiffany's",
+        "a": "Deep Blue Something",
+        "p": 85
+    },
+    {
+        "t": "One Week",
+        "a": "Barenaked Ladies",
+        "p": 82
+    },
+    {
+        "t": "Closing Time",
+        "a": "Semisonic",
+        "p": 88
+    },
+    {
+        "t": "(You Drive Me) Crazy",
+        "a": "Britney Spears",
+        "p": 88
+    },
+    {
+        "t": "Sometimes",
+        "a": "Britney Spears",
+        "p": 74
+    },
+    {
+        "t": "Wannabe",
+        "a": "Spice Girls",
+        "p": 97
+    },
+    {
+        "t": "Spice Up Your Life",
+        "a": "Spice Girls",
+        "p": 88
+    },
+    {
+        "t": "Say You'll Be There",
+        "a": "Spice Girls",
+        "p": 76
+    },
+    {
+        "t": "Stop",
+        "a": "Spice Girls",
+        "p": 72
+    },
+    {
+        "t": "2 Become 1",
+        "a": "Spice Girls",
+        "p": 82
+    },
+    {
+        "t": "I Want It That Way",
+        "a": "Backstreet Boys",
+        "p": 98
+    }
+]

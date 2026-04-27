@@ -1,0 +1,502 @@
+[
+    {
+        "t": "Reptilia",
+        "a": "The Strokes",
+        "p": 78
+    },
+    {
+        "t": "Someday",
+        "a": "The Strokes",
+        "p": 72
+    },
+    {
+        "t": "Are You Gonna Be My Girl",
+        "a": "Jet",
+        "p": 88
+    },
+    {
+        "t": "Sex on Fire",
+        "a": "Kings of Leon",
+        "p": 92
+    },
+    {
+        "t": "Use Somebody",
+        "a": "Kings of Leon",
+        "p": 88
+    },
+    {
+        "t": "Boulevard of Broken Dreams",
+        "a": "Green Day",
+        "p": 95
+    },
+    {
+        "t": "American Idiot",
+        "a": "Green Day",
+        "p": 92
+    },
+    {
+        "t": "Wake Me up When September Ends",
+        "a": "Green Day",
+        "p": 88
+    },
+    {
+        "t": "Holiday",
+        "a": "Green Day",
+        "p": 85
+    },
+    {
+        "t": "In the End",
+        "a": "Linkin Park",
+        "p": 97
+    },
+    {
+        "t": "Numb",
+        "a": "Linkin Park",
+        "p": 96
+    },
+    {
+        "t": "Crawling",
+        "a": "Linkin Park",
+        "p": 88
+    },
+    {
+        "t": "What I've Done",
+        "a": "Linkin Park",
+        "p": 86
+    },
+    {
+        "t": "Bring Me To Life",
+        "a": "Evanescence",
+        "p": 95
+    },
+    {
+        "t": "My Immortal",
+        "a": "Evanescence",
+        "p": 90
+    },
+    {
+        "t": "Chop Suey!",
+        "a": "System Of A Down",
+        "p": 92
+    },
+    {
+        "t": "Toxicity",
+        "a": "System Of A Down",
+        "p": 85
+    },
+    {
+        "t": "Last Resort",
+        "a": "Papa Roach",
+        "p": 88
+    },
+    {
+        "t": "How You Remind Me",
+        "a": "Nickelback",
+        "p": 94
+    },
+    {
+        "t": "Photograph - 2020 Remaster",
+        "a": "Nickelback",
+        "p": 86
+    },
+    {
+        "t": "It's My Life",
+        "a": "Bon Jovi",
+        "p": 95
+    },
+    {
+        "t": "By the Way",
+        "a": "Red Hot Chili Peppers",
+        "p": 82
+    },
+    {
+        "t": "Dani California",
+        "a": "Red Hot Chili Peppers",
+        "p": 85
+    },
+    {
+        "t": "Can't Stop",
+        "a": "Red Hot Chili Peppers",
+        "p": 88
+    },
+    {
+        "t": "Snow (Hey Oh)",
+        "a": "Red Hot Chili Peppers",
+        "p": 85
+    },
+    {
+        "t": "All My Life",
+        "a": "Foo Fighters",
+        "p": 78
+    },
+    {
+        "t": "The Pretender",
+        "a": "Foo Fighters",
+        "p": 86
+    },
+    {
+        "t": "Best of You",
+        "a": "Foo Fighters",
+        "p": 85
+    },
+    {
+        "t": "No One Knows",
+        "a": "Queens of the Stone Age",
+        "p": 80
+    },
+    {
+        "t": "Go With The Flow",
+        "a": "Queens of the Stone Age",
+        "p": 72
+    },
+    {
+        "t": "Kryptonite",
+        "a": "3 Doors Down",
+        "p": 88
+    },
+    {
+        "t": "Here Without You",
+        "a": "3 Doors Down",
+        "p": 85
+    },
+    {
+        "t": "Wherever You Will Go",
+        "a": "The Calling",
+        "p": 84
+    },
+    {
+        "t": "Drops of Jupiter (Tell Me)",
+        "a": "Train",
+        "p": 88
+    },
+    {
+        "t": "Hey, Soul Sister",
+        "a": "Train",
+        "p": 90
+    },
+    {
+        "t": "She Will Be Loved - Radio Mix",
+        "a": "Maroon 5",
+        "p": 92
+    },
+    {
+        "t": "This Love",
+        "a": "Maroon 5",
+        "p": 90
+    },
+    {
+        "t": "Makes Me Wonder",
+        "a": "Maroon 5",
+        "p": 78
+    },
+    {
+        "t": "Feel Good Inc.",
+        "a": "Gorillaz",
+        "p": 92
+    },
+    {
+        "t": "Clint Eastwood",
+        "a": "Gorillaz",
+        "p": 88
+    },
+    {
+        "t": "DARE (feat. Shaun Ryder & Roses Gabor)",
+        "a": "Gorillaz",
+        "p": 80
+    },
+    {
+        "t": "Kids",
+        "a": "MGMT",
+        "p": 86
+    },
+    {
+        "t": "Time to Pretend",
+        "a": "MGMT",
+        "p": 82
+    },
+    {
+        "t": "Electric Feel",
+        "a": "MGMT",
+        "p": 84
+    },
+    {
+        "t": "Paper Planes",
+        "a": "M.I.A.",
+        "p": 88
+    },
+    {
+        "t": "Fireflies",
+        "a": "Owl City",
+        "p": 90
+    },
+    {
+        "t": "I'm Yours",
+        "a": "Jason Mraz",
+        "p": 92
+    },
+    {
+        "t": "Hey There Delilah",
+        "a": "Plain White T's",
+        "p": 88
+    },
+    {
+        "t": "Bubbly",
+        "a": "Colbie Caillat",
+        "p": 75
+    },
+    {
+        "t": "Put Your Records On",
+        "a": "Corinne Bailey Rae",
+        "p": 78
+    },
+    {
+        "t": "Valerie (feat. Amy Winehouse) - Version Revisited",
+        "a": "Mark Ronson",
+        "p": 86
+    },
+    {
+        "t": "Rehab",
+        "a": "Amy Winehouse",
+        "p": 92
+    },
+    {
+        "t": "Back To Black",
+        "a": "Amy Winehouse",
+        "p": 90
+    },
+    {
+        "t": "Mercy",
+        "a": "Duffy",
+        "p": 82
+    },
+    {
+        "t": "Crazy",
+        "a": "Gnarls Barkley",
+        "p": 92
+    },
+    {
+        "t": "Fuck You",
+        "a": "CeeLo Green",
+        "p": 88
+    },
+    {
+        "t": "Supermassive Black Hole",
+        "a": "Muse",
+        "p": 84
+    },
+    {
+        "t": "Uprising",
+        "a": "Muse",
+        "p": 86
+    },
+    {
+        "t": "Starlight",
+        "a": "Muse",
+        "p": 80
+    },
+    {
+        "t": "Float On",
+        "a": "Modest Mouse",
+        "p": 78
+    },
+    {
+        "t": "Dashboard",
+        "a": "Modest Mouse",
+        "p": 68
+    },
+    {
+        "t": "Maps",
+        "a": "Yeah Yeah Yeahs",
+        "p": 75
+    },
+    {
+        "t": "Heads Will Roll - A-Trak Remix Radio Edit",
+        "a": "Yeah Yeah Yeahs",
+        "p": 82
+    },
+    {
+        "t": "First Date",
+        "a": "blink-182",
+        "p": 80
+    },
+    {
+        "t": "I Miss You",
+        "a": "blink-182",
+        "p": 88
+    },
+    {
+        "t": "The Anthem",
+        "a": "Good Charlotte",
+        "p": 82
+    },
+    {
+        "t": "Lifestyles of the Rich & Famous",
+        "a": "Good Charlotte",
+        "p": 80
+    },
+    {
+        "t": "Fat Lip",
+        "a": "Sum 41",
+        "p": 84
+    },
+    {
+        "t": "In Too Deep",
+        "a": "Sum 41",
+        "p": 82
+    },
+    {
+        "t": "Stacy's Mom",
+        "a": "Fountains Of Wayne",
+        "p": 86
+    },
+    {
+        "t": "Teenage Dirtbag",
+        "a": "Wheatus",
+        "p": 88
+    },
+    {
+        "t": "Dirty Little Secret",
+        "a": "The All-American Rejects",
+        "p": 82
+    },
+    {
+        "t": "Gives You Hell",
+        "a": "The All-American Rejects",
+        "p": 85
+    },
+    {
+        "t": "Sugar, We're Goin Down",
+        "a": "Fall Out Boy",
+        "p": 88
+    },
+    {
+        "t": "Dance, Dance",
+        "a": "Fall Out Boy",
+        "p": 85
+    },
+    {
+        "t": "Thnks fr th Mmrs",
+        "a": "Fall Out Boy",
+        "p": 86
+    },
+    {
+        "t": "I Write Sins Not Tragedies",
+        "a": "Panic! At The Disco",
+        "p": 88
+    },
+    {
+        "t": "Misery Business",
+        "a": "Paramore",
+        "p": 86
+    },
+    {
+        "t": "Decode - Twilight Soundtrack Version",
+        "a": "Paramore",
+        "p": 80
+    },
+    {
+        "t": "Welcome to the Black Parade",
+        "a": "My Chemical Romance",
+        "p": 92
+    },
+    {
+        "t": "Teenagers",
+        "a": "My Chemical Romance",
+        "p": 86
+    },
+    {
+        "t": "I'm Not Okay (I Promise)",
+        "a": "My Chemical Romance",
+        "p": 84
+    },
+    {
+        "t": "The Middle",
+        "a": "Jimmy Eat World",
+        "p": 85
+    },
+    {
+        "t": "All These Things That I've Done",
+        "a": "The Killers",
+        "p": 78
+    },
+    {
+        "t": "Daylight",
+        "a": "Matt and Kim",
+        "p": 68
+    },
+    {
+        "t": "1901",
+        "a": "Phoenix",
+        "p": 76
+    },
+    {
+        "t": "Lisztomania",
+        "a": "Phoenix",
+        "p": 75
+    },
+    {
+        "t": "Young Folks",
+        "a": "Peter Bjorn and John",
+        "p": 80
+    },
+    {
+        "t": "Jerk It Out",
+        "a": "Caesars",
+        "p": 78
+    },
+    {
+        "t": "Standing In the Way of Control",
+        "a": "Gossip",
+        "p": 65
+    },
+    {
+        "t": "Heavy Cross",
+        "a": "Gossip",
+        "p": 82
+    },
+    {
+        "t": "Dance Wiv Me - Radio Edit",
+        "a": "Dizzee Rascal",
+        "p": 68
+    },
+    {
+        "t": "Day 'N' Nite (Nightmare)",
+        "a": "Kid Cudi",
+        "p": 86
+    },
+    {
+        "t": "Pursuit Of Happiness (Nightmare)",
+        "a": "Kid Cudi",
+        "p": 84
+    },
+    {
+        "t": "A Milli",
+        "a": "Lil Wayne",
+        "p": 85
+    },
+    {
+        "t": "Lollipop",
+        "a": "Lil Wayne",
+        "p": 88
+    },
+    {
+        "t": "In My Head",
+        "a": "Jason Derulo",
+        "p": 82
+    },
+    {
+        "t": "Whatcha Say",
+        "a": "Jason Derulo",
+        "p": 85
+    },
+    {
+        "t": "Fire Burning (feat. Pitbull)",
+        "a": "Sean Kingston",
+        "p": 82
+    },
+    {
+        "t": "Lean Back",
+        "a": "Terror Squad",
+        "p": 80
+    }
+]

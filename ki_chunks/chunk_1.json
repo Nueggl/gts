@@ -1,0 +1,502 @@
+[
+    {
+        "t": "Flashing Lights",
+        "a": "Kanye West",
+        "p": 48
+    },
+    {
+        "t": "Bohemian Rhapsody - Remastered 2011",
+        "a": "Queen",
+        "p": 99
+    },
+    {
+        "t": "Stairway to Heaven - Remaster",
+        "a": "Led Zeppelin",
+        "p": 94
+    },
+    {
+        "t": "Imagine - Remastered 2010",
+        "a": "John Lennon",
+        "p": 96
+    },
+    {
+        "t": "Smells Like Teen Spirit",
+        "a": "Nirvana",
+        "p": 97
+    },
+    {
+        "t": "Hotel California - 2013 Remaster",
+        "a": "Eagles",
+        "p": 92
+    },
+    {
+        "t": "Billie Jean",
+        "a": "Michael Jackson",
+        "p": 99
+    },
+    {
+        "t": "Like a Rolling Stone",
+        "a": "Bob Dylan",
+        "p": 85
+    },
+    {
+        "t": "Hey Jude",
+        "a": "The Beatles",
+        "p": 93
+    },
+    {
+        "t": "Respect",
+        "a": "Aretha Franklin",
+        "p": 88
+    },
+    {
+        "t": "What's Going On",
+        "a": "Marvin Gaye",
+        "p": 65
+    },
+    {
+        "t": "(I Can't Get No) Satisfaction - Mono",
+        "a": "The Rolling Stones",
+        "p": 89
+    },
+    {
+        "t": "Good Vibrations - Remastered 2001",
+        "a": "The Beach Boys",
+        "p": 70
+    },
+    {
+        "t": "Johnny B. Goode",
+        "a": "Chuck Berry",
+        "p": 82
+    },
+    {
+        "t": "Yesterday - Remastered 2009",
+        "a": "The Beatles",
+        "p": 92
+    },
+    {
+        "t": "Let It Be - Remastered 2009",
+        "a": "The Beatles",
+        "p": 91
+    },
+    {
+        "t": "Superstition - Single Version",
+        "a": "Stevie Wonder",
+        "p": 80
+    },
+    {
+        "t": "Purple Haze",
+        "a": "Jimi Hendrix",
+        "p": 72
+    },
+    {
+        "t": "A Day In The Life - Remastered 2009",
+        "a": "The Beatles",
+        "p": 39
+    },
+    {
+        "t": "Suspicious Minds",
+        "a": "Elvis Presley",
+        "p": 68
+    },
+    {
+        "t": "My Generation - Stereo Version",
+        "a": "The Who",
+        "p": 62
+    },
+    {
+        "t": "I Heard It Through The Grapevine",
+        "a": "Marvin Gaye",
+        "p": 70
+    },
+    {
+        "t": "Blowin' in the Wind",
+        "a": "Bob Dylan",
+        "p": 65
+    },
+    {
+        "t": "Born to Run",
+        "a": "Bruce Springsteen",
+        "p": 74
+    },
+    {
+        "t": "Light My Fire",
+        "a": "The Doors",
+        "p": 66
+    },
+    {
+        "t": "God Only Knows",
+        "a": "The Beach Boys",
+        "p": 50
+    },
+    {
+        "t": "Bridge Over Troubled Water",
+        "a": "Simon & Garfunkel",
+        "p": 70
+    },
+    {
+        "t": "Every Breath You Take",
+        "a": "The Police",
+        "p": 74
+    },
+    {
+        "t": "Hallelujah",
+        "a": "Jeff Buckley",
+        "p": 65
+    },
+    {
+        "t": "London Calling - Remastered",
+        "a": "The Clash",
+        "p": 55
+    },
+    {
+        "t": "Hound Dog",
+        "a": "Elvis Presley",
+        "p": 70
+    },
+    {
+        "t": "Let's Stay Together",
+        "a": "Al Green",
+        "p": 39
+    },
+    {
+        "t": "Sweet Child O' Mine",
+        "a": "Guns N' Roses",
+        "p": 90
+    },
+    {
+        "t": "Thunder Road",
+        "a": "Bruce Springsteen",
+        "p": 35
+    },
+    {
+        "t": "Waterloo Sunset",
+        "a": "The Kinks",
+        "p": 25
+    },
+    {
+        "t": "\"Heroes\" - 2017 Remaster",
+        "a": "David Bowie",
+        "p": 68
+    },
+    {
+        "t": "I Will Always Love You",
+        "a": "Whitney Houston",
+        "p": 93
+    },
+    {
+        "t": "All Along the Watchtower",
+        "a": "Jimi Hendrix",
+        "p": 72
+    },
+    {
+        "t": "Dancing Queen",
+        "a": "ABBA",
+        "p": 91
+    },
+    {
+        "t": "I Walk the Line",
+        "a": "Johnny Cash",
+        "p": 68
+    },
+    {
+        "t": "Sympathy For The Devil - 50th Anniversary Edition",
+        "a": "The Rolling Stones",
+        "p": 72
+    },
+    {
+        "t": "Gimme Shelter",
+        "a": "The Rolling Stones",
+        "p": 60
+    },
+    {
+        "t": "Wonderwall - Remastered",
+        "a": "Oasis",
+        "p": 90
+    },
+    {
+        "t": "Losing My Religion",
+        "a": "R.E.M.",
+        "p": 72
+    },
+    {
+        "t": "Under the Bridge",
+        "a": "Red Hot Chili Peppers",
+        "p": 70
+    },
+    {
+        "t": "Creep",
+        "a": "Radiohead",
+        "p": 82
+    },
+    {
+        "t": "No Woman No Cry",
+        "a": "Bob Marley & The Wailers",
+        "p": 78
+    },
+    {
+        "t": "In My Life - Remastered 2009",
+        "a": "The Beatles",
+        "p": 38
+    },
+    {
+        "t": "Stand By Me",
+        "a": "Ben E. King",
+        "p": 88
+    },
+    {
+        "t": "Papa's Got A Brand New Bag (Part 1) - Single Version",
+        "a": "James Brown",
+        "p": 38
+    },
+    {
+        "t": "A Change Is Gonna Come",
+        "a": "Sam Cooke",
+        "p": 35
+    },
+    {
+        "t": "Tutti Frutti",
+        "a": "Little Richard",
+        "p": 62
+    },
+    {
+        "t": "Tangled up in Blue",
+        "a": "Bob Dylan",
+        "p": 30
+    },
+    {
+        "t": "Heartbreak Hotel",
+        "a": "Elvis Presley",
+        "p": 60
+    },
+    {
+        "t": "When Doves Cry",
+        "a": "Prince",
+        "p": 70
+    },
+    {
+        "t": "Family Affair - Single Version",
+        "a": "Sly & The Family Stone",
+        "p": 28
+    },
+    {
+        "t": "Whole Lotta Love - 1990 Remaster",
+        "a": "Led Zeppelin",
+        "p": 65
+    },
+    {
+        "t": "California Gurls",
+        "a": "Katy Perry",
+        "p": 65
+    },
+    {
+        "t": "Rolling in the Deep",
+        "a": "Adele",
+        "p": 90
+    },
+    {
+        "t": "Someone Like You",
+        "a": "Adele",
+        "p": 88
+    },
+    {
+        "t": "Shape of You",
+        "a": "Ed Sheeran",
+        "p": 96
+    },
+    {
+        "t": "Uptown Funk (feat. Bruno Mars)",
+        "a": "Mark Ronson",
+        "p": 95
+    },
+    {
+        "t": "Blinding Lights",
+        "a": "The Weeknd",
+        "p": 98
+    },
+    {
+        "t": "Dance Monkey",
+        "a": "Tones And I",
+        "p": 86
+    },
+    {
+        "t": "Perfect",
+        "a": "Ed Sheeran",
+        "p": 88
+    },
+    {
+        "t": "Thinking out Loud",
+        "a": "Ed Sheeran",
+        "p": 82
+    },
+    {
+        "t": "Despacito",
+        "a": "Luis Fonsi",
+        "p": 95
+    },
+    {
+        "t": "Closer",
+        "a": "The Chainsmokers",
+        "p": 70
+    },
+    {
+        "t": "Sunflower - Spider-Man: Into the Spider-Verse",
+        "a": "Post Malone",
+        "p": 84
+    },
+    {
+        "t": "Señorita",
+        "a": "Shawn Mendes",
+        "p": 68
+    },
+    {
+        "t": "bad guy",
+        "a": "Billie Eilish",
+        "p": 85
+    },
+    {
+        "t": "Havana (feat. Young Thug)",
+        "a": "Camila Cabello",
+        "p": 68
+    },
+    {
+        "t": "Levitating (feat. DaBaby)",
+        "a": "Dua Lipa",
+        "p": 70
+    },
+    {
+        "t": "As It Was",
+        "a": "Harry Styles",
+        "p": 88
+    },
+    {
+        "t": "STAY (with Justin Bieber)",
+        "a": "The Kid LAROI",
+        "p": 80
+    },
+    {
+        "t": "Watermelon Sugar",
+        "a": "Harry Styles",
+        "p": 82
+    },
+    {
+        "t": "Peaches (feat. Daniel Caesar & Giveon)",
+        "a": "Justin Bieber",
+        "p": 58
+    },
+    {
+        "t": "good 4 u",
+        "a": "Olivia Rodrigo",
+        "p": 64
+    },
+    {
+        "t": "drivers license",
+        "a": "Olivia Rodrigo",
+        "p": 66
+    },
+    {
+        "t": "Don't Start Now",
+        "a": "Dua Lipa",
+        "p": 65
+    },
+    {
+        "t": "Save Your Tears",
+        "a": "The Weeknd",
+        "p": 85
+    },
+    {
+        "t": "rockstar (feat. 21 Savage)",
+        "a": "Post Malone",
+        "p": 80
+    },
+    {
+        "t": "God's Plan",
+        "a": "Drake",
+        "p": 70
+    },
+    {
+        "t": "Lucid Dreams",
+        "a": "Juice WRLD",
+        "p": 55
+    },
+    {
+        "t": "SICKO MODE",
+        "a": "Travis Scott",
+        "p": 60
+    },
+    {
+        "t": "Old Town Road (feat. Billy Ray Cyrus) - Remix",
+        "a": "Lil Nas X",
+        "p": 92
+    },
+    {
+        "t": "Shallow",
+        "a": "Lady Gaga",
+        "p": 88
+    },
+    {
+        "t": "Without Me",
+        "a": "Halsey",
+        "p": 55
+    },
+    {
+        "t": "Bad Romance",
+        "a": "Lady Gaga",
+        "p": 86
+    },
+    {
+        "t": "Poker Face",
+        "a": "Lady Gaga",
+        "p": 85
+    },
+    {
+        "t": "Just the Way You Are",
+        "a": "Bruno Mars",
+        "p": 72
+    },
+    {
+        "t": "Grenade",
+        "a": "Bruno Mars",
+        "p": 60
+    },
+    {
+        "t": "Firework",
+        "a": "Katy Perry",
+        "p": 73
+    },
+    {
+        "t": "Teenage Dream",
+        "a": "Katy Perry",
+        "p": 68
+    },
+    {
+        "t": "Roar",
+        "a": "Katy Perry",
+        "p": 72
+    },
+    {
+        "t": "Dark Horse",
+        "a": "Katy Perry",
+        "p": 69
+    },
+    {
+        "t": "Blank Space",
+        "a": "Taylor Swift",
+        "p": 72
+    },
+    {
+        "t": "Shake It Off",
+        "a": "Taylor Swift",
+        "p": 74
+    },
+    {
+        "t": "Love Story",
+        "a": "Taylor Swift",
+        "p": 65
+    },
+    {
+        "t": "You Belong With Me",
+        "a": "Taylor Swift",
+        "p": 62
+    }
+]

@@ -1,0 +1,502 @@
+[
+    {
+        "t": "I Love The Nightlife (Disco 'Round) - Single Version",
+        "a": "Alicia Bridges",
+        "p": 45
+    },
+    {
+        "t": "Ring My Bell",
+        "a": "Anita Ward",
+        "p": 55
+    },
+    {
+        "t": "Funkytown",
+        "a": "Lipps Inc.",
+        "p": 82
+    },
+    {
+        "t": "Atomic",
+        "a": "Blondie",
+        "p": 62
+    },
+    {
+        "t": "Denis",
+        "a": "Blondie",
+        "p": 35
+    },
+    {
+        "t": "Beat It",
+        "a": "Michael Jackson",
+        "p": 98
+    },
+    {
+        "t": "Thriller",
+        "a": "Michael Jackson",
+        "p": 99
+    },
+    {
+        "t": "Smooth Criminal - 2012 Remaster",
+        "a": "Michael Jackson",
+        "p": 94
+    },
+    {
+        "t": "Take on Me",
+        "a": "a-ha",
+        "p": 96
+    },
+    {
+        "t": "Sweet Dreams (Are Made of This) - 2005 Remaster",
+        "a": "Eurythmics",
+        "p": 94
+    },
+    {
+        "t": "Like a Virgin",
+        "a": "Madonna",
+        "p": 90
+    },
+    {
+        "t": "Material Girl",
+        "a": "Madonna",
+        "p": 88
+    },
+    {
+        "t": "Like a Prayer",
+        "a": "Madonna",
+        "p": 92
+    },
+    {
+        "t": "Into the Groove",
+        "a": "Madonna",
+        "p": 82
+    },
+    {
+        "t": "You Give Love A Bad Name",
+        "a": "Bon Jovi",
+        "p": 90
+    },
+    {
+        "t": "Welcome To The Jungle",
+        "a": "Guns N' Roses",
+        "p": 92
+    },
+    {
+        "t": "Paradise City",
+        "a": "Guns N' Roses",
+        "p": 88
+    },
+    {
+        "t": "With Or Without You - Remastered 2007",
+        "a": "U2",
+        "p": 90
+    },
+    {
+        "t": "I Still Haven't Found What I'm Looking For - Remastered 2007",
+        "a": "U2",
+        "p": 86
+    },
+    {
+        "t": "Sunday Bloody Sunday - Remastered 2008",
+        "a": "U2",
+        "p": 84
+    },
+    {
+        "t": "Pride (In The Name Of Love) - Remastered 2009",
+        "a": "U2",
+        "p": 80
+    },
+    {
+        "t": "Purple Rain",
+        "a": "Prince",
+        "p": 96
+    },
+    {
+        "t": "Kiss",
+        "a": "Prince",
+        "p": 90
+    },
+    {
+        "t": "1999",
+        "a": "Prince",
+        "p": 85
+    },
+    {
+        "t": "Little Red Corvette",
+        "a": "Prince",
+        "p": 68
+    },
+    {
+        "t": "Girls Just Want to Have Fun",
+        "a": "Cyndi Lauper",
+        "p": 95
+    },
+    {
+        "t": "Time After Time",
+        "a": "Cyndi Lauper",
+        "p": 88
+    },
+    {
+        "t": "True Colors",
+        "a": "Cyndi Lauper",
+        "p": 82
+    },
+    {
+        "t": "Wake Me Up Before You Go Go (Karaoke Version) [in the Style of Wham]",
+        "a": "Goldsound Karaoke",
+        "p": 80
+    },
+    {
+        "t": "Careless Whisper - Remastered",
+        "a": "George Michael",
+        "p": 96
+    },
+    {
+        "t": "Faith - Remastered",
+        "a": "George Michael",
+        "p": 86
+    },
+    {
+        "t": "Father Figure - Remastered",
+        "a": "George Michael",
+        "p": 60
+    },
+    {
+        "t": "I Wanna Dance with Somebody (Who Loves Me)",
+        "a": "Whitney Houston",
+        "p": 97
+    },
+    {
+        "t": "How Will I Know",
+        "a": "Whitney Houston",
+        "p": 85
+    },
+    {
+        "t": "Saving All My Love for You",
+        "a": "Whitney Houston",
+        "p": 68
+    },
+    {
+        "t": "Another One Bites The Dust - Remastered 2011",
+        "a": "Queen",
+        "p": 95
+    },
+    {
+        "t": "Under Pressure - Remastered 2011",
+        "a": "Queen",
+        "p": 92
+    },
+    {
+        "t": "Radio Ga Ga - Remastered 2011",
+        "a": "Queen",
+        "p": 84
+    },
+    {
+        "t": "I Want To Break Free - Single Remix",
+        "a": "Queen",
+        "p": 86
+    },
+    {
+        "t": "Let's Dance - 2018 Remaster",
+        "a": "David Bowie",
+        "p": 85
+    },
+    {
+        "t": "Modern Love - 2018 Remaster",
+        "a": "David Bowie",
+        "p": 80
+    },
+    {
+        "t": "Ashes to Ashes - 2017 Remaster",
+        "a": "David Bowie",
+        "p": 50
+    },
+    {
+        "t": "Born in the U.S.A.",
+        "a": "Bruce Springsteen",
+        "p": 92
+    },
+    {
+        "t": "Dancing In the Dark",
+        "a": "Bruce Springsteen",
+        "p": 90
+    },
+    {
+        "t": "I'm On Fire",
+        "a": "Bruce Springsteen",
+        "p": 82
+    },
+    {
+        "t": "Glory Days",
+        "a": "Bruce Springsteen",
+        "p": 65
+    },
+    {
+        "t": "Money For Nothing - Remastered 1996",
+        "a": "Dire Straits",
+        "p": 88
+    },
+    {
+        "t": "Walk Of Life - Remastered 1996",
+        "a": "Dire Straits",
+        "p": 84
+    },
+    {
+        "t": "Brothers In Arms - Remastered 1996",
+        "a": "Dire Straits",
+        "p": 60
+    },
+    {
+        "t": "Romeo And Juliet",
+        "a": "Dire Straits",
+        "p": 55
+    },
+    {
+        "t": "Africa",
+        "a": "TOTO",
+        "p": 98
+    },
+    {
+        "t": "Rosanna",
+        "a": "TOTO",
+        "p": 82
+    },
+    {
+        "t": "Eye of the Tiger",
+        "a": "Survivor",
+        "p": 96
+    },
+    {
+        "t": "Summer Of '69",
+        "a": "Bryan Adams",
+        "p": 95
+    },
+    {
+        "t": "Heaven",
+        "a": "Bryan Adams",
+        "p": 86
+    },
+    {
+        "t": "Run To You",
+        "a": "Bryan Adams",
+        "p": 65
+    },
+    {
+        "t": "In The Air Tonight - 2015 Remastered",
+        "a": "Phil Collins",
+        "p": 95
+    },
+    {
+        "t": "Against All Odds (Take a Look at Me Now) - 2016 Remaster",
+        "a": "Phil Collins",
+        "p": 84
+    },
+    {
+        "t": "Easy Lover",
+        "a": "Philip Bailey",
+        "p": 68
+    },
+    {
+        "t": "You Can't Hurry Love - 2016 Remaster",
+        "a": "Phil Collins",
+        "p": 78
+    },
+    {
+        "t": "Sussudio - 2016 Remaster",
+        "a": "Phil Collins",
+        "p": 65
+    },
+    {
+        "t": "Invisible Touch - 2007 Remaster",
+        "a": "Genesis",
+        "p": 76
+    },
+    {
+        "t": "Land of Confusion - 2007 Remaster",
+        "a": "Genesis",
+        "p": 68
+    },
+    {
+        "t": "Everybody Wants To Rule The World",
+        "a": "Tears For Fears",
+        "p": 96
+    },
+    {
+        "t": "Shout",
+        "a": "Tears For Fears",
+        "p": 88
+    },
+    {
+        "t": "Head Over Heels - Dave Bascombe 7\" N.Mix",
+        "a": "Tears For Fears",
+        "p": 82
+    },
+    {
+        "t": "Mad World",
+        "a": "Tears For Fears",
+        "p": 80
+    },
+    {
+        "t": "Should I Stay or Should I Go - Remastered",
+        "a": "The Clash",
+        "p": 90
+    },
+    {
+        "t": "Rock the Casbah - Remastered",
+        "a": "The Clash",
+        "p": 84
+    },
+    {
+        "t": "Pour Some Sugar On Me - Remastered 2017",
+        "a": "Def Leppard",
+        "p": 88
+    },
+    {
+        "t": "Photograph",
+        "a": "Def Leppard",
+        "p": 80
+    },
+    {
+        "t": "Animal",
+        "a": "Def Leppard",
+        "p": 60
+    },
+    {
+        "t": "Jump - 2015 Remaster",
+        "a": "Van Halen",
+        "p": 92
+    },
+    {
+        "t": "Panama - 2015 Remaster",
+        "a": "Van Halen",
+        "p": 84
+    },
+    {
+        "t": "Hot for Teacher - 2015 Remaster",
+        "a": "Van Halen",
+        "p": 68
+    },
+    {
+        "t": "Walk This Way (feat. Aerosmith)",
+        "a": "Run–D.M.C.",
+        "p": 90
+    },
+    {
+        "t": "Dude (Looks Like A Lady)",
+        "a": "Aerosmith",
+        "p": 82
+    },
+    {
+        "t": "Love In An Elevator - Single Version",
+        "a": "Aerosmith",
+        "p": 65
+    },
+    {
+        "t": "Janie's Got A Gun",
+        "a": "Aerosmith",
+        "p": 68
+    },
+    {
+        "t": "Danger Zone - From \"Top Gun\" Original Soundtrack",
+        "a": "Kenny Loggins",
+        "p": 88
+    },
+    {
+        "t": "Footloose",
+        "a": "Kenny Loggins",
+        "p": 95
+    },
+    {
+        "t": "Ghostbusters",
+        "a": "Ray Parker Jr.",
+        "p": 96
+    },
+    {
+        "t": "The Power Of Love",
+        "a": "Huey Lewis & The News",
+        "p": 88
+    },
+    {
+        "t": "I Want to Know What Love Is - 1999 Remaster",
+        "a": "Foreigner",
+        "p": 94
+    },
+    {
+        "t": "Waiting for a Girl like You",
+        "a": "Foreigner",
+        "p": 82
+    },
+    {
+        "t": "Any Way You Want It",
+        "a": "Journey",
+        "p": 88
+    },
+    {
+        "t": "Separate Ways (Worlds Apart) [2023 Remaster]",
+        "a": "Journey",
+        "p": 85
+    },
+    {
+        "t": "Open Arms (2022 Remaster)",
+        "a": "Journey",
+        "p": 82
+    },
+    {
+        "t": "Here I Go Again - 1987 Version / 2018 Remaster",
+        "a": "Whitesnake",
+        "p": 90
+    },
+    {
+        "t": "Is This Love - 2018 Remaster",
+        "a": "Whitesnake",
+        "p": 82
+    },
+    {
+        "t": "Every Rose Has Its Thorn - 2003 Remaster",
+        "a": "Poison",
+        "p": 88
+    },
+    {
+        "t": "Nothin' But A Good Time - Remastered 2006",
+        "a": "Poison",
+        "p": 80
+    },
+    {
+        "t": "Tainted Love",
+        "a": "Soft Cell",
+        "p": 92
+    },
+    {
+        "t": "Don't You (Forget About Me)",
+        "a": "Simple Minds",
+        "p": 94
+    },
+    {
+        "t": "Alive And Kicking",
+        "a": "Simple Minds",
+        "p": 65
+    },
+    {
+        "t": "Karma Chameleon - Remastered 2002",
+        "a": "Culture Club",
+        "p": 88
+    },
+    {
+        "t": "I Ran (So Far Away)",
+        "a": "A Flock Of Seagulls",
+        "p": 84
+    },
+    {
+        "t": "Blue Monday",
+        "a": "New Order",
+        "p": 92
+    },
+    {
+        "t": "Bizarre Love Triangle - 2024 Digital Master",
+        "a": "New Order",
+        "p": 68
+    },
+    {
+        "t": "Just Can't Get Enough",
+        "a": "Depeche Mode",
+        "p": 88
+    }
+]

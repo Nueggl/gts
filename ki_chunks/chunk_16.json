@@ -1,0 +1,477 @@
+[
+    {
+        "t": "APT.",
+        "a": "ROSÉ",
+        "p": 68
+    },
+    {
+        "t": "Leave The Door Open",
+        "a": "Bruno Mars",
+        "p": 82
+    },
+    {
+        "t": "Kill Bill",
+        "a": "SZA",
+        "p": 86
+    },
+    {
+        "t": "Snooze",
+        "a": "SZA",
+        "p": 80
+    },
+    {
+        "t": "Good Days",
+        "a": "SZA",
+        "p": 72
+    },
+    {
+        "t": "greedy",
+        "a": "Tate McRae",
+        "p": 78
+    },
+    {
+        "t": "exes",
+        "a": "Tate McRae",
+        "p": 58
+    },
+    {
+        "t": "Water",
+        "a": "Tyla",
+        "p": 82
+    },
+    {
+        "t": "Rush",
+        "a": "Ayra Starr",
+        "p": 55
+    },
+    {
+        "t": "Calm Down (with Selena Gomez)",
+        "a": "Rema",
+        "p": 90
+    },
+    {
+        "t": "Last Last",
+        "a": "Burna Boy",
+        "p": 75
+    },
+    {
+        "t": "Essence (feat. Tems)",
+        "a": "Wizkid",
+        "p": 78
+    },
+    {
+        "t": "Boy's a liar Pt. 2",
+        "a": "PinkPantheress",
+        "p": 82
+    },
+    {
+        "t": "Munch (Feelin’ U)",
+        "a": "Ice Spice",
+        "p": 70
+    },
+    {
+        "t": "Creepin' (with The Weeknd & 21 Savage)",
+        "a": "Metro Boomin",
+        "p": 86
+    },
+    {
+        "t": "I'm Good (Blue)",
+        "a": "David Guetta",
+        "p": 85
+    },
+    {
+        "t": "Unholy (feat. Kim Petras)",
+        "a": "Sam Smith",
+        "p": 88
+    },
+    {
+        "t": "About Damn Time",
+        "a": "Lizzo",
+        "p": 84
+    },
+    {
+        "t": "WAIT FOR U (feat. Drake & Tems)",
+        "a": "Future",
+        "p": 78
+    },
+    {
+        "t": "Super Freaky Girl",
+        "a": "Nicki Minaj",
+        "p": 76
+    },
+    {
+        "t": "First Person Shooter (feat. J. Cole)",
+        "a": "Drake",
+        "p": 68
+    },
+    {
+        "t": "Rich Flex",
+        "a": "Drake",
+        "p": 80
+    },
+    {
+        "t": "Jimmy Cooks (feat. 21 Savage)",
+        "a": "Drake",
+        "p": 78
+    },
+    {
+        "t": "fukumean",
+        "a": "Gunna",
+        "p": 65
+    },
+    {
+        "t": "DÁKITI",
+        "a": "Bad Bunny",
+        "p": 88
+    },
+    {
+        "t": "Me Porto Bonito",
+        "a": "Bad Bunny",
+        "p": 86
+    },
+    {
+        "t": "Tití Me Preguntó",
+        "a": "Bad Bunny",
+        "p": 86
+    },
+    {
+        "t": "MONACO",
+        "a": "Bad Bunny",
+        "p": 82
+    },
+    {
+        "t": "Ella Baila Sola",
+        "a": "Eslabon Armado",
+        "p": 84
+    },
+    {
+        "t": "La Diabla",
+        "a": "Xavi",
+        "p": 68
+    },
+    {
+        "t": "Gata Only",
+        "a": "FloyyMenor",
+        "p": 75
+    },
+    {
+        "t": "Si Antes Te Hubiera Conocido",
+        "a": "KAROL G",
+        "p": 82
+    },
+    {
+        "t": "PROVENZA",
+        "a": "KAROL G",
+        "p": 84
+    },
+    {
+        "t": "Shakira: Bzrp Music Sessions, Vol. 53/66",
+        "a": "Bizarrap",
+        "p": 88
+    },
+    {
+        "t": "LALA",
+        "a": "Myke Towers",
+        "p": 65
+    },
+    {
+        "t": "un x100to",
+        "a": "Grupo Frontera",
+        "p": 82
+    },
+    {
+        "t": "Dynamite",
+        "a": "BTS",
+        "p": 94
+    },
+    {
+        "t": "Butter",
+        "a": "BTS",
+        "p": 90
+    },
+    {
+        "t": "Seven (feat. Latto) (Explicit Ver.)",
+        "a": "Jung Kook",
+        "p": 88
+    },
+    {
+        "t": "Cupid - Twin Version",
+        "a": "FIFTY FIFTY",
+        "p": 85
+    },
+    {
+        "t": "Super Shy",
+        "a": "NewJeans",
+        "p": 80
+    },
+    {
+        "t": "Rockstar",
+        "a": "LISA",
+        "p": 76
+    },
+    {
+        "t": "Magnetic",
+        "a": "ILLIT",
+        "p": 62
+    },
+    {
+        "t": "Pink Venom",
+        "a": "BLACKPINK",
+        "p": 82
+    },
+    {
+        "t": "360",
+        "a": "Charli xcx",
+        "p": 64
+    },
+    {
+        "t": "Guess featuring billie eilish",
+        "a": "Charli xcx",
+        "p": 78
+    },
+    {
+        "t": "Dance The Night - From Barbie The Album",
+        "a": "Dua Lipa",
+        "p": 85
+    },
+    {
+        "t": "Houdini",
+        "a": "Dua Lipa",
+        "p": 82
+    },
+    {
+        "t": "positions",
+        "a": "Ariana Grande",
+        "p": 84
+    },
+    {
+        "t": "we can't be friends (wait for your love)",
+        "a": "Ariana Grande",
+        "p": 86
+    },
+    {
+        "t": "yes, and?",
+        "a": "Ariana Grande",
+        "p": 78
+    },
+    {
+        "t": "Rain On Me (with Ariana Grande)",
+        "a": "Lady Gaga",
+        "p": 85
+    },
+    {
+        "t": "Hold Me Closer",
+        "a": "Elton John",
+        "p": 76
+    },
+    {
+        "t": "Cold Heart - PNAU Remix",
+        "a": "Elton John",
+        "p": 88
+    },
+    {
+        "t": "Escapism.",
+        "a": "RAYE",
+        "p": 82
+    },
+    {
+        "t": "Prada",
+        "a": "cassö",
+        "p": 76
+    },
+    {
+        "t": "i like the way you kiss me",
+        "a": "Artemas",
+        "p": 80
+    },
+    {
+        "t": "End of Beginning",
+        "a": "Djo",
+        "p": 78
+    },
+    {
+        "t": "Glimpse of Us",
+        "a": "Joji",
+        "p": 82
+    },
+    {
+        "t": "Romantic Homicide",
+        "a": "d4vd",
+        "p": 72
+    },
+    {
+        "t": "Until I Found You",
+        "a": "Stephen Sanchez",
+        "p": 80
+    },
+    {
+        "t": "golden hour",
+        "a": "JVKE",
+        "p": 78
+    },
+    {
+        "t": "My Love Mine All Mine",
+        "a": "Mitski",
+        "p": 80
+    },
+    {
+        "t": "Strangers",
+        "a": "Kenya Grace",
+        "p": 66
+    },
+    {
+        "t": "(It Goes Like) Nanana - Edit",
+        "a": "Peggy Gou",
+        "p": 76
+    },
+    {
+        "t": "Rush",
+        "a": "Troye Sivan",
+        "p": 76
+    },
+    {
+        "t": "Diet Pepsi",
+        "a": "Addison Rae",
+        "p": 50
+    },
+    {
+        "t": "That’s So True",
+        "a": "Gracie Abrams",
+        "p": 58
+    },
+    {
+        "t": "I Love You, I'm Sorry",
+        "a": "Gracie Abrams",
+        "p": 55
+    },
+    {
+        "t": "The Emptiness Machine",
+        "a": "Linkin Park",
+        "p": 78
+    },
+    {
+        "t": "Padam Padam",
+        "a": "Kylie Minogue",
+        "p": 76
+    },
+    {
+        "t": "Beggin'",
+        "a": "Måneskin",
+        "p": 88
+    },
+    {
+        "t": "Mood (feat. iann dior)",
+        "a": "24kGoldn",
+        "p": 86
+    },
+    {
+        "t": "ROCKSTAR (feat. Roddy Ricch)",
+        "a": "DaBaby",
+        "p": 88
+    },
+    {
+        "t": "Big Energy",
+        "a": "Latto",
+        "p": 74
+    },
+    {
+        "t": "F.N.F. (Let's Go)",
+        "a": "Hitkidd",
+        "p": 40
+    },
+    {
+        "t": "Yeah Glo!",
+        "a": "GloRilla",
+        "p": 45
+    },
+    {
+        "t": "Made For Me",
+        "a": "Muni Long",
+        "p": 55
+    },
+    {
+        "t": "On My Mama",
+        "a": "Victoria Monét",
+        "p": 58
+    },
+    {
+        "t": "Doja",
+        "a": "Central Cee",
+        "p": 75
+    },
+    {
+        "t": "Sprinter",
+        "a": "Dave",
+        "p": 82
+    },
+    {
+        "t": "love nwantiti (ah ah ah)",
+        "a": "CKay",
+        "p": 86
+    },
+    {
+        "t": "soso",
+        "a": "OMAH LAY",
+        "p": 45
+    },
+    {
+        "t": "you broke me first",
+        "a": "Tate McRae",
+        "p": 78
+    },
+    {
+        "t": "abcdefu",
+        "a": "GAYLE",
+        "p": 80
+    },
+    {
+        "t": "Ghost",
+        "a": "Justin Bieber",
+        "p": 82
+    },
+    {
+        "t": "Late Night Talking",
+        "a": "Harry Styles",
+        "p": 80
+    },
+    {
+        "t": "Used To Be Young",
+        "a": "Miley Cyrus",
+        "p": 75
+    },
+    {
+        "t": "Chemical",
+        "a": "Post Malone",
+        "p": 78
+    },
+    {
+        "t": "Take My Breath",
+        "a": "The Weeknd",
+        "p": 80
+    },
+    {
+        "t": "Die For You - Remix",
+        "a": "The Weeknd",
+        "p": 86
+    },
+    {
+        "t": "Karma",
+        "a": "Taylor Swift",
+        "p": 85
+    },
+    {
+        "t": "Is It Over Now? (Taylor's Version) (From The Vault)",
+        "a": "Taylor Swift",
+        "p": 82
+    },
+    {
+        "t": "Anti-Hero",
+        "a": "Taylor Swift",
+        "p": 90
+    },
+    {
+        "t": "Savage Love (Laxed - Siren Beat)",
+        "a": "Jawsh 685",
+        "p": 85
+    }
+]
