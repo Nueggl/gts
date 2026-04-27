@@ -236,3 +236,92 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
     color: white;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.9); /* Starker Schatten für Lesbarkeit */
 }
+
+/* --- NEUES DASHBOARD LAYOUT (2 Boxen nebeneinander) --- */
+
+/* Der ursprüngliche start-screen wird zum unsichtbaren Wrapper */
+#start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Macht beide Boxen gleich hoch */
+    gap: 20px;
+    background: transparent !important; /* Überschreibt alte Hintergrundfarbe */
+    padding: 0 !important;
+    box-shadow: none !important;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Bricht auf Handys um */
+}
+
+/* Das ist jetzt das Design für die sichtbaren Kacheln */
+.settings-panel {
+    background: #1e1e1e; /* Deine dunkle Kachel-Farbe aus dem Screenshot */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    min-width: 520px;
+}
+
+.pop-panel {
+    min-width: 250px;
+    max-width: 500px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.pop-sliders-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+/* Container für EINEN vertikalen Slider */
+.vertical-slider-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    flex: 1;
+}
+
+.vertical-slider-box:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Die Verdunklung für den inaktiven Slider */
+.vertical-slider-box.dimmed {
+    opacity: 0.3;
+}
+
+/* Der Rotationstrick */
+.vertical-range-wrapper {
+    width: 180px; /* Länge des Sliders */
+    height: 30px;
+    transform: rotate(-90deg);
+    margin-top: 85px;
+    margin-bottom: 80px;
+}
+
+/* Überschreibe das Verhalten für die range-inputs */
+.vertical-range-wrapper input[type="range"] {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.vertical-range-wrapper input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+}

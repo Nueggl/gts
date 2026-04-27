@@ -11,47 +11,83 @@
     <h1>Guess the Song!</h1>
 
     <div id="start-screen">
-        <h2>Einstellungen</h2>
         
-        <div class="filter-group">
-            <label>Jahre (Slider):</label>
-            <div class="range-slider">
-                <input type="range" id="year-min" min="1940" max="2030" value="1940">
-                <input type="range" id="year-max" min="1940" max="2030" value="2030">
-                <div class="slider-track"></div>
-                <div class="slider-range" id="slider-range"></div>
+        <div class="settings-panel">
+            <h2>Einstellungen</h2>
+            
+            <div class="filter-group">
+                <label>Jahre (Slider):</label>
+                <div class="range-slider">
+                    <input type="range" id="year-min" min="1940" max="2030" value="1940">
+                    <input type="range" id="year-max" min="1940" max="2030" value="2030">
+                    <div class="slider-track"></div>
+                    <div class="slider-range" id="slider-range"></div>
+                </div>
+                <div class="slider-values">
+                    <span id="year-min-val">1940</span> - <span id="year-max-val">2030</span>
+                </div>
             </div>
-            <div class="slider-values">
-                <span id="year-min-val">1940</span> - <span id="year-max-val">2030</span>
+
+            <div class="filter-group">
+                <label>Jahrzehnte:</label>
+                <div id="decade-filters" class="checkbox-group">
+                    <label><input type="checkbox" value="1940"> 1940er</label>
+                    <label><input type="checkbox" value="1950"> 1950er</label>
+                    <label><input type="checkbox" value="1960"> 1960er</label>
+                    <label><input type="checkbox" value="1970"> 1970er</label>
+                    <label><input type="checkbox" value="1980"> 1980er</label>
+                    <label><input type="checkbox" value="1990"> 1990er</label>
+                    <label><input type="checkbox" value="2000"> 2000er</label>
+                    <label><input type="checkbox" value="2010"> 2010er</label>
+                    <label><input type="checkbox" value="2020"> 2020er</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Genre:</label>
+                <div id="genre-filters" class="checkbox-group"></div>
+            </div>
+
+            <div class="filter-group">
+                <label><input type="checkbox" id="admin-mode-toggle"> Admin-Modus aktivieren</label>
+            </div>
+
+            <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled style="margin-bottom: 10px; margin-top: 10px;">Lade Songs...</button>
+            <button onclick="showSongList()" style="background-color: #17a2b8; width: 100%;">Alle Songs anzeigen 📋</button>
+        </div>
+
+        <div class="settings-panel pop-panel">
+            <h2>Schwierigkeit</h2>
+            
+            <div class="pop-sliders-container">
+                <div class="vertical-slider-box" id="pop-abs-container" onclick="setPopFilterMode('absolute')">
+                    <label style="font-size: 0.9em; text-align: center;">Absolut<br>(1-100)</label>
+                    <div class="vertical-range-wrapper range-slider">
+                        <input type="range" id="pop-abs-min" min="1" max="100" value="1">
+                        <input type="range" id="pop-abs-max" min="1" max="100" value="100">
+                        <div class="slider-track"></div>
+                        <div class="slider-range" id="slider-range-abs"></div>
+                    </div>
+                    <div class="slider-values" style="font-weight: bold;">
+                        <span id="pop-abs-min-val">1</span> - <span id="pop-abs-max-val">100</span>
+                    </div>
+                </div>
+
+                <div class="vertical-slider-box dimmed" id="pop-rel-container" onclick="setPopFilterMode('relative')">
+                    <label style="font-size: 0.9em; text-align: center;">Relativ<br>(%)</label>
+                    <div class="vertical-range-wrapper range-slider">
+                        <input type="range" id="pop-rel-min" min="0" max="100" value="0">
+                        <input type="range" id="pop-rel-max" min="0" max="100" value="100">
+                        <div class="slider-track"></div>
+                        <div class="slider-range" id="slider-range-rel"></div>
+                    </div>
+                    <div class="slider-values" style="font-weight: bold; color: #ffc107;">
+                        <span id="pop-rel-min-val">0%</span> - <span id="pop-rel-max-val">100%</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="filter-group">
-            <label>Jahrzehnte:</label>
-            <div id="decade-filters" class="checkbox-group">
-                <label><input type="checkbox" value="1940"> 1940er</label>
-                <label><input type="checkbox" value="1950"> 1950er</label>
-                <label><input type="checkbox" value="1960"> 1960er</label>
-                <label><input type="checkbox" value="1970"> 1970er</label>
-                <label><input type="checkbox" value="1980"> 1980er</label>
-                <label><input type="checkbox" value="1990"> 1990er</label>
-                <label><input type="checkbox" value="2000"> 2000er</label>
-                <label><input type="checkbox" value="2010"> 2010er</label>
-                <label><input type="checkbox" value="2020"> 2020er</label>
-            </div>
-        </div>
-
-        <div class="filter-group">
-            <label>Genre:</label>
-            <div id="genre-filters" class="checkbox-group"></div>
-        </div>
-
-        <div class="filter-group">
-            <label><input type="checkbox" id="admin-mode-toggle"> Admin-Modus aktivieren</label>
-        </div>
-
-        <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled style="margin-bottom: 10px;">Lade Songs...</button>
-        <button onclick="showSongList()" style="background-color: #17a2b8; width: 100%;">Alle Songs anzeigen 📋</button>
     </div>
 
     <div id="song-list-screen" class="hidden">

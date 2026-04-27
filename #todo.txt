@@ -1,5 +1,4 @@
 -UI verschönern
--filtern nach aufrufen? od insg popularität (--> maybe KI schätzen lassen um api limits zu vermeiden); relative popularity im Genre/Genres
 -dauer des songs einstellen; stelle des songs einstellen (random, anfang, ...)
 -diagram zum einstellen der wsk der jahrzehnte
 -einige jahre in song.json fixen

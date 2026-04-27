@@ -103,37 +103,75 @@ function sortSongs(column) {
 }
 
 // --- SPIEL LOGIK ---
-function setupFilters() {
-    const years = songs.map(s => s.year).filter(y => y);
-    const minYear = Math.min(...years);
-    const maxYear = Math.max(...years);
+// --- NEUE VARIABLEN FÜR POPULARITY ---
+let activePopFilter = 'absolute'; // Standardmäßig ist der absolute aktiv
 
-    const yearMinInput = document.getElementById('year-min');
-    const yearMaxInput = document.getElementById('year-max');
-    const yearMinVal = document.getElementById('year-min-val');
-    const yearMaxVal = document.getElementById('year-max-val');
-    const sliderRange = document.getElementById('slider-range');
+function setPopFilterMode(mode) {
+    activePopFilter = mode;
+    if (mode === 'absolute') {
+        document.getElementById('pop-abs-container').classList.remove('dimmed');
+        document.getElementById('pop-rel-container').classList.add('dimmed');
+    } else {
+        document.getElementById('pop-abs-container').classList.add('dimmed');
+        document.getElementById('pop-rel-container').classList.remove('dimmed');
+    }
+}
 
-    yearMinInput.min = minYear; yearMinInput.max = maxYear; yearMinInput.value = minYear;
-    yearMaxInput.min = minYear; yearMaxInput.max = maxYear; yearMaxInput.value = maxYear;
+// Hilfsfunktion: Verwaltet alle Doppel-Slider einheitlich
+function initDualSlider(minId, maxId, minValId, maxValId, trackRangeId, globalMin, globalMax, isPercent) {
+    const minInput = document.getElementById(minId);
+    const maxInput = document.getElementById(maxId);
+    const minVal = document.getElementById(minValId);
+    const maxVal = document.getElementById(maxValId);
+    const sliderRange = document.getElementById(trackRangeId);
 
-    function updateSlider() {
-        let min = parseInt(yearMinInput.value);
-        let max = parseInt(yearMaxInput.value);
-        if (min > max) { [min, max] = [max, min]; }
-        yearMinVal.innerText = min;
-        yearMaxVal.innerText = max;
-        const range = maxYear - minYear;
-        const leftPercent = ((min - minYear) / range) * 100;
-        const rightPercent = ((maxYear - max) / range) * 100;
+    // Initialwerte setzen
+    // IMMER die echten Datenbank-Werte erzwingen!
+    minInput.min = globalMin;
+    minInput.max = globalMax;
+    minInput.value = globalMin;
+    
+    maxInput.min = globalMin;
+    maxInput.max = globalMax;
+    maxInput.value = globalMax;
+
+    function update() {
+        let min = parseInt(minInput.value);
+        let max = parseInt(maxInput.value);
+        
+        // Verhindern, dass sich die Regler kreuzen
+        if (min > max) {
+            let tmp = min; min = max; max = tmp;
+            minInput.value = min; maxInput.value = max;
+        }
+        
+        minVal.innerText = min + (isPercent ? '%' : '');
+        maxVal.innerText = max + (isPercent ? '%' : '');
+        
+        const range = globalMax - globalMin;
+        const leftPercent = ((min - globalMin) / range) * 100;
+        const rightPercent = ((globalMax - max) / range) * 100;
         sliderRange.style.left = leftPercent + '%';
         sliderRange.style.right = rightPercent + '%';
     }
 
-    yearMinInput.addEventListener('input', updateSlider);
-    yearMaxInput.addEventListener('input', updateSlider);
-    updateSlider();
+    minInput.addEventListener('input', update);
+    maxInput.addEventListener('input', update);
+    update();
+}
 
+function setupFilters() {
+    // 1. Jahr-Slider initialisieren
+    const years = songs.map(s => s.year).filter(y => y);
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+    initDualSlider('year-min', 'year-max', 'year-min-val', 'year-max-val', 'slider-range', minYear, maxYear, false);
+
+    // 2. Popularitäts-Slider initialisieren
+    initDualSlider('pop-abs-min', 'pop-abs-max', 'pop-abs-min-val', 'pop-abs-max-val', 'slider-range-abs', 1, 100, false);
+    initDualSlider('pop-rel-min', 'pop-rel-max', 'pop-rel-min-val', 'pop-rel-max-val', 'slider-range-rel', 0, 100, true);
+
+    // 3. Genres laden
     const genres = [...new Set(songs.map(s => s.genre).filter(g => g))].sort();
     const genreContainer = document.getElementById('genre-filters');
     genreContainer.innerHTML = '';
@@ -162,12 +200,13 @@ function applyFiltersAndStart() {
         debugConsole.classList.add('hidden');
     }
 
+    // --- STUFE 1: Grundfilter (Jahr & Genre) ---
     const minYear = parseInt(document.getElementById('year-min-val').innerText);
     const maxYear = parseInt(document.getElementById('year-max-val').innerText);
     const selectedDecades = Array.from(document.querySelectorAll('#decade-filters input:checked')).map(cb => parseInt(cb.value));
     const selectedGenres = Array.from(document.querySelectorAll('#genre-filters input:checked')).map(cb => cb.value);
 
-    filteredSongs = songs.filter(song => {
+    let baseFiltered = songs.filter(song => {
         if (!song.year || song.year < minYear || song.year > maxYear) return false;
         if (selectedDecades.length > 0) {
             const songDecade = Math.floor(song.year / 10) * 10;
@@ -177,11 +216,49 @@ function applyFiltersAndStart() {
         return true;
     });
 
-    if (filteredSongs.length === 0) {
-        alert("Keine Songs für diese Filter gefunden!");
+    if (baseFiltered.length === 0) {
+        alert("Keine Songs für diese Basis-Filter (Jahre/Genre) gefunden!");
         return;
     }
 
+    // --- STUFE 2: Popularitäts-Filter ---
+    const absMin = parseInt(document.getElementById('pop-abs-min').value);
+    const absMax = parseInt(document.getElementById('pop-abs-max').value);
+    const relMin = parseInt(document.getElementById('pop-rel-min').value);
+    const relMax = parseInt(document.getElementById('pop-rel-max').value);
+
+    filteredSongs = baseFiltered.filter(song => {
+        // Fallback: Wenn 0 oder undefiniert -> Immer durchwinken!
+        if (!song.popularity || song.popularity === 0) return true;
+
+        if (activePopFilter === 'absolute') {
+            return song.popularity >= absMin && song.popularity <= absMax;
+        } else {
+            // Relativer Modus: Wir holen alle GÜLTIGEN Popularitätswerte der aktuellen Auswahl
+            let validPops = baseFiltered.map(s => s.popularity).filter(p => p > 0);
+            
+            // Wenn alle Songs in diesem Genre "0" haben, winken wir sie logischerweise durch
+            if (validPops.length === 0) return true; 
+
+            let actualMin = Math.min(...validPops);
+            let actualMax = Math.max(...validPops);
+            let range = actualMax - actualMin;
+            
+            // Die Prozentwerte in echte Score-Zahlen umrechnen
+            let targetMin = actualMin + (range * (relMin / 100));
+            let targetMax = actualMin + (range * (relMax / 100));
+
+            return song.popularity >= targetMin && song.popularity <= targetMax;
+        }
+    });
+
+    // Fehlermeldung, wenn der Pop-Filter zu streng war
+    if (filteredSongs.length === 0) {
+        alert("Die Popularitäts-Filter sind zu streng. Für diese Auswahl wurden keine Songs gefunden!");
+        return;
+    }
+
+    // --- START ---
     document.getElementById('start-screen').classList.add('hidden');
     document.getElementById('player-container').classList.remove('hidden');
     document.getElementById('game-controls').classList.remove('hidden');
@@ -310,7 +387,7 @@ function uiLog(message) {
 
 function adminReveal() {
     if (!currentSong) return;
-    document.getElementById('admin-debug').innerText = `Admin-Info: ${currentSong.artist} - ${currentSong.title}`;
+    document.getElementById('admin-debug').innerText = `Admin-Info: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album}, Pop: ${currentSong.popularity})`;
     uiLog("Lösung per Admin-Button angezeigt.");
 }
 
