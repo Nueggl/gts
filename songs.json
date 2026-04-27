@@ -1496,7 +1496,8 @@
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b273fbc71c99f9c1296c56dd51b6",
         "year": 1991,
         "album": "Nevermind (Remastered)",
-        "genre": "Pop"
+        "genre": "Pop",
+        "popularity": 90
     },
     {
         "title": "Come As You Are",
@@ -2005,7 +2006,8 @@
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b2737586047ed2cb60ea3188b5bd",
         "year": 1970,
         "album": "I Walk the Line (Original Soundtrack Recording)",
-        "genre": "Soundtrack"
+        "genre": "Soundtrack",
+        "popularity": 70
     },
     {
         "title": "Man in Black",
@@ -2274,7 +2276,8 @@
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b273b26c34d79e4cdaa73672a0b1",
         "year": 1969,
         "album": "From Elvis in Memphis",
-        "genre": "Rock"
+        "genre": "Rock",
+        "popularity": 80
     },
     {
         "title": "Jailhouse Rock",
@@ -2293,7 +2296,8 @@
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b27365e7f92b6667ac6cbb239845",
         "year": 1958,
         "album": "Elvis' Golden Records",
-        "genre": "Rock"
+        "genre": "Rock",
+        "popularity": 89
     },
     {
         "title": "Can't Help Falling in Love",
@@ -2322,7 +2326,8 @@
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b27365e7f92b6667ac6cbb239845",
         "year": 1958,
         "album": "Elvis' Golden Records",
-        "genre": "Rock"
+        "genre": "Rock",
+        "popularity": 90
     },
     {
         "title": "Don't Be Cruel",
@@ -2441,7 +2446,8 @@
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b2738a22827b01e5d68d3736d58b",
         "year": 1957,
         "album": "Here's Little Richard (Deluxe Edition)",
-        "genre": "Rock"
+        "genre": "Rock",
+        "popularity": 85
     },
     {
         "title": "Long Tall Sally (The Thing)",
@@ -12590,7 +12596,8 @@
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f",
         "year": 2018,
         "album": "Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)",
-        "genre": "Hip-Hop/Rap"
+        "genre": "Hip-Hop/Rap",
+        "popularity": 90
     },
     {
         "title": "Circles",

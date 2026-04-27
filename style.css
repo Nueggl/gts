@@ -303,7 +303,7 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
 
 /* Die Verdunklung für den inaktiven Slider */
 .vertical-slider-box.dimmed {
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 /* Der Rotationstrick */
