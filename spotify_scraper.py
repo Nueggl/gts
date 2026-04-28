@@ -122,7 +122,8 @@ def build_database():
                         "coverUrl": track['album']['images'][0]['url'],
                         "year": year,
                         "album": track['album']['name'],
-                        "genre": echtes_genre
+                        "genre": echtes_genre,
+                        "popularity": 0
                     }
                     
                     songs_db.append(new_song)

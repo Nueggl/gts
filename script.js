@@ -184,6 +184,9 @@ function setupFilters() {
         label.appendChild(document.createTextNode(' ' + genre));
         genreContainer.appendChild(label);
     });
+
+    // Initialisiere das Radar
+    drawRadar();
 }
 
 function applyFiltersAndStart() {
@@ -203,21 +206,36 @@ function applyFiltersAndStart() {
     // --- STUFE 1: Grundfilter (Jahr & Genre) ---
     const minYear = parseInt(document.getElementById('year-min-val').innerText);
     const maxYear = parseInt(document.getElementById('year-max-val').innerText);
-    const selectedDecades = Array.from(document.querySelectorAll('#decade-filters input:checked')).map(cb => parseInt(cb.value));
     const selectedGenres = Array.from(document.querySelectorAll('#genre-filters input:checked')).map(cb => cb.value);
 
     let baseFiltered = songs.filter(song => {
+        // 1. Check: Master-Slider für Jahre
         if (!song.year || song.year < minYear || song.year > maxYear) return false;
-        if (selectedDecades.length > 0) {
-            const songDecade = Math.floor(song.year / 10) * 10;
-            if (!selectedDecades.includes(songDecade)) return false;
+
+        // 2. Check: Radar-Diagramm / Jahrzehnte (Werte aus radar.js)
+        if (typeof radarValues !== 'undefined') {
+            let y = song.year;
+            let radarIndex = 0;
+            if (y < 1970) radarIndex = 0;
+            else if (y < 1980) radarIndex = 1;
+            else if (y < 1990) radarIndex = 2;
+            else if (y < 2000) radarIndex = 3;
+            else if (y < 2010) radarIndex = 4;
+            else if (y < 2020) radarIndex = 5;
+            else radarIndex = 6;
+
+            // Wenn das Jahrzehnt im Radar auf 0 steht (oder die Checkbox aus ist), fliegt der Song raus!
+            if (radarValues[radarIndex] === 0) return false;
         }
+
+        // 3. Check: Genre
         if (selectedGenres.length > 0 && !selectedGenres.includes(song.genre)) return false;
+        
         return true;
     });
 
     if (baseFiltered.length === 0) {
-        alert("Keine Songs für diese Basis-Filter (Jahre/Genre) gefunden!");
+        alert("Keine Songs für diese Basis-Filter (Jahre/Genre/Jahrzehnt) gefunden!");
         return;
     }
 
@@ -267,8 +285,49 @@ function applyFiltersAndStart() {
 
 function startGame() {
     if (filteredSongs.length === 0) return;
-    currentSong = filteredSongs[Math.floor(Math.random() * filteredSongs.length)];
+
+    // --- NEU: GEWICHTETE ZUFALLSAUSWAHL ---
+    // 1. Songs nach Jahrzehnt sortieren
+    let pools = [[], [], [], [], [], [], []]; // 7 Arrays für 7 Jahrzehnte
     
+    filteredSongs.forEach(song => {
+        let y = song.year;
+        if (y < 1970) pools[0].push(song);
+        else if (y < 1980) pools[1].push(song);
+        else if (y < 1990) pools[2].push(song);
+        else if (y < 2000) pools[3].push(song);
+        else if (y < 2010) pools[4].push(song);
+        else if (y < 2020) pools[5].push(song);
+        else pools[6].push(song);
+    });
+
+    // 2. Nur Gewichte von Jahrzehnten zulassen, die AUCH WIRKLICH SONGS haben!
+    let activeWeights = radarValues.map((weight, i) => pools[i].length > 0 ? weight : 0);
+    let totalWeight = activeWeights.reduce((a, b) => a + b, 0);
+
+    // Fallback: Wenn durch absurde Filter-Kombinationen das Gewicht 0 ist, puren Zufall nehmen
+    if (totalWeight === 0) {
+        currentSong = filteredSongs[Math.floor(Math.random() * filteredSongs.length)];
+    } else {
+        // 3. Lose ziehen!
+        let randomVal = Math.random() * totalWeight;
+        let selectedDecadeIndex = 0;
+        let cumulativeWeight = 0;
+        
+        for (let i = 0; i < activeWeights.length; i++) {
+            cumulativeWeight += activeWeights[i];
+            if (randomVal <= cumulativeWeight) {
+                selectedDecadeIndex = i;
+                break;
+            }
+        }
+        
+        // 4. Einen zufälligen Song aus dem nun gezogenen Jahrzehnt wählen
+        let winningPool = pools[selectedDecadeIndex];
+        currentSong = winningPool[Math.floor(Math.random() * winningPool.length)];
+    }
+    // --- ENDE NEU ---
+
     document.getElementById('curtain').classList.remove('hidden');
     document.getElementById('cover-art').classList.add('hidden');
     document.getElementById('cover-art').src = currentSong.coverUrl;

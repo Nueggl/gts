@@ -1,4 +1,4 @@
 -UI verschönern
 -dauer des songs einstellen; stelle des songs einstellen (random, anfang, ...)
--diagram zum einstellen der wsk der jahrzehnte
 -einige jahre in song.json fixen
+-links zu songs in bibliothek
