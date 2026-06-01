@@ -60,6 +60,21 @@ function renderSongTable(data) {
     tbody.innerHTML = '';
     data.forEach(song => {
         const tr = document.createElement('tr');
+        
+        // --- NEU: Spotify Link Logik ---
+        if (song.spotifyUri) {
+            // Wandelt "spotify:track:12345..." in einen klickbaren Web-Link um
+            const spotifyUrl = song.spotifyUri.replace('spotify:track:', 'https://open.spotify.com/track/');
+            
+            // Macht die gesamte Zeile klickbar (öffnet neuen Tab)
+            tr.onclick = () => window.open(spotifyUrl, '_blank');
+            
+            // Macht den Mauszeiger zur "Hand" und gibt einen kleinen Info-Text
+            tr.style.cursor = 'pointer'; 
+            tr.title = "Klicke hier, um den Song auf Spotify zu öffnen"; 
+        }
+        // --- ENDE NEU ---
+
         tr.innerHTML = `
             <td><img src="${song.coverUrl}" style="width: 40px; border-radius: 3px;"></td>
             <td>${song.title}</td>
