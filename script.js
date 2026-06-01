@@ -370,10 +370,21 @@ function startGame() {
     document.getElementById('tipp-btn-interpret').innerText = "Tipp zum Interpret 👤";
     document.getElementById('tipp-btn-titel').innerText = "Tipp zum Titel 🎵";
 
-    const randomStart = Math.floor(Math.random() * 60) + 20;
+    // --- NEUE WIEDERGABE-LOGIK ---
+    const mode = document.querySelector('input[name="start-mode"]:checked').value;
+    let startSec = 0;
+
+    if (mode === 'random') {
+        // Deine bisherige Logik: Startet irgendwo zwischen Sekunde 20 und 80
+        startSec = Math.floor(Math.random() * 60) + 20;
+    } else if (mode === 'start') {
+        // Startet exakt bei 0:00
+        startSec = 0;
+    }
+
     if (currentSong.spotifyUri) {
-        uiLog(`Spiele: ${currentSong.artist} - ${currentSong.title} (${currentSong.year})`);
-        spieleSong(currentSong.spotifyUri, randomStart);
+        uiLog(`Spiele: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}) | Start bei: ${startSec}s`);
+        spieleSong(currentSong.spotifyUri, startSec);
     }
 }
 

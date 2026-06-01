@@ -40,14 +40,63 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
 #status { margin: 20px; font-size: 1.2em; }
 
 /* --- Start Screen --- */
+/* --- DASHBOARD LAYOUT (3 Spalten) --- */
 #start-screen {
-    max-width: 600px;
-    margin: 40px auto;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    max-width: 95%; /* Etwas breiter für 3 Spalten */
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+/* Linke und Rechte Spalte */
+.left-side-column, .right-side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; /* Nehmen jeweils 1 Teil des Platzes ein */
+    min-width: 250px;
+    max-width: 350px; 
+}
+
+/* Mittlere Spalte (Hauptfilter) */
+.center-panel {
+    flex: 2; /* Nimmt doppelt so viel Platz ein wie die Seiten */
+    min-width: 400px;
+}
+
+.settings-panel {
+    background: #1e1e1e; 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Styling für die neuen Wiedergabe-Optionen */
+.playback-options {
+    margin-top: 10px;
+}
+
+.playback-options label {
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
     text-align: left;
+    font-size: 1.05em;
+    color: #ddd;
+}
+
+.playback-options input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Macht den Punkt minimal größer */
 }
 
 #start-screen h2 {
@@ -113,6 +162,7 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
 
 .slider-track {
     position: absolute;
+    left: 0;
     width: 100%;
     height: 6px;
     background: #cce5ff;
@@ -123,6 +173,7 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
 
 .slider-range {
     position: absolute;
+    left: 0;
     height: 6px;
     background: #0088ff;
     top: 12px;
@@ -132,6 +183,7 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
 
 .range-slider input[type="range"] {
     position: absolute;
+    left: 0;
     width: 100%;
     -webkit-appearance: none;
     appearance: none;
@@ -253,16 +305,6 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
     flex-wrap: wrap; /* Bricht auf Handys um */
 }
 
-/* Das ist jetzt das Design für die sichtbaren Kacheln */
-.settings-panel {
-    background: #1e1e1e; /* Deine dunkle Kachel-Farbe aus dem Screenshot */
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    flex: 1;
-    min-width: 520px;
-}
-
 .pop-panel {
     min-width: 250px;
     max-width: 500px;
@@ -313,6 +355,11 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
     transform: rotate(-90deg);
     margin-top: 85px;
     margin-bottom: 80px;
+    
+    /* --- NEU: Der Breiten-Fix --- */
+    /* Sagt dem Browser: "Ignoriere den waagerechten Platz, den der Slider vor der Drehung gebraucht hat!" */
+    margin-left: -75px; 
+    margin-right: -75px; 
 }
 
 /* Überschreibe das Verhalten für die range-inputs */
@@ -324,15 +371,6 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
 
 .vertical-range-wrapper input[type="range"]::-webkit-slider-thumb {
     pointer-events: all;
-}
-
-/* Container für die rechte Spalte */
-.right-side-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1;
-    max-width: 450px; /* Breite der rechten Spalte */
 }
 
 /* Die Radar-Kachel etwas spezifischer stylen */
@@ -362,4 +400,23 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
     padding: 8px;
     border-radius: 5px;
     border: 1px solid rgba(255, 68, 68, 0.3);
+}
+
+.playback-options label {
+    display: flex;
+    align-items: center; /* Zentriert Punkt und Text vertikal auf einer Linie */
+    justify-content: flex-start; /* Zwingt alles nach links */
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1.05em;
+    color: #ddd;
+}
+
+.playback-options input[type="radio"] {
+    margin: 0;
+    margin-right: 12px;
+    width: 22px;  /* Macht den Auswahlpunkt schön groß */
+    height: 22px;
+    cursor: pointer;
+    accent-color: #0088ff; /* Färbt den Punkt passend zu deinen Slidern blau (in modernen Browsern) */
 }

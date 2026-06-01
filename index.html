@@ -12,7 +12,18 @@
 
     <div id="start-screen">
         
-        <div class="settings-panel">
+        <div class="left-side-column">
+            <div class="settings-panel playback-panel">
+                <h2>Wiedergabe</h2>
+                
+                <div class="playback-options">
+                    <label><input type="radio" name="start-mode" value="random" checked> Zufällig</label>
+                    <label><input type="radio" name="start-mode" value="start"> Von Beginn an</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-panel center-panel">
             <h2>Einstellungen</h2>
             
             <div class="filter-group">
@@ -90,7 +101,8 @@
             <div class="settings-panel radar-panel">
                 <h2>Jahrzehnt-Verteilung</h2>
                 <div class="radar-container">
-                <svg id="radar-svg" viewBox="0 0 400 400" style="width: 100%; max-width: 350px; overflow: visible;"></svg>                    <p id="radar-warning" class="hidden"></p>
+                    <svg id="radar-svg" viewBox="0 0 400 400" style="width: 100%; max-width: 350px; overflow: visible;"></svg>                    
+                    <p id="radar-warning" class="hidden"></p>
                 </div>
             </div>
         </div>
