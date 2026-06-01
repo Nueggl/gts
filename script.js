@@ -1,6 +1,7 @@
 let songs = [];
 let filteredSongs = [];
 let currentSong;
+let playTimeout;
 let revealedTitleCount = 0;
 let revealedArtistCount = 0;
 let adminMode = false;
@@ -385,6 +386,40 @@ function startGame() {
     if (currentSong.spotifyUri) {
         uiLog(`Spiele: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}) | Start bei: ${startSec}s`);
         spieleSong(currentSong.spotifyUri, startSec);
+        
+        if (playTimeout) clearTimeout(playTimeout); 
+        
+        const durationInput = document.getElementById('play-duration').value;
+        const playDuration = parseInt(durationInput);
+        
+        // --- NEU: Timer-Balken Logik ---
+        const progressContainer = document.getElementById('progress-container');
+        const progressBar = document.getElementById('progress-bar');
+
+        if (!isNaN(playDuration) && playDuration > 0) {
+            // Zeige den Balken
+            progressContainer.classList.remove('hidden');
+            
+            // 1. Balken sofort auf volle 100% setzen (ohne Animation)
+            progressBar.style.transition = 'none';
+            progressBar.style.width = '100%';
+            
+            // 2. Browser zwingen, die 100% sofort zu zeichnen (Reflow-Trick)
+            void progressBar.offsetWidth;
+            
+            // 3. Animation starten! (Balken schrumpft in exakt 'playDuration' Sekunden linear auf 0%)
+            progressBar.style.transition = `width ${playDuration}s linear`;
+            progressBar.style.width = '0%';
+
+            // Dein normaler Backend-Timer, der die Musik stoppt
+            playTimeout = setTimeout(() => {
+                if (typeof stoppeSpotify === "function") stoppeSpotify();
+                document.getElementById('status').innerText = "Songausschnitt beendet! Zeit zum Raten.";
+            }, playDuration * 1000); 
+        } else {
+            // Wenn kein Timer eingestellt ist, verstecken wir den Balken
+            progressContainer.classList.add('hidden');
+        }
     }
 }
 
@@ -442,6 +477,17 @@ function checkAnswer() {
 }
 
 function reveal(updateStatus = true) {
+    if (playTimeout) clearTimeout(playTimeout);
+    
+    // --- NEU: Balken einfrieren ---
+    const progressBar = document.getElementById('progress-bar');
+    if (progressBar) {
+        // Liest die exakte aktuelle Breite im Browser aus und friert sie ein
+        progressBar.style.width = window.getComputedStyle(progressBar).width;
+        progressBar.style.transition = 'none';
+    }
+    
+    document.getElementById('curtain').classList.add('hidden');
     //if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('curtain').classList.add('hidden');
     document.getElementById('cover-art').classList.remove('hidden');
@@ -453,6 +499,7 @@ function reveal(updateStatus = true) {
 }
 
 function goHome() {
+    if (playTimeout) clearTimeout(playTimeout);
     if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('start-screen').classList.remove('hidden');
     document.getElementById('player-container').classList.add('hidden');

@@ -12,15 +12,29 @@
 
     <div id="start-screen">
         
-        <div class="left-side-column">
+       <div class="left-side-column">
+            
             <div class="settings-panel playback-panel">
                 <h2>Wiedergabe</h2>
                 
                 <div class="playback-options">
-                    <label><input type="radio" name="start-mode" value="random" checked> Zufällig</label>
+                    <label><input type="radio" name="start-mode" value="random" checked> Zufällig (wie bisher)</label>
                     <label><input type="radio" name="start-mode" value="start"> Von Beginn an</label>
                 </div>
             </div>
+
+            <div class="settings-panel duration-panel">
+                <h2 style="margin-bottom: 15px;">Dauer</h2>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                    <label style="font-size: 1.05em; color: #ddd;">Länge des Songausschnitts:</label>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+                        <input type="number" id="play-duration" min="1" placeholder="z.B. 15" style="width: 80px; padding: 8px; background: #333; border: 1px solid #555; color: white; border-radius: 5px; text-align: center;">
+                        <span style="color: #ddd;">Sek.</span>
+                    </div>
+                    <span style="font-size: 0.8em; color: #888; margin-top: 5px;">(Leer lassen = bis zum Ende)</span>
+                </div>
+            </div>
+
         </div>
 
         <div class="settings-panel center-panel">
@@ -144,6 +158,11 @@
         <button id="start-btn" onclick="startGame()">Runde Starten</button>
         
         <div id="guess-area" class="hidden">
+            
+            <div id="progress-container" class="hidden" style="width: 100%; max-width: 400px; height: 12px; background: #333; border-radius: 6px; margin: 0 auto 15px auto; overflow: hidden; border: 1px solid #555;">
+                <div id="progress-bar" style="width: 100%; height: 100%; background: #0088ff;"></div>
+            </div>
+
             <input type="text" id="guess-title" placeholder="Titel">
             <input type="text" id="guess-artist" placeholder="Interpret">
 
