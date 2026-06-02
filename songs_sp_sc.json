@@ -15948,15 +15948,5 @@
         "album": "Savage Love (Laxed - Siren Beat)",
         "genre": "Pop",
         "popularity": 85
-    },
-    {
-        "title": "Hell Of A Life",
-        "artist": "Kanye West",
-        "spotifyUri": "spotify:track:3rCNmRonlHN1TXQLcG3dSk",
-        "coverUrl": "https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f",
-        "year": 2010,
-        "album": "My Beautiful Dark Twisted Fantasy",
-        "genre": "Hip-Hop/Rap",
-        "popularity": 0
     }
 ]

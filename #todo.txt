@@ -1,5 +1,5 @@
 -UI verschönern
--stelle des songs einstellen (random, anfang, ...) --> dafür länge des songs in songs.json einfügen (scraper?)
 -einige jahre in song.json fixen
+-stelle des songs einstellen (random, anfang, ...) --> dafür länge des songs in songs.json einfügen (scraper?)
 -popularity score operationalisieren (schwierig), lieber spotify score(?) nehmen -> ki bereits gefragt siehe chat
 -lyrics modus?
