@@ -122,7 +122,20 @@ def interactive_fix():
                 print("❌ Ungültige Eingabe. Bitte eine Zahl aus der Liste wählen.")
                 
         if choice == 0:
-            print("⏭️ Übersprungen.")
+            print("⏭️ Nichts Passendes dabei.")
+            manual_input = input("   👉 Gib die manuell recherchierten Views ein (oder drücke nur ENTER zum echten Überspringen): ").strip()
+            
+            if manual_input.isdigit():
+                new_views = int(manual_input)
+                main_song['stats_youtube'] = new_views
+                fixed_count += 1
+                print(f"✅ Manuell korrigiert auf {new_views:,} Views!")
+                
+                # Direkt speichern
+                with open(MAIN_DB_FILE, 'w', encoding='utf-8') as f:
+                    json.dump(main_db, f, indent=4, ensure_ascii=False)
+            else:
+                print("⏭️ Echt übersprungen.")
         else:
             selected_video = candidates[choice - 1]
             new_views = selected_video['views']

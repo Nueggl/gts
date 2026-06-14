@@ -50,7 +50,7 @@
         "album": "Imagine",
         "genre": "Rock",
         "popularity": 73,
-        "stats_youtube": 461644,
+        "stats_youtube": 343133631,
         "stats_lastfm": 978149,
         "stats_genius": 2262614,
         "raw_data_collected": true
@@ -64,7 +64,7 @@
         "album": "Nevermind (Remastered)",
         "genre": "Pop",
         "popularity": 99,
-        "stats_youtube": 2190155575,
+        "stats_youtube": 2191113583,
         "stats_lastfm": 4106963,
         "stats_genius": 3768659,
         "raw_data_collected": true
@@ -302,7 +302,7 @@
         "album": "In The Groove",
         "genre": "R&B/Soul",
         "popularity": 71,
-        "stats_youtube": 497974,
+        "stats_youtube": 13240167,
         "stats_lastfm": 947496,
         "stats_genius": 217526,
         "raw_data_collected": true
@@ -358,7 +358,7 @@
         "album": "Pet Sounds",
         "genre": "Rock",
         "popularity": 68,
-        "stats_youtube": 105339,
+        "stats_youtube": 8781028,
         "stats_lastfm": 806836,
         "stats_genius": 660017,
         "raw_data_collected": true
@@ -414,7 +414,7 @@
         "album": "London Calling (Remastered)",
         "genre": "Punk",
         "popularity": 76,
-        "stats_youtube": 1827042,
+        "stats_youtube": 5382278,
         "stats_lastfm": 1104529,
         "stats_genius": 594545,
         "raw_data_collected": true
@@ -470,7 +470,7 @@
         "album": "Born To Run",
         "genre": "Rock",
         "popularity": 63,
-        "stats_youtube": 20694,
+        "stats_youtube": 6231279,
         "stats_lastfm": 589965,
         "stats_genius": 863496,
         "raw_data_collected": true
@@ -526,7 +526,7 @@
         "album": "Electric Ladyland",
         "genre": "Rock",
         "popularity": 60,
-        "stats_youtube": 16852,
+        "stats_youtube": 274291451,
         "stats_lastfm": 1771904,
         "stats_genius": 10351,
         "raw_data_collected": true
@@ -946,7 +946,7 @@
         "album": "Closer",
         "genre": "Dance",
         "popularity": 77,
-        "stats_youtube": 1001710,
+        "stats_youtube": 509728506,
         "stats_lastfm": 1441838,
         "stats_genius": 7115013,
         "raw_data_collected": true
@@ -1114,7 +1114,7 @@
         "album": "Future Nostalgia",
         "genre": "Pop",
         "popularity": 43,
-        "stats_youtube": 4391,
+        "stats_youtube": 770258542,
         "stats_lastfm": 21,
         "stats_genius": 1699816,
         "raw_data_collected": true
@@ -1366,7 +1366,7 @@
         "album": "1989 (Deluxe)",
         "genre": "Pop",
         "popularity": 69,
-        "stats_youtube": 81828,
+        "stats_youtube": 3690833449,
         "stats_lastfm": 1654147,
         "stats_genius": 1490559,
         "raw_data_collected": true
@@ -2052,7 +2052,7 @@
         "album": "Master Of Puppets (Remastered)",
         "genre": "Metal",
         "popularity": 74,
-        "stats_youtube": 530290,
+        "stats_youtube": 141115508,
         "stats_lastfm": 1666537,
         "stats_genius": 1155897,
         "raw_data_collected": true
@@ -2388,7 +2388,7 @@
         "album": "Let Go",
         "genre": "Pop",
         "popularity": 76,
-        "stats_youtube": 1230420,
+        "stats_youtube": 887850101,
         "stats_lastfm": 2217728,
         "stats_genius": 904055,
         "raw_data_collected": true
@@ -2528,7 +2528,7 @@
         "album": "Stripped",
         "genre": "Pop",
         "popularity": 66,
-        "stats_youtube": 59006,
+        "stats_youtube": 9117923,
         "stats_lastfm": 872117,
         "stats_genius": 317458,
         "raw_data_collected": true
@@ -2738,7 +2738,7 @@
         "album": "Jolene (Expanded Edition)",
         "genre": "Country",
         "popularity": 74,
-        "stats_youtube": 507914,
+        "stats_youtube": 107758050,
         "stats_lastfm": 1352962,
         "stats_genius": 2471371,
         "raw_data_collected": true
@@ -2766,7 +2766,7 @@
         "album": "Ring Of Fire: The Best Of Johnny Cash",
         "genre": "Country",
         "popularity": 80,
-        "stats_youtube": 4089165,
+        "stats_youtube": 55909019,
         "stats_lastfm": 1245330,
         "stats_genius": 1808704,
         "raw_data_collected": true
@@ -2892,7 +2892,7 @@
         "album": "I Am What I Am (Expanded Edition)",
         "genre": "Country",
         "popularity": 66,
-        "stats_youtube": 194180,
+        "stats_youtube": 51620187,
         "stats_lastfm": 200861,
         "stats_genius": 159086,
         "raw_data_collected": true
@@ -3088,7 +3088,7 @@
         "album": "Kenny",
         "genre": "Pop",
         "popularity": 61,
-        "stats_youtube": 66637,
+        "stats_youtube": 35922596,
         "stats_lastfm": 121039,
         "stats_genius": 101358,
         "raw_data_collected": true
@@ -3130,7 +3130,7 @@
         "album": "Wichita Lineman (Remastered)",
         "genre": "Country",
         "popularity": 67,
-        "stats_youtube": 244958,
+        "stats_youtube": 23874003,
         "stats_lastfm": 159379,
         "stats_genius": 296376,
         "raw_data_collected": true
@@ -3144,7 +3144,7 @@
         "album": "Galveston (Remastered)",
         "genre": "Country",
         "popularity": 64,
-        "stats_youtube": 253527,
+        "stats_youtube": 5468732,
         "stats_lastfm": 58801,
         "stats_genius": 84813,
         "raw_data_collected": true
@@ -3228,7 +3228,7 @@
         "album": "Blue Hawaii",
         "genre": "Rock",
         "popularity": 77,
-        "stats_youtube": 1150796,
+        "stats_youtube": 474724438,
         "stats_lastfm": 1525451,
         "stats_genius": 4012087,
         "raw_data_collected": true
@@ -4054,7 +4054,7 @@
         "album": "Wish You Were Here",
         "genre": "Rock",
         "popularity": 84,
-        "stats_youtube": 9300179,
+        "stats_youtube": 264939704,
         "stats_lastfm": 2243465,
         "stats_genius": 3758221,
         "raw_data_collected": true
@@ -4194,7 +4194,7 @@
         "album": "The Definitive Collection (Deluxe Edition)",
         "genre": "R&B/Soul",
         "popularity": 54,
-        "stats_youtube": 159070,
+        "stats_youtube": 108864486,
         "stats_lastfm": 144,
         "stats_genius": 504375,
         "raw_data_collected": true
@@ -4208,7 +4208,7 @@
         "album": "Innervisions",
         "genre": "Motown",
         "popularity": 60,
-        "stats_youtube": 11586,
+        "stats_youtube": 27816789,
         "stats_lastfm": 673358,
         "stats_genius": 260950,
         "raw_data_collected": true
@@ -4320,7 +4320,7 @@
         "album": "I Remember Yesterday",
         "genre": "Pop",
         "popularity": 66,
-        "stats_youtube": 164704,
+        "stats_youtube": 11860844,
         "stats_lastfm": 474569,
         "stats_genius": 74536,
         "raw_data_collected": true
@@ -4334,7 +4334,7 @@
         "album": "Bad Girls",
         "genre": "R&B/Soul",
         "popularity": 69,
-        "stats_youtube": 389725,
+        "stats_youtube": 6764117,
         "stats_lastfm": 363205,
         "stats_genius": 207953,
         "raw_data_collected": true
@@ -4502,7 +4502,7 @@
         "album": "American Pie",
         "genre": "Rock",
         "popularity": 79,
-        "stats_youtube": 2125234,
+        "stats_youtube": 77246384,
         "stats_lastfm": 1336787,
         "stats_genius": 3857232,
         "raw_data_collected": true
@@ -4516,7 +4516,7 @@
         "album": "Every Picture Tells A Story",
         "genre": "Pop",
         "popularity": 66,
-        "stats_youtube": 108521,
+        "stats_youtube": 22644933,
         "stats_lastfm": 711717,
         "stats_genius": 150856,
         "raw_data_collected": true
@@ -4656,7 +4656,7 @@
         "album": "L.A. Woman",
         "genre": "Rock",
         "popularity": 71,
-        "stats_youtube": 439990,
+        "stats_youtube": 19000000,
         "stats_lastfm": 1089940,
         "stats_genius": 153947,
         "raw_data_collected": true
@@ -4796,7 +4796,7 @@
         "album": "The Cars",
         "genre": "Rock",
         "popularity": 67,
-        "stats_youtube": 143146,
+        "stats_youtube": 11768883,
         "stats_lastfm": 793937,
         "stats_genius": 146090,
         "raw_data_collected": true
@@ -5006,7 +5006,7 @@
         "album": "America",
         "genre": "Rock",
         "popularity": 74,
-        "stats_youtube": 677316,
+        "stats_youtube": 56199069,
         "stats_lastfm": 1548164,
         "stats_genius": 618944,
         "raw_data_collected": true
@@ -5020,7 +5020,7 @@
         "album": "Hearts",
         "genre": "Pop",
         "popularity": 70,
-        "stats_youtube": 412229,
+        "stats_youtube": 26000000,
         "stats_lastfm": 676131,
         "stats_genius": 164861,
         "raw_data_collected": true
@@ -5524,7 +5524,7 @@
         "album": "Easter",
         "genre": "Pop",
         "popularity": 73,
-        "stats_youtube": 1078918,
+        "stats_youtube": 43229097,
         "stats_lastfm": 631476,
         "stats_genius": 318525,
         "raw_data_collected": true
@@ -5664,7 +5664,7 @@
         "album": "Shaft (Deluxe Edition)",
         "genre": "Soundtrack",
         "popularity": 61,
-        "stats_youtube": 35065,
+        "stats_youtube": 12294287,
         "stats_lastfm": 246663,
         "stats_genius": 87081,
         "raw_data_collected": true
@@ -5762,7 +5762,7 @@
         "album": "Still Bill",
         "genre": "R&B/Soul",
         "popularity": 70,
-        "stats_youtube": 301366,
+        "stats_youtube": 5166423,
         "stats_lastfm": 643556,
         "stats_genius": 651943,
         "raw_data_collected": true
@@ -5776,7 +5776,7 @@
         "album": "Menagerie",
         "genre": "Pop",
         "popularity": 75,
-        "stats_youtube": 1299301,
+        "stats_youtube": 109754318,
         "stats_lastfm": 1191620,
         "stats_genius": 422645,
         "raw_data_collected": true
@@ -5930,7 +5930,7 @@
         "album": "Changes In Latitudes, Changes In Attitudes",
         "genre": "Singer/Songwriter",
         "popularity": 32,
-        "stats_youtube": 994,
+        "stats_youtube": 1598965,
         "stats_lastfm": 3,
         "stats_genius": 72003,
         "raw_data_collected": true
@@ -6686,7 +6686,7 @@
         "album": "Dancing In The Moonlight",
         "genre": "Rock",
         "popularity": 73,
-        "stats_youtube": 923649,
+        "stats_youtube": 24127349,
         "stats_lastfm": 676387,
         "stats_genius": 554720,
         "raw_data_collected": true
@@ -6728,7 +6728,7 @@
         "album": "Fly Like An Eagle",
         "genre": "Rock",
         "popularity": 68,
-        "stats_youtube": 328915,
+        "stats_youtube": 1231385,
         "stats_lastfm": 515793,
         "stats_genius": 89679,
         "raw_data_collected": true
@@ -6742,7 +6742,7 @@
         "album": "Fly Like An Eagle",
         "genre": "Rock",
         "popularity": 53,
-        "stats_youtube": 79057,
+        "stats_youtube": 2472533,
         "stats_lastfm": 573,
         "stats_genius": 99236,
         "raw_data_collected": true
@@ -6770,7 +6770,7 @@
         "album": "Mothership Connection",
         "genre": "R&B/Soul",
         "popularity": 46,
-        "stats_youtube": 1037,
+        "stats_youtube": 5502024,
         "stats_lastfm": 10074,
         "stats_genius": 75401,
         "raw_data_collected": true
@@ -6812,7 +6812,7 @@
         "album": "Honey",
         "genre": "R&B/Soul",
         "popularity": 58,
-        "stats_youtube": 14756,
+        "stats_youtube": 6305634,
         "stats_lastfm": 320793,
         "stats_genius": 53672,
         "raw_data_collected": true
@@ -7946,7 +7946,7 @@
         "album": "Combat Rock (Remastered)",
         "genre": "Pop",
         "popularity": 70,
-        "stats_youtube": 153168,
+        "stats_youtube": 149923142,
         "stats_lastfm": 749819,
         "stats_genius": 1710573,
         "raw_data_collected": true
@@ -8436,7 +8436,7 @@
         "album": "Music for the Masses (Deluxe)",
         "genre": "Pop",
         "popularity": 64,
-        "stats_youtube": 54616,
+        "stats_youtube": 129690185,
         "stats_lastfm": 836392,
         "stats_genius": 150143,
         "raw_data_collected": true
@@ -8856,7 +8856,7 @@
         "album": "The Essential Bangles",
         "genre": "Pop",
         "popularity": 68,
-        "stats_youtube": 273398,
+        "stats_youtube": 201250208,
         "stats_lastfm": 576207,
         "stats_genius": 162455,
         "raw_data_collected": true
@@ -9010,7 +9010,7 @@
         "album": "Diana",
         "genre": "Pop",
         "popularity": 72,
-        "stats_youtube": 785368,
+        "stats_youtube": 5300000,
         "stats_lastfm": 827925,
         "stats_genius": 267602,
         "raw_data_collected": true
@@ -9024,7 +9024,7 @@
         "album": "Diana",
         "genre": "Pop",
         "popularity": 71,
-        "stats_youtube": 487690,
+        "stats_youtube": 17183811,
         "stats_lastfm": 660664,
         "stats_genius": 389049,
         "raw_data_collected": true
@@ -9262,7 +9262,7 @@
         "album": "Loc-ed After Dark",
         "genre": "Pop",
         "popularity": 52,
-        "stats_youtube": 6259,
+        "stats_youtube": 33019067,
         "stats_lastfm": 24405,
         "stats_genius": 100921,
         "raw_data_collected": true
@@ -9542,7 +9542,7 @@
         "album": "Listen Like Thieves (Remastered)",
         "genre": "Pop",
         "popularity": 56,
-        "stats_youtube": 14431,
+        "stats_youtube": 9071404,
         "stats_lastfm": 159069,
         "stats_genius": 16406,
         "raw_data_collected": true
@@ -9906,7 +9906,7 @@
         "album": "I Don't Speak The Language",
         "genre": "Pop",
         "popularity": 76,
-        "stats_youtube": 1944241,
+        "stats_youtube": 58000000,
         "stats_lastfm": 691126,
         "stats_genius": 860692,
         "raw_data_collected": true
@@ -10116,7 +10116,7 @@
         "album": "Another Step",
         "genre": "Pop",
         "popularity": 63,
-        "stats_youtube": 123531,
+        "stats_youtube": 86000000,
         "stats_lastfm": 168108,
         "stats_genius": 38960,
         "raw_data_collected": true
@@ -10228,7 +10228,7 @@
         "album": "Wheels Are Turnin'",
         "genre": "Pop",
         "popularity": 46,
-        "stats_youtube": 12366,
+        "stats_youtube": 267554974,
         "stats_lastfm": 127,
         "stats_genius": 175934,
         "raw_data_collected": true
@@ -10242,7 +10242,7 @@
         "album": "Frontiers (2023 Remaster)",
         "genre": "Pop",
         "popularity": 65,
-        "stats_youtube": 36688,
+        "stats_youtube": 349546714,
         "stats_lastfm": 461039,
         "stats_genius": 1098344,
         "raw_data_collected": true
@@ -10396,7 +10396,7 @@
         "album": "Fame (Original Motion Picture Soundtrack)",
         "genre": "Soundtrack",
         "popularity": 65,
-        "stats_youtube": 110342,
+        "stats_youtube": 14169984,
         "stats_lastfm": 283019,
         "stats_genius": 213068,
         "raw_data_collected": true
@@ -10480,7 +10480,7 @@
         "album": "OK Computer",
         "genre": "Alternative",
         "popularity": 64,
-        "stats_youtube": 12649,
+        "stats_youtube": 136866017,
         "stats_lastfm": 2481605,
         "stats_genius": 906373,
         "raw_data_collected": true
@@ -11026,7 +11026,7 @@
         "album": "You Can't Stop The Bum Rush",
         "genre": "Pop",
         "popularity": 65,
-        "stats_youtube": 73498,
+        "stats_youtube": 14715909,
         "stats_lastfm": 418155,
         "stats_genius": 329012,
         "raw_data_collected": true
@@ -11852,7 +11852,7 @@
         "album": "The Bodyguard - Original Soundtrack Album",
         "genre": "Soundtrack",
         "popularity": 49,
-        "stats_youtube": 57884,
+        "stats_youtube": 107078372,
         "stats_lastfm": 51,
         "stats_genius": 215819,
         "raw_data_collected": true
@@ -12020,7 +12020,7 @@
         "album": "R.",
         "genre": "Pop",
         "popularity": 71,
-        "stats_youtube": 674535,
+        "stats_youtube": 14000000,
         "stats_lastfm": 360788,
         "stats_genius": 305881,
         "raw_data_collected": true
@@ -12664,7 +12664,7 @@
         "album": "Christina Aguilera (Expanded Edition)",
         "genre": "Pop",
         "popularity": 60,
-        "stats_youtube": 24404,
+        "stats_youtube": 8300000,
         "stats_lastfm": 453996,
         "stats_genius": 41780,
         "raw_data_collected": true
@@ -12706,7 +12706,7 @@
         "album": "Get A Grip",
         "genre": "Pop",
         "popularity": 57,
-        "stats_youtube": 14471,
+        "stats_youtube": 373356680,
         "stats_lastfm": 40395,
         "stats_genius": 475766,
         "raw_data_collected": true
@@ -13028,7 +13028,7 @@
         "album": "Clapton Chronicles: The Best of Eric Clapton",
         "genre": "Rock",
         "popularity": 64,
-        "stats_youtube": 65099,
+        "stats_youtube": 31453524,
         "stats_lastfm": 433410,
         "stats_genius": 195508,
         "raw_data_collected": true
@@ -13266,7 +13266,7 @@
         "album": "Come On Over (Diamond Edition / Super Deluxe)",
         "genre": "Country",
         "popularity": 55,
-        "stats_youtube": 530218,
+        "stats_youtube": 537484197,
         "stats_lastfm": 23,
         "stats_genius": 653185,
         "raw_data_collected": true
@@ -13294,7 +13294,7 @@
         "album": "The Kings of Country (Live)",
         "genre": "Country",
         "popularity": 60,
-        "stats_youtube": 23153,
+        "stats_youtube": 5292164,
         "stats_lastfm": 173458,
         "stats_genius": 236282,
         "raw_data_collected": true
@@ -13378,7 +13378,7 @@
         "album": "The Fat of the Land",
         "genre": "Electronic",
         "popularity": 68,
-        "stats_youtube": 203993,
+        "stats_youtube": 68401847,
         "stats_lastfm": 988183,
         "stats_genius": 135797,
         "raw_data_collected": true
@@ -13392,7 +13392,7 @@
         "album": "The Fat of the Land",
         "genre": "Dubstep",
         "popularity": 69,
-        "stats_youtube": 249200,
+        "stats_youtube": 13690676,
         "stats_lastfm": 959756,
         "stats_genius": 118827,
         "raw_data_collected": true
@@ -13658,7 +13658,7 @@
         "album": "Mack Daddy",
         "genre": "Fitness & Workout",
         "popularity": 66,
-        "stats_youtube": 35808,
+        "stats_youtube": 104363279,
         "stats_lastfm": 705550,
         "stats_genius": 1871680,
         "raw_data_collected": true
@@ -14554,7 +14554,7 @@
         "album": "Monkey Business",
         "genre": "Hip-Hop/Rap",
         "popularity": 69,
-        "stats_youtube": 157790,
+        "stats_youtube": 986549334,
         "stats_lastfm": 1738009,
         "stats_genius": 279683,
         "raw_data_collected": true
@@ -14890,7 +14890,7 @@
         "album": "M!ssundaztood (Expanded Edition)",
         "genre": "Pop",
         "popularity": 59,
-        "stats_youtube": 16111,
+        "stats_youtube": 196482396,
         "stats_lastfm": 335977,
         "stats_genius": 86815,
         "raw_data_collected": true
@@ -15016,7 +15016,7 @@
         "album": "No Strings Attached",
         "genre": "Pop",
         "popularity": 65,
-        "stats_youtube": 36440,
+        "stats_youtube": 614792708,
         "stats_lastfm": 1088216,
         "stats_genius": 492621,
         "raw_data_collected": true
@@ -15030,7 +15030,7 @@
         "album": "No Strings Attached",
         "genre": "Pop",
         "popularity": 52,
-        "stats_youtube": 295723,
+        "stats_youtube": 12978601,
         "stats_lastfm": 23,
         "stats_genius": 172669,
         "raw_data_collected": true
@@ -15478,7 +15478,7 @@
         "album": "American Idiot (20th Anniversary Deluxe Edition)",
         "genre": "Children's Music",
         "popularity": 71,
-        "stats_youtube": 152785,
+        "stats_youtube": 943676062,
         "stats_lastfm": 2416614,
         "stats_genius": 1472162,
         "raw_data_collected": true
@@ -15632,7 +15632,7 @@
         "album": "Toxicity",
         "genre": "Hard Rock",
         "popularity": 74,
-        "stats_youtube": 478253,
+        "stats_youtube": 4149558,
         "stats_lastfm": 2557497,
         "stats_genius": 1159796,
         "raw_data_collected": true
@@ -15688,7 +15688,7 @@
         "album": "Crush",
         "genre": "Pop",
         "popularity": 60,
-        "stats_youtube": 371253,
+        "stats_youtube": 1604052565,
         "stats_lastfm": 969,
         "stats_genius": 586905,
         "raw_data_collected": true
@@ -16234,7 +16234,7 @@
         "album": "Good News For People Who Love Bad News",
         "genre": "Alternative",
         "popularity": 60,
-        "stats_youtube": 4154,
+        "stats_youtube": 78376998,
         "stats_lastfm": 1899609,
         "stats_genius": 581697,
         "raw_data_collected": true
@@ -16290,7 +16290,7 @@
         "album": "Take Off Your Pants And Jacket",
         "genre": "Rock",
         "popularity": 68,
-        "stats_youtube": 155575,
+        "stats_youtube": 243801960,
         "stats_lastfm": 1310711,
         "stats_genius": 176418,
         "raw_data_collected": true
@@ -16654,7 +16654,7 @@
         "album": "Standing in the Way of Control",
         "genre": "Rock",
         "popularity": 50,
-        "stats_youtube": 1485,
+        "stats_youtube": 4268269,
         "stats_lastfm": 265249,
         "stats_genius": 13630,
         "raw_data_collected": true
@@ -16794,7 +16794,7 @@
         "album": "True Story",
         "genre": "Hip-Hop/Rap",
         "popularity": 63,
-        "stats_youtube": 40075,
+        "stats_youtube": 220446788,
         "stats_lastfm": 295100,
         "stats_genius": 293910,
         "raw_data_collected": true
@@ -16920,7 +16920,7 @@
         "album": "The Heat",
         "genre": "R&B/Soul",
         "popularity": 53,
-        "stats_youtube": 346985,
+        "stats_youtube": 3600000,
         "stats_lastfm": 33,
         "stats_genius": 202444,
         "raw_data_collected": true
@@ -17088,7 +17088,7 @@
         "album": "What Will The Neighbours Say?",
         "genre": "Pop",
         "popularity": 52,
-        "stats_youtube": 3208,
+        "stats_youtube": 5414182,
         "stats_lastfm": 212590,
         "stats_genius": 22265,
         "raw_data_collected": true
@@ -17550,7 +17550,7 @@
         "album": "Views",
         "genre": "Hip-Hop/Rap",
         "popularity": 78,
-        "stats_youtube": 911401,
+        "stats_youtube": 403416121,
         "stats_lastfm": 2022140,
         "stats_genius": 6355763,
         "raw_data_collected": true
@@ -17970,7 +17970,7 @@
         "album": "In The Lonely Hour",
         "genre": "Pop",
         "popularity": 77,
-        "stats_youtube": 1128438,
+        "stats_youtube": 1284077395,
         "stats_lastfm": 1252945,
         "stats_genius": 4001660,
         "raw_data_collected": true
@@ -18124,7 +18124,7 @@
         "album": "SremmLife 2 (Deluxe)",
         "genre": "Hip-Hop/Rap",
         "popularity": 74,
-        "stats_youtube": 365418,
+        "stats_youtube": 1090898831,
         "stats_lastfm": 947058,
         "stats_genius": 5048083,
         "raw_data_collected": true
@@ -18180,7 +18180,7 @@
         "album": "See You Again (feat. Charlie Puth)",
         "genre": "Hip-Hop/Rap",
         "popularity": 66,
-        "stats_youtube": 193118,
+        "stats_youtube": 7013049508,
         "stats_lastfm": 21884,
         "stats_genius": 4969701,
         "raw_data_collected": true
@@ -18488,7 +18488,7 @@
         "album": "Bad Blood",
         "genre": "Alternative",
         "popularity": 71,
-        "stats_youtube": 181036,
+        "stats_youtube": 833857558,
         "stats_lastfm": 1778798,
         "stats_genius": 974628,
         "raw_data_collected": true
@@ -18726,7 +18726,7 @@
         "album": "÷ (Deluxe)",
         "genre": "Pop",
         "popularity": 67,
-        "stats_youtube": 51715,
+        "stats_youtube": 627664924,
         "stats_lastfm": 738609,
         "stats_genius": 2002562,
         "raw_data_collected": true
@@ -18838,7 +18838,7 @@
         "album": "96 Months",
         "genre": "Dance",
         "popularity": 68,
-        "stats_youtube": 78010,
+        "stats_youtube": 1708506225,
         "stats_lastfm": 1127088,
         "stats_genius": 1557757,
         "raw_data_collected": true
@@ -18866,7 +18866,7 @@
         "album": "Divinely Uninspired To A Hellish Extent",
         "genre": "Alternative",
         "popularity": 67,
-        "stats_youtube": 32078,
+        "stats_youtube": 1303473564,
         "stats_lastfm": 1076438,
         "stats_genius": 4129215,
         "raw_data_collected": true
@@ -19160,7 +19160,7 @@
         "album": "Raymond v Raymond (Expanded Edition)",
         "genre": "R&B/Soul",
         "popularity": 55,
-        "stats_youtube": 243606,
+        "stats_youtube": 452769223,
         "stats_lastfm": 206,
         "stats_genius": 210237,
         "raw_data_collected": true
@@ -19342,7 +19342,7 @@
         "album": "Sugar",
         "genre": "Dance",
         "popularity": 57,
-        "stats_youtube": 25576,
+        "stats_youtube": 873115325,
         "stats_lastfm": 28665,
         "stats_genius": 233212,
         "raw_data_collected": true
@@ -19986,7 +19986,7 @@
         "album": "17",
         "genre": "Electronic",
         "popularity": 84,
-        "stats_youtube": 11584287,
+        "stats_youtube": 641861493,
         "stats_lastfm": 1219039,
         "stats_genius": 7316137,
         "raw_data_collected": true
@@ -20910,7 +20910,7 @@
         "album": "Good Luck, Babe!",
         "genre": "Pop",
         "popularity": 54,
-        "stats_youtube": 1147537,
+        "stats_youtube": 147236276,
         "stats_lastfm": 2,
         "stats_genius": 1607559,
         "raw_data_collected": true
@@ -20938,7 +20938,7 @@
         "album": "HIT ME HARD AND SOFT",
         "genre": "Alternative",
         "popularity": 77,
-        "stats_youtube": 939964,
+        "stats_youtube": 851506345,
         "stats_lastfm": 2252354,
         "stats_genius": 2342850,
         "raw_data_collected": true
@@ -20980,7 +20980,7 @@
         "album": "Happier Than Ever",
         "genre": "Alternative",
         "popularity": 83,
-        "stats_youtube": 8506893,
+        "stats_youtube": 467212413,
         "stats_lastfm": 1571819,
         "stats_genius": 4192148,
         "raw_data_collected": true
