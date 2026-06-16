@@ -5,7 +5,9 @@
     fehlende songs ergänzen
     bei manchen songs stimmen yt aufrufe nicht (eg. set fire to the rain, dream on (-> falsches video genommen)) --> evtl verhältnis zwischen anderen stats zu yt views prüfen um diese songs zu finden
         //siehe jasp/excel; ungefährer schwellenwert: fehler wenn wert < -0,25 (also zb -0,4)
-        manuel fixer weiter machen bei Comfortably Numb - Pink Floyd (noch nicht bearbeitet) --> alle einträge davor schon gelöscht
+        manuel fixer weiter machen bei Detroit Rock City - KISS (noch nicht bearbeitet)
+        Because You Loved Me (Theme from ""Up Close and Personal"") - C.line Dion in Haupt-DB nicht gefunden. Überspringe...
+        //Rock the Casbah - Remastered - The Clash
     gewichtung anpassen
     hauptscraper mit neuem popularity rechner/scraper ergänzen
 -lyrics modus?
