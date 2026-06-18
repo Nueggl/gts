@@ -6,7 +6,34 @@ import re
 import config_yt
 
 MAIN_DB_FILE = 'songs_new_score.json'
-FIX_LIST_FILE = 'songs_zu_fixen.json'
+FIX_LIST_FILE = 'songs_vergessen_ki.txt'
+
+def load_fix_list_from_txt(filepath):
+    fix_list = []
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue # Leere Zeilen überspringen
+                
+                try:
+                    # 1. Von hinten am ersten Komma abtrennen (für die Views)
+                    name_part, views_part = line.rsplit(',', 1)
+                    
+                    # 2. Den restlichen Text von hinten am " - " abtrennen (für Artist/Title)
+                    artist, title = name_part.rsplit(' – ', 1)
+                    
+                    fix_list.append({
+                        'title': title.strip(),
+                        'artist': artist.strip(),
+                        'stats_youtube': int(views_part.strip())
+                    })
+                except Exception:
+                    print(f"⚠️ Konnte Zeile nicht sauber lesen und überspringe sie: '{line}'")
+        return fix_list
+    except FileNotFoundError:
+        return []
 
 def get_candidate_videos(artist, title):
     # 1. Scraper holt die ersten 5 Video-IDs kostenlos
@@ -72,13 +99,14 @@ def interactive_fix():
         print(f"❌ Hauptdatenbank {MAIN_DB_FILE} nicht gefunden!")
         return
 
-    try:
-        with open(FIX_LIST_FILE, 'r', encoding='utf-8') as f:
-            fix_list = json.load(f)
-        print(f"📂 Fehlerliste geladen: {len(fix_list)} Songs müssen geprüft werden.\n")
-    except FileNotFoundError:
-        print(f"❌ Fehlerliste {FIX_LIST_FILE} nicht gefunden!")
+    print(f"📂 Lade Fehlerliste aus Textdatei '{FIX_LIST_FILE}'...")
+    fix_list = load_fix_list_from_txt(FIX_LIST_FILE)
+    
+    if not fix_list:
+        print(f"❌ Fehlerliste ist leer oder '{FIX_LIST_FILE}' wurde nicht gefunden!")
         return
+        
+    print(f"✅ {len(fix_list)} Songs erfolgreich eingelesen. Starte manuellen Fix...\n")
 
     fixed_count = 0
 
