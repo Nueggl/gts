@@ -1,137 +1,25 @@
 [
     {
-        "title": "Hotel California - 2013 Remaster",
-        "artist": "Eagles",
-        "spotifyUri": "spotify:track:40riOy7x9W7GXjyGp4pjAv",
-        "stats_youtube": 860901858,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Respect",
-        "artist": "Aretha Franklin",
-        "spotifyUri": "spotify:track:7s25THrKz86DM225dOYwnr",
-        "stats_youtube": 0,
-        "stats_lastfm": 1318926,
-        "stats_genius": 635744
-    },
-    {
-        "title": "Superstition - Single Version",
-        "artist": "Stevie Wonder",
-        "spotifyUri": "spotify:track:1h2xVEoJORqrg71HocgqXd",
-        "stats_youtube": 59548674,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "\"Heroes\" - 2017 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:7Jh1bpe76CNTCgdgAdBw4Z",
-        "stats_youtube": 56303319,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Sympathy For The Devil - 50th Anniversary Edition",
-        "artist": "The Rolling Stones",
-        "spotifyUri": "spotify:track:1Ud6moTC0KyXMq1Oxfien0",
-        "stats_youtube": 92525374,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
         "title": "Losing My Religion",
         "artist": "R.E.M.",
         "spotifyUri": "spotify:track:31AOj9sFz2gM0O3hMARRBx",
-        "stats_youtube": 1444282733,
-        "stats_lastfm": 2371722,
+        "stats_youtube": 1447005834,
+        "stats_lastfm": 2379374,
         "stats_genius": 0
     },
     {
-        "title": "Papa's Got A Brand New Bag (Part 1) - Single Version",
+        "title": "Papa's Got A Brand New Bag (Part 1)",
         "artist": "James Brown",
         "spotifyUri": "spotify:track:2YHAWQbkx7a8cgQVR8yDGO",
-        "stats_youtube": 7052345,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Family Affair - Single Version",
-        "artist": "Sly & The Family Stone",
-        "spotifyUri": "spotify:track:2GVEs1sn5Q1jB1976vQoAX",
-        "stats_youtube": 3289839,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Whole Lotta Love - 1990 Remaster",
-        "artist": "Led Zeppelin",
-        "spotifyUri": "spotify:track:0hCB0YR03f6AmQaHbwWDe8",
-        "stats_youtube": 264363481,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Sunflower - Spider-Man: Into the Spider-Verse",
-        "artist": "Post Malone",
-        "spotifyUri": "spotify:track:0RiRZpuVRbi7oqRdSMwhQY",
-        "stats_youtube": 2989522558,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Watermelon Sugar",
-        "artist": "Harry Styles",
-        "spotifyUri": "spotify:track:6UelLqGlWMcVH1E5c4H7lY",
-        "stats_youtube": 428490017,
-        "stats_lastfm": 1539021,
-        "stats_genius": 0
-    },
-    {
-        "title": "Old Town Road (feat. Billy Ray Cyrus) - Remix",
-        "artist": "Lil Nas X",
-        "spotifyUri": "spotify:track:2YpeDb67231RjR0MgVLzsG",
-        "stats_youtube": 1505117355,
-        "stats_lastfm": 0,
-        "stats_genius": 5876370
-    },
-    {
-        "title": "Radioactive",
-        "artist": "Imagine Dragons",
-        "spotifyUri": "spotify:track:62yJjFtgkhUrXktIoSjgP2",
-        "stats_youtube": 1561259091,
-        "stats_lastfm": 2022111,
-        "stats_genius": 0
-    },
-    {
-        "title": "Thunderstruck",
-        "artist": "AC/DC",
-        "spotifyUri": "spotify:track:57bgtoPSgt236HzfBOd8kj",
-        "stats_youtube": 1733354921,
-        "stats_lastfm": 1727781,
+        "stats_youtube": 7600716,
+        "stats_lastfm": 131,
         "stats_genius": 0
     },
     {
         "title": "Heart-Shaped Box",
         "artist": "Heart-Shaped Tracks",
         "spotifyUri": "spotify:track:7eVUToVsDgy2NABwIEVpJ9",
-        "stats_youtube": 301393632,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Interstate Love Song - 2019 Remaster",
-        "artist": "Stone Temple Pilots",
-        "spotifyUri": "spotify:track:6qLEOZvf5gI7kWE63JE7p3",
-        "stats_youtube": 88444947,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Lady Marmalade - Single Edit",
-        "artist": "Christina Aguilera",
-        "spotifyUri": "spotify:track:0PSZ9G584Ve27GK6ThlY6P",
-        "stats_youtube": 633823930,
+        "stats_youtube": 301927608,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -139,255 +27,87 @@
         "title": "Run the World (Girls)",
         "artist": "Beyoncé",
         "spotifyUri": "spotify:track:1uXbwHHfgsXcUKfSZw5ZJ0",
-        "stats_youtube": 617708797,
+        "stats_youtube": 618121957,
         "stats_lastfm": 3764,
-        "stats_genius": 0
-    },
-    {
-        "title": "Crazy - Single Version",
-        "artist": "Patsy Cline",
-        "spotifyUri": "spotify:track:3zpj9dvJABiyMrmLCPw6i8",
-        "stats_youtube": 2964341,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "I Fall To Pieces - Single Version",
-        "artist": "Patsy Cline",
-        "spotifyUri": "spotify:track:6zFsz86nAj5gcvzyVqNL3k",
-        "stats_youtube": 10621,
-        "stats_lastfm": 0,
         "stats_genius": 0
     },
     {
         "title": "Mammas Don't Let Your Babies Grow up to Be Cowboys",
         "artist": "Waylon Jennings",
         "spotifyUri": "spotify:track:7nVQ8mo77KaUvhUQzh4vMy",
-        "stats_youtube": 15651141,
+        "stats_youtube": 15724525,
         "stats_lastfm": 0,
-        "stats_genius": 453049
-    },
-    {
-        "title": "Return to Sender - From \"Girls! Girls! Girls!\"",
-        "artist": "Elvis Presley",
-        "spotifyUri": "spotify:track:3uwIoa2emQILz6BmH6MtiW",
-        "stats_youtube": 3894467,
-        "stats_lastfm": 0,
-        "stats_genius": 48142
-    },
-    {
-        "title": "A Little Less Conversation - JXL Radio Edit Remix",
-        "artist": "Elvis Presley",
-        "spotifyUri": "spotify:track:4rr0gWiMrF4sOIefs3IEvZ",
-        "stats_youtube": 1869,
-        "stats_lastfm": 0,
-        "stats_genius": 11696
+        "stats_genius": 454517
     },
     {
         "title": "Good Morning Judge",
         "artist": "Wynonie Harris",
         "spotifyUri": "spotify:track:5B8GsE8NCjdOMS8Jcwr99r",
-        "stats_youtube": 167630,
-        "stats_lastfm": 6451,
+        "stats_youtube": 1745,
+        "stats_lastfm": 6454,
         "stats_genius": 0
     },
     {
-        "title": "Rocket 88 - Single Version",
+        "title": "Rocket 88",
         "artist": "Jackie Brenston & His Delta Cats",
         "spotifyUri": "spotify:track:0qWGLMQwo57IabwNksvwGa",
-        "stats_youtube": 258651,
+        "stats_youtube": 4324841,
         "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 25774
     },
     {
         "title": "Verlieben, verloren, vergessen, verzeih'n",
         "artist": "Wolfgang Petry",
         "spotifyUri": "spotify:track:5SYHMGmqS3cOOKuCarASBT",
-        "stats_youtube": 6664501,
+        "stats_youtube": 6710683,
         "stats_lastfm": 0,
-        "stats_genius": 26886
-    },
-    {
-        "title": "Stayin' Alive - From \"Saturday Night Fever\" Soundtrack",
-        "artist": "Bee Gees",
-        "spotifyUri": "spotify:track:79hJaqmVdohltPBNN6BULM",
-        "stats_youtube": 493576183,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Go Your Own Way - 2004 Remaster",
-        "artist": "Fleetwood Mac",
-        "spotifyUri": "spotify:track:07GvNcU1WdyZJq3XxP0kZa",
-        "stats_youtube": 12654884,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Night Fever - From \"Saturday Night Fever\" Soundtrack",
-        "artist": "Bee Gees",
-        "spotifyUri": "spotify:track:5KgbyD2lQQlIupAaPjgiXg",
-        "stats_youtube": 94756549,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Dreams - 2004 Remaster",
-        "artist": "Fleetwood Mac",
-        "spotifyUri": "spotify:track:0ofHAoxe9vBkTCp2UQIavz",
-        "stats_youtube": 87598595,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Le Freak - 2018 Remaster",
-        "artist": "CHIC",
-        "spotifyUri": "spotify:track:7Kszjzps0xbQXyo1pO4KfE",
-        "stats_youtube": 34695069,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 27583
     },
     {
         "title": "Rocket Man (I Think It's Going To Be A Long, Long Time)",
         "artist": "Elton John",
         "spotifyUri": "spotify:track:3gdewACMIVMEWVbyb8O9sY",
-        "stats_youtube": 180964765,
-        "stats_lastfm": 201224,
+        "stats_youtube": 181458328,
+        "stats_lastfm": 201259,
         "stats_genius": 0
-    },
-    {
-        "title": "Life on Mars? - 2015 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:3ZE3wv8V3w2T2f7nOCjV0N",
-        "stats_youtube": 253184,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Starman - 2012 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:0pQskrTITgmCMyr85tb9qq",
-        "stats_youtube": 37010558,
-        "stats_lastfm": 0,
-        "stats_genius": 58720
     },
     {
         "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
         "artist": "ABBA",
         "spotifyUri": "spotify:track:3vkQ5DAB1qQMYO4Mr9zJN6",
-        "stats_youtube": 699941344,
+        "stats_youtube": 703880016,
         "stats_lastfm": 38,
-        "stats_genius": 0
-    },
-    {
-        "title": "Take It Easy - 2013 Remaster",
-        "artist": "Eagles",
-        "spotifyUri": "spotify:track:4yugZvBYaoREkJKtbG08Qr",
-        "stats_youtube": 52713425,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Desperado - 2013 Remaster",
-        "artist": "Eagles",
-        "spotifyUri": "spotify:track:2TjnCxxQRYn56Ye8gkUKiW",
-        "stats_youtube": 19880224,
-        "stats_lastfm": 0,
-        "stats_genius": 57213
-    },
-    {
-        "title": "One of These Nights - 2013 Remaster",
-        "artist": "Eagles",
-        "spotifyUri": "spotify:track:608xszaAxVh4m7NcKJiAbF",
-        "stats_youtube": 1429945,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "The Chain - 2004 Remaster",
-        "artist": "Fleetwood Mac",
-        "spotifyUri": "spotify:track:5e9TFTbltYBg2xThimr0rU",
-        "stats_youtube": 66541420,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Don't Stop - 2004 Remaster",
-        "artist": "Fleetwood Mac",
-        "spotifyUri": "spotify:track:4bEb3KE4mSKlTFjtWJQBqO",
-        "stats_youtube": 8976504,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Rock with You - Single Version",
-        "artist": "Michael Jackson",
-        "spotifyUri": "spotify:track:7oOOI85fVQvVnK5ynNMdW7",
-        "stats_youtube": 493876765,
-        "stats_lastfm": 0,
         "stats_genius": 0
     },
     {
         "title": "Boogie Wonderland (with The Emotions)",
         "artist": "Earth, Wind & Fire",
         "spotifyUri": "spotify:track:6ztstiyZL6FXzh4aG46ZPD",
-        "stats_youtube": 457126915,
+        "stats_youtube": 458068522,
         "stats_lastfm": 0,
-        "stats_genius": 118711
+        "stats_genius": 119272
     },
     {
         "title": "Fantasy",
         "artist": "Earth, Wind & Fire",
         "spotifyUri": "spotify:track:0Eq4BMgsdV6DkLSJfX8eBt",
-        "stats_youtube": 29932701,
+        "stats_youtube": 29974686,
         "stats_lastfm": 0,
-        "stats_genius": 172091
+        "stats_genius": 173198
     },
     {
         "title": "Shining Star",
         "artist": "Earth, Wind & Fire",
         "spotifyUri": "spotify:track:0RgcOUQg4qYAEt9RIdf3oB",
-        "stats_youtube": 14179853,
+        "stats_youtube": 14237484,
         "stats_lastfm": 0,
-        "stats_genius": 67265
-    },
-    {
-        "title": "MacArthur Park - Single Version",
-        "artist": "Donna Summer",
-        "spotifyUri": "spotify:track:42tYHqMxXxXHAAWqLaoOfQ",
-        "stats_youtube": 8058,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Everybody Dance - 2018 Remaster",
-        "artist": "CHIC",
-        "spotifyUri": "spotify:track:15ifyO8wYntwyXAptfxhKr",
-        "stats_youtube": 6587537,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Won't Get Fooled Again - Original Album Version",
-        "artist": "The Who",
-        "spotifyUri": "spotify:track:0cJPLFrlV7TTCyPLupHzcH",
-        "stats_youtube": 25883677,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Blitzkrieg Bop - 2016 Remaster",
-        "artist": "Ramones",
-        "spotifyUri": "spotify:track:4KcH1ZRV2W1q7Flq0QqC76",
-        "stats_youtube": 1646287,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 67729
     },
     {
         "title": "Rockin' in the Free World",
         "artist": "Neil Young",
         "spotifyUri": "spotify:track:4Y7fEQ4PAzhlLnLviRw2P4",
-        "stats_youtube": 106548,
+        "stats_youtube": 110904,
         "stats_lastfm": 34,
         "stats_genius": 0
     },
@@ -395,289 +115,105 @@
         "title": "Pop Muzik",
         "artist": "M / Robin Scott",
         "spotifyUri": "spotify:track:6z3HAUZpAyJ0ctsbAwAiw3",
-        "stats_youtube": 15712691,
+        "stats_youtube": 15774432,
         "stats_lastfm": 0,
-        "stats_genius": 56419
-    },
-    {
-        "title": "Brass in Pocket - 2018 Remaster",
-        "artist": "Pretenders",
-        "spotifyUri": "spotify:track:2nNdrstKD15nN3xR0KspgS",
-        "stats_youtube": 106012,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Rock And Roll All Nite - 2025 Remaster",
-        "artist": "KISS",
-        "spotifyUri": "spotify:track:1Buwv1iql0YsxftE5LHIgq",
-        "stats_youtube": 45792743,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Paranoid - 2009 Remaster",
-        "artist": "Black Sabbath",
-        "spotifyUri": "spotify:track:3Jnxngdff0lVu2rza1GVx6",
-        "stats_youtube": 387924704,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Iron Man - 2009 Remaster",
-        "artist": "Black Sabbath",
-        "spotifyUri": "spotify:track:755bvJDSA3LNcNuFgBT9LK",
-        "stats_youtube": 13447777,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "War Pigs - 2009 Remaster",
-        "artist": "Black Sabbath",
-        "spotifyUri": "spotify:track:6TYQRlRci6AkVrN9a5C7ne",
-        "stats_youtube": 108581110,
-        "stats_lastfm": 0,
-        "stats_genius": 5592
-    },
-    {
-        "title": "Child in Time - 1995 Remaster",
-        "artist": "Deep Purple",
-        "spotifyUri": "spotify:track:573Z2Dty5epeNgKsgoDOlr",
-        "stats_youtube": 92993,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 56756
     },
     {
         "title": "Midnight Rider",
         "artist": "Allman Brothers Band",
         "spotifyUri": "spotify:track:7oxSfM3FXCdw7EXNreNoRz",
-        "stats_youtube": 20275,
-        "stats_lastfm": 361910,
-        "stats_genius": 0
-    },
-    {
-        "title": "Rebel Rebel - 2016 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:2EC9IJj7g0mN1Q5VrZkiYY",
-        "stats_youtube": 1276695,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Changes - 2015 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:0LrwgdLsFaWh9VXIjBRe8t",
-        "stats_youtube": 7368734,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Fame - 2016 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:1PehfITh0TTRx3LkDdV4h3",
-        "stats_youtube": 86354,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Young Americans - 2016 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:7uPmQttafLiJyju14JREY4",
-        "stats_youtube": 11719571,
-        "stats_lastfm": 0,
+        "stats_youtube": 20479,
+        "stats_lastfm": 362013,
         "stats_genius": 0
     },
     {
         "title": "Mercy Mercy Me (The Ecology)",
         "artist": "Marvin Gaye",
         "spotifyUri": "spotify:track:3IDc87lrpEHWFBASmgTgFV",
-        "stats_youtube": 6353726,
-        "stats_lastfm": 62630,
-        "stats_genius": 0
-    },
-    {
-        "title": "Move on Up - Single Edit",
-        "artist": "Curtis Mayfield",
-        "spotifyUri": "spotify:track:0MHXrqn909p0LRTPsNsGEi",
-        "stats_youtube": 3530229,
-        "stats_lastfm": 0,
+        "stats_youtube": 6408636,
+        "stats_lastfm": 62634,
         "stats_genius": 0
     },
     {
         "title": "Just My Imagination (Running Away With Me)",
         "artist": "The Temptations",
         "spotifyUri": "spotify:track:39Bd345OWEhRNyfayhp9gv",
-        "stats_youtube": 6241088,
-        "stats_lastfm": 85114,
-        "stats_genius": 0
-    },
-    {
-        "title": "Papa Was A Rollin' Stone - Single Version",
-        "artist": "The Temptations",
-        "spotifyUri": "spotify:track:7MiLmLbwNoyf47xQ4TCVYp",
-        "stats_youtube": 2176038,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "You're The One That I Want - From “Grease”",
-        "artist": "John Travolta",
-        "spotifyUri": "spotify:track:0B9x2BRHqj3Qer7biM3pU3",
-        "stats_youtube": 57582820,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Summer Nights - From “Grease”",
-        "artist": "John Travolta",
-        "spotifyUri": "spotify:track:2AVkArcfALVk2X8sfPRzya",
-        "stats_youtube": 19442154,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Greased Lightnin' - From “Grease”",
-        "artist": "John Travolta",
-        "spotifyUri": "spotify:track:1XNE0QfNjdroSdosMIk8F6",
-        "stats_youtube": 1239358,
-        "stats_lastfm": 0,
-        "stats_genius": 108688
-    },
-    {
-        "title": "Hopelessly Devoted To You - From “Grease”",
-        "artist": "Olivia Newton-John",
-        "spotifyUri": "spotify:track:5BUq9bdtsm3LWw5laJeJ4R",
-        "stats_youtube": 12159958,
-        "stats_lastfm": 0,
+        "stats_youtube": 6271163,
+        "stats_lastfm": 85120,
         "stats_genius": 0
     },
     {
         "title": "Movin' Out (Anthony's Song)",
         "artist": "Billy Joel",
         "spotifyUri": "spotify:track:16GUMo6u3D2qo9a19AkYct",
-        "stats_youtube": 5417663,
+        "stats_youtube": 5438466,
         "stats_lastfm": 1,
-        "stats_genius": 0
-    },
-    {
-        "title": "Stir It Up - Jamaican Version",
-        "artist": "Bob Marley & The Wailers",
-        "spotifyUri": "spotify:track:1XjUvJv6w3aTu8o6XszTHS",
-        "stats_youtube": 20425,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Fox on the Run - Single Version",
-        "artist": "Sweet",
-        "spotifyUri": "spotify:track:4yJZP61jBhVTesHBZ0gpQn",
-        "stats_youtube": 15428354,
-        "stats_lastfm": 0,
         "stats_genius": 0
     },
     {
         "title": "The Ballroom Blitz",
         "artist": "Sweet",
         "spotifyUri": "spotify:track:1PcERoNH2UMQ19lnD2BWfn",
-        "stats_youtube": 15684093,
-        "stats_lastfm": 116502,
+        "stats_youtube": 15719177,
+        "stats_lastfm": 116633,
         "stats_genius": 0
     },
     {
         "title": "Blockbuster",
         "artist": "Sweet",
         "spotifyUri": "spotify:track:3cOhFfgTx1ojno3CrRqaCd",
-        "stats_youtube": 19402595,
-        "stats_lastfm": 89533,
+        "stats_youtube": 19480220,
+        "stats_lastfm": 89587,
         "stats_genius": 0
     },
     {
         "title": "Get It On",
         "artist": "T. Rex",
         "spotifyUri": "spotify:track:0LoQuiekvzqx7n8flgEKzF",
-        "stats_youtube": 542217,
-        "stats_lastfm": 460636,
+        "stats_youtube": 33699817,
+        "stats_lastfm": 461704,
         "stats_genius": 0
-    },
-    {
-        "title": "Thick as a Brick (Pt. I) - 1997 Remaster",
-        "artist": "Jethro Tull",
-        "spotifyUri": "spotify:track:0eufeeCADKlpxLA7HATWBW",
-        "stats_youtube": 4325489,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Feel like Makin' Love - 2015 Remaster",
-        "artist": "Bad Company",
-        "spotifyUri": "spotify:track:3KPwt1LBpt1jVSHz8GXERo",
-        "stats_youtube": 17983540,
-        "stats_lastfm": 0,
-        "stats_genius": 6607
-    },
-    {
-        "title": "Can't Get Enough - 2015 Remaster",
-        "artist": "Bad Company",
-        "spotifyUri": "spotify:track:6n5lHdpuBDdA7pYDpiKzEI",
-        "stats_youtube": 2292959,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Slow Ride - Edit",
-        "artist": "Foghat",
-        "spotifyUri": "spotify:track:4MYb7NWLwXNDB7bYs3HeX8",
-        "stats_youtube": 479556,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Fool for the City - 2016 Remaster",
-        "artist": "Foghat",
-        "spotifyUri": "spotify:track:6jyvgy90nOtbIeUPBLGUpP",
-        "stats_youtube": 570,
-        "stats_lastfm": 0,
-        "stats_genius": 7956
     },
     {
         "title": "Frankenstein",
         "artist": "The Edgar Winter Group",
         "spotifyUri": "spotify:track:4g8ZUOxhPMXN5wVSP7gCau",
-        "stats_youtube": 3985923,
-        "stats_lastfm": 164949,
+        "stats_youtube": 3998491,
+        "stats_lastfm": 165134,
         "stats_genius": 0
     },
     {
         "title": "Smokin' in the Boy's Room",
         "artist": "Brownsville Station",
         "spotifyUri": "spotify:track:1AIGp3gpj1NXJvh3engmUQ",
-        "stats_youtube": 675636,
+        "stats_youtube": 677990,
         "stats_lastfm": 0,
-        "stats_genius": 23567
+        "stats_genius": 23634
     },
     {
         "title": "Lady Marmalade",
         "artist": "Patti LaBelle",
         "spotifyUri": "spotify:track:3GGcwG519BTMdvMeFy7meT",
-        "stats_youtube": 12489295,
-        "stats_lastfm": 131859,
+        "stats_youtube": 12505805,
+        "stats_lastfm": 132190,
         "stats_genius": 0
     },
     {
-        "title": "That's the Way (I Like It) - 2004 Remaster",
+        "title": "That's the Way (I Like It)",
         "artist": "KC & The Sunshine Band",
         "spotifyUri": "spotify:track:3PR79C1jVvLLLmgdyHkXl3",
-        "stats_youtube": 3782426,
+        "stats_youtube": 5599800,
         "stats_lastfm": 0,
-        "stats_genius": 30740
+        "stats_genius": 129156
     },
     {
-        "title": "Get Down Tonight - 2004 Remaster",
+        "title": "Get Down Tonight",
         "artist": "KC & The Sunshine Band",
         "spotifyUri": "spotify:track:6zbFTYeqNvZdms60HouEFT",
-        "stats_youtube": 1086919,
+        "stats_youtube": 67838,
         "stats_lastfm": 0,
-        "stats_genius": 30740
+        "stats_genius": 101837
     },
     {
         "title": "(Shake, Shake, Shake) Shake Your Booty",
@@ -685,45 +221,13 @@
         "spotifyUri": "spotify:track:4mn7iv4DYJxPYbPy5R0nPE",
         "stats_youtube": 441,
         "stats_lastfm": 0,
-        "stats_genius": 35015
-    },
-    {
-        "title": "Knock on Wood - 1985 7\" Remix",
-        "artist": "Amii Stewart",
-        "spotifyUri": "spotify:track:61Nhptc9iZmp39GRRZnrvW",
-        "stats_youtube": 59492578,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "I Love The Nightlife (Disco 'Round) - Single Version",
-        "artist": "Alicia Bridges",
-        "spotifyUri": "spotify:track:1hAQRGlNuaWV187Fro5Hpl",
-        "stats_youtube": 8129752,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Smooth Criminal - 2012 Remaster",
-        "artist": "Michael Jackson",
-        "spotifyUri": "spotify:track:5T7ywazdGIydr6JCW6t02j",
-        "stats_youtube": 1247014009,
-        "stats_lastfm": 0,
-        "stats_genius": 30740
-    },
-    {
-        "title": "Sweet Dreams (Are Made of This) - 2005 Remaster",
-        "artist": "Eurythmics",
-        "spotifyUri": "spotify:track:1TfqLAPs4K3s2rJMoCokcS",
-        "stats_youtube": 1181536839,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 35408
     },
     {
         "title": "Wake Me Up Before You Go Go (Karaoke Version) [in the Style of Wham]",
         "artist": "Goldsound Karaoke",
         "spotifyUri": "spotify:track:5DvgOCEvlcYUBwYiveMrz0",
-        "stats_youtube": 148302,
+        "stats_youtube": 149977,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -731,183 +235,23 @@
         "title": "I Wanna Dance with Somebody (Who Loves Me)",
         "artist": "Whitney Houston",
         "spotifyUri": "spotify:track:2tUBqZG2AbRi7Q0BIrVrEj",
-        "stats_youtube": 561470347,
-        "stats_lastfm": 261359,
-        "stats_genius": 0
-    },
-    {
-        "title": "I Want To Break Free - Single Remix",
-        "artist": "Queen",
-        "spotifyUri": "spotify:track:2AkmdLbVKS1steeZdy8H1l",
-        "stats_youtube": 583816931,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Let's Dance - 2018 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:3ix6K4wZY29bCujrSznwFZ",
-        "stats_youtube": 85795650,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Modern Love - 2018 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:3gxEZXUjrNbl3TlSrTGbR5",
-        "stats_youtube": 48141815,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Ashes to Ashes - 2017 Remaster",
-        "artist": "David Bowie",
-        "spotifyUri": "spotify:track:37CRPk0L5ZpfPeePEPwE0t",
-        "stats_youtube": 20126860,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "In The Air Tonight - 2015 Remastered",
-        "artist": "Phil Collins",
-        "spotifyUri": "spotify:track:18AXbzPzBS8Y3AkgSxzJPb",
-        "stats_youtube": 339475096,
-        "stats_lastfm": 0,
-        "stats_genius": 5738
-    },
-    {
-        "title": "Against All Odds (Take a Look at Me Now) - 2016 Remaster",
-        "artist": "Phil Collins",
-        "spotifyUri": "spotify:track:63CHa6rmamv9OsehkRD8oz",
-        "stats_youtube": 73350758,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "You Can't Hurry Love - 2016 Remaster",
-        "artist": "Phil Collins",
-        "spotifyUri": "spotify:track:4YwbSZaYeYja8Umyt222Qf",
-        "stats_youtube": 16985396,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Sussudio - 2016 Remaster",
-        "artist": "Phil Collins",
-        "spotifyUri": "spotify:track:4qM461TqtpnP4GLRIXwEnW",
-        "stats_youtube": 1096300,
-        "stats_lastfm": 0,
-        "stats_genius": 25665
-    },
-    {
-        "title": "Invisible Touch - 2007 Remaster",
-        "artist": "Genesis",
-        "spotifyUri": "spotify:track:0xpBr84T3FTm9j4D1MdPtk",
-        "stats_youtube": 28822800,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Land of Confusion - 2007 Remaster",
-        "artist": "Genesis",
-        "spotifyUri": "spotify:track:6twIBPybEvGydyNzNz89FT",
-        "stats_youtube": 39780376,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Head Over Heels - Dave Bascombe 7\" N.Mix",
-        "artist": "Tears For Fears",
-        "spotifyUri": "spotify:track:5lwQGZYF4BXOzFtXc5zk8q",
-        "stats_youtube": 173838293,
-        "stats_lastfm": 0,
-        "stats_genius": 25735
-    },
-    {
-        "title": "Jump - 2015 Remaster",
-        "artist": "Van Halen",
-        "spotifyUri": "spotify:track:7N3PAbqfTjSEU1edb2tY8j",
-        "stats_youtube": 312838102,
-        "stats_lastfm": 0,
-        "stats_genius": 30740
-    },
-    {
-        "title": "Panama - 2015 Remaster",
-        "artist": "Van Halen",
-        "spotifyUri": "spotify:track:05RgAMGypEvqhNs5hPCbMS",
-        "stats_youtube": 59819477,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Hot for Teacher - 2015 Remaster",
-        "artist": "Van Halen",
-        "spotifyUri": "spotify:track:6QDbGdbJ57Mtkflsg42WV5",
-        "stats_youtube": 42632227,
-        "stats_lastfm": 0,
+        "stats_youtube": 562908671,
+        "stats_lastfm": 261371,
         "stats_genius": 0
     },
     {
         "title": "Walk This Way (feat. Aerosmith)",
         "artist": "Run–D.M.C.",
         "spotifyUri": "spotify:track:6qUEOWqOzu1rLPUPQ1ECpx",
-        "stats_youtube": 144720997,
-        "stats_lastfm": 201072,
+        "stats_youtube": 144920343,
+        "stats_lastfm": 201078,
         "stats_genius": 0
-    },
-    {
-        "title": "Love In An Elevator - Single Version",
-        "artist": "Aerosmith",
-        "spotifyUri": "spotify:track:1l6DV8qhmCdgOKLSAFzPOe",
-        "stats_youtube": 51847802,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Danger Zone - From \"Top Gun\" Original Soundtrack",
-        "artist": "Kenny Loggins",
-        "spotifyUri": "spotify:track:34x6hEJgGAOQvmlMql5Ige",
-        "stats_youtube": 145435913,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "I Want to Know What Love Is - 1999 Remaster",
-        "artist": "Foreigner",
-        "spotifyUri": "spotify:track:1JLn8RhQzHz3qDqsChcmBl",
-        "stats_youtube": 586804822,
-        "stats_lastfm": 0,
-        "stats_genius": 30740
     },
     {
         "title": "Separate Ways (Worlds Apart) [2023 Remaster]",
         "artist": "Journey",
         "spotifyUri": "spotify:track:1pTw2cNrp9L3esxLAvWnN2",
-        "stats_youtube": 175020983,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Here I Go Again - 1987 Version / 2018 Remaster",
-        "artist": "Whitesnake",
-        "spotifyUri": "spotify:track:58z9sfHe9s9zTvYGKehCWM",
-        "stats_youtube": 154010672,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Is This Love - 2018 Remaster",
-        "artist": "Whitesnake",
-        "spotifyUri": "spotify:track:6QyWVCLASvvtpKD0KJZs5e",
-        "stats_youtube": 277842508,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Every Rose Has Its Thorn - 2003 Remaster",
-        "artist": "Poison",
-        "spotifyUri": "spotify:track:43GS3mtezoIFiuIZCLLiDY",
-        "stats_youtube": 114041889,
+        "stats_youtube": 175554416,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -915,7 +259,7 @@
         "title": "Don't You (Forget About Me)",
         "artist": "Simple Minds",
         "spotifyUri": "spotify:track:5Y8Rj0s6wuM5DlQdllYiWl",
-        "stats_youtube": 424118290,
+        "stats_youtube": 425467793,
         "stats_lastfm": 166,
         "stats_genius": 0
     },
@@ -923,127 +267,31 @@
         "title": "I Ran (So Far Away)",
         "artist": "A Flock Of Seagulls",
         "spotifyUri": "spotify:track:6vKVuBeExHlEh9cZ8Ppk8t",
-        "stats_youtube": 2300,
-        "stats_lastfm": 388044,
-        "stats_genius": 0
-    },
-    {
-        "title": "Bizarre Love Triangle - 2024 Digital Master",
-        "artist": "New Order",
-        "spotifyUri": "spotify:track:28qfj544k6pDavkWkyzvWz",
-        "stats_youtube": 34546014,
-        "stats_lastfm": 0,
-        "stats_genius": 10351
-    },
-    {
-        "title": "Personal Jesus - Single Version",
-        "artist": "Depeche Mode",
-        "spotifyUri": "spotify:track:4UCTgh5jvtqoaMX6MAhUNn",
-        "stats_youtube": 44365,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "It's a Sin - 2018 Remaster",
-        "artist": "Pet Shop Boys",
-        "spotifyUri": "spotify:track:5fy4vfEtv6lzqLx2Mt7stF",
-        "stats_youtube": 227607677,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "West End Girls - 2018 Remaster",
-        "artist": "Pet Shop Boys",
-        "spotifyUri": "spotify:track:2Di0qFNb7ATroCGB3q0Ka7",
-        "stats_youtube": 240564925,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Don't You Want Me - Purple Disco Machine Remix",
-        "artist": "The Human League",
-        "spotifyUri": "spotify:track:3BTzwW4PLNDtREjesuYy03",
-        "stats_youtube": 748823,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "True - 2003 Remaster",
-        "artist": "Spandau Ballet",
-        "spotifyUri": "spotify:track:10I09MLZCY4pK37XxAfkw0",
-        "stats_youtube": 337092512,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Hungry Like the Wolf - 2009 Remaster",
-        "artist": "Duran Duran",
-        "spotifyUri": "spotify:track:39lSeqnyjZJejRuaREfyLL",
-        "stats_youtube": 53542087,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Rio - 2009 Remaster",
-        "artist": "Duran Duran",
-        "spotifyUri": "spotify:track:43eBgYRTmu5BJnCJDBU5Hb",
-        "stats_youtube": 13061,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "The Reflex - Single Version; 2010 Remaster",
-        "artist": "Duran Duran",
-        "spotifyUri": "spotify:track:4sz1Ng2Cgidfqqiy0pNL6R",
-        "stats_youtube": 24304023,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Save a Prayer - 2009 Remaster",
-        "artist": "Duran Duran",
-        "spotifyUri": "spotify:track:1ff8lsrJ2kuZuofMw81EQo",
-        "stats_youtube": 145427614,
-        "stats_lastfm": 0,
+        "stats_youtube": 231984828,
+        "stats_lastfm": 388157,
         "stats_genius": 0
     },
     {
         "title": "I Can't Go for That (No Can Do)",
         "artist": "Daryl Hall & John Oates",
         "spotifyUri": "spotify:track:41dDygR3r7e926oGUXfrLt",
-        "stats_youtube": 122760731,
+        "stats_youtube": 123016317,
         "stats_lastfm": 0,
-        "stats_genius": 302744
+        "stats_genius": 303568
     },
     {
-        "title": "The Tide Is High - Edit",
-        "artist": "Blondie",
-        "spotifyUri": "spotify:track:165NAtd2DRPKNQ6EVY0VG9",
-        "stats_youtube": 19456123,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Heaven Is a Place on Earth - Promo 7\" Edit",
-        "artist": "Belinda Carlisle",
-        "spotifyUri": "spotify:track:05yiiw2F3XXoighyveZTDs",
-        "stats_youtube": 137187826,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "All Night Long (All Night) - Single Version",
+        "title": "All Night Long (All Night)",
         "artist": "Lionel Richie",
         "spotifyUri": "spotify:track:4czNORk5MjW5WOn98bki32",
-        "stats_youtube": 205720288,
-        "stats_lastfm": 0,
+        "stats_youtube": 206339943,
+        "stats_lastfm": 165714,
         "stats_genius": 0
     },
     {
         "title": "It Takes Two",
         "artist": "Rob Base & DJ EZ Rock",
         "spotifyUri": "spotify:track:6yMcdWpeGd0P4oXzUZwBec",
-        "stats_youtube": 94684033,
+        "stats_youtube": 94950535,
         "stats_lastfm": 1,
         "stats_genius": 0
     },
@@ -1051,55 +299,39 @@
         "title": "Straight Outta Compton",
         "artist": "N.W.A.",
         "spotifyUri": "spotify:track:6KIKRz9eSTXdNsGUnomdtW",
-        "stats_youtube": 206174689,
-        "stats_lastfm": 278921,
+        "stats_youtube": 206444508,
+        "stats_lastfm": 279029,
         "stats_genius": 0
     },
     {
-        "title": "Express Yourself - Remix",
+        "title": "Express Yourself",
         "artist": "N.W.A.",
         "spotifyUri": "spotify:track:6NLLIPKjqFRnbCorRNTEHe",
-        "stats_youtube": 49626832,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "The Message - Extended Version",
-        "artist": "Grandmaster Flash & The Furious Five",
-        "spotifyUri": "spotify:track:0yd8AwPHpPb8kuSivoN1wL",
-        "stats_youtube": 9824621,
-        "stats_lastfm": 0,
+        "stats_youtube": 49674251,
+        "stats_lastfm": 183340,
         "stats_genius": 0
     },
     {
         "title": "White Lines (Don't Do It)",
         "artist": "Grandmaster Flash",
         "spotifyUri": "spotify:track:2W1ClVyalH5ys0HIN3FGvU",
-        "stats_youtube": 5175797,
-        "stats_lastfm": 47530,
-        "stats_genius": 0
-    },
-    {
-        "title": "Holding Out for a Hero - From \"Footloose\" Soundtrack",
-        "artist": "Bonnie Tyler",
-        "spotifyUri": "spotify:track:5Hyr47BBGpvOfcykSCcaw9",
-        "stats_youtube": 304730354,
-        "stats_lastfm": 0,
+        "stats_youtube": 5209902,
+        "stats_lastfm": 47532,
         "stats_genius": 0
     },
     {
         "title": "I Love Rock 'N Roll",
         "artist": "Joan Jett & the Blackhearts",
         "spotifyUri": "spotify:track:4jTqsgDaffdNH0BMBwhjFv",
-        "stats_youtube": 40123354,
+        "stats_youtube": 40303998,
         "stats_lastfm": 0,
-        "stats_genius": 215430
+        "stats_genius": 216542
     },
     {
         "title": "Bad Reputation",
         "artist": "Joan Jett & the Blackhearts",
         "spotifyUri": "spotify:track:1wBK8aicWM2d5LeHyWgSVW",
-        "stats_youtube": 5306546,
+        "stats_youtube": 5320677,
         "stats_lastfm": 1,
         "stats_genius": 0
     },
@@ -1107,71 +339,31 @@
         "title": "Running Up That Hill (A Deal With God)",
         "artist": "Kate Bush",
         "spotifyUri": "spotify:track:1PtQJZVZIdWIYdARpZRDFO",
-        "stats_youtube": 410549061,
-        "stats_lastfm": 1923214,
-        "stats_genius": 0
-    },
-    {
-        "title": "Babooshka - 2018 Remaster",
-        "artist": "Kate Bush",
-        "spotifyUri": "spotify:track:6VpNGCU2ig4NQmsLfALdJU",
-        "stats_youtube": 54661788,
-        "stats_lastfm": 0,
+        "stats_youtube": 412355017,
+        "stats_lastfm": 1928300,
         "stats_genius": 0
     },
     {
         "title": "Jack & Diane",
         "artist": "John Mellencamp",
         "spotifyUri": "spotify:track:43btz2xjMKpcmjkuRsvxyg",
-        "stats_youtube": 36706367,
+        "stats_youtube": 36781476,
         "stats_lastfm": 0,
-        "stats_genius": 1023694
-    },
-    {
-        "title": "Let's Hear It for the Boy - From \"Footloose\" Original Soundtrack",
-        "artist": "Deniece Williams",
-        "spotifyUri": "spotify:track:4VyU9Tg4drTj2mOUZHSK2u",
-        "stats_youtube": 67538944,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Holding Back the Years - 2008 Remaster",
-        "artist": "Simply Red",
-        "spotifyUri": "spotify:track:1yg7fwwYmx9DQ2TdXUmfpJ",
-        "stats_youtube": 266437578,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "If You Don't Know Me by Now - 2008 Remaster",
-        "artist": "Simply Red",
-        "spotifyUri": "spotify:track:7DFawVSjI88xR9mjnWwURg",
-        "stats_youtube": 172885618,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 1031145
     },
     {
         "title": "Here I Am (Come And Take Me)",
         "artist": "UB40",
         "spotifyUri": "spotify:track:1ti85OealKe0Yq23ws9n0e",
-        "stats_youtube": 95869724,
+        "stats_youtube": 96062488,
         "stats_lastfm": 6484,
-        "stats_genius": 0
-    },
-    {
-        "title": "Do They Know It's Christmas? - 1984 Version",
-        "artist": "Band Aid",
-        "spotifyUri": "spotify:track:4Yg2w0P29BBBMixyeNjDtj",
-        "stats_youtube": 17082388,
-        "stats_lastfm": 0,
         "stats_genius": 0
     },
     {
         "title": "We Are The World",
         "artist": "U.S.A. For Africa",
         "spotifyUri": "spotify:track:3Z2tPWiNiIpg8UMMoowHIk",
-        "stats_youtube": 214263931,
+        "stats_youtube": 215153311,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -1179,47 +371,31 @@
         "title": "Major Tom (Coming Home)",
         "artist": "Peter Schilling",
         "spotifyUri": "spotify:track:1D6NMs2Zq9PI8dgPtOGbtA",
-        "stats_youtube": 105642773,
-        "stats_lastfm": 138117,
+        "stats_youtube": 106245773,
+        "stats_lastfm": 138240,
         "stats_genius": 0
     },
     {
         "title": "You Spin Me Round (Like a Record)",
         "artist": "Dead Or Alive",
         "spotifyUri": "spotify:track:1ChulFMnwxoD74Me8eX2TU",
-        "stats_youtube": 341979038,
-        "stats_lastfm": 49556,
+        "stats_youtube": 342737719,
+        "stats_lastfm": 49563,
         "stats_genius": 0
     },
     {
         "title": "Touch Me (I Want Your Body)",
         "artist": "Samantha Fox",
         "spotifyUri": "spotify:track:13s6dCsNpSZflwVu2uzzPi",
-        "stats_youtube": 72203777,
-        "stats_lastfm": 25791,
+        "stats_youtube": 72357532,
+        "stats_lastfm": 25796,
         "stats_genius": 0
     },
     {
         "title": "Better The Devil You Know",
         "artist": "Loco - Motion",
         "spotifyUri": "spotify:track:2dNDtzZCpBHOnsnqMMV42C",
-        "stats_youtube": 9626813,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Cambodia - Single Version",
-        "artist": "Kim Wilde",
-        "spotifyUri": "spotify:track:5WX2GjVPnq8pk37JptOUeg",
-        "stats_youtube": 48861226,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Jump (For My Love) - Single Remix",
-        "artist": "The Pointer Sisters",
-        "spotifyUri": "spotify:track:2TIKxe1afsEcYWBvyTgQt3",
-        "stats_youtube": 42534403,
+        "stats_youtube": 9653595,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -1227,103 +403,31 @@
         "title": "Everybody Hurts",
         "artist": "R.E.M.",
         "spotifyUri": "spotify:track:6PypGyiu0Y2lCDBN1XZEnP",
-        "stats_youtube": 186516465,
-        "stats_lastfm": 1105517,
+        "stats_youtube": 186662587,
+        "stats_lastfm": 1107313,
         "stats_genius": 0
     },
     {
         "title": "Pretty Fly (For A White Guy)",
         "artist": "The Offspring",
         "spotifyUri": "spotify:track:3SFXsFpeGmBTtQvKiwYMDA",
-        "stats_youtube": 125576784,
-        "stats_lastfm": 159764,
+        "stats_youtube": 126152901,
+        "stats_lastfm": 159767,
         "stats_genius": 0
     },
     {
-        "title": "Song 2 - 2012 Remaster",
-        "artist": "Blur",
-        "spotifyUri": "spotify:track:1FTSo4v6BOZH9QxKc3MbVM",
-        "stats_youtube": 238238284,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Parklife - 2012 Remaster",
-        "artist": "Blur",
-        "spotifyUri": "spotify:track:7FSzJQV6thyoQptFCUTV9c",
-        "stats_youtube": 21233275,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Common People - Full Length Version",
-        "artist": "Pulp",
-        "spotifyUri": "spotify:track:2fXKyAyPrEa24c6PJyqznF",
-        "stats_youtube": 62536712,
-        "stats_lastfm": 0,
-        "stats_genius": 5230
-    },
-    {
-        "title": "Zombie - 2025 Remastered",
-        "artist": "The Cranberries",
-        "spotifyUri": "spotify:track:3gjHnylel3PTRpjS44ocqr",
-        "stats_youtube": 1840775379,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "You Oughta Know - 2015 Remaster",
-        "artist": "Alanis Morissette",
-        "spotifyUri": "spotify:track:3jS7bB0oXVOwGFZn3aE5NV",
-        "stats_youtube": 98386120,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Ironic - 2015 Remaster",
-        "artist": "Alanis Morissette",
-        "spotifyUri": "spotify:track:1d6KS9GH06JAd19uiBy9IE",
-        "stats_youtube": 307092931,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Hand in My Pocket - 2015 Remaster",
-        "artist": "Alanis Morissette",
-        "spotifyUri": "spotify:track:2lE7oRoKssULAtbWViL385",
-        "stats_youtube": 51364365,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Blue (Da Ba Dee) - Gabry Ponte Ice Pop Radio",
+        "title": "Blue (Da Ba Dee)",
         "artist": "Eiffel 65",
         "spotifyUri": "spotify:track:4GewRLEiI4BDTQsoH8BRVV",
-        "stats_youtube": 373495155,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "What Is Love - 7\" Mix",
-        "artist": "Haddaway",
-        "spotifyUri": "spotify:track:0OTO8ZF2YqFQVw9hnZylTd",
-        "stats_youtube": 467486539,
-        "stats_lastfm": 0,
-        "stats_genius": 12511
-    },
-    {
-        "title": "Mr. Vain - Original Radio Edit",
-        "artist": "Culture Beat",
-        "spotifyUri": "spotify:track:4ih3dyFZoeTdaeJW9mPbOI",
-        "stats_youtube": 82102353,
-        "stats_lastfm": 0,
+        "stats_youtube": 2611017,
+        "stats_lastfm": 63766,
         "stats_genius": 0
     },
     {
         "title": "Mambo No. 5 (a Little Bit of...)",
         "artist": "Lou Bega",
         "spotifyUri": "spotify:track:6x4tKaOzfNJpEJHySoiJcs",
-        "stats_youtube": 611478520,
+        "stats_youtube": 612540720,
         "stats_lastfm": 18,
         "stats_genius": 0
     },
@@ -1331,263 +435,103 @@
         "title": "We Like To Party! (The Vengabus)",
         "artist": "Vengaboys",
         "spotifyUri": "spotify:track:73ljrkSg4A0q3ByU0Cu7mw",
-        "stats_youtube": 281220776,
-        "stats_lastfm": 59531,
+        "stats_youtube": 281993973,
+        "stats_lastfm": 59535,
         "stats_genius": 0
     },
     {
-        "title": "Finally - 7\" Mix Without Rap",
-        "artist": "CeCe Peniston",
-        "spotifyUri": "spotify:track:5CclTLa2xkTNej1mFqKBjH",
-        "stats_youtube": 58890549,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Gypsy Woman (She's Homeless) (La Da Dee La Da Da) - Basement Boy Strip To The Bone Mix",
+        "title": "Gypsy Woman (She's Homeless) (La Da Dee La Da Da)",
         "artist": "Crystal Waters",
         "spotifyUri": "spotify:track:1SShxVVBeZBCY7WddnksPz",
-        "stats_youtube": 168393143,
-        "stats_lastfm": 0,
+        "stats_youtube": 169397229,
+        "stats_lastfm": 63668,
         "stats_genius": 0
     },
     {
-        "title": "Get Ready For This - Rio & Le Jean Remix '92",
-        "artist": "2 Unlimited",
-        "spotifyUri": "spotify:track:7CM7YyBxUrMLY3n8LUjROS",
-        "stats_youtube": 24748,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "My Heart Will Go On - Love Theme from \"Titanic\"",
-        "artist": "Céline Dion",
-        "spotifyUri": "spotify:track:33LC84JgLvK2KuW43MfaNq",
-        "stats_youtube": 68995514,
-        "stats_lastfm": 0,
-        "stats_genius": 1763072
-    },
-    {
-        "title": "Juicy - 2005 Remaster",
+        "title": "Juicy",
         "artist": "The Notorious B.I.G.",
         "spotifyUri": "spotify:track:5ByAIlEEnxYdvpnezg7HTX",
-        "stats_youtube": 733349390,
-        "stats_lastfm": 0,
+        "stats_youtube": 735054376,
+        "stats_lastfm": 556099,
         "stats_genius": 0
     },
     {
-        "title": "Hypnotize - 2014 Remaster",
+        "title": "Hypnotize",
         "artist": "The Notorious B.I.G.",
         "spotifyUri": "spotify:track:7KwZNVEaqikRSBSpyhXK2j",
-        "stats_youtube": 113396047,
-        "stats_lastfm": 0,
+        "stats_youtube": 113516872,
+        "stats_lastfm": 389062,
         "stats_genius": 0
     },
     {
-        "title": "Big Poppa - 2005 Remaster",
+        "title": "Big Poppa",
         "artist": "The Notorious B.I.G.",
         "spotifyUri": "spotify:track:2g8HN35AnVGIk7B8yMucww",
-        "stats_youtube": 587322102,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Mo Money Mo Problems (feat. Puff Daddy & Mase) - 2014 Remaster",
-        "artist": "The Notorious B.I.G.",
-        "spotifyUri": "spotify:track:4INDiWSKvqSKDEu7mh8HFz",
-        "stats_youtube": 6502,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Hit 'Em Up - Single Version",
-        "artist": "2Pac",
-        "spotifyUri": "spotify:track:0Z2J91b2iTGLVTZC4fKgxf",
-        "stats_youtube": 868514105,
-        "stats_lastfm": 0,
+        "stats_youtube": 588844650,
+        "stats_lastfm": 410888,
         "stats_genius": 0
     },
     {
         "title": "Doo Wop (That Thing)",
         "artist": "Ms. Lauryn Hill",
         "spotifyUri": "spotify:track:0uEp9E98JB5awlA084uaIg",
-        "stats_youtube": 236241983,
+        "stats_youtube": 236996629,
         "stats_lastfm": 0,
-        "stats_genius": 1175188
-    },
-    {
-        "title": "Jump Around - 30 Years Remaster",
-        "artist": "House Of Pain",
-        "spotifyUri": "spotify:track:7L93GESzq43UkKUt5FsOCq",
-        "stats_youtube": 143920473,
-        "stats_lastfm": 0,
-        "stats_genius": 11937
-    },
-    {
-        "title": "Scenario (feat. Busta Rhymes, Dinco D & Charlie Brown) - LP Mix",
-        "artist": "A Tribe Called Quest",
-        "spotifyUri": "spotify:track:0301nLjG0ti26rx5ZmfqtP",
-        "stats_youtube": 27845601,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 1176888
     },
     {
         "title": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
         "artist": "Scatman John",
         "spotifyUri": "spotify:track:623rRTKwGmgjH6sjE9uWLh",
-        "stats_youtube": 289832255,
-        "stats_lastfm": 79216,
+        "stats_youtube": 290937183,
+        "stats_lastfm": 79226,
         "stats_genius": 0
     },
     {
         "title": "Party Up (Up In Here)",
         "artist": "DMX",
         "spotifyUri": "spotify:track:3Y4BqG5FGXgGFQaJzX1MQC",
-        "stats_youtube": 202352996,
-        "stats_lastfm": 509365,
+        "stats_youtube": 202680111,
+        "stats_lastfm": 510976,
         "stats_genius": 0
     },
     {
         "title": "Hard Knock Life (Ghetto Anthem)",
         "artist": "JAŸ-Z",
         "spotifyUri": "spotify:track:5Tl0HJvynZtKdSUMKbFVVX",
-        "stats_youtube": 5435460,
+        "stats_youtube": 5493265,
         "stats_lastfm": 1,
-        "stats_genius": 0
-    },
-    {
-        "title": "The Cup of Life (The Official Song of the World Cup, France '98) - Remix - English Radio Edit",
-        "artist": "Ricky Martin",
-        "spotifyUri": "spotify:track:68CzXNGAMmb3k5MhLu0xVb",
-        "stats_youtube": 50497347,
-        "stats_lastfm": 0,
-        "stats_genius": 10962
-    },
-    {
-        "title": "I Don't Want To Miss A Thing - From \"Armageddon\" Soundtrack",
-        "artist": "Aerosmith",
-        "spotifyUri": "spotify:track:5qlJg0Wbj3sslxfwiaRNpq",
-        "stats_youtube": 758968014,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "It Must Have Been Love - From the Film \"Pretty Woman\"",
-        "artist": "Roxette",
-        "spotifyUri": "spotify:track:6kvoHl80mfCVTv7XnZkjQn",
-        "stats_youtube": 983196613,
-        "stats_lastfm": 0,
         "stats_genius": 0
     },
     {
         "title": "Sweat (A La La La La Long)",
         "artist": "Inner Circle",
         "spotifyUri": "spotify:track:1nXTM2CVdaoCySSD5kgt3J",
-        "stats_youtube": 173072357,
-        "stats_lastfm": 102730,
-        "stats_genius": 0
-    },
-    {
-        "title": "Here Comes the Hotstepper - Heartical Mix",
-        "artist": "iNi Kamoze",
-        "spotifyUri": "spotify:track:3QRM0qZB7oMYavveH0iEqx",
-        "stats_youtube": 95811270,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "I Like to Move It (feat. The Mad Stuntman) - Erick \"More\" Album Mix",
-        "artist": "Reel 2 Real",
-        "spotifyUri": "spotify:track:4l2ljvyXOCVNbD5ff7NpM7",
-        "stats_youtube": 39448786,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "That Don't Impress Me Much - International Mix",
-        "artist": "Shania Twain",
-        "spotifyUri": "spotify:track:7r91bpZvftQAk6EfdSdwXq",
-        "stats_youtube": 140734545,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Hey Boy Hey Girl - ARTBAT Remix",
-        "artist": "The Chemical Brothers",
-        "spotifyUri": "spotify:track:6ncIQAyVDdHePrHc8HxIjv",
-        "stats_youtube": 80408,
-        "stats_lastfm": 0,
+        "stats_youtube": 173301460,
+        "stats_lastfm": 102739,
         "stats_genius": 0
     },
     {
         "title": "Born Slippy (Nuxx)",
         "artist": "Underworld",
         "spotifyUri": "spotify:track:7xQYVjs4wZNdCwO0EeAWMC",
-        "stats_youtube": 18667905,
-        "stats_lastfm": 318440,
-        "stats_genius": 0
-    },
-    {
-        "title": "Men In Black - From \"Men In Black\" Soundtrack",
-        "artist": "Will Smith",
-        "spotifyUri": "spotify:track:2FK7fxjzQEXD7Z32HSF0Hl",
-        "stats_youtube": 173319865,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Bailamos - From \"Wild Wild West\"",
-        "artist": "Enrique Iglesias",
-        "spotifyUri": "spotify:track:1ySwd43oWXbrytN2BD0Mhb",
-        "stats_youtube": 192385071,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Say It Ain't So - Original Mix",
-        "artist": "Weezer",
-        "spotifyUri": "spotify:track:6VoIBz0VhCyz7OdEoRYDiA",
-        "stats_youtube": 185853567,
-        "stats_lastfm": 0,
+        "stats_youtube": 18878609,
+        "stats_lastfm": 318499,
         "stats_genius": 0
     },
     {
         "title": "3AM",
         "artist": "Matchbox Twenty",
         "spotifyUri": "spotify:track:5vYA1mW9g2Coh1HUFUSmlb",
-        "stats_youtube": 154146224,
-        "stats_lastfm": 329338,
-        "stats_genius": 0
-    },
-    {
-        "title": "Love Is All Around - From \"Four Weddings And A Funeral\"",
-        "artist": "Wet Wet Wet",
-        "spotifyUri": "spotify:track:0PCGfA36HrVPmsBZJ57zOU",
-        "stats_youtube": 96882527,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Back for Good - Radio Mix",
-        "artist": "Take That",
-        "spotifyUri": "spotify:track:6vcdzohhBSbNdsZBh5IRpQ",
-        "stats_youtube": 168122212,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Never Forget - Single Version",
-        "artist": "Take That",
-        "spotifyUri": "spotify:track:1WK7eLVsD0zH4UWm9ob3z6",
-        "stats_youtube": 2360818,
-        "stats_lastfm": 0,
+        "stats_youtube": 154511163,
+        "stats_lastfm": 330935,
         "stats_genius": 0
     },
     {
         "title": "What Goes Around.../...Comes Around (Interlude)",
         "artist": "Justin Timberlake",
         "spotifyUri": "spotify:track:3pD0f7hSJg2XdQ6udw5Tey",
-        "stats_youtube": 520119358,
+        "stats_youtube": 520675541,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -1595,151 +539,23 @@
         "title": "Empire State Of Mind",
         "artist": "JAŸ-Z",
         "spotifyUri": "spotify:track:2igwFfvr1OAGX9SKDCPBwO",
-        "stats_youtube": 481529465,
+        "stats_youtube": 485490806,
         "stats_lastfm": 0,
-        "stats_genius": 4617236
+        "stats_genius": 4637217
     },
     {
         "title": "99 Problems",
         "artist": "JAŸ-Z",
         "spotifyUri": "spotify:track:7sLpSWxQazJzDVG6YGzlVs",
-        "stats_youtube": 26774395,
+        "stats_youtube": 26800471,
         "stats_lastfm": 0,
-        "stats_genius": 1455840
+        "stats_genius": 1457007
     },
     {
-        "title": "Ignition - Remix",
-        "artist": "R. Kelly",
-        "spotifyUri": "spotify:track:5dNfHmqgr128gMY2tc5CeJ",
-        "stats_youtube": 388650,
-        "stats_lastfm": 0,
-        "stats_genius": 994423
-    },
-    {
-        "title": "Popular (with Playboi Carti & Madonna) - From The Idol Vol. 1 (Music from the HBO Original Series)",
-        "artist": "The Weeknd",
-        "spotifyUri": "spotify:track:6WzRpISELf3YglGAh7TXcG",
-        "stats_youtube": 112968836,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Independent Women, Pt. 1 - Pasadena Remix",
+        "title": "Independent Women, Pt. 1",
         "artist": "Destiny's Child",
         "spotifyUri": "spotify:track:5JZpQuRIX8MTiKwuELjTlx",
-        "stats_youtube": 93426094,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Mr. Brightside",
-        "artist": "The Killers",
-        "spotifyUri": "spotify:track:003vvx7Niy0yvhvHt4a68B",
-        "stats_youtube": 639090246,
-        "stats_lastfm": 205,
-        "stats_genius": 0
-    },
-    {
-        "title": "Photograph - 2020 Remaster",
-        "artist": "Nickelback",
-        "spotifyUri": "spotify:track:3bYrSlgvWacP1LZV44pfzp",
-        "stats_youtube": 91190665,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "By the Way",
-        "artist": "Red Hot Chili Peppers",
-        "spotifyUri": "spotify:track:1f2V8U1BiWaC9aJWmpOARe",
-        "stats_youtube": 220179791,
-        "stats_lastfm": 1958879,
-        "stats_genius": 0
-    },
-    {
-        "title": "Dani California",
-        "artist": "Red Hot Chili Peppers",
-        "spotifyUri": "spotify:track:10Nmj3JCNoMeBQ87uw5j8k",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Can't Stop",
-        "artist": "Red Hot Chili Peppers",
-        "spotifyUri": "spotify:track:3ZOEytgrvLwQaqXreDs2Jx",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Snow (Hey Oh)",
-        "artist": "Red Hot Chili Peppers",
-        "spotifyUri": "spotify:track:2aibwv5hGXSgw7Yru8IYTO",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "All My Life",
-        "artist": "Foo Fighters",
-        "spotifyUri": "spotify:track:6tsojOQ5wHaIjKqIryLZK6",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "The Pretender",
-        "artist": "Foo Fighters",
-        "spotifyUri": "spotify:track:7x8dCjCr0x6x2lXKujYD34",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Best of You",
-        "artist": "Foo Fighters",
-        "spotifyUri": "spotify:track:5FZxsHWIvUsmSK1IAvm2pp",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "No One Knows",
-        "artist": "Queens of the Stone Age",
-        "spotifyUri": "spotify:track:6y20BV5L33R8YXM0YuI38N",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Go With The Flow",
-        "artist": "Queens of the Stone Age",
-        "spotifyUri": "spotify:track:0wzRcekWyVCSyPtlPOeJau",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Kryptonite",
-        "artist": "3 Doors Down",
-        "spotifyUri": "spotify:track:6ZOBP3NvffbU4SZcrnt1k6",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Here Without You",
-        "artist": "3 Doors Down",
-        "spotifyUri": "spotify:track:3NLrRZoMF0Lx6zTlYqeIo4",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Wherever You Will Go",
-        "artist": "The Calling",
-        "spotifyUri": "spotify:track:2n6FX3Jcg4b4Leoz0GOqBF",
-        "stats_youtube": 0,
+        "stats_youtube": 93577495,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -1747,191 +563,79 @@
         "title": "Drops of Jupiter (Tell Me)",
         "artist": "Train",
         "spotifyUri": "spotify:track:2hKdd3qO7cWr2Jo0Bcs0MA",
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "She Will Be Loved - Radio Mix",
-        "artist": "Maroon 5",
-        "spotifyUri": "spotify:track:4llK75pXNWZz6KAho2Gp16",
-        "stats_youtube": 885052960,
-        "stats_lastfm": 0,
+        "stats_youtube": 382964988,
+        "stats_lastfm": 741706,
         "stats_genius": 0
     },
     {
         "title": "Paper Planes",
         "artist": "M.I.A.",
         "spotifyUri": "spotify:track:1ixbwbeBi5ufN4noUKmW5a",
-        "stats_youtube": 343451133,
-        "stats_lastfm": 2302632,
-        "stats_genius": 0
-    },
-    {
-        "title": "Valerie (feat. Amy Winehouse) - Version Revisited",
-        "artist": "Mark Ronson",
-        "spotifyUri": "spotify:track:6kopmMZiyLmw7h66uXcXR7",
-        "stats_youtube": 36001148,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Heads Will Roll - A-Trak Remix Radio Edit",
-        "artist": "Yeah Yeah Yeahs",
-        "spotifyUri": "spotify:track:5qGIfWDRdyO67LCTqA2sEn",
-        "stats_youtube": 321576,
-        "stats_lastfm": 0,
+        "stats_youtube": 344167385,
+        "stats_lastfm": 2307511,
         "stats_genius": 0
     },
     {
         "title": "Lifestyles of the Rich & Famous",
         "artist": "Good Charlotte",
         "spotifyUri": "spotify:track:2g2a5kDeZexbUTD8abcvm6",
-        "stats_youtube": 51172563,
+        "stats_youtube": 51263323,
         "stats_lastfm": 0,
-        "stats_genius": 73869
+        "stats_genius": 74185
     },
     {
         "title": "Sugar, We're Goin Down",
         "artist": "Fall Out Boy",
         "spotifyUri": "spotify:track:2TfSHkHiFO4gRztVIkggkE",
-        "stats_youtube": 170591574,
+        "stats_youtube": 170887099,
         "stats_lastfm": 0,
-        "stats_genius": 1201217
-    },
-    {
-        "title": "Decode - Twilight Soundtrack Version",
-        "artist": "Paramore",
-        "spotifyUri": "spotify:track:4IDfVjI1TlB1UwlC01T4Bm",
-        "stats_youtube": 613426189,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 1205604
     },
     {
         "title": "Pursuit Of Happiness (Nightmare)",
         "artist": "Kid Cudi",
         "spotifyUri": "spotify:track:4kTLpAbhuEGHAAdDjOIWaa",
-        "stats_youtube": 334001148,
-        "stats_lastfm": 63941,
+        "stats_youtube": 334523224,
+        "stats_lastfm": 64066,
         "stats_genius": 0
     },
     {
         "title": "Shackles (Praise You)",
         "artist": "Mary Mary",
         "spotifyUri": "spotify:track:7JKEA8xYDoFp4q0QBW2PGg",
-        "stats_youtube": 11257467,
-        "stats_lastfm": 9373,
+        "stats_youtube": 11274400,
+        "stats_lastfm": 9375,
         "stats_genius": 0
     },
     {
         "title": "Thank You (Not So Bad)",
         "artist": "Dimitri Vegas & Like Mike",
         "spotifyUri": "spotify:track:09CnYHiZ5jGT1wr1TXJ9Zt",
-        "stats_youtube": 179405371,
+        "stats_youtube": 180796670,
         "stats_lastfm": 0,
-        "stats_genius": 14368
+        "stats_genius": 14456
     },
     {
-        "title": "The Tide Is High - Radio Mix",
-        "artist": "Atomic Kitten",
-        "spotifyUri": "spotify:track:1QhSB9L9M5eZQhW4RNOhXK",
-        "stats_youtube": 81067485,
-        "stats_lastfm": 0,
-        "stats_genius": 53366
-    },
-    {
-        "title": "Call on Me - Radio Mix",
-        "artist": "Eric Prydz",
-        "spotifyUri": "spotify:track:1xNcBAoUw8Hz6LqK2jt4Ff",
-        "stats_youtube": 127774656,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Satisfaction - Hardwell & Maddix Remix",
-        "artist": "David Guetta",
-        "spotifyUri": "spotify:track:6L5xbckRDXIf5K1pwTaGkD",
-        "stats_youtube": 24873129,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "The Ketchup Song (Aserejé) - Spanglish Version",
+        "title": "The Ketchup Song (Aserejé)",
         "artist": "Las Ketchup",
         "spotifyUri": "spotify:track:6UEfyhyfhYQsyipxOd95Ie",
-        "stats_youtube": 139290974,
-        "stats_lastfm": 0,
-        "stats_genius": 215117
+        "stats_youtube": 139404881,
+        "stats_lastfm": 31438,
+        "stats_genius": 0
     },
     {
-        "title": "Castles In The Sky - Radio Mix",
-        "artist": "Ian van Dahl",
-        "spotifyUri": "spotify:track:3KhoIbIPMmoGthbBAPxgOK",
-        "stats_youtube": 7767958,
-        "stats_lastfm": 0,
-        "stats_genius": 24021
-    },
-    {
-        "title": "Now You're Gone (feat. DJ Mental Theo's Bazzheadz) - Video Edit",
+        "title": "Now You're Gone (feat. DJ Mental Theo's Bazzheadz)",
         "artist": "Basshunter",
         "spotifyUri": "spotify:track:5Nr1ZcH9PGTiQdGl9HCCS1",
-        "stats_youtube": 360330730,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Photograph",
-        "artist": "Ed Sheeran",
-        "spotifyUri": "spotify:track:3FSPaBp49Clqq2p4zc9dbA",
-        "stats_youtube": 1509572086,
-        "stats_lastfm": 1261075,
-        "stats_genius": 0
-    },
-    {
-        "title": "Sunflower - Spider-Man: Into the Spider-Verse",
-        "artist": "Post Malone",
-        "spotifyUri": "spotify:track:3KkXRkHbMCARz0aVfEt68P",
-        "stats_youtube": 2990346414,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Moves Like Jagger - Soul Seekerz Radio Edit",
-        "artist": "Maroon 5",
-        "spotifyUri": "spotify:track:5iBEp1bVRy267ryXJ0vq6q",
-        "stats_youtube": 853898242,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Girls Like You (feat. Cardi B) - Cardi B Version",
-        "artist": "Maroon 5",
-        "spotifyUri": "spotify:track:7fa9MBXhVfQ8P8Df9OEbD8",
-        "stats_youtube": 4028904176,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Happy - From \"Despicable Me 2\"",
-        "artist": "Pharrell Williams",
-        "spotifyUri": "spotify:track:60nZcImufyMA1MKQY3dcCH",
-        "stats_youtube": 1541694130,
-        "stats_lastfm": 0,
+        "stats_youtube": 6537876,
+        "stats_lastfm": 609,
         "stats_genius": 0
     },
     {
         "title": "Get Lucky (Radio Edit) [feat. Pharrell Williams and Nile Rodgers]",
         "artist": "Daft Punk",
         "spotifyUri": "spotify:track:2Foc5Q5nqNiosCNqttzHof",
-        "stats_youtube": 56473925,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "We Found Love - Chuckie Extended Remix",
-        "artist": "Rihanna",
-        "spotifyUri": "spotify:track:3eiljiHHlpZKkfj2uQTunn",
-        "stats_youtube": 326011,
+        "stats_youtube": 56606278,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -1939,79 +643,31 @@
         "title": "Only Girl (In The World)",
         "artist": "Rihanna",
         "spotifyUri": "spotify:track:2ENexcMEMsYk0rVJigVD3i",
-        "stats_youtube": 1027269690,
-        "stats_lastfm": 27865,
+        "stats_youtube": 1028583409,
+        "stats_lastfm": 27866,
         "stats_genius": 0
     },
     {
-        "title": "Let It Go - From \"Frozen\"/Soundtrack Version",
-        "artist": "Idina Menzel",
-        "spotifyUri": "spotify:track:600HVBpzF1WfBdaRwbEvLz",
-        "stats_youtube": 418605985,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Let Me Love You - Tiësto's AFTR:HRS Mix",
-        "artist": "DJ Snake",
-        "spotifyUri": "spotify:track:7srwQKnqYsIY26Aatbazaq",
-        "stats_youtube": 418150,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Waka Waka (This Time for Africa) - K-Mix",
+        "title": "Waka Waka (This Time for Africa)",
         "artist": "Shakira",
         "spotifyUri": "spotify:track:63Tl9k1sH8tznn3bqoMuyF",
-        "stats_youtube": 4570644777,
-        "stats_lastfm": 0,
+        "stats_youtube": 4593360806,
+        "stats_lastfm": 132444,
         "stats_genius": 0
-    },
-    {
-        "title": "Bailando - Spanish Version",
-        "artist": "Enrique Iglesias",
-        "spotifyUri": "spotify:track:6PSKhwo0mVcOdjUOhVJd5p",
-        "stats_youtube": 3842068837,
-        "stats_lastfm": 0,
-        "stats_genius": 382691
-    },
-    {
-        "title": "I Took A Pill In Ibiza - Seeb Remix",
-        "artist": "Mike Posner",
-        "spotifyUri": "spotify:track:0vbtURX4qv1l7besfwmnD8",
-        "stats_youtube": 1794355601,
-        "stats_lastfm": 0,
-        "stats_genius": 195830
     },
     {
         "title": "Hold On, We're Going Home",
         "artist": "Drake",
         "spotifyUri": "spotify:track:6jdOi5U5LBzQrc4c1VT983",
-        "stats_youtube": 209433693,
+        "stats_youtube": 209580593,
         "stats_lastfm": 0,
-        "stats_genius": 5695752
-    },
-    {
-        "title": "Love Me Like You Do - From \"Fifty Shades Of Grey\"",
-        "artist": "Ellie Goulding",
-        "spotifyUri": "spotify:track:3zHq9ouUJQFQRf3cm1rRLu",
-        "stats_youtube": 2407714069,
-        "stats_lastfm": 0,
-        "stats_genius": 13323
-    },
-    {
-        "title": "Lights - Single Version",
-        "artist": "Ellie Goulding",
-        "spotifyUri": "spotify:track:5aTsxlQlq0vIedDWZoqMWN",
-        "stats_youtube": 260781003,
-        "stats_lastfm": 0,
-        "stats_genius": 8131
+        "stats_genius": 5697729
     },
     {
         "title": "Scream & Shout",
         "artist": "will.i.am",
         "spotifyUri": "spotify:track:054ue8u2erwwGNgSIZLEPq",
-        "stats_youtube": 1179730615,
+        "stats_youtube": 1181074323,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -2019,63 +675,39 @@
         "title": "Ain't Nobody (Loves Me Better) (feat. Jasmine Thompson)",
         "artist": "Felix Jaehn",
         "spotifyUri": "spotify:track:3c8iiZGfEammKJuWTErE5x",
-        "stats_youtube": 541890765,
+        "stats_youtube": 542687328,
         "stats_lastfm": 18,
         "stats_genius": 0
     },
     {
-        "title": "Prayer in C - Robin Schulz Radio Edit",
-        "artist": "Lilly Wood and The Prick",
-        "spotifyUri": "spotify:track:5fnA9mkIfScSqHIpeDyvck",
-        "stats_youtube": 909628349,
-        "stats_lastfm": 0,
-        "stats_genius": 142690
-    },
-    {
-        "title": "Waves [feat. Chris Brown & T.I.] - Robin Schulz Remix",
+        "title": "Waves [feat. Chris Brown & T.I.]",
         "artist": "Mr. Probz",
         "spotifyUri": "spotify:track:2HDhsfCmbVjLHYXK32jaCC",
-        "stats_youtube": 694328193,
+        "stats_youtube": 11630074,
         "stats_lastfm": 0,
-        "stats_genius": 75236
+        "stats_genius": 75299
     },
     {
         "title": "High Hopes",
         "artist": "Panic! At The Disco",
         "spotifyUri": "spotify:track:1rqqCSm0Qe4I9rUvWncaom",
-        "stats_youtube": 849964886,
+        "stats_youtube": 850869186,
         "stats_lastfm": 0,
-        "stats_genius": 2384078
-    },
-    {
-        "title": "Try Everything - aus \"Zoomania\"",
-        "artist": "Shakira",
-        "spotifyUri": "spotify:track:4DEuHSNytLmOz75w8vFpga",
-        "stats_youtube": 803139935,
-        "stats_lastfm": 0,
-        "stats_genius": 0
-    },
-    {
-        "title": "Clarity (feat. Foxes) - Tiësto Remix",
-        "artist": "Zedd",
-        "spotifyUri": "spotify:track:4jIQ0wouzKHbi1fYHORIN0",
-        "stats_youtube": 412313362,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 2391646
     },
     {
         "title": "Me, Myself & I",
         "artist": "G-Eazy",
         "spotifyUri": "spotify:track:40YcuQysJ0KlGQTeGUosTC",
-        "stats_youtube": 677306049,
+        "stats_youtube": 677853989,
         "stats_lastfm": 0,
-        "stats_genius": 2864045
+        "stats_genius": 2865272
     },
     {
-        "title": "F**kin' Perfect - Radio Edit",
+        "title": "F**kin' Perfect",
         "artist": "P!nk",
         "spotifyUri": "spotify:track:3ueoTboomKEQpI3r9z47Kg",
-        "stats_youtube": 179511377,
+        "stats_youtube": 179560769,
         "stats_lastfm": 1,
         "stats_genius": 0
     },
@@ -2083,39 +715,39 @@
         "title": "Where Are Ü Now (with Justin Bieber)",
         "artist": "Jack Ü",
         "spotifyUri": "spotify:track:66hayvUbTotekKU3H4ta1f",
-        "stats_youtube": 1339149252,
-        "stats_lastfm": 12104,
+        "stats_youtube": 1339838838,
+        "stats_lastfm": 12117,
         "stats_genius": 0
     },
     {
         "title": "MONTERO (Call Me By Your Name)",
         "artist": "Lil Nas X",
         "spotifyUri": "spotify:track:1SC5rEoYDGUK4NfG82494W",
-        "stats_youtube": 18295030,
-        "stats_lastfm": 3773,
+        "stats_youtube": 633211842,
+        "stats_lastfm": 3776,
         "stats_genius": 0
     },
     {
         "title": "TEXAS HOLD 'EM",
         "artist": "Beyoncé",
         "spotifyUri": "spotify:track:0Z7nGFVCLfixWctgePsRk9",
-        "stats_youtube": 30978,
+        "stats_youtube": 31498,
         "stats_lastfm": 0,
-        "stats_genius": 636077
+        "stats_genius": 637197
     },
     {
         "title": "A Bar Song (Tipsy)",
         "artist": "Shaboozey",
         "spotifyUri": "spotify:track:2FQrifJ1N335Ljm3TjTVVf",
-        "stats_youtube": 4026186,
-        "stats_lastfm": 251,
+        "stats_youtube": 376310960,
+        "stats_lastfm": 255,
         "stats_genius": 0
     },
     {
         "title": "What Was I Made For? [From The Motion Picture \"Barbie\"]",
         "artist": "Billie Eilish",
         "spotifyUri": "spotify:track:6wf7Yu7cxBSPrRlWeSeK0Q",
-        "stats_youtube": 255552392,
+        "stats_youtube": 256289862,
         "stats_lastfm": 1,
         "stats_genius": 0
     },
@@ -2123,47 +755,31 @@
         "title": "Boy's a liar Pt. 2",
         "artist": "PinkPantheress",
         "spotifyUri": "spotify:track:5CCr8msaN3MhgqBoa9yWhH",
-        "stats_youtube": 292094907,
+        "stats_youtube": 292938858,
         "stats_lastfm": 0,
-        "stats_genius": 1327937
+        "stats_genius": 1329470
     },
     {
         "title": "I'm Good (Blue)",
         "artist": "David Guetta",
         "spotifyUri": "spotify:track:4uUG5RXrOk84mYEfFvj3cK",
-        "stats_youtube": 390972061,
+        "stats_youtube": 391918565,
         "stats_lastfm": 0,
-        "stats_genius": 382670
+        "stats_genius": 383952
     },
     {
         "title": "Shakira: Bzrp Music Sessions, Vol. 53/66",
         "artist": "Bizarrap",
         "spotifyUri": "spotify:track:4nrPB8O7Y7wsOCJdgXkthe",
-        "stats_youtube": 864076516,
+        "stats_youtube": 865704136,
         "stats_lastfm": 0,
-        "stats_genius": 579435
-    },
-    {
-        "title": "Cupid - Twin Version",
-        "artist": "FIFTY FIFTY",
-        "spotifyUri": "spotify:track:53DDMPqgMWNrEeE3NjThKE",
-        "stats_youtube": 90594129,
-        "stats_lastfm": 0,
-        "stats_genius": 4786859
-    },
-    {
-        "title": "Dance The Night - From Barbie The Album",
-        "artist": "Dua Lipa",
-        "spotifyUri": "spotify:track:1vYXt7VSjH9JIM5oRRo7vA",
-        "stats_youtube": 229465975,
-        "stats_lastfm": 0,
-        "stats_genius": 0
+        "stats_genius": 579903
     },
     {
         "title": "we can't be friends (wait for your love)",
         "artist": "Ariana Grande",
         "spotifyUri": "spotify:track:51ZQ1vr10ffzbwIjDCwqm4",
-        "stats_youtube": 369637178,
+        "stats_youtube": 372443293,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -2171,39 +787,23 @@
         "title": "yes, and?",
         "artist": "Ariana Grande",
         "spotifyUri": "spotify:track:7gaA3wERFkFkgivjwbSvkG",
-        "stats_youtube": 119330135,
+        "stats_youtube": 119699626,
         "stats_lastfm": 0,
-        "stats_genius": 1859255
-    },
-    {
-        "title": "Cold Heart - PNAU Remix",
-        "artist": "Elton John",
-        "spotifyUri": "spotify:track:6zSpb8dQRaw0M1dK8PBwQz",
-        "stats_youtube": 684944147,
-        "stats_lastfm": 0,
-        "stats_genius": 394313
-    },
-    {
-        "title": "(It Goes Like) Nanana - Edit",
-        "artist": "Peggy Gou",
-        "spotifyUri": "spotify:track:23RoR84KodL5HWvUTneQ1w",
-        "stats_youtube": 86174349,
-        "stats_lastfm": 0,
-        "stats_genius": 95617
+        "stats_genius": 1862014
     },
     {
         "title": "I Love You, I'm Sorry",
         "artist": "Gracie Abrams",
         "spotifyUri": "spotify:track:51rfRCiUSvxXlCSCfIztBy",
-        "stats_youtube": 47234982,
+        "stats_youtube": 47785200,
         "stats_lastfm": 0,
-        "stats_genius": 1070425
+        "stats_genius": 1076545
     },
     {
         "title": "F.N.F. (Let's Go)",
         "artist": "Hitkidd",
         "spotifyUri": "spotify:track:1vrFJDrysqmsNAgyjBzx4f",
-        "stats_youtube": 98190471,
+        "stats_youtube": 98320656,
         "stats_lastfm": 0,
         "stats_genius": 0
     },
@@ -2211,23 +811,15 @@
         "title": "love nwantiti (ah ah ah)",
         "artist": "CKay",
         "spotifyUri": "spotify:track:2Xr1dTzJee307rmrkt8c0g",
-        "stats_youtube": 617315143,
-        "stats_lastfm": 5015,
+        "stats_youtube": 618600548,
+        "stats_lastfm": 5020,
         "stats_genius": 0
-    },
-    {
-        "title": "Die For You - Remix",
-        "artist": "The Weeknd",
-        "spotifyUri": "spotify:track:7oDd86yk8itslrA9HRP2ki",
-        "stats_youtube": 626561362,
-        "stats_lastfm": 0,
-        "stats_genius": 946859
     },
     {
         "title": "Is It Over Now? (Taylor's Version) (From The Vault)",
         "artist": "Taylor Swift",
         "spotifyUri": "spotify:track:1Iq8oo9XkmmvCQiGOfORiz",
-        "stats_youtube": 1103635,
+        "stats_youtube": 1104606,
         "stats_lastfm": 97,
         "stats_genius": 0
     },
@@ -2235,7 +827,7 @@
         "title": "Savage Love (Laxed - Siren Beat)",
         "artist": "Jawsh 685",
         "spotifyUri": "spotify:track:1xQ6trAsedVPCdbtDAmk0c",
-        "stats_youtube": 12530227,
+        "stats_youtube": 219651234,
         "stats_lastfm": 200,
         "stats_genius": 0
     }

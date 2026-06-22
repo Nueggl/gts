@@ -9,7 +9,7 @@ import config_secrets
 import config_yt
 
 # --- DATEINAMEN & EINSTELLUNGEN ---
-MAIN_JSON_FILE = 'songs_new_score.json'
+MAIN_JSON_FILE = 'songs_zu_fixen.json'
 ERROR_JSON_FILE = 'songs_fehlend.json' # <--- HIER DEN NAMEN DEINER NEUEN DATEI EINTRAGEN
 
 WEIGHT_YOUTUBE = 0.5
