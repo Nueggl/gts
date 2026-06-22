@@ -5,6 +5,7 @@
     fehlende songs ergänzen
         teilweise ergänzt; WIP
         bei allen verbesserten songs müssen yt aufrufe kontrolliert werden
+        noch keine songs in songs new score übernommen, alle bei songs zu fixen
     bei manchen songs stimmen yt aufrufe nicht (eg. set fire to the rain, dream on (-> falsches video genommen)) --> evtl verhältnis zwischen anderen stats zu yt views prüfen um diese songs zu finden
         //siehe jasp/excel; ungefährer schwellenwert: fehler wenn wert < -0,25 (also zb -0,4)
     gewichtung anpassen
