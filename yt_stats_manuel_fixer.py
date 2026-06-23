@@ -6,7 +6,7 @@ import re
 import config_yt
 
 MAIN_DB_FILE = 'songs_new_score.json'
-FIX_LIST_FILE = 'songs_zu_fixen.json'
+FIX_LIST_FILE = 'alle_songs_zu_fixen_mit_yt_fehler_unter_schwellenwert.json'
 
 def load_fix_list_from_txt(filepath):
     fix_list = []
@@ -187,9 +187,9 @@ def interactive_fix():
             main_song['stats_youtube'] = new_views
             fixed_count += 1
             print(f"✅ Korrigiert auf {new_views:,} Views!")
-            # --- NEU: Last.fm und Genius direkt mitnehmen ---
-            main_song['stats_lastfm'] = fix_song.get('stats_lastfm', main_song.get('stats_lastfm', 0))
-            main_song['stats_genius'] = fix_song.get('stats_genius', main_song.get('stats_genius', 0))
+            # # --- NEU: Last.fm und Genius direkt mitnehmen ---
+            # main_song['stats_lastfm'] = fix_song.get('stats_lastfm', main_song.get('stats_lastfm', 0))
+            # main_song['stats_genius'] = fix_song.get('stats_genius', main_song.get('stats_genius', 0))
             
             # Direkt speichern
             with open(MAIN_DB_FILE, 'w', encoding='utf-8') as f:
