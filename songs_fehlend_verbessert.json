@@ -1758,5 +1758,1035 @@
         "stats_genius": 5512434,
         "popularity": 91,
         "raw_data_collected": true
+    },
+    {
+        "title": "Losing My Religion",
+        "artist": "R.E.M.",
+        "spotifyUri": "spotify:track:31AOj9sFz2gM0O3hMARRBx",
+        "stats_youtube": 1447005834,
+        "stats_lastfm": 2379374,
+        "stats_genius": 1153045,
+        "popularity": 96,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Papa's Got A Brand New Bag (Part 1)",
+        "artist": "James Brown",
+        "spotifyUri": "spotify:track:2YHAWQbkx7a8cgQVR8yDGO",
+        "stats_youtube": 7600716,
+        "stats_lastfm": 131,
+        "stats_genius": 28559,
+        "popularity": 62,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Run the World (Girls)",
+        "artist": "Beyoncé",
+        "spotifyUri": "spotify:track:1uXbwHHfgsXcUKfSZw5ZJ0",
+        "stats_youtube": 618121957,
+        "stats_lastfm": 3764,
+        "stats_genius": 423424,
+        "popularity": 82,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Good Morning Judge",
+        "artist": "Wynonie Harris",
+        "spotifyUri": "spotify:track:5B8GsE8NCjdOMS8Jcwr99r",
+        "stats_youtube": 1745,
+        "stats_lastfm": 6454,
+        "stats_genius": 2429,
+        "popularity": 43,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Rocket Man (I Think It's Going To Be A Long, Long Time)",
+        "artist": "Elton John",
+        "spotifyUri": "spotify:track:3gdewACMIVMEWVbyb8O9sY",
+        "stats_youtube": 181458328,
+        "stats_lastfm": 201259,
+        "stats_genius": 985054,
+        "popularity": 86,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+        "artist": "ABBA",
+        "spotifyUri": "spotify:track:3vkQ5DAB1qQMYO4Mr9zJN6",
+        "stats_youtube": 703880016,
+        "stats_lastfm": 38,
+        "stats_genius": 501457,
+        "popularity": 75,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Rockin' in the Free World",
+        "artist": "Neil Young",
+        "spotifyUri": "spotify:track:4Y7fEQ4PAzhlLnLviRw2P4",
+        "stats_youtube": 110904,
+        "stats_lastfm": 34,
+        "stats_genius": 216,
+        "popularity": 43,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Midnight Rider",
+        "artist": "Allman Brothers Band",
+        "spotifyUri": "spotify:track:7oxSfM3FXCdw7EXNreNoRz",
+        "stats_youtube": 20479,
+        "stats_lastfm": 362013,
+        "stats_genius": 696,
+        "popularity": 55,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Mercy Mercy Me (The Ecology)",
+        "artist": "Marvin Gaye",
+        "spotifyUri": "spotify:track:3IDc87lrpEHWFBASmgTgFV",
+        "stats_youtube": 6408636,
+        "stats_lastfm": 62634,
+        "stats_genius": 152905,
+        "popularity": 73,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Just My Imagination (Running Away With Me)",
+        "artist": "The Temptations",
+        "spotifyUri": "spotify:track:39Bd345OWEhRNyfayhp9gv",
+        "stats_youtube": 6271163,
+        "stats_lastfm": 85120,
+        "stats_genius": 162399,
+        "popularity": 74,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Movin' Out (Anthony's Song)",
+        "artist": "Billy Joel",
+        "spotifyUri": "spotify:track:16GUMo6u3D2qo9a19AkYct",
+        "stats_youtube": 5438466,
+        "stats_lastfm": 1,
+        "stats_genius": 278205,
+        "popularity": 55,
+        "raw_data_collected": true
+    },
+    {
+        "title": "The Ballroom Blitz",
+        "artist": "Sweet",
+        "spotifyUri": "spotify:track:1PcERoNH2UMQ19lnD2BWfn",
+        "stats_youtube": 15719177,
+        "stats_lastfm": 116633,
+        "stats_genius": 77,
+        "popularity": 68,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Blockbuster",
+        "artist": "Sweet",
+        "spotifyUri": "spotify:track:3cOhFfgTx1ojno3CrRqaCd",
+        "stats_youtube": 19480220,
+        "stats_lastfm": 89587,
+        "stats_genius": 43,
+        "popularity": 68,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Get It On",
+        "artist": "T. Rex",
+        "spotifyUri": "spotify:track:0LoQuiekvzqx7n8flgEKzF",
+        "stats_youtube": 33699817,
+        "stats_lastfm": 461704,
+        "stats_genius": 598,
+        "popularity": 75,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Frankenstein",
+        "artist": "The Edgar Winter Group",
+        "spotifyUri": "spotify:track:4g8ZUOxhPMXN5wVSP7gCau",
+        "stats_youtube": 3998491,
+        "stats_lastfm": 165134,
+        "stats_genius": 4920,
+        "popularity": 70,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Lady Marmalade",
+        "artist": "Patti LaBelle",
+        "spotifyUri": "spotify:track:3GGcwG519BTMdvMeFy7meT",
+        "stats_youtube": 12505805,
+        "stats_lastfm": 132190,
+        "stats_genius": 1549,
+        "popularity": 71,
+        "raw_data_collected": true
+    },
+    {
+        "title": "I Wanna Dance with Somebody (Who Loves Me)",
+        "artist": "Whitney Houston",
+        "spotifyUri": "spotify:track:2tUBqZG2AbRi7Q0BIrVrEj",
+        "stats_youtube": 562908671,
+        "stats_lastfm": 261371,
+        "stats_genius": 434388,
+        "popularity": 89,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Walk This Way (feat. Aerosmith)",
+        "artist": "Run–D.M.C.",
+        "spotifyUri": "spotify:track:6qUEOWqOzu1rLPUPQ1ECpx",
+        "stats_youtube": 144920343,
+        "stats_lastfm": 201078,
+        "stats_genius": 95,
+        "popularity": 76,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Don't You (Forget About Me)",
+        "artist": "Simple Minds",
+        "spotifyUri": "spotify:track:5Y8Rj0s6wuM5DlQdllYiWl",
+        "stats_youtube": 425467793,
+        "stats_lastfm": 166,
+        "stats_genius": 308798,
+        "popularity": 76,
+        "raw_data_collected": true
+    },
+    {
+        "title": "I Ran (So Far Away)",
+        "artist": "A Flock Of Seagulls",
+        "spotifyUri": "spotify:track:6vKVuBeExHlEh9cZ8Ppk8t",
+        "stats_youtube": 231984828,
+        "stats_lastfm": 388157,
+        "stats_genius": 201521,
+        "popularity": 86,
+        "raw_data_collected": true
+    },
+    {
+        "title": "All Night Long (All Night)",
+        "artist": "Lionel Richie",
+        "spotifyUri": "spotify:track:4czNORk5MjW5WOn98bki32",
+        "stats_youtube": 206339943,
+        "stats_lastfm": 165714,
+        "stats_genius": 235297,
+        "popularity": 85,
+        "raw_data_collected": true
+    },
+    {
+        "title": "It Takes Two",
+        "artist": "Rob Base & DJ EZ Rock",
+        "spotifyUri": "spotify:track:6yMcdWpeGd0P4oXzUZwBec",
+        "stats_youtube": 94950535,
+        "stats_lastfm": 1,
+        "stats_genius": 23887,
+        "popularity": 60,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Straight Outta Compton",
+        "artist": "N.W.A.",
+        "spotifyUri": "spotify:track:6KIKRz9eSTXdNsGUnomdtW",
+        "stats_youtube": 206444508,
+        "stats_lastfm": 279029,
+        "stats_genius": 1830882,
+        "popularity": 88,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Express Yourself",
+        "artist": "N.W.A.",
+        "spotifyUri": "spotify:track:6NLLIPKjqFRnbCorRNTEHe",
+        "stats_youtube": 49674251,
+        "stats_lastfm": 183340,
+        "stats_genius": 433237,
+        "popularity": 82,
+        "raw_data_collected": true
+    },
+    {
+        "title": "White Lines (Don't Do It)",
+        "artist": "Grandmaster Flash",
+        "spotifyUri": "spotify:track:2W1ClVyalH5ys0HIN3FGvU",
+        "stats_youtube": 5209902,
+        "stats_lastfm": 47532,
+        "stats_genius": 1986,
+        "popularity": 67,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Bad Reputation",
+        "artist": "Joan Jett & the Blackhearts",
+        "spotifyUri": "spotify:track:1wBK8aicWM2d5LeHyWgSVW",
+        "stats_youtube": 5320677,
+        "stats_lastfm": 1,
+        "stats_genius": 691,
+        "popularity": 49,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Running Up That Hill (A Deal With God)",
+        "artist": "Kate Bush",
+        "spotifyUri": "spotify:track:1PtQJZVZIdWIYdARpZRDFO",
+        "stats_youtube": 412355017,
+        "stats_lastfm": 1928300,
+        "stats_genius": 4174787,
+        "popularity": 94,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Here I Am (Come And Take Me)",
+        "artist": "UB40",
+        "spotifyUri": "spotify:track:1ti85OealKe0Yq23ws9n0e",
+        "stats_youtube": 96062488,
+        "stats_lastfm": 6484,
+        "stats_genius": 25854,
+        "popularity": 75,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Major Tom (Coming Home)",
+        "artist": "Peter Schilling",
+        "spotifyUri": "spotify:track:1D6NMs2Zq9PI8dgPtOGbtA",
+        "stats_youtube": 106245773,
+        "stats_lastfm": 138240,
+        "stats_genius": 488874,
+        "popularity": 83,
+        "raw_data_collected": true
+    },
+    {
+        "title": "You Spin Me Round (Like a Record)",
+        "artist": "Dead Or Alive",
+        "spotifyUri": "spotify:track:1ChulFMnwxoD74Me8eX2TU",
+        "stats_youtube": 342737719,
+        "stats_lastfm": 49563,
+        "stats_genius": 360784,
+        "popularity": 85,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Touch Me (I Want Your Body)",
+        "artist": "Samantha Fox",
+        "spotifyUri": "spotify:track:13s6dCsNpSZflwVu2uzzPi",
+        "stats_youtube": 72357532,
+        "stats_lastfm": 25796,
+        "stats_genius": 27287,
+        "popularity": 76,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Everybody Hurts",
+        "artist": "R.E.M.",
+        "spotifyUri": "spotify:track:6PypGyiu0Y2lCDBN1XZEnP",
+        "stats_youtube": 186662587,
+        "stats_lastfm": 1107313,
+        "stats_genius": 267976,
+        "popularity": 88,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Pretty Fly (For A White Guy)",
+        "artist": "The Offspring",
+        "spotifyUri": "spotify:track:3SFXsFpeGmBTtQvKiwYMDA",
+        "stats_youtube": 126152901,
+        "stats_lastfm": 159767,
+        "stats_genius": 968641,
+        "popularity": 85,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Blue (Da Ba Dee)",
+        "artist": "Eiffel 65",
+        "spotifyUri": "spotify:track:4GewRLEiI4BDTQsoH8BRVV",
+        "stats_youtube": 2611017,
+        "stats_lastfm": 63766,
+        "stats_genius": 1388068,
+        "popularity": 73,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Mambo No. 5 (a Little Bit of...)",
+        "artist": "Lou Bega",
+        "spotifyUri": "spotify:track:6x4tKaOzfNJpEJHySoiJcs",
+        "stats_youtube": 612540720,
+        "stats_lastfm": 18,
+        "stats_genius": 688372,
+        "popularity": 74,
+        "raw_data_collected": true
+    },
+    {
+        "title": "We Like To Party! (The Vengabus)",
+        "artist": "Vengaboys",
+        "spotifyUri": "spotify:track:73ljrkSg4A0q3ByU0Cu7mw",
+        "stats_youtube": 281993973,
+        "stats_lastfm": 59535,
+        "stats_genius": 18254,
+        "popularity": 81,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Gypsy Woman (She's Homeless) (La Da Dee La Da Da)",
+        "artist": "Crystal Waters",
+        "spotifyUri": "spotify:track:1SShxVVBeZBCY7WddnksPz",
+        "stats_youtube": 169397229,
+        "stats_lastfm": 63668,
+        "stats_genius": 164,
+        "popularity": 75,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Juicy",
+        "artist": "The Notorious B.I.G.",
+        "spotifyUri": "spotify:track:5ByAIlEEnxYdvpnezg7HTX",
+        "stats_youtube": 735054376,
+        "stats_lastfm": 556099,
+        "stats_genius": 4604061,
+        "popularity": 93,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Hypnotize",
+        "artist": "The Notorious B.I.G.",
+        "spotifyUri": "spotify:track:7KwZNVEaqikRSBSpyhXK2j",
+        "stats_youtube": 113516872,
+        "stats_lastfm": 389062,
+        "stats_genius": 1856158,
+        "popularity": 87,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Big Poppa",
+        "artist": "The Notorious B.I.G.",
+        "spotifyUri": "spotify:track:2g8HN35AnVGIk7B8yMucww",
+        "stats_youtube": 588844650,
+        "stats_lastfm": 410888,
+        "stats_genius": 2329440,
+        "popularity": 92,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Scatman (Ski-Ba-Bop-Ba-Dop-Bop)",
+        "artist": "Scatman John",
+        "spotifyUri": "spotify:track:623rRTKwGmgjH6sjE9uWLh",
+        "stats_youtube": 290937183,
+        "stats_lastfm": 79226,
+        "stats_genius": 271939,
+        "popularity": 85,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Party Up (Up In Here)",
+        "artist": "DMX",
+        "spotifyUri": "spotify:track:3Y4BqG5FGXgGFQaJzX1MQC",
+        "stats_youtube": 202680111,
+        "stats_lastfm": 510976,
+        "stats_genius": 762223,
+        "popularity": 88,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Hard Knock Life (Ghetto Anthem)",
+        "artist": "JAŸ-Z",
+        "spotifyUri": "spotify:track:5Tl0HJvynZtKdSUMKbFVVX",
+        "stats_youtube": 5493265,
+        "stats_lastfm": 1,
+        "stats_genius": 576249,
+        "popularity": 56,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Sweat (A La La La La Long)",
+        "artist": "Inner Circle",
+        "spotifyUri": "spotify:track:1nXTM2CVdaoCySSD5kgt3J",
+        "stats_youtube": 173301460,
+        "stats_lastfm": 102739,
+        "stats_genius": 208549,
+        "popularity": 83,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Born Slippy (Nuxx)",
+        "artist": "Underworld",
+        "spotifyUri": "spotify:track:7xQYVjs4wZNdCwO0EeAWMC",
+        "stats_youtube": 18878609,
+        "stats_lastfm": 318499,
+        "stats_genius": 270148,
+        "popularity": 79,
+        "raw_data_collected": true
+    },
+    {
+        "title": "3AM",
+        "artist": "Matchbox Twenty",
+        "spotifyUri": "spotify:track:5vYA1mW9g2Coh1HUFUSmlb",
+        "stats_youtube": 154511163,
+        "stats_lastfm": 330935,
+        "stats_genius": 745,
+        "popularity": 79,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Drops of Jupiter (Tell Me)",
+        "artist": "Train",
+        "spotifyUri": "spotify:track:2hKdd3qO7cWr2Jo0Bcs0MA",
+        "stats_youtube": 382964988,
+        "stats_lastfm": 741706,
+        "stats_genius": 1667328,
+        "popularity": 91,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Paper Planes",
+        "artist": "M.I.A.",
+        "spotifyUri": "spotify:track:1ixbwbeBi5ufN4noUKmW5a",
+        "stats_youtube": 344167385,
+        "stats_lastfm": 2307511,
+        "stats_genius": 1112541,
+        "popularity": 92,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Pursuit Of Happiness (Nightmare)",
+        "artist": "Kid Cudi",
+        "spotifyUri": "spotify:track:4kTLpAbhuEGHAAdDjOIWaa",
+        "stats_youtube": 334523224,
+        "stats_lastfm": 64066,
+        "stats_genius": 1350538,
+        "popularity": 86,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Shackles (Praise You)",
+        "artist": "Mary Mary",
+        "spotifyUri": "spotify:track:7JKEA8xYDoFp4q0QBW2PGg",
+        "stats_youtube": 11274400,
+        "stats_lastfm": 9375,
+        "stats_genius": 67029,
+        "popularity": 71,
+        "raw_data_collected": true
+    },
+    {
+        "title": "The Ketchup Song (Aserejé)",
+        "artist": "Las Ketchup",
+        "spotifyUri": "spotify:track:6UEfyhyfhYQsyipxOd95Ie",
+        "stats_youtube": 139404881,
+        "stats_lastfm": 31438,
+        "stats_genius": 1120,
+        "popularity": 75,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Now You're Gone (feat. DJ Mental Theo's Bazzheadz)",
+        "artist": "Basshunter",
+        "spotifyUri": "spotify:track:5Nr1ZcH9PGTiQdGl9HCCS1",
+        "stats_youtube": 6537876,
+        "stats_lastfm": 609,
+        "stats_genius": 79509,
+        "popularity": 65,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Only Girl (In The World)",
+        "artist": "Rihanna",
+        "spotifyUri": "spotify:track:2ENexcMEMsYk0rVJigVD3i",
+        "stats_youtube": 1028583409,
+        "stats_lastfm": 27866,
+        "stats_genius": 796076,
+        "popularity": 87,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Waka Waka (This Time for Africa)",
+        "artist": "Shakira",
+        "spotifyUri": "spotify:track:63Tl9k1sH8tznn3bqoMuyF",
+        "stats_youtube": 4593360806,
+        "stats_lastfm": 132444,
+        "stats_genius": 1849374,
+        "popularity": 95,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Ain't Nobody (Loves Me Better) (feat. Jasmine Thompson)",
+        "artist": "Felix Jaehn",
+        "spotifyUri": "spotify:track:3c8iiZGfEammKJuWTErE5x",
+        "stats_youtube": 542687328,
+        "stats_lastfm": 18,
+        "stats_genius": 2827,
+        "popularity": 68,
+        "raw_data_collected": true
+    },
+    {
+        "title": "F**kin' Perfect",
+        "artist": "P!nk",
+        "spotifyUri": "spotify:track:3ueoTboomKEQpI3r9z47Kg",
+        "stats_youtube": 179560769,
+        "stats_lastfm": 1,
+        "stats_genius": 225,
+        "popularity": 57,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Where Are Ü Now (with Justin Bieber)",
+        "artist": "Jack Ü",
+        "spotifyUri": "spotify:track:66hayvUbTotekKU3H4ta1f",
+        "stats_youtube": 1339838838,
+        "stats_lastfm": 12117,
+        "stats_genius": 2827,
+        "popularity": 81,
+        "raw_data_collected": true
+    },
+    {
+        "title": "MONTERO (Call Me By Your Name)",
+        "artist": "Lil Nas X",
+        "spotifyUri": "spotify:track:1SC5rEoYDGUK4NfG82494W",
+        "stats_youtube": 633211842,
+        "stats_lastfm": 3776,
+        "stats_genius": 2657470,
+        "popularity": 84,
+        "raw_data_collected": true
+    },
+    {
+        "title": "A Bar Song (Tipsy)",
+        "artist": "Shaboozey",
+        "spotifyUri": "spotify:track:2FQrifJ1N335Ljm3TjTVVf",
+        "stats_youtube": 376310960,
+        "stats_lastfm": 255,
+        "stats_genius": 691785,
+        "popularity": 77,
+        "raw_data_collected": true
+    },
+    {
+        "title": "What Was I Made For? [From The Motion Picture \"Barbie\"]",
+        "artist": "Billie Eilish",
+        "spotifyUri": "spotify:track:6wf7Yu7cxBSPrRlWeSeK0Q",
+        "stats_youtube": 256289862,
+        "stats_lastfm": 1,
+        "stats_genius": 744,
+        "popularity": 59,
+        "raw_data_collected": true
+    },
+    {
+        "title": "love nwantiti (ah ah ah)",
+        "artist": "CKay",
+        "spotifyUri": "spotify:track:2Xr1dTzJee307rmrkt8c0g",
+        "stats_youtube": 618600548,
+        "stats_lastfm": 5020,
+        "stats_genius": 542847,
+        "popularity": 83,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Is It Over Now? (Taylor's Version) (From The Vault)",
+        "artist": "Taylor Swift",
+        "spotifyUri": "spotify:track:1Iq8oo9XkmmvCQiGOfORiz",
+        "stats_youtube": 1104606,
+        "stats_lastfm": 97,
+        "stats_genius": 2605379,
+        "popularity": 61,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Savage Love (Laxed - Siren Beat)",
+        "artist": "Jawsh 685",
+        "spotifyUri": "spotify:track:1xQ6trAsedVPCdbtDAmk0c",
+        "stats_youtube": 219651234,
+        "stats_lastfm": 200,
+        "stats_genius": 341950,
+        "popularity": 74,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Heart-Shaped Box",
+        "artist": "Heart-Shaped Tracks",
+        "spotifyUri": "spotify:track:7eVUToVsDgy2NABwIEVpJ9",
+        "stats_youtube": 301927608,
+        "stats_lastfm": 1147,
+        "stats_genius": 21,
+        "popularity": 67,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Mammas Don't Let Your Babies Grow up to Be Cowboys",
+        "artist": "Waylon Jennings",
+        "spotifyUri": "spotify:track:7nVQ8mo77KaUvhUQzh4vMy",
+        "stats_youtube": 15724525,
+        "stats_lastfm": 172809,
+        "stats_genius": 454517,
+        "popularity": 78,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Rocket 88",
+        "artist": "Jackie Brenston & His Delta Cats",
+        "spotifyUri": "spotify:track:0qWGLMQwo57IabwNksvwGa",
+        "stats_youtube": 4324841,
+        "stats_lastfm": 10013,
+        "stats_genius": 25774,
+        "popularity": 67,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Verlieben, verloren, vergessen, verzeih'n",
+        "artist": "Wolfgang Petry",
+        "spotifyUri": "spotify:track:5SYHMGmqS3cOOKuCarASBT",
+        "stats_youtube": 6710683,
+        "stats_lastfm": 50004,
+        "stats_genius": 27583,
+        "popularity": 71,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Boogie Wonderland (with The Emotions)",
+        "artist": "Earth, Wind & Fire",
+        "spotifyUri": "spotify:track:6ztstiyZL6FXzh4aG46ZPD",
+        "stats_youtube": 458068522,
+        "stats_lastfm": 410363,
+        "stats_genius": 119272,
+        "popularity": 88,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Fantasy",
+        "artist": "Earth, Wind & Fire",
+        "spotifyUri": "spotify:track:0Eq4BMgsdV6DkLSJfX8eBt",
+        "stats_youtube": 29974686,
+        "stats_lastfm": 347437,
+        "stats_genius": 173198,
+        "popularity": 80,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Shining Star",
+        "artist": "Earth, Wind & Fire",
+        "spotifyUri": "spotify:track:0RgcOUQg4qYAEt9RIdf3oB",
+        "stats_youtube": 14237484,
+        "stats_lastfm": 408821,
+        "stats_genius": 67729,
+        "popularity": 78,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Pop Muzik",
+        "artist": "M / Robin Scott",
+        "spotifyUri": "spotify:track:6z3HAUZpAyJ0ctsbAwAiw3",
+        "stats_youtube": 15774432,
+        "stats_lastfm": 97310,
+        "stats_genius": 56756,
+        "popularity": 75,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Smokin' in the Boy's Room",
+        "artist": "Brownsville Station",
+        "spotifyUri": "spotify:track:1AIGp3gpj1NXJvh3engmUQ",
+        "stats_youtube": 677990,
+        "stats_lastfm": 23634,
+        "stats_genius": 23634,
+        "popularity": 63,
+        "raw_data_collected": true
+    },
+    {
+        "title": "That's the Way (I Like It)",
+        "artist": "KC & The Sunshine Band",
+        "spotifyUri": "spotify:track:3PR79C1jVvLLLmgdyHkXl3",
+        "stats_youtube": 5599800,
+        "stats_lastfm": 65568,
+        "stats_genius": 129156,
+        "popularity": 73,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Get Down Tonight",
+        "artist": "KC & The Sunshine Band",
+        "spotifyUri": "spotify:track:6zbFTYeqNvZdms60HouEFT",
+        "stats_youtube": 67838,
+        "stats_lastfm": 100652,
+        "stats_genius": 101837,
+        "popularity": 61,
+        "raw_data_collected": true
+    },
+    {
+        "title": "(Shake, Shake, Shake) Shake Your Booty",
+        "artist": "KC & The Sunshine Band",
+        "spotifyUri": "spotify:track:4mn7iv4DYJxPYbPy5R0nPE",
+        "stats_youtube": 441,
+        "stats_lastfm": 32254,
+        "stats_genius": 35408,
+        "popularity": 44,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Separate Ways (Worlds Apart) [2023 Remaster]",
+        "artist": "Journey",
+        "spotifyUri": "spotify:track:1pTw2cNrp9L3esxLAvWnN2",
+        "stats_youtube": 175554416,
+        "stats_lastfm": 296202,
+        "stats_genius": 154,
+        "popularity": 77,
+        "raw_data_collected": true
+    },
+    {
+        "title": "I Can't Go for That (No Can Do)",
+        "artist": "Daryl Hall & John Oates",
+        "spotifyUri": "spotify:track:41dDygR3r7e926oGUXfrLt",
+        "stats_youtube": 123016317,
+        "stats_lastfm": 407175,
+        "stats_genius": 303568,
+        "popularity": 85,
+        "raw_data_collected": true
+    },
+    {
+        "title": "I Love Rock 'N Roll",
+        "artist": "Joan Jett & the Blackhearts",
+        "spotifyUri": "spotify:track:4jTqsgDaffdNH0BMBwhjFv",
+        "stats_youtube": 40303998,
+        "stats_lastfm": 29990,
+        "stats_genius": 216542,
+        "popularity": 77,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Jack & Diane",
+        "artist": "John Mellencamp",
+        "spotifyUri": "spotify:track:43btz2xjMKpcmjkuRsvxyg",
+        "stats_youtube": 36781476,
+        "stats_lastfm": 429521,
+        "stats_genius": 1031145,
+        "popularity": 83,
+        "raw_data_collected": true
+    },
+    {
+        "title": "We Are The World",
+        "artist": "U.S.A. For Africa",
+        "spotifyUri": "spotify:track:3Z2tPWiNiIpg8UMMoowHIk",
+        "stats_youtube": 215153311,
+        "stats_lastfm": 54339,
+        "stats_genius": 986482,
+        "popularity": 85,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Better The Devil You Know",
+        "artist": "Loco - Motion",
+        "spotifyUri": "spotify:track:2dNDtzZCpBHOnsnqMMV42C",
+        "stats_youtube": 9653595,
+        "stats_lastfm": 6,
+        "stats_genius": 298,
+        "popularity": 52,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Doo Wop (That Thing)",
+        "artist": "Ms. Lauryn Hill",
+        "spotifyUri": "spotify:track:0uEp9E98JB5awlA084uaIg",
+        "stats_youtube": 236996629,
+        "stats_lastfm": 997650,
+        "stats_genius": 1176888,
+        "popularity": 90,
+        "raw_data_collected": true
+    },
+    {
+        "title": "What Goes Around.../...Comes Around (Interlude)",
+        "artist": "Justin Timberlake",
+        "spotifyUri": "spotify:track:3pD0f7hSJg2XdQ6udw5Tey",
+        "stats_youtube": 520675541,
+        "stats_lastfm": 697425,
+        "stats_genius": 337545,
+        "popularity": 90,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Empire State Of Mind",
+        "artist": "JAŸ-Z",
+        "spotifyUri": "spotify:track:2igwFfvr1OAGX9SKDCPBwO",
+        "stats_youtube": 485490806,
+        "stats_lastfm": 340806,
+        "stats_genius": 4637217,
+        "popularity": 91,
+        "raw_data_collected": true
+    },
+    {
+        "title": "99 Problems",
+        "artist": "JAŸ-Z",
+        "spotifyUri": "spotify:track:7sLpSWxQazJzDVG6YGzlVs",
+        "stats_youtube": 26800471,
+        "stats_lastfm": 39888,
+        "stats_genius": 1457007,
+        "popularity": 79,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Independent Women, Pt. 1",
+        "artist": "Destiny's Child",
+        "spotifyUri": "spotify:track:5JZpQuRIX8MTiKwuELjTlx",
+        "stats_youtube": 93577495,
+        "stats_lastfm": 99943,
+        "stats_genius": 362,
+        "popularity": 75,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Lifestyles of the Rich & Famous",
+        "artist": "Good Charlotte",
+        "spotifyUri": "spotify:track:2g2a5kDeZexbUTD8abcvm6",
+        "stats_youtube": 51263323,
+        "stats_lastfm": 471601,
+        "stats_genius": 74185,
+        "popularity": 81,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Sugar, We're Goin Down",
+        "artist": "Fall Out Boy",
+        "spotifyUri": "spotify:track:2TfSHkHiFO4gRztVIkggkE",
+        "stats_youtube": 170887099,
+        "stats_lastfm": 1545406,
+        "stats_genius": 1205604,
+        "popularity": 90,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Thank You (Not So Bad)",
+        "artist": "Dimitri Vegas & Like Mike",
+        "spotifyUri": "spotify:track:09CnYHiZ5jGT1wr1TXJ9Zt",
+        "stats_youtube": 180796670,
+        "stats_lastfm": 272447,
+        "stats_genius": 14456,
+        "popularity": 82,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Get Lucky (Radio Edit) [feat. Pharrell Williams and Nile Rodgers]",
+        "artist": "Daft Punk",
+        "spotifyUri": "spotify:track:2Foc5Q5nqNiosCNqttzHof",
+        "stats_youtube": 56606278,
+        "stats_lastfm": 838608,
+        "stats_genius": 36573,
+        "popularity": 82,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Hold On, We're Going Home",
+        "artist": "Drake",
+        "spotifyUri": "spotify:track:6jdOi5U5LBzQrc4c1VT983",
+        "stats_youtube": 209580593,
+        "stats_lastfm": 1298452,
+        "stats_genius": 5697729,
+        "popularity": 92,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Scream & Shout",
+        "artist": "will.i.am",
+        "spotifyUri": "spotify:track:054ue8u2erwwGNgSIZLEPq",
+        "stats_youtube": 1181074323,
+        "stats_lastfm": 1210878,
+        "stats_genius": 694385,
+        "popularity": 94,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Waves [feat. Chris Brown & T.I.]",
+        "artist": "Mr. Probz",
+        "spotifyUri": "spotify:track:2HDhsfCmbVjLHYXK32jaCC",
+        "stats_youtube": 11630074,
+        "stats_lastfm": 12,
+        "stats_genius": 75299,
+        "popularity": 60,
+        "raw_data_collected": true
+    },
+    {
+        "title": "High Hopes",
+        "artist": "Panic! At The Disco",
+        "spotifyUri": "spotify:track:1rqqCSm0Qe4I9rUvWncaom",
+        "stats_youtube": 850869186,
+        "stats_lastfm": 994238,
+        "stats_genius": 2391646,
+        "popularity": 94,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Me, Myself & I",
+        "artist": "G-Eazy",
+        "spotifyUri": "spotify:track:40YcuQysJ0KlGQTeGUosTC",
+        "stats_youtube": 677853989,
+        "stats_lastfm": 821398,
+        "stats_genius": 2865272,
+        "popularity": 93,
+        "raw_data_collected": true
+    },
+    {
+        "title": "TEXAS HOLD 'EM",
+        "artist": "Beyoncé",
+        "spotifyUri": "spotify:track:0Z7nGFVCLfixWctgePsRk9",
+        "stats_youtube": 31498,
+        "stats_lastfm": 735375,
+        "stats_genius": 637197,
+        "popularity": 64,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Boy's a liar Pt. 2",
+        "artist": "PinkPantheress",
+        "spotifyUri": "spotify:track:5CCr8msaN3MhgqBoa9yWhH",
+        "stats_youtube": 292938858,
+        "stats_lastfm": 1650579,
+        "stats_genius": 1329470,
+        "popularity": 91,
+        "raw_data_collected": true
+    },
+    {
+        "title": "I'm Good (Blue)",
+        "artist": "David Guetta",
+        "spotifyUri": "spotify:track:4uUG5RXrOk84mYEfFvj3cK",
+        "stats_youtube": 391918565,
+        "stats_lastfm": 826212,
+        "stats_genius": 383952,
+        "popularity": 90,
+        "raw_data_collected": true
+    },
+    {
+        "title": "Shakira: Bzrp Music Sessions, Vol. 53/66",
+        "artist": "Bizarrap",
+        "spotifyUri": "spotify:track:4nrPB8O7Y7wsOCJdgXkthe",
+        "stats_youtube": 865704136,
+        "stats_lastfm": 98950,
+        "stats_genius": 579903,
+        "popularity": 89,
+        "raw_data_collected": true
+    },
+    {
+        "title": "we can't be friends (wait for your love)",
+        "artist": "Ariana Grande",
+        "spotifyUri": "spotify:track:51ZQ1vr10ffzbwIjDCwqm4",
+        "stats_youtube": 372443293,
+        "stats_lastfm": 1442172,
+        "stats_genius": 1428326,
+        "popularity": 92,
+        "raw_data_collected": true
+    },
+    {
+        "title": "yes, and?",
+        "artist": "Ariana Grande",
+        "spotifyUri": "spotify:track:7gaA3wERFkFkgivjwbSvkG",
+        "stats_youtube": 119699626,
+        "stats_lastfm": 1152769,
+        "stats_genius": 1862014,
+        "popularity": 89,
+        "raw_data_collected": true
+    },
+    {
+        "title": "I Love You, I'm Sorry",
+        "artist": "Gracie Abrams",
+        "spotifyUri": "spotify:track:51rfRCiUSvxXlCSCfIztBy",
+        "stats_youtube": 47785200,
+        "stats_lastfm": 933034,
+        "stats_genius": 1076545,
+        "popularity": 85,
+        "raw_data_collected": true
+    },
+    {
+        "title": "F.N.F. (Let's Go)",
+        "artist": "Hitkidd",
+        "spotifyUri": "spotify:track:1vrFJDrysqmsNAgyjBzx4f",
+        "stats_youtube": 98320656,
+        "stats_lastfm": 152952,
+        "stats_genius": 193499,
+        "popularity": 82,
+        "raw_data_collected": true
     }
 ]

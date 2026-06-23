@@ -6,7 +6,7 @@ import re
 import config_yt
 
 MAIN_DB_FILE = 'songs_new_score.json'
-FIX_LIST_FILE = 'songs_vergessen_ki.txt'
+FIX_LIST_FILE = 'songs_zu_fixen.json'
 
 def load_fix_list_from_txt(filepath):
     fix_list = []
@@ -99,14 +99,22 @@ def interactive_fix():
         print(f"❌ Hauptdatenbank {MAIN_DB_FILE} nicht gefunden!")
         return
 
-    print(f"📂 Lade Fehlerliste aus Textdatei '{FIX_LIST_FILE}'...")
-    fix_list = load_fix_list_from_txt(FIX_LIST_FILE)
-    
-    if not fix_list:
-        print(f"❌ Fehlerliste ist leer oder '{FIX_LIST_FILE}' wurde nicht gefunden!")
+    try:
+        with open(FIX_LIST_FILE, 'r', encoding='utf-8') as f:
+            fix_list = json.load(f)
+        print(f"📂 Fehlerliste geladen: {len(fix_list)} Songs müssen geprüft werden.\n")
+    except FileNotFoundError:
+        print(f"❌ Fehlerliste {FIX_LIST_FILE} nicht gefunden!")
         return
+
+    # print(f"📂 Lade Fehlerliste aus Textdatei '{FIX_LIST_FILE}'...")
+    # fix_list = load_fix_list_from_txt(FIX_LIST_FILE)
+    
+    # if not fix_list:
+    #     print(f"❌ Fehlerliste ist leer oder '{FIX_LIST_FILE}' wurde nicht gefunden!")
+    #     return
         
-    print(f"✅ {len(fix_list)} Songs erfolgreich eingelesen. Starte manuellen Fix...\n")
+    # print(f"✅ {len(fix_list)} Songs erfolgreich eingelesen. Starte manuellen Fix...\n")
 
     fixed_count = 0
 
@@ -115,8 +123,15 @@ def interactive_fix():
         artist = fix_song.get('artist', '')
         old_views = fix_song.get('stats_youtube', 'Unbekannt')
         
-        # Den exakten Song in der Hauptdatenbank finden
-        main_song = next((s for s in main_db if s.get('title') == title and s.get('artist') == artist), None)
+        title = fix_song.get('title', '')
+        artist = fix_song.get('artist', '')
+        old_views = fix_song.get('stats_youtube', 'Unbekannt')
+        
+        # WICHTIG: Wir holen uns die URI aus der Fehlerliste
+        uri = fix_song.get('spotifyUri', '')
+        
+        # Den exakten Song über die bombensichere URI finden!
+        main_song = next((s for s in main_db if s.get('spotifyUri') == uri), None)
         
         if not main_song:
             print(f"⚠️ {title} - {artist} in Haupt-DB nicht gefunden. Überspringe...")
@@ -172,6 +187,9 @@ def interactive_fix():
             main_song['stats_youtube'] = new_views
             fixed_count += 1
             print(f"✅ Korrigiert auf {new_views:,} Views!")
+            # --- NEU: Last.fm und Genius direkt mitnehmen ---
+            main_song['stats_lastfm'] = fix_song.get('stats_lastfm', main_song.get('stats_lastfm', 0))
+            main_song['stats_genius'] = fix_song.get('stats_genius', main_song.get('stats_genius', 0))
             
             # Direkt speichern
             with open(MAIN_DB_FILE, 'w', encoding='utf-8') as f:

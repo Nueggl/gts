@@ -78,9 +78,9 @@
         "album": "Hotel California (2013 Remaster)",
         "genre": "Rock",
         "popularity": 55,
-        "stats_youtube": 860901858,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 866686705,
+        "stats_lastfm": 1260050,
+        "stats_genius": 4949636,
         "raw_data_collected": true
     },
     {
@@ -134,7 +134,7 @@
         "album": "I Never Loved a Man the Way I Love You",
         "genre": "R&B/Soul",
         "popularity": 37,
-        "stats_youtube": 0,
+        "stats_youtube": 18517873,
         "stats_lastfm": 1318926,
         "stats_genius": 635744,
         "raw_data_collected": true
