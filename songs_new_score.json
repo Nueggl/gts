@@ -233,8 +233,8 @@
         "genre": "R&B/Soul",
         "popularity": 48,
         "stats_youtube": 178133083,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1132038,
+        "stats_genius": 499358,
         "raw_data_collected": true
     },
     {
@@ -499,8 +499,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 56303319,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 248482,
+        "stats_genius": 1060361,
         "raw_data_collected": true
     },
     {
@@ -569,8 +569,8 @@
         "genre": "Rock",
         "popularity": 49,
         "stats_youtube": 92525374,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1220266,
+        "stats_genius": 1073837,
         "raw_data_collected": true
     },
     {
@@ -612,7 +612,7 @@
         "popularity": 81,
         "stats_youtube": 1444282733,
         "stats_lastfm": 2371722,
-        "stats_genius": 0,
+        "stats_genius": 1153045,
         "raw_data_collected": true
     },
     {
@@ -695,8 +695,8 @@
         "genre": "R&B/Soul",
         "popularity": 42,
         "stats_youtube": 8395540,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 131,
+        "stats_genius": 28559,
         "raw_data_collected": true
     },
     {
@@ -779,8 +779,8 @@
         "genre": "Pop",
         "popularity": 40,
         "stats_youtube": 9000000,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1,
+        "stats_genius": 67319,
         "raw_data_collected": true
     },
     {
@@ -793,8 +793,8 @@
         "genre": "Hard Rock",
         "popularity": 52,
         "stats_youtube": 264363481,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1079666,
+        "stats_genius": 454466,
         "raw_data_collected": true
     },
     {
@@ -961,8 +961,8 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 59,
         "stats_youtube": 2989522558,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 34833,
+        "stats_genius": 3345542,
         "raw_data_collected": true
     },
     {
@@ -1060,7 +1060,7 @@
         "popularity": 77,
         "stats_youtube": 428490017,
         "stats_lastfm": 1539021,
-        "stats_genius": 0,
+        "stats_genius": 2312534,
         "raw_data_collected": true
     },
     {
@@ -1199,7 +1199,7 @@
         "genre": "Pop",
         "popularity": 74,
         "stats_youtube": 1505117355,
-        "stats_lastfm": 0,
+        "stats_lastfm": 656202,
         "stats_genius": 5876370,
         "raw_data_collected": true
     },
@@ -1578,7 +1578,7 @@
         "popularity": 81,
         "stats_youtube": 1561259091,
         "stats_lastfm": 2022111,
-        "stats_genius": 0,
+        "stats_genius": 1887840,
         "raw_data_collected": true
     },
     {
@@ -1984,7 +1984,7 @@
         "popularity": 81,
         "stats_youtube": 1733354921,
         "stats_lastfm": 1727781,
-        "stats_genius": 0,
+        "stats_genius": 501561,
         "raw_data_collected": true
     },
     {
@@ -2151,8 +2151,8 @@
         "genre": "Alternative",
         "popularity": 53,
         "stats_youtube": 301393632,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1147,
+        "stats_genius": 21,
         "raw_data_collected": true
     },
     {
@@ -2235,8 +2235,8 @@
         "genre": "Rock",
         "popularity": 49,
         "stats_youtube": 88444947,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 702882,
+        "stats_genius": 261022,
         "raw_data_collected": true
     },
     {
@@ -2571,8 +2571,8 @@
         "genre": "Soundtrack",
         "popularity": 55,
         "stats_youtube": 633823930,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 168740,
+        "stats_genius": 637596,
         "raw_data_collected": true
     },
     {
@@ -2712,7 +2712,7 @@
         "popularity": 68,
         "stats_youtube": 617708797,
         "stats_lastfm": 3764,
-        "stats_genius": 0,
+        "stats_genius": 423424,
         "raw_data_collected": true
     },
     {
@@ -2851,8 +2851,8 @@
         "genre": "Country",
         "popularity": 40,
         "stats_youtube": 28540680,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 296582,
+        "stats_genius": 310401,
         "raw_data_collected": true
     },
     {
@@ -2865,8 +2865,8 @@
         "genre": "Pop",
         "popularity": 25,
         "stats_youtube": 8285135,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 151312,
+        "stats_genius": 25867,
         "raw_data_collected": true
     },
     {
@@ -3005,7 +3005,7 @@
         "genre": "Traditional Country",
         "popularity": 59,
         "stats_youtube": 15651141,
-        "stats_lastfm": 0,
+        "stats_lastfm": 172809,
         "stats_genius": 453049,
         "raw_data_collected": true
     },
@@ -3299,7 +3299,7 @@
         "genre": "Rock",
         "popularity": 53,
         "stats_youtube": 3894467,
-        "stats_lastfm": 0,
+        "stats_lastfm": 275216,
         "stats_genius": 48142,
         "raw_data_collected": true
     },
@@ -3341,7 +3341,7 @@
         "genre": "Rock",
         "popularity": 30,
         "stats_youtube": 1869,
-        "stats_lastfm": 0,
+        "stats_lastfm": 303267,
         "stats_genius": 11696,
         "raw_data_collected": true
     },
@@ -3398,7 +3398,7 @@
         "popularity": 47,
         "stats_youtube": 167732,
         "stats_lastfm": 6451,
-        "stats_genius": 0,
+        "stats_genius": 2429,
         "raw_data_collected": true
     },
     {
@@ -3411,8 +3411,8 @@
         "genre": "Rock",
         "popularity": 33,
         "stats_youtube": 258651,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 10013,
+        "stats_genius": 25774,
         "raw_data_collected": true
     },
     {
@@ -3579,7 +3579,7 @@
         "genre": "German Pop",
         "popularity": 53,
         "stats_youtube": 34179636,
-        "stats_lastfm": 0,
+        "stats_lastfm": 50004,
         "stats_genius": 26886,
         "raw_data_collected": true
     },
@@ -3607,8 +3607,8 @@
         "genre": "Pop",
         "popularity": 54,
         "stats_youtube": 493576183,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 243,
+        "stats_genius": 776742,
         "raw_data_collected": true
     },
     {
@@ -3621,8 +3621,8 @@
         "genre": "Rock",
         "popularity": 44,
         "stats_youtube": 148000000,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 966533,
+        "stats_genius": 469261,
         "raw_data_collected": true
     },
     {
@@ -3677,8 +3677,8 @@
         "genre": "Pop",
         "popularity": 49,
         "stats_youtube": 94756549,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 256044,
+        "stats_genius": 119914,
         "raw_data_collected": true
     },
     {
@@ -3691,8 +3691,8 @@
         "genre": "Rock",
         "popularity": 49,
         "stats_youtube": 87598595,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 973046,
+        "stats_genius": 1894016,
         "raw_data_collected": true
     },
     {
@@ -3761,8 +3761,8 @@
         "genre": "Pop",
         "popularity": 47,
         "stats_youtube": 34695069,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 401437,
+        "stats_genius": 100018,
         "raw_data_collected": true
     },
     {
@@ -3776,7 +3776,7 @@
         "popularity": 71,
         "stats_youtube": 180964765,
         "stats_lastfm": 201224,
-        "stats_genius": 0,
+        "stats_genius": 985054,
         "raw_data_collected": true
     },
     {
@@ -3817,8 +3817,8 @@
         "genre": "Rock",
         "popularity": 33,
         "stats_youtube": 253184,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 667798,
+        "stats_genius": 800743,
         "raw_data_collected": true
     },
     {
@@ -3831,7 +3831,7 @@
         "genre": "Pop",
         "popularity": 59,
         "stats_youtube": 81000000,
-        "stats_lastfm": 0,
+        "stats_lastfm": 713426,
         "stats_genius": 58720,
         "raw_data_collected": true
     },
@@ -3986,7 +3986,7 @@
         "popularity": 61,
         "stats_youtube": 699941344,
         "stats_lastfm": 38,
-        "stats_genius": 0,
+        "stats_genius": 501457,
         "raw_data_collected": true
     },
     {
@@ -4097,8 +4097,8 @@
         "genre": "Rock",
         "popularity": 48,
         "stats_youtube": 53278569,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 470663,
+        "stats_genius": 1705526,
         "raw_data_collected": true
     },
     {
@@ -4111,7 +4111,7 @@
         "genre": "Rock",
         "popularity": 57,
         "stats_youtube": 19880224,
-        "stats_lastfm": 0,
+        "stats_lastfm": 355616,
         "stats_genius": 57213,
         "raw_data_collected": true
     },
@@ -4125,8 +4125,8 @@
         "genre": "Rock",
         "popularity": 38,
         "stats_youtube": 61629466,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 272964,
+        "stats_genius": 609561,
         "raw_data_collected": true
     },
     {
@@ -4139,8 +4139,8 @@
         "genre": "Rock",
         "popularity": 49,
         "stats_youtube": 66541420,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 629021,
+        "stats_genius": 1054771,
         "raw_data_collected": true
     },
     {
@@ -4153,8 +4153,8 @@
         "genre": "Rock",
         "popularity": 43,
         "stats_youtube": 18849377,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 595371,
+        "stats_genius": 124275,
         "raw_data_collected": true
     },
     {
@@ -4237,8 +4237,8 @@
         "genre": "Pop",
         "popularity": 54,
         "stats_youtube": 493876765,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 669059,
+        "stats_genius": 439872,
         "raw_data_collected": true
     },
     {
@@ -4265,7 +4265,7 @@
         "genre": "R&B/Soul",
         "popularity": 66,
         "stats_youtube": 457126915,
-        "stats_lastfm": 0,
+        "stats_lastfm": 410363,
         "stats_genius": 118711,
         "raw_data_collected": true
     },
@@ -4279,7 +4279,7 @@
         "genre": "R&B/Soul",
         "popularity": 59,
         "stats_youtube": 29932701,
-        "stats_lastfm": 0,
+        "stats_lastfm": 347437,
         "stats_genius": 172091,
         "raw_data_collected": true
     },
@@ -4293,7 +4293,7 @@
         "genre": "R&B/Soul",
         "popularity": 56,
         "stats_youtube": 14261236,
-        "stats_lastfm": 0,
+        "stats_lastfm": 408821,
         "stats_genius": 67265,
         "raw_data_collected": true
     },
@@ -4349,8 +4349,8 @@
         "genre": "Disco",
         "popularity": 24,
         "stats_youtube": 10572886,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 57168,
+        "stats_genius": 93706,
         "raw_data_collected": true
     },
     {
@@ -4447,8 +4447,8 @@
         "genre": "R&B/Soul",
         "popularity": 42,
         "stats_youtube": 6587537,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 118852,
+        "stats_genius": 12244,
         "raw_data_collected": true
     },
     {
@@ -4685,8 +4685,8 @@
         "genre": "Rock",
         "popularity": 46,
         "stats_youtube": 25883677,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 506,
+        "stats_genius": 242712,
         "raw_data_collected": true
     },
     {
@@ -4853,8 +4853,8 @@
         "genre": "Rock",
         "popularity": 38,
         "stats_youtube": 26000000,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 634807,
+        "stats_genius": 287654,
         "raw_data_collected": true
     },
     {
@@ -4994,7 +4994,7 @@
         "popularity": 37,
         "stats_youtube": 5534996,
         "stats_lastfm": 34,
-        "stats_genius": 0,
+        "stats_genius": 216,
         "raw_data_collected": true
     },
     {
@@ -5189,7 +5189,7 @@
         "genre": "Pop",
         "popularity": 56,
         "stats_youtube": 15799357,
-        "stats_lastfm": 0,
+        "stats_lastfm": 97310,
         "stats_genius": 56419,
         "raw_data_collected": true
     },
@@ -5217,8 +5217,8 @@
         "genre": "Rock",
         "popularity": 31,
         "stats_youtube": 106012,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 173290,
+        "stats_genius": 182196,
         "raw_data_collected": true
     },
     {
@@ -5245,8 +5245,8 @@
         "genre": "Hard Rock",
         "popularity": 47,
         "stats_youtube": 45792743,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 896293,
+        "stats_genius": 96432,
         "raw_data_collected": true
     },
     {
@@ -5273,8 +5273,8 @@
         "genre": "Metal",
         "popularity": 53,
         "stats_youtube": 387924704,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1848105,
+        "stats_genius": 1060247,
         "raw_data_collected": true
     },
     {
@@ -5287,8 +5287,8 @@
         "genre": "Metal",
         "popularity": 44,
         "stats_youtube": 44228929,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1287154,
+        "stats_genius": 1222188,
         "raw_data_collected": true
     },
     {
@@ -5301,7 +5301,7 @@
         "genre": "Metal",
         "popularity": 59,
         "stats_youtube": 108581110,
-        "stats_lastfm": 0,
+        "stats_lastfm": 992251,
         "stats_genius": 5592,
         "raw_data_collected": true
     },
@@ -5343,8 +5343,8 @@
         "genre": "Pop",
         "popularity": 31,
         "stats_youtube": 206554993,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 571153,
+        "stats_genius": 121282,
         "raw_data_collected": true
     },
     {
@@ -5400,7 +5400,7 @@
         "popularity": 47,
         "stats_youtube": 20000000,
         "stats_lastfm": 361910,
-        "stats_genius": 0,
+        "stats_genius": 696,
         "raw_data_collected": true
     },
     {
@@ -5539,8 +5539,8 @@
         "genre": "Pop",
         "popularity": 38,
         "stats_youtube": 1276695,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 618914,
+        "stats_genius": 218090,
         "raw_data_collected": true
     },
     {
@@ -5553,8 +5553,8 @@
         "genre": "Pop",
         "popularity": 43,
         "stats_youtube": 28000000,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 767484,
+        "stats_genius": 616280,
         "raw_data_collected": true
     },
     {
@@ -5567,8 +5567,8 @@
         "genre": "Pop",
         "popularity": 30,
         "stats_youtube": 18705458,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 413064,
+        "stats_genius": 152576,
         "raw_data_collected": true
     },
     {
@@ -5581,8 +5581,8 @@
         "genre": "Pop",
         "popularity": 44,
         "stats_youtube": 11791808,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 331893,
+        "stats_genius": 198594,
         "raw_data_collected": true
     },
     {
@@ -5610,7 +5610,7 @@
         "popularity": 60,
         "stats_youtube": 13000000,
         "stats_lastfm": 62630,
-        "stats_genius": 0,
+        "stats_genius": 152905,
         "raw_data_collected": true
     },
     {
@@ -5651,8 +5651,8 @@
         "genre": "Jazz",
         "popularity": 41,
         "stats_youtube": 56151991,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 595460,
+        "stats_genius": 86852,
         "raw_data_collected": true
     },
     {
@@ -5680,7 +5680,7 @@
         "popularity": 61,
         "stats_youtube": 58900049,
         "stats_lastfm": 85114,
-        "stats_genius": 0,
+        "stats_genius": 162399,
         "raw_data_collected": true
     },
     {
@@ -5693,8 +5693,8 @@
         "genre": "R&B/Soul",
         "popularity": 39,
         "stats_youtube": 41570039,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 19,
+        "stats_genius": 165721,
         "raw_data_collected": true
     },
     {
@@ -5805,8 +5805,8 @@
         "genre": "Musicals",
         "popularity": 48,
         "stats_youtube": 57582820,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 5,
+        "stats_genius": 596309,
         "raw_data_collected": true
     },
     {
@@ -5819,8 +5819,8 @@
         "genre": "Pop",
         "popularity": 45,
         "stats_youtube": 44522482,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 69775,
+        "stats_genius": 576512,
         "raw_data_collected": true
     },
     {
@@ -5833,7 +5833,7 @@
         "genre": "Pop",
         "popularity": 50,
         "stats_youtube": 56235391,
-        "stats_lastfm": 0,
+        "stats_lastfm": 778,
         "stats_genius": 108688,
         "raw_data_collected": true
     },
@@ -5847,8 +5847,8 @@
         "genre": "Musicals",
         "popularity": 44,
         "stats_youtube": 125121971,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 325177,
+        "stats_genius": 373025,
         "raw_data_collected": true
     },
     {
@@ -5974,7 +5974,7 @@
         "popularity": 42,
         "stats_youtube": 17238489,
         "stats_lastfm": 1,
-        "stats_genius": 0,
+        "stats_genius": 278205,
         "raw_data_collected": true
     },
     {
@@ -6155,8 +6155,8 @@
         "genre": "Pop",
         "popularity": 27,
         "stats_youtube": 20425,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 2,
+        "stats_genius": 44451,
         "raw_data_collected": true
     },
     {
@@ -6267,8 +6267,8 @@
         "genre": "Pop",
         "popularity": 45,
         "stats_youtube": 43847201,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 291318,
+        "stats_genius": 144691,
         "raw_data_collected": true
     },
     {
@@ -6282,7 +6282,7 @@
         "popularity": 64,
         "stats_youtube": 15684093,
         "stats_lastfm": 116502,
-        "stats_genius": 0,
+        "stats_genius": 77,
         "raw_data_collected": true
     },
     {
@@ -6296,7 +6296,7 @@
         "popularity": 64,
         "stats_youtube": 19402595,
         "stats_lastfm": 89533,
-        "stats_genius": 0,
+        "stats_genius": 43,
         "raw_data_collected": true
     },
     {
@@ -6338,7 +6338,7 @@
         "popularity": 57,
         "stats_youtube": 542217,
         "stats_lastfm": 460636,
-        "stats_genius": 0,
+        "stats_genius": 598,
         "raw_data_collected": true
     },
     {
@@ -6491,8 +6491,8 @@
         "genre": "Pop",
         "popularity": 41,
         "stats_youtube": 4343782,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 101107,
+        "stats_genius": 190841,
         "raw_data_collected": true
     },
     {
@@ -6519,7 +6519,7 @@
         "genre": "Pop",
         "popularity": 55,
         "stats_youtube": 18000000,
-        "stats_lastfm": 0,
+        "stats_lastfm": 4,
         "stats_genius": 6607,
         "raw_data_collected": true
     },
@@ -6533,8 +6533,8 @@
         "genre": "Pop",
         "popularity": 39,
         "stats_youtube": 4099188,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 21,
+        "stats_genius": 19546,
         "raw_data_collected": true
     },
     {
@@ -6547,8 +6547,8 @@
         "genre": "Rock",
         "popularity": 35,
         "stats_youtube": 5500000,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 474406,
+        "stats_genius": 88631,
         "raw_data_collected": true
     },
     {
@@ -6561,7 +6561,7 @@
         "genre": "Rock",
         "popularity": 27,
         "stats_youtube": 830000,
-        "stats_lastfm": 0,
+        "stats_lastfm": 77927,
         "stats_genius": 7956,
         "raw_data_collected": true
     },
@@ -6576,7 +6576,7 @@
         "popularity": 60,
         "stats_youtube": 7203625,
         "stats_lastfm": 164949,
-        "stats_genius": 0,
+        "stats_genius": 4920,
         "raw_data_collected": true
     },
     {
@@ -6603,7 +6603,7 @@
         "genre": "Pop",
         "popularity": 47,
         "stats_youtube": 2800000,
-        "stats_lastfm": 0,
+        "stats_lastfm": 23634,
         "stats_genius": 23567,
         "raw_data_collected": true
     },
@@ -6884,7 +6884,7 @@
         "popularity": 63,
         "stats_youtube": 12489295,
         "stats_lastfm": 131859,
-        "stats_genius": 0,
+        "stats_genius": 1549,
         "raw_data_collected": true
     },
     {
@@ -6897,7 +6897,7 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 34000000,
-        "stats_lastfm": 0,
+        "stats_lastfm": 65568,
         "stats_genius": 30740,
         "raw_data_collected": true
     },
@@ -6911,7 +6911,7 @@
         "genre": "Pop",
         "popularity": 49,
         "stats_youtube": 5659919,
-        "stats_lastfm": 0,
+        "stats_lastfm": 100652,
         "stats_genius": 30740,
         "raw_data_collected": true
     },
@@ -6925,7 +6925,7 @@
         "genre": "Rock",
         "popularity": 27,
         "stats_youtube": 15844587,
-        "stats_lastfm": 0,
+        "stats_lastfm": 32254,
         "stats_genius": 35015,
         "raw_data_collected": true
     },
@@ -6967,8 +6967,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 59492578,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 151532,
+        "stats_genius": 21893,
         "raw_data_collected": true
     },
     {
@@ -7009,8 +7009,8 @@
         "genre": "Pop",
         "popularity": 43,
         "stats_youtube": 8147583,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 54055,
+        "stats_genius": 15974,
         "raw_data_collected": true
     },
     {
@@ -7107,7 +7107,7 @@
         "genre": "Pop",
         "popularity": 68,
         "stats_youtube": 1247014009,
-        "stats_lastfm": 0,
+        "stats_lastfm": 825466,
         "stats_genius": 30740,
         "raw_data_collected": true
     },
@@ -7135,8 +7135,8 @@
         "genre": "Pop",
         "popularity": 56,
         "stats_youtube": 1181536839,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 724483,
+        "stats_genius": 17616,
         "raw_data_collected": true
     },
     {
@@ -7392,17 +7392,17 @@
         "raw_data_collected": true
     },
     {
-        "title": "Wake Me Up Before You Go Go (Karaoke Version) [in the Style of Wham]",
-        "artist": "Goldsound Karaoke",
-        "spotifyUri": "spotify:track:5DvgOCEvlcYUBwYiveMrz0",
+        "title": "Wake Me Up Before You Go Go",
+        "artist": "Wham!",
+        "spotifyUri": "spotify:track:0ikz6tENMONtK6qGkOrU3c",
         "coverUrl": "https://i.scdn.co/image/ab67616d0000b2733f2a1abe6432162645571045",
-        "year": 2011,
-        "album": "In the Style of Wham",
+        "year": 1984,
+        "album": "Make It Big",
         "genre": "Pop",
-        "popularity": 32,
-        "stats_youtube": 148302,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "popularity": 92,
+        "stats_youtube": 572000000,
+        "stats_lastfm": 7538534,
+        "stats_genius": 366448,
         "raw_data_collected": true
     },
     {
@@ -7458,7 +7458,7 @@
         "popularity": 75,
         "stats_youtube": 561470347,
         "stats_lastfm": 261359,
-        "stats_genius": 0,
+        "stats_genius": 434388,
         "raw_data_collected": true
     },
     {
@@ -7541,8 +7541,8 @@
         "genre": "Rock",
         "popularity": 54,
         "stats_youtube": 583816931,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1187810,
+        "stats_genius": 537215,
         "raw_data_collected": true
     },
     {
@@ -7555,8 +7555,8 @@
         "genre": "Pop",
         "popularity": 49,
         "stats_youtube": 85795650,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 649056,
+        "stats_genius": 286981,
         "raw_data_collected": true
     },
     {
@@ -7569,8 +7569,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 48141815,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 467538,
+        "stats_genius": 388136,
         "raw_data_collected": true
     },
     {
@@ -7583,8 +7583,8 @@
         "genre": "Pop",
         "popularity": 45,
         "stats_youtube": 20223492,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 557573,
+        "stats_genius": 390803,
         "raw_data_collected": true
     },
     {
@@ -7793,7 +7793,7 @@
         "genre": "Rock",
         "popularity": 62,
         "stats_youtube": 339475096,
-        "stats_lastfm": 0,
+        "stats_lastfm": 801400,
         "stats_genius": 5738,
         "raw_data_collected": true
     },
@@ -7807,8 +7807,8 @@
         "genre": "Pop",
         "popularity": 49,
         "stats_youtube": 73607097,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 267983,
+        "stats_genius": 43276,
         "raw_data_collected": true
     },
     {
@@ -7835,8 +7835,8 @@
         "genre": "Pop",
         "popularity": 45,
         "stats_youtube": 16985396,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 92,
+        "stats_genius": 93977,
         "raw_data_collected": true
     },
     {
@@ -7849,7 +7849,7 @@
         "genre": "Rock",
         "popularity": 48,
         "stats_youtube": 1096300,
-        "stats_lastfm": 0,
+        "stats_lastfm": 296533,
         "stats_genius": 25665,
         "raw_data_collected": true
     },
@@ -7863,8 +7863,8 @@
         "genre": "Pop",
         "popularity": 46,
         "stats_youtube": 28000000,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 292171,
+        "stats_genius": 78456,
         "raw_data_collected": true
     },
     {
@@ -7877,8 +7877,8 @@
         "genre": "Rock",
         "popularity": 47,
         "stats_youtube": 39865965,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 322621,
+        "stats_genius": 110027,
         "raw_data_collected": true
     },
     {
@@ -7919,7 +7919,7 @@
         "genre": "Pop",
         "popularity": 62,
         "stats_youtube": 173838293,
-        "stats_lastfm": 0,
+        "stats_lastfm": 1073142,
         "stats_genius": 25735,
         "raw_data_collected": true
     },
@@ -8017,7 +8017,7 @@
         "genre": "Pop",
         "popularity": 64,
         "stats_youtube": 312838102,
-        "stats_lastfm": 0,
+        "stats_lastfm": 870059,
         "stats_genius": 30740,
         "raw_data_collected": true
     },
@@ -8031,8 +8031,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 59819477,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 451134,
+        "stats_genius": 482131,
         "raw_data_collected": true
     },
     {
@@ -8045,8 +8045,8 @@
         "genre": "Pop",
         "popularity": 47,
         "stats_youtube": 42632227,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 314881,
+        "stats_genius": 126492,
         "raw_data_collected": true
     },
     {
@@ -8060,7 +8060,7 @@
         "popularity": 71,
         "stats_youtube": 144720997,
         "stats_lastfm": 201072,
-        "stats_genius": 0,
+        "stats_genius": 95,
         "raw_data_collected": true
     },
     {
@@ -8087,8 +8087,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 51847802,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 342156,
+        "stats_genius": 189331,
         "raw_data_collected": true
     },
     {
@@ -8115,8 +8115,8 @@
         "genre": "Pop",
         "popularity": 51,
         "stats_youtube": 145435913,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 373854,
+        "stats_genius": 271019,
         "raw_data_collected": true
     },
     {
@@ -8171,7 +8171,7 @@
         "genre": "Pop",
         "popularity": 66,
         "stats_youtube": 586804822,
-        "stats_lastfm": 0,
+        "stats_lastfm": 581091,
         "stats_genius": 30740,
         "raw_data_collected": true
     },
@@ -8213,8 +8213,8 @@
         "genre": "Pop",
         "popularity": 51,
         "stats_youtube": 175020983,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 296202,
+        "stats_genius": 154,
         "raw_data_collected": true
     },
     {
@@ -8241,8 +8241,8 @@
         "genre": "Pop",
         "popularity": 51,
         "stats_youtube": 154010672,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 594707,
+        "stats_genius": 169533,
         "raw_data_collected": true
     },
     {
@@ -8255,8 +8255,8 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 277842508,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 481121,
+        "stats_genius": 112403,
         "raw_data_collected": true
     },
     {
@@ -8269,8 +8269,8 @@
         "genre": "Pop",
         "popularity": 50,
         "stats_youtube": 114041889,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 331141,
+        "stats_genius": 171876,
         "raw_data_collected": true
     },
     {
@@ -8312,7 +8312,7 @@
         "popularity": 62,
         "stats_youtube": 424118290,
         "stats_lastfm": 166,
-        "stats_genius": 0,
+        "stats_genius": 308798,
         "raw_data_collected": true
     },
     {
@@ -8354,7 +8354,7 @@
         "popularity": 42,
         "stats_youtube": 2300,
         "stats_lastfm": 388044,
-        "stats_genius": 0,
+        "stats_genius": 201521,
         "raw_data_collected": true
     },
     {
@@ -8381,7 +8381,7 @@
         "genre": "Pop",
         "popularity": 57,
         "stats_youtube": 34826181,
-        "stats_lastfm": 0,
+        "stats_lastfm": 844801,
         "stats_genius": 10351,
         "raw_data_collected": true
     },
@@ -8423,8 +8423,8 @@
         "genre": "Pop",
         "popularity": 29,
         "stats_youtube": 44365,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1169705,
+        "stats_genius": 326248,
         "raw_data_collected": true
     },
     {
@@ -8493,8 +8493,8 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 227607677,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 359593,
+        "stats_genius": 155096,
         "raw_data_collected": true
     },
     {
@@ -8507,8 +8507,8 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 240564925,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 537595,
+        "stats_genius": 220863,
         "raw_data_collected": true
     },
     {
@@ -8535,8 +8535,8 @@
         "genre": "Pop",
         "popularity": 36,
         "stats_youtube": 748823,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 104,
+        "stats_genius": 317243,
         "raw_data_collected": true
     },
     {
@@ -8591,8 +8591,8 @@
         "genre": "Pop",
         "popularity": 53,
         "stats_youtube": 337092512,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 551525,
+        "stats_genius": 304642,
         "raw_data_collected": true
     },
     {
@@ -8619,8 +8619,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 53542087,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 596832,
+        "stats_genius": 163478,
         "raw_data_collected": true
     },
     {
@@ -8633,8 +8633,8 @@
         "genre": "Pop",
         "popularity": 25,
         "stats_youtube": 15623797,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 329130,
+        "stats_genius": 163690,
         "raw_data_collected": true
     },
     {
@@ -8647,8 +8647,8 @@
         "genre": "Pop",
         "popularity": 46,
         "stats_youtube": 24304023,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 324008,
+        "stats_genius": 113077,
         "raw_data_collected": true
     },
     {
@@ -8661,8 +8661,8 @@
         "genre": "Pop",
         "popularity": 51,
         "stats_youtube": 145427614,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 310133,
+        "stats_genius": 103898,
         "raw_data_collected": true
     },
     {
@@ -8745,7 +8745,7 @@
         "genre": "Pop",
         "popularity": 64,
         "stats_youtube": 122760731,
-        "stats_lastfm": 0,
+        "stats_lastfm": 407175,
         "stats_genius": 302744,
         "raw_data_collected": true
     },
@@ -8773,8 +8773,8 @@
         "genre": "Pop",
         "popularity": 45,
         "stats_youtube": 20975989,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 440098,
+        "stats_genius": 154126,
         "raw_data_collected": true
     },
     {
@@ -8871,8 +8871,8 @@
         "genre": "Pop",
         "popularity": 50,
         "stats_youtube": 137187826,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 849780,
+        "stats_genius": 331850,
         "raw_data_collected": true
     },
     {
@@ -8955,8 +8955,8 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 205720288,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 165714,
+        "stats_genius": 235297,
         "raw_data_collected": true
     },
     {
@@ -9124,7 +9124,7 @@
         "popularity": 49,
         "stats_youtube": 94684033,
         "stats_lastfm": 1,
-        "stats_genius": 0,
+        "stats_genius": 23887,
         "raw_data_collected": true
     },
     {
@@ -9194,7 +9194,7 @@
         "popularity": 72,
         "stats_youtube": 206174689,
         "stats_lastfm": 278921,
-        "stats_genius": 0,
+        "stats_genius": 1830882,
         "raw_data_collected": true
     },
     {
@@ -9207,8 +9207,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 49626832,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 183340,
+        "stats_genius": 433237,
         "raw_data_collected": true
     },
     {
@@ -9221,8 +9221,8 @@
         "genre": "Pop",
         "popularity": 43,
         "stats_youtube": 36000000,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 89827,
+        "stats_genius": 913255,
         "raw_data_collected": true
     },
     {
@@ -9236,7 +9236,7 @@
         "popularity": 59,
         "stats_youtube": 5175797,
         "stats_lastfm": 47530,
-        "stats_genius": 0,
+        "stats_genius": 1986,
         "raw_data_collected": true
     },
     {
@@ -9333,8 +9333,8 @@
         "genre": "Pop",
         "popularity": 53,
         "stats_youtube": 304730354,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 400987,
+        "stats_genius": 533116,
         "raw_data_collected": true
     },
     {
@@ -9347,7 +9347,7 @@
         "genre": "Pop",
         "popularity": 61,
         "stats_youtube": 40123354,
-        "stats_lastfm": 0,
+        "stats_lastfm": 29990,
         "stats_genius": 215430,
         "raw_data_collected": true
     },
@@ -9362,7 +9362,7 @@
         "popularity": 42,
         "stats_youtube": 5306546,
         "stats_lastfm": 1,
-        "stats_genius": 0,
+        "stats_genius": 691,
         "raw_data_collected": true
     },
     {
@@ -9432,7 +9432,7 @@
         "popularity": 77,
         "stats_youtube": 410549061,
         "stats_lastfm": 1923214,
-        "stats_genius": 0,
+        "stats_genius": 4174787,
         "raw_data_collected": true
     },
     {
@@ -9445,8 +9445,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 54661788,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 582983,
+        "stats_genius": 270720,
         "raw_data_collected": true
     },
     {
@@ -9655,7 +9655,7 @@
         "genre": "Pop",
         "popularity": 62,
         "stats_youtube": 44997402,
-        "stats_lastfm": 0,
+        "stats_lastfm": 429521,
         "stats_genius": 1023694,
         "raw_data_collected": true
     },
@@ -9725,8 +9725,8 @@
         "genre": "Pop",
         "popularity": 49,
         "stats_youtube": 67538944,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 39,
+        "stats_genius": 91307,
         "raw_data_collected": true
     },
     {
@@ -9739,8 +9739,8 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 266437578,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 270144,
+        "stats_genius": 363286,
         "raw_data_collected": true
     },
     {
@@ -9753,8 +9753,8 @@
         "genre": "Pop",
         "popularity": 51,
         "stats_youtube": 172885618,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 119,
+        "stats_genius": 68171,
         "raw_data_collected": true
     },
     {
@@ -9782,7 +9782,7 @@
         "popularity": 64,
         "stats_youtube": 95869724,
         "stats_lastfm": 6484,
-        "stats_genius": 0,
+        "stats_genius": 25854,
         "raw_data_collected": true
     },
     {
@@ -9795,8 +9795,8 @@
         "genre": "Pop",
         "popularity": 45,
         "stats_youtube": 95656941,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 367,
+        "stats_genius": 810732,
         "raw_data_collected": true
     },
     {
@@ -9809,8 +9809,8 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 214263931,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 54339,
+        "stats_genius": 986482,
         "raw_data_collected": true
     },
     {
@@ -9866,7 +9866,7 @@
         "popularity": 69,
         "stats_youtube": 105642773,
         "stats_lastfm": 138117,
-        "stats_genius": 0,
+        "stats_genius": 488874,
         "raw_data_collected": true
     },
     {
@@ -9922,7 +9922,7 @@
         "popularity": 71,
         "stats_youtube": 341979038,
         "stats_lastfm": 49556,
-        "stats_genius": 0,
+        "stats_genius": 360784,
         "raw_data_collected": true
     },
     {
@@ -10020,7 +10020,7 @@
         "popularity": 65,
         "stats_youtube": 72203777,
         "stats_lastfm": 25791,
-        "stats_genius": 0,
+        "stats_genius": 27287,
         "raw_data_collected": true
     },
     {
@@ -10047,8 +10047,8 @@
         "genre": "Pop",
         "popularity": 43,
         "stats_youtube": 9626813,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 6,
+        "stats_genius": 298,
         "raw_data_collected": true
     },
     {
@@ -10131,8 +10131,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 48861226,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 160262,
+        "stats_genius": 51255,
         "raw_data_collected": true
     },
     {
@@ -10355,8 +10355,8 @@
         "genre": "Pop",
         "popularity": 47,
         "stats_youtube": 42534403,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 11765,
+        "stats_genius": 30755,
         "raw_data_collected": true
     },
     {
@@ -10440,7 +10440,7 @@
         "popularity": 74,
         "stats_youtube": 186516465,
         "stats_lastfm": 1105517,
-        "stats_genius": 0,
+        "stats_genius": 267976,
         "raw_data_collected": true
     },
     {
@@ -10608,7 +10608,7 @@
         "popularity": 70,
         "stats_youtube": 125576784,
         "stats_lastfm": 159764,
-        "stats_genius": 0,
+        "stats_genius": 968641,
         "raw_data_collected": true
     },
     {
@@ -10691,8 +10691,8 @@
         "genre": "Rock",
         "popularity": 52,
         "stats_youtube": 238238284,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 2003455,
+        "stats_genius": 533622,
         "raw_data_collected": true
     },
     {
@@ -10719,8 +10719,8 @@
         "genre": "Pop/Rock",
         "popularity": 45,
         "stats_youtube": 21233275,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 769871,
+        "stats_genius": 281341,
         "raw_data_collected": true
     },
     {
@@ -10733,7 +10733,7 @@
         "genre": "Rock",
         "popularity": 58,
         "stats_youtube": 62536712,
-        "stats_lastfm": 0,
+        "stats_lastfm": 613826,
         "stats_genius": 5230,
         "raw_data_collected": true
     },
@@ -10747,8 +10747,8 @@
         "genre": "Rock",
         "popularity": 58,
         "stats_youtube": 1840775379,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 2540372,
+        "stats_genius": 4873469,
         "raw_data_collected": true
     },
     {
@@ -10831,8 +10831,8 @@
         "genre": "Rock",
         "popularity": 50,
         "stats_youtube": 98386120,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 783586,
+        "stats_genius": 559982,
         "raw_data_collected": true
     },
     {
@@ -10845,8 +10845,8 @@
         "genre": "Alternative",
         "popularity": 53,
         "stats_youtube": 307092931,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 945461,
+        "stats_genius": 1672161,
         "raw_data_collected": true
     },
     {
@@ -10859,8 +10859,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 51552245,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 584289,
+        "stats_genius": 1275498,
         "raw_data_collected": true
     },
     {
@@ -11335,8 +11335,8 @@
         "genre": "Pop",
         "popularity": 53,
         "stats_youtube": 364988612,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 63766,
+        "stats_genius": 1388068,
         "raw_data_collected": true
     },
     {
@@ -11377,7 +11377,7 @@
         "genre": "Pop",
         "popularity": 64,
         "stats_youtube": 467486539,
-        "stats_lastfm": 0,
+        "stats_lastfm": 684270,
         "stats_genius": 12511,
         "raw_data_collected": true
     },
@@ -11391,8 +11391,8 @@
         "genre": "Pop",
         "popularity": 49,
         "stats_youtube": 82102353,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 82,
+        "stats_genius": 73456,
         "raw_data_collected": true
     },
     {
@@ -11448,7 +11448,7 @@
         "popularity": 59,
         "stats_youtube": 611478520,
         "stats_lastfm": 18,
-        "stats_genius": 0,
+        "stats_genius": 688372,
         "raw_data_collected": true
     },
     {
@@ -11504,7 +11504,7 @@
         "popularity": 70,
         "stats_youtube": 281220776,
         "stats_lastfm": 59531,
-        "stats_genius": 0,
+        "stats_genius": 18254,
         "raw_data_collected": true
     },
     {
@@ -11545,8 +11545,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 58890549,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 83167,
+        "stats_genius": 244766,
         "raw_data_collected": true
     },
     {
@@ -11559,8 +11559,8 @@
         "genre": "Electronic",
         "popularity": 51,
         "stats_youtube": 168393143,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 63668,
+        "stats_genius": 164,
         "raw_data_collected": true
     },
     {
@@ -11601,8 +11601,8 @@
         "genre": "Pop",
         "popularity": 27,
         "stats_youtube": 24748,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 100421,
+        "stats_genius": 29184,
         "raw_data_collected": true
     },
     {
@@ -11867,7 +11867,7 @@
         "genre": "Pop",
         "popularity": 64,
         "stats_youtube": 68995514,
-        "stats_lastfm": 0,
+        "stats_lastfm": 254988,
         "stats_genius": 1763072,
         "raw_data_collected": true
     },
@@ -12049,8 +12049,8 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 55,
         "stats_youtube": 733349390,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 556099,
+        "stats_genius": 4604061,
         "raw_data_collected": true
     },
     {
@@ -12063,8 +12063,8 @@
         "genre": "Pop",
         "popularity": 50,
         "stats_youtube": 113396047,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 389062,
+        "stats_genius": 1856158,
         "raw_data_collected": true
     },
     {
@@ -12077,8 +12077,8 @@
         "genre": "Pop",
         "popularity": 54,
         "stats_youtube": 587322102,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 410888,
+        "stats_genius": 2329440,
         "raw_data_collected": true
     },
     {
@@ -12091,8 +12091,8 @@
         "genre": "Pop",
         "popularity": 23,
         "stats_youtube": 6502,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 122139,
+        "stats_genius": 1027690,
         "raw_data_collected": true
     },
     {
@@ -12133,8 +12133,8 @@
         "genre": "Pop",
         "popularity": 56,
         "stats_youtube": 868514105,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 10,
+        "stats_genius": 5513738,
         "raw_data_collected": true
     },
     {
@@ -12259,7 +12259,7 @@
         "genre": "Pop",
         "popularity": 67,
         "stats_youtube": 236241983,
-        "stats_lastfm": 0,
+        "stats_lastfm": 997650,
         "stats_genius": 1175188,
         "raw_data_collected": true
     },
@@ -12315,7 +12315,7 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 61,
         "stats_youtube": 143920473,
-        "stats_lastfm": 0,
+        "stats_lastfm": 904448,
         "stats_genius": 11937,
         "raw_data_collected": true
     },
@@ -12343,8 +12343,8 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 46,
         "stats_youtube": 27845601,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 285756,
+        "stats_genius": 566354,
         "raw_data_collected": true
     },
     {
@@ -12428,7 +12428,7 @@
         "popularity": 71,
         "stats_youtube": 289832255,
         "stats_lastfm": 79216,
-        "stats_genius": 0,
+        "stats_genius": 271939,
         "raw_data_collected": true
     },
     {
@@ -12554,7 +12554,7 @@
         "popularity": 73,
         "stats_youtube": 202352996,
         "stats_lastfm": 509365,
-        "stats_genius": 0,
+        "stats_genius": 762223,
         "raw_data_collected": true
     },
     {
@@ -12568,7 +12568,7 @@
         "popularity": 42,
         "stats_youtube": 5515621,
         "stats_lastfm": 1,
-        "stats_genius": 0,
+        "stats_genius": 576249,
         "raw_data_collected": true
     },
     {
@@ -12623,7 +12623,7 @@
         "genre": "Pop",
         "popularity": 58,
         "stats_youtube": 50497347,
-        "stats_lastfm": 0,
+        "stats_lastfm": 19265,
         "stats_genius": 10962,
         "raw_data_collected": true
     },
@@ -12721,8 +12721,8 @@
         "genre": "Soundtrack",
         "popularity": 55,
         "stats_youtube": 758968014,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 348,
+        "stats_genius": 852043,
         "raw_data_collected": true
     },
     {
@@ -12847,8 +12847,8 @@
         "genre": "Pop",
         "popularity": 56,
         "stats_youtube": 983196613,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 453818,
+        "stats_genius": 155849,
         "raw_data_collected": true
     },
     {
@@ -13170,7 +13170,7 @@
         "popularity": 70,
         "stats_youtube": 173072357,
         "stats_lastfm": 102730,
-        "stats_genius": 0,
+        "stats_genius": 208549,
         "raw_data_collected": true
     },
     {
@@ -13197,8 +13197,8 @@
         "genre": "Reggae",
         "popularity": 50,
         "stats_youtube": 96604570,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 259705,
+        "stats_genius": 271637,
         "raw_data_collected": true
     },
     {
@@ -13211,8 +13211,8 @@
         "genre": "Dance",
         "popularity": 47,
         "stats_youtube": 39448786,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 91088,
+        "stats_genius": 56773,
         "raw_data_collected": true
     },
     {
@@ -13253,8 +13253,8 @@
         "genre": "Country",
         "popularity": 51,
         "stats_youtube": 140734545,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 428150,
+        "stats_genius": 182735,
         "raw_data_collected": true
     },
     {
@@ -13351,8 +13351,8 @@
         "genre": "Breakbeat",
         "popularity": 30,
         "stats_youtube": 80408,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 783732,
+        "stats_genius": 49747,
         "raw_data_collected": true
     },
     {
@@ -13408,7 +13408,7 @@
         "popularity": 66,
         "stats_youtube": 29836968,
         "stats_lastfm": 318440,
-        "stats_genius": 0,
+        "stats_genius": 270148,
         "raw_data_collected": true
     },
     {
@@ -13617,8 +13617,8 @@
         "genre": "Soundtrack",
         "popularity": 51,
         "stats_youtube": 173319865,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 304335,
+        "stats_genius": 105841,
         "raw_data_collected": true
     },
     {
@@ -13701,8 +13701,8 @@
         "genre": "Pop Latino",
         "popularity": 51,
         "stats_youtube": 192385071,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 203838,
+        "stats_genius": 83234,
         "raw_data_collected": true
     },
     {
@@ -13869,8 +13869,8 @@
         "genre": "Rock",
         "popularity": 51,
         "stats_youtube": 185853567,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 482,
+        "stats_genius": 1879805,
         "raw_data_collected": true
     },
     {
@@ -13982,7 +13982,7 @@
         "popularity": 72,
         "stats_youtube": 154146224,
         "stats_lastfm": 329338,
-        "stats_genius": 0,
+        "stats_genius": 745,
         "raw_data_collected": true
     },
     {
@@ -14065,8 +14065,8 @@
         "genre": "Pop",
         "popularity": 50,
         "stats_youtube": 96882527,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 261021,
+        "stats_genius": 92299,
         "raw_data_collected": true
     },
     {
@@ -14107,8 +14107,8 @@
         "genre": "Pop",
         "popularity": 51,
         "stats_youtube": 168122212,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 178327,
+        "stats_genius": 325790,
         "raw_data_collected": true
     },
     {
@@ -14121,8 +14121,8 @@
         "genre": "Pop",
         "popularity": 39,
         "stats_youtube": 4233907,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 104973,
+        "stats_genius": 48569,
         "raw_data_collected": true
     },
     {
@@ -14373,8 +14373,8 @@
         "genre": "Pop",
         "popularity": 54,
         "stats_youtube": 520119358,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 697425,
+        "stats_genius": 337545,
         "raw_data_collected": true
     },
     {
@@ -14597,7 +14597,7 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 71,
         "stats_youtube": 481529465,
-        "stats_lastfm": 0,
+        "stats_lastfm": 340806,
         "stats_genius": 4617236,
         "raw_data_collected": true
     },
@@ -14611,7 +14611,7 @@
         "genre": "Alternative",
         "popularity": 61,
         "stats_youtube": 26811877,
-        "stats_lastfm": 0,
+        "stats_lastfm": 39888,
         "stats_genius": 1455840,
         "raw_data_collected": true
     },
@@ -14723,7 +14723,7 @@
         "genre": "R&B/Soul",
         "popularity": 50,
         "stats_youtube": 63808977,
-        "stats_lastfm": 0,
+        "stats_lastfm": 134864,
         "stats_genius": 994423,
         "raw_data_collected": true
     },
@@ -14961,8 +14961,8 @@
         "genre": "Pop",
         "popularity": 50,
         "stats_youtube": 112968836,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 21690,
+        "stats_genius": 652342,
         "raw_data_collected": true
     },
     {
@@ -14989,8 +14989,8 @@
         "genre": "R&B/Soul",
         "popularity": 49,
         "stats_youtube": 93426094,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 99943,
+        "stats_genius": 362,
         "raw_data_collected": true
     },
     {
@@ -15270,7 +15270,7 @@
         "popularity": 63,
         "stats_youtube": 639090246,
         "stats_lastfm": 205,
-        "stats_genius": 0,
+        "stats_genius": 7608635,
         "raw_data_collected": true
     },
     {
@@ -15675,8 +15675,8 @@
         "genre": "Rock",
         "popularity": 49,
         "stats_youtube": 91190665,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 900333,
+        "stats_genius": 332897,
         "raw_data_collected": true
     },
     {
@@ -15704,7 +15704,7 @@
         "popularity": 75,
         "stats_youtube": 220179791,
         "stats_lastfm": 1958879,
-        "stats_genius": 0,
+        "stats_genius": 453951,
         "raw_data_collected": true
     },
     {
@@ -15716,9 +15716,9 @@
         "album": "Stadium Arcadium",
         "genre": "Alternative",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 416034230,
+        "stats_lastfm": 2279637,
+        "stats_genius": 666755,
         "raw_data_collected": true
     },
     {
@@ -15730,9 +15730,9 @@
         "album": "By the Way (Deluxe Edition)",
         "genre": "Alternative",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 473248178,
+        "stats_lastfm": 2586670,
+        "stats_genius": 1059084,
         "raw_data_collected": true
     },
     {
@@ -15744,9 +15744,9 @@
         "album": "Stadium Arcadium",
         "genre": "Alternative",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 399067174,
+        "stats_lastfm": 46738,
+        "stats_genius": 14404,
         "raw_data_collected": true
     },
     {
@@ -15758,9 +15758,9 @@
         "album": "One By One (Expanded Edition)",
         "genre": "Alternative",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 123936101,
+        "stats_lastfm": 1487922,
+        "stats_genius": 402402,
         "raw_data_collected": true
     },
     {
@@ -15772,9 +15772,9 @@
         "album": "Echoes, Silence, Patience & Grace",
         "genre": "Alternative",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 629742695,
+        "stats_lastfm": 2224781,
+        "stats_genius": 466420,
         "raw_data_collected": true
     },
     {
@@ -15786,9 +15786,9 @@
         "album": "In Your Honor",
         "genre": "Alternative",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 286441780,
+        "stats_lastfm": 1769050,
+        "stats_genius": 347114,
         "raw_data_collected": true
     },
     {
@@ -15800,9 +15800,9 @@
         "album": "Songs For The Deaf",
         "genre": "Rock",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 206050623,
+        "stats_lastfm": 1932528,
+        "stats_genius": 289142,
         "raw_data_collected": true
     },
     {
@@ -15814,9 +15814,9 @@
         "album": "Songs For The Deaf",
         "genre": "Rock",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 96672178,
+        "stats_lastfm": 1516850,
+        "stats_genius": 201287,
         "raw_data_collected": true
     },
     {
@@ -15828,9 +15828,9 @@
         "album": "The Better Life",
         "genre": "Rock",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 568556784,
+        "stats_lastfm": 1763302,
+        "stats_genius": 357028,
         "raw_data_collected": true
     },
     {
@@ -15842,9 +15842,9 @@
         "album": "Away From The Sun",
         "genre": "Rock",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 1069860227,
+        "stats_lastfm": 1619807,
+        "stats_genius": 1351670,
         "raw_data_collected": true
     },
     {
@@ -15856,9 +15856,9 @@
         "album": "Camino Palmero",
         "genre": "Rock",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 726735679,
+        "stats_lastfm": 1173113,
+        "stats_genius": 1041526,
         "raw_data_collected": true
     },
     {
@@ -15870,9 +15870,9 @@
         "album": "Drops Of Jupiter",
         "genre": "Rock",
         "popularity": 1,
-        "stats_youtube": 0,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_youtube": 383317011,
+        "stats_lastfm": 741706,
+        "stats_genius": 1667328,
         "raw_data_collected": true
     },
     {
@@ -15899,8 +15899,8 @@
         "genre": "Vocal",
         "popularity": 56,
         "stats_youtube": 885052960,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1710473,
+        "stats_genius": 1533672,
         "raw_data_collected": true
     },
     {
@@ -16026,7 +16026,7 @@
         "popularity": 77,
         "stats_youtube": 343451133,
         "stats_lastfm": 2302632,
-        "stats_genius": 0,
+        "stats_genius": 1112541,
         "raw_data_collected": true
     },
     {
@@ -16109,8 +16109,8 @@
         "genre": "Pop",
         "popularity": 47,
         "stats_youtube": 36001148,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 47516,
+        "stats_genius": 132857,
         "raw_data_collected": true
     },
     {
@@ -16277,8 +16277,8 @@
         "genre": "Alternative",
         "popularity": 34,
         "stats_youtube": 321576,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1504706,
+        "stats_genius": 143657,
         "raw_data_collected": true
     },
     {
@@ -16333,7 +16333,7 @@
         "genre": "Alternative",
         "popularity": 60,
         "stats_youtube": 51172563,
-        "stats_lastfm": 0,
+        "stats_lastfm": 471601,
         "stats_genius": 73869,
         "raw_data_collected": true
     },
@@ -16431,7 +16431,7 @@
         "genre": "Alternative",
         "popularity": 66,
         "stats_youtube": 170591574,
-        "stats_lastfm": 0,
+        "stats_lastfm": 1545406,
         "stats_genius": 1201217,
         "raw_data_collected": true
     },
@@ -16501,8 +16501,8 @@
         "genre": "Soundtrack",
         "popularity": 55,
         "stats_youtube": 613426189,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1647363,
+        "stats_genius": 338495,
         "raw_data_collected": true
     },
     {
@@ -16712,7 +16712,7 @@
         "popularity": 71,
         "stats_youtube": 334001148,
         "stats_lastfm": 63941,
-        "stats_genius": 0,
+        "stats_genius": 1350538,
         "raw_data_collected": true
     },
     {
@@ -16936,7 +16936,7 @@
         "popularity": 59,
         "stats_youtube": 11282875,
         "stats_lastfm": 9373,
-        "stats_genius": 0,
+        "stats_genius": 67029,
         "raw_data_collected": true
     },
     {
@@ -16963,7 +16963,7 @@
         "genre": "Pop",
         "popularity": 62,
         "stats_youtube": 179405371,
-        "stats_lastfm": 0,
+        "stats_lastfm": 272447,
         "stats_genius": 14368,
         "raw_data_collected": true
     },
@@ -17019,7 +17019,7 @@
         "genre": "Pop",
         "popularity": 61,
         "stats_youtube": 81445478,
-        "stats_lastfm": 0,
+        "stats_lastfm": 41142,
         "stats_genius": 53366,
         "raw_data_collected": true
     },
@@ -17145,8 +17145,8 @@
         "genre": "Dance",
         "popularity": 50,
         "stats_youtube": 128447769,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 409786,
+        "stats_genius": 122862,
         "raw_data_collected": true
     },
     {
@@ -17159,8 +17159,8 @@
         "genre": "Dance",
         "popularity": 46,
         "stats_youtube": 25068697,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 175544,
+        "stats_genius": 5346,
         "raw_data_collected": true
     },
     {
@@ -17187,7 +17187,7 @@
         "genre": "Pop",
         "popularity": 64,
         "stats_youtube": 139290974,
-        "stats_lastfm": 0,
+        "stats_lastfm": 31438,
         "stats_genius": 215117,
         "raw_data_collected": true
     },
@@ -17229,7 +17229,7 @@
         "genre": "Dance",
         "popularity": 54,
         "stats_youtube": 7842176,
-        "stats_lastfm": 0,
+        "stats_lastfm": 190322,
         "stats_genius": 24021,
         "raw_data_collected": true
     },
@@ -17285,8 +17285,8 @@
         "genre": "Dance",
         "popularity": 53,
         "stats_youtube": 361046289,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 609,
+        "stats_genius": 79509,
         "raw_data_collected": true
     },
     {
@@ -17440,7 +17440,7 @@
         "popularity": 80,
         "stats_youtube": 1509572086,
         "stats_lastfm": 1261075,
-        "stats_genius": 0,
+        "stats_genius": 4818573,
         "raw_data_collected": true
     },
     {
@@ -17635,8 +17635,8 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 59,
         "stats_youtube": 2990346414,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 34833,
+        "stats_genius": 3345544,
         "raw_data_collected": true
     },
     {
@@ -17733,8 +17733,8 @@
         "genre": "Pop",
         "popularity": 55,
         "stats_youtube": 853898242,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 429275,
+        "stats_genius": 422739,
         "raw_data_collected": true
     },
     {
@@ -17747,8 +17747,8 @@
         "genre": "Pop",
         "popularity": 60,
         "stats_youtube": 4028904176,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 300729,
+        "stats_genius": 1235507,
         "raw_data_collected": true
     },
     {
@@ -17789,8 +17789,8 @@
         "genre": "Pop",
         "popularity": 57,
         "stats_youtube": 1541694130,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 474299,
+        "stats_genius": 2645844,
         "raw_data_collected": true
     },
     {
@@ -17803,8 +17803,8 @@
         "genre": "Pop",
         "popularity": 48,
         "stats_youtube": 56473925,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 838608,
+        "stats_genius": 36573,
         "raw_data_collected": true
     },
     {
@@ -17831,8 +17831,8 @@
         "genre": "Pop",
         "popularity": 34,
         "stats_youtube": 326011,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 296834,
+        "stats_genius": 511678,
         "raw_data_collected": true
     },
     {
@@ -17846,7 +17846,7 @@
         "popularity": 73,
         "stats_youtube": 1027269690,
         "stats_lastfm": 27865,
-        "stats_genius": 0,
+        "stats_genius": 796076,
         "raw_data_collected": true
     },
     {
@@ -17943,8 +17943,8 @@
         "genre": "Musicals",
         "popularity": 54,
         "stats_youtube": 418605985,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 232672,
+        "stats_genius": 1291443,
         "raw_data_collected": true
     },
     {
@@ -18251,8 +18251,8 @@
         "genre": "Dance",
         "popularity": 35,
         "stats_youtube": 418150,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1304545,
+        "stats_genius": 3615165,
         "raw_data_collected": true
     },
     {
@@ -18307,8 +18307,8 @@
         "genre": "Pop Latino",
         "popularity": 60,
         "stats_youtube": 4570644777,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 132444,
+        "stats_genius": 1849374,
         "raw_data_collected": true
     },
     {
@@ -18335,7 +18335,7 @@
         "genre": "Pop Latino",
         "popularity": 74,
         "stats_youtube": 3842068837,
-        "stats_lastfm": 0,
+        "stats_lastfm": 54317,
         "stats_genius": 382691,
         "raw_data_collected": true
     },
@@ -18377,7 +18377,7 @@
         "genre": "Dance",
         "popularity": 71,
         "stats_youtube": 1796379546,
-        "stats_lastfm": 0,
+        "stats_lastfm": 139439,
         "stats_genius": 195830,
         "raw_data_collected": true
     },
@@ -18615,7 +18615,7 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 69,
         "stats_youtube": 209433693,
-        "stats_lastfm": 0,
+        "stats_lastfm": 1298452,
         "stats_genius": 5695752,
         "raw_data_collected": true
     },
@@ -19063,7 +19063,7 @@
         "genre": "Pop",
         "popularity": 69,
         "stats_youtube": 2407714069,
-        "stats_lastfm": 0,
+        "stats_lastfm": 639702,
         "stats_genius": 13323,
         "raw_data_collected": true
     },
@@ -19091,7 +19091,7 @@
         "genre": "Pop",
         "popularity": 62,
         "stats_youtube": 260781003,
-        "stats_lastfm": 0,
+        "stats_lastfm": 1029986,
         "stats_genius": 8131,
         "raw_data_collected": true
     },
@@ -19175,8 +19175,8 @@
         "genre": "Pop",
         "popularity": 56,
         "stats_youtube": 1179730615,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1210878,
+        "stats_genius": 694385,
         "raw_data_collected": true
     },
     {
@@ -19330,7 +19330,7 @@
         "popularity": 59,
         "stats_youtube": 541890765,
         "stats_lastfm": 18,
-        "stats_genius": 0,
+        "stats_genius": 2827,
         "raw_data_collected": true
     },
     {
@@ -19357,7 +19357,7 @@
         "genre": "Dance",
         "popularity": 69,
         "stats_youtube": 909628349,
-        "stats_lastfm": 0,
+        "stats_lastfm": 25688,
         "stats_genius": 142690,
         "raw_data_collected": true
     },
@@ -19371,7 +19371,7 @@
         "genre": "Pop",
         "popularity": 67,
         "stats_youtube": 11638627,
-        "stats_lastfm": 0,
+        "stats_lastfm": 12,
         "stats_genius": 75236,
         "raw_data_collected": true
     },
@@ -19595,7 +19595,7 @@
         "genre": "Alternative",
         "popularity": 71,
         "stats_youtube": 849964886,
-        "stats_lastfm": 0,
+        "stats_lastfm": 994238,
         "stats_genius": 2384078,
         "raw_data_collected": true
     },
@@ -19679,8 +19679,8 @@
         "genre": "Soundtrack",
         "popularity": 55,
         "stats_youtube": 803139935,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 244654,
+        "stats_genius": 393442,
         "raw_data_collected": true
     },
     {
@@ -20071,8 +20071,8 @@
         "genre": "Dance",
         "popularity": 53,
         "stats_youtube": 412313362,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1181645,
+        "stats_genius": 1369407,
         "raw_data_collected": true
     },
     {
@@ -20267,7 +20267,7 @@
         "genre": "Pop",
         "popularity": 71,
         "stats_youtube": 677306049,
-        "stats_lastfm": 0,
+        "stats_lastfm": 821398,
         "stats_genius": 2864045,
         "raw_data_collected": true
     },
@@ -20380,7 +20380,7 @@
         "popularity": 51,
         "stats_youtube": 179511377,
         "stats_lastfm": 1,
-        "stats_genius": 0,
+        "stats_genius": 225,
         "raw_data_collected": true
     },
     {
@@ -20394,7 +20394,7 @@
         "popularity": 72,
         "stats_youtube": 1339149252,
         "stats_lastfm": 12104,
-        "stats_genius": 0,
+        "stats_genius": 2827,
         "raw_data_collected": true
     },
     {
@@ -20506,7 +20506,7 @@
         "popularity": 58,
         "stats_youtube": 18295030,
         "stats_lastfm": 3773,
-        "stats_genius": 0,
+        "stats_genius": 2657470,
         "raw_data_collected": true
     },
     {
@@ -20645,7 +20645,7 @@
         "genre": "Country",
         "popularity": 42,
         "stats_youtube": 78344081,
-        "stats_lastfm": 0,
+        "stats_lastfm": 735375,
         "stats_genius": 636077,
         "raw_data_collected": true
     },
@@ -20758,7 +20758,7 @@
         "popularity": 50,
         "stats_youtube": 4026186,
         "stats_lastfm": 251,
-        "stats_genius": 0,
+        "stats_genius": 691785,
         "raw_data_collected": true
     },
     {
@@ -20968,7 +20968,7 @@
         "popularity": 52,
         "stats_youtube": 255552392,
         "stats_lastfm": 1,
-        "stats_genius": 0,
+        "stats_genius": 744,
         "raw_data_collected": true
     },
     {
@@ -21177,7 +21177,7 @@
         "genre": "Pop",
         "popularity": 68,
         "stats_youtube": 292094907,
-        "stats_lastfm": 0,
+        "stats_lastfm": 1650579,
         "stats_genius": 1327937,
         "raw_data_collected": true
     },
@@ -21219,7 +21219,7 @@
         "genre": "Dance",
         "popularity": 67,
         "stats_youtube": 390972061,
-        "stats_lastfm": 0,
+        "stats_lastfm": 826212,
         "stats_genius": 382670,
         "raw_data_collected": true
     },
@@ -21471,7 +21471,7 @@
         "genre": "Pop Latino",
         "popularity": 70,
         "stats_youtube": 864076516,
-        "stats_lastfm": 0,
+        "stats_lastfm": 98950,
         "stats_genius": 579435,
         "raw_data_collected": true
     },
@@ -21555,7 +21555,7 @@
         "genre": "K-Pop",
         "popularity": 66,
         "stats_youtube": 90594129,
-        "stats_lastfm": 0,
+        "stats_lastfm": 542359,
         "stats_genius": 4786859,
         "raw_data_collected": true
     },
@@ -21653,8 +21653,8 @@
         "genre": "Pop",
         "popularity": 52,
         "stats_youtube": 229465975,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 377775,
+        "stats_genius": 220983,
         "raw_data_collected": true
     },
     {
@@ -21695,8 +21695,8 @@
         "genre": "Pop",
         "popularity": 53,
         "stats_youtube": 369637178,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 1442172,
+        "stats_genius": 1428326,
         "raw_data_collected": true
     },
     {
@@ -21709,7 +21709,7 @@
         "genre": "Pop",
         "popularity": 66,
         "stats_youtube": 119330135,
-        "stats_lastfm": 0,
+        "stats_lastfm": 1152769,
         "stats_genius": 1859255,
         "raw_data_collected": true
     },
@@ -21751,7 +21751,7 @@
         "genre": "Pop",
         "popularity": 69,
         "stats_youtube": 684944147,
-        "stats_lastfm": 0,
+        "stats_lastfm": 29373,
         "stats_genius": 394313,
         "raw_data_collected": true
     },
@@ -21905,7 +21905,7 @@
         "genre": "Dance",
         "popularity": 62,
         "stats_youtube": 86174349,
-        "stats_lastfm": 0,
+        "stats_lastfm": 595,
         "stats_genius": 95617,
         "raw_data_collected": true
     },
@@ -21961,7 +21961,7 @@
         "genre": "Pop",
         "popularity": 63,
         "stats_youtube": 48070083,
-        "stats_lastfm": 0,
+        "stats_lastfm": 933034,
         "stats_genius": 1070425,
         "raw_data_collected": true
     },
@@ -22059,8 +22059,8 @@
         "genre": "Hip-Hop/Rap",
         "popularity": 50,
         "stats_youtube": 98190471,
-        "stats_lastfm": 0,
-        "stats_genius": 0,
+        "stats_lastfm": 152952,
+        "stats_genius": 193499,
         "raw_data_collected": true
     },
     {
@@ -22144,7 +22144,7 @@
         "popularity": 68,
         "stats_youtube": 617315143,
         "stats_lastfm": 5015,
-        "stats_genius": 0,
+        "stats_genius": 542847,
         "raw_data_collected": true
     },
     {
@@ -22269,7 +22269,7 @@
         "genre": "R&B/Soul",
         "popularity": 70,
         "stats_youtube": 626561362,
-        "stats_lastfm": 0,
+        "stats_lastfm": 2038679,
         "stats_genius": 946859,
         "raw_data_collected": true
     },
@@ -22298,7 +22298,7 @@
         "popularity": 45,
         "stats_youtube": 35377729,
         "stats_lastfm": 97,
-        "stats_genius": 0,
+        "stats_genius": 2605379,
         "raw_data_collected": true
     },
     {
@@ -22326,7 +22326,7 @@
         "popularity": 53,
         "stats_youtube": 12530227,
         "stats_lastfm": 200,
-        "stats_genius": 0,
+        "stats_genius": 341950,
         "raw_data_collected": true
     }
 ]
