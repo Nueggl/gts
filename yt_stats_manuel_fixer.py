@@ -4,6 +4,7 @@ import urllib.error
 import json
 import re
 import config_yt
+import math
 
 MAIN_DB_FILE = 'songs_new_score.json'
 FIX_LIST_FILE = 'alle_songs_zu_fixen_mit_yt_fehler_unter_schwellenwert.json'
@@ -126,6 +127,8 @@ def interactive_fix():
         title = fix_song.get('title', '')
         artist = fix_song.get('artist', '')
         old_views = fix_song.get('stats_youtube', 'Unbekannt')
+        predicted_views = int(round(math.exp((float(fix_song.get('statistische Vorhersage', '').strip().replace(',', '.')))), 0))
+        predicted_views_formatted = f"{predicted_views:,.0f}"
         
         # WICHTIG: Wir holen uns die URI aus der Fehlerliste
         uri = fix_song.get('spotifyUri', '')
@@ -139,7 +142,7 @@ def interactive_fix():
             
         print("-" * 60)
         print(f"🎵 SONG ({idx+1}/{len(fix_list)}): {title} - {artist}")
-        print(f"📉 Aktueller (falscher) Wert: {old_views:,} Views")
+        print(f"📉 Aktueller (falscher) Wert: {old_views:,} Views, Predicted: {predicted_views_formatted}")
         print("🔍 Suche Kandidaten auf YouTube...")
         
         candidates = get_candidate_videos(artist, title)
