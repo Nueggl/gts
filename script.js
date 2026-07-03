@@ -9,6 +9,9 @@ let currentSort = { column: null, direction: 'asc' };
 const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif", "gif8.gif"];
 
 
+let songliste = "songs_new_score_updated_popularity.json"
+
+
 function setTokenWithExpiry(token) {
     const now = new Date();
     // 3600000 ms = 60 Minuten
@@ -36,7 +39,7 @@ function getValidToken() {
 // Songs beim Start laden
 async function loadSongs() {
     try {
-        const response = await fetch('songs.json');
+        const response = await fetch(songliste);
         songs = await response.json();
         console.log('Songs geladen:', songs);
         setupFilters();

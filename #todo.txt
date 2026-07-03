@@ -1,11 +1,7 @@
 -UI verschönern
 -einige jahre in song.json fixen
 -stelle des songs einstellen (random, anfang, ...) --> dafür länge des songs in songs.json einfügen (scraper?)
--popularity score operationalisieren (schwierig), lieber spotify score(?) nehmen -> ki bereits gefragt siehe chat
-    bei manchen songs stimmen yt aufrufe nicht (eg. set fire to the rain, dream on (-> falsches video genommen)) --> evtl verhältnis zwischen anderen stats zu yt views prüfen um diese songs zu finden
-        // siehe jasp/excel; ungefährer schwellenwert: fehler wenn wert < -0,25 (also zb -0,4)
-    gewichtung anpassen --> passt jetzt so(?)
-    hauptscraper mit neuem popularity rechner/scraper ergänzen; dateien aufräumen
+
 -lyrics modus?
 -Modus: lieder in zeitstrahl (eins anfangen eg. 2013 nächstes Lied davor oder danach? --> aufdecken (ggf berichtigen) --> nächstes lied davor danach od dazwischen? usw)
     varianten mit eg. yt views mögl
