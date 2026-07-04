@@ -1,4 +1,9 @@
 -UI verschönern
--filtern nach aufrufen? od insg popularität (--> maybe KI schätzen lassen um api limits zu vermeiden)
--dauer des songs einstellen; stelle des songs einstellen (random, anfang, ...)
--diagram zum einstellen der wsk der jahrzehnte
+-einige jahre in song.json fixen
+-stelle des songs einstellen (random, anfang, ...) --> dafür länge des songs in songs.json einfügen (scraper?)
+
+-lyrics modus?
+-Modus: lieder in zeitstrahl (eins anfangen eg. 2013 nächstes Lied davor oder danach? --> aufdecken (ggf berichtigen) --> nächstes lied davor danach od dazwischen? usw)
+    varianten mit eg. yt views mögl
+
+#test

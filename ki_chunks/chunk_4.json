@@ -1,0 +1,502 @@
+[
+    {
+        "t": "Higher Ground",
+        "a": "Stevie Wonder",
+        "p": 78
+    },
+    {
+        "t": "Signed, Sealed, Delivered (I'm Yours)",
+        "a": "Stevie Wonder",
+        "p": 85
+    },
+    {
+        "t": "Rock with You - Single Version",
+        "a": "Michael Jackson",
+        "p": 84
+    },
+    {
+        "t": "Off the Wall",
+        "a": "Michael Jackson",
+        "p": 75
+    },
+    {
+        "t": "Boogie Wonderland (with The Emotions)",
+        "a": "Earth, Wind & Fire",
+        "p": 86
+    },
+    {
+        "t": "Fantasy",
+        "a": "Earth, Wind & Fire",
+        "p": 75
+    },
+    {
+        "t": "Shining Star",
+        "a": "Earth, Wind & Fire",
+        "p": 78
+    },
+    {
+        "t": "Hot Stuff",
+        "a": "Donna Summer",
+        "p": 85
+    },
+    {
+        "t": "I Feel Love",
+        "a": "Donna Summer",
+        "p": 88
+    },
+    {
+        "t": "Bad Girls",
+        "a": "Donna Summer",
+        "p": 80
+    },
+    {
+        "t": "MacArthur Park - Single Version",
+        "a": "Donna Summer",
+        "p": 65
+    },
+    {
+        "t": "One Way Or Another - Remastered 2001",
+        "a": "Blondie",
+        "p": 82
+    },
+    {
+        "t": "Call Me",
+        "a": "Blondie",
+        "p": 84
+    },
+    {
+        "t": "Sunday Girl - Remastered 2001",
+        "a": "Blondie",
+        "p": 60
+    },
+    {
+        "t": "Macho Man",
+        "a": "Village People",
+        "p": 80
+    },
+    {
+        "t": "In The Navy",
+        "a": "Village People",
+        "p": 78
+    },
+    {
+        "t": "Good Times",
+        "a": "CHIC",
+        "p": 86
+    },
+    {
+        "t": "Everybody Dance - 2018 Remaster",
+        "a": "CHIC",
+        "p": 70
+    },
+    {
+        "t": "Play That Funky Music",
+        "a": "Wild Cherry",
+        "p": 89
+    },
+    {
+        "t": "Jungleland",
+        "a": "Bruce Springsteen",
+        "p": 68
+    },
+    {
+        "t": "Badlands",
+        "a": "Bruce Springsteen",
+        "p": 72
+    },
+    {
+        "t": "American Pie",
+        "a": "Don McLean",
+        "p": 92
+    },
+    {
+        "t": "Maggie May",
+        "a": "Rod Stewart",
+        "p": 84
+    },
+    {
+        "t": "Da Ya Think I'm Sexy?",
+        "a": "Rod Stewart",
+        "p": 82
+    },
+    {
+        "t": "Sailing",
+        "a": "Rod Stewart",
+        "p": 75
+    },
+    {
+        "t": "Brown Sugar - Remastered 2009",
+        "a": "The Rolling Stones",
+        "p": 85
+    },
+    {
+        "t": "Angie - Remastered 2009",
+        "a": "The Rolling Stones",
+        "p": 88
+    },
+    {
+        "t": "Miss You - Remastered",
+        "a": "The Rolling Stones",
+        "p": 82
+    },
+    {
+        "t": "Tumbling Dice",
+        "a": "The Rolling Stones",
+        "p": 78
+    },
+    {
+        "t": "Beast Of Burden - Remastered 1994",
+        "a": "The Rolling Stones",
+        "p": 82
+    },
+    {
+        "t": "Riders on the Storm",
+        "a": "The Doors",
+        "p": 88
+    },
+    {
+        "t": "L.A. Woman",
+        "a": "The Doors",
+        "p": 80
+    },
+    {
+        "t": "Love Her Madly",
+        "a": "The Doors",
+        "p": 78
+    },
+    {
+        "t": "Baba O'Riley",
+        "a": "The Who",
+        "p": 90
+    },
+    {
+        "t": "Won't Get Fooled Again - Original Album Version",
+        "a": "The Who",
+        "p": 85
+    },
+    {
+        "t": "Who Do You Think You Are",
+        "a": "Spice Girls",
+        "p": 65
+    },
+    {
+        "t": "Behind Blue Eyes - Remastered 2022",
+        "a": "The Who",
+        "p": 85
+    },
+    {
+        "t": "Sultans Of Swing",
+        "a": "Dire Straits",
+        "p": 90
+    },
+    {
+        "t": "Roxanne",
+        "a": "The Police",
+        "p": 90
+    },
+    {
+        "t": "Message In A Bottle",
+        "a": "The Police",
+        "p": 86
+    },
+    {
+        "t": "Walking On The Moon",
+        "a": "The Police",
+        "p": 78
+    },
+    {
+        "t": "Boys Don't Cry",
+        "a": "The Cure",
+        "p": 88
+    },
+    {
+        "t": "Just What I Needed",
+        "a": "The Cars",
+        "p": 80
+    },
+    {
+        "t": "My Best Friend's Girl",
+        "a": "The Cars",
+        "p": 72
+    },
+    {
+        "t": "Let's Go",
+        "a": "The Cars",
+        "p": 68
+    },
+    {
+        "t": "Train in Vain (Stand by Me) - Remastered",
+        "a": "The Clash",
+        "p": 75
+    },
+    {
+        "t": "Blitzkrieg Bop - 2016 Remaster",
+        "a": "Ramones",
+        "p": 88
+    },
+    {
+        "t": "I Wanna Be Sedated",
+        "a": "Ramones",
+        "p": 84
+    },
+    {
+        "t": "God Save The Queen",
+        "a": "Sex Pistols",
+        "p": 82
+    },
+    {
+        "t": "Anarchy In The UK",
+        "a": "Sex Pistols",
+        "p": 85
+    },
+    {
+        "t": "Lust For Life",
+        "a": "Iggy Pop",
+        "p": 84
+    },
+    {
+        "t": "The Passenger",
+        "a": "Iggy Pop",
+        "p": 86
+    },
+    {
+        "t": "Walk On the Wild Side",
+        "a": "Lou Reed",
+        "p": 85
+    },
+    {
+        "t": "Psycho Killer",
+        "a": "Talking Heads",
+        "p": 82
+    },
+    {
+        "t": "Heart of Gold",
+        "a": "Neil Young",
+        "p": 86
+    },
+    {
+        "t": "Old Man",
+        "a": "Neil Young",
+        "p": 82
+    },
+    {
+        "t": "Rockin' in the Free World",
+        "a": "Neil Young",
+        "p": 84
+    },
+    {
+        "t": "A Horse with No Name",
+        "a": "America",
+        "p": 86
+    },
+    {
+        "t": "Sister Golden Hair",
+        "a": "America",
+        "p": 78
+    },
+    {
+        "t": "Ventura Highway",
+        "a": "America",
+        "p": 78
+    },
+    {
+        "t": "Dust in the Wind",
+        "a": "Kansas",
+        "p": 88
+    },
+    {
+        "t": "Carry on Wayward Son",
+        "a": "Kansas",
+        "p": 89
+    },
+    {
+        "t": "More Than a Feeling",
+        "a": "Boston",
+        "p": 91
+    },
+    {
+        "t": "Peace of Mind",
+        "a": "Boston",
+        "p": 68
+    },
+    {
+        "t": "Don't Look Back",
+        "a": "Boston",
+        "p": 65
+    },
+    {
+        "t": "Black Water",
+        "a": "The Doobie Brothers",
+        "p": 75
+    },
+    {
+        "t": "Listen to the Music",
+        "a": "The Doobie Brothers",
+        "p": 84
+    },
+    {
+        "t": "Long Train Runnin'",
+        "a": "The Doobie Brothers",
+        "p": 85
+    },
+    {
+        "t": "What a Fool Believes",
+        "a": "The Doobie Brothers",
+        "p": 82
+    },
+    {
+        "t": "My Sharona",
+        "a": "The Knack",
+        "p": 85
+    },
+    {
+        "t": "Pop Muzik",
+        "a": "M / Robin Scott",
+        "p": 65
+    },
+    {
+        "t": "Video Killed The Radio Star",
+        "a": "The Buggles",
+        "p": 88
+    },
+    {
+        "t": "Brass in Pocket - 2018 Remaster",
+        "a": "Pretenders",
+        "p": 78
+    },
+    {
+        "t": "I Was Made For Lovin' You",
+        "a": "KISS",
+        "p": 90
+    },
+    {
+        "t": "Rock And Roll All Nite - 2025 Remaster",
+        "a": "KISS",
+        "p": 88
+    },
+    {
+        "t": "Detroit Rock City",
+        "a": "KISS",
+        "p": 82
+    },
+    {
+        "t": "Paranoid - 2009 Remaster",
+        "a": "Black Sabbath",
+        "p": 92
+    },
+    {
+        "t": "Iron Man - 2009 Remaster",
+        "a": "Black Sabbath",
+        "p": 90
+    },
+    {
+        "t": "War Pigs - 2009 Remaster",
+        "a": "Black Sabbath",
+        "p": 86
+    },
+    {
+        "t": "Smoke On The Water - Remastered 2012",
+        "a": "Deep Purple",
+        "p": 94
+    },
+    {
+        "t": "Highway Star - Remastered 2012",
+        "a": "Deep Purple",
+        "p": 82
+    },
+    {
+        "t": "Child in Time - 1995 Remaster",
+        "a": "Deep Purple",
+        "p": 68
+    },
+    {
+        "t": "Free Bird",
+        "a": "Lynyrd Skynyrd",
+        "p": 92
+    },
+    {
+        "t": "Simple Man",
+        "a": "Lynyrd Skynyrd",
+        "p": 85
+    },
+    {
+        "t": "Ramblin' Man",
+        "a": "Allman Brothers Band",
+        "p": 78
+    },
+    {
+        "t": "Midnight Rider",
+        "a": "Allman Brothers Band",
+        "p": 74
+    },
+    {
+        "t": "Tush (2006 Remaster)",
+        "a": "ZZ Top",
+        "p": 72
+    },
+    {
+        "t": "La Grange (2005 Remaster)",
+        "a": "ZZ Top",
+        "p": 84
+    },
+    {
+        "t": "Walk This Way",
+        "a": "Aerosmith",
+        "p": 90
+    },
+    {
+        "t": "Dream On",
+        "a": "Aerosmith",
+        "p": 93
+    },
+    {
+        "t": "Sweet Emotion",
+        "a": "Aerosmith",
+        "p": 86
+    },
+    {
+        "t": "Barracuda",
+        "a": "Heart",
+        "p": 88
+    },
+    {
+        "t": "Crazy On You",
+        "a": "Heart",
+        "p": 82
+    },
+    {
+        "t": "Magic Man",
+        "a": "Heart",
+        "p": 74
+    },
+    {
+        "t": "Because the Night",
+        "a": "Patti Smith",
+        "p": 84
+    },
+    {
+        "t": "Rebel Rebel - 2016 Remaster",
+        "a": "David Bowie",
+        "p": 84
+    },
+    {
+        "t": "Changes - 2015 Remaster",
+        "a": "David Bowie",
+        "p": 82
+    },
+    {
+        "t": "Fame - 2016 Remaster",
+        "a": "David Bowie",
+        "p": 80
+    },
+    {
+        "t": "Young Americans - 2016 Remaster",
+        "a": "David Bowie",
+        "p": 78
+    },
+    {
+        "t": "Let's Get It On",
+        "a": "Marvin Gaye",
+        "p": 92
+    }
+]

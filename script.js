@@ -1,11 +1,15 @@
 let songs = [];
 let filteredSongs = [];
 let currentSong;
+let playTimeout;
 let revealedTitleCount = 0;
 let revealedArtistCount = 0;
 let adminMode = false;
 let currentSort = { column: null, direction: 'asc' };
 const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif", "gif8.gif"];
+
+
+let songliste = "songs_new_score_updated_popularity.json"
 
 
 function setTokenWithExpiry(token) {
@@ -35,7 +39,7 @@ function getValidToken() {
 // Songs beim Start laden
 async function loadSongs() {
     try {
-        const response = await fetch('songs.json');
+        const response = await fetch(songliste);
         songs = await response.json();
         console.log('Songs geladen:', songs);
         setupFilters();
@@ -60,6 +64,21 @@ function renderSongTable(data) {
     tbody.innerHTML = '';
     data.forEach(song => {
         const tr = document.createElement('tr');
+        
+        // --- NEU: Spotify Link Logik ---
+        if (song.spotifyUri) {
+            // Wandelt "spotify:track:12345..." in einen klickbaren Web-Link um
+            const spotifyUrl = song.spotifyUri.replace('spotify:track:', 'https://open.spotify.com/track/');
+            
+            // Macht die gesamte Zeile klickbar (öffnet neuen Tab)
+            tr.onclick = () => window.open(spotifyUrl, '_blank');
+            
+            // Macht den Mauszeiger zur "Hand" und gibt einen kleinen Info-Text
+            tr.style.cursor = 'pointer'; 
+            tr.title = "Klicke hier, um den Song auf Spotify zu öffnen"; 
+        }
+        // --- ENDE NEU ---
+
         tr.innerHTML = `
             <td><img src="${song.coverUrl}" style="width: 40px; border-radius: 3px;"></td>
             <td>${song.title}</td>
@@ -103,37 +122,75 @@ function sortSongs(column) {
 }
 
 // --- SPIEL LOGIK ---
-function setupFilters() {
-    const years = songs.map(s => s.year).filter(y => y);
-    const minYear = Math.min(...years);
-    const maxYear = Math.max(...years);
+// --- NEUE VARIABLEN FÜR POPULARITY ---
+let activePopFilter = 'absolute'; // Standardmäßig ist der absolute aktiv
 
-    const yearMinInput = document.getElementById('year-min');
-    const yearMaxInput = document.getElementById('year-max');
-    const yearMinVal = document.getElementById('year-min-val');
-    const yearMaxVal = document.getElementById('year-max-val');
-    const sliderRange = document.getElementById('slider-range');
+function setPopFilterMode(mode) {
+    activePopFilter = mode;
+    if (mode === 'absolute') {
+        document.getElementById('pop-abs-container').classList.remove('dimmed');
+        document.getElementById('pop-rel-container').classList.add('dimmed');
+    } else {
+        document.getElementById('pop-abs-container').classList.add('dimmed');
+        document.getElementById('pop-rel-container').classList.remove('dimmed');
+    }
+}
 
-    yearMinInput.min = minYear; yearMinInput.max = maxYear; yearMinInput.value = minYear;
-    yearMaxInput.min = minYear; yearMaxInput.max = maxYear; yearMaxInput.value = maxYear;
+// Hilfsfunktion: Verwaltet alle Doppel-Slider einheitlich
+function initDualSlider(minId, maxId, minValId, maxValId, trackRangeId, globalMin, globalMax, isPercent) {
+    const minInput = document.getElementById(minId);
+    const maxInput = document.getElementById(maxId);
+    const minVal = document.getElementById(minValId);
+    const maxVal = document.getElementById(maxValId);
+    const sliderRange = document.getElementById(trackRangeId);
 
-    function updateSlider() {
-        let min = parseInt(yearMinInput.value);
-        let max = parseInt(yearMaxInput.value);
-        if (min > max) { [min, max] = [max, min]; }
-        yearMinVal.innerText = min;
-        yearMaxVal.innerText = max;
-        const range = maxYear - minYear;
-        const leftPercent = ((min - minYear) / range) * 100;
-        const rightPercent = ((maxYear - max) / range) * 100;
+    // Initialwerte setzen
+    // IMMER die echten Datenbank-Werte erzwingen!
+    minInput.min = globalMin;
+    minInput.max = globalMax;
+    minInput.value = globalMin;
+    
+    maxInput.min = globalMin;
+    maxInput.max = globalMax;
+    maxInput.value = globalMax;
+
+    function update() {
+        let min = parseInt(minInput.value);
+        let max = parseInt(maxInput.value);
+        
+        // Verhindern, dass sich die Regler kreuzen
+        if (min > max) {
+            let tmp = min; min = max; max = tmp;
+            minInput.value = min; maxInput.value = max;
+        }
+        
+        minVal.innerText = min + (isPercent ? '%' : '');
+        maxVal.innerText = max + (isPercent ? '%' : '');
+        
+        const range = globalMax - globalMin;
+        const leftPercent = ((min - globalMin) / range) * 100;
+        const rightPercent = ((globalMax - max) / range) * 100;
         sliderRange.style.left = leftPercent + '%';
         sliderRange.style.right = rightPercent + '%';
     }
 
-    yearMinInput.addEventListener('input', updateSlider);
-    yearMaxInput.addEventListener('input', updateSlider);
-    updateSlider();
+    minInput.addEventListener('input', update);
+    maxInput.addEventListener('input', update);
+    update();
+}
 
+function setupFilters() {
+    // 1. Jahr-Slider initialisieren
+    const years = songs.map(s => s.year).filter(y => y);
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+    initDualSlider('year-min', 'year-max', 'year-min-val', 'year-max-val', 'slider-range', minYear, maxYear, false);
+
+    // 2. Popularitäts-Slider initialisieren
+    initDualSlider('pop-abs-min', 'pop-abs-max', 'pop-abs-min-val', 'pop-abs-max-val', 'slider-range-abs', 1, 100, false);
+    initDualSlider('pop-rel-min', 'pop-rel-max', 'pop-rel-min-val', 'pop-rel-max-val', 'slider-range-rel', 0, 100, true);
+
+    // 3. Genres laden
     const genres = [...new Set(songs.map(s => s.genre).filter(g => g))].sort();
     const genreContainer = document.getElementById('genre-filters');
     genreContainer.innerHTML = '';
@@ -146,6 +203,9 @@ function setupFilters() {
         label.appendChild(document.createTextNode(' ' + genre));
         genreContainer.appendChild(label);
     });
+
+    // Initialisiere das Radar
+    drawRadar();
 }
 
 function applyFiltersAndStart() {
@@ -162,26 +222,80 @@ function applyFiltersAndStart() {
         debugConsole.classList.add('hidden');
     }
 
+    // --- STUFE 1: Grundfilter (Jahr & Genre) ---
     const minYear = parseInt(document.getElementById('year-min-val').innerText);
     const maxYear = parseInt(document.getElementById('year-max-val').innerText);
-    const selectedDecades = Array.from(document.querySelectorAll('#decade-filters input:checked')).map(cb => parseInt(cb.value));
     const selectedGenres = Array.from(document.querySelectorAll('#genre-filters input:checked')).map(cb => cb.value);
 
-    filteredSongs = songs.filter(song => {
+    let baseFiltered = songs.filter(song => {
+        // 1. Check: Master-Slider für Jahre
         if (!song.year || song.year < minYear || song.year > maxYear) return false;
-        if (selectedDecades.length > 0) {
-            const songDecade = Math.floor(song.year / 10) * 10;
-            if (!selectedDecades.includes(songDecade)) return false;
+
+        // 2. Check: Radar-Diagramm / Jahrzehnte (Werte aus radar.js)
+        if (typeof radarValues !== 'undefined') {
+            let y = song.year;
+            let radarIndex = 0;
+            if (y < 1970) radarIndex = 0;
+            else if (y < 1980) radarIndex = 1;
+            else if (y < 1990) radarIndex = 2;
+            else if (y < 2000) radarIndex = 3;
+            else if (y < 2010) radarIndex = 4;
+            else if (y < 2020) radarIndex = 5;
+            else radarIndex = 6;
+
+            // Wenn das Jahrzehnt im Radar auf 0 steht (oder die Checkbox aus ist), fliegt der Song raus!
+            if (radarValues[radarIndex] === 0) return false;
         }
+
+        // 3. Check: Genre
         if (selectedGenres.length > 0 && !selectedGenres.includes(song.genre)) return false;
+        
         return true;
     });
 
-    if (filteredSongs.length === 0) {
-        alert("Keine Songs für diese Filter gefunden!");
+    if (baseFiltered.length === 0) {
+        alert("Keine Songs für diese Basis-Filter (Jahre/Genre/Jahrzehnt) gefunden!");
         return;
     }
 
+    // --- STUFE 2: Popularitäts-Filter ---
+    const absMin = parseInt(document.getElementById('pop-abs-min').value);
+    const absMax = parseInt(document.getElementById('pop-abs-max').value);
+    const relMin = parseInt(document.getElementById('pop-rel-min').value);
+    const relMax = parseInt(document.getElementById('pop-rel-max').value);
+
+    filteredSongs = baseFiltered.filter(song => {
+        // Fallback: Wenn 0 oder undefiniert -> Immer durchwinken!
+        if (!song.popularity || song.popularity === 0) return true;
+
+        if (activePopFilter === 'absolute') {
+            return song.popularity >= absMin && song.popularity <= absMax;
+        } else {
+            // Relativer Modus: Wir holen alle GÜLTIGEN Popularitätswerte der aktuellen Auswahl
+            let validPops = baseFiltered.map(s => s.popularity).filter(p => p > 0);
+            
+            // Wenn alle Songs in diesem Genre "0" haben, winken wir sie logischerweise durch
+            if (validPops.length === 0) return true; 
+
+            let actualMin = Math.min(...validPops);
+            let actualMax = Math.max(...validPops);
+            let range = actualMax - actualMin;
+            
+            // Die Prozentwerte in echte Score-Zahlen umrechnen
+            let targetMin = actualMin + (range * (relMin / 100));
+            let targetMax = actualMin + (range * (relMax / 100));
+
+            return song.popularity >= targetMin && song.popularity <= targetMax;
+        }
+    });
+
+    // Fehlermeldung, wenn der Pop-Filter zu streng war
+    if (filteredSongs.length === 0) {
+        alert("Die Popularitäts-Filter sind zu streng. Für diese Auswahl wurden keine Songs gefunden!");
+        return;
+    }
+
+    // --- START ---
     document.getElementById('start-screen').classList.add('hidden');
     document.getElementById('player-container').classList.remove('hidden');
     document.getElementById('game-controls').classList.remove('hidden');
@@ -190,8 +304,49 @@ function applyFiltersAndStart() {
 
 function startGame() {
     if (filteredSongs.length === 0) return;
-    currentSong = filteredSongs[Math.floor(Math.random() * filteredSongs.length)];
+
+    // --- NEU: GEWICHTETE ZUFALLSAUSWAHL ---
+    // 1. Songs nach Jahrzehnt sortieren
+    let pools = [[], [], [], [], [], [], []]; // 7 Arrays für 7 Jahrzehnte
     
+    filteredSongs.forEach(song => {
+        let y = song.year;
+        if (y < 1970) pools[0].push(song);
+        else if (y < 1980) pools[1].push(song);
+        else if (y < 1990) pools[2].push(song);
+        else if (y < 2000) pools[3].push(song);
+        else if (y < 2010) pools[4].push(song);
+        else if (y < 2020) pools[5].push(song);
+        else pools[6].push(song);
+    });
+
+    // 2. Nur Gewichte von Jahrzehnten zulassen, die AUCH WIRKLICH SONGS haben!
+    let activeWeights = radarValues.map((weight, i) => pools[i].length > 0 ? weight : 0);
+    let totalWeight = activeWeights.reduce((a, b) => a + b, 0);
+
+    // Fallback: Wenn durch absurde Filter-Kombinationen das Gewicht 0 ist, puren Zufall nehmen
+    if (totalWeight === 0) {
+        currentSong = filteredSongs[Math.floor(Math.random() * filteredSongs.length)];
+    } else {
+        // 3. Lose ziehen!
+        let randomVal = Math.random() * totalWeight;
+        let selectedDecadeIndex = 0;
+        let cumulativeWeight = 0;
+        
+        for (let i = 0; i < activeWeights.length; i++) {
+            cumulativeWeight += activeWeights[i];
+            if (randomVal <= cumulativeWeight) {
+                selectedDecadeIndex = i;
+                break;
+            }
+        }
+        
+        // 4. Einen zufälligen Song aus dem nun gezogenen Jahrzehnt wählen
+        let winningPool = pools[selectedDecadeIndex];
+        currentSong = winningPool[Math.floor(Math.random() * winningPool.length)];
+    }
+    // --- ENDE NEU ---
+
     document.getElementById('curtain').classList.remove('hidden');
     document.getElementById('cover-art').classList.add('hidden');
     document.getElementById('cover-art').src = currentSong.coverUrl;
@@ -219,10 +374,55 @@ function startGame() {
     document.getElementById('tipp-btn-interpret').innerText = "Tipp zum Interpret 👤";
     document.getElementById('tipp-btn-titel').innerText = "Tipp zum Titel 🎵";
 
-    const randomStart = Math.floor(Math.random() * 60) + 20;
+    // --- NEUE WIEDERGABE-LOGIK ---
+    const mode = document.querySelector('input[name="start-mode"]:checked').value;
+    let startSec = 0;
+
+    if (mode === 'random') {
+        // Deine bisherige Logik: Startet irgendwo zwischen Sekunde 20 und 80
+        startSec = Math.floor(Math.random() * 60) + 20;
+    } else if (mode === 'start') {
+        // Startet exakt bei 0:00
+        startSec = 0;
+    }
+
     if (currentSong.spotifyUri) {
-        uiLog(`Spiele: ${currentSong.artist} - ${currentSong.title} (${currentSong.year})`);
-        spieleSong(currentSong.spotifyUri, randomStart);
+        uiLog(`Spiele: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}) | Start bei: ${startSec}s`);
+        spieleSong(currentSong.spotifyUri, startSec);
+        
+        if (playTimeout) clearTimeout(playTimeout); 
+        
+        const durationInput = document.getElementById('play-duration').value;
+        const playDuration = parseInt(durationInput);
+        
+        // --- NEU: Timer-Balken Logik ---
+        const progressContainer = document.getElementById('progress-container');
+        const progressBar = document.getElementById('progress-bar');
+
+        if (!isNaN(playDuration) && playDuration > 0) {
+            // Zeige den Balken
+            progressContainer.classList.remove('hidden');
+            
+            // 1. Balken sofort auf volle 100% setzen (ohne Animation)
+            progressBar.style.transition = 'none';
+            progressBar.style.width = '100%';
+            
+            // 2. Browser zwingen, die 100% sofort zu zeichnen (Reflow-Trick)
+            void progressBar.offsetWidth;
+            
+            // 3. Animation starten! (Balken schrumpft in exakt 'playDuration' Sekunden linear auf 0%)
+            progressBar.style.transition = `width ${playDuration}s linear`;
+            progressBar.style.width = '0%';
+
+            // Dein normaler Backend-Timer, der die Musik stoppt
+            playTimeout = setTimeout(() => {
+                if (typeof stoppeSpotify === "function") stoppeSpotify();
+                document.getElementById('status').innerText = "Songausschnitt beendet! Zeit zum Raten.";
+            }, playDuration * 1000); 
+        } else {
+            // Wenn kein Timer eingestellt ist, verstecken wir den Balken
+            progressContainer.classList.add('hidden');
+        }
     }
 }
 
@@ -280,6 +480,17 @@ function checkAnswer() {
 }
 
 function reveal(updateStatus = true) {
+    if (playTimeout) clearTimeout(playTimeout);
+    
+    // --- NEU: Balken einfrieren ---
+    const progressBar = document.getElementById('progress-bar');
+    if (progressBar) {
+        // Liest die exakte aktuelle Breite im Browser aus und friert sie ein
+        progressBar.style.width = window.getComputedStyle(progressBar).width;
+        progressBar.style.transition = 'none';
+    }
+    
+    document.getElementById('curtain').classList.add('hidden');
     //if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('curtain').classList.add('hidden');
     document.getElementById('cover-art').classList.remove('hidden');
@@ -291,6 +502,7 @@ function reveal(updateStatus = true) {
 }
 
 function goHome() {
+    if (playTimeout) clearTimeout(playTimeout);
     if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('start-screen').classList.remove('hidden');
     document.getElementById('player-container').classList.add('hidden');
@@ -310,7 +522,7 @@ function uiLog(message) {
 
 function adminReveal() {
     if (!currentSong) return;
-    document.getElementById('admin-debug').innerText = `Admin-Info: ${currentSong.artist} - ${currentSong.title}`;
+    document.getElementById('admin-debug').innerText = `Admin-Info: ${currentSong.artist} - ${currentSong.title} (${currentSong.year}, ${currentSong.album}, Pop: ${currentSong.popularity})`;
     uiLog("Lösung per Admin-Button angezeigt.");
 }
 

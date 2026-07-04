@@ -1,0 +1,502 @@
+[
+    {
+        "t": "Livin' la Vida Loca",
+        "a": "Ricky Martin",
+        "p": 88
+    },
+    {
+        "t": "The Cup of Life (The Official Song of the World Cup, France '98) - Remix - English Radio Edit",
+        "a": "Ricky Martin",
+        "p": 82
+    },
+    {
+        "t": "Waiting for Tonight",
+        "a": "Jennifer Lopez",
+        "p": 78
+    },
+    {
+        "t": "If You Had My Love",
+        "a": "Jennifer Lopez",
+        "p": 80
+    },
+    {
+        "t": "What a Girl Wants",
+        "a": "Christina Aguilera",
+        "p": 75
+    },
+    {
+        "t": "Livin' On The Edge",
+        "a": "Aerosmith",
+        "p": 60
+    },
+    {
+        "t": "Crazy",
+        "a": "Aerosmith",
+        "p": 78
+    },
+    {
+        "t": "Cryin'",
+        "a": "Aerosmith",
+        "p": 75
+    },
+    {
+        "t": "I Don't Want To Miss A Thing - From \"Armageddon\" Soundtrack",
+        "a": "Aerosmith",
+        "p": 94
+    },
+    {
+        "t": "November Rain",
+        "a": "Guns N' Roses",
+        "p": 93
+    },
+    {
+        "t": "Don't Cry (Original)",
+        "a": "Guns N' Roses",
+        "p": 82
+    },
+    {
+        "t": "You Could Be Mine",
+        "a": "Guns N' Roses",
+        "p": 75
+    },
+    {
+        "t": "Wind Of Change",
+        "a": "Scorpions",
+        "p": 93
+    },
+    {
+        "t": "Send Me An Angel",
+        "a": "Scorpions",
+        "p": 60
+    },
+    {
+        "t": "Nothing Compares 2 U",
+        "a": "Sinéad O'Connor",
+        "p": 92
+    },
+    {
+        "t": "Kiss from a Rose",
+        "a": "Seal",
+        "p": 90
+    },
+    {
+        "t": "Crazy",
+        "a": "Seal",
+        "p": 82
+    },
+    {
+        "t": "It Must Have Been Love - From the Film \"Pretty Woman\"",
+        "a": "Roxette",
+        "p": 88
+    },
+    {
+        "t": "Joyride",
+        "a": "Roxette",
+        "p": 80
+    },
+    {
+        "t": "Listen To Your Heart",
+        "a": "Roxette",
+        "p": 82
+    },
+    {
+        "t": "The Sign",
+        "a": "Ace of Base",
+        "p": 88
+    },
+    {
+        "t": "All That She Wants",
+        "a": "Ace of Base",
+        "p": 86
+    },
+    {
+        "t": "Beautiful Life",
+        "a": "Ace of Base",
+        "p": 68
+    },
+    {
+        "t": "Lovefool",
+        "a": "The Cardigans",
+        "p": 82
+    },
+    {
+        "t": "Save Tonight",
+        "a": "Eagle-Eye Cherry",
+        "p": 85
+    },
+    {
+        "t": "Bitch",
+        "a": "Meredith Brooks",
+        "p": 78
+    },
+    {
+        "t": "Give Me One Reason",
+        "a": "Tracy Chapman",
+        "p": 82
+    },
+    {
+        "t": "(Everything I Do) I Do It For You",
+        "a": "Bryan Adams",
+        "p": 95
+    },
+    {
+        "t": "Please Forgive Me (Classic Version)",
+        "a": "Bryan Adams",
+        "p": 76
+    },
+    {
+        "t": "Tears in Heaven",
+        "a": "Eric Clapton",
+        "p": 88
+    },
+    {
+        "t": "Change the World",
+        "a": "Eric Clapton",
+        "p": 65
+    },
+    {
+        "t": "Fields Of Gold",
+        "a": "Sting",
+        "p": 80
+    },
+    {
+        "t": "Shape Of My Heart",
+        "a": "Sting",
+        "p": 85
+    },
+    {
+        "t": "Friday I'm In Love",
+        "a": "The Cure",
+        "p": 86
+    },
+    {
+        "t": "Enjoy the Silence",
+        "a": "Depeche Mode",
+        "p": 92
+    },
+    {
+        "t": "Black Velvet",
+        "a": "Alannah Myles",
+        "p": 80
+    },
+    {
+        "t": "Walking in Memphis",
+        "a": "Marc Cohn",
+        "p": 78
+    },
+    {
+        "t": "Right Here Right Now",
+        "a": "Jesus Jones",
+        "p": 55
+    },
+    {
+        "t": "I'm Too Sexy",
+        "a": "Right Said Fred",
+        "p": 82
+    },
+    {
+        "t": "Informer",
+        "a": "Snow",
+        "p": 78
+    },
+    {
+        "t": "Sweat (A La La La La Long)",
+        "a": "Inner Circle",
+        "p": 82
+    },
+    {
+        "t": "Boombastic",
+        "a": "Shaggy",
+        "p": 85
+    },
+    {
+        "t": "Here Comes the Hotstepper - Heartical Mix",
+        "a": "iNi Kamoze",
+        "p": 82
+    },
+    {
+        "t": "I Like to Move It (feat. The Mad Stuntman) - Erick \"More\" Album Mix",
+        "a": "Reel 2 Real",
+        "p": 85
+    },
+    {
+        "t": "Mysterious Girl - Radio Edit",
+        "a": "Peter Andre",
+        "p": 65
+    },
+    {
+        "t": "You're Still The One",
+        "a": "Shania Twain",
+        "p": 88
+    },
+    {
+        "t": "That Don't Impress Me Much - International Mix",
+        "a": "Shania Twain",
+        "p": 86
+    },
+    {
+        "t": "Man! I Feel Like A Woman!",
+        "a": "Shania Twain",
+        "p": 90
+    },
+    {
+        "t": "Achy Breaky Heart",
+        "a": "Billy Ray Cyrus",
+        "p": 84
+    },
+    {
+        "t": "Friends In Low Places - Live",
+        "a": "Garth Brooks",
+        "p": 82
+    },
+    {
+        "t": "The Dance - Live",
+        "a": "Garth Brooks",
+        "p": 68
+    },
+    {
+        "t": "Praise You",
+        "a": "Fatboy Slim",
+        "p": 80
+    },
+    {
+        "t": "The Rockafeller Skank",
+        "a": "Fatboy Slim",
+        "p": 78
+    },
+    {
+        "t": "Hey Boy Hey Girl - ARTBAT Remix",
+        "a": "The Chemical Brothers",
+        "p": 45
+    },
+    {
+        "t": "Firestarter",
+        "a": "The Prodigy",
+        "p": 85
+    },
+    {
+        "t": "Breathe",
+        "a": "The Prodigy",
+        "p": 82
+    },
+    {
+        "t": "Smack My Bitch Up",
+        "a": "The Prodigy",
+        "p": 78
+    },
+    {
+        "t": "Born Slippy (Nuxx)",
+        "a": "Underworld",
+        "p": 82
+    },
+    {
+        "t": "Insomnia - Radio Edit",
+        "a": "Faithless",
+        "p": 86
+    },
+    {
+        "t": "Children",
+        "a": "Robert Miles",
+        "p": 88
+    },
+    {
+        "t": "Sandstorm",
+        "a": "Darude",
+        "p": 94
+    },
+    {
+        "t": "Better Off Alone",
+        "a": "Alice Deejay",
+        "p": 86
+    },
+    {
+        "t": "9Pm (Till I Come)",
+        "a": "ATB",
+        "p": 82
+    },
+    {
+        "t": "Sing Hallelujah!",
+        "a": "Dr. Alban",
+        "p": 78
+    },
+    {
+        "t": "It's My Life",
+        "a": "Dr. Alban",
+        "p": 84
+    },
+    {
+        "t": "Coco Jamboo",
+        "a": "Mr. President",
+        "p": 80
+    },
+    {
+        "t": "Good Vibrations",
+        "a": "Marky Mark And The Funky Bunch",
+        "p": 78
+    },
+    {
+        "t": "Keep On Movin'",
+        "a": "Five",
+        "p": 58
+    },
+    {
+        "t": "Everybody Get Up - Radio Edit",
+        "a": "Five",
+        "p": 62
+    },
+    {
+        "t": "Ghetto Supastar (That Is What You Are)",
+        "a": "Pras Michel",
+        "p": 84
+    },
+    {
+        "t": "I'll Be Missing You (feat. Faith Evans, 112)",
+        "a": "Diddy",
+        "p": 92
+    },
+    {
+        "t": "Gettin' Jiggy Wit It",
+        "a": "Will Smith",
+        "p": 85
+    },
+    {
+        "t": "Men In Black - From \"Men In Black\" Soundtrack",
+        "a": "Will Smith",
+        "p": 86
+    },
+    {
+        "t": "Miami",
+        "a": "Will Smith",
+        "p": 82
+    },
+    {
+        "t": "Summertime",
+        "a": "DJ Jazzy Jeff & The Fresh Prince",
+        "p": 85
+    },
+    {
+        "t": "Baby Got Back",
+        "a": "Sir Mix-A-Lot",
+        "p": 90
+    },
+    {
+        "t": "Whoomp! There It Is - Radio Edit",
+        "a": "Tag Team",
+        "p": 86
+    },
+    {
+        "t": "Thong Song",
+        "a": "Sisqo",
+        "p": 88
+    },
+    {
+        "t": "Bailamos - From \"Wild Wild West\"",
+        "a": "Enrique Iglesias",
+        "p": 82
+    },
+    {
+        "t": "Truly Madly Deeply",
+        "a": "Savage Garden",
+        "p": 90
+    },
+    {
+        "t": "To the Moon & Back",
+        "a": "Savage Garden",
+        "p": 78
+    },
+    {
+        "t": "As I Lay Me Down",
+        "a": "Sophie B. Hawkins",
+        "p": 60
+    },
+    {
+        "t": "If It Makes You Happy",
+        "a": "Sheryl Crow",
+        "p": 75
+    },
+    {
+        "t": "All I Wanna Do",
+        "a": "Sheryl Crow",
+        "p": 85
+    },
+    {
+        "t": "Kiss Me",
+        "a": "Sixpence None The Richer",
+        "p": 88
+    },
+    {
+        "t": "One Of Us",
+        "a": "Joan Osborne",
+        "p": 82
+    },
+    {
+        "t": "Stay (I Missed You)",
+        "a": "Lisa Loeb & Nine Stories",
+        "p": 76
+    },
+    {
+        "t": "Fade Into You",
+        "a": "Mazzy Star",
+        "p": 72
+    },
+    {
+        "t": "No Rain",
+        "a": "Blind Melon",
+        "p": 80
+    },
+    {
+        "t": "Buddy Holly",
+        "a": "Weezer",
+        "p": 78
+    },
+    {
+        "t": "Say It Ain't So - Original Mix",
+        "a": "Weezer",
+        "p": 74
+    },
+    {
+        "t": "Everlong",
+        "a": "Foo Fighters",
+        "p": 88
+    },
+    {
+        "t": "Learn to Fly",
+        "a": "Foo Fighters",
+        "p": 84
+    },
+    {
+        "t": "Santa Monica",
+        "a": "Everclear",
+        "p": 58
+    },
+    {
+        "t": "Glycerine - Remastered",
+        "a": "Bush",
+        "p": 68
+    },
+    {
+        "t": "Machinehead - Remastered 2014",
+        "a": "Bush",
+        "p": 65
+    },
+    {
+        "t": "Shine",
+        "a": "Collective Soul",
+        "p": 75
+    },
+    {
+        "t": "Push",
+        "a": "Matchbox Twenty",
+        "p": 74
+    },
+    {
+        "t": "3AM",
+        "a": "Matchbox Twenty",
+        "p": 72
+    },
+    {
+        "t": "Sex & Candy",
+        "a": "Marcy Playground",
+        "p": 76
+    }
+]

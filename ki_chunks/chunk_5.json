@@ -1,0 +1,502 @@
+[
+    {
+        "t": "Mercy Mercy Me (The Ecology)",
+        "a": "Marvin Gaye",
+        "p": 72
+    },
+    {
+        "t": "Sexual Healing",
+        "a": "Marvin Gaye",
+        "p": 88
+    },
+    {
+        "t": "Superfly",
+        "a": "Curtis Mayfield",
+        "p": 70
+    },
+    {
+        "t": "Move on Up - Single Edit",
+        "a": "Curtis Mayfield",
+        "p": 74
+    },
+    {
+        "t": "Theme From Shaft - Remastered 2009",
+        "a": "Isaac Hayes",
+        "p": 78
+    },
+    {
+        "t": "Just My Imagination (Running Away With Me)",
+        "a": "The Temptations",
+        "p": 75
+    },
+    {
+        "t": "Papa Was A Rollin' Stone - Single Version",
+        "a": "The Temptations",
+        "p": 82
+    },
+    {
+        "t": "Midnight Train to Georgia",
+        "a": "Gladys Knight & The Pips",
+        "p": 80
+    },
+    {
+        "t": "Killing Me Softly With His Song",
+        "a": "Roberta Flack",
+        "p": 85
+    },
+    {
+        "t": "The First Time Ever I Saw Your Face",
+        "a": "Roberta Flack",
+        "p": 68
+    },
+    {
+        "t": "Ain't No Sunshine",
+        "a": "Bill Withers",
+        "p": 90
+    },
+    {
+        "t": "Lean on Me",
+        "a": "Bill Withers",
+        "p": 92
+    },
+    {
+        "t": "Lovely Day",
+        "a": "Bill Withers",
+        "p": 86
+    },
+    {
+        "t": "Use Me",
+        "a": "Bill Withers",
+        "p": 65
+    },
+    {
+        "t": "You're The One That I Want - From “Grease”",
+        "a": "John Travolta",
+        "p": 90
+    },
+    {
+        "t": "Summer Nights - From “Grease”",
+        "a": "John Travolta",
+        "p": 88
+    },
+    {
+        "t": "Greased Lightnin' - From “Grease”",
+        "a": "John Travolta",
+        "p": 82
+    },
+    {
+        "t": "Hopelessly Devoted To You - From “Grease”",
+        "a": "Olivia Newton-John",
+        "p": 78
+    },
+    {
+        "t": "Take Me Home, Country Roads",
+        "a": "John Denver",
+        "p": 96
+    },
+    {
+        "t": "Annie's Song",
+        "a": "John Denver",
+        "p": 75
+    },
+    {
+        "t": "Rocky Mountain High",
+        "a": "John Denver",
+        "p": 70
+    },
+    {
+        "t": "A Boy Named Sue - Live at San Quentin State Prison, San Quentin, CA - February 1969",
+        "a": "Johnny Cash",
+        "p": 68
+    },
+    {
+        "t": "Margaritaville",
+        "a": "Jimmy Buffett",
+        "p": 84
+    },
+    {
+        "t": "Changes In Latitudes, Changes In Attitudes",
+        "a": "Jimmy Buffett",
+        "p": 55
+    },
+    {
+        "t": "Piano Man",
+        "a": "Billy Joel",
+        "p": 96
+    },
+    {
+        "t": "Just the Way You Are",
+        "a": "Billy Joel",
+        "p": 85
+    },
+    {
+        "t": "Movin' Out (Anthony's Song)",
+        "a": "Billy Joel",
+        "p": 72
+    },
+    {
+        "t": "Only the Good Die Young",
+        "a": "Billy Joel",
+        "p": 70
+    },
+    {
+        "t": "She's Always a Woman",
+        "a": "Billy Joel",
+        "p": 80
+    },
+    {
+        "t": "Bennie And The Jets - Remastered 2014",
+        "a": "Elton John",
+        "p": 85
+    },
+    {
+        "t": "Crocodile Rock",
+        "a": "Elton John",
+        "p": 82
+    },
+    {
+        "t": "Goodbye Yellow Brick Road - Remastered 2014",
+        "a": "Elton John",
+        "p": 88
+    },
+    {
+        "t": "Don't Go Breaking My Heart",
+        "a": "Elton John",
+        "p": 84
+    },
+    {
+        "t": "I Shot The Sheriff",
+        "a": "Eric Clapton",
+        "p": 78
+    },
+    {
+        "t": "Wonderful Tonight",
+        "a": "Eric Clapton",
+        "p": 88
+    },
+    {
+        "t": "Lay Down Sally",
+        "a": "Eric Clapton",
+        "p": 65
+    },
+    {
+        "t": "Jamming",
+        "a": "Bob Marley & The Wailers",
+        "p": 82
+    },
+    {
+        "t": "Three Little Birds",
+        "a": "Bob Marley & The Wailers",
+        "p": 95
+    },
+    {
+        "t": "Is This Love",
+        "a": "Bob Marley & The Wailers",
+        "p": 88
+    },
+    {
+        "t": "Stir It Up - Jamaican Version",
+        "a": "Bob Marley & The Wailers",
+        "p": 78
+    },
+    {
+        "t": "Could You Be Loved",
+        "a": "Bob Marley & The Wailers",
+        "p": 88
+    },
+    {
+        "t": "Rich Girl",
+        "a": "Daryl Hall & John Oates",
+        "p": 80
+    },
+    {
+        "t": "Sara Smile",
+        "a": "Daryl Hall & John Oates",
+        "p": 72
+    },
+    {
+        "t": "Maneater",
+        "a": "Daryl Hall & John Oates",
+        "p": 88
+    },
+    {
+        "t": "You Make My Dreams (Come True)",
+        "a": "Daryl Hall & John Oates",
+        "p": 88
+    },
+    {
+        "t": "September Gurls",
+        "a": "Big Star",
+        "p": 30
+    },
+    {
+        "t": "Thirteen",
+        "a": "Big Star",
+        "p": 28
+    },
+    {
+        "t": "Fox on the Run - Single Version",
+        "a": "Sweet",
+        "p": 68
+    },
+    {
+        "t": "The Ballroom Blitz",
+        "a": "Sweet",
+        "p": 80
+    },
+    {
+        "t": "Blockbuster",
+        "a": "Sweet",
+        "p": 55
+    },
+    {
+        "t": "Cum on Feel the Noize",
+        "a": "Slade",
+        "p": 75
+    },
+    {
+        "t": "Merry Xmas Everybody",
+        "a": "Slade",
+        "p": 65
+    },
+    {
+        "t": "Get It On",
+        "a": "T. Rex",
+        "p": 82
+    },
+    {
+        "t": "Children of the Revolution - Remaster",
+        "a": "T. Rex",
+        "p": 68
+    },
+    {
+        "t": "20th Century Boy - Remaster",
+        "a": "T. Rex",
+        "p": 72
+    },
+    {
+        "t": "School's Out",
+        "a": "Alice Cooper",
+        "p": 88
+    },
+    {
+        "t": "No More Mr. Nice Guy",
+        "a": "Alice Cooper",
+        "p": 76
+    },
+    {
+        "t": "Poison",
+        "a": "Alice Cooper",
+        "p": 90
+    },
+    {
+        "t": "Radar Love",
+        "a": "Golden Earring",
+        "p": 80
+    },
+    {
+        "t": "Blinded by the Light",
+        "a": "Manfred Mann's Earth Band",
+        "p": 82
+    },
+    {
+        "t": "Davy's on the Road Again",
+        "a": "Manfred Mann's Earth Band",
+        "p": 64
+    },
+    {
+        "t": "Locomotive Breath",
+        "a": "Jethro Tull",
+        "p": 72
+    },
+    {
+        "t": "Aqualung",
+        "a": "Jethro Tull",
+        "p": 76
+    },
+    {
+        "t": "Thick as a Brick (Pt. I) - 1997 Remaster",
+        "a": "Jethro Tull",
+        "p": 60
+    },
+    {
+        "t": "All Right Now",
+        "a": "Free",
+        "p": 84
+    },
+    {
+        "t": "Feel like Makin' Love - 2015 Remaster",
+        "a": "Bad Company",
+        "p": 78
+    },
+    {
+        "t": "Can't Get Enough - 2015 Remaster",
+        "a": "Bad Company",
+        "p": 74
+    },
+    {
+        "t": "Slow Ride - Edit",
+        "a": "Foghat",
+        "p": 78
+    },
+    {
+        "t": "Fool for the City - 2016 Remaster",
+        "a": "Foghat",
+        "p": 58
+    },
+    {
+        "t": "Frankenstein",
+        "a": "The Edgar Winter Group",
+        "p": 65
+    },
+    {
+        "t": "Free Ride",
+        "a": "The Edgar Winter Group",
+        "p": 68
+    },
+    {
+        "t": "Smokin' in the Boy's Room",
+        "a": "Brownsville Station",
+        "p": 62
+    },
+    {
+        "t": "Cat Scratch Fever",
+        "a": "Ted Nugent",
+        "p": 72
+    },
+    {
+        "t": "Stranglehold",
+        "a": "Ted Nugent",
+        "p": 68
+    },
+    {
+        "t": "Black Betty",
+        "a": "Ram Jam",
+        "p": 86
+    },
+    {
+        "t": "The Boys Are Back In Town",
+        "a": "Thin Lizzy",
+        "p": 90
+    },
+    {
+        "t": "Whiskey In The Jar",
+        "a": "Thin Lizzy",
+        "p": 80
+    },
+    {
+        "t": "Dancing In The Moonlight",
+        "a": "King Harvest",
+        "p": 88
+    },
+    {
+        "t": "Brandy (You're a Fine Girl)",
+        "a": "Looking Glass",
+        "p": 78
+    },
+    {
+        "t": "The Joker",
+        "a": "Steve Miller Band",
+        "p": 88
+    },
+    {
+        "t": "Fly Like An Eagle",
+        "a": "Steve Miller Band",
+        "p": 84
+    },
+    {
+        "t": "Rock'n Me",
+        "a": "Steve Miller Band",
+        "p": 76
+    },
+    {
+        "t": "Take The Money And Run",
+        "a": "Steve Miller Band",
+        "p": 74
+    },
+    {
+        "t": "Give Up The Funk (Tear The Roof Off The Sucker)",
+        "a": "Parliament",
+        "p": 82
+    },
+    {
+        "t": "Flash Light",
+        "a": "Parliament",
+        "p": 78
+    },
+    {
+        "t": "One Nation Under a Groove",
+        "a": "Funkadelic",
+        "p": 76
+    },
+    {
+        "t": "Love Rollercoaster",
+        "a": "Ohio Players",
+        "p": 78
+    },
+    {
+        "t": "Fire",
+        "a": "Ohio Players",
+        "p": 70
+    },
+    {
+        "t": "Brick House",
+        "a": "Commodores",
+        "p": 86
+    },
+    {
+        "t": "Easy",
+        "a": "Commodores",
+        "p": 92
+    },
+    {
+        "t": "Three Times A Lady",
+        "a": "Commodores",
+        "p": 80
+    },
+    {
+        "t": "Lady Marmalade",
+        "a": "Patti LaBelle",
+        "p": 88
+    },
+    {
+        "t": "That's the Way (I Like It) - 2004 Remaster",
+        "a": "KC & The Sunshine Band",
+        "p": 86
+    },
+    {
+        "t": "Get Down Tonight - 2004 Remaster",
+        "a": "KC & The Sunshine Band",
+        "p": 84
+    },
+    {
+        "t": "(Shake, Shake, Shake) Shake Your Booty",
+        "a": "KC & The Sunshine Band",
+        "p": 82
+    },
+    {
+        "t": "Disco Inferno",
+        "a": "The Trammps",
+        "p": 86
+    },
+    {
+        "t": "Turn the Beat Around",
+        "a": "Vicki Sue Robinson",
+        "p": 76
+    },
+    {
+        "t": "Knock on Wood - 1985 7\" Remix",
+        "a": "Amii Stewart",
+        "p": 74
+    },
+    {
+        "t": "Don't Leave Me This Way",
+        "a": "Thelma Houston",
+        "p": 78
+    },
+    {
+        "t": "Bad Company",
+        "a": "Bad Company",
+        "p": 72
+    }
+]
