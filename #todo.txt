@@ -6,4 +6,10 @@
 -Modus: lieder in zeitstrahl (eins anfangen eg. 2013 nächstes Lied davor oder danach? --> aufdecken (ggf berichtigen) --> nächstes lied davor danach od dazwischen? usw)
     varianten mit eg. yt views mögl
 
-#test
+lyrics fixen
+    nach "Lyrics": "[ suchen: "Lyrics":\s*"(?!\[)
+    nach Lyrics Zeilen ohne "[]" suchen: "Lyrics":[^\[\]\n]*$
+
+    noch falsch: "The Message - Extended Version" und mit error markierte 
+
+spotify links in erraten screen einfügen

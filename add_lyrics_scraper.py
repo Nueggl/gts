@@ -30,8 +30,8 @@ def clean_artist_name(name):
     return clean
 
 def clean_song_title(title):
-    # Removes Spotify suffixes like " - Remastered 2011", " - Live", " - Radio Edit", etc.
-    clean = re.sub(r'(?i)\s*-\s*(remaster|live|radio edit|mono|stereo|bonus|from|soundtrack|theme|series|recorded).*', '', title)
+    # Removes Spotify suffixes like " - 2013 Remaster", " - Remastered 2011", " - Live", " - Radio Edit", etc.
+    clean = re.sub(r'(?i)\s*-\s*(\d{4}\s+)?(remaster|live|radio edit|mono|stereo|bonus|from|soundtrack|theme|series|recorded).*', '', title)
     # Removes trailing parenthesis content
     clean = re.sub(r'\(.*?\)', '', clean)
     # Removes other symbols
@@ -58,6 +58,28 @@ def artist_matches(input_artist, genius_artist):
             
     return False
 
+# Blacklist for Genius search translation / metadata pages
+BLACKLIST = [
+    'translation', 'traducción', 'traduction', 'übersetzung', 'uebersetzung', 
+    'traduzione', 'çeviri', 'ceviri', 'tradução', 'traducao', 'tłumaczenie', 'tlumaczenie',
+    'tracklist', 'discography', 'booklet', 'credits', 'setlist', 'liner-notes', 'q&a', 'review', 'cover-art'
+]
+
+def is_blacklisted(title, url, primary_artist, input_artist):
+    title_lower = title.lower()
+    url_lower = url.lower()
+    
+    # Check blacklisted terms in title/URL
+    for word in BLACKLIST:
+        if word in title_lower or word in url_lower:
+            return True
+            
+    # Check translation artist teams (primary artist contains 'Genius' but the input artist does not)
+    if "genius" in primary_artist.lower() and "genius" not in input_artist.lower():
+        return True
+        
+    return False
+
 def search_genius(artist, title):
     clean_title = clean_song_title(title)
     # We query Genius with a clean title + artist name
@@ -66,27 +88,33 @@ def search_genius(artist, title):
     
     req = urllib.request.Request(url, headers={
         "Authorization": f"Bearer {GENIUS_TOKEN}",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     })
     
     try:
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req, timeout=5) as response:
             data = json.loads(response.read().decode('utf-8'))
             hits = data.get('response', {}).get('hits', [])
             if hits:
-                # Find the first hit that matches the artist
+                # 1. Find the first hit that matches the artist AND is not blacklisted
                 for hit in hits:
                     if hit.get('type') == 'song':
                         song_info = hit.get('result', {})
                         genius_artist = song_info.get('primary_artist', {}).get('name', '')
-                        if artist_matches(artist, genius_artist):
-                            return song_info.get('url'), song_info.get('full_title')
+                        genius_title = song_info.get('title', '')
+                        genius_url = song_info.get('url', '')
+                        if artist_matches(artist, genius_artist) and not is_blacklisted(genius_title, genius_url, genius_artist, artist):
+                            return genius_url, song_info.get('full_title')
                 
-                # Fallback: if no artist matched, return the first song hit anyway (Genius artist naming can differ)
+                # 2. Fallback: return the first song hit that is not blacklisted
                 for hit in hits:
                     if hit.get('type') == 'song':
                         song_info = hit.get('result', {})
-                        return song_info.get('url'), song_info.get('full_title')
+                        genius_artist = song_info.get('primary_artist', {}).get('name', '')
+                        genius_title = song_info.get('title', '')
+                        genius_url = song_info.get('url', '')
+                        if not is_blacklisted(genius_title, genius_url, genius_artist, artist):
+                            return genius_url, song_info.get('full_title')
     except Exception as e:
         print(f"      [Search Error] {e}")
     return None, None
