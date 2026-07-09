@@ -348,8 +348,20 @@ function startGame() {
     // --- ENDE NEU ---
 
     document.getElementById('curtain').classList.remove('hidden');
-    document.getElementById('cover-art').classList.add('hidden');
-    document.getElementById('cover-art').src = currentSong.coverUrl;
+    
+    const coverArt = document.getElementById('cover-art');
+    coverArt.classList.add('hidden');
+    coverArt.src = currentSong.coverUrl;
+    if (currentSong.spotifyUri) {
+        const spotifyUrl = currentSong.spotifyUri.replace('spotify:track:', 'https://open.spotify.com/track/');
+        coverArt.onclick = () => window.open(spotifyUrl, '_blank');
+        coverArt.style.cursor = 'pointer';
+        coverArt.title = "Klicke hier, um den Song auf Spotify zu öffnen";
+    } else {
+        coverArt.onclick = null;
+        coverArt.style.cursor = 'default';
+        coverArt.title = "";
+    }
     
     const randomGif = gifListe[Math.floor(Math.random() * gifListe.length)];
     document.getElementById('curtain-gif').src = `GIFs/${randomGif}`;
