@@ -76,7 +76,8 @@
             </div>
 
             <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled style="margin-bottom: 10px; margin-top: 10px;">Lade Songs...</button>
-            <button onclick="showSongList()" style="background-color: #17a2b8; width: 100%;">Alle Songs anzeigen 📋</button>
+            <button onclick="showSongList()" style="background-color: #17a2b8; width: 100%; margin-bottom: 10px;">Alle Songs anzeigen 📋</button>
+            <button id="start-lyrics-btn" onclick="startLyricsMode()" style="background: linear-gradient(135deg, #9c27b0, #673ab7); width: 100%; font-size: 1.1em; font-weight: bold; border-radius: 5px; padding: 12px; box-shadow: 0 4px 10px rgba(156, 39, 176, 0.4);">🎤 Lyrics Modus spielen</button>
         </div>
 
         <div class="right-side-column">
@@ -121,6 +122,64 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- LYRICS MODE SCREEN -->
+    <div id="lyrics-mode-screen" class="hidden">
+        <button onclick="leaveLyricsMode()" style="background-color: #6c757d; width: fit-content; padding: 6px 14px; font-size: 0.9em; cursor: pointer; border-radius: 5px; color: white; border: none; margin-bottom: 15px;">🏠 Menü</button>
+        
+        <h2 style="margin-top: 0; color: #ba68c8;">🎤 Lyrics Quiz</h2>
+        <p id="lyrics-status" style="margin-bottom: 15px; font-size: 1.1em; color: #ddd;">Errate den Song anhand der Lyrics!</p>
+
+        <!-- Lyrics Container / Anstelle des GIF Vorhangs -->
+        <div id="lyrics-display-wrapper">
+            <!-- Steuerung oben: Zeile davor / Block davor -->
+            <div class="lyrics-expand-bar top-bar">
+                <button id="lyrics-expand-prev-block" onclick="expandLyricsPrevBlock()" class="lyrics-tool-btn" title="Vorherigen Block / Strophe einblenden">⬆️ + Block davor</button>
+                <button id="lyrics-expand-prev-line" onclick="expandLyricsPrevLine()" class="lyrics-tool-btn" title="Vorherige Zeile einblenden">🔼 + Zeile davor</button>
+                <span id="lyrics-lines-counter" class="lyrics-counter-badge">-- Zeilen</span>
+                <button id="lyrics-btn-toggle-tags" onclick="toggleLyricsTags()" class="lyrics-tool-btn tag-toggle-btn">🏷️ Tags anzeigen</button>
+            </div>
+
+            <div id="lyrics-display-content">
+                <!-- Dynamisch generierte Lyrics-Zeilen -->
+            </div>
+
+            <!-- Steuerung unten: Zeile danach / Block danach -->
+            <div class="lyrics-expand-bar bottom-bar">
+                <button id="lyrics-expand-next-line" onclick="expandLyricsNextLine()" class="lyrics-tool-btn" title="Nächste Zeile einblenden">🔽 + Zeile danach</button>
+                <button id="lyrics-expand-next-block" onclick="expandLyricsNextBlock()" class="lyrics-tool-btn" title="Nächsten Block / Strophe einblenden">⬇️ + Block danach</button>
+            </div>
+        </div>
+
+        <!-- Auflöse-Bereich (Cover + Songdaten) -->
+        <div id="lyrics-solution-box" class="hidden">
+            <img id="lyrics-cover-art" src="" alt="Album Cover">
+            <div id="lyrics-solution-info"></div>
+        </div>
+
+        <button id="lyrics-next-btn" onclick="nextLyricsRound()" class="hidden" style="margin: 20px auto; background-color: #0088ff; font-size: 18px; padding: 12px 25px; border-radius: 5px;">Nächste Runde ⏩</button>
+
+        <!-- Rate-Bereich -->
+        <div id="lyrics-guess-area" style="margin-top: 20px;">
+            <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+                <input type="text" id="lyrics-guess-title" placeholder="Titel raten">
+                <input type="text" id="lyrics-guess-artist" placeholder="Interpret raten">
+            </div>
+
+            <p id="lyrics-tipp-display-interpret" style="color: #ffc107; font-family: monospace; font-size: 1.2em; margin: 5px 0; min-height: 20px;"></p>
+            <p id="lyrics-tipp-display-titel" style="color: #ffc107; font-family: monospace; font-size: 1.2em; margin: 5px 0; min-height: 20px;"></p>
+
+            <div style="margin-bottom: 12px;">
+                <button onclick="checkLyricsAnswer()" style="background-color: #ff0055; margin-right: 5px;">Raten</button>
+                <button onclick="revealLyrics(true)" style="background-color: #6c757d;">Auflösen</button>
+            </div>
+
+            <div>
+                <button onclick="zeigeLyricsBuchstabe('interpret')" style="background-color: #ffc107; color: black; margin-right: 5px;">🔤 Interpret-Tipp</button>
+                <button onclick="zeigeLyricsBuchstabe('titel')" style="background-color: #ffc107; color: black;">🔤 Titel-Tipp</button>
+            </div>
+        </div>
     </div>
 
     <div id="song-list-screen" class="hidden">
@@ -197,6 +256,7 @@
     <script src="spotify.js"></script>
     <script src="radar.js"></script>
     <script src="script.js"></script>
+    <script src="lyrics-game.js"></script>
     <script src="ki-tipps.js"></script>
 </body>
 </html>
