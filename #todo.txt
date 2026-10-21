@@ -9,4 +9,6 @@
 
 -album als tipp möglichkeit einbauen
 
--lyrics modus: falscher song beim auflösen
+-lyrics modus: falscher song beim auflösen?
+    -filter gehen nicht
+    -nicht alle lyrics

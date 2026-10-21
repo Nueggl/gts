@@ -8,7 +8,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8')
 
-JSON_FILE = 'songs_new_score_updated_popularity.json'
+JSON_FILE = 'song_list_WIP.json'
 
 def main():
     if not os.path.exists(JSON_FILE):

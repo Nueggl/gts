@@ -9,7 +9,7 @@ let currentSort = { column: null, direction: 'asc' };
 const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif", "gif8.gif"];
 
 
-let songliste = "songs_new_score_updated_popularity.json"
+let songliste = "song_list_WIP.json"
 
 
 function setTokenWithExpiry(token) {
@@ -208,20 +208,7 @@ function setupFilters() {
     drawRadar();
 }
 
-function applyFiltersAndStart() {
-    adminMode = document.getElementById('admin-mode-toggle').checked;
-    const adminBtn = document.getElementById('admin-reveal-btn');
-    const debugConsole = document.getElementById('ui-debug-console');
-
-    if (adminMode) {
-        adminBtn.classList.remove('hidden');
-        debugConsole.classList.remove('hidden');
-        uiLog("Admin-Modus aktiviert.");
-    } else {
-        adminBtn.classList.add('hidden');
-        debugConsole.classList.add('hidden');
-    }
-
+function calculateFilteredSongs() {
     // --- STUFE 1: Grundfilter (Jahr & Genre) ---
     const minYear = parseInt(document.getElementById('year-min-val').innerText);
     const maxYear = parseInt(document.getElementById('year-max-val').innerText);
@@ -255,7 +242,7 @@ function applyFiltersAndStart() {
 
     if (baseFiltered.length === 0) {
         alert("Keine Songs für diese Basis-Filter (Jahre/Genre/Jahrzehnt) gefunden!");
-        return;
+        return null;
     }
 
     // --- STUFE 2: Popularitäts-Filter ---
@@ -264,7 +251,7 @@ function applyFiltersAndStart() {
     const relMin = parseInt(document.getElementById('pop-rel-min').value);
     const relMax = parseInt(document.getElementById('pop-rel-max').value);
 
-    filteredSongs = baseFiltered.filter(song => {
+    let result = baseFiltered.filter(song => {
         // Fallback: Wenn 0 oder undefiniert -> Immer durchwinken!
         if (!song.popularity || song.popularity === 0) return true;
 
@@ -290,10 +277,31 @@ function applyFiltersAndStart() {
     });
 
     // Fehlermeldung, wenn der Pop-Filter zu streng war
-    if (filteredSongs.length === 0) {
+    if (result.length === 0) {
         alert("Die Popularitäts-Filter sind zu streng. Für diese Auswahl wurden keine Songs gefunden!");
-        return;
+        return null;
     }
+
+    return result;
+}
+
+function applyFiltersAndStart() {
+    adminMode = document.getElementById('admin-mode-toggle').checked;
+    const adminBtn = document.getElementById('admin-reveal-btn');
+    const debugConsole = document.getElementById('ui-debug-console');
+
+    if (adminMode) {
+        adminBtn.classList.remove('hidden');
+        debugConsole.classList.remove('hidden');
+        uiLog("Admin-Modus aktiviert.");
+    } else {
+        adminBtn.classList.add('hidden');
+        debugConsole.classList.add('hidden');
+    }
+
+    const calculated = calculateFilteredSongs();
+    if (!calculated) return;
+    filteredSongs = calculated;
 
     // --- START ---
     document.getElementById('start-screen').classList.add('hidden');
@@ -516,6 +524,7 @@ function reveal(updateStatus = true) {
 function goHome() {
     if (playTimeout) clearTimeout(playTimeout);
     if (typeof stoppeSpotify === "function") stoppeSpotify();
+    document.getElementById('start-btn').classList.add('hidden');
     document.getElementById('start-screen').classList.remove('hidden');
     document.getElementById('player-container').classList.add('hidden');
     document.getElementById('game-controls').classList.add('hidden');
@@ -616,7 +625,10 @@ document.getElementById('guess-artist').addEventListener('keypress', function (e
 // --- ENTER-TASTE FÜR NÄCHSTEN SONG ---
 // --- GLOBALE TASTEN-EVENTS (Enter & Shift+Enter) ---
 document.addEventListener('keydown', function (e) {
-    
+    // Nur aktiv, wenn das Audio-Hauptspiel auch wirklich sichtbar ist!
+    const playerContainer = document.getElementById('player-container');
+    if (!playerContainer || playerContainer.classList.contains('hidden')) return;
+
     // FALL 1: Shift + Enter wird gedrückt -> AUFLÖSEN
     if (e.key === 'Enter' && e.shiftKey) {
         const guessArea = document.getElementById('guess-area');

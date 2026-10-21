@@ -107,14 +107,21 @@ function chooseInitialLyricsRange(sections, flatLines) {
 
 // 3. Lyrics-Modus starten (über den neuen Button im Dashboard)
 function startLyricsMode() {
-    if (typeof filteredSongs === 'undefined' || filteredSongs.length === 0) {
-        // Fallback: Wenn noch keine Filter angewendet wurden, nimm alle Songs
-        if (typeof songs !== 'undefined' && songs.length > 0) {
-            filteredSongs = [...songs];
-        } else {
-            alert("Songs werden noch geladen. Bitte kurz warten!");
-            return;
-        }
+    // Falls noch Spotify-Wiedergabe läuft, sofort stoppen
+    if (typeof stoppeSpotify === "function") stoppeSpotify();
+
+    if (typeof songs === 'undefined' || songs.length === 0) {
+        alert("Songs werden noch geladen. Bitte kurz warten!");
+        return;
+    }
+
+    // Aktuelle Filter von der Startseite berechnen
+    if (typeof calculateFilteredSongs === 'function') {
+        const calculated = calculateFilteredSongs();
+        if (!calculated) return; // Alert wurde bereits geworfen
+        filteredSongs = calculated;
+    } else if (typeof filteredSongs === 'undefined' || filteredSongs.length === 0) {
+        filteredSongs = [...songs];
     }
 
     // Nur Songs wählen, die Lyrics haben (Instrumentals ausschließen)
@@ -140,8 +147,50 @@ function nextLyricsRound(pool = null) {
         if (songPool.length === 0) songPool = songs.filter(s => s.lyrics && s.lyrics.trim() !== '' && s.lyrics.trim() !== '[Instrumental]');
     }
 
-    // Zufälligen Song ziehen
-    const song = songPool[Math.floor(Math.random() * songPool.length)];
+    if (songPool.length === 0) {
+        alert("Keine passenden Songs mit Lyrics vorhanden!");
+        return;
+    }
+
+    // Falls Radar-Werte aktiv sind: Jahrzehnt-Gewichtung berücksichtigen
+    let song = null;
+    if (typeof radarValues !== 'undefined' && Array.isArray(radarValues) && radarValues.length === 7) {
+        let pools = [[], [], [], [], [], [], []];
+        songPool.forEach(s => {
+            let y = s.year;
+            if (y < 1970) pools[0].push(s);
+            else if (y < 1980) pools[1].push(s);
+            else if (y < 1990) pools[2].push(s);
+            else if (y < 2000) pools[3].push(s);
+            else if (y < 2010) pools[4].push(s);
+            else if (y < 2020) pools[5].push(s);
+            else pools[6].push(s);
+        });
+
+        let activeWeights = radarValues.map((w, i) => pools[i].length > 0 ? w : 0);
+        let totalWeight = activeWeights.reduce((a, b) => a + b, 0);
+
+        if (totalWeight > 0) {
+            let randomVal = Math.random() * totalWeight;
+            let selectedIdx = 0;
+            let cumulativeWeight = 0;
+            for (let i = 0; i < activeWeights.length; i++) {
+                cumulativeWeight += activeWeights[i];
+                if (randomVal <= cumulativeWeight) {
+                    selectedIdx = i;
+                    break;
+                }
+            }
+            let winningPool = pools[selectedIdx];
+            song = winningPool[Math.floor(Math.random() * winningPool.length)];
+        }
+    }
+
+    // Fallback: Reiner Zufall aus dem Pool
+    if (!song) {
+        song = songPool[Math.floor(Math.random() * songPool.length)];
+    }
+
     lyricsState.song = song;
     currentSong = song; // Kompatibilität für Hilfsfunktionen wie Buchstabentipp
 
@@ -413,6 +462,7 @@ function revealLyrics(manual = true) {
 
 // 15. Zurück ins Hauptmenü
 function leaveLyricsMode() {
+    if (typeof stoppeSpotify === "function") stoppeSpotify();
     document.getElementById('lyrics-mode-screen').classList.add('hidden');
     document.getElementById('start-screen').classList.remove('hidden');
 }
