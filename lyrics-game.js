@@ -65,44 +65,192 @@ function parseLyrics(rawLyrics) {
     return { sections, flatLines };
 }
 
-// 2. Start-Stelle bestimmen (bevorzugt Chorus, sonst variiert / Song-Mitte)
+// 2. Start-Stelle bestimmen anhand vielfältiger Presets (Chorus, Übergänge, Strophen, etc.)
 function chooseInitialLyricsRange(sections, flatLines) {
-    if (flatLines.length === 0) {
+    if (!flatLines || flatLines.length === 0) {
         return { start: 0, end: 0 };
     }
+    if (flatLines.length <= 4) {
+        return { start: 0, end: flatLines.length - 1 };
+    }
 
-    // Finde alle Abschnitte, die wie ein Chorus / Refrain klingen
-    const chorusSecIndices = [];
+    // Finde relevante Section-Typen
+    const chorusIndices = [];
+    const preChorusIndices = [];
+    const verseIndices = [];
+    const bridgeIndices = [];
+
     sections.forEach((sec, idx) => {
-        if (sec.tag && /^(chorus|refrain|coro)/i.test(sec.tag)) {
-            chorusSecIndices.push(idx);
+        if (!sec.tag) return;
+        const tagLower = sec.tag.toLowerCase();
+        if (/(chorus|refrain|coro|hook)/i.test(tagLower)) {
+            chorusIndices.push(idx);
+        } else if (/pre-?chorus/i.test(tagLower)) {
+            preChorusIndices.push(idx);
+        } else if (/verse/i.test(tagLower)) {
+            verseIndices.push(idx);
+        } else if (/bridge/i.test(tagLower)) {
+            bridgeIndices.push(idx);
         }
     });
 
-    let targetFlatIndex = -1;
+    const possiblePresets = [];
 
-    if (chorusSecIndices.length > 0) {
+    // Falls mindestens ein Chorus existiert:
+    if (chorusIndices.length > 0) {
         // Nimm den ersten oder zweiten Chorus
-        const chosenSecIdx = chorusSecIndices[Math.floor(Math.random() * Math.min(2, chorusSecIndices.length))];
-        // Finde die erste Zeile dieser Section in flatLines
-        targetFlatIndex = flatLines.findIndex(fl => fl.sectionIndex === chosenSecIdx);
+        const chosenChorusSec = chorusIndices[Math.floor(Math.random() * Math.min(2, chorusIndices.length))];
+        const chorusStart = flatLines.findIndex(fl => fl.sectionIndex === chosenChorusSec);
+        const chorusLen = sections[chosenChorusSec].lines.length;
+        const chorusEnd = chorusStart + chorusLen - 1;
+
+        // Preset 1: Chorus-Start (Die ersten 2-3 Zeilen des Chorus)
+        possiblePresets.push({
+            name: "chorus_start",
+            weight: 30,
+            compute: () => {
+                const lineCount = Math.floor(Math.random() * 2) + 2; // 2 oder 3 Zeilen
+                return {
+                    start: chorusStart,
+                    end: Math.min(chorusEnd, chorusStart + lineCount - 1)
+                };
+            }
+        });
+
+        // Preset 2: Chorus-Ende / Hook-Ausklang (Die letzten 2-3 Zeilen des Chorus)
+        if (chorusLen >= 4) {
+            possiblePresets.push({
+                name: "chorus_end",
+                weight: 20,
+                compute: () => {
+                    const lineCount = Math.floor(Math.random() * 2) + 2;
+                    return {
+                        start: Math.max(chorusStart, chorusEnd - lineCount + 1),
+                        end: chorusEnd
+                    };
+                }
+            });
+        }
+
+        // Preset 3: Überlappung Pre-Chorus -> Chorus (Letzte 1-2 Zeilen davor + erste 1-2 Zeilen Chorus)
+        if (chorusStart >= 2) {
+            possiblePresets.push({
+                name: "overlap_pre_chorus",
+                weight: 20,
+                compute: () => {
+                    const linesBefore = Math.floor(Math.random() * 2) + 1; // 1-2 Zeilen davor
+                    const linesInChorus = Math.floor(Math.random() * 2) + 1; // 1-2 Zeilen im Chorus
+                    const s = Math.max(0, chorusStart - linesBefore);
+                    const e = Math.min(chorusEnd, chorusStart + linesInChorus - 1);
+                    return { start: s, end: e };
+                }
+            });
+        }
+
+        // Preset 4: Überlappung Chorus -> Danach (Letzte 1-2 Zeilen Chorus + 1-2 Zeilen danach)
+        if (chorusEnd < flatLines.length - 2) {
+            possiblePresets.push({
+                name: "overlap_post_chorus",
+                weight: 15,
+                compute: () => {
+                    const linesInChorus = Math.floor(Math.random() * 2) + 1;
+                    const linesAfter = Math.floor(Math.random() * 2) + 1;
+                    const s = Math.max(chorusStart, chorusEnd - linesInChorus + 1);
+                    const e = Math.min(flatLines.length - 1, chorusEnd + linesAfter);
+                    return { start: s, end: e };
+                }
+            });
+        }
+
+        // Preset 5: Pre-Chorus (2-3 Zeilen kurz vor dem Refrain)
+        if (chorusStart >= 3) {
+            possiblePresets.push({
+                name: "pre_chorus",
+                weight: 10,
+                compute: () => {
+                    const lineCount = Math.floor(Math.random() * 2) + 2;
+                    return {
+                        start: Math.max(0, chorusStart - lineCount),
+                        end: chorusStart - 1
+                    };
+                }
+            });
+        }
     }
 
-    // Fallback falls kein Chorus-Tag existiert: etwa bei 35% - 50% des Songs starten
-    if (targetFlatIndex === -1) {
-        targetFlatIndex = Math.floor(flatLines.length * 0.35);
+    // Preset 6: Strophen-Anfang (Verse 1 oder Verse 2, falls vorhanden)
+    if (verseIndices.length > 0) {
+        possiblePresets.push({
+            name: "verse",
+            weight: 15,
+            compute: () => {
+                const chosenVerseSec = verseIndices[Math.floor(Math.random() * Math.min(2, verseIndices.length))];
+                const vStart = flatLines.findIndex(fl => fl.sectionIndex === chosenVerseSec);
+                const vLen = sections[chosenVerseSec].lines.length;
+                const lineCount = Math.floor(Math.random() * 2) + 2;
+                return {
+                    start: vStart,
+                    end: Math.min(flatLines.length - 1, vStart + Math.min(vLen - 1, lineCount - 1))
+                };
+            }
+        });
     }
 
-    // Leichte Variation: mal 1 Zeile vor dem Chorus beginnen (z.B. letzte Zeile Pre-Chorus)
-    // oder 2-4 Zeilen des Chorus einblenden
-    const startOffsetVariation = Math.random() < 0.4 ? -1 : 0;
-    let start = Math.max(0, targetFlatIndex + startOffsetVariation);
-    
-    // Initial 2 bis 3 Zeilen zeigen
-    const initialLineCount = Math.floor(Math.random() * 2) + 2; // 2 oder 3 Zeilen
-    let end = Math.min(flatLines.length - 1, start + initialLineCount - 1);
+    // Preset 7: Bridge (falls vorhanden)
+    if (bridgeIndices.length > 0) {
+        possiblePresets.push({
+            name: "bridge",
+            weight: 10,
+            compute: () => {
+                const chosenBridgeSec = bridgeIndices[0];
+                const bStart = flatLines.findIndex(fl => fl.sectionIndex === chosenBridgeSec);
+                const bLen = sections[chosenBridgeSec].lines.length;
+                const lineCount = Math.floor(Math.random() * 2) + 2;
+                return {
+                    start: bStart,
+                    end: Math.min(flatLines.length - 1, bStart + Math.min(bLen - 1, lineCount - 1))
+                };
+            }
+        });
+    }
 
-    return { start, end };
+    // Fallback falls keine passenden Tags/Presets
+    if (possiblePresets.length === 0) {
+        const midPoint = Math.floor(flatLines.length * (0.3 + Math.random() * 0.3));
+        const lineCount = Math.floor(Math.random() * 2) + 2;
+        const start = Math.max(0, midPoint);
+        const end = Math.min(flatLines.length - 1, start + lineCount - 1);
+        return { start, end };
+    }
+
+    // Gewichtete Zufallsauswahl eines Presets
+    const totalWeight = possiblePresets.reduce((sum, p) => sum + p.weight, 0);
+    let rand = Math.random() * totalWeight;
+    let chosenPreset = possiblePresets[0];
+
+    for (const p of possiblePresets) {
+        rand -= p.weight;
+        if (rand <= 0) {
+            chosenPreset = p;
+            break;
+        }
+    }
+
+    let range = chosenPreset.compute();
+
+    // Sicherheitsprüfung
+    if (!range || typeof range.start !== 'number' || typeof range.end !== 'number' || range.start > range.end) {
+        const start = Math.max(0, Math.floor(flatLines.length * 0.35));
+        const end = Math.min(flatLines.length - 1, start + 2);
+        return { start, end };
+    }
+
+    // Mindestens 2 Zeilen sicherstellen (falls Song lang genug)
+    if (range.end === range.start && range.end < flatLines.length - 1) {
+        range.end++;
+    }
+
+    return range;
 }
 
 // 3. Lyrics-Modus starten (über den neuen Button im Dashboard)
@@ -141,6 +289,11 @@ function startLyricsMode() {
 
 // 4. Neue Runde im Lyrics-Modus
 function nextLyricsRound(pool = null) {
+    // Sanft ausblenden, falls noch Musik von der vorherigen Auflösung läuft
+    if (typeof stoppeSpotify === "function") {
+        stoppeSpotify(true);
+    }
+
     let songPool = pool;
     if (!songPool) {
         songPool = filteredSongs.filter(s => s.lyrics && s.lyrics.trim() !== '' && s.lyrics.trim() !== '[Instrumental]');
@@ -458,11 +611,19 @@ function revealLyrics(manual = true) {
     solutionBox.classList.remove('hidden');
     document.getElementById('lyrics-next-btn').classList.remove('hidden');
     document.getElementById('lyrics-guess-area').classList.add('hidden');
+
+    // Song bei richtiger Antwort oder beim manuellen Auflösen anspielen!
+    if (song.spotifyUri && typeof spieleSong === "function") {
+        // Zufällige "mittige" Stelle zwischen Sekunde 30 und 75 wählen
+        const startSec = Math.floor(Math.random() * 45) + 30;
+        console.log(`🎵 Spiele Song bei Auflösung: ${song.title} ab Sekunde ${startSec}`);
+        spieleSong(song.spotifyUri, startSec);
+    }
 }
 
 // 15. Zurück ins Hauptmenü
 function leaveLyricsMode() {
-    if (typeof stoppeSpotify === "function") stoppeSpotify();
+    if (typeof stoppeSpotify === "function") stoppeSpotify(true);
     document.getElementById('lyrics-mode-screen').classList.add('hidden');
     document.getElementById('start-screen').classList.remove('hidden');
 }

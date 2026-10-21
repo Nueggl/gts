@@ -261,10 +261,38 @@ function starteNeuenSong(spotifyUri, startPunktMs) {
     });
 }
 
-function stoppeSpotify() {
-    if(spotifyPlayer) {
+function stoppeSpotify(mitFadeOut = false) {
+    if (!spotifyPlayer) return;
+
+    if (!mitFadeOut) {
         spotifyPlayer.pause().then(() => {
             console.log('⏸️ Spotify pausiert!');
         });
+        return;
     }
+
+    // Sanfter Fade-Out über ~300ms
+    spotifyPlayer.getVolume().then(volume => {
+        let vol = volume;
+        if (vol <= 0.05) {
+            spotifyPlayer.pause();
+            return;
+        }
+
+        const schritte = 10;
+        const zeitProSchritt = 30; // 10 * 30ms = 300ms
+        const dec = vol / schritte;
+
+        const fadeOut = setInterval(() => {
+            vol -= dec;
+            if (vol <= 0) {
+                clearInterval(fadeOut);
+                spotifyPlayer.setVolume(0).then(() => {
+                    spotifyPlayer.pause();
+                });
+            } else {
+                spotifyPlayer.setVolume(vol);
+            }
+        }, zeitProSchritt);
+    });
 }
