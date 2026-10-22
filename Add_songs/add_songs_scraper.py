@@ -5,10 +5,8 @@ import json
 import time
 import base64
 import re
-import sys
 import os
-import config_secrets
-import config_yt
+import sys
 
 # Configure standard streams for UTF-8 to prevent UnicodeEncodeError in Windows terminal
 if hasattr(sys.stdout, 'reconfigure'):
@@ -16,11 +14,22 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8')
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+# Add PROJECT_ROOT and SCRIPT_DIR to sys.path to easily import configs and helper modules
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+
+import config_secrets
+import config_yt
 
 # --- CONFIGURATION & PATHS ---
-MAIN_JSON_FILE = 'songs_new_score_updated_popularity.json'
-ERROR_JSON_FILE = 'songs_fehlend.json'
-DEFAULT_INPUT_FILE = 'list.txt'
+MAIN_JSON_FILE = os.path.join(PROJECT_ROOT, 'song_list.json')
+ERROR_JSON_FILE = os.path.join(SCRIPT_DIR, 'songs_fehlend.json')
+DEFAULT_INPUT_FILE = os.path.join(SCRIPT_DIR, 'list.txt')
 
 CLIENT_ID = config_secrets.SPOTIFY_CLIENT_ID
 CLIENT_SECRET = config_secrets.SPOTIFY_CLIENT_SECRET

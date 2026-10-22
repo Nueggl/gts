@@ -3,11 +3,22 @@ import urllib.parse
 import urllib.error
 import json
 import re
+import sys
+import os
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+
 import config_yt
 import math
 
-MAIN_DB_FILE = 'songs_new_score.json'
-FIX_LIST_FILE = 'alle_songs_zu_fixen_mit_yt_fehler_unter_schwellenwert.json'
+MAIN_DB_FILE = os.path.join(PROJECT_ROOT, 'song_list.json')
+FIX_LIST_FILE = os.path.join(SCRIPT_DIR, 'alle_songs_zu_fixen_mit_yt_fehler_unter_schwellenwert.json')
 
 def load_fix_list_from_txt(filepath):
     fix_list = []
