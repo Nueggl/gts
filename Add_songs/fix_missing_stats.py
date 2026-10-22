@@ -6,6 +6,15 @@ import time
 import re
 import sys
 import os
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+
 import config_secrets
 import config_yt
 
@@ -16,9 +25,9 @@ if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8')
 
 # --- CONFIGURATION & PATHS ---
-MAIN_JSON_FILE = 'songs_new_score_updated_popularity.json'
-ERROR_JSON_FILE = 'songs_fehlend.json'
-VERBESSERT_JSON_FILE = 'songs_fehlend_verbessert.json'
+MAIN_JSON_FILE = os.path.join(PROJECT_ROOT, 'song_list.json')
+ERROR_JSON_FILE = os.path.join(SCRIPT_DIR, 'songs_fehlend.json')
+VERBESSERT_JSON_FILE = os.path.join(SCRIPT_DIR, 'songs_fehlend_verbessert.json')
 
 def clean_song_title(title):
     # Removes Spotify suffixes like " - Remastered 2011", " - Live", " - Radio Edit", etc.

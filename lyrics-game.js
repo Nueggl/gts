@@ -12,7 +12,9 @@ let lyricsState = {
     showTags: false,
     revealedTitleCount: 0,
     revealedArtistCount: 0,
-    solved: false
+    solved: false,
+    instrumentalPlaying: false,
+    instrumentalTimer: null
 };
 
 // 1. Lyrics parsen in Blöcke (Sections) und Zeilen
@@ -289,6 +291,9 @@ function startLyricsMode() {
 
 // 4. Neue Runde im Lyrics-Modus
 function nextLyricsRound(pool = null) {
+    // Falls noch ein Instrumental läuft, stoppen und UI zurücksetzen
+    stoppeLyricsInstrumental();
+
     // Sanft ausblenden, falls noch Musik von der vorherigen Auflösung läuft
     if (typeof stoppeSpotify === "function") {
         stoppeSpotify(true);
@@ -550,6 +555,132 @@ function zeigeLyricsBuchstabe(typ) {
     document.getElementById(displayElementId).innerText = prefix + displayString;
 }
 
+// 12b. Instrumental-Tipp per Live-Suche über Spotify
+async function starteLyricsInstrumentalTipp() {
+    const btn = document.getElementById('lyrics-btn-instrumental');
+    const infoEl = document.getElementById('lyrics-instrumental-info');
+
+    // Wenn aktuell ein Instrumental abgespielt wird -> Klick stoppt es wieder!
+    if (lyricsState.instrumentalPlaying) {
+        stoppeLyricsInstrumental();
+        return;
+    }
+
+    if (!lyricsState.song) return;
+
+    // Token & Player Check
+    const activeToken = token || (typeof getValidToken === 'function' ? getValidToken() : null);
+    if (!activeToken || !deviceId || !spotifyPlayer) {
+        if (infoEl) infoEl.innerText = "⚠️ Bitte erst mit Spotify verbinden!";
+        setTimeout(() => { if (infoEl && infoEl.innerText.includes("verbinden")) infoEl.innerText = ""; }, 3000);
+        return;
+    }
+
+    btn.disabled = true;
+    btn.innerText = "⏳ Suche...";
+    if (infoEl) infoEl.innerText = "Suche Instrumental auf Spotify...";
+
+    const cleanTitle = cleanTitleString(lyricsState.song.title);
+    const cleanArtist = lyricsState.song.artist.replace(/\s*(?:&|feat\.|ft\.|,\s+).*/i, '').trim();
+
+    // Drei Suchvarianten nacheinander testen
+    const queries = [
+        `"${cleanTitle}" "${cleanArtist}" instrumental`,
+        `"${cleanTitle}" "${cleanArtist}" karaoke`,
+        `"${cleanTitle}" instrumental`
+    ];
+
+    let foundTrack = null;
+
+    try {
+        for (const q of queries) {
+            const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(q)}&type=track&limit=5`;
+            const resp = await fetch(url, {
+                headers: {
+                    'Authorization': `Bearer ${activeToken}`
+                }
+            });
+
+            if (!resp.ok) continue;
+
+            const data = await resp.json();
+            const tracks = data.tracks?.items || [];
+
+            for (const t of tracks) {
+                const name = (t.name || '').toLowerCase();
+                const artists = (t.artists || []).map(a => a.name.toLowerCase()).join(' ');
+                const combined = name + " " + artists;
+
+                // Verifiziere Instrumental-Schlagwörter
+                if (combined.includes('instrumental') || combined.includes('karaoke') || combined.includes('backing') || combined.includes('piano') || combined.includes('acoustic') || combined.includes('cover')) {
+                    foundTrack = t;
+                    break;
+                }
+            }
+
+            if (foundTrack) break;
+        }
+    } catch (err) {
+        console.error("Fehler bei der Instrumental-Suche:", err);
+    }
+
+    if (!foundTrack) {
+        btn.disabled = false;
+        btn.innerText = "❌ Kein Instrumental";
+        if (infoEl) infoEl.innerText = "Leider kein passendes Instrumental auf Spotify gefunden.";
+        setTimeout(() => {
+            btn.innerText = "🎷 Instrumental-Tipp";
+            if (infoEl && infoEl.innerText.includes("gefunden")) infoEl.innerText = "";
+        }, 3000);
+        return;
+    }
+
+    // Gefunden! Abspielen
+    lyricsState.instrumentalPlaying = true;
+    btn.disabled = false;
+    btn.innerText = "⏸️ Instrumental stoppen";
+    btn.style.backgroundColor = "#e91e63";
+    if (infoEl) {
+        infoEl.innerHTML = "🎶 <em>Instrumental läuft...</em>";
+    }
+
+    // Startsekunde ca. bei Sekunde 20-30 für direkten Melodie-Einstieg
+    const startSec = 25;
+    spieleSong(foundTrack.uri, startSec);
+
+    // Automatischer Stop nach 30 Sekunden (falls nicht vorher manuell gestoppt)
+    if (lyricsState.instrumentalTimer) clearTimeout(lyricsState.instrumentalTimer);
+    lyricsState.instrumentalTimer = setTimeout(() => {
+        if (lyricsState.instrumentalPlaying) {
+            stoppeLyricsInstrumental();
+        }
+    }, 30000);
+}
+
+function stoppeLyricsInstrumental() {
+    lyricsState.instrumentalPlaying = false;
+    if (lyricsState.instrumentalTimer) {
+        clearTimeout(lyricsState.instrumentalTimer);
+        lyricsState.instrumentalTimer = null;
+    }
+
+    if (typeof stoppeSpotify === "function") {
+        stoppeSpotify(true); // Sanfter Fade-Out
+    }
+
+    const btn = document.getElementById('lyrics-btn-instrumental');
+    if (btn) {
+        btn.disabled = false;
+        btn.innerText = "🎷 Instrumental-Tipp";
+        btn.style.backgroundColor = "#9c27b0";
+    }
+
+    const infoEl = document.getElementById('lyrics-instrumental-info');
+    if (infoEl && (infoEl.innerHTML.includes("Instrumental läuft") || infoEl.innerText.includes("Suche"))) {
+        infoEl.innerText = "";
+    }
+}
+
 // 13. Antwort prüfen im Lyrics-Modus
 function checkLyricsAnswer() {
     if (!lyricsState.song || lyricsState.solved) return;
@@ -612,6 +743,9 @@ function revealLyrics(manual = true) {
     document.getElementById('lyrics-next-btn').classList.remove('hidden');
     document.getElementById('lyrics-guess-area').classList.add('hidden');
 
+    // Falls noch ein Instrumental lief, stoppen
+    stoppeLyricsInstrumental();
+
     // Song bei richtiger Antwort oder beim manuellen Auflösen anspielen!
     if (song.spotifyUri && typeof spieleSong === "function") {
         // Zufällige "mittige" Stelle zwischen Sekunde 30 und 75 wählen
@@ -623,6 +757,7 @@ function revealLyrics(manual = true) {
 
 // 15. Zurück ins Hauptmenü
 function leaveLyricsMode() {
+    stoppeLyricsInstrumental();
     if (typeof stoppeSpotify === "function") stoppeSpotify(true);
     document.getElementById('lyrics-mode-screen').classList.add('hidden');
     document.getElementById('start-screen').classList.remove('hidden');

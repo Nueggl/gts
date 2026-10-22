@@ -67,12 +67,16 @@
             </div>
 
             <div class="filter-group">
-                <label>Genre:</label>
-                <div id="genre-filters" class="checkbox-group"></div>
-            </div>
-
-            <div class="filter-group">
-                <label><input type="checkbox" id="admin-mode-toggle"> Admin-Modus aktivieren</label>
+                <div id="genre-toggle-header" onclick="toggleGenreAccordion()" class="genre-accordion-header">
+                    <div>
+                        <span style="font-weight: bold; color: #ddd;">Genres</span>
+                        <span id="genre-selected-badge" style="font-size: 0.85em; color: #0088ff; margin-left: 8px; display: none;"></span>
+                    </div>
+                    <span id="genre-toggle-icon" class="genre-toggle-arrow">▶</span>
+                </div>
+                <div id="genre-filters-wrapper" class="genre-accordion-content hidden">
+                    <div id="genre-filters" class="checkbox-group"></div>
+                </div>
             </div>
 
             <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled style="margin-bottom: 10px; margin-top: 10px;">Lade Songs...</button>
@@ -175,10 +179,12 @@
                 <button onclick="revealLyrics(true)" style="background-color: #6c757d;">Auflösen</button>
             </div>
 
-            <div>
-                <button onclick="zeigeLyricsBuchstabe('interpret')" style="background-color: #ffc107; color: black; margin-right: 5px;">🔤 Interpret-Tipp</button>
+            <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+                <button onclick="zeigeLyricsBuchstabe('interpret')" style="background-color: #ffc107; color: black;">🔤 Interpret-Tipp</button>
                 <button onclick="zeigeLyricsBuchstabe('titel')" style="background-color: #ffc107; color: black;">🔤 Titel-Tipp</button>
+                <button id="lyrics-btn-instrumental" onclick="starteLyricsInstrumentalTipp()" style="background-color: #9c27b0; color: white;">🎷 Instrumental-Tipp</button>
             </div>
+            <p id="lyrics-instrumental-info" style="font-size: 0.9em; color: #ce93d8; margin: 6px 0 0 0; min-height: 18px;"></p>
         </div>
     </div>
 
@@ -249,6 +255,11 @@
                 <div id="debug-log-list"></div>
             </div>
         </div>
+    </div>
+
+    <!-- Admin-Modus Toggle ganz unten rechts -->
+    <div id="admin-mode-corner">
+        <label><input type="checkbox" id="admin-mode-toggle"> Admin-Modus</label>
     </div>
 
     <script src="https://sdk.scdn.co/spotify-player.js"></script>

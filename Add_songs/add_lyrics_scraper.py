@@ -15,11 +15,17 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8')
 
-# Add path to import config_secrets from the current directory
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+if SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, SCRIPT_DIR)
+
 import config_secrets
 
-JSON_FILE = 'song_list_WIP.json'
+JSON_FILE = os.path.join(PROJECT_ROOT, 'song_list.json')
 GENIUS_TOKEN = config_secrets.GENIUS_ACCESS_TOKEN
 
 def clean_artist_name(name):

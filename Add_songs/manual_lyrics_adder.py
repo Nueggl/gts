@@ -8,7 +8,10 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8')
 
-JSON_FILE = 'song_list_WIP.json'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+JSON_FILE = os.path.join(PROJECT_ROOT, 'song_list.json')
 
 def main():
     if not os.path.exists(JSON_FILE):

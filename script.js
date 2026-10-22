@@ -9,7 +9,7 @@ let currentSort = { column: null, direction: 'asc' };
 const gifListe = ["gif1.gif", "gif2.gif", "gif3.gif", "gif4.gif", "gif5.gif", "gif6.gif", "gif7.gif", "gif8.gif"];
 
 
-let songliste = "song_list_WIP.json"
+let songliste = "song_list.json"
 
 
 function setTokenWithExpiry(token) {
@@ -199,6 +199,7 @@ function setupFilters() {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.value = genre;
+        checkbox.addEventListener('change', updateGenreSelectionLabel);
         label.appendChild(checkbox);
         label.appendChild(document.createTextNode(' ' + genre));
         genreContainer.appendChild(label);
@@ -206,6 +207,33 @@ function setupFilters() {
 
     // Initialisiere das Radar
     drawRadar();
+}
+
+function toggleGenreAccordion() {
+    const wrapper = document.getElementById('genre-filters-wrapper');
+    const arrow = document.getElementById('genre-toggle-icon');
+    if (!wrapper || !arrow) return;
+
+    const isHidden = wrapper.classList.toggle('hidden');
+    if (isHidden) {
+        arrow.classList.remove('open');
+    } else {
+        arrow.classList.add('open');
+    }
+}
+
+function updateGenreSelectionLabel() {
+    const selectedCount = document.querySelectorAll('#genre-filters input:checked').length;
+    const badge = document.getElementById('genre-selected-badge');
+    if (badge) {
+        if (selectedCount > 0) {
+            badge.innerText = `(${selectedCount} gewählt)`;
+            badge.style.display = 'inline';
+        } else {
+            badge.innerText = '';
+            badge.style.display = 'none';
+        }
+    }
 }
 
 function calculateFilteredSongs() {
