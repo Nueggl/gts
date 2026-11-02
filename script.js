@@ -557,6 +557,10 @@ function goHome() {
     document.getElementById('player-container').classList.add('hidden');
     document.getElementById('game-controls').classList.add('hidden');
     document.getElementById('song-list-screen').classList.add('hidden');
+    const tlDash = document.getElementById('timeline-dashboard-screen');
+    if (tlDash) tlDash.classList.add('hidden');
+    const tlGame = document.getElementById('timeline-game-screen');
+    if (tlGame) tlGame.classList.add('hidden');
     uiLog("Zurück zum Menü.");
 }
 

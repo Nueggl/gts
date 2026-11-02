@@ -81,7 +81,8 @@
 
             <button id="apply-filters-btn" onclick="applyFiltersAndStart()" disabled style="margin-bottom: 10px; margin-top: 10px;">Lade Songs...</button>
             <button onclick="showSongList()" style="background-color: #17a2b8; width: 100%; margin-bottom: 10px;">Alle Songs anzeigen 📋</button>
-            <button id="start-lyrics-btn" onclick="startLyricsMode()" style="background: linear-gradient(135deg, #9c27b0, #673ab7); width: 100%; font-size: 1.1em; font-weight: bold; border-radius: 5px; padding: 12px; box-shadow: 0 4px 10px rgba(156, 39, 176, 0.4);">🎤 Lyrics Modus spielen</button>
+            <button id="start-lyrics-btn" onclick="startLyricsMode()" style="background: linear-gradient(135deg, #9c27b0, #673ab7); width: 100%; font-size: 1.1em; font-weight: bold; border-radius: 5px; padding: 12px; margin-bottom: 10px; box-shadow: 0 4px 10px rgba(156, 39, 176, 0.4);">🎤 Lyrics Modus spielen</button>
+            <button id="start-timeline-btn" onclick="openTimelineDashboard()" style="background: linear-gradient(135deg, #ff9800, #e65100); width: 100%; font-size: 1.1em; font-weight: bold; border-radius: 5px; padding: 12px; box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);">⏳ Timeline Modus</button>
         </div>
 
         <div class="right-side-column">
@@ -188,6 +189,148 @@
         </div>
     </div>
 
+    <!-- TIMELINE SUB-DASHBOARD SCREEN -->
+    <div id="timeline-dashboard-screen" class="hidden">
+        <div class="timeline-dash-topbar">
+            <button onclick="closeTimelineDashboard()" class="tl-back-btn">🏠 Hauptdashboard</button>
+            <span id="timeline-filter-pool-badge" class="tl-pool-badge">-- Songs im Filter-Pool</span>
+        </div>
+
+        <h2 class="tl-dash-title">⏳ Timeline Modus</h2>
+        <p class="tl-dash-subtitle">Höre den Song und ordne ihn per Drag &amp; Drop an der richtigen Stelle im Zeitstrahl ein!</p>
+
+        <!-- Einfachauswahl Schwierigkeitsgrad -->
+        <div class="settings-panel tl-difficulty-panel">
+            <h3>Schwierigkeitsgrad</h3>
+            <div class="tl-difficulty-options">
+                <label class="tl-diff-card active" id="tl-diff-label-standard">
+                    <input type="radio" name="tl-difficulty" value="standard" checked onchange="updateTimelineDifficultyUI()">
+                    <div class="tl-diff-title">⭐ Standard</div>
+                    <div class="tl-diff-desc">Ordne Songs nach ihrem Erscheinungsjahr im Zeitstrahl ein.</div>
+                </label>
+                <label class="tl-diff-card" id="tl-diff-label-profi">
+                    <input type="radio" name="tl-difficulty" value="profi" onchange="updateTimelineDifficultyUI()">
+                    <div class="tl-diff-title">🔥 Profi <span class="tl-placeholder-tag">Platzhalter</span></div>
+                    <div class="tl-diff-desc">Erweiterte Regeln (in Planung – aktuell Standard-Regelwerk).</div>
+                </label>
+                <label class="tl-diff-card" id="tl-diff-label-experte">
+                    <input type="radio" name="tl-difficulty" value="experte" onchange="updateTimelineDifficultyUI()">
+                    <div class="tl-diff-title">💎 Experte <span class="tl-placeholder-tag">Platzhalter</span></div>
+                    <div class="tl-diff-desc">Maximale Herausforderung (in Planung – aktuell Standard-Regelwerk).</div>
+                </label>
+            </div>
+        </div>
+
+        <!-- Auswahl der 2 Timeline-Modi -->
+        <div class="tl-modes-grid">
+            <div class="settings-panel tl-mode-card">
+                <div class="tl-mode-icon">🏆</div>
+                <h3>Challenge Modus</h3>
+                <p class="tl-mode-text">
+                    Überstehe <strong>10 Runden</strong>! Du startest mit einer Referenzkarte auf dem Zeitstrahl und musst 10 Songs nacheinander fehlerfrei einordnen.
+                    <br><br>
+                    <span style="color: #ff8a80;">⚠️ Bei einem einzigen Fehler ist die Challenge verloren!</span>
+                </p>
+                <button onclick="startTimelineGame('challenge')" class="tl-start-mode-btn challenge-btn">🏆 Challenge starten (10 Runden)</button>
+            </div>
+
+            <div class="settings-panel tl-mode-card">
+                <div class="tl-mode-icon">♾️</div>
+                <h3>Endlos Modus</h3>
+                <p class="tl-mode-text">
+                    Baue deinen Zeitstrahl endlos auf! Es bleiben immer die <strong>letzten 10 eingeordneten Songs</strong> auf dem Zeitstrahl.
+                    <br><br>
+                    <span style="color: #80d8ff;">💡 Bei Fehlern erhältst du einen Pfeil-Tipp (älter/jünger) und darfst weiterprobieren!</span>
+                </p>
+                <button onclick="startTimelineGame('endless')" class="tl-start-mode-btn endless-btn">♾️ Endlos-Modus starten</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIMELINE GAME SCREEN -->
+    <div id="timeline-game-screen" class="hidden">
+        <!-- Obere Status- und Navigationsleiste -->
+        <div class="tl-game-header">
+            <div class="tl-header-left">
+                <button onclick="returnToTimelineDashboard()" class="tl-back-btn">🔙 Timeline-Dashboard</button>
+                <button id="tl-end-endless-btn" onclick="finishEndlessTimeline()" class="tl-end-btn hidden">🏁 Modus beenden</button>
+            </div>
+
+            <div class="tl-header-center">
+                <span id="tl-mode-badge" class="tl-badge">🏆 Challenge</span>
+                <span id="tl-diff-badge" class="tl-badge secondary">Standard</span>
+            </div>
+
+            <div class="tl-header-right" id="tl-stats-bar">
+                <!-- Dynamisch befüllt je nach Challenge / Endlos -->
+            </div>
+        </div>
+
+        <!-- Oberer mittlerer Bereich: Zu erratende Karte / Feedback / Rundenende -->
+        <div class="tl-upper-stage">
+            <!-- Mystery Card Box (während des Ratens sichtbar) -->
+            <div id="tl-mystery-stage" class="tl-mystery-stage">
+                <div class="tl-mystery-instructions" id="tl-mystery-instructions">
+                    Ziehe die Karte an die passende Stelle im Zeitstrahl!
+                </div>
+
+                <div class="tl-mystery-row">
+                    <div id="timeline-mystery-card" class="tl-mystery-card" draggable="true" title="Ziehe mich in den Zeitstrahl unten!">
+                        <div class="tl-mystery-cover">
+                            <span class="tl-mystery-qmark">?</span>
+                            <div class="tl-sound-wave" id="tl-sound-wave">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="tl-mystery-label">Welches Erscheinungsjahr?</div>
+                        <div class="tl-mystery-drag-hint">✋ Drag &amp; Drop</div>
+                    </div>
+
+                    <div class="tl-audio-side-controls">
+                        <button onclick="replayTimelineSong()" class="tl-audio-btn" title="Song erneut abspielen">🔄 Song neu abspielen</button>
+                        <button onclick="toggleTimelinePause()" id="tl-pause-btn" class="tl-audio-btn secondary" title="Musik pausieren">⏸️ Pause</button>
+                        <div id="tl-admin-hint" class="tl-admin-hint hidden"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback-Banner (für Pfeil-Tipp im Endlos-Modus oder Statusmeldungen) -->
+            <div id="tl-feedback-banner" class="tl-feedback-banner hidden"></div>
+
+            <!-- Runden-Erfolg / Weiter-Button (nach korrektem Ablegen) -->
+            <div id="tl-round-success-box" class="tl-round-action-box hidden">
+                <div id="tl-round-success-text" class="tl-success-headline"></div>
+                <button id="tl-next-round-btn" onclick="nextTimelineRound()" class="tl-next-btn">Nächster Song ⏩ <span style="font-size:0.8em; opacity:0.8;">(Enter)</span></button>
+            </div>
+
+            <!-- Spielende / Zusammenfassung (Challenge gewonnen/verloren oder Endlos beendet) -->
+            <div id="tl-gameover-box" class="tl-gameover-box hidden">
+                <h3 id="tl-gameover-title"></h3>
+                <div id="tl-gameover-details"></div>
+                <div class="tl-gameover-actions">
+                    <button id="tl-restart-btn" onclick="restartCurrentTimelineMode()" class="tl-next-btn">🔄 Neue Runde starten</button>
+                    <button onclick="returnToTimelineDashboard()" class="tl-back-btn large">🏠 Zum Timeline-Dashboard</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unterer Bereich: Dynamischer Zeitstrahl -->
+        <div class="tl-board-section">
+            <div class="tl-axis-labels">
+                <span>◄ Älter (Früher)</span>
+                <span id="tl-cards-count-label">1 Karte auf dem Zeitstrahl</span>
+                <span>Jünger (Später) ►</span>
+            </div>
+
+            <div id="timeline-board-wrapper" class="tl-board-wrapper">
+                <div class="tl-axis-line"></div>
+                <div id="timeline-track" class="tl-track">
+                    <!-- Dynamisch gerenderte Timeline-Karten + Drop-Indikator -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="song-list-screen" class="hidden">
         <button onclick="goHome()" style="background-color: #6c757d; margin-bottom: 15px;">🏠 Zurück</button>
         <h2>Bibliothek</h2>
@@ -268,6 +411,7 @@
     <script src="radar.js"></script>
     <script src="script.js"></script>
     <script src="lyrics-game.js"></script>
+    <script src="timeline-game.js"></script>
     <script src="ki-tipps.js"></script>
 </body>
 </html>

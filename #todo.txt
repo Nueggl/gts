@@ -6,3 +6,6 @@
     varianten mit eg. yt views mögl
 
 -album als tipp möglichkeit einbauen
+
+
+-credits songdatensatz: https://github.com/rfordatascience/tidytuesday/tree/main/data/2021/2021-09-14
