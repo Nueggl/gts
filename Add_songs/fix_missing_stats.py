@@ -91,21 +91,53 @@ def get_lastfm_listeners_api(artist, title):
         (clean_song_title(artist), clean_song_title(title))
     ]
     api_key = config_secrets.LASTFM_API_KEY
+    best_listeners = 0
+    seen = set()
+
     for a, t in queries:
+        if not a or not t or (a, t) in seen:
+            continue
+        seen.add((a, t))
+
         a_quoted = urllib.parse.quote(a)
         t_quoted = urllib.parse.quote(t)
-        url = f"http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key={api_key}&artist={a_quoted}&track={t_quoted}&format=json"
+
+        # 1. First try track.search (finds canonical track regardless of case/hyphens)
+        url_search = f"http://ws.audioscrobbler.com/2.0/?method=track.search&api_key={api_key}&artist={a_quoted}&track={t_quoted}&limit=10&format=json"
         try:
-            req = urllib.request.Request(url, headers={'User-Agent': 'MusicQuiz/1.0'})
+            req = urllib.request.Request(url_search, headers={'User-Agent': 'MusicQuiz/1.0'})
+            with urllib.request.urlopen(req) as response:
+                data = json.loads(response.read())
+                matches = data.get('results', {}).get('trackmatches', {}).get('track', [])
+                if isinstance(matches, dict):
+                    matches = [matches]
+                norm_a = re.sub(r'[^\w]', '', a.lower())
+                for m in matches:
+                    m_artist = re.sub(r'[^\w]', '', m.get('artist', '').lower())
+                    if norm_a in m_artist or m_artist in norm_a:
+                        try:
+                            l = int(m.get('listeners', 0))
+                            if l > best_listeners:
+                                best_listeners = l
+                        except ValueError:
+                            pass
+        except Exception:
+            pass
+
+        # 2. Also try track.getInfo and keep the maximum
+        url_info = f"http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key={api_key}&artist={a_quoted}&track={t_quoted}&format=json"
+        try:
+            req = urllib.request.Request(url_info, headers={'User-Agent': 'MusicQuiz/1.0'})
             with urllib.request.urlopen(req) as response:
                 data = json.loads(response.read())
                 if 'track' in data and 'listeners' in data['track']:
                     listeners = int(data['track']['listeners'])
-                    if listeners > 0:
-                        return listeners
+                    if listeners > best_listeners:
+                        best_listeners = listeners
         except Exception:
             pass
-    return 0
+
+    return best_listeners
 
 def parse_lastfm_html(html):
     blocks = re.findall(r'<li class="header-metadata-tnew-item">.*?</li>', html, re.DOTALL)

@@ -1,1 +1,5306 @@
-[]
+[
+    {
+        "title": "If I Didn’t Love You",
+        "artist": "Jason Aldean",
+        "spotifyUri": "spotify:track:7IYoh1u7dFM1xIWSEYd5B8",
+        "stats_youtube": 213835939,
+        "stats_lastfm": 0,
+        "stats_genius": 42107
+    },
+    {
+        "title": "Let's Go Brandon",
+        "artist": "Bryson Gray",
+        "spotifyUri": "spotify:track:6IXDX92KuQuqXvoZAjXIri",
+        "stats_youtube": 7410931,
+        "stats_lastfm": 0,
+        "stats_genius": 852
+    },
+    {
+        "title": "Thinking 'Bout You (feat. MacKenzie Porter)",
+        "artist": "Dustin Lynch",
+        "spotifyUri": "spotify:track:5eUpUFdFaAeovPau6lQkqK",
+        "stats_youtube": 26426110,
+        "stats_lastfm": 0,
+        "stats_genius": 63603
+    },
+    {
+        "title": "Memory I Don't Mess With",
+        "artist": "Lee Brice",
+        "spotifyUri": "spotify:track:1zYZs8Vbjhbzx5M3olcRnm",
+        "stats_youtube": 106274810,
+        "stats_lastfm": 0,
+        "stats_genius": 23326
+    },
+    {
+        "title": "GYALIS",
+        "artist": "Capella Grey",
+        "spotifyUri": "spotify:track:7wpyrkjEgz7W1vNYDxMKrF",
+        "stats_youtube": 0,
+        "stats_lastfm": 61597,
+        "stats_genius": 88419
+    },
+    {
+        "title": "Memory - GOLDHOUSE x Mokita Remix",
+        "artist": "Kane Brown",
+        "spotifyUri": "spotify:track:4XZ8YGsNIF4UqE324Mbgfg",
+        "stats_youtube": 211068,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "'Til You Can't",
+        "artist": "Cody Johnson",
+        "spotifyUri": "spotify:track:4k3lPl8YTKuY8c1HelVnm3",
+        "stats_youtube": 162529484,
+        "stats_lastfm": 0,
+        "stats_genius": 75872
+    },
+    {
+        "title": "Switches & Dracs (with Lil Durk feat. EST Gee)",
+        "artist": "Moneybagg Yo",
+        "spotifyUri": "spotify:track:4c7LkE1lSNj3RR4cZo0jEi",
+        "stats_youtube": 34892047,
+        "stats_lastfm": 0,
+        "stats_genius": 46039
+    },
+    {
+        "title": "WHOLE LOTTA MONEY (feat. Nicki Minaj) - Remix",
+        "artist": "BIA",
+        "spotifyUri": "spotify:track:67G6iaOw8DZqp1z8STR89R",
+        "stats_youtube": 47202628,
+        "stats_lastfm": 0,
+        "stats_genius": 505382
+    },
+    {
+        "title": "Who's In Your Head",
+        "artist": "Jonas Brothers",
+        "spotifyUri": "spotify:track:5nhW8I46uDE5sc5ouEbzao",
+        "stats_youtube": 19387185,
+        "stats_lastfm": 0,
+        "stats_genius": 34078
+    },
+    {
+        "title": "Come Through (feat. Chris Brown)",
+        "artist": "H.E.R.",
+        "spotifyUri": "spotify:track:3krZxyBsWEHfEfJegYaWTd",
+        "stats_youtube": 213643821,
+        "stats_lastfm": 0,
+        "stats_genius": 2938
+    },
+    {
+        "title": "Let Somebody Go - Single Version",
+        "artist": "Coldplay",
+        "spotifyUri": "spotify:track:59GSz2S248YmyMYavpcxFI",
+        "stats_youtube": 83176278,
+        "stats_lastfm": 0,
+        "stats_genius": 1194
+    },
+    {
+        "title": "Drinkin’ Beer. Talkin’ God. Amen. (feat. Florida Georgia Line)",
+        "artist": "Chase Rice",
+        "spotifyUri": "spotify:track:0rOVgtieEk5SoypbulRiKI",
+        "stats_youtube": 7123820,
+        "stats_lastfm": 0,
+        "stats_genius": 5109
+    },
+    {
+        "title": "Feelin' Like Tunechi",
+        "artist": "Lil Wayne",
+        "spotifyUri": "spotify:track:4HTY26kzdGCKJF1EqcRd2J",
+        "stats_youtube": 91866630,
+        "stats_lastfm": 0,
+        "stats_genius": 28842
+    },
+    {
+        "title": "I Can't Take It Back",
+        "artist": "YoungBoy Never Broke Again",
+        "spotifyUri": "spotify:track:1BCHhb7Zd9mK4X602uhZi3",
+        "stats_youtube": 31179,
+        "stats_lastfm": 0,
+        "stats_genius": 67814
+    },
+    {
+        "title": "Forgiato",
+        "artist": "YoungBoy Never Broke Again",
+        "spotifyUri": "spotify:track:6nGwQVNLVqjUOPdzqIwB7U",
+        "stats_youtube": 0,
+        "stats_lastfm": 34743,
+        "stats_genius": 48811
+    },
+    {
+        "title": "We Didn't Have Much",
+        "artist": "Justin Moore",
+        "spotifyUri": "spotify:track:0Iuw6WPws324i7G7sCejTX",
+        "stats_youtube": 91313234,
+        "stats_lastfm": 0,
+        "stats_genius": 8738
+    },
+    {
+        "title": "F*****g Fans",
+        "artist": "Drake",
+        "spotifyUri": "spotify:track:3RkNXZvOSMMElmmXztDc94",
+        "stats_youtube": 12546468,
+        "stats_lastfm": 0,
+        "stats_genius": 41
+    },
+    {
+        "title": "I am not a woman, I'm a god",
+        "artist": "Halsey",
+        "spotifyUri": "spotify:track:5RhFmJifQe83FpQ6ZFFTZ5",
+        "stats_youtube": 24193083,
+        "stats_lastfm": 0,
+        "stats_genius": 304624
+    },
+    {
+        "title": "I GUESS I'M IN LOVE",
+        "artist": "Clinton Kane",
+        "spotifyUri": "spotify:track:1is8gU4RVcN4J8xItxWoOY",
+        "stats_youtube": 29553353,
+        "stats_lastfm": 0,
+        "stats_genius": 604027
+    },
+    {
+        "title": "What's Wrong",
+        "artist": "Rod Wave",
+        "spotifyUri": "spotify:track:1jNapyyVxPB4X6gewQjEM8",
+        "stats_youtube": 78006541,
+        "stats_lastfm": 0,
+        "stats_genius": 99301
+    },
+    {
+        "title": "WUSYANAME (feat. Youngboy Never Broke Again & Ty Dolla $ign)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:5B0kgjHULYJhAQkK5XsMoC",
+        "stats_youtube": 253363300,
+        "stats_lastfm": 0,
+        "stats_genius": 934384
+    },
+    {
+        "title": "Mr. Jones",
+        "artist": "Pop Smoke",
+        "spotifyUri": "spotify:track:4B1FwBjnCqSpHrSqImzbtP",
+        "stats_youtube": 438639351,
+        "stats_lastfm": 0,
+        "stats_genius": 104031
+    },
+    {
+        "title": "t r a n s p a r e n t s o u l feat. Travis Barker",
+        "artist": "WILLOW",
+        "spotifyUri": "spotify:track:1QL7nSDZCwZMnbisV4KOXt",
+        "stats_youtube": 25247718,
+        "stats_lastfm": 0,
+        "stats_genius": 1083
+    },
+    {
+        "title": "Breaking Up Was Easy In The 90's",
+        "artist": "Sam Hunt",
+        "spotifyUri": "spotify:track:4sf2L157iEgAR7yrCNLgSq",
+        "stats_youtube": 192106488,
+        "stats_lastfm": 0,
+        "stats_genius": 26106
+    },
+    {
+        "title": "Volando - Remix",
+        "artist": "Mora",
+        "spotifyUri": "spotify:track:0G2zPzWqVjR68iNPmx2TBe",
+        "stats_youtube": 611893322,
+        "stats_lastfm": 0,
+        "stats_genius": 515628
+    },
+    {
+        "title": "All I Know So Far",
+        "artist": "P!nk",
+        "spotifyUri": "spotify:track:4LmN3eU1R1vVEdKuDELpGk",
+        "stats_youtube": 141097176,
+        "stats_lastfm": 0,
+        "stats_genius": 96448
+    },
+    {
+        "title": "JUGGERNAUT (feat. Lil Uzi Vert & Pharrell Williams)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:7z4xW9WY86uH3gd1V9pfCM",
+        "stats_youtube": 24603381,
+        "stats_lastfm": 0,
+        "stats_genius": 544014
+    },
+    {
+        "title": "LEMONHEAD (feat. 42 Dugg)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:5fbHRCsGpFIOLRtlhCRFDR",
+        "stats_youtube": 9512931,
+        "stats_lastfm": 0,
+        "stats_genius": 468820
+    },
+    {
+        "title": "HOT WIND BLOWS (feat. Lil Wayne)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:3JJL91ilRV6fXhKqu0FGXs",
+        "stats_youtube": 32241591,
+        "stats_lastfm": 0,
+        "stats_genius": 407228
+    },
+    {
+        "title": "I Don't Do Drugs (feat. Ariana Grande)",
+        "artist": "Doja Cat",
+        "spotifyUri": "spotify:track:0FFsgUoFibYISzMxuGS61W",
+        "stats_youtube": 31605367,
+        "stats_lastfm": 0,
+        "stats_genius": 441200
+    },
+    {
+        "title": "SIR BAUDELAIRE (feat. DJ Drama)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:4ydmav4vl7hebadtfZtMrg",
+        "stats_youtube": 1683293,
+        "stats_lastfm": 0,
+        "stats_genius": 336548
+    },
+    {
+        "title": "SWEET / I THOUGHT YOU WANTED TO DANCE (feat. Brent Faiyaz & Fana Hues)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:3EG9FJ0ToLfgnc1IG2Z1wz",
+        "stats_youtube": 37781493,
+        "stats_lastfm": 0,
+        "stats_genius": 878181
+    },
+    {
+        "title": "RUNITUP (feat. Teezo Touchdown)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:13HsOwrwTA5HgLuoaDHncP",
+        "stats_youtube": 20518,
+        "stats_lastfm": 0,
+        "stats_genius": 295199
+    },
+    {
+        "title": "MANIFESTO (feat. Domo Genesis)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:6qouBO0wJtYc3k7DfKRUBx",
+        "stats_youtube": 1811495,
+        "stats_lastfm": 0,
+        "stats_genius": 371484
+    },
+    {
+        "title": "RISE! (feat. DAISY WORLD)",
+        "artist": "Tyler, The Creator",
+        "spotifyUri": "spotify:track:4Hta7Oy5W9HD0UgT1P8PPV",
+        "stats_youtube": 3691659,
+        "stats_lastfm": 0,
+        "stats_genius": 292144
+    },
+    {
+        "title": "No More Parties - Remix",
+        "artist": "Coi Leray",
+        "spotifyUri": "spotify:track:5A4WcRuy0FFEAC5pAK43oa",
+        "stats_youtube": 209222027,
+        "stats_lastfm": 0,
+        "stats_genius": 296822
+    },
+    {
+        "title": "p r i d e . i s . t h e . d e v i l (with Lil Baby)",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:5W8jRrZ6tWrTrqnKRtIQBf",
+        "stats_youtube": 43431183,
+        "stats_lastfm": 0,
+        "stats_genius": 970012
+    },
+    {
+        "title": "That's Facts",
+        "artist": "Lil Baby",
+        "spotifyUri": "spotify:track:6dug6dIV40JMz2myhafHrm",
+        "stats_youtube": 749753879,
+        "stats_lastfm": 0,
+        "stats_genius": 88030
+    },
+    {
+        "title": "Killer (feat. Jack Harlow & Cordae) - Remix",
+        "artist": "Eminem",
+        "spotifyUri": "spotify:track:7zl7kehxesNEo2pYkKXTSe",
+        "stats_youtube": 131863942,
+        "stats_lastfm": 0,
+        "stats_genius": 590606
+    },
+    {
+        "title": "a m a r i",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:2cnKST6T9qUo2i907lm8zX",
+        "stats_youtube": 417885673,
+        "stats_lastfm": 0,
+        "stats_genius": 887354
+    },
+    {
+        "title": "Goosebumps - Remix",
+        "artist": "Travis Scott",
+        "spotifyUri": "spotify:track:5uEYRdEIh9Bo4fpjDd4Na9",
+        "stats_youtube": 1164304791,
+        "stats_lastfm": 0,
+        "stats_genius": 853
+    },
+    {
+        "title": "i n t e r l u d e",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:08LwMWf5Tcfsd752EPzFV0",
+        "stats_youtube": 2643514,
+        "stats_lastfm": 0,
+        "stats_genius": 927007
+    },
+    {
+        "title": "a p p l y i n g . p r e s s u r e",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:1d7q712nXjG98HiwHk7HFS",
+        "stats_youtube": 36303533,
+        "stats_lastfm": 0,
+        "stats_genius": 534206
+    },
+    {
+        "title": "1 0 0 . m i l ‘ (with Bas)",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:4n6NDfYake476trCjJRNl0",
+        "stats_youtube": 46975585,
+        "stats_lastfm": 0,
+        "stats_genius": 398929
+    },
+    {
+        "title": "l e t . g o . m y . h a n d (with Bas & 6LACK)",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:0GAyuCo975IHGxxiLKDufB",
+        "stats_youtube": 82977421,
+        "stats_lastfm": 0,
+        "stats_genius": 672324
+    },
+    {
+        "title": "p u n c h i n ‘ . t h e . c l o c k",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:7ilwtjmDj6Xyx9Lp2LDFuq",
+        "stats_youtube": 8579504,
+        "stats_lastfm": 0,
+        "stats_genius": 395472
+    },
+    {
+        "title": "t h e . c l i m b . b a c k",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:5lLNBIyjp72btcnrjBG751",
+        "stats_youtube": 30941652,
+        "stats_lastfm": 0,
+        "stats_genius": 1043604
+    },
+    {
+        "title": "h u n g e r . o n . h i l l s i d e (with Bas)",
+        "artist": "J. Cole",
+        "spotifyUri": "spotify:track:5BwQjRasNcdRPuVWKcHto2",
+        "stats_youtube": 203638510,
+        "stats_lastfm": 0,
+        "stats_genius": 464365
+    },
+    {
+        "title": "Close To Me - G-LOVER Remix",
+        "artist": "Ali Amelie",
+        "spotifyUri": "spotify:track:75sUhDdFTkEcQOA9qWojYr",
+        "stats_youtube": 1231151,
+        "stats_lastfm": 0,
+        "stats_genius": 686
+    },
+    {
+        "title": "His & Hers (feat. Don Toliver & Lil Uzi Vert)",
+        "artist": "Internet Money",
+        "spotifyUri": "spotify:track:5LKIZ4UTKebSE5VFbLSQnr",
+        "stats_youtube": 41736655,
+        "stats_lastfm": 0,
+        "stats_genius": 274554
+    },
+    {
+        "title": "Crocodile Teeth (with Skillibeng) - Remix",
+        "artist": "Nicki Minaj",
+        "spotifyUri": "spotify:track:2nxy7TbWDWOBm2bseZJX2A",
+        "stats_youtube": 127024,
+        "stats_lastfm": 0,
+        "stats_genius": 158609
+    },
+    {
+        "title": "You're Mines Still (feat. Drake)",
+        "artist": "Yung Bleu",
+        "spotifyUri": "spotify:track:6tiKwZppNjrls8RsPQwK6r",
+        "stats_youtube": 443212014,
+        "stats_lastfm": 0,
+        "stats_genius": 120422
+    },
+    {
+        "title": "Ramen & OJ",
+        "artist": "Joyner Lucas",
+        "spotifyUri": "spotify:track:4TIqzdAssasqx3DAe6cG9J",
+        "stats_youtube": 749754755,
+        "stats_lastfm": 0,
+        "stats_genius": 317376
+    },
+    {
+        "title": "Hellcats & Trackhawks",
+        "artist": "Only The Family",
+        "spotifyUri": "spotify:track:53tv6ZbyeAwfAUwFaxYbfO",
+        "stats_youtube": 209222264,
+        "stats_lastfm": 0,
+        "stats_genius": 224027
+    },
+    {
+        "title": "SORRY NOT SORRY (feat. Nas, JAY-Z & James Fauntleroy) - Harmonies by The Hive",
+        "artist": "DJ Khaled",
+        "spotifyUri": "spotify:track:5OypcrFg58e4k2iYHi69ED",
+        "stats_youtube": 58546366,
+        "stats_lastfm": 0,
+        "stats_genius": 517239
+    },
+    {
+        "title": "My Head & My Heart - Claptone Remix",
+        "artist": "Ava Max",
+        "spotifyUri": "spotify:track:0AxhXARnISmbH5UqbqvtDP",
+        "stats_youtube": 529026186,
+        "stats_lastfm": 0,
+        "stats_genius": 1280
+    },
+    {
+        "title": "Momma’s House",
+        "artist": "Dustin Lynch",
+        "spotifyUri": "spotify:track:51FVpJr3WL7vvdfCa7j2jr",
+        "stats_youtube": 42523392,
+        "stats_lastfm": 0,
+        "stats_genius": 8729
+    },
+    {
+        "title": "Mr. Perfectly Fine (Taylor’s Version) (From The Vault)",
+        "artist": "Taylor Swift",
+        "spotifyUri": "spotify:track:2CYVETnhM9aytqrazYYwrK",
+        "stats_youtube": 52230389,
+        "stats_lastfm": 0,
+        "stats_genius": 250
+    },
+    {
+        "title": "Don't Forget",
+        "artist": "Rod Wave",
+        "spotifyUri": "spotify:track:1jReouUURqZ4LmgJ7bgXA3",
+        "stats_youtube": 11041962,
+        "stats_lastfm": 0,
+        "stats_genius": 106595
+    },
+    {
+        "title": "Pills & Billz",
+        "artist": "Rod Wave",
+        "spotifyUri": "spotify:track:0OMYllKltbIYT3XFzUKTfB",
+        "stats_youtube": 7938456,
+        "stats_lastfm": 0,
+        "stats_genius": 35172
+    },
+    {
+        "title": "What's Love??",
+        "artist": "Rod Wave",
+        "spotifyUri": "spotify:track:4NWJN6qnlOwHmMfOhrC5qZ",
+        "stats_youtube": 23193994,
+        "stats_lastfm": 0,
+        "stats_genius": 65151
+    },
+    {
+        "title": "Throat Baby (Go Baby) (with DaBaby & City Girls) - Remix",
+        "artist": "BRS Kash",
+        "spotifyUri": "spotify:track:15C4TnrrVdym7UykxQIOTZ",
+        "stats_youtube": 121820988,
+        "stats_lastfm": 0,
+        "stats_genius": 1013869
+    },
+    {
+        "title": "Moonwalking in Calabasas (feat. Blueface) - Remix",
+        "artist": "DDG",
+        "spotifyUri": "spotify:track:73xjJ1TIE6WP3HNKczQE4F",
+        "stats_youtube": 145599486,
+        "stats_lastfm": 0,
+        "stats_genius": 521299
+    },
+    {
+        "title": "Life's A Mess II (with Clever & Post Malone)",
+        "artist": "Juice WRLD",
+        "spotifyUri": "spotify:track:4O3RwH1TFG1EjPezLIYehI",
+        "stats_youtube": 824560599,
+        "stats_lastfm": 0,
+        "stats_genius": 135598
+    },
+    {
+        "title": "AP - Music from the film Boogie (Original Soundtrack)",
+        "artist": "Pop Smoke",
+        "spotifyUri": "spotify:track:0g7zmpC462tfLjVhdzLGcX",
+        "stats_youtube": 45864011,
+        "stats_lastfm": 0,
+        "stats_genius": 1111
+    },
+    {
+        "title": "Only Wanna Be With You - Pokémon 25 Version",
+        "artist": "Post Malone",
+        "spotifyUri": "spotify:track:3SawmGBjjq8EOYZJV11cJm",
+        "stats_youtube": 3193721210,
+        "stats_lastfm": 0,
+        "stats_genius": 76080
+    },
+    {
+        "title": "Should've Ducked (feat. Pooh Shiesty)",
+        "artist": "Lil Durk",
+        "spotifyUri": "spotify:track:1tEskhLQFPHfBqDaBgtkyO",
+        "stats_youtube": 97637783,
+        "stats_lastfm": 0,
+        "stats_genius": 246932
+    },
+    {
+        "title": "Mr. Right Now (feat. Drake)",
+        "artist": "21 Savage",
+        "spotifyUri": "spotify:track:4Q34FP1AT7GEl9oLgNtiWj",
+        "stats_youtube": 601837705,
+        "stats_lastfm": 0,
+        "stats_genius": 457307
+    },
+    {
+        "title": "Adderall Corvette Corvette - Remix",
+        "artist": "Popp Hunna",
+        "spotifyUri": "spotify:track:3OvgLkL8sMX4Kga8g0rd2j",
+        "stats_youtube": 57761668,
+        "stats_lastfm": 0,
+        "stats_genius": 266056
+    },
+    {
+        "title": "Hawái - Remix",
+        "artist": "Maluma",
+        "spotifyUri": "spotify:track:0GzuHFG4Ql6DoyxFRnIk3F",
+        "stats_youtube": 1238760176,
+        "stats_lastfm": 0,
+        "stats_genius": 555314
+    },
+    {
+        "title": "B.S. (feat. H.E.R.)",
+        "artist": "Jhené Aiko",
+        "spotifyUri": "spotify:track:63wx9vdskaXbYxyDx4oJCZ",
+        "stats_youtube": 87071253,
+        "stats_lastfm": 0,
+        "stats_genius": 727128
+    },
+    {
+        "title": "Whiskey’d My Way",
+        "artist": "Morgan Wallen",
+        "spotifyUri": "spotify:track:34FfJ0pI5XYD4zHZLm0wsi",
+        "stats_youtube": 63258626,
+        "stats_lastfm": 0,
+        "stats_genius": 27964
+    },
+    {
+        "title": "Only Thing That’s Gone",
+        "artist": "Morgan Wallen",
+        "spotifyUri": "spotify:track:0cLZboiFzp3rgYnPz33IJX",
+        "stats_youtube": 927111251,
+        "stats_lastfm": 0,
+        "stats_genius": 26416
+    },
+    {
+        "title": "Wonderin’ Bout The Wind",
+        "artist": "Morgan Wallen",
+        "spotifyUri": "spotify:track:34hCuaKq1l0BIPFlewPD4R",
+        "stats_youtube": 24167155,
+        "stats_lastfm": 0,
+        "stats_genius": 33912
+    },
+    {
+        "title": "Ain't Always The Cowboy",
+        "artist": "Jon Pardi",
+        "spotifyUri": "spotify:track:77XoAnllT85lmR9WP0D8dS",
+        "stats_youtube": 82139066,
+        "stats_lastfm": 0,
+        "stats_genius": 11811
+    },
+    {
+        "title": "Death Ain't Easy",
+        "artist": "Lil Durk",
+        "spotifyUri": "spotify:track:4d6NmHDQ64zEbzSAnr844z",
+        "stats_youtube": 32794148,
+        "stats_lastfm": 0,
+        "stats_genius": 123286
+    },
+    {
+        "title": "White Christmas - 1947 Version",
+        "artist": "Bing Crosby",
+        "spotifyUri": "spotify:track:3XsaSIPWvM61RIFfeb0BBR",
+        "stats_youtube": 10064310,
+        "stats_lastfm": 0,
+        "stats_genius": 154
+    },
+    {
+        "title": "(There's No Place Like) Home for the Holidays - 1959 Version",
+        "artist": "Perry Como",
+        "spotifyUri": "spotify:track:2GapxG7BxK55ihQRAlR39e",
+        "stats_youtube": 5186743,
+        "stats_lastfm": 0,
+        "stats_genius": 263
+    },
+    {
+        "title": "Here Comes Santa Claus (Right Down Santa Claus Lane) - 1947 Version",
+        "artist": "Gene Autry",
+        "spotifyUri": "spotify:track:25leEEaz1gIpp7o21Fqyjo",
+        "stats_youtube": 14373385,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Wonderful Christmastime - Edited Version / Remastered 2011",
+        "artist": "Paul McCartney",
+        "spotifyUri": "spotify:track:1SV1fxF65n9NhRHp3KlBuu",
+        "stats_youtube": 1121976047,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "You're A Mean One, Mr. Grinch",
+        "artist": "Thurl Ravenscroft",
+        "spotifyUri": "spotify:track:6ZgigeSB0XUMqc0jjzaq6d",
+        "stats_youtube": 57648159,
+        "stats_lastfm": 0,
+        "stats_genius": 1640411
+    },
+    {
+        "title": "Please Come Home for Christmas - 2013 Remaster",
+        "artist": "Eagles",
+        "spotifyUri": "spotify:track:3QIoEi8Enr9uHffwInGIsC",
+        "stats_youtube": 127612991,
+        "stats_lastfm": 0,
+        "stats_genius": 1397
+    },
+    {
+        "title": "Little Saint Nick - 1991 Remix",
+        "artist": "The Beach Boys",
+        "spotifyUri": "spotify:track:5xlS0QkVrSH7ssEbBgBzbM",
+        "stats_youtube": 13712454,
+        "stats_lastfm": 0,
+        "stats_genius": 21129
+    },
+    {
+        "title": "Rockin' Around The Christmas Tree",
+        "artist": "Justin Bieber",
+        "spotifyUri": "spotify:track:19pDGIQMBBBzteNjmzzjDN",
+        "stats_youtube": 127612991,
+        "stats_lastfm": 0,
+        "stats_genius": 3635
+    },
+    {
+        "title": "no body, no crime (feat. HAIM)",
+        "artist": "Taylor Swift",
+        "spotifyUri": "spotify:track:6uwfVkaOM1mcMkFmSn35ix",
+        "stats_youtube": 561163290,
+        "stats_lastfm": 0,
+        "stats_genius": 1071882
+    },
+    {
+        "title": "(He's) Raining In My Sunshine",
+        "artist": "Jay & The Americans",
+        "spotifyUri": "spotify:track:120BvxQsMS1M41PdBClcxa",
+        "stats_youtube": 6593,
+        "stats_lastfm": 0,
+        "stats_genius": 202
+    },
+    {
+        "title": "(Here They Come) From All Over The World",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:5TrvERHRtiRshORTehfs0w",
+        "stats_youtube": 58219,
+        "stats_lastfm": 0,
+        "stats_genius": 522
+    },
+    {
+        "title": "(I Could Only) Whisper Your Name",
+        "artist": "Harry Connick, Jr.",
+        "spotifyUri": "spotify:track:68EKUNtzGVapUS30PJDVKs",
+        "stats_youtube": 19629120,
+        "stats_lastfm": 0,
+        "stats_genius": 2002
+    },
+    {
+        "title": "(I'm A) Road Runner",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:5llZqDjRHnn5pAUswFqQCf",
+        "stats_youtube": 1000806,
+        "stats_lastfm": 0,
+        "stats_genius": 5474
+    },
+    {
+        "title": "(Sittin' On) The Dock Of The Bay",
+        "artist": "King Curtis & The Kingpins",
+        "spotifyUri": "spotify:track:4RJZSPNQcA7PG8AtNTm4fG",
+        "stats_youtube": 33319,
+        "stats_lastfm": 0,
+        "stats_genius": 8577
+    },
+    {
+        "title": "(Sittin' On) The Dock Of The Bay",
+        "artist": "Sergio Mendes & Brasil '66",
+        "spotifyUri": "spotify:track:0HJ545UgMU7ttqYHFvb6pn",
+        "stats_youtube": 182819,
+        "stats_lastfm": 0,
+        "stats_genius": 185
+    },
+    {
+        "title": "(They Long To Be) Close To You",
+        "artist": "Jerry Butler & Brenda Lee Eager",
+        "spotifyUri": "spotify:track:2vE5u8H9urlvYNqWV3ENyw",
+        "stats_youtube": 45361,
+        "stats_lastfm": 0,
+        "stats_genius": 3690
+    },
+    {
+        "title": "(We've Got) Honey Love",
+        "artist": "Martha Reeves & The Vandellas",
+        "spotifyUri": "spotify:track:2Gj1vc5Z4cX673brTMDe8W",
+        "stats_youtube": 179022,
+        "stats_lastfm": 0,
+        "stats_genius": 397
+    },
+    {
+        "title": "(You're My) Soul And Inspiration",
+        "artist": "Donny & Marie Osmond",
+        "spotifyUri": "spotify:track:4GEhLyiNVnpioIIBVvj77j",
+        "stats_youtube": 673275,
+        "stats_lastfm": 0,
+        "stats_genius": 172
+    },
+    {
+        "title": "(You've Got) Personality And Chantilly Lace",
+        "artist": "Mitch Ryder",
+        "spotifyUri": "spotify:track:3aafnVOz0MIxHJqs93Ffon",
+        "stats_youtube": 255252,
+        "stats_lastfm": 60,
+        "stats_genius": 0
+    },
+    {
+        "title": "1, 2 Many",
+        "artist": "Luke Combs & Brooks & Dunn",
+        "spotifyUri": "spotify:track:6pgN3d6oBrhmrSAKBfWNsf",
+        "stats_youtube": 248136150,
+        "stats_lastfm": 0,
+        "stats_genius": 478
+    },
+    {
+        "title": "1900 Yesterday",
+        "artist": "Liz Damon's Orient Express",
+        "spotifyUri": "spotify:track:5UsiMHzHpuoGnG7RpBZkfJ",
+        "stats_youtube": 363961,
+        "stats_lastfm": 0,
+        "stats_genius": 5115
+    },
+    {
+        "title": "223's",
+        "artist": "YNW Melly & 9lokknine",
+        "spotifyUri": "spotify:track:4sjiIpEv617LDXaidKioOI",
+        "stats_youtube": 62604020,
+        "stats_lastfm": 0,
+        "stats_genius": 2338
+    },
+    {
+        "title": "31 Flavors",
+        "artist": "The Shirelles",
+        "spotifyUri": "spotify:track:24mR7NmnxdNXxxYnZ4qOTf",
+        "stats_youtube": 55487,
+        "stats_lastfm": 1745,
+        "stats_genius": 0
+    },
+    {
+        "title": "365",
+        "artist": "Zedd & Katy Perry",
+        "spotifyUri": "spotify:track:2XWjPtKdi5sucFYtVav07d",
+        "stats_youtube": 4396843388,
+        "stats_lastfm": 0,
+        "stats_genius": 1140
+    },
+    {
+        "title": "3rd Man Theme",
+        "artist": "Herb Alpert & The Tijuana Brass",
+        "spotifyUri": "spotify:track:2zj3dV24GbzQ7jNg8EwCgh",
+        "stats_youtube": 135041,
+        "stats_lastfm": 0,
+        "stats_genius": 119
+    },
+    {
+        "title": "4 Ever",
+        "artist": "Lil' Mo",
+        "spotifyUri": "spotify:track:42GyzxpX8RmcD7vWqWLGBt",
+        "stats_youtube": 8940137,
+        "stats_lastfm": 0,
+        "stats_genius": 74070
+    },
+    {
+        "title": "A Little Party Never Killed Nobody (All We Got)",
+        "artist": "Fergie, Q-Tip & GoonRock",
+        "spotifyUri": "spotify:track:1mz9ZrRYu3EPVg9ZHFtjjf",
+        "stats_youtube": 117820818,
+        "stats_lastfm": 0,
+        "stats_genius": 314
+    },
+    {
+        "title": "A Lover's Concerto",
+        "artist": "Mrs. Miller",
+        "spotifyUri": "spotify:track:5Hife6QE6Hnq72Ims8CX96",
+        "stats_youtube": 610971,
+        "stats_lastfm": 0,
+        "stats_genius": 7
+    },
+    {
+        "title": "A Lover's Prayer",
+        "artist": "Dion & The Belmonts",
+        "spotifyUri": "spotify:track:1KuUNurxWPWBl9Zdbba4Ce",
+        "stats_youtube": 75441,
+        "stats_lastfm": 0,
+        "stats_genius": 1053
+    },
+    {
+        "title": "A Lover's Question",
+        "artist": "Loggins & Messina",
+        "spotifyUri": "spotify:track:4uniE3cbok1zOTUC64G8Yq",
+        "stats_youtube": 25486,
+        "stats_lastfm": 0,
+        "stats_genius": 566
+    },
+    {
+        "title": "A Million To One",
+        "artist": "Five Stairsteps & Cubie",
+        "spotifyUri": "spotify:track:3XQ6vzfo6YBa95XUhD6wdN",
+        "stats_youtube": 7729426,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "A Part Of You",
+        "artist": "Brenda & The Tabulations",
+        "spotifyUri": "spotify:track:4M7TYUKxKVHD7xPDf6lzaY",
+        "stats_youtube": 177333,
+        "stats_lastfm": 0,
+        "stats_genius": 138
+    },
+    {
+        "title": "A Quiet Place",
+        "artist": "Garnet Mimms & The Enchanters",
+        "spotifyUri": "spotify:track:0F4y2dXS9MxisNOO8DksUt",
+        "stats_youtube": 147119,
+        "stats_lastfm": 0,
+        "stats_genius": 2456
+    },
+    {
+        "title": "A Rockin' Good Way (To Mess Around And Fall In Love)",
+        "artist": "Dinah Washington & Brook Benton",
+        "spotifyUri": "spotify:track:4ydSzWwxqtNdP4VPfQe8bf",
+        "stats_youtube": 10754,
+        "stats_lastfm": 0,
+        "stats_genius": 824
+    },
+    {
+        "title": "A Song I'd Like To Sing",
+        "artist": "Kris Kristofferson & Rita Coolidge",
+        "spotifyUri": "spotify:track:53aAtPr0aC6xZzLYBULWwm",
+        "stats_youtube": 1496045,
+        "stats_lastfm": 0,
+        "stats_genius": 1306
+    },
+    {
+        "title": "A Sunday Kind Of Love",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:60NDI5NHrseIRMcP8mp8Yy",
+        "stats_youtube": 3738723,
+        "stats_lastfm": 0,
+        "stats_genius": 93
+    },
+    {
+        "title": "A Teenager In Love",
+        "artist": "Dion & The Belmonts",
+        "spotifyUri": "spotify:track:0QGwOFQChzflLAmPq5NwKo",
+        "stats_youtube": 77455901,
+        "stats_lastfm": 0,
+        "stats_genius": 37142
+    },
+    {
+        "title": "A Woman Needs Love (Just Like You Do)",
+        "artist": "Ray Parker Jr. & Raydio",
+        "spotifyUri": "spotify:track:0DEwNI2DgasX1eprqCivJk",
+        "stats_youtube": 14527548,
+        "stats_lastfm": 0,
+        "stats_genius": 5662
+    },
+    {
+        "title": "A World Without Music",
+        "artist": "Archie Bell & The Drells",
+        "spotifyUri": "spotify:track:6cEfNnApZLeaYFUjHgpl4P",
+        "stats_youtube": 554121,
+        "stats_lastfm": 0,
+        "stats_genius": 32
+    },
+    {
+        "title": "A$AP Forever",
+        "artist": "A$AP Rocky",
+        "spotifyUri": "spotify:track:1YmF9PvLhIISIANoMLIYGq",
+        "stats_youtube": 99965865,
+        "stats_lastfm": 0,
+        "stats_genius": 30469
+    },
+    {
+        "title": "Abadabadango",
+        "artist": "Kim Carnes",
+        "spotifyUri": "spotify:track:6Xh5kq8X2wd5RIGrC8VFGF",
+        "stats_youtube": 368086279,
+        "stats_lastfm": 1419,
+        "stats_genius": 0
+    },
+    {
+        "title": "Abraham, Martin And John",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:7x5vC0sqmXpmTrgnuDMXmc",
+        "stats_youtube": 332834,
+        "stats_lastfm": 0,
+        "stats_genius": 1329
+    },
+    {
+        "title": "Across The River",
+        "artist": "Bruce Hornsby & The Range",
+        "spotifyUri": "spotify:track:72vw18TcgD8jmJvBr9qaVZ",
+        "stats_youtube": 11515573,
+        "stats_lastfm": 0,
+        "stats_genius": 1480
+    },
+    {
+        "title": "Adicto",
+        "artist": "Tainy, Anuel AA & Ozuna",
+        "spotifyUri": "spotify:track:3jbT1Y5MoPwEIpZndDDwVq",
+        "stats_youtube": 1365101863,
+        "stats_lastfm": 0,
+        "stats_genius": 1849
+    },
+    {
+        "title": "Afrikaan Beat",
+        "artist": "Bert Kaempfert And His Orchestra",
+        "spotifyUri": "spotify:track:6VCeTm0H5ShF688xcrksaX",
+        "stats_youtube": 20441402,
+        "stats_lastfm": 2052,
+        "stats_genius": 0
+    },
+    {
+        "title": "After All (Love Theme From \"Chances Are\")",
+        "artist": "Cher & Peter Cetera",
+        "spotifyUri": "spotify:track:0ACu78PvVsOFYIKgRkKbGZ",
+        "stats_youtube": 26189205,
+        "stats_lastfm": 0,
+        "stats_genius": 9868
+    },
+    {
+        "title": "Ain't It A Sad Thing",
+        "artist": "R. Dean Taylor",
+        "spotifyUri": "spotify:track:3aQf3GpxbiJWA0VgH3ayKU",
+        "stats_youtube": 27021,
+        "stats_lastfm": 0,
+        "stats_genius": 548
+    },
+    {
+        "title": "Ain't I",
+        "artist": "Yung L.A.",
+        "spotifyUri": "spotify:track:6cnufgF6qLJGZT2PRFZBr1",
+        "stats_youtube": 66986653,
+        "stats_lastfm": 0,
+        "stats_genius": 231918
+    },
+    {
+        "title": "Ain't No Playa",
+        "artist": "Rappin' 4-Tay",
+        "spotifyUri": "spotify:track:3Mu5nGJNRiDWdFgHV3OuIo",
+        "stats_youtube": 19998177,
+        "stats_lastfm": 0,
+        "stats_genius": 801
+    },
+    {
+        "title": "Ain't No Stoppin' Us Now",
+        "artist": "McFadden & Whitehead",
+        "spotifyUri": "spotify:track:6EOdY7I7Xm1vPP1cyaGbWZ",
+        "stats_youtube": 32659491,
+        "stats_lastfm": 0,
+        "stats_genius": 123138
+    },
+    {
+        "title": "Ain't Nothing 'Bout You",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:2BPiamp7M8ARGtxjNyTZWf",
+        "stats_youtube": 1114929,
+        "stats_lastfm": 0,
+        "stats_genius": 14603
+    },
+    {
+        "title": "Ain't Nothing Like The Real Thing",
+        "artist": "Donny & Marie Osmond",
+        "spotifyUri": "spotify:track:3s0D8NiqXmaZdINIojlvJF",
+        "stats_youtube": 104326,
+        "stats_lastfm": 0,
+        "stats_genius": 133
+    },
+    {
+        "title": "Ain't That Loving You (For More Reasons Than One)",
+        "artist": "Isaac Hayes & David Porter",
+        "spotifyUri": "spotify:track:18zKxJIMjdfHjAXMdTXdNJ",
+        "stats_youtube": 39827,
+        "stats_lastfm": 0,
+        "stats_genius": 531
+    },
+    {
+        "title": "Ain't Understanding Mellow",
+        "artist": "Jerry Butler & Brenda Lee Eager",
+        "spotifyUri": "spotify:track:5ehrJB4xFea5kph6jVoWtS",
+        "stats_youtube": 5925212,
+        "stats_lastfm": 0,
+        "stats_genius": 775
+    },
+    {
+        "title": "Ajax Airlines",
+        "artist": "Hudson and Landry",
+        "spotifyUri": "spotify:track:7hRu0zfGU7b9JX7frtM69m",
+        "stats_youtube": 199616,
+        "stats_lastfm": 34,
+        "stats_genius": 0
+    },
+    {
+        "title": "Alice Long (You're Still My Favorite Girlfriend)",
+        "artist": "Tommy Boyce & Bobby Hart",
+        "spotifyUri": "spotify:track:4eM7bZnwoRQbVXktBxwlXa",
+        "stats_youtube": 115652,
+        "stats_lastfm": 0,
+        "stats_genius": 33
+    },
+    {
+        "title": "All Da Smoke",
+        "artist": "Future & Young Thug",
+        "spotifyUri": "spotify:track:1wWRtPIKD7ZNvtsrzLyTev",
+        "stats_youtube": 166765068,
+        "stats_lastfm": 0,
+        "stats_genius": 1324
+    },
+    {
+        "title": "All I Do",
+        "artist": "Somethin' For The People",
+        "spotifyUri": "spotify:track:7gF0J2ixqSDWlOEDnQD1Wo",
+        "stats_youtube": 6188257,
+        "stats_lastfm": 0,
+        "stats_genius": 827
+    },
+    {
+        "title": "All I Have To Do Is Dream",
+        "artist": "Bobbie Gentry & Glen Campbell",
+        "spotifyUri": "spotify:track:3FUGhktHS6iEAReiDwXuqm",
+        "stats_youtube": 19376127,
+        "stats_lastfm": 0,
+        "stats_genius": 835
+    },
+    {
+        "title": "All Of You",
+        "artist": "Julio Iglesias & Diana Ross",
+        "spotifyUri": "spotify:track:6x1FtRaGBGXbRHcJh3rvYc",
+        "stats_youtube": 24458531,
+        "stats_lastfm": 0,
+        "stats_genius": 8303
+    },
+    {
+        "title": "All Strung Out",
+        "artist": "Nino Tempo & April Stevens",
+        "spotifyUri": "spotify:track:7ki09wB8QGbf6TGrHl8nHl",
+        "stats_youtube": 202042,
+        "stats_lastfm": 0,
+        "stats_genius": 439
+    },
+    {
+        "title": "All The Stars",
+        "artist": "Kendrick Lamar & SZA",
+        "spotifyUri": "spotify:track:3GCdLUSnKSMJhs4Tj6CV3s",
+        "stats_youtube": 768465857,
+        "stats_lastfm": 0,
+        "stats_genius": 643
+    },
+    {
+        "title": "All The Way Up",
+        "artist": "Fat Joe, Remy Ma & Jay Z",
+        "spotifyUri": "spotify:track:2AYTGaclgKXACh13nJRVcV",
+        "stats_youtube": 294398890,
+        "stats_lastfm": 0,
+        "stats_genius": 377732
+    },
+    {
+        "title": "Almost Is Never Enough",
+        "artist": "Ariana Grande & Nathan Sykes",
+        "spotifyUri": "spotify:track:63bo7NDoWdMFXufhsYOxwG",
+        "stats_youtube": 173217320,
+        "stats_lastfm": 0,
+        "stats_genius": 587195
+    },
+    {
+        "title": "Already Missing You",
+        "artist": "Gerald Levert & Eddie Levert, Sr.",
+        "spotifyUri": "spotify:track:3exi6r6vHLOhNkYcY1p6Sw",
+        "stats_youtube": 4534951,
+        "stats_lastfm": 0,
+        "stats_genius": 3040
+    },
+    {
+        "title": "Always On Your Side",
+        "artist": "Sheryl Crow & Sting",
+        "spotifyUri": "spotify:track:7FqDLD2f3VFdCYPCFpNvYq",
+        "stats_youtube": 376079585,
+        "stats_lastfm": 0,
+        "stats_genius": 11518
+    },
+    {
+        "title": "Always Something There To Remind Me",
+        "artist": "R.B. Greaves",
+        "spotifyUri": "spotify:track:1WFZTMBQabuD1Thl7OPBlk",
+        "stats_youtube": 13024883,
+        "stats_lastfm": 0,
+        "stats_genius": 589
+    },
+    {
+        "title": "American City Suite",
+        "artist": "Cashman & West",
+        "spotifyUri": "spotify:track:10uFwm8Jk3vEgvQdF2iwEL",
+        "stats_youtube": 104341,
+        "stats_lastfm": 0,
+        "stats_genius": 5069
+    },
+    {
+        "title": "And My Heart Sang (Tra La La)",
+        "artist": "Brenda & The Tabulations",
+        "spotifyUri": "spotify:track:3lhTdff9IclXiZmzU8NlgT",
+        "stats_youtube": 33990,
+        "stats_lastfm": 0,
+        "stats_genius": 124
+    },
+    {
+        "title": "And When I Die",
+        "artist": "Blood, Sweat & Tears",
+        "spotifyUri": "spotify:track:7kDPwGDjxDBONlPpkc1p77",
+        "stats_youtube": 1413974564,
+        "stats_lastfm": 0,
+        "stats_genius": 36343
+    },
+    {
+        "title": "Angelito",
+        "artist": "Rene & Rene",
+        "spotifyUri": "spotify:track:4G8asO3AOenqqlTzbQfUkg",
+        "stats_youtube": 3307374,
+        "stats_lastfm": 0,
+        "stats_genius": 7380
+    },
+    {
+        "title": "Annabella",
+        "artist": "Hamilton, Joe Frank & Reynolds",
+        "spotifyUri": "spotify:track:4wlL8MQ1V1UverYfXnan9v",
+        "stats_youtube": 23307688,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Anna",
+        "artist": "Jorgen Ingmann & His Guitar",
+        "spotifyUri": "spotify:track:2aSWWcr0Z3C7UWGJ37jH6H",
+        "stats_youtube": 35426,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Anotherloverholenyohead",
+        "artist": "Prince And The Revolution",
+        "spotifyUri": "spotify:track:1M9LnSZjeyLKn0GwT1Xg27",
+        "stats_youtube": 27622077,
+        "stats_lastfm": 7931,
+        "stats_genius": 0
+    },
+    {
+        "title": "Antisocial",
+        "artist": "Ed Sheeran & Travis Scott",
+        "spotifyUri": "spotify:track:1DhRbox3xkceP64k3JeYfW",
+        "stats_youtube": 74327829,
+        "stats_lastfm": 0,
+        "stats_genius": 2775
+    },
+    {
+        "title": "Anyone Else But You",
+        "artist": "Michael Cera & Ellen Page",
+        "spotifyUri": "spotify:track:60nfOJJ1xFVVAO1qCpngX6",
+        "stats_youtube": 16177891,
+        "stats_lastfm": 0,
+        "stats_genius": 24435
+    },
+    {
+        "title": "Anything For You",
+        "artist": "Gloria Estefan & Miami Sound Machine",
+        "spotifyUri": "spotify:track:3EIodfe9XNJJCq9dIYg3ng",
+        "stats_youtube": 162902821,
+        "stats_lastfm": 0,
+        "stats_genius": 8539
+    },
+    {
+        "title": "Anything",
+        "artist": "Eric Burdon & The Animals",
+        "spotifyUri": "spotify:track:2IL8DHt6a6aoIakPqKA4Me",
+        "stats_youtube": 13535831,
+        "stats_lastfm": 0,
+        "stats_genius": 1193
+    },
+    {
+        "title": "Apache",
+        "artist": "Jorgen Ingmann & His Guitar",
+        "spotifyUri": "spotify:track:0FKNRNN2mcY9dBjenoxbeY",
+        "stats_youtube": 55882312,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Ask Me",
+        "artist": "Ecstasy, Passion & Pain",
+        "spotifyUri": "spotify:track:0MLeCsnGwBYVzz7cVACbZD",
+        "stats_youtube": 78360,
+        "stats_lastfm": 0,
+        "stats_genius": 422
+    },
+    {
+        "title": "Astronauts",
+        "artist": "Future & Juice WRLD",
+        "spotifyUri": "spotify:track:2vs5ubqg8QUbfyWZpMfvWe",
+        "stats_youtube": 6689076,
+        "stats_lastfm": 0,
+        "stats_genius": 93232
+    },
+    {
+        "title": "At This Moment",
+        "artist": "Billy & The Beaters",
+        "spotifyUri": "spotify:track:6LDRTOMCSx81hKXAk1LuHd",
+        "stats_youtube": 5556704,
+        "stats_lastfm": 0,
+        "stats_genius": 26298
+    },
+    {
+        "title": "Ayo",
+        "artist": "Chris Brown & Tyga",
+        "spotifyUri": "spotify:track:0k6DnZMLoEUH8NGD5zh2SE",
+        "stats_youtube": 417065627,
+        "stats_lastfm": 0,
+        "stats_genius": 408
+    },
+    {
+        "title": "Babushka Boi",
+        "artist": "A$AP Rocky",
+        "spotifyUri": "spotify:track:643PW82aBMUa1FiWi5VQY7",
+        "stats_youtube": 57501011,
+        "stats_lastfm": 1,
+        "stats_genius": 0
+    },
+    {
+        "title": "Baby (You've Got What It Takes)",
+        "artist": "Dinah Washington & Brook Benton",
+        "spotifyUri": "spotify:track:0DICNd5XQ1og9UeYzxoNFV",
+        "stats_youtube": 259800,
+        "stats_lastfm": 0,
+        "stats_genius": 196
+    },
+    {
+        "title": "Baby Don't You Weep",
+        "artist": "Garnet Mimms & The Enchanters",
+        "spotifyUri": "spotify:track:2vyEq0b4Ybic5MLdJujonS",
+        "stats_youtube": 47091,
+        "stats_lastfm": 0,
+        "stats_genius": 19
+    },
+    {
+        "title": "Baby You're So Fine",
+        "artist": "Mickey & Sylvia",
+        "spotifyUri": "spotify:track:419PaL8alIb8WVe2a8f2zQ",
+        "stats_youtube": 31037709,
+        "stats_lastfm": 0,
+        "stats_genius": 2486
+    },
+    {
+        "title": "Baby You're So Right For Me",
+        "artist": "Brenda & The Tabulations",
+        "spotifyUri": "spotify:track:1fNGwzjBYbL6UnJh1mcbAN",
+        "stats_youtube": 5874,
+        "stats_lastfm": 0,
+        "stats_genius": 100
+    },
+    {
+        "title": "Baby, Baby Don't Cry",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:5kJpLI5axvOQbGt0x4Nsko",
+        "stats_youtube": 5436769,
+        "stats_lastfm": 0,
+        "stats_genius": 3422
+    },
+    {
+        "title": "Baby, I'll Give It To You",
+        "artist": "Seals & Crofts",
+        "spotifyUri": "spotify:track:6GgKW7XGTtXwzCT2cfuQ5O",
+        "stats_youtube": 18512,
+        "stats_lastfm": 0,
+        "stats_genius": 825
+    },
+    {
+        "title": "Baby",
+        "artist": "Lil Baby & DaBaby",
+        "spotifyUri": "spotify:track:78QR3Wp35dqAhFEc2qAGjE",
+        "stats_youtube": 605384723,
+        "stats_lastfm": 0,
+        "stats_genius": 8824
+    },
+    {
+        "title": "Bacc At It Again",
+        "artist": "Yella Beezy, Gucci Mane & Quavo",
+        "spotifyUri": "spotify:track:2biNa12dMbHJrHVFRt8JyO",
+        "stats_youtube": 687947663,
+        "stats_lastfm": 0,
+        "stats_genius": 48905
+    },
+    {
+        "title": "Back On Road",
+        "artist": "Gucci Mane & Drake",
+        "spotifyUri": "spotify:track:39liuGHPxn2sAyvO6DINor",
+        "stats_youtube": 18687484,
+        "stats_lastfm": 0,
+        "stats_genius": 164658
+    },
+    {
+        "title": "Back To The Hop",
+        "artist": "Danny & The Juniors",
+        "spotifyUri": "spotify:track:56FHQO6UrbQDc8BDAi9nwg",
+        "stats_youtube": 8972171,
+        "stats_lastfm": 0,
+        "stats_genius": 736
+    },
+    {
+        "title": "Bad Boy This Bad Boy That",
+        "artist": "Bad Boy's Da Band",
+        "spotifyUri": "spotify:track:13QMUA813rB5QdsePrPRoo",
+        "stats_youtube": 7998895,
+        "stats_lastfm": 0,
+        "stats_genius": 5302
+    },
+    {
+        "title": "Bandit",
+        "artist": "Juice WRLD & YoungBoy Never Broke Again",
+        "spotifyUri": "spotify:track:6Gg1gjgKi2AK4e0qzsR7sd",
+        "stats_youtube": 522857838,
+        "stats_lastfm": 0,
+        "stats_genius": 1131
+    },
+    {
+        "title": "Bang Bang",
+        "artist": "Jessie J, Ariana Grande & Nicki Minaj",
+        "spotifyUri": "spotify:track:0puf9yIluy9W0vpMEUoAnN",
+        "stats_youtube": 3746630919,
+        "stats_lastfm": 0,
+        "stats_genius": 1983
+    },
+    {
+        "title": "Batman",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:0GngL4xwwPNxNzAh7ibSDl",
+        "stats_youtube": 25966,
+        "stats_lastfm": 0,
+        "stats_genius": 944
+    },
+    {
+        "title": "Battle Of Gettysburg",
+        "artist": "Fred Darian",
+        "spotifyUri": "spotify:track:7HkFPQouWNbR5lpHf0PtSH",
+        "stats_youtube": 4753,
+        "stats_lastfm": 75,
+        "stats_genius": 0
+    },
+    {
+        "title": "Battle Scars",
+        "artist": "Lupe Fiasco & Guy Sebastian",
+        "spotifyUri": "spotify:track:1hWYT0w2R0J19rlVkiez7X",
+        "stats_youtube": 85485944,
+        "stats_lastfm": 0,
+        "stats_genius": 1779
+    },
+    {
+        "title": "Be Mine (Tonight)",
+        "artist": "Grover Washington, Jr.",
+        "spotifyUri": "spotify:track:2YEPUm6I2jmrh75dIKJou6",
+        "stats_youtube": 32381907,
+        "stats_lastfm": 0,
+        "stats_genius": 2232
+    },
+    {
+        "title": "Be Your Man",
+        "artist": "Jesse Johnson's Revue",
+        "spotifyUri": "spotify:track:0TIxC2WBIbWok5ySEOemeY",
+        "stats_youtube": 1205449,
+        "stats_lastfm": 0,
+        "stats_genius": 363
+    },
+    {
+        "title": "Beauty And The Beast",
+        "artist": "Ariana Grande & John Legend",
+        "spotifyUri": "spotify:track:7wMPhUSe6CZga1vOMpLTJP",
+        "stats_youtube": 1643250548,
+        "stats_lastfm": 0,
+        "stats_genius": 1431
+    },
+    {
+        "title": "Bed Intruder Song",
+        "artist": "Antoine Dodson & The Gregory Brothers",
+        "spotifyUri": "spotify:track:0NC8RcLp8ibhwsvUDn7wW1",
+        "stats_youtube": 159444883,
+        "stats_lastfm": 0,
+        "stats_genius": 53721
+    },
+    {
+        "title": "Before And After",
+        "artist": "Chad & Jeremy",
+        "spotifyUri": "spotify:track:66ark8uqwtus4LkRSTn8UG",
+        "stats_youtube": 73107,
+        "stats_lastfm": 0,
+        "stats_genius": 575
+    },
+    {
+        "title": "Bei Mir Bist Du Schön",
+        "artist": "Louis Prima And Keely Smith",
+        "spotifyUri": "spotify:track:0LHzUDNC0exyk9Lypo9tjn",
+        "stats_youtube": 3161672,
+        "stats_lastfm": 34,
+        "stats_genius": 0
+    },
+    {
+        "title": "Belly",
+        "artist": "Lil Baby & Gunna",
+        "spotifyUri": "spotify:track:1yQvL8SzbF5JCroRKk9F07",
+        "stats_youtube": 100873661,
+        "stats_lastfm": 0,
+        "stats_genius": 142
+    },
+    {
+        "title": "BEST ON EARTH",
+        "artist": "Russ & BIA",
+        "spotifyUri": "spotify:track:2Xo3rLHjXfdb4avN68aQyi",
+        "stats_youtube": 78848465,
+        "stats_lastfm": 0,
+        "stats_genius": 27892
+    },
+    {
+        "title": "Betcha Say That",
+        "artist": "Gloria Estefan & Miami Sound Machine",
+        "spotifyUri": "spotify:track:6k6bwPqngQMFBpoimRV7ID",
+        "stats_youtube": 162913858,
+        "stats_lastfm": 0,
+        "stats_genius": 426
+    },
+    {
+        "title": "Betty In Bermudas",
+        "artist": "The Dovells",
+        "spotifyUri": "spotify:track:6GRsBT5CdW83MZv4awUL45",
+        "stats_youtube": 10758,
+        "stats_lastfm": 325,
+        "stats_genius": 0
+    },
+    {
+        "title": "Big Boat",
+        "artist": "Peter, Paul & Mary",
+        "spotifyUri": "spotify:track:1PF4SFguF1v9REtBTcP9iO",
+        "stats_youtube": 1492197,
+        "stats_lastfm": 0,
+        "stats_genius": 849
+    },
+    {
+        "title": "Big Party",
+        "artist": "Barbara & The Browns",
+        "spotifyUri": "spotify:track:27NMby3j7tjrSvexwfCgio",
+        "stats_youtube": 5606,
+        "stats_lastfm": 0,
+        "stats_genius": 278
+    },
+    {
+        "title": "Big Purr (Prrdd)",
+        "artist": "Coi Leray & Pooh Shiesty",
+        "spotifyUri": "spotify:track:3b8gZMTPFzImCWZc70xX8b",
+        "stats_youtube": 123274993,
+        "stats_lastfm": 0,
+        "stats_genius": 184
+    },
+    {
+        "title": "Big Rings",
+        "artist": "Drake & Future",
+        "spotifyUri": "spotify:track:7jslhIiELQkgW9IHeYNOWE",
+        "stats_youtube": 87453678,
+        "stats_lastfm": 0,
+        "stats_genius": 30320
+    },
+    {
+        "title": "Big Shot",
+        "artist": "Kendrick Lamar & Travis Scott",
+        "spotifyUri": "spotify:track:5cXg9IQS34FzLVdHhp7hu7",
+        "stats_youtube": 21447039,
+        "stats_lastfm": 0,
+        "stats_genius": 217
+    },
+    {
+        "title": "Big Wide World",
+        "artist": "Teddy Randazzo",
+        "spotifyUri": "spotify:track:2zKlMyRTWA6oFdH8Zg9UBV",
+        "stats_youtube": 11226,
+        "stats_lastfm": 322,
+        "stats_genius": 0
+    },
+    {
+        "title": "Bigger > You",
+        "artist": "2 Chainz, Drake & Quavo",
+        "spotifyUri": "spotify:track:5S1IUPueD0xE0vj4zU3nSf",
+        "stats_youtube": 135776010,
+        "stats_lastfm": 0,
+        "stats_genius": 39
+    },
+    {
+        "title": "Billionaire",
+        "artist": "Glee Cast",
+        "spotifyUri": "spotify:track:6d5CfH0P84foEd1fkmp7po",
+        "stats_youtube": 1553386,
+        "stats_lastfm": 63601,
+        "stats_genius": 0
+    },
+    {
+        "title": "Birthday Sex",
+        "artist": "Jeremih",
+        "spotifyUri": "spotify:track:4NpDZPwSXmL0cCTaJuVrCw",
+        "stats_youtube": 0,
+        "stats_lastfm": 917435,
+        "stats_genius": 534249
+    },
+    {
+        "title": "Black Pearl",
+        "artist": "Sonny Charles And The Checkmates, Ltd.",
+        "spotifyUri": "spotify:track:0I1M0ETI5gHAHe2dwrdrlm",
+        "stats_youtube": 998450,
+        "stats_lastfm": 0,
+        "stats_genius": 6052
+    },
+    {
+        "title": "Black Superman - \"Muhammad Ali\"",
+        "artist": "Johnny Wakelin & The Kinshasa Band",
+        "spotifyUri": "spotify:track:2cHfcVPM15WgSg5K45Um7L",
+        "stats_youtube": 2918555,
+        "stats_lastfm": 0,
+        "stats_genius": 10184
+    },
+    {
+        "title": "Blame It On Love",
+        "artist": "Smokey Robinson & Barbara Mitchell",
+        "spotifyUri": "spotify:track:6rDHv55bgVt78p0gXEr36r",
+        "stats_youtube": 37686,
+        "stats_lastfm": 0,
+        "stats_genius": 367
+    },
+    {
+        "title": "Blase",
+        "artist": "Ty Dolla $ign",
+        "spotifyUri": "spotify:track:5suEtW2DUAfvroohjzgatb",
+        "stats_youtube": 439011445,
+        "stats_lastfm": 0,
+        "stats_genius": 669119
+    },
+    {
+        "title": "Blip Blop",
+        "artist": "Bill Doggett",
+        "spotifyUri": "spotify:track:0f29eihsm0ty8LHMCUdsnE",
+        "stats_youtube": 25660,
+        "stats_lastfm": 1136,
+        "stats_genius": 0
+    },
+    {
+        "title": "Blowin' In The Wind",
+        "artist": "Peter, Paul & Mary",
+        "spotifyUri": "spotify:track:62Yu8QL1g9pdbvN4XL9Rah",
+        "stats_youtube": 32153897,
+        "stats_lastfm": 0,
+        "stats_genius": 26139
+    },
+    {
+        "title": "Blue Guitar",
+        "artist": "Justin Hayward & John Lodge",
+        "spotifyUri": "spotify:track:1ppneH0uoQRhVcsIO1iuyt",
+        "stats_youtube": 1965276,
+        "stats_lastfm": 0,
+        "stats_genius": 560
+    },
+    {
+        "title": "Blue Monday",
+        "artist": "Orgy",
+        "spotifyUri": "spotify:track:5267gVdYWrLoz6ClOhlqmE",
+        "stats_youtube": 0,
+        "stats_lastfm": 387446,
+        "stats_genius": 21816
+    },
+    {
+        "title": "Blue Tango",
+        "artist": "Bill Black's Combo",
+        "spotifyUri": "spotify:track:7N29YCbJqmuQzspqfEebXr",
+        "stats_youtube": 58215,
+        "stats_lastfm": 0,
+        "stats_genius": 55
+    },
+    {
+        "title": "Body And Soul",
+        "artist": "Tony Bennett & Amy Winehouse",
+        "spotifyUri": "spotify:track:01hJnhpAmjzg85Etnz2ECH",
+        "stats_youtube": 56912391,
+        "stats_lastfm": 0,
+        "stats_genius": 27813
+    },
+    {
+        "title": "Bom Bidi Bom",
+        "artist": "Nick Jonas & Nicki Minaj",
+        "spotifyUri": "spotify:track:4PxDHEEyHgYC6NUgqMtDFy",
+        "stats_youtube": 9372555,
+        "stats_lastfm": 0,
+        "stats_genius": 1939
+    },
+    {
+        "title": "Bonanza",
+        "artist": "Al Caiola And His Orchestra",
+        "spotifyUri": "spotify:track:2TRW0hzjNvaZi9SMVIRTIX",
+        "stats_youtube": 219469,
+        "stats_lastfm": 107,
+        "stats_genius": 0
+    },
+    {
+        "title": "Boom! Shake The Room",
+        "artist": "Jazzy Jeff & The Fresh Prince",
+        "spotifyUri": "spotify:track:5ZDL1Ap2Mwhk5xhmQ41Ei2",
+        "stats_youtube": 79797347,
+        "stats_lastfm": 0,
+        "stats_genius": 49835
+    },
+    {
+        "title": "Boot Scootin' Boogie",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:7Fq9RwQxSn3kW85PrDUf0M",
+        "stats_youtube": 20164195,
+        "stats_lastfm": 0,
+        "stats_genius": 55345
+    },
+    {
+        "title": "Born Again",
+        "artist": "Sam & Dave",
+        "spotifyUri": "spotify:track:7K9IJLkS5w7PgI6udlylig",
+        "stats_youtube": 10883,
+        "stats_lastfm": 0,
+        "stats_genius": 478
+    },
+    {
+        "title": "Born In East L.A.",
+        "artist": "Cheech & Chong",
+        "spotifyUri": "spotify:track:5c4ae6HZez4gKb8YSEEAnI",
+        "stats_youtube": 3950096,
+        "stats_lastfm": 0,
+        "stats_genius": 11993
+    },
+    {
+        "title": "Born To Be Yours",
+        "artist": "Kygo & Imagine Dragons",
+        "spotifyUri": "spotify:track:0WVAQaxrT0wsGEG4BCVSn2",
+        "stats_youtube": 136009093,
+        "stats_lastfm": 0,
+        "stats_genius": 158
+    },
+    {
+        "title": "Boss Guitar",
+        "artist": "Duane Eddy and the Rebelettes",
+        "spotifyUri": "spotify:track:5I2BN42MnCPGBTjHxl63es",
+        "stats_youtube": 451146,
+        "stats_lastfm": 2938,
+        "stats_genius": 0
+    },
+    {
+        "title": "Botella Tras Botella",
+        "artist": "Gera MX + Christian Nodal",
+        "spotifyUri": "spotify:track:3sJ2sOrWDNByof17q4FGrv",
+        "stats_youtube": 833583900,
+        "stats_lastfm": 0,
+        "stats_genius": 199
+    },
+    {
+        "title": "Bottom Of The Bottle",
+        "artist": "Curren$Y",
+        "spotifyUri": "spotify:track:4WC72P8F0CnYmqoPYQ7JDD",
+        "stats_youtube": 27592562,
+        "stats_lastfm": 0,
+        "stats_genius": 1545
+    },
+    {
+        "title": "Boyfriend",
+        "artist": "Ariana Grande & Social House",
+        "spotifyUri": "spotify:track:0Ryd8975WihbObpp5cPW1t",
+        "stats_youtube": 718367142,
+        "stats_lastfm": 0,
+        "stats_genius": 221
+    },
+    {
+        "title": "Break My Heart",
+        "artist": "Spectacular! Cast",
+        "spotifyUri": "spotify:track:1WbeuiDYoCfCpvxisr1zRx",
+        "stats_youtube": 584402,
+        "stats_lastfm": 0,
+        "stats_genius": 4426
+    },
+    {
+        "title": "Breaking Up Is Hard To Do",
+        "artist": "Jivin' Gene And The Jokers",
+        "spotifyUri": "spotify:track:7nycDVxNZ3HLuiuUzuSmFO",
+        "stats_youtube": 222066,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Bubble Gum Music",
+        "artist": "Rock & Roll Double Bubble",
+        "spotifyUri": "spotify:track:3zOhnnA2bfMTGXEGO7jdwD",
+        "stats_youtube": 2620621,
+        "stats_lastfm": 0,
+        "stats_genius": 38277
+    },
+    {
+        "title": "Building Bridges",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:1mLStmTgqH0nBzds3S4jkJ",
+        "stats_youtube": 56749996,
+        "stats_lastfm": 0,
+        "stats_genius": 2185
+    },
+    {
+        "title": "Bumble Boogie",
+        "artist": "B. Bumble & The Stingers",
+        "spotifyUri": "spotify:track:1EodQWVLRiMQLtbN2MHIK6",
+        "stats_youtube": 1319885,
+        "stats_lastfm": 0,
+        "stats_genius": 95
+    },
+    {
+        "title": "Bump, Bump, Bump",
+        "artist": "B2K & P. Diddy",
+        "spotifyUri": "spotify:track:74jMwg2zsFMICzW3Wems6h",
+        "stats_youtube": 351859028,
+        "stats_lastfm": 0,
+        "stats_genius": 79025
+    },
+    {
+        "title": "Business Is Business",
+        "artist": "Lil Baby & Gunna",
+        "spotifyUri": "spotify:track:7roKDmJDOzkpfGpUQJ5EnL",
+        "stats_youtube": 6056470,
+        "stats_lastfm": 0,
+        "stats_genius": 439
+    },
+    {
+        "title": "Bustin' Loose",
+        "artist": "Chuck Brown & The Soul Searchers",
+        "spotifyUri": "spotify:track:3SJkwOKNpMz1z9nEICH6xa",
+        "stats_youtube": 4435338,
+        "stats_lastfm": 0,
+        "stats_genius": 257
+    },
+    {
+        "title": "But It's Alright",
+        "artist": "J.J. Jackson",
+        "spotifyUri": "spotify:track:1ZUJZkV29qWIF4jst1brN3",
+        "stats_youtube": 2771484,
+        "stats_lastfm": 0,
+        "stats_genius": 12391
+    },
+    {
+        "title": "Butterfly Fly Away",
+        "artist": "Miley Cyrus & Billy Ray Cyrus",
+        "spotifyUri": "spotify:track:2ZTCl6wQMDSMfY4s8GHZdj",
+        "stats_youtube": 12561588,
+        "stats_lastfm": 0,
+        "stats_genius": 115894
+    },
+    {
+        "title": "Bye Bye Blues",
+        "artist": "Bert Kaempfert And His Orchestra",
+        "spotifyUri": "spotify:track:2AMOfMnd5cIxWQJGS41iOi",
+        "stats_youtube": 113408,
+        "stats_lastfm": 343,
+        "stats_genius": 0
+    },
+    {
+        "title": "C-I-T-Y",
+        "artist": "John Cafferty & The Beaver Brown Band",
+        "spotifyUri": "spotify:track:5R4Zj7KP8TZRRD62uLSXaM",
+        "stats_youtube": 8492159,
+        "stats_lastfm": 0,
+        "stats_genius": 387
+    },
+    {
+        "title": "Cabaret",
+        "artist": "Herb Alpert & The Tijuana Brass",
+        "spotifyUri": "spotify:track:3FQinj62NzAWrDVEhAC0Pm",
+        "stats_youtube": 2649464,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "California Dreamin'",
+        "artist": "Bobby Womack",
+        "spotifyUri": "spotify:track:6G7MHIvSDR3ehXPkuDFAlM",
+        "stats_youtube": 22666984,
+        "stats_lastfm": 291833,
+        "stats_genius": 0
+    },
+    {
+        "title": "California Saga (On My Way To Sunny Californ-i-a)",
+        "artist": "The Beach Boys",
+        "spotifyUri": "spotify:track:4yDN62Q7lxZV4W09G1203C",
+        "stats_youtube": 6249491,
+        "stats_lastfm": 11507,
+        "stats_genius": 0
+    },
+    {
+        "title": "Call On Me",
+        "artist": "Janet & Nelly",
+        "spotifyUri": "spotify:track:1G32fy7VMCDLl92iGXvBEm",
+        "stats_youtube": 31945571,
+        "stats_lastfm": 0,
+        "stats_genius": 23154
+    },
+    {
+        "title": "Call You Mine",
+        "artist": "The Chainsmokers & Bebe Rexha",
+        "spotifyUri": "spotify:track:2oejEp50ZzPuQTQ6v54Evp",
+        "stats_youtube": 424642693,
+        "stats_lastfm": 0,
+        "stats_genius": 532
+    },
+    {
+        "title": "Callaita",
+        "artist": "Bad Bunny & Tainy",
+        "spotifyUri": "spotify:track:2TH65lNHgvLxCKXM3apjxI",
+        "stats_youtube": 920838,
+        "stats_lastfm": 0,
+        "stats_genius": 764708
+    },
+    {
+        "title": "Callin' Doctor Casey",
+        "artist": "John D. Loudermilk",
+        "spotifyUri": "spotify:track:2b29IX7VUkChXruI3pHKnc",
+        "stats_youtube": 98295,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Can't Let You Out Of My Sight",
+        "artist": "Chuck Jackson & Maxine Brown",
+        "spotifyUri": "spotify:track:114mpBe63wliCxik7TKcw6",
+        "stats_youtube": 6001,
+        "stats_lastfm": 0,
+        "stats_genius": 4531
+    },
+    {
+        "title": "Can't Stay Away From You",
+        "artist": "Gloria Estefan & Miami Sound Machine",
+        "spotifyUri": "spotify:track:3JeTD3IfCntCx3nLSAv56U",
+        "stats_youtube": 371586,
+        "stats_lastfm": 0,
+        "stats_genius": 5628
+    },
+    {
+        "title": "Can't Stop Dancin'",
+        "artist": "Captain & Tennille",
+        "spotifyUri": "spotify:track:5HTiE3ZFpvEhfiof5ThGrX",
+        "stats_youtube": 1025490,
+        "stats_lastfm": 0,
+        "stats_genius": 674
+    },
+    {
+        "title": "Can't Stop Groovin' Now, Wanna Do It Some More",
+        "artist": "B.T. Express",
+        "spotifyUri": "spotify:track:0obcOSapJ9Lmqy2UWfxBAy",
+        "stats_youtube": 42392,
+        "stats_lastfm": 0,
+        "stats_genius": 11891
+    },
+    {
+        "title": "Can't We Try",
+        "artist": "Rockell [Duet",
+        "spotifyUri": "spotify:track:05x2GKR3eEzPNglTIkAwVL",
+        "stats_youtube": 1268967,
+        "stats_lastfm": 0,
+        "stats_genius": 1545
+    },
+    {
+        "title": "Can't You Find Another Way (Of Doing It)",
+        "artist": "Sam & Dave",
+        "spotifyUri": "spotify:track:47bDqW4ZFJybnMwF9wkSZi",
+        "stats_youtube": 34529,
+        "stats_lastfm": 0,
+        "stats_genius": 211
+    },
+    {
+        "title": "Canadian Sunset",
+        "artist": "Etta Jones",
+        "spotifyUri": "spotify:track:7EKMfvkFVCaCPNDgeWZDm8",
+        "stats_youtube": 880721,
+        "stats_lastfm": 5431,
+        "stats_genius": 0
+    },
+    {
+        "title": "Capture The Moment",
+        "artist": "Jay & The Americans",
+        "spotifyUri": "spotify:track:7LcqujFVOGN4cfc7NGp41y",
+        "stats_youtube": 4068410,
+        "stats_lastfm": 0,
+        "stats_genius": 334
+    },
+    {
+        "title": "Cara, Mia",
+        "artist": "Jay & The Americans",
+        "spotifyUri": "spotify:track:0Arrnl9EB7LtzPISpNBQQf",
+        "stats_youtube": 16848503,
+        "stats_lastfm": 0,
+        "stats_genius": 15606
+    },
+    {
+        "title": "Caravan",
+        "artist": "Santo & Johnny",
+        "spotifyUri": "spotify:track:7upcKagl9OmfV6ETI6dH8S",
+        "stats_youtube": 329773,
+        "stats_lastfm": 0,
+        "stats_genius": 223
+    },
+    {
+        "title": "Carmen",
+        "artist": "Herb Alpert & The Tijuana Brass",
+        "spotifyUri": "spotify:track:12xuDqTLVeX5YGhu6iC42k",
+        "stats_youtube": 3693914,
+        "stats_lastfm": 0,
+        "stats_genius": 24
+    },
+    {
+        "title": "Carry Me, Carrie",
+        "artist": "Dr. Hook And The Medicine Show",
+        "spotifyUri": "spotify:track:3TZNUjZ0gbNy8Ruikja5V7",
+        "stats_youtube": 11001215,
+        "stats_lastfm": 0,
+        "stats_genius": 7830
+    },
+    {
+        "title": "Cashin' Out",
+        "artist": "Ca$h Out",
+        "spotifyUri": "spotify:track:1POAx4NMLOBPVKZUSsBh92",
+        "stats_youtube": 414027030,
+        "stats_lastfm": 0,
+        "stats_genius": 64
+    },
+    {
+        "title": "Casino Royale",
+        "artist": "Herb Alpert & The Tijuana Brass",
+        "spotifyUri": "spotify:track:4ZQmVvvP6s7K0acVdWoGMC",
+        "stats_youtube": 810971,
+        "stats_lastfm": 0,
+        "stats_genius": 107
+    },
+    {
+        "title": "Cathedrals",
+        "artist": "D.C. LaRue",
+        "spotifyUri": "spotify:track:2nyEZcFmGjz6QXtIjr4fkq",
+        "stats_youtube": 83351,
+        "stats_lastfm": 0,
+        "stats_genius": 571
+    },
+    {
+        "title": "Champions",
+        "artist": "Kanye West, Gucci Mane, Big Sean, 2 Chainz, Travi$ Scott, Yo Gotti, Quavo, Desiigner",
+        "spotifyUri": "spotify:track:2nBI3iWLhupR7LyAJ5GGkE",
+        "stats_youtube": 6430949,
+        "stats_lastfm": 0,
+        "stats_genius": 434
+    },
+    {
+        "title": "Change Locations",
+        "artist": "Drake & Future",
+        "spotifyUri": "spotify:track:4gowy3WT6D1yhMLgRBlf9C",
+        "stats_youtube": 439015662,
+        "stats_lastfm": 0,
+        "stats_genius": 30320
+    },
+    {
+        "title": "Change Me",
+        "artist": "Ruben Studdard",
+        "spotifyUri": "spotify:track:4j9Y9TzpmUE21e91R5DT7k",
+        "stats_youtube": 795562,
+        "stats_lastfm": 12181,
+        "stats_genius": 0
+    },
+    {
+        "title": "Change The Game",
+        "artist": "Jay-Z, Beanie Sigel And Memphis Bleek",
+        "spotifyUri": "spotify:track:5Vyw16U5k4bpGaRqfzyyMo",
+        "stats_youtube": 17525253,
+        "stats_lastfm": 0,
+        "stats_genius": 47540
+    },
+    {
+        "title": "Changed It",
+        "artist": "Nicki Minaj & Lil Wayne",
+        "spotifyUri": "spotify:track:63NTlJWNS65JjsE3QJYr20",
+        "stats_youtube": 1116692631,
+        "stats_lastfm": 0,
+        "stats_genius": 267288
+    },
+    {
+        "title": "Changes",
+        "artist": "Loggins & Messina",
+        "spotifyUri": "spotify:track:09Mc2hdXjaudHADkiJ3ooI",
+        "stats_youtube": 89306,
+        "stats_lastfm": 0,
+        "stats_genius": 1335
+    },
+    {
+        "title": "Chattanooga Choo Choo",
+        "artist": "Ernie Fields & Orch.",
+        "spotifyUri": "spotify:track:02IsRDM3VwxibJTEeloHG9",
+        "stats_youtube": 18739562,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Chattanooga Choo Choo",
+        "artist": "Tuxedo Junction",
+        "spotifyUri": "spotify:track:5zt4lrHyA7g54mARhrTyuJ",
+        "stats_youtube": 122994168,
+        "stats_lastfm": 261,
+        "stats_genius": 0
+    },
+    {
+        "title": "Check It Out",
+        "artist": "will.i.am & Nicki Minaj",
+        "spotifyUri": "spotify:track:5tMoj9U1ZAJ3pOMndaShr7",
+        "stats_youtube": 1116693195,
+        "stats_lastfm": 0,
+        "stats_genius": 53205
+    },
+    {
+        "title": "Cheer",
+        "artist": "Potliquor",
+        "spotifyUri": "spotify:track:3UHSbjTOdqvqdLV0asr7HC",
+        "stats_youtube": 44525,
+        "stats_lastfm": 314,
+        "stats_genius": 0
+    },
+    {
+        "title": "Cherry Pink And Apple Blossom White",
+        "artist": "Jerry Murad's Harmonicats",
+        "spotifyUri": "spotify:track:6Y65LpAnr4nWSdWTUgXsjw",
+        "stats_youtube": 469253,
+        "stats_lastfm": 8,
+        "stats_genius": 0
+    },
+    {
+        "title": "Chicken Noodle Soup.",
+        "artist": "Webstar & Young B",
+        "spotifyUri": "spotify:track:6PGrYbKY6I0LnKmAseNBO2",
+        "stats_youtube": 18776658,
+        "stats_lastfm": 0,
+        "stats_genius": 32277
+    },
+    {
+        "title": "Chill Bill",
+        "artist": "Rob $tone",
+        "spotifyUri": "spotify:track:5uDASfU19gDxSjW8cnCaBp",
+        "stats_youtube": 1120763774,
+        "stats_lastfm": 0,
+        "stats_genius": 1708343
+    },
+    {
+        "title": "Chillin' Like A Villain",
+        "artist": "Sofia Carson, Cameron Boyce, Booboo Stewart & Mitchell Hope",
+        "spotifyUri": "spotify:track:1rM0CnyUiiw6A9CHJRXjZA",
+        "stats_youtube": 297175958,
+        "stats_lastfm": 0,
+        "stats_genius": 22
+    },
+    {
+        "title": "China",
+        "artist": "Anuel AA, Daddy Yankee, Karol G, Ozuna & J Balvin",
+        "spotifyUri": "spotify:track:2ksOAxtIxY8yElEWw8RhgK",
+        "stats_youtube": 2384962910,
+        "stats_lastfm": 0,
+        "stats_genius": 75153
+    },
+    {
+        "title": "Chinese Checkers",
+        "artist": "Booker T. & The MG's",
+        "spotifyUri": "spotify:track:0MyGuEPxayhpnKbYu0d171",
+        "stats_youtube": 110678,
+        "stats_lastfm": 0,
+        "stats_genius": 120
+    },
+    {
+        "title": "Chinese Kung Fu",
+        "artist": "Banzaii",
+        "spotifyUri": "spotify:track:4dIkhZllZIPowSRkoenZrf",
+        "stats_youtube": 285192,
+        "stats_lastfm": 767,
+        "stats_genius": 0
+    },
+    {
+        "title": "Cinderella Sunshine",
+        "artist": "Paul Revere & The Raiders",
+        "spotifyUri": "spotify:track:4FJLbOUFTNl795TCcutUlA",
+        "stats_youtube": 30275,
+        "stats_lastfm": 0,
+        "stats_genius": 294
+    },
+    {
+        "title": "Cinnamon Girl",
+        "artist": "Neil Young & Crazy Horse",
+        "spotifyUri": "spotify:track:4gRfV6SEd0cTqeR9ksrbIs",
+        "stats_youtube": 1381335,
+        "stats_lastfm": 0,
+        "stats_genius": 11536
+    },
+    {
+        "title": "Circle",
+        "artist": "Edie Brickell & New Bohemians",
+        "spotifyUri": "spotify:track:3ykCBUy37D9J4jHhQid7l1",
+        "stats_youtube": 37947483,
+        "stats_lastfm": 0,
+        "stats_genius": 15185
+    },
+    {
+        "title": "Clementine",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:4ffUxFlnRQnEfgEtCVLjWs",
+        "stats_youtube": 1960524,
+        "stats_lastfm": 0,
+        "stats_genius": 305
+    },
+    {
+        "title": "Cleo's Back",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:62yuifQgxQo0czn9Pt26po",
+        "stats_youtube": 622611,
+        "stats_lastfm": 0,
+        "stats_genius": 682
+    },
+    {
+        "title": "Cleo's Mood",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:43YABWyEDz7auf9nW9j9hf",
+        "stats_youtube": 768992,
+        "stats_lastfm": 0,
+        "stats_genius": 503
+    },
+    {
+        "title": "Clock Strikes",
+        "artist": "Timbaland & Magoo",
+        "spotifyUri": "spotify:track:7rPmeZCDpblEzMQGErkB6y",
+        "stats_youtube": 416630,
+        "stats_lastfm": 0,
+        "stats_genius": 453
+    },
+    {
+        "title": "Close To Cathy",
+        "artist": "Mike Clifford",
+        "spotifyUri": "spotify:track:4EKhJzaAkrlpamL0SDrSw7",
+        "stats_youtube": 87053,
+        "stats_lastfm": 1308,
+        "stats_genius": 0
+    },
+    {
+        "title": "Close To You",
+        "artist": "B.T. Express",
+        "spotifyUri": "spotify:track:6F0lIh4zqlgCZLDAk9BvBL",
+        "stats_youtube": 44448,
+        "stats_lastfm": 0,
+        "stats_genius": 91
+    },
+    {
+        "title": "Close Your Eyes",
+        "artist": "Peaches & Herb",
+        "spotifyUri": "spotify:track:0d9rN4NbUgOtuPyQa2286E",
+        "stats_youtube": 1534286,
+        "stats_lastfm": 0,
+        "stats_genius": 2593
+    },
+    {
+        "title": "Close",
+        "artist": "Rae Sremmurd & Travis Scott",
+        "spotifyUri": "spotify:track:1oUudyBYVGMIC8JXeIsFzq",
+        "stats_youtube": 25727943,
+        "stats_lastfm": 0,
+        "stats_genius": 857
+    },
+    {
+        "title": "Cocktales",
+        "artist": "Too $hort",
+        "spotifyUri": "spotify:track:6oadMAqfdbOBvGib6lUpn3",
+        "stats_youtube": 46798225,
+        "stats_lastfm": 0,
+        "stats_genius": 10795
+    },
+    {
+        "title": "CoCo",
+        "artist": "O.T. Genasis",
+        "spotifyUri": "spotify:track:2JI71GHwq2LN8mtq3iCLYo",
+        "stats_youtube": 336298741,
+        "stats_lastfm": 0,
+        "stats_genius": 3151013
+    },
+    {
+        "title": "Come A Little Bit Closer",
+        "artist": "Jay & The Americans",
+        "spotifyUri": "spotify:track:252YuUdUaC5OojaBU0H1CP",
+        "stats_youtube": 10180189,
+        "stats_lastfm": 0,
+        "stats_genius": 99030
+    },
+    {
+        "title": "Come Along",
+        "artist": "Maurice Williams & The Zodiacs",
+        "spotifyUri": "spotify:track:0KkmbMeW0di1BgRRzN9ca6",
+        "stats_youtube": 37213,
+        "stats_lastfm": 0,
+        "stats_genius": 25
+    },
+    {
+        "title": "Come And Get These Memories",
+        "artist": "Martha & The Vandellas",
+        "spotifyUri": "spotify:track:5gwvsIrTVL4F76tn9xEhQ3",
+        "stats_youtube": 15313510,
+        "stats_lastfm": 0,
+        "stats_genius": 2168
+    },
+    {
+        "title": "Come Dance With Me",
+        "artist": "Jay & The Americans",
+        "spotifyUri": "spotify:track:48Ji4tkYnrCT44PYlkyQrk",
+        "stats_youtube": 889377,
+        "stats_lastfm": 0,
+        "stats_genius": 863
+    },
+    {
+        "title": "Come In From The Rain",
+        "artist": "Captain & Tennille",
+        "spotifyUri": "spotify:track:0jNFmyoVCCIbiCJaK8tEuJ",
+        "stats_youtube": 297933,
+        "stats_lastfm": 0,
+        "stats_genius": 1142
+    },
+    {
+        "title": "Come Join The Murder",
+        "artist": "The White Buffalo & The Forest Rangers",
+        "spotifyUri": "spotify:track:1jZoQ2R3wgs1UbOhio9j8I",
+        "stats_youtube": 12142076,
+        "stats_lastfm": 0,
+        "stats_genius": 204500
+    },
+    {
+        "title": "Come On Down To My Boat",
+        "artist": "Every Mothers' Son",
+        "spotifyUri": "spotify:track:26QAg7zLNAOSKbrslg07Mv",
+        "stats_youtube": 302266,
+        "stats_lastfm": 0,
+        "stats_genius": 4080
+    },
+    {
+        "title": "Come See About Me",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:6otraxvXsHr0s92xdV6kSm",
+        "stats_youtube": 250993,
+        "stats_lastfm": 0,
+        "stats_genius": 502
+    },
+    {
+        "title": "Come Thru",
+        "artist": "Summer Walker & Usher",
+        "spotifyUri": "spotify:track:3TTMUI5dFcbeNSDTTDY9M8",
+        "stats_youtube": 148618380,
+        "stats_lastfm": 0,
+        "stats_genius": 2076
+    },
+    {
+        "title": "Come To Me Softly",
+        "artist": "Jimmy James & The Vagabonds",
+        "spotifyUri": "spotify:track:5DqDDxSBUjo3WCl48jY2FC",
+        "stats_youtube": 477171,
+        "stats_lastfm": 0,
+        "stats_genius": 230
+    },
+    {
+        "title": "Come Together",
+        "artist": "Ike & Tina Turner & The Ikettes",
+        "spotifyUri": "spotify:track:03mWW5Mpi0RMRGHDki19bi",
+        "stats_youtube": 549147,
+        "stats_lastfm": 0,
+        "stats_genius": 3049
+    },
+    {
+        "title": "Comin' Home",
+        "artist": "Delaney & Bonnie & Friends/Eric Clapton",
+        "spotifyUri": "spotify:track:7ad6wbYbJEfYsrEKSGmOzh",
+        "stats_youtube": 274479,
+        "stats_lastfm": 0,
+        "stats_genius": 94486
+    },
+    {
+        "title": "Comin' On",
+        "artist": "Bill Black's Combo",
+        "spotifyUri": "spotify:track:3wNim33XFde28o2O84JzFK",
+        "stats_youtube": 3473,
+        "stats_lastfm": 0,
+        "stats_genius": 853
+    },
+    {
+        "title": "Con Calma",
+        "artist": "Daddy Yankee & Katy Perry",
+        "spotifyUri": "spotify:track:5w9c2J52mkdntKOmRLeM2m",
+        "stats_youtube": 3236770993,
+        "stats_lastfm": 0,
+        "stats_genius": 12446
+    },
+    {
+        "title": "Cool Places",
+        "artist": "Sparks & Jane Wiedlin",
+        "spotifyUri": "spotify:track:6w0A4rf6lIbFeFcIgFL1hV",
+        "stats_youtube": 4932990,
+        "stats_lastfm": 0,
+        "stats_genius": 2751
+    },
+    {
+        "title": "Could've Been",
+        "artist": "H.E.R.",
+        "spotifyUri": "spotify:track:6oEVnWKgPqIEPc53OYDNqG",
+        "stats_youtube": 278355028,
+        "stats_lastfm": 0,
+        "stats_genius": 142
+    },
+    {
+        "title": "Count Your Blessings",
+        "artist": "Ashford & Simpson",
+        "spotifyUri": "spotify:track:1e1yxzUse4GOyWt8PybS5K",
+        "stats_youtube": 12368298,
+        "stats_lastfm": 0,
+        "stats_genius": 1082
+    },
+    {
+        "title": "Country Girl - City Man",
+        "artist": "Billy Vera & Judy Clay",
+        "spotifyUri": "spotify:track:3ZcgnaHwd4Psa2ZzUkvdxb",
+        "stats_youtube": 15666,
+        "stats_lastfm": 0,
+        "stats_genius": 31075
+    },
+    {
+        "title": "Cowgirls Don't Cry",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:76fUOrKOcUnAceODDPBidy",
+        "stats_youtube": 248160227,
+        "stats_lastfm": 0,
+        "stats_genius": 9829
+    },
+    {
+        "title": "Crack A Bottle",
+        "artist": "Eminem, Dr. Dre & 50 Cent",
+        "spotifyUri": "spotify:track:4dK00wCxlqWEeN8BoM1BHT",
+        "stats_youtube": 2489912423,
+        "stats_lastfm": 0,
+        "stats_genius": 8404
+    },
+    {
+        "title": "Crazy About The La La La",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:7mTw5RU1OWIZid5gcfAXi0",
+        "stats_youtube": 19008,
+        "stats_lastfm": 0,
+        "stats_genius": 484
+    },
+    {
+        "title": "Creeque Alley",
+        "artist": "The Mamas & The Papas",
+        "spotifyUri": "spotify:track:2pfEVSZdq5McocgAYWhgLu",
+        "stats_youtube": 8296371,
+        "stats_lastfm": 0,
+        "stats_genius": 85011
+    },
+    {
+        "title": "Cruisin' For A Bruisin'",
+        "artist": "Ross Lynch, Grace Phipps And Jason Evigan",
+        "spotifyUri": "spotify:track:5e3UWcbvTaF5CJWu81MqlQ",
+        "stats_youtube": 170132297,
+        "stats_lastfm": 0,
+        "stats_genius": 85993
+    },
+    {
+        "title": "Cry Baby",
+        "artist": "Garnet Mimms & The Enchanters",
+        "spotifyUri": "spotify:track:6BiQOxPWVZvum3BZ2Bd4a7",
+        "stats_youtube": 1417959,
+        "stats_lastfm": 0,
+        "stats_genius": 2173
+    },
+    {
+        "title": "Crying",
+        "artist": "Jay & The Americans",
+        "spotifyUri": "spotify:track:2H3RYr8qMDAPACiHMRS4mH",
+        "stats_youtube": 16848645,
+        "stats_lastfm": 0,
+        "stats_genius": 322
+    },
+    {
+        "title": "Cuban Links",
+        "artist": "Rod Wave & Kevin Gates",
+        "spotifyUri": "spotify:track:4ovta8hB5ymzzsR5EaCEdx",
+        "stats_youtube": 359719182,
+        "stats_lastfm": 0,
+        "stats_genius": 14880
+    },
+    {
+        "title": "Cum On Feel The Noize",
+        "artist": "Quiet Riot",
+        "spotifyUri": "spotify:track:6FBmHx1FuaSnTnnnaThgbF",
+        "stats_youtube": 0,
+        "stats_lastfm": 631490,
+        "stats_genius": 214861
+    },
+    {
+        "title": "Cum On Feel The Noize",
+        "artist": "Slade",
+        "spotifyUri": "spotify:track:1agVrzicFWExgEiAtk8lmr",
+        "stats_youtube": 0,
+        "stats_lastfm": 143570,
+        "stats_genius": 54984
+    },
+    {
+        "title": "Cupid",
+        "artist": "Tony Orlando & Dawn",
+        "spotifyUri": "spotify:track:5qHp6VZFrrDodCgm6z1sMM",
+        "stats_youtube": 127785,
+        "stats_lastfm": 0,
+        "stats_genius": 493
+    },
+    {
+        "title": "Custom Machine",
+        "artist": "Bruce & Terry",
+        "spotifyUri": "spotify:track:7E9VSMXD5RuAqLHIA6TQuT",
+        "stats_youtube": 135863,
+        "stats_lastfm": 0,
+        "stats_genius": 49
+    },
+    {
+        "title": "Cut It",
+        "artist": "O.T. Genasis",
+        "spotifyUri": "spotify:track:376KnY4TrgBITxjlnbnmIy",
+        "stats_youtube": 1396874460,
+        "stats_lastfm": 0,
+        "stats_genius": 547661
+    },
+    {
+        "title": "Daddy's Home",
+        "artist": "Chuck Jackson & Maxine Brown",
+        "spotifyUri": "spotify:track:4dSNyAD8cNB0JrOZWnAQO3",
+        "stats_youtube": 7595,
+        "stats_lastfm": 0,
+        "stats_genius": 63
+    },
+    {
+        "title": "Daddy's Little Man",
+        "artist": "O.C. Smith",
+        "spotifyUri": "spotify:track:57rxqpox1nfx6hwIqfAh0F",
+        "stats_youtube": 1096742,
+        "stats_lastfm": 0,
+        "stats_genius": 760
+    },
+    {
+        "title": "Daddy",
+        "artist": "Blueface & Rich The Kid",
+        "spotifyUri": "spotify:track:4hanO6Du5J7QEguNHYZHmw",
+        "stats_youtube": 123002209,
+        "stats_lastfm": 0,
+        "stats_genius": 2338
+    },
+    {
+        "title": "Daisy Mae",
+        "artist": "Hamilton, Joe Frank & Reynolds",
+        "spotifyUri": "spotify:track:3EDKjNcmQTmNhc1QRLCqYy",
+        "stats_youtube": 23332223,
+        "stats_lastfm": 0,
+        "stats_genius": 894
+    },
+    {
+        "title": "Dance Like There's No Tomorrow",
+        "artist": "Paula Abdul & Randy Jackson",
+        "spotifyUri": "spotify:track:7v2Jv1X3D3q2uZuENKMhYh",
+        "stats_youtube": 3592005,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Dance Naked",
+        "artist": "John Mellencamp",
+        "spotifyUri": "spotify:track:58rOG3IdxaUdoTXQEqFtHD",
+        "stats_youtube": 0,
+        "stats_lastfm": 18600,
+        "stats_genius": 6974
+    },
+    {
+        "title": "Dancin'",
+        "artist": "Grey & Hanks",
+        "spotifyUri": "spotify:track:61CYE0qKOns7kJmOGcA7IC",
+        "stats_youtube": 377621,
+        "stats_lastfm": 0,
+        "stats_genius": 99
+    },
+    {
+        "title": "Dancing Bear",
+        "artist": "The Mamas & The Papas",
+        "spotifyUri": "spotify:track:5dyH958ip694mJLUmac7Ab",
+        "stats_youtube": 405454963,
+        "stats_lastfm": 0,
+        "stats_genius": 6032
+    },
+    {
+        "title": "Dancing In The Street",
+        "artist": "The Mamas & The Papas",
+        "spotifyUri": "spotify:track:1Vv7ZtyDro81xmznV48gF6",
+        "stats_youtube": 4022285,
+        "stats_lastfm": 0,
+        "stats_genius": 3847
+    },
+    {
+        "title": "Dancing To Your Music",
+        "artist": "Archie Bell & The Drells",
+        "spotifyUri": "spotify:track:6CP6aBUvs3QuXLHaxJD5Hj",
+        "stats_youtube": 137189,
+        "stats_lastfm": 0,
+        "stats_genius": 5
+    },
+    {
+        "title": "Danger",
+        "artist": "Migos & Marshmello",
+        "spotifyUri": "spotify:track:0nhVrTiCGiGRCoZOJiWzm1",
+        "stats_youtube": 373468865,
+        "stats_lastfm": 0,
+        "stats_genius": 99
+    },
+    {
+        "title": "Darling Dear",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:2F4g7wn3slLJrDg9SY79gM",
+        "stats_youtube": 556547,
+        "stats_lastfm": 0,
+        "stats_genius": 752
+    },
+    {
+        "title": "Day Is Done",
+        "artist": "Peter, Paul & Mary",
+        "spotifyUri": "spotify:track:71a9vOAsTH6ze4bonGsZdK",
+        "stats_youtube": 659785,
+        "stats_lastfm": 0,
+        "stats_genius": 9119
+    },
+    {
+        "title": "Daylight",
+        "artist": "Vicki Sue Robinson",
+        "spotifyUri": "spotify:track:4doXgewLPFbx3W5WAcDITC",
+        "stats_youtube": 42304,
+        "stats_lastfm": 424,
+        "stats_genius": 0
+    },
+    {
+        "title": "Dead Man's Curve",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:2BPEPkeifa5LoOg2Cq9bkx",
+        "stats_youtube": 164820,
+        "stats_lastfm": 0,
+        "stats_genius": 38594
+    },
+    {
+        "title": "Dear Prudence",
+        "artist": "The 5 Stairsteps",
+        "spotifyUri": "spotify:track:7agk25vHxeKe626vePNxqz",
+        "stats_youtube": 4745146,
+        "stats_lastfm": 11213,
+        "stats_genius": 0
+    },
+    {
+        "title": "Dedicated To The One I Love",
+        "artist": "The \"5\" Royales",
+        "spotifyUri": "spotify:track:0p7mtSBkoZY14zR7QqUtid",
+        "stats_youtube": 22768,
+        "stats_lastfm": 0,
+        "stats_genius": 1130
+    },
+    {
+        "title": "Dedicated To The One I Love",
+        "artist": "The Mamas & The Papas",
+        "spotifyUri": "spotify:track:1mFrjW8e8fuAOowlU3Q3Dr",
+        "stats_youtube": 405455342,
+        "stats_lastfm": 0,
+        "stats_genius": 55532
+    },
+    {
+        "title": "Dedicated",
+        "artist": "R. Kelly & Public Announcement",
+        "spotifyUri": "spotify:track:3lmn7LmNwdeqplUa0qvnrU",
+        "stats_youtube": 171590121,
+        "stats_lastfm": 0,
+        "stats_genius": 96
+    },
+    {
+        "title": "Deep Purple",
+        "artist": "Donny & Marie Osmond",
+        "spotifyUri": "spotify:track:0i5HtqKaBgIpAC7N0kknqu",
+        "stats_youtube": 218572,
+        "stats_lastfm": 0,
+        "stats_genius": 2968
+    },
+    {
+        "title": "Deep Purple",
+        "artist": "Nino Tempo & April Stevens",
+        "spotifyUri": "spotify:track:5kJez8nvgq0HqhWy3UTQFx",
+        "stats_youtube": 1011678,
+        "stats_lastfm": 0,
+        "stats_genius": 20108
+    },
+    {
+        "title": "Delicious!",
+        "artist": "Jim Backus & Friend",
+        "spotifyUri": "spotify:track:1b8BT4kUBPFeWUk94gz7dN",
+        "stats_youtube": 208687,
+        "stats_lastfm": 0,
+        "stats_genius": 1387
+    },
+    {
+        "title": "Delirious (Boneless)",
+        "artist": "Steve Aoki, Chris Lake & Tujamo",
+        "spotifyUri": "spotify:track:2SSFvQBwsxeazzo7z5l9gD",
+        "stats_youtube": 22878570,
+        "stats_lastfm": 0,
+        "stats_genius": 38475
+    },
+    {
+        "title": "Devil With A Blue Dress",
+        "artist": "Pratt & McClain",
+        "spotifyUri": "spotify:track:2bZKmeIiF79MMBH9VINdpM",
+        "stats_youtube": 57877,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Devil's Gun",
+        "artist": "C.J. & Company",
+        "spotifyUri": "spotify:track:4soj212onKKCCClTcbWQj6",
+        "stats_youtube": 132580,
+        "stats_lastfm": 0,
+        "stats_genius": 4891
+    },
+    {
+        "title": "Devoted To You",
+        "artist": "Carly Simon & James Taylor",
+        "spotifyUri": "spotify:track:6b7l3YWWWUcxJZVETEKBVc",
+        "stats_youtube": 22606019,
+        "stats_lastfm": 0,
+        "stats_genius": 2476
+    },
+    {
+        "title": "Diamond Girl",
+        "artist": "Seals & Crofts",
+        "spotifyUri": "spotify:track:7CQQBWqFfROA5RWyY04ifv",
+        "stats_youtube": 31308432,
+        "stats_lastfm": 0,
+        "stats_genius": 31059
+    },
+    {
+        "title": "Diamonds Dancing",
+        "artist": "Drake & Future",
+        "spotifyUri": "spotify:track:2AGottAzfC8bHzF7kEJ3Wa",
+        "stats_youtube": 439021395,
+        "stats_lastfm": 0,
+        "stats_genius": 30320
+    },
+    {
+        "title": "Diddy",
+        "artist": "P. Diddy",
+        "spotifyUri": "spotify:track:36hQXUiNBft4e736hB4nVg",
+        "stats_youtube": 178742254,
+        "stats_lastfm": 0,
+        "stats_genius": 33595
+    },
+    {
+        "title": "Die From A Broken Heart",
+        "artist": "Maddie & Tae",
+        "spotifyUri": "spotify:track:3DA4SE262k6rdEtlHteNyq",
+        "stats_youtube": 810622500,
+        "stats_lastfm": 0,
+        "stats_genius": 79340
+    },
+    {
+        "title": "Difference (Interlude)",
+        "artist": "XXXTENTACION",
+        "spotifyUri": "spotify:track:5itzep0nGnq7hxCfFNsTIR",
+        "stats_youtube": 23401284,
+        "stats_lastfm": 204712,
+        "stats_genius": 0
+    },
+    {
+        "title": "Digital Dash",
+        "artist": "Drake & Future",
+        "spotifyUri": "spotify:track:0GR7iJLhj80KD5LkA14ZRn",
+        "stats_youtube": 23888362,
+        "stats_lastfm": 0,
+        "stats_genius": 30320
+    },
+    {
+        "title": "Dip",
+        "artist": "Tyga & Nicki Minaj",
+        "spotifyUri": "spotify:track:4hXDobvUaXyDFLnmecoY0z",
+        "stats_youtube": 1116698634,
+        "stats_lastfm": 0,
+        "stats_genius": 727766
+    },
+    {
+        "title": "Dirty Stick",
+        "artist": "YoungBoy Never Broke Again",
+        "spotifyUri": "spotify:track:0nEWVyeYLtIi3JUHpASGiU",
+        "stats_youtube": 0,
+        "stats_lastfm": 41059,
+        "stats_genius": 39374
+    },
+    {
+        "title": "Disco Rufus",
+        "artist": "Stargard",
+        "spotifyUri": "spotify:track:6T5ijGkSINcoCGEejEF7fO",
+        "stats_youtube": 143246,
+        "stats_lastfm": 219,
+        "stats_genius": 0
+    },
+    {
+        "title": "Distant Shores",
+        "artist": "Chad & Jeremy",
+        "spotifyUri": "spotify:track:1HkEcKZgwPKcYSCM1llppS",
+        "stats_youtube": 153902,
+        "stats_lastfm": 0,
+        "stats_genius": 2629
+    },
+    {
+        "title": "Do I Make Myself Clear",
+        "artist": "Etta James & Sugar Pie DeSanto",
+        "spotifyUri": "spotify:track:1W1HdlOdra8mTydXKoXdeA",
+        "stats_youtube": 45799,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Do It - Rat Now",
+        "artist": "Bill Black's Combo",
+        "spotifyUri": "spotify:track:30SI8MgoPEfW4bQoMNV9wF",
+        "stats_youtube": 26973,
+        "stats_lastfm": 0,
+        "stats_genius": 661
+    },
+    {
+        "title": "Do It Again A Little Bit Slower",
+        "artist": "Jon & Robin And The In Crowd",
+        "spotifyUri": "spotify:track:7rPAJTyiWsWrEAHr99mjjs",
+        "stats_youtube": 114710,
+        "stats_lastfm": 0,
+        "stats_genius": 446
+    },
+    {
+        "title": "Do The Boomerang",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:12FqwXODb5jvuOfWEe6BWs",
+        "stats_youtube": 517900,
+        "stats_lastfm": 0,
+        "stats_genius": 380
+    },
+    {
+        "title": "Do The Choo Choo",
+        "artist": "Archie Bell & The Drells",
+        "spotifyUri": "spotify:track:2eUc9pwM0ar6tSLgR3l14P",
+        "stats_youtube": 5021,
+        "stats_lastfm": 0,
+        "stats_genius": 413
+    },
+    {
+        "title": "Do Unto Me",
+        "artist": "James & Bobby Purify",
+        "spotifyUri": "spotify:track:5oVL3bwqcVYjkQ43guCwIY",
+        "stats_youtube": 90756,
+        "stats_lastfm": 0,
+        "stats_genius": 10268
+    },
+    {
+        "title": "Do You See My Love (For You Growing)",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:0LKWxzTYcxBAmLSXpkPl4l",
+        "stats_youtube": 221464,
+        "stats_lastfm": 0,
+        "stats_genius": 1408
+    },
+    {
+        "title": "Do You Sleep?",
+        "artist": "Lisa Loeb & Nine Stories",
+        "spotifyUri": "spotify:track:43RL5EuY4yHXDKIbvtHWJ7",
+        "stats_youtube": 44521679,
+        "stats_lastfm": 0,
+        "stats_genius": 1696
+    },
+    {
+        "title": "Do You Wanna Dance",
+        "artist": "The Mamas & The Papas",
+        "spotifyUri": "spotify:track:645pkWAIHbCECpVsaZAxKq",
+        "stats_youtube": 573062,
+        "stats_lastfm": 0,
+        "stats_genius": 4738
+    },
+    {
+        "title": "Do You Want To Build A Snowman?",
+        "artist": "Kristen Bell, Agatha Lee Monn & Katie Lopez",
+        "spotifyUri": "spotify:track:2yi7HZrBOC4bMUSTcs4VK6",
+        "stats_youtube": 600184322,
+        "stats_lastfm": 0,
+        "stats_genius": 1168188
+    },
+    {
+        "title": "Does Your Mama Know About Me",
+        "artist": "Bobby Taylor & The Vancouvers",
+        "spotifyUri": "spotify:track:0oD2qdgeiFZK4Nw9mENHIW",
+        "stats_youtube": 1348532,
+        "stats_lastfm": 0,
+        "stats_genius": 1507
+    },
+    {
+        "title": "Doggone Right",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:6XsxJlXSrSLUDVtUPn7E3C",
+        "stats_youtube": 332888,
+        "stats_lastfm": 0,
+        "stats_genius": 678
+    },
+    {
+        "title": "Doin' The Continental Walk",
+        "artist": "Danny & The Juniors",
+        "spotifyUri": "spotify:track:3vD9r6not3noshnrAvdS2H",
+        "stats_youtube": 1014,
+        "stats_lastfm": 0,
+        "stats_genius": 13887
+    },
+    {
+        "title": "Doing It To Death",
+        "artist": "Fred Wesley & The J.B.'s",
+        "spotifyUri": "spotify:track:0yoVH9OjDYc4BDWWCWblU2",
+        "stats_youtube": 11042901,
+        "stats_lastfm": 0,
+        "stats_genius": 1466
+    },
+    {
+        "title": "Don't Be Afraid (Do As I Say)",
+        "artist": "Frankie Karl & The Dreams",
+        "spotifyUri": "spotify:track:6hkcW1ud6rTmwSmkGYQV8I",
+        "stats_youtube": 478061,
+        "stats_lastfm": 0,
+        "stats_genius": 9
+    },
+    {
+        "title": "Don't Change Your Love",
+        "artist": "Five Stairsteps & Cubie",
+        "spotifyUri": "spotify:track:5KVKsVfutYirN4Hj0cfu4X",
+        "stats_youtube": 169506,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Don't Cost You Nothing",
+        "artist": "Ashford & Simpson",
+        "spotifyUri": "spotify:track:2qfbeZ2JqTm7rIlC8Zyhgc",
+        "stats_youtube": 873718,
+        "stats_lastfm": 0,
+        "stats_genius": 1099
+    },
+    {
+        "title": "Don't Ever Be Lonely (A Poor Little Fool Like Me)",
+        "artist": "Cornelius Brothers & Sister Rose",
+        "spotifyUri": "spotify:track:37dySg2hhRKxIcbTdmSDdO",
+        "stats_youtube": 410114,
+        "stats_lastfm": 0,
+        "stats_genius": 2384
+    },
+    {
+        "title": "Don't It Make My Brown Eyes Blue",
+        "artist": "Crystal Gayle",
+        "spotifyUri": "spotify:track:7Jpclr7tZ6aQXjoKzWXUJV",
+        "stats_youtube": 0,
+        "stats_lastfm": 103996,
+        "stats_genius": 15413
+    },
+    {
+        "title": "Don't Let Me Cross Over",
+        "artist": "Carl Butler & Pearl",
+        "spotifyUri": "spotify:track:1ZNDtli4TjhuoBnWplaePI",
+        "stats_youtube": 1079405,
+        "stats_lastfm": 0,
+        "stats_genius": 67
+    },
+    {
+        "title": "Don't Let The Music Slip Away",
+        "artist": "Archie Bell & The Drells",
+        "spotifyUri": "spotify:track:1NyYgY2eqKQWJJrnp5kgPW",
+        "stats_youtube": 8438,
+        "stats_lastfm": 0,
+        "stats_genius": 13
+    },
+    {
+        "title": "Don't Make Me Over",
+        "artist": "Brenda & The Tabulations",
+        "spotifyUri": "spotify:track:1c0QZKXEROc5A9D32EDbHR",
+        "stats_youtube": 5326887,
+        "stats_lastfm": 0,
+        "stats_genius": 283
+    },
+    {
+        "title": "Don't Mess Up A Good Thing",
+        "artist": "Fontella Bass & Bobby McClure",
+        "spotifyUri": "spotify:track:560ROSxJmpRIIp89O1AVLB",
+        "stats_youtube": 72375,
+        "stats_lastfm": 0,
+        "stats_genius": 984
+    },
+    {
+        "title": "Don't Pity Me",
+        "artist": "Dion & The Belmonts",
+        "spotifyUri": "spotify:track:04qYsVT7PsPRQLufaEdgHu",
+        "stats_youtube": 228540,
+        "stats_lastfm": 0,
+        "stats_genius": 1352
+    },
+    {
+        "title": "Don't Pull Your Love",
+        "artist": "Hamilton, Joe Frank & Reynolds",
+        "spotifyUri": "spotify:track:7tJsTykoo4Jk5JguHTx9W7",
+        "stats_youtube": 3956138,
+        "stats_lastfm": 0,
+        "stats_genius": 14833
+    },
+    {
+        "title": "Don't Quit",
+        "artist": "DJ Khaled & Calvin Harris",
+        "spotifyUri": "spotify:track:6LOCAhFzZiavHcLJucLuDy",
+        "stats_youtube": 2131057,
+        "stats_lastfm": 0,
+        "stats_genius": 1096
+    },
+    {
+        "title": "Don't Stop The Music",
+        "artist": "Yarbrough & Peoples",
+        "spotifyUri": "spotify:track:0DVevhcLPiHoLaVyl6dSGr",
+        "stats_youtube": 59088961,
+        "stats_lastfm": 0,
+        "stats_genius": 14678
+    },
+    {
+        "title": "Don't Take It So Hard",
+        "artist": "Paul Revere & The Raiders",
+        "spotifyUri": "spotify:track:1E2rkSckAZwgcGPxoFB5Cn",
+        "stats_youtube": 2542277,
+        "stats_lastfm": 0,
+        "stats_genius": 814
+    },
+    {
+        "title": "Don't Think Twice, It's All Right",
+        "artist": "Peter, Paul & Mary",
+        "spotifyUri": "spotify:track:7IsXXgpowAB48crGjV1oGb",
+        "stats_youtube": 5822625,
+        "stats_lastfm": 0,
+        "stats_genius": 11708
+    },
+    {
+        "title": "Don't Waste Your Time",
+        "artist": "Yarbrough & Peoples",
+        "spotifyUri": "spotify:track:6HCAvDSaFft5KL0ozPFgLs",
+        "stats_youtube": 414416,
+        "stats_lastfm": 0,
+        "stats_genius": 815
+    },
+    {
+        "title": "Don't You Write Her Off",
+        "artist": "McGuinn, Clark & Hillman",
+        "spotifyUri": "spotify:track:4MxYZ8fFw2c29RtZOnwT8E",
+        "stats_youtube": 67249,
+        "stats_lastfm": 0,
+        "stats_genius": 2246
+    },
+    {
+        "title": "Doo Doo Brown",
+        "artist": "2 Hyped Brothers & A Dog",
+        "spotifyUri": "spotify:track:0VFJiOs6UOzmFCYFaTumKo",
+        "stats_youtube": 685308,
+        "stats_lastfm": 0,
+        "stats_genius": 14529
+    },
+    {
+        "title": "Double Barrel",
+        "artist": "Dave & Ansil Collins",
+        "spotifyUri": "spotify:track:1TBjuwSsm731S048oMDehz",
+        "stats_youtube": 3688488,
+        "stats_lastfm": 0,
+        "stats_genius": 9995
+    },
+    {
+        "title": "Double Shot (Of My Baby's Love)",
+        "artist": "Swingin' Medallions",
+        "spotifyUri": "spotify:track:1M6AwCSEreUZddHSomDNUj",
+        "stats_youtube": 9611018,
+        "stats_lastfm": 0,
+        "stats_genius": 4635
+    },
+    {
+        "title": "Down",
+        "artist": "RKM & Ken-Y",
+        "spotifyUri": "spotify:track:53kn9xq31Hfrqfc3T7JYTT",
+        "stats_youtube": 252055886,
+        "stats_lastfm": 0,
+        "stats_genius": 47789
+    },
+    {
+        "title": "Downtown Venus",
+        "artist": "P.M. Dawn",
+        "spotifyUri": "spotify:track:0cjoYOTdvKUrEZVzsxsNOE",
+        "stats_youtube": 371583,
+        "stats_lastfm": 0,
+        "stats_genius": 986
+    },
+    {
+        "title": "Downtown",
+        "artist": "Mrs. Miller",
+        "spotifyUri": "spotify:track:5pRgsodSwssdCAEXnY1cg3",
+        "stats_youtube": 527020,
+        "stats_lastfm": 0,
+        "stats_genius": 27
+    },
+    {
+        "title": "Drag City",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:3yOYPyxa1KAhda8OoygJpT",
+        "stats_youtube": 1515489,
+        "stats_lastfm": 0,
+        "stats_genius": 1614
+    },
+    {
+        "title": "Drums",
+        "artist": "Jon & Robin",
+        "spotifyUri": "spotify:track:6LQx2FkifZJVpFUutVIZM4",
+        "stats_youtube": 3508914,
+        "stats_lastfm": 0,
+        "stats_genius": 66
+    },
+    {
+        "title": "Drunk (And I Don't Wanna Go Home)",
+        "artist": "Elle King & Miranda Lambert",
+        "spotifyUri": "spotify:track:0QULNNd9z5s35entfiiXoa",
+        "stats_youtube": 118219402,
+        "stats_lastfm": 0,
+        "stats_genius": 31550
+    },
+    {
+        "title": "Dry Your Eyes",
+        "artist": "Brenda & The Tabulations",
+        "spotifyUri": "spotify:track:5mlv9Y2cPCjZzppbkWYsKR",
+        "stats_youtube": 1731008,
+        "stats_lastfm": 0,
+        "stats_genius": 7350
+    },
+    {
+        "title": "Dubai Shit",
+        "artist": "Huncho Jack",
+        "spotifyUri": "spotify:track:6urLjX35oXXRYtcH1b3dCh",
+        "stats_youtube": 0,
+        "stats_lastfm": 198137,
+        "stats_genius": 615162
+    },
+    {
+        "title": "Earache My Eye",
+        "artist": "Cheech & Chong",
+        "spotifyUri": "spotify:track:3pjGKgnCekGCzRHGDdrBSz",
+        "stats_youtube": 5627020,
+        "stats_lastfm": 0,
+        "stats_genius": 51445
+    },
+    {
+        "title": "Early Morning Rain",
+        "artist": "Peter, Paul & Mary",
+        "spotifyUri": "spotify:track:6JVoyZ7KJCnpBnA7F3J1ar",
+        "stats_youtube": 32154161,
+        "stats_lastfm": 0,
+        "stats_genius": 10424
+    },
+    {
+        "title": "Eastside",
+        "artist": "benny blanco, Halsey & Khalid",
+        "spotifyUri": "spotify:track:0d2iYfpKoM0QCKvcLCkBao",
+        "stats_youtube": 837696545,
+        "stats_lastfm": 0,
+        "stats_genius": 166
+    },
+    {
+        "title": "Easy As Pie",
+        "artist": "Billy \"Crash\" Craddock",
+        "spotifyUri": "spotify:track:4pA9vbjCtPKjUBHx5hjPPo",
+        "stats_youtube": 111779,
+        "stats_lastfm": 0,
+        "stats_genius": 1013
+    },
+    {
+        "title": "Ebb Tide",
+        "artist": "Lenny Welch",
+        "spotifyUri": "spotify:track:5BzMo1c7fhTeULjaTa6Nta",
+        "stats_youtube": 12494,
+        "stats_lastfm": 549,
+        "stats_genius": 0
+    },
+    {
+        "title": "Eight Men, Four Women",
+        "artist": "O.V. Wright",
+        "spotifyUri": "spotify:track:3SsHe99t3EN5k3sEu07m2p",
+        "stats_youtube": 268736,
+        "stats_lastfm": 0,
+        "stats_genius": 2493
+    },
+    {
+        "title": "El Farsante",
+        "artist": "Ozuna & Romeo Santos",
+        "spotifyUri": "spotify:track:7uYgVgRSgqluZclLS7wpp4",
+        "stats_youtube": 2442717782,
+        "stats_lastfm": 0,
+        "stats_genius": 40579
+    },
+    {
+        "title": "El Pussy Cat",
+        "artist": "Mongo Santamaria",
+        "spotifyUri": "spotify:track:53Q3aE08sDF0QjtX5WIpiR",
+        "stats_youtube": 8010064,
+        "stats_lastfm": 2678,
+        "stats_genius": 0
+    },
+    {
+        "title": "Ella Quiere Beber",
+        "artist": "Anuel AA & Romeo Santos",
+        "spotifyUri": "spotify:track:3f5lA8nnc4YYF1qf78WpHw",
+        "stats_youtube": 875221951,
+        "stats_lastfm": 0,
+        "stats_genius": 103622
+    },
+    {
+        "title": "Encore",
+        "artist": "Eminem, Dr. Dre & 50 Cent",
+        "spotifyUri": "spotify:track:2cm5JHPVzXyrWPtIZZi1Gh",
+        "stats_youtube": 37374312,
+        "stats_lastfm": 0,
+        "stats_genius": 1547
+    },
+    {
+        "title": "Endless Love",
+        "artist": "Luther Vandross & Mariah Carey",
+        "spotifyUri": "spotify:track:7IljDTNkQEyy77CcaRbiAj",
+        "stats_youtube": 590914400,
+        "stats_lastfm": 0,
+        "stats_genius": 56116
+    },
+    {
+        "title": "Eternity",
+        "artist": "Vikki Carr",
+        "spotifyUri": "spotify:track:5h6JA5GqW2kgq82RfEeptY",
+        "stats_youtube": 5003,
+        "stats_lastfm": 194,
+        "stats_genius": 0
+    },
+    {
+        "title": "Even Now",
+        "artist": "Bob Seger & The Silver Bullet Band",
+        "spotifyUri": "spotify:track:00XXUBsdOe8cLPo2p64Dd3",
+        "stats_youtube": 907441,
+        "stats_lastfm": 0,
+        "stats_genius": 5057
+    },
+    {
+        "title": "Every Little Kiss",
+        "artist": "Bruce Hornsby & The Range",
+        "spotifyUri": "spotify:track:0WCXFE3RTTUzhufeeee227",
+        "stats_youtube": 33766721,
+        "stats_lastfm": 0,
+        "stats_genius": 14773
+    },
+    {
+        "title": "Every Little Thing I Do",
+        "artist": "Dion & The Belmonts",
+        "spotifyUri": "spotify:track:36cRY6DSxk16JMSYWe9d3n",
+        "stats_youtube": 66378,
+        "stats_lastfm": 0,
+        "stats_genius": 945
+    },
+    {
+        "title": "Every River",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:7hAUQNn3k9QZFjtqnWzq8b",
+        "stats_youtube": 56751053,
+        "stats_lastfm": 0,
+        "stats_genius": 930
+    },
+    {
+        "title": "Everybody Dance",
+        "artist": "Ta Mara & The Seen",
+        "spotifyUri": "spotify:track:2y7UQ4maAhvbOmFXzNLkEz",
+        "stats_youtube": 872050,
+        "stats_lastfm": 0,
+        "stats_genius": 904
+    },
+    {
+        "title": "Everybody Got To Believe In Somebody",
+        "artist": "Sam & Dave",
+        "spotifyUri": "spotify:track:79v8qeBXuC8IDs7FKAxKo1",
+        "stats_youtube": 23662658,
+        "stats_lastfm": 0,
+        "stats_genius": 120
+    },
+    {
+        "title": "Everyday",
+        "artist": "Logic & Marshmello",
+        "spotifyUri": "spotify:track:4EAV2cKiqKP5UPZmY6dejk",
+        "stats_youtube": 2761888867,
+        "stats_lastfm": 0,
+        "stats_genius": 2586
+    },
+    {
+        "title": "Everyone Falls In Love",
+        "artist": "Tanto Metro & Devonte",
+        "spotifyUri": "spotify:track:6nGwWIh0ATJqK9cXbLqDw8",
+        "stats_youtube": 41890530,
+        "stats_lastfm": 0,
+        "stats_genius": 119104
+    },
+    {
+        "title": "Everyotherday",
+        "artist": "Or-N-More",
+        "spotifyUri": "spotify:track:6SlVGVuU6DIWs4Va5Bf13U",
+        "stats_youtube": 757410,
+        "stats_lastfm": 0,
+        "stats_genius": 34
+    },
+    {
+        "title": "Everything Is Good About You",
+        "artist": "The Lettermen",
+        "spotifyUri": "spotify:track:1YiY2Y9efmHPEKMv6S9ewR",
+        "stats_youtube": 63631,
+        "stats_lastfm": 321,
+        "stats_genius": 0
+    },
+    {
+        "title": "Everything That Touches You",
+        "artist": "The Association",
+        "spotifyUri": "spotify:track:7g0WpDuOX4hxBKCsoitOXn",
+        "stats_youtube": 757869,
+        "stats_lastfm": 27049,
+        "stats_genius": 0
+    },
+    {
+        "title": "Everything You Do (You're Sexing Me)",
+        "artist": "Fiona (Duet",
+        "spotifyUri": "spotify:track:2LBu8ppBl3aenuqUnBxysH",
+        "stats_youtube": 132520,
+        "stats_lastfm": 0,
+        "stats_genius": 12
+    },
+    {
+        "title": "Everything's Gonna Be Alright",
+        "artist": "David Lee Murphy & Kenny Chesney",
+        "spotifyUri": "spotify:track:2NEBP8SXEqwZt2PRdPXXuy",
+        "stats_youtube": 20981827,
+        "stats_lastfm": 0,
+        "stats_genius": 21538
+    },
+    {
+        "title": "Evil Ways",
+        "artist": "Carlos Santana & Buddy Miles",
+        "spotifyUri": "spotify:track:6zLdN89zApN2lsEtAQEsag",
+        "stats_youtube": 27594701,
+        "stats_lastfm": 0,
+        "stats_genius": 819
+    },
+    {
+        "title": "Expensive",
+        "artist": "Ty Dolla $ign",
+        "spotifyUri": "spotify:track:2Kv3JWOzRJsaen5vjmTVJL",
+        "stats_youtube": 25407818,
+        "stats_lastfm": 0,
+        "stats_genius": 91190
+    },
+    {
+        "title": "Express",
+        "artist": "B.T. Express",
+        "spotifyUri": "spotify:track:7aUA2QLuPtuaBgnxLSAbnZ",
+        "stats_youtube": 3947031,
+        "stats_lastfm": 0,
+        "stats_genius": 1062
+    },
+    {
+        "title": "Face My Fears",
+        "artist": "Hikaru Utada & Skrillex",
+        "spotifyUri": "spotify:track:0CALOqrkXAE7WB2nyIATLk",
+        "stats_youtube": 506774096,
+        "stats_lastfm": 0,
+        "stats_genius": 15967
+    },
+    {
+        "title": "Facts Of Love",
+        "artist": "Jeff Lorber & Karyn White",
+        "spotifyUri": "spotify:track:2oxcmG1trE8AKHE9b14Lvx",
+        "stats_youtube": 249942,
+        "stats_lastfm": 0,
+        "stats_genius": 1113
+    },
+    {
+        "title": "Faded Pictures",
+        "artist": "Case & Joe",
+        "spotifyUri": "spotify:track:1CAw3ethNuSDPf3E7luSFF",
+        "stats_youtube": 1745110,
+        "stats_lastfm": 0,
+        "stats_genius": 37860
+    },
+    {
+        "title": "Fair Game",
+        "artist": "Crosby, Stills & Nash",
+        "spotifyUri": "spotify:track:3xYaDMMS4PnZRoi6JYll8w",
+        "stats_youtube": 334236,
+        "stats_lastfm": 0,
+        "stats_genius": 5302
+    },
+    {
+        "title": "Fallin' In Love",
+        "artist": "Hamilton, Joe Frank & Reynolds",
+        "spotifyUri": "spotify:track:4LUGyzMUXBQdBZsrBxylMZ",
+        "stats_youtube": 24559147,
+        "stats_lastfm": 0,
+        "stats_genius": 18926
+    },
+    {
+        "title": "Fallin' In Love",
+        "artist": "The Souther, Hillman, Furay Band",
+        "spotifyUri": "spotify:track:7b5WOdrCc2E4Z4aAyGn6wz",
+        "stats_youtube": 84681,
+        "stats_lastfm": 0,
+        "stats_genius": 2371
+    },
+    {
+        "title": "Falling Down",
+        "artist": "Lil Peep & XXXTENTACION",
+        "spotifyUri": "spotify:track:4jvjzW7Hm0yK4LvvE0Paz9",
+        "stats_youtube": 564690512,
+        "stats_lastfm": 0,
+        "stats_genius": 373
+    },
+    {
+        "title": "Falling",
+        "artist": "LeBlanc & Carr",
+        "spotifyUri": "spotify:track:2niFXRDFTmgLjPYNkcA2no",
+        "stats_youtube": 615747,
+        "stats_lastfm": 0,
+        "stats_genius": 8171
+    },
+    {
+        "title": "Feel Like A Number",
+        "artist": "Bob Seger & The Silver Bullet Band",
+        "spotifyUri": "spotify:track:2QhqWCo5oODaEJUs2iwysz",
+        "stats_youtube": 2117571,
+        "stats_lastfm": 0,
+        "stats_genius": 14526
+    },
+    {
+        "title": "Fiddle Around",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:1Sn2aOOtBBo4stbunKJtXU",
+        "stats_youtube": 2558,
+        "stats_lastfm": 0,
+        "stats_genius": 47
+    },
+    {
+        "title": "Fine China",
+        "artist": "Future & Juice WRLD",
+        "spotifyUri": "spotify:track:5274I4mUMnYczyeXkGDWZN",
+        "stats_youtube": 67904152,
+        "stats_lastfm": 0,
+        "stats_genius": 2486
+    },
+    {
+        "title": "Fire And Rain",
+        "artist": "Johnny Rivers & Friends",
+        "spotifyUri": "spotify:track:1aMNxdU9CPxGTRmx7K1N1i",
+        "stats_youtube": 18941049,
+        "stats_lastfm": 0,
+        "stats_genius": 8590
+    },
+    {
+        "title": "First Time",
+        "artist": "Kygo & Ellie Goulding",
+        "spotifyUri": "spotify:track:2Gl0FzuLxflY6nPifJp5Dr",
+        "stats_youtube": 812288083,
+        "stats_lastfm": 0,
+        "stats_genius": 1348
+    },
+    {
+        "title": "Flames Of Paradise",
+        "artist": "Jennifer Rush (Duet",
+        "spotifyUri": "spotify:track:2Plu3dyvMjoQKAqdWLcVC0",
+        "stats_youtube": 9537397,
+        "stats_lastfm": 0,
+        "stats_genius": 37662
+    },
+    {
+        "title": "Flamingo L'Amore",
+        "artist": "The Gaylords",
+        "spotifyUri": "spotify:track:0tMI27AY8D79WiKQcdVIzc",
+        "stats_youtube": 5765,
+        "stats_lastfm": 79,
+        "stats_genius": 0
+    },
+    {
+        "title": "Flamingo",
+        "artist": "Herb Alpert & The Tijuana Brass",
+        "spotifyUri": "spotify:track:4qK7JRcMpizOH7YwWNxlmF",
+        "stats_youtube": 2649480,
+        "stats_lastfm": 0,
+        "stats_genius": 66
+    },
+    {
+        "title": "Fly Me To The Moon",
+        "artist": "Sam & Bill",
+        "spotifyUri": "spotify:track:3oL1oEa45X6U87QdD3WKh3",
+        "stats_youtube": 14491,
+        "stats_lastfm": 0,
+        "stats_genius": 446
+    },
+    {
+        "title": "Fly",
+        "artist": "Maddie & Tae",
+        "spotifyUri": "spotify:track:1ewLdzcpSQkU9wpFdqFauw",
+        "stats_youtube": 48369750,
+        "stats_lastfm": 0,
+        "stats_genius": 41427
+    },
+    {
+        "title": "Focus",
+        "artist": "H.E.R.",
+        "spotifyUri": "spotify:track:3tZs3nVjySLbL320lP4mvs",
+        "stats_youtube": 278363541,
+        "stats_lastfm": 1,
+        "stats_genius": 0
+    },
+    {
+        "title": "Foggy Mountain Breakdown",
+        "artist": "Flatt & Scruggs",
+        "spotifyUri": "spotify:track:29qFlNOssruDfoEN8vN2Uu",
+        "stats_youtube": 9583289,
+        "stats_lastfm": 0,
+        "stats_genius": 6866
+    },
+    {
+        "title": "Follow Me",
+        "artist": "Mary Travers",
+        "spotifyUri": "spotify:track:4r45V7ZeTmjpX11lW5i6Xx",
+        "stats_youtube": 393927,
+        "stats_lastfm": 2624,
+        "stats_genius": 0
+    },
+    {
+        "title": "For Lovin' Me",
+        "artist": "Peter, Paul & Mary",
+        "spotifyUri": "spotify:track:1EJQrVf9I93wlkzJAquRWP",
+        "stats_youtube": 7815074,
+        "stats_lastfm": 0,
+        "stats_genius": 2637
+    },
+    {
+        "title": "For Me",
+        "artist": "Sergio Mendes & Brasil '66",
+        "spotifyUri": "spotify:track:3pM9cDCqr189aUklAloJaP",
+        "stats_youtube": 20978513,
+        "stats_lastfm": 0,
+        "stats_genius": 698
+    },
+    {
+        "title": "For The First Time In Forever",
+        "artist": "Kristen Bell & Idina Menzel",
+        "spotifyUri": "spotify:track:70b5Sq3ePOu3Gqg0hjlOtR",
+        "stats_youtube": 491484988,
+        "stats_lastfm": 0,
+        "stats_genius": 1616622
+    },
+    {
+        "title": "For What It's Worth",
+        "artist": "King Curtis & The Kingpins",
+        "spotifyUri": "spotify:track:7oDywJMdbNtPpUwDUG38c5",
+        "stats_youtube": 33333,
+        "stats_lastfm": 0,
+        "stats_genius": 75
+    },
+    {
+        "title": "For You",
+        "artist": "Michael W. Smith",
+        "spotifyUri": "spotify:track:3CO19cTl5zzlWx9GWEpOhD",
+        "stats_youtube": 382200,
+        "stats_lastfm": 0,
+        "stats_genius": 9103
+    },
+    {
+        "title": "For Your Love",
+        "artist": "Peaches & Herb",
+        "spotifyUri": "spotify:track:3gc9gSVlBLyzacDErABC2j",
+        "stats_youtube": 590674,
+        "stats_lastfm": 0,
+        "stats_genius": 1372
+    },
+    {
+        "title": "For Your Love",
+        "artist": "Sam & Bill",
+        "spotifyUri": "spotify:track:7jwPDFG5HxM5G1Q5Mmw855",
+        "stats_youtube": 403293,
+        "stats_lastfm": 0,
+        "stats_genius": 63
+    },
+    {
+        "title": "For Your Precious Love",
+        "artist": "Garnet Mimms & The Enchanters",
+        "spotifyUri": "spotify:track:171cWdP8aG0KMv3OIuNZ49",
+        "stats_youtube": 2772390,
+        "stats_lastfm": 0,
+        "stats_genius": 606
+    },
+    {
+        "title": "For Your Precious Love",
+        "artist": "Jackie Wilson & Count Basie",
+        "spotifyUri": "spotify:track:3T2vA5VaDmZjvNIxzr6u94",
+        "stats_youtube": 1412745,
+        "stats_lastfm": 0,
+        "stats_genius": 180
+    },
+    {
+        "title": "For Your Precious Love",
+        "artist": "Oscar Toney, Jr.",
+        "spotifyUri": "spotify:track:1us3B4JET9DGY5VLcVYTAQ",
+        "stats_youtube": 6210909,
+        "stats_lastfm": 0,
+        "stats_genius": 3001
+    },
+    {
+        "title": "Foreplay",
+        "artist": "RAab",
+        "spotifyUri": "spotify:track:4HKMlBeb76AeBAnUwTNGoB",
+        "stats_youtube": 0,
+        "stats_lastfm": 823,
+        "stats_genius": 370
+    },
+    {
+        "title": "Forever Came Today",
+        "artist": "Diana Ross & The Supremes",
+        "spotifyUri": "spotify:track:6GffueKJJ5oCOLYGfXmfsc",
+        "stats_youtube": 6149577,
+        "stats_lastfm": 0,
+        "stats_genius": 1398
+    },
+    {
+        "title": "Forever Country",
+        "artist": "Artists Of Then, Now & Forever",
+        "spotifyUri": "spotify:track:3WWVDPjihd1VITBLF10nha",
+        "stats_youtube": 91441999,
+        "stats_lastfm": 0,
+        "stats_genius": 61730
+    },
+    {
+        "title": "Forever Tonight",
+        "artist": "Peter Cetera & Crystal Bernard",
+        "spotifyUri": "spotify:track:3UcWAPvNQr4FaHdQPHzMPj",
+        "stats_youtube": 32111021,
+        "stats_lastfm": 0,
+        "stats_genius": 30862
+    },
+    {
+        "title": "Forget Me Not",
+        "artist": "Martha Reeves & The Vandellas",
+        "spotifyUri": "spotify:track:3zaIEaOgbhjUvxft0hdde0",
+        "stats_youtube": 30083,
+        "stats_lastfm": 0,
+        "stats_genius": 1283
+    },
+    {
+        "title": "Fox Hunt",
+        "artist": "Herb Alpert & The Tijuana Brass",
+        "spotifyUri": "spotify:track:0OW3wyT4U5wVXrclGNktXR",
+        "stats_youtube": 6756293,
+        "stats_lastfm": 0,
+        "stats_genius": 137
+    },
+    {
+        "title": "Framed",
+        "artist": "Cheech & Chong",
+        "spotifyUri": "spotify:track:5lb2hb0JDvdZljWg7OOXJ9",
+        "stats_youtube": 4718700,
+        "stats_lastfm": 0,
+        "stats_genius": 7713
+    },
+    {
+        "title": "Freak Me Baby",
+        "artist": "Dis `N' Dat",
+        "spotifyUri": "spotify:track:1qivsCvIQnUjBn9el6O0bl",
+        "stats_youtube": 351545,
+        "stats_lastfm": 0,
+        "stats_genius": 861
+    },
+    {
+        "title": "Free The People",
+        "artist": "Delaney & Bonnie & Friends",
+        "spotifyUri": "spotify:track:3cHCo9rNkgPRz3UV3UmBW5",
+        "stats_youtube": 204253,
+        "stats_lastfm": 0,
+        "stats_genius": 411
+    },
+    {
+        "title": "Fried Onions",
+        "artist": "Lord Rockingham's XI",
+        "spotifyUri": "spotify:track:6kb2pBxNVnZAavqfH8lOW4",
+        "stats_youtube": 74639,
+        "stats_lastfm": 44,
+        "stats_genius": 0
+    },
+    {
+        "title": "Friend, Lover, Woman, Wife",
+        "artist": "O.C. Smith",
+        "spotifyUri": "spotify:track:6jnGyjY75bSW6mlzqoxjxv",
+        "stats_youtube": 1096860,
+        "stats_lastfm": 0,
+        "stats_genius": 1220
+    },
+    {
+        "title": "Friends And Lovers",
+        "artist": "Carl Anderson & Gloria Loring",
+        "spotifyUri": "spotify:track:19u5G7pWq3Nj6lQiP4W4Hp",
+        "stats_youtube": 1306292,
+        "stats_lastfm": 0,
+        "stats_genius": 9174
+    },
+    {
+        "title": "Friends In Love",
+        "artist": "Dionne Warwick & Johnny Mathis",
+        "spotifyUri": "spotify:track:7A2SdvA35KGIbpLMFgmAH0",
+        "stats_youtube": 448447,
+        "stats_lastfm": 0,
+        "stats_genius": 972
+    },
+    {
+        "title": "Friends",
+        "artist": "Marshmello & Anne-Marie",
+        "spotifyUri": "spotify:track:08bNPGLD8AhKpnnERrAc6G",
+        "stats_youtube": 1312223290,
+        "stats_lastfm": 0,
+        "stats_genius": 58
+    },
+    {
+        "title": "Frisky",
+        "artist": "Sly & The Family Stone",
+        "spotifyUri": "spotify:track:3CG5a5vgvGdsoTlEHNMMc2",
+        "stats_youtube": 304252,
+        "stats_lastfm": 0,
+        "stats_genius": 2090
+    },
+    {
+        "title": "Froggy Style",
+        "artist": "Nuttin' Nyce",
+        "spotifyUri": "spotify:track:4OhfEUz7d5si8CFLHx9WIR",
+        "stats_youtube": 0,
+        "stats_lastfm": 0,
+        "stats_genius": 2708
+    },
+    {
+        "title": "From A Window",
+        "artist": "Chad & Jeremy",
+        "spotifyUri": "spotify:track:5QdkhR3MSMQRqbsW14KUXZ",
+        "stats_youtube": 4781445,
+        "stats_lastfm": 0,
+        "stats_genius": 243
+    },
+    {
+        "title": "From The Beginning",
+        "artist": "Emerson, Lake & Palmer",
+        "spotifyUri": "spotify:track:0Ll60pqkEBHqzdeclRHdnl",
+        "stats_youtube": 10005754,
+        "stats_lastfm": 0,
+        "stats_genius": 36058
+    },
+    {
+        "title": "From The Teacher To The Preacher",
+        "artist": "Gene Chandler & Barbara Acklin",
+        "spotifyUri": "spotify:track:32tuHKC72xYmOBWmVpRT6y",
+        "stats_youtube": 13704,
+        "stats_lastfm": 0,
+        "stats_genius": 322
+    },
+    {
+        "title": "Funky Chicken (Part 1)",
+        "artist": "Willie Henderson And The Soul Explosions",
+        "spotifyUri": "spotify:track:0e7Yx4UFoJ7jzx8l7XotMK",
+        "stats_youtube": 42463,
+        "stats_lastfm": 239,
+        "stats_genius": 0
+    },
+    {
+        "title": "Game Of Love",
+        "artist": "Wayne Fontana & The Mindbenders",
+        "spotifyUri": "spotify:track:0jUfBCWrfrZGueD8MjvgMo",
+        "stats_youtube": 1523373,
+        "stats_lastfm": 0,
+        "stats_genius": 10047
+    },
+    {
+        "title": "Gas Money",
+        "artist": "Jan & Arnie",
+        "spotifyUri": "spotify:track:2wh41h8XJWXIds4gPpfOzN",
+        "stats_youtube": 62471,
+        "stats_lastfm": 0,
+        "stats_genius": 236
+    },
+    {
+        "title": "Gee",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:0iuuHP5nZ12tuXix0aeFuh",
+        "stats_youtube": 83643,
+        "stats_lastfm": 0,
+        "stats_genius": 52
+    },
+    {
+        "title": "Georgia",
+        "artist": "Ludacris & Field Mob",
+        "spotifyUri": "spotify:track:4Oany7rm9uIi7TLlaBjouD",
+        "stats_youtube": 21680586,
+        "stats_lastfm": 0,
+        "stats_genius": 31803
+    },
+    {
+        "title": "Get Closer",
+        "artist": "Seals & Crofts",
+        "spotifyUri": "spotify:track:5Eq0mobXSnyWu1dpE6lSdY",
+        "stats_youtube": 4877249,
+        "stats_lastfm": 0,
+        "stats_genius": 35976
+    },
+    {
+        "title": "Get Dancin'",
+        "artist": "Disco Tex & The Sex-O-Lettes",
+        "spotifyUri": "spotify:track:3xU59QWnYBrXTswby68Qm0",
+        "stats_youtube": 0,
+        "stats_lastfm": 0,
+        "stats_genius": 3839
+    },
+    {
+        "title": "Get Involved",
+        "artist": "Raphael Saadiq & Q-Tip",
+        "spotifyUri": "spotify:track:4RdeW4mm5CvvHqPJZT0JUR",
+        "stats_youtube": 3926785,
+        "stats_lastfm": 0,
+        "stats_genius": 11278
+    },
+    {
+        "title": "Get It",
+        "artist": "Stevie Wonder & Michael Jackson",
+        "spotifyUri": "spotify:track:0xcSiOtyL97KkJGrdhG33w",
+        "stats_youtube": 2019588,
+        "stats_lastfm": 0,
+        "stats_genius": 6553
+    },
+    {
+        "title": "Get Low",
+        "artist": "Dillon Francis & DJ Snake",
+        "spotifyUri": "spotify:track:3oZoXyU0SkDldgS7AcN4y4",
+        "stats_youtube": 778553517,
+        "stats_lastfm": 0,
+        "stats_genius": 60660
+    },
+    {
+        "title": "Get Low",
+        "artist": "Zedd & Liam Payne",
+        "spotifyUri": "spotify:track:2syQ0f4SAQdzvlAewPl1DJ",
+        "stats_youtube": 395526668,
+        "stats_lastfm": 0,
+        "stats_genius": 81
+    },
+    {
+        "title": "Get With U",
+        "artist": "Lidell Townsell & M.T.F.",
+        "spotifyUri": "spotify:track:0WyopkKhqsZBxYrzx6nIGT",
+        "stats_youtube": 41455,
+        "stats_lastfm": 0,
+        "stats_genius": 316
+    },
+    {
+        "title": "Ghostface Killers",
+        "artist": "21 Savage, Offset & Metro Boomin",
+        "spotifyUri": "spotify:track:5u6vkDnOyaf8LsteDAj2ub",
+        "stats_youtube": 84628012,
+        "stats_lastfm": 0,
+        "stats_genius": 4218
+    },
+    {
+        "title": "Gigolo",
+        "artist": "Nick Cannon",
+        "spotifyUri": "spotify:track:1T1ZUKX4X87tVLaBGjwFv4",
+        "stats_youtube": 0,
+        "stats_lastfm": 9356,
+        "stats_genius": 31274
+    },
+    {
+        "title": "Girl In A Country Song",
+        "artist": "Maddie & Tae",
+        "spotifyUri": "spotify:track:1GRiBe0kNCNYpjwCHIyynI",
+        "stats_youtube": 132664017,
+        "stats_lastfm": 0,
+        "stats_genius": 58499
+    },
+    {
+        "title": "Girl You're Too Young",
+        "artist": "Archie Bell & The Drells",
+        "spotifyUri": "spotify:track:7v7iraFbfC12qCZEJFmHAg",
+        "stats_youtube": 81588,
+        "stats_lastfm": 0,
+        "stats_genius": 41
+    },
+    {
+        "title": "Give In To Me",
+        "artist": "Garrett Hedlund & Leighton Meester",
+        "spotifyUri": "spotify:track:5rwxsHLK1q9fPJFyyqJmP1",
+        "stats_youtube": 9049817,
+        "stats_lastfm": 0,
+        "stats_genius": 5975
+    },
+    {
+        "title": "Give It To Her",
+        "artist": "Tanto Metro & Devonte",
+        "spotifyUri": "spotify:track:00FU5uypELwgQuM9IbFC6G",
+        "stats_youtube": 49348344,
+        "stats_lastfm": 0,
+        "stats_genius": 14226
+    },
+    {
+        "title": "Glad To Be Unhappy",
+        "artist": "The Mamas & The Papas",
+        "spotifyUri": "spotify:track:1Dw7FyvCJ21oENBoyG3dfn",
+        "stats_youtube": 253365,
+        "stats_lastfm": 0,
+        "stats_genius": 4379
+    },
+    {
+        "title": "Glory",
+        "artist": "Common & John Legend",
+        "spotifyUri": "spotify:track:2fmqPLRFdJNPhLU3b2NSFp",
+        "stats_youtube": 38437321,
+        "stats_lastfm": 0,
+        "stats_genius": 1313
+    },
+    {
+        "title": "Go Crazy",
+        "artist": "Chris Brown & Young Thug",
+        "spotifyUri": "spotify:track:1IIKrJVP1C9N7iPtG6eOsK",
+        "stats_youtube": 263109836,
+        "stats_lastfm": 0,
+        "stats_genius": 491
+    },
+    {
+        "title": "Go Down Gamblin'",
+        "artist": "Blood, Sweat & Tears",
+        "spotifyUri": "spotify:track:6bWjr4qT4d58NuPEepedEr",
+        "stats_youtube": 350465,
+        "stats_lastfm": 0,
+        "stats_genius": 2733
+    },
+    {
+        "title": "Go Legend",
+        "artist": "Big Sean & Metro Boomin",
+        "spotifyUri": "spotify:track:3wAI7MIQtTgwcRmwchPZBc",
+        "stats_youtube": 6276139,
+        "stats_lastfm": 0,
+        "stats_genius": 1135
+    },
+    {
+        "title": "Go Loko",
+        "artist": "YG, Tyga & Jon Z",
+        "spotifyUri": "spotify:track:3SZqA7rQvROJsCbUu2v0xa",
+        "stats_youtube": 700700364,
+        "stats_lastfm": 0,
+        "stats_genius": 2333
+    },
+    {
+        "title": "God Must Be Busy",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:3XREqhLzypw6NzrFg1RMsr",
+        "stats_youtube": 1026487,
+        "stats_lastfm": 0,
+        "stats_genius": 1300
+    },
+    {
+        "title": "God Only Knows",
+        "artist": "for KING & COUNTRY",
+        "spotifyUri": "spotify:track:4ElNxglBjcrASiGn58t9Jm",
+        "stats_youtube": 88331678,
+        "stats_lastfm": 0,
+        "stats_genius": 291577
+    },
+    {
+        "title": "God Only Knows",
+        "artist": "Jordan Smith & Adam Levine",
+        "spotifyUri": "spotify:track:26BvbgWisvyequ09r52TDA",
+        "stats_youtube": 88331678,
+        "stats_lastfm": 0,
+        "stats_genius": 575
+    },
+    {
+        "title": "God, Love And Rock & Roll",
+        "artist": "Teegarden & Van Winkle",
+        "spotifyUri": "spotify:track:0nQgG0xNqp96cJwKtrLjhX",
+        "stats_youtube": 101561,
+        "stats_lastfm": 0,
+        "stats_genius": 800
+    },
+    {
+        "title": "Goin' Down Slow",
+        "artist": "Bobby \"Blue\" Bland",
+        "spotifyUri": "spotify:track:7cNtOBqVszBGB0ypEnpedi",
+        "stats_youtube": 2443670,
+        "stats_lastfm": 0,
+        "stats_genius": 2428
+    },
+    {
+        "title": "Going To Chicago Blues",
+        "artist": "Count Basie & His Orch.",
+        "spotifyUri": "spotify:track:1M1F8qAMHX003wJyYr9KUo",
+        "stats_youtube": 1412791,
+        "stats_lastfm": 0,
+        "stats_genius": 111
+    },
+    {
+        "title": "Gold Diggin' Girls",
+        "artist": "MC Nas-D & DJ Fred",
+        "spotifyUri": "spotify:track:1Dg3sxXoz7q1MxjbhngnUT",
+        "stats_youtube": 88537,
+        "stats_lastfm": 0,
+        "stats_genius": 179
+    },
+    {
+        "title": "Gone Too Far",
+        "artist": "England Dan & John Ford Coley",
+        "spotifyUri": "spotify:track:3HAShVDebh4NPxU0fDhk8z",
+        "stats_youtube": 401025,
+        "stats_lastfm": 0,
+        "stats_genius": 1781
+    },
+    {
+        "title": "Good Hearted Woman",
+        "artist": "Waylon & Willie",
+        "spotifyUri": "spotify:track:3CqLvQ9fPOLtLIKb7r5ti6",
+        "stats_youtube": 121080373,
+        "stats_lastfm": 0,
+        "stats_genius": 3453
+    },
+    {
+        "title": "Good Life",
+        "artist": "G-Eazy & Kehlani",
+        "spotifyUri": "spotify:track:1Eck97uRMlprKOOJN9oO1E",
+        "stats_youtube": 529015392,
+        "stats_lastfm": 0,
+        "stats_genius": 8404
+    },
+    {
+        "title": "Good Things Don't Last Forever",
+        "artist": "Ecstasy, Passion & Pain",
+        "spotifyUri": "spotify:track:5WvvV1Fe7sTrBUYSe2EoGj",
+        "stats_youtube": 49149,
+        "stats_lastfm": 0,
+        "stats_genius": 9260
+    },
+    {
+        "title": "Good Time Charlie's Got The Blues",
+        "artist": "Danny O'Keefe",
+        "spotifyUri": "spotify:track:2AyQXjM2jyjIM3t8YavbME",
+        "stats_youtube": 6394089,
+        "stats_lastfm": 0,
+        "stats_genius": 64946
+    },
+    {
+        "title": "Good Vibrations",
+        "artist": "Marky Mark & The Funky Bunch",
+        "spotifyUri": "spotify:track:5hWdgGVcfTeLPAiHM6EZG9",
+        "stats_youtube": 28650166,
+        "stats_lastfm": 0,
+        "stats_genius": 207349
+    },
+    {
+        "title": "Goodbye Baby (I Don't Want To See You Cry)",
+        "artist": "Tommy Boyce & Bobby Hart",
+        "spotifyUri": "spotify:track:4UZ5xERMJAskse5AH8dNb0",
+        "stats_youtube": 3054520,
+        "stats_lastfm": 0,
+        "stats_genius": 492
+    },
+    {
+        "title": "Got It Made",
+        "artist": "Crosby, Stills, Nash & Young",
+        "spotifyUri": "spotify:track:7pax4grXoXIF5F2XbO7Y1E",
+        "stats_youtube": 670466,
+        "stats_lastfm": 0,
+        "stats_genius": 3003
+    },
+    {
+        "title": "Got To Get You Into My Life",
+        "artist": "Blood, Sweat & Tears",
+        "spotifyUri": "spotify:track:4EhieZ0s8jzrmr1kLAXIQU",
+        "stats_youtube": 2839469,
+        "stats_lastfm": 0,
+        "stats_genius": 738
+    },
+    {
+        "title": "Gotta Go My Own Way",
+        "artist": "Zac Efron & Vanessa Anne Hudgens",
+        "spotifyUri": "spotify:track:5rWIO1uP0GwAoU45RTBJ2F",
+        "stats_youtube": 72552430,
+        "stats_lastfm": 0,
+        "stats_genius": 1395161
+    },
+    {
+        "title": "Gotta Hold On To This Feeling",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:2dlVeyhP1kM1xdfJGN6gpG",
+        "stats_youtube": 1320982,
+        "stats_lastfm": 0,
+        "stats_genius": 4265
+    },
+    {
+        "title": "Grandma Got Run Over By A Reindeer",
+        "artist": "Elmo & Patsy",
+        "spotifyUri": "spotify:track:49iHYFjT5yO6WEw6KerX9o",
+        "stats_youtube": 1123496977,
+        "stats_lastfm": 0,
+        "stats_genius": 213597
+    },
+    {
+        "title": "Green Onions",
+        "artist": "Booker T. & The MG's",
+        "spotifyUri": "spotify:track:4fQMGlCawbTkH9yPPZ49kP",
+        "stats_youtube": 14666134,
+        "stats_lastfm": 0,
+        "stats_genius": 12231
+    },
+    {
+        "title": "Groovin'",
+        "artist": "Booker T. & The MG's",
+        "spotifyUri": "spotify:track:29bU062RLWPo6OR6rjonrN",
+        "stats_youtube": 952070,
+        "stats_lastfm": 0,
+        "stats_genius": 666
+    },
+    {
+        "title": "Growin'",
+        "artist": "Loggins & Messina",
+        "spotifyUri": "spotify:track:5fuevBynKEN4dqY9wGIYkP",
+        "stats_youtube": 14683736,
+        "stats_lastfm": 0,
+        "stats_genius": 346
+    },
+    {
+        "title": "Guilty",
+        "artist": "Barbra Streisand & Barry Gibb",
+        "spotifyUri": "spotify:track:60mGckXEG1EzR4VmjYLfEW",
+        "stats_youtube": 23140642,
+        "stats_lastfm": 0,
+        "stats_genius": 41633
+    },
+    {
+        "title": "Ha Cha Cha (funktion)",
+        "artist": "Brass Construction",
+        "spotifyUri": "spotify:track:6anYAKQSaAHJ8WP1ShStoY",
+        "stats_youtube": 235406,
+        "stats_lastfm": 2993,
+        "stats_genius": 0
+    },
+    {
+        "title": "Hand Jive",
+        "artist": "The Strangeloves",
+        "spotifyUri": "spotify:track:59HTJznkQkbBnfpe9KhIRJ",
+        "stats_youtube": 681068,
+        "stats_lastfm": 713,
+        "stats_genius": 0
+    },
+    {
+        "title": "Hang 'Em High",
+        "artist": "Booker T. & The MG's",
+        "spotifyUri": "spotify:track:3OVaMHQ2bj8KHabuF8deFv",
+        "stats_youtube": 683385,
+        "stats_lastfm": 0,
+        "stats_genius": 253
+    },
+    {
+        "title": "Hang 'Em High",
+        "artist": "Hugo Montenegro, His Orchestra And Chorus",
+        "spotifyUri": "spotify:track:7vcfh54HdlvRC2cUioe93P",
+        "stats_youtube": 702726,
+        "stats_lastfm": 204,
+        "stats_genius": 0
+    },
+    {
+        "title": "Happy Days",
+        "artist": "Pratt & McClain",
+        "spotifyUri": "spotify:track:1CCuMgDauGruOwxrSh9NSW",
+        "stats_youtube": 142900586,
+        "stats_lastfm": 0,
+        "stats_genius": 5494
+    },
+    {
+        "title": "Happy Now",
+        "artist": "Zedd & Elley Duhe",
+        "spotifyUri": "spotify:track:4keoy2fqgwGnbWlm3ZVZFa",
+        "stats_youtube": 371241810,
+        "stats_lastfm": 0,
+        "stats_genius": 11
+    },
+    {
+        "title": "Happy Together (A Fantasy)",
+        "artist": "Captain & Tennille",
+        "spotifyUri": "spotify:track:1KAzkCLEUua2wRYPMDkFdF",
+        "stats_youtube": 9985492,
+        "stats_lastfm": 0,
+        "stats_genius": 677
+    },
+    {
+        "title": "Happy Xmas (War Is Over)",
+        "artist": "John & Yoko/The Plastic Ono Band",
+        "spotifyUri": "spotify:track:3zJw3rugfpVrmBeDDnUYzy",
+        "stats_youtube": 26964999,
+        "stats_lastfm": 0,
+        "stats_genius": 1054173
+    },
+    {
+        "title": "Harry Hippie",
+        "artist": "Bobby Womack & Peace",
+        "spotifyUri": "spotify:track:4N8BkYSBFdYRw7IYp6wRAb",
+        "stats_youtube": 14824817,
+        "stats_lastfm": 0,
+        "stats_genius": 8474
+    },
+    {
+        "title": "Hate Me",
+        "artist": "Ellie Goulding & Juice WRLD",
+        "spotifyUri": "spotify:track:6kls8cSlUyHW2BUOkDJIZE",
+        "stats_youtube": 1220350379,
+        "stats_lastfm": 0,
+        "stats_genius": 532
+    },
+    {
+        "title": "He Don't Love You (Like I Love You)",
+        "artist": "Tony Orlando & Dawn",
+        "spotifyUri": "spotify:track:0XaaoZUWQFzcFiQbXKhABU",
+        "stats_youtube": 16643,
+        "stats_lastfm": 0,
+        "stats_genius": 5936
+    },
+    {
+        "title": "Headshot",
+        "artist": "Lil Tjay, Polo G & Fivio Foreign",
+        "spotifyUri": "spotify:track:4eNOLmx8r2IJAVKvBBL1jv",
+        "stats_youtube": 97382378,
+        "stats_lastfm": 0,
+        "stats_genius": 1491
+    },
+    {
+        "title": "Heart And Soul",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:5OtJxpKGhfZMPi6T2vEhjo",
+        "stats_youtube": 111433,
+        "stats_lastfm": 0,
+        "stats_genius": 1880
+    },
+    {
+        "title": "Heartbreak Station",
+        "artist": "Cinderella",
+        "spotifyUri": "spotify:track:4UD8NNJqkJjryJZLh1mr4m",
+        "stats_youtube": 110684826,
+        "stats_lastfm": 94017,
+        "stats_genius": 0
+    },
+    {
+        "title": "Heat Wave",
+        "artist": "Martha & The Vandellas",
+        "spotifyUri": "spotify:track:3VgrSJEKBRT3xmwzpaxxEF",
+        "stats_youtube": 11856487,
+        "stats_lastfm": 0,
+        "stats_genius": 29234
+    },
+    {
+        "title": "Heatin Up",
+        "artist": "Lil Baby & Gunna",
+        "spotifyUri": "spotify:track:5OTLZjYOw4HVOoo9E31U42",
+        "stats_youtube": 68329843,
+        "stats_lastfm": 0,
+        "stats_genius": 1436
+    },
+    {
+        "title": "Heaven",
+        "artist": "DJ Sammy & Yanou",
+        "spotifyUri": "spotify:track:0KT6DLAELYSbgfUemzwGPX",
+        "stats_youtube": 15841685,
+        "stats_lastfm": 0,
+        "stats_genius": 1316
+    },
+    {
+        "title": "Heed The Call",
+        "artist": "Kenny Rogers & The First Edition",
+        "spotifyUri": "spotify:track:43qxBP58fsVuxLMfQzgD82",
+        "stats_youtube": 7255006,
+        "stats_lastfm": 0,
+        "stats_genius": 282
+    },
+    {
+        "title": "Hello Tomorrow",
+        "artist": "Squeak E. Clean",
+        "spotifyUri": "spotify:track:6YU50PnvwrjNjPE20GzTNk",
+        "stats_youtube": 128471,
+        "stats_lastfm": 0,
+        "stats_genius": 22321
+    },
+    {
+        "title": "Help Me Girl",
+        "artist": "Eric Burdon & The Animals",
+        "spotifyUri": "spotify:track:44A7gnAeBznjwg2ovSYk06",
+        "stats_youtube": 48898,
+        "stats_lastfm": 0,
+        "stats_genius": 676
+    },
+    {
+        "title": "Help Yourself (To All Of My Lovin')",
+        "artist": "James & Bobby Purify",
+        "spotifyUri": "spotify:track:47IGCBcC8P7L8CHlEnzWFD",
+        "stats_youtube": 6754,
+        "stats_lastfm": 0,
+        "stats_genius": 24
+    },
+    {
+        "title": "Her Town Too",
+        "artist": "James Taylor & J.D. Souther",
+        "spotifyUri": "spotify:track:3ukAkL7aLVrDf7x2XiUkNZ",
+        "stats_youtube": 231274,
+        "stats_lastfm": 0,
+        "stats_genius": 8694
+    },
+    {
+        "title": "Here I Go Again",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:669ZXEsYesTfTPKFdrsiKi",
+        "stats_youtube": 969489,
+        "stats_lastfm": 0,
+        "stats_genius": 6807
+    },
+    {
+        "title": "Hero",
+        "artist": "David Crosby & Phil Collins",
+        "spotifyUri": "spotify:track:3Y8NZ8VqYDokRluEMkQ3Hp",
+        "stats_youtube": 2104483,
+        "stats_lastfm": 0,
+        "stats_genius": 4418
+    },
+    {
+        "title": "Hey Hey, My My (Into The Black)",
+        "artist": "Neil Young & Crazy Horse",
+        "spotifyUri": "spotify:track:5sy3FriCrKYGJp6JBOnlOo",
+        "stats_youtube": 32713613,
+        "stats_lastfm": 0,
+        "stats_genius": 24092
+    },
+    {
+        "title": "Hey You! Get Off My Mountain",
+        "artist": "The Dramatics",
+        "spotifyUri": "spotify:track:6ELgz6uURtYvKbjm1d4dFp",
+        "stats_youtube": 0,
+        "stats_lastfm": 24022,
+        "stats_genius": 3232
+    },
+    {
+        "title": "Hey, Let's Twist",
+        "artist": "Joey Dee & the Starliters",
+        "spotifyUri": "spotify:track:7ePavO8yqo0oNDuTMCOIM0",
+        "stats_youtube": 22698,
+        "stats_lastfm": 0,
+        "stats_genius": 4343
+    },
+    {
+        "title": "Hey, You Love",
+        "artist": "Mouth & MacNeal",
+        "spotifyUri": "spotify:track:07LmfgQGJ96uLSP3Lho5ne",
+        "stats_youtube": 5146101,
+        "stats_lastfm": 0,
+        "stats_genius": 47223
+    },
+    {
+        "title": "Hillbilly Deluxe",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:1BMhbPsW66IXqksKC8jrCf",
+        "stats_youtube": 248167769,
+        "stats_lastfm": 0,
+        "stats_genius": 13780
+    },
+    {
+        "title": "Him & I",
+        "artist": "G-Eazy & Halsey",
+        "spotifyUri": "spotify:track:5k38wzpLb15YgncyWdTZE4",
+        "stats_youtube": 1207498309,
+        "stats_lastfm": 0,
+        "stats_genius": 221
+    },
+    {
+        "title": "Him Or Me - What's It Gonna Be?",
+        "artist": "Paul Revere & The Raiders",
+        "spotifyUri": "spotify:track:0AA6HF90AGlS4KhUfJH74f",
+        "stats_youtube": 1044157,
+        "stats_lastfm": 0,
+        "stats_genius": 1539
+    },
+    {
+        "title": "Hip City - Pt. 2",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:0cduoX64cRfzLvdapbCsBH",
+        "stats_youtube": 104378,
+        "stats_lastfm": 0,
+        "stats_genius": 296
+    },
+    {
+        "title": "Hip Hop Ride",
+        "artist": "Da Youngsta's",
+        "spotifyUri": "spotify:track:2MYP61a4O2CcM9tEYwM0gf",
+        "stats_youtube": 251034,
+        "stats_lastfm": 0,
+        "stats_genius": 10885
+    },
+    {
+        "title": "Hitchcock Railway",
+        "artist": "Jose Feliciano",
+        "spotifyUri": "spotify:track:46fAGJwpTKyaREreMebFdO",
+        "stats_youtube": 12041,
+        "stats_lastfm": 1239,
+        "stats_genius": 0
+    },
+    {
+        "title": "Hold On I'm Coming",
+        "artist": "Chuck Jackson & Maxine Brown",
+        "spotifyUri": "spotify:track:3M7lh7hFUeRnTGOSJsdT27",
+        "stats_youtube": 16158,
+        "stats_lastfm": 0,
+        "stats_genius": 359
+    },
+    {
+        "title": "Hold On! I'm A Comin'",
+        "artist": "Sam & Dave",
+        "spotifyUri": "spotify:track:5wnzbplqelpAyBSkA56m3I",
+        "stats_youtube": 16669720,
+        "stats_lastfm": 0,
+        "stats_genius": 93098
+    },
+    {
+        "title": "Holly Holy",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:6jVPLlhC0vReZnaGcF872Y",
+        "stats_youtube": 1651548,
+        "stats_lastfm": 0,
+        "stats_genius": 701
+    },
+    {
+        "title": "Hollywood Nights",
+        "artist": "Bob Seger & The Silver Bullet Band",
+        "spotifyUri": "spotify:track:5VbePtZp1at8gH990zVyTI",
+        "stats_youtube": 56188467,
+        "stats_lastfm": 0,
+        "stats_genius": 62574
+    },
+    {
+        "title": "Home Cookin",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:7BUBf9shtJ3NbQgZBKicHX",
+        "stats_youtube": 105765,
+        "stats_lastfm": 0,
+        "stats_genius": 2215
+    },
+    {
+        "title": "Home",
+        "artist": "Machine Gun Kelly, X Ambassadors & Bebe Rexha",
+        "spotifyUri": "spotify:track:0OI7AFifLSoGzpb8bdBLLV",
+        "stats_youtube": 246426695,
+        "stats_lastfm": 0,
+        "stats_genius": 551
+    },
+    {
+        "title": "Honey (I Miss You)",
+        "artist": "O.C. Smith",
+        "spotifyUri": "spotify:track:7zVFxziD5veXw4KcGip6O3",
+        "stats_youtube": 11887583,
+        "stats_lastfm": 0,
+        "stats_genius": 1278
+    },
+    {
+        "title": "Honey Chile",
+        "artist": "Martha Reeves & The Vandellas",
+        "spotifyUri": "spotify:track:3YGuismm9qnCaEfUkD8uQA",
+        "stats_youtube": 179030,
+        "stats_lastfm": 0,
+        "stats_genius": 1120
+    },
+    {
+        "title": "Honey Love",
+        "artist": "R. Kelly & Public Announcement",
+        "spotifyUri": "spotify:track:1ZP0yvaWPl8vQV9ZH9jvT7",
+        "stats_youtube": 6678935,
+        "stats_lastfm": 0,
+        "stats_genius": 761
+    },
+    {
+        "title": "Honky Tonk Stomp",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:4xvMOj9QANlmQ7If03em5Q",
+        "stats_youtube": 6028138,
+        "stats_lastfm": 0,
+        "stats_genius": 1452
+    },
+    {
+        "title": "Honky Train",
+        "artist": "Bill Black's Combo",
+        "spotifyUri": "spotify:track:08VsAksvO7as6FqOmeX7z4",
+        "stats_youtube": 73380,
+        "stats_lastfm": 0,
+        "stats_genius": 13073
+    },
+    {
+        "title": "Honolulu Lulu",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:5stfCnP5f0oXkCUYRLGMI8",
+        "stats_youtube": 132754,
+        "stats_lastfm": 0,
+        "stats_genius": 1889
+    },
+    {
+        "title": "Hooked On Swing",
+        "artist": "Larry Elgart And His Manhattan Swing Orchestra",
+        "spotifyUri": "spotify:track:5jXHPDCKecxZbfSIjvOC1b",
+        "stats_youtube": 23355551,
+        "stats_lastfm": 952,
+        "stats_genius": 0
+    },
+    {
+        "title": "Horse Fever",
+        "artist": "Cliff Nobles & Co.",
+        "spotifyUri": "spotify:track:5ufRrjEUzSSuXc4nFjX2FP",
+        "stats_youtube": 1555997,
+        "stats_lastfm": 0,
+        "stats_genius": 33
+    },
+    {
+        "title": "Hot Dawgit",
+        "artist": "Ramsey Lewis And Earth, Wind & Fire",
+        "spotifyUri": "spotify:track:0z8Og8ut8fhAY9bvwnwEcw",
+        "stats_youtube": 5402120,
+        "stats_lastfm": 0,
+        "stats_genius": 291
+    },
+    {
+        "title": "Hot Girl Summer",
+        "artist": "Megan Thee Stallion, Nicki Minaj & Ty Dolla $ign",
+        "spotifyUri": "spotify:track:5N1o6d8zGcSZSeMFkOUQOk",
+        "stats_youtube": 146236250,
+        "stats_lastfm": 0,
+        "stats_genius": 7360
+    },
+    {
+        "title": "Hot Hot Hot",
+        "artist": "Buster Poindexter & His Banshees Of Blue",
+        "spotifyUri": "spotify:track:2BeFYfKuc0AZGhbeVY78ep",
+        "stats_youtube": 0,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "Hot Rod Lincoln",
+        "artist": "Commander Cody & His Lost Planet Airmen",
+        "spotifyUri": "spotify:track:2sZjmnS1BSoc1svOu5P8LM",
+        "stats_youtube": 5853703,
+        "stats_lastfm": 0,
+        "stats_genius": 19500
+    },
+    {
+        "title": "How Many Times Can We Say Goodbye",
+        "artist": "Dionne Warwick & Luther Vandross",
+        "spotifyUri": "spotify:track:6Xi4SYy31Ho03034WqWOWg",
+        "stats_youtube": 50340070,
+        "stats_lastfm": 0,
+        "stats_genius": 2053
+    },
+    {
+        "title": "How Sweet It Is (To Be Loved By You)",
+        "artist": "Jr. Walker & The All Stars",
+        "spotifyUri": "spotify:track:5Rb211KhnOhLLXPpt8awxU",
+        "stats_youtube": 25263215,
+        "stats_lastfm": 0,
+        "stats_genius": 340
+    },
+    {
+        "title": "Hummingbird",
+        "artist": "Seals & Crofts",
+        "spotifyUri": "spotify:track:0X5NtrCEqriFUemE5TQ9zC",
+        "stats_youtube": 975435,
+        "stats_lastfm": 0,
+        "stats_genius": 27815
+    },
+    {
+        "title": "Humphrey The Camel",
+        "artist": "Jack Blanchard & Misty Morgan",
+        "spotifyUri": "spotify:track:2N3RVxeKTXCcsbADAl4zce",
+        "stats_youtube": 5389939,
+        "stats_lastfm": 0,
+        "stats_genius": 1990
+    },
+    {
+        "title": "Husbands And Wives",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:4PADeWvTB1GbqdFO9n7JX4",
+        "stats_youtube": 248169019,
+        "stats_lastfm": 0,
+        "stats_genius": 3637
+    },
+    {
+        "title": "Hushabye",
+        "artist": "Jay & The Americans",
+        "spotifyUri": "spotify:track:0lfIVV1uZD5m0c0I2iQymH",
+        "stats_youtube": 12107,
+        "stats_lastfm": 0,
+        "stats_genius": 360
+    },
+    {
+        "title": "I Am Somebody",
+        "artist": "Jimmy James & The Vagabonds",
+        "spotifyUri": "spotify:track:2usj6EGRtG2fIo646SOG1h",
+        "stats_youtube": 17339,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "I Am Your Man",
+        "artist": "Bobby Taylor & The Vancouvers",
+        "spotifyUri": "spotify:track:5L7rNqF3pg9YXbCAZxvYkH",
+        "stats_youtube": 254630,
+        "stats_lastfm": 0,
+        "stats_genius": 1145
+    },
+    {
+        "title": "I Am",
+        "artist": "Lil Baby & Gunna",
+        "spotifyUri": "spotify:track:3F57PtOdqRpD6euFYqtKXX",
+        "stats_youtube": 100876290,
+        "stats_lastfm": 0,
+        "stats_genius": 342
+    },
+    {
+        "title": "I Believe In You",
+        "artist": "Robert & Johnny",
+        "spotifyUri": "spotify:track:5jFKcm8kfuXDXmGFnK4wIr",
+        "stats_youtube": 50647729,
+        "stats_lastfm": 0,
+        "stats_genius": 67
+    },
+    {
+        "title": "I Can Remember",
+        "artist": "James & Bobby Purify",
+        "spotifyUri": "spotify:track:3iJZUoDWu3xtL5QceRsy7X",
+        "stats_youtube": 90756,
+        "stats_lastfm": 0,
+        "stats_genius": 266
+    },
+    {
+        "title": "I Can Take Care Of Myself",
+        "artist": "Billy & The Beaters",
+        "spotifyUri": "spotify:track:5EFPecKYwNOLKJEbSKAYxZ",
+        "stats_youtube": 990467,
+        "stats_lastfm": 0,
+        "stats_genius": 170
+    },
+    {
+        "title": "I Can't Dance To That Music You're Playin'",
+        "artist": "Martha Reeves & The Vandellas",
+        "spotifyUri": "spotify:track:6n13tRkf6BfW49hd8x3GBn",
+        "stats_youtube": 58671,
+        "stats_lastfm": 0,
+        "stats_genius": 371
+    },
+    {
+        "title": "I Can't Get Over You",
+        "artist": "Brooks & Dunn",
+        "spotifyUri": "spotify:track:1dRKK30xdrr7oQD8GxCavL",
+        "stats_youtube": 248169469,
+        "stats_lastfm": 0,
+        "stats_genius": 1443
+    },
+    {
+        "title": "I Can't Go On Livin' Baby Without You",
+        "artist": "Nino Tempo & April Stevens",
+        "spotifyUri": "spotify:track:1gvTNXAtuLOQrsi6viPcsG",
+        "stats_youtube": 17563,
+        "stats_lastfm": 0,
+        "stats_genius": 261
+    },
+    {
+        "title": "I Can't Help It",
+        "artist": "Andy Gibb & Olivia Newton-John",
+        "spotifyUri": "spotify:track:3IEs5UmjbMmCMHE7LjXRPT",
+        "stats_youtube": 4541157,
+        "stats_lastfm": 0,
+        "stats_genius": 153
+    },
+    {
+        "title": "I Can't Stand To See You Cry",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:6z4kR1dqGWRSGbatllcF1y",
+        "stats_youtube": 415016,
+        "stats_lastfm": 0,
+        "stats_genius": 2959
+    },
+    {
+        "title": "I Can't Stop Dancing",
+        "artist": "Archie Bell & The Drells",
+        "spotifyUri": "spotify:track:3evKZi4dI9Nw7Hit26XFN9",
+        "stats_youtube": 211553,
+        "stats_lastfm": 0,
+        "stats_genius": 694
+    },
+    {
+        "title": "I Can't Stop Talking About You",
+        "artist": "Steve & Eydie",
+        "spotifyUri": "spotify:track:2hTFLJSd8QaXbxOcltHfaQ",
+        "stats_youtube": 122996612,
+        "stats_lastfm": 0,
+        "stats_genius": 125
+    },
+    {
+        "title": "I Can't Turn You Loose",
+        "artist": "Edgar Winter's White Trash",
+        "spotifyUri": "spotify:track:5Np8Xbu2cMRReBOeT53fpX",
+        "stats_youtube": 129839,
+        "stats_lastfm": 0,
+        "stats_genius": 9180
+    },
+    {
+        "title": "I Can't Work No Longer",
+        "artist": "Billy Butler & The Chanters",
+        "spotifyUri": "spotify:track:6bMF4pCGpD6JQxGcIaspw9",
+        "stats_youtube": 19462,
+        "stats_lastfm": 0,
+        "stats_genius": 136
+    },
+    {
+        "title": "I Dig Rock And Roll Music",
+        "artist": "Peter, Paul & Mary",
+        "spotifyUri": "spotify:track:6XQZ6hb6ynQafnlSA0JSH4",
+        "stats_youtube": 927686,
+        "stats_lastfm": 0,
+        "stats_genius": 10962
+    },
+    {
+        "title": "I Don't Blame You At All",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:3393zOPzr5FrrZWdSnAHQF",
+        "stats_youtube": 231764,
+        "stats_lastfm": 0,
+        "stats_genius": 774
+    },
+    {
+        "title": "I Don't Love You Anymore",
+        "artist": "The London Quireboys",
+        "spotifyUri": "spotify:track:6FBFrmfzV0GrZJTCncYGIZ",
+        "stats_youtube": 839013,
+        "stats_lastfm": 378,
+        "stats_genius": 0
+    },
+    {
+        "title": "I Don't Wanna Lose You Baby",
+        "artist": "Chad & Jeremy",
+        "spotifyUri": "spotify:track:0QCQBP11w2QNel5LhkYskU",
+        "stats_youtube": 30453,
+        "stats_lastfm": 0,
+        "stats_genius": 3262
+    },
+    {
+        "title": "I Dreamed Last Night",
+        "artist": "Justin Hayward & John Lodge",
+        "spotifyUri": "spotify:track:2IkRcuAplXp6al27ifjIPF",
+        "stats_youtube": 588377,
+        "stats_lastfm": 0,
+        "stats_genius": 158
+    },
+    {
+        "title": "I Found A Girl",
+        "artist": "Jan & Dean",
+        "spotifyUri": "spotify:track:0aZONv71HjoKut86G2ghVd",
+        "stats_youtube": 112704,
+        "stats_lastfm": 0,
+        "stats_genius": 556
+    },
+    {
+        "title": "I Found A Love",
+        "artist": "The Falcons & Band (Ohio Untouchables)",
+        "spotifyUri": "spotify:track:4qNsm0544eEStb6V0TAOf3",
+        "stats_youtube": 272495,
+        "stats_lastfm": 0,
+        "stats_genius": 7984
+    },
+    {
+        "title": "I Got A Sure Thing",
+        "artist": "Ollie & The Nightingales",
+        "spotifyUri": "spotify:track:1PyFYaRzBPxWxq1u2L7urm",
+        "stats_youtube": 26918,
+        "stats_lastfm": 0,
+        "stats_genius": 667
+    },
+    {
+        "title": "I Gotta Let You Go",
+        "artist": "Martha Reeves & The Vandellas",
+        "spotifyUri": "spotify:track:5dJXjVFGYwDaVFRbhYpzke",
+        "stats_youtube": 196564,
+        "stats_lastfm": 0,
+        "stats_genius": 830
+    },
+    {
+        "title": "I Had A Dream",
+        "artist": "Paul Revere & The Raiders",
+        "spotifyUri": "spotify:track:2yoYkOmSNh65HlRrV3zeyE",
+        "stats_youtube": 6054464,
+        "stats_lastfm": 0,
+        "stats_genius": 619
+    },
+    {
+        "title": "I Had No Right",
+        "artist": "P.M. Dawn",
+        "spotifyUri": "spotify:track:0PtMec6kl6Hh4WP7lSdKLS",
+        "stats_youtube": 11278179,
+        "stats_lastfm": 0,
+        "stats_genius": 470
+    },
+    {
+        "title": "I Have Dreamed",
+        "artist": "Chad & Jeremy",
+        "spotifyUri": "spotify:track:5agp4ORTcHoEqTWNKgElTJ",
+        "stats_youtube": 4781528,
+        "stats_lastfm": 0,
+        "stats_genius": 184
+    },
+    {
+        "title": "I Hope We Get To Love In Time",
+        "artist": "Marilyn McCoo & Billy Davis, Jr.",
+        "spotifyUri": "spotify:track:2b8HYUkTwYYbDrVV7r4KYC",
+        "stats_youtube": 7835310,
+        "stats_lastfm": 0,
+        "stats_genius": 2131
+    },
+    {
+        "title": "I Hope You're Happy Now",
+        "artist": "Carly Pearce & Lee Brice",
+        "spotifyUri": "spotify:track:5Jbwsh74ggk2aAHF2MtoRG",
+        "stats_youtube": 78125679,
+        "stats_lastfm": 0,
+        "stats_genius": 66482
+    },
+    {
+        "title": "I Like It Like That",
+        "artist": "Loggins & Messina",
+        "spotifyUri": "spotify:track:0H9sMfsRU1ecNuXF1Kweh0",
+        "stats_youtube": 16862501,
+        "stats_lastfm": 0,
+        "stats_genius": 28
+    },
+    {
+        "title": "I Likes To Do It",
+        "artist": "The People's Choice",
+        "spotifyUri": "spotify:track:5OjwOwfDW50y0gaNbNEZn8",
+        "stats_youtube": 45340,
+        "stats_lastfm": 0,
+        "stats_genius": 998
+    },
+    {
+        "title": "I Love It",
+        "artist": "Kanye West & Lil Pump",
+        "spotifyUri": "spotify:track:4S8d14HvHb70ImctNgVzQQ",
+        "stats_youtube": 694006505,
+        "stats_lastfm": 0,
+        "stats_genius": 1280
+    },
+    {
+        "title": "I Love My Baby",
+        "artist": "Archie Bell & The Drells",
+        "spotifyUri": "spotify:track:0QvePm7qtDWIL7Lbfeorba",
+        "stats_youtube": 554378,
+        "stats_lastfm": 0,
+        "stats_genius": 149
+    },
+    {
+        "title": "I Love You",
+        "artist": "The Volume's",
+        "spotifyUri": "spotify:track:0XQ54f01pVDwOy9fjtex4g",
+        "stats_youtube": 68704,
+        "stats_lastfm": 0,
+        "stats_genius": 615
+    },
+    {
+        "title": "I Need Money",
+        "artist": "Marky Mark & The Funky Bunch",
+        "spotifyUri": "spotify:track:0mmx6q9bGJfLHylvOlMtDZ",
+        "stats_youtube": 6154869,
+        "stats_lastfm": 0,
+        "stats_genius": 3244
+    },
+    {
+        "title": "I Need You So",
+        "artist": "Chuck Jackson & Maxine Brown",
+        "spotifyUri": "spotify:track:4pxUZiQifmJAA0l0KSUf1d",
+        "stats_youtube": 5668,
+        "stats_lastfm": 0,
+        "stats_genius": 24
+    },
+    {
+        "title": "I Pledge My Love",
+        "artist": "Peaches & Herb",
+        "spotifyUri": "spotify:track:7mZBgeTb3oLqTRwC1suWXN",
+        "stats_youtube": 1579234,
+        "stats_lastfm": 0,
+        "stats_genius": 5044
+    },
+    {
+        "title": "I Promise To Wait My Love",
+        "artist": "Martha Reeves & The Vandellas",
+        "spotifyUri": "spotify:track:3oBDHEINmsaU8t7hDWrOSr",
+        "stats_youtube": 15764,
+        "stats_lastfm": 0,
+        "stats_genius": 529
+    },
+    {
+        "title": "I Received A Letter",
+        "artist": "Delbert & Glen",
+        "spotifyUri": "spotify:track:0slyXInD5PEFYidY4pgZhC",
+        "stats_youtube": 161350,
+        "stats_lastfm": 0,
+        "stats_genius": 62
+    },
+    {
+        "title": "I Remember",
+        "artist": "Maurice Williams & The Zodiacs",
+        "spotifyUri": "spotify:track:5wHxSi0qqm84StmOZuSQ5J",
+        "stats_youtube": 1062093,
+        "stats_lastfm": 0,
+        "stats_genius": 8
+    },
+    {
+        "title": "I Saw Her Again",
+        "artist": "The Mamas & The Papas",
+        "spotifyUri": "spotify:track:2UizutYVqaB33jCHbSoi0d",
+        "stats_youtube": 3934618,
+        "stats_lastfm": 0,
+        "stats_genius": 19008
+    },
+    {
+        "title": "I Second That Emotion",
+        "artist": "Smokey Robinson & The Miracles",
+        "spotifyUri": "spotify:track:6Hd8mrDwBQ8rLo70FwFG5C",
+        "stats_youtube": 3885670,
+        "stats_lastfm": 0,
+        "stats_genius": 24497
+    },
+    {
+        "title": "I See You",
+        "artist": "Cathy & Joe",
+        "spotifyUri": "spotify:track:7DcXwLr5vbDroOgVKb3PzA",
+        "stats_youtube": 4030,
+        "stats_lastfm": 0,
+        "stats_genius": 13339
+    },
+    {
+        "title": "I Talk To The Trees",
+        "artist": "Edmundo Ros and His Orchestra",
+        "spotifyUri": "spotify:track:3ih5sVZXb3JKyMDugkoMQf",
+        "stats_youtube": 441115,
+        "stats_lastfm": 67,
+        "stats_genius": 0
+    },
+    {
+        "title": "I Thank You",
+        "artist": "Sam & Dave",
+        "spotifyUri": "spotify:track:0c2Gc3qrijvGkr0mZ8iKxq",
+        "stats_youtube": 699148,
+        "stats_lastfm": 0,
+        "stats_genius": 16255
+    },
+    {
+        "title": "I Told Myself A Lie",
+        "artist": "Clyde McPhatter",
+        "spotifyUri": "spotify:track:6nLTEE7AW97ECxq5WQxyXW",
+        "stats_youtube": 197551,
+        "stats_lastfm": 4214,
+        "stats_genius": 0
+    },
+    {
+        "title": "I Wanna Be A Cowboy",
+        "artist": "Boys Don't Cry",
+        "spotifyUri": "spotify:track:38mEFmht9K7UcpHvS9vtJG",
+        "stats_youtube": 32164629,
+        "stats_lastfm": 0,
+        "stats_genius": 17063
+    },
+    {
+        "title": "I Wanna Sex You Up (From \"New Jack City\")",
+        "artist": "Color Me Badd",
+        "spotifyUri": "spotify:track:3lsse1FoSHnNXc6y0jHxvd",
+        "stats_youtube": 0,
+        "stats_lastfm": 128772,
+        "stats_genius": 115340
+    },
+    {
+        "title": "I Want My Girl",
+        "artist": "Jesse Johnson's Revue",
+        "spotifyUri": "spotify:track:6P1FIV6hlOCEU8UXavbK5x",
+        "stats_youtube": 2904806,
+        "stats_lastfm": 0,
+        "stats_genius": 854
+    },
+    {
+        "title": "I Want To Be Happy Cha Cha",
+        "artist": "Enoch Light & The Light Brigade",
+        "spotifyUri": "spotify:track:1IQFOxGGY4tCdbUWY0B3eA",
+        "stats_youtube": 103107,
+        "stats_lastfm": 0,
+        "stats_genius": 965
+    },
+    {
+        "title": "I Want To Love You Baby",
+        "artist": "Peggy Scott & Jo Jo Benson",
+        "spotifyUri": "spotify:track:1lY03brwqALKdvGA81tYeS",
+        "stats_youtube": 24862,
+        "stats_lastfm": 0,
+        "stats_genius": 118
+    },
+    {
+        "title": "I Want To Stay Here",
+        "artist": "Steve & Eydie",
+        "spotifyUri": "spotify:track:7KBmbNZ6JMvuoL74Fw9PPW",
+        "stats_youtube": 333546,
+        "stats_lastfm": 0,
+        "stats_genius": 366
+    },
+    {
+        "title": "I Want To Take You Higher",
+        "artist": "Ike & Tina Turner & The Ikettes",
+        "spotifyUri": "spotify:track:2O6yvfyxLqziGjNYH9OOde",
+        "stats_youtube": 1174927,
+        "stats_lastfm": 0,
+        "stats_genius": 0
+    },
+    {
+        "title": "I Was Made To Love Her",
+        "artist": "King Curtis & The Kingpins",
+        "spotifyUri": "spotify:track:3dR4PkKZyL2aQLq2MWhCWI",
+        "stats_youtube": 131448,
+        "stats_lastfm": 0,
+        "stats_genius": 44
+    },
+    {
+        "title": "I Wish That We Were Married",
+        "artist": "Ronnie and The Hi-Lites",
+        "spotifyUri": "spotify:track:0I4GId05Rsx9367OcyG5ij",
+        "stats_youtube": 14782,
+        "stats_lastfm": 154,
+        "stats_genius": 0
+    },
+    {
+        "title": "I Won't Back Down",
+        "artist": "Blake Shelton & Dia Frampton",
+        "spotifyUri": "spotify:track:6XscPNlnKw0mnVYE7kvWRj",
+        "stats_youtube": 117443563,
+        "stats_lastfm": 0,
+        "stats_genius": 326
+    },
+    {
+        "title": "I Wonder What She's Doing Tonight",
+        "artist": "Barry & The Tamerlanes",
+        "spotifyUri": "spotify:track:1URixdT65DuE1s7nezaTom",
+        "stats_youtube": 4394754,
+        "stats_lastfm": 0,
+        "stats_genius": 949
+    },
+    {
+        "title": "I Wonder What She's Doing Tonite",
+        "artist": "Tommy Boyce & Bobby Hart",
+        "spotifyUri": "spotify:track:2ChhVPnOgHV9UmSuso8S9v",
+        "stats_youtube": 12367873,
+        "stats_lastfm": 0,
+        "stats_genius": 28757
+    },
+    {
+        "title": "I Wonder Why",
+        "artist": "Dion & The Belmonts",
+        "spotifyUri": "spotify:track:7vAw4LLIms6X8ZHcbtoazz",
+        "stats_youtube": 16613151,
+        "stats_lastfm": 0,
+        "stats_genius": 21077
+    },
+    {
+        "title": "I Wouldn't Lie",
+        "artist": "Yarbrough & Peoples",
+        "spotifyUri": "spotify:track:3NICTJCD9VHYN5esjGvrdT",
+        "stats_youtube": 2382699,
+        "stats_lastfm": 0,
+        "stats_genius": 26730
+    },
+    {
+        "title": "I'd Do It All Again",
+        "artist": "Sam Harris",
+        "spotifyUri": "spotify:track:2Kax0KNRaIk7Jg85dFSx4q",
+        "stats_youtube": 134964,
+        "stats_lastfm": 0,
+        "stats_genius": 1240
+    },
+    {
+        "title": "I'd Really Love To See You Tonight",
+        "artist": "England Dan & John Ford Coley",
+        "spotifyUri": "spotify:track:2r008pcfVYc0zgQvSRqUJE",
+        "stats_youtube": 16570273,
+        "stats_lastfm": 0,
+        "stats_genius": 330973
+    },
+    {
+        "title": "I'll Be Good",
+        "artist": "Rene & Angela",
+        "spotifyUri": "spotify:track:2SPNs07BKygbkbf48KNFEQ",
+        "stats_youtube": 95891883,
+        "stats_lastfm": 0,
+        "stats_genius": 19183
+    },
+    {
+        "title": "I'll Be Missing You",
+        "artist": "Puff Daddy & Faith Evans",
+        "spotifyUri": "spotify:track:0jKMnHAycHc9qO6R6UyhMc",
+        "stats_youtube": 2116905495,
+        "stats_lastfm": 0,
+        "stats_genius": 31868
+    },
+    {
+        "title": "I'll Be With You In Apple Blossom Time",
+        "artist": "Wayne Newton",
+        "spotifyUri": "spotify:track:5YiKmetYrMwo9J6Ay9VwXx",
+        "stats_youtube": 210226,
+        "stats_lastfm": 1897,
+        "stats_genius": 0
+    },
+    {
+        "title": "I'll Get Over You",
+        "artist": "Crystal Gayle",
+        "spotifyUri": "spotify:track:5cc4xKRM4dHZ6aVYbGKmdc",
+        "stats_youtube": 344909,
+        "stats_lastfm": 5461,
+        "stats_genius": 0
+    },
+    {
+        "title": "I'll Play For You",
+        "artist": "Seals & Crofts",
+        "spotifyUri": "spotify:track:3ZbbX73MaieghBBb36x7s1",
+        "stats_youtube": 31311574,
+        "stats_lastfm": 0,
+        "stats_genius": 8345
+    },
+    {
+        "title": "I'll Play The Fool",
+        "artist": "Dr. Buzzard's Original Savannah Band",
+        "spotifyUri": "spotify:track:1bSE0n12PsKE9l6I6wGevd",
+        "stats_youtube": 1087149,
+        "stats_lastfm": 0,
+        "stats_genius": 1517
+    },
+    {
+        "title": "I'll Take You There",
+        "artist": "BeBe & CeCe Winans",
+        "spotifyUri": "spotify:track:1CcF7Ag0AlO21X6EPvaNdl",
+        "stats_youtube": 829186,
+        "stats_lastfm": 0,
+        "stats_genius": 3002
+    },
+    {
+        "title": "I'll Try Something New",
+        "artist": "Supremes & Temptations",
+        "spotifyUri": "spotify:track:4bsCuHdTpVqf90EJ7oowMX",
+        "stats_youtube": 7483403,
+        "stats_lastfm": 0,
+        "stats_genius": 719
+    },
+    {
+        "title": "I'm A Fool",
+        "artist": "Dino, Desi & Billy",
+        "spotifyUri": "spotify:track:54eajp10qPgjUCiD2Ds9jk",
+        "stats_youtube": 1261155,
+        "stats_lastfm": 0,
+        "stats_genius": 976
+    },
+    {
+        "title": "I'm A Player",
+        "artist": "Too $hort",
+        "spotifyUri": "spotify:track:4XiZFtOlgXYtrp88tGNnk8",
+        "stats_youtube": 46799789,
+        "stats_lastfm": 0,
+        "stats_genius": 110769
+    },
+    {
+        "title": "I'm Confessin' (That I Love You)",
+        "artist": "Nino Tempo & April Stevens",
+        "spotifyUri": "spotify:track:0oR4XiH7xD3rEaJcQSeS2c",
+        "stats_youtube": 76897,
+        "stats_lastfm": 0,
+        "stats_genius": 106
+    },
+    {
+        "title": "I'm Gonna Make You Love Me",
+        "artist": "Diana Ross And The Supremes & The Temptations",
+        "spotifyUri": "spotify:track:3Rhxe6P1im82NFVkt9X2qZ",
+        "stats_youtube": 7483438,
+        "stats_lastfm": 0,
+        "stats_genius": 4183
+    },
+    {
+        "title": "I'm Leaving It (All) Up To You",
+        "artist": "Donny & Marie Osmond",
+        "spotifyUri": "spotify:track:5hyd2fifGiazSiiSxvPYoS",
+        "stats_youtube": 801560,
+        "stats_lastfm": 0,
+        "stats_genius": 4115
+    },
+    {
+        "title": "I'm Leaving It Up To You",
+        "artist": "Dale & Grace",
+        "spotifyUri": "spotify:track:4To8mxhdtvoKpELxEHOGGU",
+        "stats_youtube": 10147,
+        "stats_lastfm": 0,
+        "stats_genius": 6297
+    },
+    {
+        "title": "I'm Livin' In Shame",
+        "artist": "Diana Ross & The Supremes",
+        "spotifyUri": "spotify:track:2p2N5jnS43eOAcrsZLS8Ur",
+        "stats_youtube": 27748761,
+        "stats_lastfm": 0,
+        "stats_genius": 1592
+    },
+    {
+        "title": "I'm Looking For The One (To Be With Me)",
+        "artist": "Jazzy Jeff & The Fresh Prince",
+        "spotifyUri": "spotify:track:3hdG10y4aLANkVEpBHHzU9",
+        "stats_youtube": 79799353,
+        "stats_lastfm": 0,
+        "stats_genius": 3676
+    },
+    {
+        "title": "I'm Never Gonna Be Alone Anymore",
+        "artist": "Cornelius Brothers & Sister Rose",
+        "spotifyUri": "spotify:track:0d62GFZpi2wIABXCi2C21M",
+        "stats_youtube": 148556,
+        "stats_lastfm": 0,
+        "stats_genius": 226
+    },
+    {
+        "title": "I'm Not A Fool Anymore",
+        "artist": "T.K. Hulin",
+        "spotifyUri": "spotify:track:6S40tk1IkUkKkjX6tcd25J",
+        "stats_youtube": 147545,
+        "stats_lastfm": 0,
+        "stats_genius": 28757
+    },
+    {
+        "title": "I'm On My Way",
+        "artist": "Captain & Tennille",
+        "spotifyUri": "spotify:track:3DHtrrLYHrtX3CCsYyjdeW",
+        "stats_youtube": 32617,
+        "stats_lastfm": 0,
+        "stats_genius": 810
+    },
+    {
+        "title": "I'm Ready For Love",
+        "artist": "Martha & The Vandellas",
+        "spotifyUri": "spotify:track:1NzDXJTbP1zHDLZrulnfMk",
+        "stats_youtube": 1014489,
+        "stats_lastfm": 0,
+        "stats_genius": 1674
+    },
+    {
+        "title": "I'm So Anxious",
+        "artist": "Southside Johnny & The Asbury Jukes",
+        "spotifyUri": "spotify:track:4HGWP2dsoxExDmWTz02sT8",
+        "stats_youtube": 536854,
+        "stats_lastfm": 0,
+        "stats_genius": 1125
+    },
+    {
+        "title": "I'm So Tired...",
+        "artist": "Lauv & Troye Sivan",
+        "spotifyUri": "spotify:track:7COXchtUOMd6uIT6HvmRaI",
+        "stats_youtube": 178104829,
+        "stats_lastfm": 0,
+        "stats_genius": 20
+    },
+    {
+        "title": "I'm The Plug",
+        "artist": "Drake & Future",
+        "spotifyUri": "spotify:track:6bqtKURdSWkInAJHDkuaL0",
+        "stats_youtube": 5130268,
+        "stats_lastfm": 0,
+        "stats_genius": 30320
+    },
+    {
+        "title": "I'm Your Angel",
+        "artist": "R. Kelly & Celine Dion",
+        "spotifyUri": "spotify:track:0QWFiyhOqFu9RP8qzP6z5L",
+        "stats_youtube": 33731612,
+        "stats_lastfm": 0,
+        "stats_genius": 56499
+    },
+    {
+        "title": "I'm Your Puppet",
+        "artist": "James & Bobby Purify",
+        "spotifyUri": "spotify:track:6H8WMHCov3QGaPLbpOMpcJ",
+        "stats_youtube": 1351276,
+        "stats_lastfm": 0,
+        "stats_genius": 22497
+    },
+    {
+        "title": "I'm Yours",
+        "artist": "Elvis Presley",
+        "spotifyUri": "spotify:track:5gu5laRy0DJd17tb6bRMNm",
+        "stats_youtube": 51490,
+        "stats_lastfm": 2414,
+        "stats_genius": 0
+    },
+    {
+        "title": "I've Been Hurt",
+        "artist": "Bill Deal & The Rhondels",
+        "spotifyUri": "spotify:track:5hSSGFK7sMyimfCFyU4Sm3",
+        "stats_youtube": 3366192,
+        "stats_lastfm": 0,
+        "stats_genius": 1429
+    },
+    {
+        "title": "I've Been Waiting",
+        "artist": "Lil Peep & iLoveMakonnen",
+        "spotifyUri": "spotify:track:2v5JTeM6hSmi5wWy7jiwrI",
+        "stats_youtube": 564708486,
+        "stats_lastfm": 0,
+        "stats_genius": 8360
+    }
+]
