@@ -9,4 +9,10 @@
 -album als tipp möglichkeit einbauen
 
 
+-modus idee: punkte sammeln
+    -pkte für titel, interpret, album?, jahre
+    -combo pkte mögl (od multiplikator)
+    -mehr pkte für schwierigeres lied
+
+
 -credits songdatensatz: https://github.com/rfordatascience/tidytuesday/tree/main/data/2021/2021-09-14

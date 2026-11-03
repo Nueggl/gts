@@ -206,17 +206,17 @@
                 <label class="tl-diff-card active" id="tl-diff-label-standard">
                     <input type="radio" name="tl-difficulty" value="standard" checked onchange="updateTimelineDifficultyUI()">
                     <div class="tl-diff-title">⭐ Standard</div>
-                    <div class="tl-diff-desc">Ordne Songs nach ihrem Erscheinungsjahr im Zeitstrahl ein.</div>
+                    <div class="tl-diff-desc">Ordne Songs per Drag &amp; Drop nach ihrem Erscheinungsjahr im Zeitstrahl ein.</div>
                 </label>
                 <label class="tl-diff-card" id="tl-diff-label-profi">
                     <input type="radio" name="tl-difficulty" value="profi" onchange="updateTimelineDifficultyUI()">
-                    <div class="tl-diff-title">🔥 Profi <span class="tl-placeholder-tag">Platzhalter</span></div>
-                    <div class="tl-diff-desc">Erweiterte Regeln (in Planung – aktuell Standard-Regelwerk).</div>
+                    <div class="tl-diff-title">🔥 Profi</div>
+                    <div class="tl-diff-desc">Ordne den Song im Zeitstrahl ein UND errate zusätzlich Titel &amp; Interpret.</div>
                 </label>
                 <label class="tl-diff-card" id="tl-diff-label-experte">
                     <input type="radio" name="tl-difficulty" value="experte" onchange="updateTimelineDifficultyUI()">
-                    <div class="tl-diff-title">💎 Experte <span class="tl-placeholder-tag">Platzhalter</span></div>
-                    <div class="tl-diff-desc">Maximale Herausforderung (in Planung – aktuell Standard-Regelwerk).</div>
+                    <div class="tl-diff-title">💎 Experte</div>
+                    <div class="tl-diff-desc">Errate Titel, Interpret UND das exakte Erscheinungsjahr (mit Bereichs-Tipp im Endlos-Modus).</div>
                 </label>
             </div>
         </div>
@@ -290,6 +290,32 @@
                         <button onclick="replayTimelineSong()" class="tl-audio-btn" title="Song erneut abspielen">🔄 Song neu abspielen</button>
                         <button onclick="toggleTimelinePause()" id="tl-pause-btn" class="tl-audio-btn secondary" title="Musik pausieren">⏸️ Pause</button>
                         <div id="tl-admin-hint" class="tl-admin-hint hidden"></div>
+                    </div>
+
+                    <!-- Zusatz-Ratebereich für Profi & Experte -->
+                    <div id="tl-pro-guess-panel" class="tl-pro-guess-panel hidden">
+                        <div id="tl-tasks-checklist" class="tl-tasks-checklist">
+                            <!-- Dynamische Checkliste der Teilaufgaben -->
+                        </div>
+
+                        <div class="tl-pro-inputs-row">
+                            <input type="text" id="tl-guess-title" placeholder="Titel raten">
+                            <input type="text" id="tl-guess-artist" placeholder="Interpret raten">
+                            <input type="number" id="tl-guess-year" class="hidden" placeholder="Jahr (z.B. 1991)" min="1900" max="2035">
+                            <button id="tl-submit-guess-btn" onclick="checkTimelineTextGuesses()" class="tl-submit-guess-btn">Raten</button>
+                        </div>
+
+                        <div class="tl-hints-display-area">
+                            <p id="tl-tipp-display-interpret" class="tl-letter-hint"></p>
+                            <p id="tl-tipp-display-titel" class="tl-letter-hint"></p>
+                            <p id="tl-tipp-display-bereich" class="tl-range-hint hidden"></p>
+                        </div>
+
+                        <div id="tl-endless-hints-row" class="tl-endless-hints-row hidden">
+                            <button onclick="zeigeTimelineBuchstabe('interpret')" class="tl-hint-btn">🔤 Interpret-Tipp</button>
+                            <button onclick="zeigeTimelineBuchstabe('titel')" class="tl-hint-btn">🔤 Titel-Tipp</button>
+                            <button id="tl-btn-range-hint" onclick="zeigeTimelineBereichsTipp()" class="tl-hint-btn range-btn hidden">⏳ Zeitstrahl-Bereich zeigen</button>
+                        </div>
                     </div>
                 </div>
             </div>

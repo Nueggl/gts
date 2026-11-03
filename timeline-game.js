@@ -1,5 +1,6 @@
 // ==========================================
 // TIMELINE GAME MODE (Hitster-Style)
+// Unterstützt: Standard, Profi & Experte
 // ==========================================
 
 let timelineState = {
@@ -8,18 +9,31 @@ let timelineState = {
     difficulty: 'standard',     // 'standard' | 'profi' | 'experte'
     pool: [],                   // Gefilterte Songs mit gültigem Erscheinungsjahr
     usedKeys: new Set(),        // Verhindert doppelte Songs in einer Sitzung
-    timelineCards: [],          // Array aus { song, addedOrder, isNewlyPlaced }
+    timelineCards: [],          // Array aus { song, addedOrder, isNewlyPlaced, pendingDetails }
     nextOrderCounter: 0,        // Zählt hoch für FIFO-Entfernung im Endlos-Modus
     currentSong: null,          // Aktuell zu erratender Song
     currentStartSec: 0,         // Startsekunde des aktuellen Songs
     isPaused: false,
     round: 1,                   // Aktuelle Runde (Challenge: 1..10, Endlos: 1..n)
-    totalPlaced: 0,             // Anzahl erfolgreich eingeordneter Songs
+    totalPlaced: 0,             // Anzahl erfolgreich abgeschlossener Runden/Songs
     currentStreak: 0,           // Aktuelle fehlerfreie Serie (Endlos-Modus)
-    bestStreak: 0,              // Längste Serie in dieser Runde (Endlos-Modus)
+    bestStreak: 0,              // Längste Serie in dieser Sitzung (Endlos-Modus)
     mistakesThisRound: 0,       // Fehlversuche beim aktuellen Song
     phase: 'idle',              // 'guessing' | 'round_won' | 'gameover'
-    playTimer: null
+    playTimer: null,
+
+    // Teilaufgaben-Status für die aktuelle Runde (Profi & Experte)
+    placedSolved: false,
+    titleSolved: false,
+    artistSolved: false,
+    yearSolved: false,
+    placedCardRef: null,
+
+    // Tipps-Status (Endlos-Modus)
+    revealedTitleCount: 0,
+    revealedArtistCount: 0,
+    rangeHintActive: false,
+    rangeHintSlot: null
 };
 
 // Geometrie-Snapshot für butterweiches Drag & Drop ohne Flackern
@@ -35,7 +49,7 @@ function getSongKey(song) {
     return song.spotifyUri || `${song.artist}___${song.title}___${song.year}`;
 }
 
-// Hilfsfunktion: Sauberer Songtitel für kompakte Kartenanzeige (optional mit vollem Tooltip)
+// Hilfsfunktion: Sauberer Songtitel für kompakte Kartenanzeige
 function formatCardTitle(rawTitle) {
     if (typeof cleanTitleString === 'function') {
         const cleaned = cleanTitleString(rawTitle);
@@ -213,7 +227,8 @@ function startTimelineGame(mode) {
     timelineState.timelineCards.push({
         song: starterSong,
         addedOrder: ++timelineState.nextOrderCounter,
-        isNewlyPlaced: false
+        isNewlyPlaced: false,
+        pendingDetails: false
     });
 
     // UI umschalten
@@ -249,8 +264,26 @@ function beginTimelineRound() {
     timelineState.mistakesThisRound = 0;
     timelineState.isPaused = false;
 
-    // Markierung der zuletzt platzierten Karte nach Rundenwechsel sanft zurücksetzen
-    timelineState.timelineCards.forEach(c => c.isNewlyPlaced = false);
+    const diff = timelineState.difficulty;
+
+    // Teilaufgaben für diese Runde initialisieren
+    timelineState.placedSolved = false;
+    timelineState.titleSolved = (diff === 'standard');
+    timelineState.artistSolved = (diff === 'standard');
+    timelineState.yearSolved = false;
+    timelineState.placedCardRef = null;
+
+    // Tipps zurücksetzen
+    timelineState.revealedTitleCount = 0;
+    timelineState.revealedArtistCount = 0;
+    timelineState.rangeHintActive = false;
+    timelineState.rangeHintSlot = null;
+
+    // Markierung der zuletzt platzierten Karte nach Rundenwechsel zurücksetzen
+    timelineState.timelineCards.forEach(c => {
+        c.isNewlyPlaced = false;
+        c.pendingDetails = false;
+    });
 
     // Nächsten zu erratenden Song ziehen
     const nextSong = drawWeightedTimelineSong();
@@ -262,6 +295,9 @@ function beginTimelineRound() {
     document.getElementById('tl-feedback-banner').classList.add('hidden');
     document.getElementById('tl-round-success-box').classList.add('hidden');
     document.getElementById('tl-gameover-box').classList.add('hidden');
+
+    // Eingabefelder & Tipp-Anzeigen für Profi / Experte zurücksetzen
+    setupTimelineRoundInputsUI();
 
     const pauseBtn = document.getElementById('tl-pause-btn');
     if (pauseBtn) pauseBtn.innerText = '⏸️ Pause';
@@ -281,8 +317,156 @@ function beginTimelineRound() {
     }
 
     updateTimelineHeaderStats();
+    updateTimelineProUI();
     renderTimelineBoard();
     playCurrentTimelineSong(true);
+}
+
+function setupTimelineRoundInputsUI() {
+    const diff = timelineState.difficulty;
+    const proPanel = document.getElementById('tl-pro-guess-panel');
+    const titleInput = document.getElementById('tl-guess-title');
+    const artistInput = document.getElementById('tl-guess-artist');
+    const yearInput = document.getElementById('tl-guess-year');
+    const endlessHintsRow = document.getElementById('tl-endless-hints-row');
+    const rangeHintBtn = document.getElementById('tl-btn-range-hint');
+
+    const tippInterpret = document.getElementById('tl-tipp-display-interpret');
+    const tippTitel = document.getElementById('tl-tipp-display-titel');
+    const tippBereich = document.getElementById('tl-tipp-display-bereich');
+
+    if (tippInterpret) tippInterpret.innerText = '';
+    if (tippTitel) tippTitel.innerText = '';
+    if (tippBereich) {
+        tippBereich.innerText = '';
+        tippBereich.classList.add('hidden');
+    }
+
+    [titleInput, artistInput, yearInput].forEach(inp => {
+        if (!inp) return;
+        inp.value = '';
+        inp.readOnly = false;
+        inp.classList.remove('input-solved', 'input-wrong');
+    });
+
+    if (diff === 'standard') {
+        if (proPanel) proPanel.classList.add('hidden');
+    } else {
+        if (proPanel) proPanel.classList.remove('hidden');
+
+        // Jahres-Input nur im Experten-Modus anzeigen
+        if (yearInput) {
+            if (diff === 'experte') yearInput.classList.remove('hidden');
+            else yearInput.classList.add('hidden');
+        }
+
+        // Tipps nur im Endlos-Modus anzeigen
+        if (endlessHintsRow) {
+            if (timelineState.mode === 'endless') {
+                endlessHintsRow.classList.remove('hidden');
+                if (rangeHintBtn) {
+                    if (diff === 'experte') {
+                        rangeHintBtn.classList.remove('hidden');
+                        rangeHintBtn.disabled = false;
+                    } else {
+                        rangeHintBtn.classList.add('hidden');
+                    }
+                }
+            } else {
+                endlessHintsRow.classList.add('hidden');
+            }
+        }
+    }
+}
+
+function updateTimelineProUI() {
+    const diff = timelineState.difficulty;
+    const instructions = document.getElementById('tl-mystery-instructions');
+    const mysteryCard = document.getElementById('timeline-mystery-card');
+    const mysteryLabel = mysteryCard ? mysteryCard.querySelector('.tl-mystery-label') : null;
+    const mysteryHint = mysteryCard ? mysteryCard.querySelector('.tl-mystery-drag-hint') : null;
+    const checklist = document.getElementById('tl-tasks-checklist');
+
+    if (!mysteryCard) return;
+
+    // 1. Mystery Card Status & Instructions je nach Schwierigkeitsgrad
+    mysteryCard.classList.remove('placed-waiting', 'expert-no-drag');
+
+    if (diff === 'standard') {
+        mysteryCard.setAttribute('draggable', 'true');
+        if (instructions) instructions.innerText = 'Ziehe die Karte an die passende Stelle im Zeitstrahl!';
+        if (mysteryLabel) mysteryLabel.innerText = 'Welches Erscheinungsjahr?';
+        if (mysteryHint) mysteryHint.innerHTML = '✋ Drag &amp; Drop';
+        return;
+    }
+
+    if (diff === 'profi') {
+        if (instructions) {
+            instructions.innerText = 'Profi-Modus: Ordne die Karte im Zeitstrahl ein UND errate Titel & Interpret!';
+        }
+        if (timelineState.placedSolved) {
+            mysteryCard.setAttribute('draggable', 'false');
+            mysteryCard.classList.add('placed-waiting');
+            if (mysteryLabel) mysteryLabel.innerText = `Jahr: ${timelineState.currentSong?.year || ''}`;
+            if (mysteryHint) mysteryHint.innerHTML = '✅ Im Zeitstrahl!';
+        } else {
+            mysteryCard.setAttribute('draggable', 'true');
+            if (mysteryLabel) mysteryLabel.innerText = 'Welches Erscheinungsjahr?';
+            if (mysteryHint) mysteryHint.innerHTML = '✋ Drag &amp; Drop';
+        }
+
+        if (checklist) {
+            checklist.innerHTML = `
+                <span class="tl-task-chip ${timelineState.placedSolved ? 'done' : ''}">
+                    ${timelineState.placedSolved ? '✅' : '⬜'} Zeitstrahl
+                </span>
+                <span class="tl-task-chip ${timelineState.titleSolved ? 'done' : ''}">
+                    ${timelineState.titleSolved ? '✅' : '⬜'} Titel
+                </span>
+                <span class="tl-task-chip ${timelineState.artistSolved ? 'done' : ''}">
+                    ${timelineState.artistSolved ? '✅' : '⬜'} Interpret
+                </span>
+            `;
+        }
+    } else if (diff === 'experte') {
+        mysteryCard.setAttribute('draggable', 'false');
+        mysteryCard.classList.add('expert-no-drag');
+        if (instructions) {
+            instructions.innerText = 'Experten-Modus: Errate Titel, Interpret UND das exakte Erscheinungsjahr!';
+        }
+        if (timelineState.yearSolved) {
+            if (mysteryLabel) mysteryLabel.innerText = `Jahr: ${timelineState.currentSong?.year || ''}`;
+            if (mysteryHint) mysteryHint.innerHTML = '✅ Jahr gelöst!';
+        } else {
+            if (mysteryLabel) mysteryLabel.innerText = 'Exaktes Jahr gesucht';
+            if (mysteryHint) mysteryHint.innerHTML = '⌨️ Rechts eingeben';
+        }
+
+        if (checklist) {
+            checklist.innerHTML = `
+                <span class="tl-task-chip ${timelineState.titleSolved ? 'done' : ''}">
+                    ${timelineState.titleSolved ? '✅' : '⬜'} Titel
+                </span>
+                <span class="tl-task-chip ${timelineState.artistSolved ? 'done' : ''}">
+                    ${timelineState.artistSolved ? '✅' : '⬜'} Interpret
+                </span>
+                <span class="tl-task-chip ${timelineState.yearSolved ? 'done' : ''}">
+                    ${timelineState.yearSolved ? '✅' : '⬜'} Exaktes Jahr
+                </span>
+            `;
+        }
+    }
+}
+
+function isCurrentTimelineRoundComplete() {
+    if (timelineState.difficulty === 'standard') {
+        return timelineState.placedSolved;
+    } else if (timelineState.difficulty === 'profi') {
+        return timelineState.placedSolved && timelineState.titleSolved && timelineState.artistSolved;
+    } else if (timelineState.difficulty === 'experte') {
+        return timelineState.yearSolved && timelineState.titleSolved && timelineState.artistSolved;
+    }
+    return timelineState.placedSolved;
 }
 
 function nextTimelineRound() {
@@ -374,7 +558,7 @@ function updateTimelineHeaderStats() {
     if (timelineState.mode === 'challenge') {
         statsBar.innerHTML = `
             <span class="tl-stat-pill highlight">🎯 Runde ${timelineState.round} / 10</span>
-            <span class="tl-stat-pill">✅ Eingeordnet: ${timelineState.totalPlaced} / 10</span>
+            <span class="tl-stat-pill">✅ Gelöst: ${timelineState.totalPlaced} / 10</span>
         `;
     } else {
         statsBar.innerHTML = `
@@ -390,7 +574,6 @@ function applyDynamicTimelineScale() {
     if (!track) return;
 
     const count = timelineState.timelineCards.length;
-    // Dynamische Skalierung je nach Anzahl der Karten auf dem Zeitstrahl (1 bis 11)
     let cardWidth = 140;
     let cardGap = 14;
     let baseFont = 12;
@@ -412,14 +595,12 @@ function applyDynamicTimelineScale() {
         baseFont = 11;
         shiftDist = 48;
     } else {
-        // 9 bis 11 Karten
         cardWidth = 104;
         cardGap = 8;
         baseFont = 10.5;
         shiftDist = 44;
     }
 
-    // Zusätzlich auf kleineren Bildschirmen sanft anpassen
     const vw = window.innerWidth || 1280;
     if (vw < 1280 && count >= 7) {
         const factor = Math.max(0.78, vw / 1280);
@@ -442,44 +623,69 @@ function renderTimelineBoard() {
 
     timelineState.timelineCards.forEach((item, index) => {
         const song = item.song;
+        const isPending = Boolean(item.pendingDetails);
         const card = document.createElement('div');
-        card.className = 'tl-card' + (item.isNewlyPlaced ? ' newly-placed' : '');
+        card.className = 'tl-card'
+            + (item.isNewlyPlaced ? ' newly-placed' : '')
+            + (isPending ? ' pending-details' : '');
         card.dataset.index = index;
 
-        const displayTitle = formatCardTitle(song.title);
-        const fullTooltip = `${song.artist} – ${song.title} (${song.year})`;
-        card.title = fullTooltip;
+        if (isPending) {
+            // Karte liegt schon auf dem Zeitstrahl (z.B. im Profi/Experten-Modus), aber es fehlt noch Titel oder Interpret
+            const shownTitle = timelineState.titleSolved ? formatCardTitle(song.title) : '??? (Titel offen)';
+            const shownArtist = timelineState.artistSolved ? song.artist : '??? (Interpret offen)';
+            card.title = 'Errate noch die fehlenden Angaben (Titel / Interpret), um die Karte komplett aufzudecken!';
 
-        // Klick auf eine aufgedeckte Zeitstrahl-Karte öffnet optional Spotify in neuem Tab
-        if (song.spotifyUri) {
-            const spotifyUrl = song.spotifyUri.replace('spotify:track:', 'https://open.spotify.com/track/');
-            card.style.cursor = 'pointer';
-            card.addEventListener('click', (e) => {
-                if (dragSnapshot.active) return;
-                window.open(spotifyUrl, '_blank');
-            });
+            card.innerHTML = `
+                <div class="tl-card-cover-wrap">
+                    <div class="tl-card-cover-placeholder">?</div>
+                </div>
+                <div class="tl-card-title" style="${timelineState.titleSolved ? 'color:#69f0ae;' : 'color:#ffb74d;'}">${escapeHtml(shownTitle)}</div>
+                <div class="tl-card-artist" style="${timelineState.artistSolved ? 'color:#69f0ae;' : 'color:#aaa;'}">${escapeHtml(shownArtist)}</div>
+                <div class="tl-card-year">${song.year}</div>
+            `;
+        } else {
+            const displayTitle = formatCardTitle(song.title);
+            const fullTooltip = `${song.artist} – ${song.title} (${song.year})`;
+            card.title = fullTooltip;
+
+            if (song.spotifyUri) {
+                const spotifyUrl = song.spotifyUri.replace('spotify:track:', 'https://open.spotify.com/track/');
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', () => {
+                    if (dragSnapshot.active) return;
+                    window.open(spotifyUrl, '_blank');
+                });
+            }
+
+            // Aufbau strikt von oben nach unten:
+            // 1. Albumcover -> 2. Titel -> 3. Interpret -> 4. Entstehungsjahr (größer & fett)
+            card.innerHTML = `
+                <div class="tl-card-cover-wrap">
+                    <img class="tl-card-cover" src="${song.coverUrl || ''}" alt="Cover" loading="lazy">
+                </div>
+                <div class="tl-card-title">${escapeHtml(displayTitle)}</div>
+                <div class="tl-card-artist">${escapeHtml(song.artist)}</div>
+                <div class="tl-card-year">${song.year}</div>
+            `;
         }
-
-        // Aufbau strikt von oben nach unten:
-        // 1. Albumcover -> 2. Titel -> 3. Interpret -> 4. Entstehungsjahr (größer & fett)
-        card.innerHTML = `
-            <div class="tl-card-cover-wrap">
-                <img class="tl-card-cover" src="${song.coverUrl || ''}" alt="Cover" loading="lazy">
-            </div>
-            <div class="tl-card-title">${escapeHtml(displayTitle)}</div>
-            <div class="tl-card-artist">${escapeHtml(song.artist)}</div>
-            <div class="tl-card-year">${song.year}</div>
-        `;
 
         track.appendChild(card);
     });
 
-    // Unsichtbarer Drop-Indikator für die animierte Lücke beim Ziehen
+    // Drop-Indikator für die animierte Lücke beim Ziehen (oder für den Bereichs-Tipp im Experten-Modus)
     const indicator = document.createElement('div');
     indicator.id = 'timeline-drop-indicator';
     indicator.className = 'tl-drop-indicator';
     indicator.innerHTML = `<span>⬇ Hier<br>ablegen</span>`;
     track.appendChild(indicator);
+
+    // Falls im Experten-Endlos-Modus der Bereichs-Tipp aktiv ist und das Jahr noch nicht gelöst wurde -> Lücke offen halten!
+    if (timelineState.rangeHintActive && !timelineState.yearSolved && timelineState.rangeHintSlot !== null) {
+        requestAnimationFrame(() => {
+            applyRangeHintVisualOnBoard(timelineState.rangeHintSlot);
+        });
+    }
 }
 
 function escapeHtml(str) {
@@ -561,6 +767,8 @@ function updateTimelineSpaceAnimation(slotIndex) {
     });
 
     if (indicator) {
+        indicator.classList.remove('range-hint-active');
+        indicator.innerHTML = `<span>⬇ Hier<br>ablegen</span>`;
         if (slotIndex !== null && slotIndex !== undefined && dragSnapshot.slotPositions[slotIndex] !== undefined) {
             indicator.style.left = `${dragSnapshot.slotPositions[slotIndex]}px`;
             indicator.classList.add('visible');
@@ -584,18 +792,59 @@ function clearTimelineDragState() {
 }
 
 // ==========================================
-// 6. AUSWERTUNG BEIM ABLEGEN DER KARTE
+// 6. ZEITSTRAHL-EINORDNUNG & RUNDEN-ABSCHLUSS
 // ==========================================
+
+function insertCurrentSongIntoTimeline(slotIndex) {
+    const song = timelineState.currentSong;
+    timelineState.timelineCards.forEach(c => c.isNewlyPlaced = false);
+
+    const allDone = isCurrentTimelineRoundComplete();
+    const newCardObj = {
+        song: song,
+        addedOrder: ++timelineState.nextOrderCounter,
+        isNewlyPlaced: allDone,
+        pendingDetails: !allDone
+    };
+
+    timelineState.timelineCards.splice(slotIndex, 0, newCardObj);
+    timelineState.placedCardRef = newCardObj;
+
+    // Im Endlos-Modus: Maximal die letzten 10 Songs auf dem Zeitstrahl behalten (FIFO nach Eintragszeitpunkt!)
+    if (timelineState.mode === 'endless' && timelineState.timelineCards.length > 10) {
+        let oldestOrder = Infinity;
+        let oldestIndex = -1;
+        timelineState.timelineCards.forEach((c, idx) => {
+            if (c.addedOrder < oldestOrder) {
+                oldestOrder = c.addedOrder;
+                oldestIndex = idx;
+            }
+        });
+        if (oldestIndex !== -1) {
+            timelineState.timelineCards.splice(oldestIndex, 1);
+        }
+    }
+}
+
+function findCorrectSlotForYear(yearVal) {
+    const cards = timelineState.timelineCards;
+    for (let i = 0; i < cards.length; i++) {
+        if (yearVal <= parseInt(cards[i].song.year)) {
+            return i;
+        }
+    }
+    return cards.length;
+}
 
 function handleTimelineCardDrop(slotIndex) {
     if (!timelineState.active || timelineState.phase !== 'guessing' || !timelineState.currentSong) return;
+    if (timelineState.difficulty === 'experte' || timelineState.placedSolved) return;
 
     const song = timelineState.currentSong;
     const cards = timelineState.timelineCards;
     const songYear = parseInt(song.year);
 
-    // Nachbarn links und rechts prüfen
-    // Bei gleichem Erscheinungsjahr (z.B. 1985 neben 1985) zählen BEIDE Seiten als richtig (<= bzw. >=)
+    // Nachbarn links und rechts prüfen (gleiches Jahr zählt auf beiden Seiten als richtig)
     const leftCard = slotIndex > 0 ? cards[slotIndex - 1] : null;
     const rightCard = slotIndex < cards.length ? cards[slotIndex] : null;
 
@@ -605,42 +854,36 @@ function handleTimelineCardDrop(slotIndex) {
     const isCorrect = !tooOldForSpot && !tooYoungForSpot;
 
     if (isCorrect) {
-        onCorrectTimelinePlacement(slotIndex);
+        timelineState.placedSolved = true;
+        timelineState.yearSolved = true;
+        insertCurrentSongIntoTimeline(slotIndex);
+
+        if (isCurrentTimelineRoundComplete()) {
+            completeCurrentTimelineRound();
+        } else {
+            // Im Profi-Modus: Zeitstrahl stimmt schon, aber Titel und/oder Interpret fehlen noch!
+            updateTimelineProUI();
+            updateTimelineHeaderStats();
+            renderTimelineBoard();
+            showTimelineBannerInfo(`✅ Zeitstrahl-Position stimmt (${song.year})! Errate jetzt noch die offenen Felder.`);
+        }
     } else {
         onWrongTimelinePlacement(slotIndex, tooOldForSpot, tooYoungForSpot);
     }
 }
 
-function onCorrectTimelinePlacement(slotIndex) {
+function completeCurrentTimelineRound() {
     const song = timelineState.currentSong;
 
-    // Alte Hervorhebung löschen & neuen Song an der gewählten Stelle einfügen
-    timelineState.timelineCards.forEach(c => c.isNewlyPlaced = false);
-    timelineState.timelineCards.splice(slotIndex, 0, {
-        song: song,
-        addedOrder: ++timelineState.nextOrderCounter,
-        isNewlyPlaced: true
-    });
+    if (timelineState.placedCardRef) {
+        timelineState.placedCardRef.pendingDetails = false;
+        timelineState.placedCardRef.isNewlyPlaced = true;
+    }
 
     timelineState.totalPlaced++;
 
-    // Im Endlos-Modus: Maximal die letzten 10 Songs auf dem Zeitstrahl behalten (FIFO nach Eintragszeitpunkt!)
     if (timelineState.mode === 'endless') {
-        if (timelineState.timelineCards.length > 10) {
-            let oldestOrder = Infinity;
-            let oldestIndex = -1;
-            timelineState.timelineCards.forEach((c, idx) => {
-                if (c.addedOrder < oldestOrder) {
-                    oldestOrder = c.addedOrder;
-                    oldestIndex = idx;
-                }
-            });
-            if (oldestIndex !== -1) {
-                timelineState.timelineCards.splice(oldestIndex, 1);
-            }
-        }
-
-        // Serie erhöhen, wenn im ersten Versuch dieser Runde richtig eingeordnet
+        // Serie erhöhen, wenn in dieser Runde kein einziger Fehlversuch passiert ist (Tipps sind erlaubt!)
         if (timelineState.mistakesThisRound === 0) {
             timelineState.currentStreak++;
             if (timelineState.currentStreak > timelineState.bestStreak) {
@@ -652,7 +895,7 @@ function onCorrectTimelinePlacement(slotIndex) {
     updateTimelineHeaderStats();
     renderTimelineBoard();
 
-    // Feedback-Banner ausblenden
+    // Oberen Ratebereich & Banner ausblenden
     document.getElementById('tl-feedback-banner').classList.add('hidden');
     document.getElementById('tl-mystery-stage').classList.add('hidden');
 
@@ -668,7 +911,7 @@ function onCorrectTimelinePlacement(slotIndex) {
     const successBox = document.getElementById('tl-round-success-box');
     const successText = document.getElementById('tl-round-success-text');
     if (successText) {
-        successText.innerHTML = `✅ Richtig eingeordnet! <strong>${escapeHtml(song.artist)} – ${escapeHtml(formatCardTitle(song.title))}</strong> (${song.year})`;
+        successText.innerHTML = `✅ Runde gelöst! <strong>${escapeHtml(song.artist)} – ${escapeHtml(formatCardTitle(song.title))}</strong> (${song.year})`;
     }
     if (successBox) {
         successBox.classList.remove('hidden');
@@ -683,7 +926,7 @@ function onWrongTimelinePlacement(slotIndex, isOlderThanLeft, isYoungerThanRight
         timelineState.phase = 'gameover';
         document.getElementById('tl-mystery-stage').classList.add('hidden');
         document.getElementById('tl-feedback-banner').classList.add('hidden');
-        showChallengeLost(song);
+        showChallengeLost(song, 'Falsche Position auf dem Zeitstrahl');
         return;
     }
 
@@ -698,14 +941,12 @@ function onWrongTimelinePlacement(slotIndex, isOlderThanLeft, isYoungerThanRight
     banner.classList.remove('hidden', 'hint-older', 'hint-younger');
 
     if (isOlderThanLeft) {
-        // Song hat ein kleineres Erscheinungsjahr als die Karte links neben dem gewählten Slot -> muss weiter nach links (älter)
         banner.classList.add('hint-older');
         banner.innerHTML = `
             <span class="tl-hint-arrow">⬅️</span>
             <span>Falsch! Der gesuchte Song ist <strong>älter (früher erschienen)</strong> – ziehe ihn weiter nach links!</span>
         `;
     } else {
-        // Song hat ein größeres Erscheinungsjahr als die Karte rechts neben dem gewählten Slot -> muss weiter nach rechts (jünger)
         banner.classList.add('hint-younger');
         banner.innerHTML = `
             <span>Falsch! Der gesuchte Song ist <strong>jünger (später erschienen)</strong> – ziehe ihn weiter nach rechts!</span>
@@ -714,8 +955,287 @@ function onWrongTimelinePlacement(slotIndex, isOlderThanLeft, isYoungerThanRight
     }
 }
 
+function showTimelineBannerInfo(htmlText, typeClass = '') {
+    const banner = document.getElementById('tl-feedback-banner');
+    if (!banner) return;
+    banner.classList.remove('hidden', 'hint-older', 'hint-younger');
+    if (typeClass) banner.classList.add(typeClass);
+    banner.innerHTML = `<span>${htmlText}</span>`;
+}
+
 // ==========================================
-// 7. CHALLENGE GEWONNEN / VERLOREN & ENDLOS-AUSWERTUNG
+// 7. PROFI & EXPERTE: TEXT- UND JAHRES-EINGABEN PRÜFEN
+// ==========================================
+
+function checkTimelineTextGuesses() {
+    if (!timelineState.active || timelineState.phase !== 'guessing' || !timelineState.currentSong) return;
+    if (timelineState.difficulty === 'standard') return;
+
+    const song = timelineState.currentSong;
+    const titleInput = document.getElementById('tl-guess-title');
+    const artistInput = document.getElementById('tl-guess-artist');
+    const yearInput = document.getElementById('tl-guess-year');
+
+    const rawTitle = titleInput ? titleInput.value.trim() : '';
+    const rawArtist = artistInput ? artistInput.value.trim() : '';
+    const rawYear = yearInput ? yearInput.value.trim() : '';
+
+    // Nur Felder prüfen, die noch NICHT gelöst sind und in die der User etwas eingetragen hat
+    const checkTitle = !timelineState.titleSolved && rawTitle.length > 0;
+    const checkArtist = !timelineState.artistSolved && rawArtist.length > 0;
+    const checkYear = (timelineState.difficulty === 'experte') && !timelineState.yearSolved && rawYear.length > 0;
+
+    if (!checkTitle && !checkArtist && !checkYear) {
+        return;
+    }
+
+    let wrongFields = [];
+    let wrongYearValue = null;
+    let newlySolvedAny = false;
+
+    // 1. Titel prüfen (mit Levenshtein <= 2 Fehlertoleranz wie im Hauptspiel)
+    if (checkTitle) {
+        const cleanGuess = cleanTitleString(rawTitle).toLowerCase();
+        const cleanActual = cleanTitleString(song.title).toLowerCase();
+        const isTitleOk = cleanGuess.length > 0 && levenshtein(cleanGuess, cleanActual) <= 2;
+
+        if (isTitleOk) {
+            timelineState.titleSolved = true;
+            newlySolvedAny = true;
+            titleInput.value = formatCardTitle(song.title);
+            titleInput.readOnly = true;
+            titleInput.classList.remove('input-wrong');
+            titleInput.classList.add('input-solved');
+        } else {
+            wrongFields.push('Titel');
+            triggerWrongInputAnimation(titleInput);
+        }
+    }
+
+    // 2. Interpret prüfen (mit checkArtistMatch / Levenshtein <= 2 & Teil-Künstler-Logik wie im Hauptspiel)
+    if (checkArtist) {
+        const isArtistOk = checkArtistMatch(rawArtist, song.artist);
+
+        if (isArtistOk) {
+            timelineState.artistSolved = true;
+            newlySolvedAny = true;
+            artistInput.value = song.artist;
+            artistInput.readOnly = true;
+            artistInput.classList.remove('input-wrong');
+            artistInput.classList.add('input-solved');
+        } else {
+            wrongFields.push('Interpret');
+            triggerWrongInputAnimation(artistInput);
+        }
+    }
+
+    // 3. Exaktes Erscheinungsjahr prüfen (nur im Experten-Modus)
+    if (checkYear) {
+        const guessedYearInt = parseInt(rawYear, 10);
+        const actualYearInt = parseInt(song.year, 10);
+        const isYearOk = !isNaN(guessedYearInt) && guessedYearInt === actualYearInt;
+
+        if (isYearOk) {
+            timelineState.yearSolved = true;
+            timelineState.placedSolved = true;
+            timelineState.rangeHintActive = false;
+            newlySolvedAny = true;
+
+            yearInput.value = String(song.year);
+            yearInput.readOnly = true;
+            yearInput.classList.remove('input-wrong');
+            yearInput.classList.add('input-solved');
+
+            // Karte automatisch an der richtigen Stelle in den Zeitstrahl einreihen!
+            const targetSlot = findCorrectSlotForYear(actualYearInt);
+            insertCurrentSongIntoTimeline(targetSlot);
+        } else {
+            wrongFields.push('Erscheinungsjahr');
+            wrongYearValue = guessedYearInt;
+            triggerWrongInputAnimation(yearInput);
+        }
+    }
+
+    // Falls mindestens ein geprüftes Feld FALSCH war:
+    if (wrongFields.length > 0) {
+        if (timelineState.mode === 'challenge') {
+            // Im Challenge-Modus führt 1 falscher Rateversuch zum Verlust!
+            timelineState.phase = 'gameover';
+            document.getElementById('tl-mystery-stage').classList.add('hidden');
+            document.getElementById('tl-feedback-banner').classList.add('hidden');
+            showChallengeLost(song, `Falscher Tipp bei: ${wrongFields.join(', ')}`);
+            return;
+        }
+
+        // Im Endlos-Modus: Serie auf 0 setzen & hilfreiches Feedback (inkl. Pfeil-Tipp bei falschem Jahr) geben
+        timelineState.mistakesThisRound++;
+        timelineState.currentStreak = 0;
+        updateTimelineHeaderStats();
+
+        const banner = document.getElementById('tl-feedback-banner');
+        if (banner) {
+            banner.classList.remove('hidden', 'hint-older', 'hint-younger');
+
+            if (wrongYearValue !== null && !isNaN(wrongYearValue)) {
+                const actualYearInt = parseInt(song.year, 10);
+                const otherWrong = wrongFields.filter(f => f !== 'Erscheinungsjahr');
+                const extraText = otherWrong.length > 0 ? ` (Außerdem falsch: ${otherWrong.join(', ')})` : '';
+
+                if (actualYearInt < wrongYearValue) {
+                    banner.classList.add('hint-older');
+                    banner.innerHTML = `
+                        <span class="tl-hint-arrow">⬅️</span>
+                        <span>Falsch! Der gesuchte Song ist <strong>älter (vor ${wrongYearValue} erschienen)</strong>!${escapeHtml(extraText)}</span>
+                    `;
+                } else {
+                    banner.classList.add('hint-younger');
+                    banner.innerHTML = `
+                        <span>Falsch! Der gesuchte Song ist <strong>jünger (nach ${wrongYearValue} erschienen)</strong>!${escapeHtml(extraText)}</span>
+                        <span class="tl-hint-arrow">➡️</span>
+                    `;
+                }
+            } else {
+                banner.classList.add('hint-older');
+                banner.innerHTML = `
+                    <span>❌ <strong>${escapeHtml(wrongFields.join(' & '))}</strong> leider falsch! Versuche es weiter oder nutze einen Tipp.</span>
+                `;
+            }
+        }
+
+        updateTimelineProUI();
+        renderTimelineBoard();
+        return;
+    }
+
+    // Wenn alles Geprüfte richtig war -> Prüfen, ob damit die komplette Runde gelöst ist!
+    if (isCurrentTimelineRoundComplete()) {
+        completeCurrentTimelineRound();
+    } else if (newlySolvedAny) {
+        updateTimelineProUI();
+        renderTimelineBoard();
+        showTimelineBannerInfo(`✅ Sehr gut! Löse jetzt noch die verbleibenden Aufgaben dieser Runde.`);
+    }
+}
+
+function triggerWrongInputAnimation(inputEl) {
+    if (!inputEl) return;
+    inputEl.classList.remove('input-wrong');
+    void inputEl.offsetWidth; // Reflow für Neustart der Shake-Animation
+    inputEl.classList.add('input-wrong');
+}
+
+// ==========================================
+// 8. TIPPS IM ENDLOS-MODUS (BUCHSTABEN & BEREICHS-TIPP)
+// ==========================================
+
+function zeigeTimelineBuchstabe(typ) {
+    if (!timelineState.active || timelineState.phase !== 'guessing' || !timelineState.currentSong) return;
+    if (timelineState.mode !== 'endless') return;
+
+    const song = timelineState.currentSong;
+    let targetString = '';
+    let currentCount = 0;
+    let displayElementId = '';
+    let prefix = '';
+
+    if (typ === 'titel') {
+        if (timelineState.titleSolved) return;
+        timelineState.revealedTitleCount++;
+        targetString = cleanTitleString(song.title);
+        currentCount = timelineState.revealedTitleCount;
+        displayElementId = 'tl-tipp-display-titel';
+        prefix = 'Titel: ';
+    } else {
+        if (timelineState.artistSolved) return;
+        timelineState.revealedArtistCount++;
+        targetString = song.artist.trim();
+        currentCount = timelineState.revealedArtistCount;
+        displayElementId = 'tl-tipp-display-interpret';
+        prefix = 'Interpret: ';
+    }
+
+    if (currentCount > targetString.length) currentCount = targetString.length;
+
+    let masked = '';
+    for (let i = 0; i < targetString.length; i++) {
+        const char = targetString[i];
+        if (char === ' ' || char === '-' || char === '&' || char === '.' || i < currentCount) {
+            masked += char;
+        } else {
+            masked += '_';
+        }
+    }
+
+    const displayString = masked.split('').map(char => char === ' ' ? ' \u00A0 ' : char).join(' ');
+    const el = document.getElementById(displayElementId);
+    if (el) el.innerText = prefix + displayString;
+}
+
+function zeigeTimelineBereichsTipp() {
+    if (!timelineState.active || timelineState.phase !== 'guessing' || !timelineState.currentSong) return;
+    if (timelineState.mode !== 'endless' || timelineState.difficulty !== 'experte' || timelineState.yearSolved) return;
+
+    const songYear = parseInt(timelineState.currentSong.year, 10);
+    const cards = timelineState.timelineCards;
+    const slot = findCorrectSlotForYear(songYear);
+
+    timelineState.rangeHintActive = true;
+    timelineState.rangeHintSlot = slot;
+
+    // Zeitraum-Text bestimmen
+    const leftCard = slot > 0 ? cards[slot - 1] : null;
+    const rightCard = slot < cards.length ? cards[slot] : null;
+
+    let rangeDesc = '';
+    if (leftCard && rightCard) {
+        rangeDesc = `zwischen ${leftCard.song.year} und ${rightCard.song.year}`;
+    } else if (leftCard && !rightCard) {
+        rangeDesc = `rechts nach ${leftCard.song.year} (≥ ${leftCard.song.year})`;
+    } else if (!leftCard && rightCard) {
+        rangeDesc = `links vor ${rightCard.song.year} (≤ ${rightCard.song.year})`;
+    } else {
+        rangeDesc = `auf dem Zeitstrahl`;
+    }
+
+    const rangeEl = document.getElementById('tl-tipp-display-bereich');
+    if (rangeEl) {
+        rangeEl.innerText = `⏳ Bereichs-Tipp: Der Song gehört ${rangeDesc} (siehe Markierung im Zeitstrahl unten)!`;
+        rangeEl.classList.remove('hidden');
+    }
+
+    const btn = document.getElementById('tl-btn-range-hint');
+    if (btn) btn.disabled = true;
+
+    applyRangeHintVisualOnBoard(slot);
+}
+
+function applyRangeHintVisualOnBoard(slotIndex) {
+    captureTimelineDragSnapshot();
+    const track = document.getElementById('timeline-track');
+    const indicator = document.getElementById('timeline-drop-indicator');
+    if (!track || !indicator) return;
+
+    const cards = track.querySelectorAll('.tl-card');
+    cards.forEach((card, idx) => {
+        if (idx < slotIndex) {
+            card.classList.add('shift-left');
+            card.classList.remove('shift-right');
+        } else {
+            card.classList.add('shift-right');
+            card.classList.remove('shift-left');
+        }
+    });
+
+    if (dragSnapshot.slotPositions[slotIndex] !== undefined) {
+        indicator.style.left = `${dragSnapshot.slotPositions[slotIndex]}px`;
+        indicator.innerHTML = `<span>📍 Richtiger<br>Bereich</span>`;
+        indicator.classList.add('visible', 'range-hint-active');
+    }
+    dragSnapshot.active = false;
+}
+
+// ==========================================
+// 9. CHALLENGE GEWONNEN / VERLOREN & ENDLOS-AUSWERTUNG
 // ==========================================
 
 function showChallengeVictory(lastSong) {
@@ -731,7 +1251,7 @@ function showChallengeVictory(lastSong) {
     if (details) {
         details.innerHTML = `
             <p style="font-size: 1.08em; color: #ddd; margin: 6px 0 12px 0;">
-                Stark! Du hast alle <strong>10 Songs</strong> fehlerfrei an der richtigen Stelle in deinen Zeitstrahl eingeordnet!
+                Stark! Du hast alle <strong>10 Runden</strong> im Schwierigkeitsgrad <strong>${timelineState.difficulty.toUpperCase()}</strong> fehlerfrei gemeistert!
             </p>
             <div class="tl-lost-song-preview">
                 <img src="${lastSong.coverUrl || ''}" alt="Cover">
@@ -747,7 +1267,13 @@ function showChallengeVictory(lastSong) {
     if (box) box.classList.remove('hidden');
 }
 
-function showChallengeLost(failedSong) {
+function showChallengeLost(failedSong, reasonText = '') {
+    // Falls die Karte schon halb auf dem Zeitstrahl lag, vollständig aufdecken
+    if (timelineState.placedCardRef) {
+        timelineState.placedCardRef.pendingDetails = false;
+        renderTimelineBoard();
+    }
+
     const box = document.getElementById('tl-gameover-box');
     const title = document.getElementById('tl-gameover-title');
     const details = document.getElementById('tl-gameover-details');
@@ -758,10 +1284,12 @@ function showChallengeLost(failedSong) {
         title.innerText = '💥 Challenge verloren!';
     }
     if (details) {
+        const reasonHtml = reasonText ? `<div style="color:#ff8a80; font-size:0.92em; margin-bottom:8px;">Grund: ${escapeHtml(reasonText)}</div>` : '';
         details.innerHTML = `
-            <p style="font-size: 1.05em; color: #ddd; margin: 6px 0 12px 0;">
-                Du hast in <strong>Runde ${timelineState.round} von 10</strong> leider daneben gelegen (${timelineState.totalPlaced} zuvor richtig eingeordnet).
+            <p style="font-size: 1.05em; color: #ddd; margin: 6px 0 8px 0;">
+                Du hast in <strong>Runde ${timelineState.round} von 10</strong> leider daneben gelegen (${timelineState.totalPlaced} zuvor komplett gelöst).
             </p>
+            ${reasonHtml}
             <div class="tl-lost-song-preview">
                 <img src="${failedSong.coverUrl || ''}" alt="Cover">
                 <div>
@@ -803,10 +1331,10 @@ function finishEndlessTimeline() {
                 <div style="background:#262626; border:2px solid #ff9800; border-radius:10px; padding:14px 22px; min-width:170px;">
                     <div style="font-size:0.85em; color:#bbb; text-transform:uppercase;">🏆 Längste Serie</div>
                     <div style="font-size:2.1em; font-weight:900; color:#ffb74d; margin-top:4px;">${timelineState.bestStreak}</div>
-                    <div style="font-size:0.8em; color:#aaa;">Songs in Folge richtig</div>
+                    <div style="font-size:0.8em; color:#aaa;">Songs in Folge fehlerfrei</div>
                 </div>
                 <div style="background:#262626; border:1px solid #444; border-radius:10px; padding:14px 22px; min-width:150px;">
-                    <div style="font-size:0.85em; color:#bbb; text-transform:uppercase;">📀 Eingeordnet</div>
+                    <div style="font-size:0.85em; color:#bbb; text-transform:uppercase;">📀 Gelöst</div>
                     <div style="font-size:2.1em; font-weight:900; color:#fff; margin-top:4px;">${timelineState.totalPlaced}</div>
                     <div style="font-size:0.8em; color:#aaa;">Songs insgesamt</div>
                 </div>
@@ -818,7 +1346,7 @@ function finishEndlessTimeline() {
 }
 
 // ==========================================
-// 8. EVENT-LISTENER INITIALISIERUNG
+// 10. EVENT-LISTENER INITIALISIERUNG
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -828,7 +1356,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mysteryCard && boardWrapper) {
         // --- HTML5 Drag & Drop Events ---
         mysteryCard.addEventListener('dragstart', (e) => {
-            if (!timelineState.active || timelineState.phase !== 'guessing') {
+            if (
+                !timelineState.active ||
+                timelineState.phase !== 'guessing' ||
+                timelineState.difficulty === 'experte' ||
+                timelineState.placedSolved
+            ) {
                 e.preventDefault();
                 return;
             }
@@ -840,7 +1373,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.dataTransfer.setData('text/plain', 'timeline-mystery-card');
             }
 
-            // Geometrie vor der ersten Verschiebung aufzeichnen
             captureTimelineDragSnapshot();
         });
 
@@ -862,7 +1394,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         boardWrapper.addEventListener('dragleave', (e) => {
             if (!dragSnapshot.active) return;
-            // Nur zurücksetzen, wenn der Mauszeiger den Wrapper wirklich verlassen hat (nicht beim Wechsel auf ein Kind-Element)
             const rect = boardWrapper.getBoundingClientRect();
             if (
                 e.clientX <= rect.left ||
@@ -888,10 +1419,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Fenstergrößenänderung -> Dynamische Skalierung des Zeitstrahls nachführen
+    // Enter-Taste in den Profi/Experten-Eingabefeldern löst direkt checkTimelineTextGuesses() aus
+    ['tl-guess-title', 'tl-guess-artist', 'tl-guess-year'].forEach(id => {
+        const inputEl = document.getElementById(id);
+        if (inputEl) {
+            inputEl.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    checkTimelineTextGuesses();
+                }
+            });
+        }
+    });
+
+    // Fenstergrößenänderung -> Dynamische Skalierung & ggf. Bereichs-Tipp nachführen
     window.addEventListener('resize', () => {
         if (timelineState.active) {
             applyDynamicTimelineScale();
+            if (timelineState.rangeHintActive && !timelineState.yearSolved && timelineState.rangeHintSlot !== null) {
+                applyRangeHintVisualOnBoard(timelineState.rangeHintSlot);
+            }
         }
     });
 
