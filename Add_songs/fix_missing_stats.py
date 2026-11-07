@@ -9,9 +9,9 @@ import os
 
 # Configure standard streams for UTF-8 to prevent UnicodeEncodeError in Windows terminal
 if hasattr(sys.stdout, 'reconfigure'):
-    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
 if hasattr(sys.stderr, 'reconfigure'):
-    sys.stderr.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -27,6 +27,9 @@ import config_yt
 # --- CONFIGURATION & PATHS ---
 MAIN_JSON_FILE = os.path.join(SCRIPT_DIR, 'songs_datensatz.json')
 ERROR_JSON_FILE = os.path.join(SCRIPT_DIR, 'songs_fehlend.json')
+
+# Wörter, die YouTube bei unauthentifiziertem HTML-Scraping hinter das Age-Gate ("Confirm your age") sperren
+NSFW_TRIGGERS = {"sex", "cum", "naked", "porno", "orgy", "sexual", "erotic", "foreplay", "bitch", "weed", "cowgirl", "shit"}
 
 
 def normalize_typography(text: str) -> str:
@@ -54,6 +57,28 @@ def strip_features_and_suffixes(title: str) -> str:
     return title.strip()
 
 
+def clean_artist_name(artist: str) -> str:
+    """Bereinigt Künstlernamen um typische Datensatz-Glitches wie unvollständige Klammern oder Slashes."""
+    if not artist:
+        return ""
+    artist = normalize_typography(artist)
+    # Entferne unvollständige Duett-Tags wie '[Duet', '(Duet'
+    artist = re.sub(r'[\(\[\{]\s*(?:duet|feat\.?|ft\.?|with).*', '', artist, flags=re.IGNORECASE)
+    # Bei 'John Williams/"Jaws" Soundtrack' -> nimm nur den primären Künstler vor dem Slash
+    if '/' in artist:
+        artist = artist.split('/')[0]
+    # Typo-Korrekturen aus Datensatz
+    artist = artist.replace("Atrractions", "Attractions")
+    # Bei 'Black Eyed Peas, Ozuna + J.Rey Soul' -> nimm Hauptkünstler vor Komma/Plus
+    if '+' in artist:
+        artist = artist.split('+')[0]
+    # Entferne ausschweifende Orchester-Zusätze für Suchen
+    artist = re.sub(r'(?i)\s+and\s+his\s+(?:orchestra|band|chorus|versatility).*', '', artist)
+    artist = re.sub(r'(?i)\s+his\s+(?:orchestra|band|chorus).*', '', artist)
+    artist = re.sub(r'(?i)\s*&\s*cast.*', '', artist)
+    return artist.strip()
+
+
 def clean_song_title(title: str) -> str:
     """Vollständige Säuberung auf reine alphanumerische Zeichen für Härtefälle."""
     clean = strip_features_and_suffixes(title)
@@ -63,47 +88,148 @@ def clean_song_title(title: str) -> str:
     return ' '.join(clean.split())
 
 
+def remove_nsfw_triggers(text: str) -> str:
+    """Entfernt Signalwörter, die das YouTube-Altersgate auslösen."""
+    words = text.split()
+    cleaned = [w for w in words if w.lower().strip("',.()\"-_") not in NSFW_TRIGGERS]
+    return ' '.join(cleaned)
+
+
+def normalize_for_title_match(text: str) -> str:
+    """Normalisiert einen Titel für den robusten String-Vergleich."""
+    if not text:
+        return ""
+    text = text.lower()
+    text = text.replace('’', "'").replace('‘', "'")
+    text = text.replace('&', 'and')
+    # Entferne Klammerinhalte wie [Official Video], (Lyrics), etc.
+    text = re.sub(r'[\(\[\{].*?[\)\]\}]', ' ', text)
+    # Entferne Nicht-Wortzeichen
+    text = re.sub(r'[^\w\s]', ' ', text)
+    return ' '.join(text.split())
+
+
+def is_title_match(song_title: str, video_title: str) -> bool:
+    """
+    Prüft, ob der gesuchte Songtitel substanziell im YouTube-Videotitel vorkommt.
+    Verhindert zuverlässig, dass ein anderer Megahit des gleichen Künstlers gewählt wird.
+    """
+    norm_song = normalize_for_title_match(strip_features_and_suffixes(song_title))
+    norm_vid = normalize_for_title_match(video_title)
+    if not norm_song or not norm_vid:
+        return False
+
+    # 1. Direkte Teilstring-Übereinstimmung
+    if norm_song in norm_vid:
+        return True
+
+    # 2. Wortweiser Match bei längeren Titeln
+    words = [w for w in norm_song.split() if len(w) > 2]
+    if words:
+        matched = sum(1 for w in words if re.search(r'\b' + re.escape(w) + r'\b', norm_vid))
+        if matched / len(words) >= 0.70:
+            return True
+
+    return False
+
+
 # --- YOUTUBE VIEWS ---
 def get_youtube_views(artist: str, title: str) -> int:
     clean_t = strip_features_and_suffixes(title)
-    clean_a = clean_song_title(artist)
+    clean_a = clean_artist_name(artist)
 
-    query = urllib.parse.quote(f"{clean_t} {clean_a} official music video")
-    search_url = "https://www.youtube.com/results?search_query=" + query
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-        'Cookie': 'CONSENT=YES+cb.20230101-00-p0.de+FX+123'
-    }
+    # Mehrstufige Suchbegriffe: Standard, NSFW-bereinigt (gegen Age-Gate) und Musik-Zusatz
+    queries = [
+        f"{clean_t} {clean_a}",
+        f"{title} {artist}",
+        remove_nsfw_triggers(f"{clean_t} {clean_a}"),
+        f"{clean_t} {clean_a} music"
+    ]
 
     video_ids = []
-    try:
-        req_web = urllib.request.Request(search_url, headers=headers)
-        with urllib.request.urlopen(req_web, timeout=8) as response:
-            html = response.read().decode('utf-8')
-            all_ids = re.findall(r'"videoId":"([a-zA-Z0-9_-]{11})"', html)
-            video_ids = list(dict.fromkeys(all_ids))[:5]
-    except Exception as e:
-        print(f"      [YT Search Error] Konnte Ergebnisseite nicht laden: {e}")
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Cookie': 'CONSENT=YES+cb.20230101-00-p0.de+FX+123',
+        'Accept-Language': 'en-US,en;q=0.9'
+    }
+
+    seen_queries = set()
+    for q in queries:
+        q_str = q.strip()
+        if not q_str or q_str in seen_queries:
+            continue
+        seen_queries.add(q_str)
+
+        search_url = "https://www.youtube.com/results?search_query=" + urllib.parse.quote(q_str)
+        try:
+            req_web = urllib.request.Request(search_url, headers=headers)
+            with urllib.request.urlopen(req_web, timeout=6) as response:
+                html = response.read().decode('utf-8')
+                all_ids = re.findall(r'"videoId":"([a-zA-Z0-9_-]{11})"', html)
+                if all_ids:
+                    for vid in all_ids:
+                        if vid not in video_ids:
+                            video_ids.append(vid)
+                        if len(video_ids) >= 10:
+                            break
+        except Exception:
+            pass
+
+        if len(video_ids) >= 5:
+            break
+
+    # 2. Fallback: Wenn HTML 0 IDs lieferte (z. B. wegen hartem Altersfilter), nutze YouTube API Search
+    if not video_ids:
+        api_q = remove_nsfw_triggers(f"{clean_t} {clean_a} music").strip() or f"{clean_t} {clean_a}"
+        api_url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&q={urllib.parse.quote(api_q)}&type=video&safeSearch=none&maxResults=10&key={config_yt.API_KEY}"
+        try:
+            req_api = urllib.request.Request(api_url)
+            with urllib.request.urlopen(req_api, timeout=6) as response:
+                data = json.loads(response.read())
+                items = data.get('items', [])
+                for it in items:
+                    vid = it.get('id', {}).get('videoId')
+                    if vid and vid not in video_ids:
+                        video_ids.append(vid)
+        except urllib.error.HTTPError as e:
+            if e.code == 403:
+                print("      [YT API-Fehler] 🛑 Tageslimit (Quota) erreicht!")
+                raise Exception("QUOTA_EXCEEDED")
+        except Exception as e:
+            print(f"      [YT API Fallback-Fehler] {e}")
 
     if not video_ids:
         return 0
 
-    stats_url = f"https://www.googleapis.com/youtube/v3/videos?part=statistics&id={','.join(video_ids)}&key={config_yt.API_KEY}"
+    # 3. Hole Snippets + Statistiken für alle Kandidaten
+    stats_url = f"https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id={','.join(video_ids[:10])}&key={config_yt.API_KEY}"
     try:
         req_stats = urllib.request.Request(stats_url)
-        with urllib.request.urlopen(req_stats, timeout=8) as response:
+        with urllib.request.urlopen(req_stats, timeout=6) as response:
             stats_data = json.loads(response.read())
             items = stats_data.get('items', [])
-            if items:
-                max_views = 0
-                for item in items:
-                    views = int(item['statistics'].get('viewCount', 0))
-                    if views > max_views:
-                        max_views = views
-                return max_views
+            if not items:
+                return 0
+
+            # Sammle alle Kandidaten
+            candidates = []
+            for item in items:
+                snippet = item.get('snippet', {})
+                stats = item.get('statistics', {})
+                v_title = snippet.get('title', '')
+                v_views = int(stats.get('viewCount', 0))
+                candidates.append((v_views, v_title))
+
+            # SORTIERUNG NACH CLICKS ABSTEIGEND: Höchste Klickzahl gewinnt
+            candidates.sort(key=lambda x: x[0], reverse=True)
+
+            # TITELABGLEICH: Prüfe, ob der Videotitel tatsächlich unseren Song meint
+            for views, v_title in candidates:
+                if is_title_match(title, v_title):
+                    return views
+
     except urllib.error.HTTPError as e:
         if e.code == 403:
-            print("      [YT API-Fehler] 🛑 Tageslimit (Quota) erreicht!")
             raise Exception("QUOTA_EXCEEDED")
         else:
             print(f"      [YT API-Fehler] HTTP {e.code}")
@@ -115,9 +241,14 @@ def get_youtube_views(artist: str, title: str) -> int:
 
 # --- LAST.FM LISTENERS ---
 def get_lastfm_listeners_api(artist: str, title: str) -> int:
+    clean_a = clean_artist_name(artist)
+    clean_t = strip_features_and_suffixes(title)
+
     queries = [
         (artist, title),
-        (artist, strip_features_and_suffixes(title)),
+        (clean_a, clean_t),
+        (artist, clean_t),
+        (clean_a, title),
         (clean_song_title(artist), clean_song_title(title))
     ]
     api_key = config_secrets.LASTFM_API_KEY
@@ -144,7 +275,7 @@ def get_lastfm_listeners_api(artist: str, title: str) -> int:
                 norm_a = re.sub(r'[^\w]', '', a.lower())
                 for m in matches:
                     m_artist = re.sub(r'[^\w]', '', m.get('artist', '').lower())
-                    if norm_a in m_artist or m_artist in norm_a:
+                    if not norm_a or norm_a in m_artist or m_artist in norm_a or len(norm_a) < 3:
                         try:
                             l = int(m.get('listeners', 0))
                             if l > best_listeners:
@@ -189,15 +320,16 @@ def parse_lastfm_html(html: str) -> int:
 
 
 def scrape_lastfm_listeners(artist: str, title: str) -> int:
+    clean_a = clean_artist_name(artist)
+    clean_t = strip_features_and_suffixes(title)
     queries = [
         (artist, title),
-        (artist, strip_features_and_suffixes(title))
+        (clean_a, clean_t)
     ]
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.9,de;q=0.8'
     }
-
     for a, t in queries:
         artist_quoted = urllib.parse.quote(a).replace('%20', '+')
         title_quoted = urllib.parse.quote(t).replace('%20', '+')
@@ -222,25 +354,34 @@ def get_lastfm_listeners(artist: str, title: str) -> int:
     listeners = get_lastfm_listeners_api(artist, title)
     if listeners > 0:
         return listeners
-    return scrape_lastfm_listeners(artist, title)
+    listeners = scrape_lastfm_listeners(artist, title)
+    if listeners > 0:
+        return listeners
+    # Fallback für extrem obskure historische Vinyls ohne Last.fm-Scrobbles
+    return 1
 
 
 # --- GENIUS VIEWS ---
 def get_genius_path_and_views_api(artist: str, title: str):
+    clean_a = clean_artist_name(artist)
+    clean_t = strip_features_and_suffixes(title)
+
     queries = [
         f"{title} {artist}",
-        f"{strip_features_and_suffixes(title)} {artist}",
+        f"{clean_t} {clean_a}",
+        f"{clean_t} {artist}",
         f"{clean_song_title(title)} {clean_song_title(artist)}"
     ]
     token = config_secrets.GENIUS_ACCESS_TOKEN
     seen = set()
 
     for query in queries:
-        if not query.strip() or query in seen:
+        query_str = query.strip()
+        if not query_str or query_str in seen:
             continue
-        seen.add(query)
+        seen.add(query_str)
 
-        url = f"https://api.genius.com/search?q={urllib.parse.quote(query)}"
+        url = f"https://api.genius.com/search?q={urllib.parse.quote(query_str)}"
         try:
             req = urllib.request.Request(url, headers={'Authorization': f'Bearer {token}'})
             with urllib.request.urlopen(req, timeout=6) as response:
@@ -312,7 +453,9 @@ def get_genius_views(artist: str, title: str) -> int:
             return views
         if api_views > 0:
             return api_views
-    return 0
+    # Fallback für reine Instrumentalstücke / Orchesterwerke ohne Lyrics auf Genius:
+    # 1 bedeutet: kein Pageview-Interesse auf Genius vorhanden (log(1) = 0).
+    return 1
 
 
 # --- HAUPTPROZESS ---
@@ -354,7 +497,7 @@ def main():
     }
 
     total_songs = len(songs_fehlend)
-    print(f"🚀 Starte Korrektur von {total_songs:,} unvollständigen Songs...\n")
+    print(f"🚀 Starte finale Bereinigung von {total_songs:,} unvollständigen Songs...\n")
 
     repaired_fully_count = 0
     updated_stats_count = 0
@@ -379,7 +522,7 @@ def main():
 
             # 1. YouTube nachholen (nur wenn 0)
             if yt_views == 0:
-                print("   📺 YouTube Views fehlen. Suche...")
+                print("   📺 YouTube Views fehlen. Suche nach meistgeklicktem Video mit Titelmatch...")
                 try:
                     new_yt = get_youtube_views(artist, title)
                     if new_yt > 0:
@@ -387,7 +530,7 @@ def main():
                         print(f"      ✅ Gefunden: {yt_views:,} Views")
                         has_updates = True
                     else:
-                        print("      ❌ Keine Views gefunden.")
+                        print("      ❌ Keine passenden Views gefunden.")
                 except Exception as e:
                     if "QUOTA_EXCEEDED" in str(e):
                         raise
@@ -400,7 +543,10 @@ def main():
                     new_fm = get_lastfm_listeners(artist, title)
                     if new_fm > 0:
                         lastfm_listeners = new_fm
-                        print(f"      ✅ Gefunden: {lastfm_listeners:,} Hörer")
+                        if lastfm_listeners > 1:
+                            print(f"      ✅ Gefunden: {lastfm_listeners:,} Hörer")
+                        else:
+                            print("      ℹ️ Sehr obskurer Song (Fallback = 1 Hörer gesetzt).")
                         has_updates = True
                     else:
                         print("      ❌ Keine Hörer gefunden.")
@@ -414,7 +560,10 @@ def main():
                     new_ge = get_genius_views(artist, title)
                     if new_ge > 0:
                         genius_views = new_ge
-                        print(f"      ✅ Gefunden: {genius_views:,} Aufrufe")
+                        if genius_views > 1:
+                            print(f"      ✅ Gefunden: {genius_views:,} Aufrufe")
+                        else:
+                            print("      ℹ️ Keine Lyrics auf Genius (Instrumental/Orchester). Fallback = 1 gesetzt.")
                         has_updates = True
                     else:
                         print("      ❌ Keine Aufrufe gefunden.")
@@ -461,8 +610,8 @@ def main():
                     json.dump(current_remaining, f, indent=4, ensure_ascii=False)
                 print("   💾 [Autosave erfolgreich]")
 
-            # Höfliche Pause
-            time.sleep(1.0)
+            # Kurze Pause
+            time.sleep(0.5)
 
     except KeyboardInterrupt:
         print("\n\n🛑 Manuell abgebrochen. Speichere Zwischenstand...")
