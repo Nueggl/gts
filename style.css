@@ -649,4 +649,1035 @@ button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #ff00
 #admin-mode-corner input[type="checkbox"] {
     cursor: pointer;
     width: auto;
-}
+}
+
+
+/* ==========================================
+   TIMELINE SUB-DASHBOARD & GAME MODE STYLING
+   ========================================== */
+
+#timeline-dashboard-screen {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 15px 20px 40px 20px;
+    box-sizing: border-box;
+}
+
+.timeline-dash-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tl-back-btn {
+    background: #495057;
+    color: white;
+    border: 1px solid #6c757d;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.tl-back-btn:hover {
+    background: #5a6268;
+    transform: translateY(-1px);
+}
+
+.tl-back-btn.large {
+    padding: 11px 20px;
+    font-size: 1em;
+}
+
+.tl-pool-badge {
+    background: rgba(255, 152, 0, 0.15);
+    color: #ffb74d;
+    border: 1px solid rgba(255, 152, 0, 0.4);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.tl-dash-title {
+    margin: 5px 0 6px 0;
+    font-size: 2em;
+    color: #ffa726;
+    text-shadow: 0 2px 10px rgba(255, 152, 0, 0.25);
+}
+
+.tl-dash-subtitle {
+    margin: 0 0 22px 0;
+    color: #bbb;
+    font-size: 1.05em;
+}
+
+/* --- Schwierigkeitsgrad Auswahl --- */
+.tl-difficulty-panel {
+    margin-bottom: 22px;
+    padding: 20px;
+}
+
+.tl-difficulty-panel h3 {
+    margin: 0 0 14px 0;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+.tl-difficulty-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.tl-diff-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background: #282828;
+    border: 2px solid #3d3d3d;
+    border-radius: 10px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+    user-select: none;
+}
+
+.tl-diff-card:hover {
+    background: #303030;
+    border-color: #666;
+}
+
+.tl-diff-card.active {
+    background: rgba(255, 152, 0, 0.12);
+    border-color: #ff9800;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.2);
+}
+
+.tl-diff-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.tl-diff-title {
+    font-weight: bold;
+    font-size: 1.08em;
+    color: #fff;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tl-placeholder-tag {
+    font-size: 0.7em;
+    font-weight: normal;
+    background: #444;
+    color: #ccc;
+    padding: 2px 7px;
+    border-radius: 10px;
+}
+
+.tl-diff-desc {
+    font-size: 0.86em;
+    color: #aaa;
+    line-height: 1.35;
+}
+
+/* --- 2 Spielmodi Karten --- */
+.tl-modes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tl-mode-card {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 26px 22px;
+    border: 1px solid #333;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.tl-mode-card:hover {
+    transform: translateY(-2px);
+    border-color: #555;
+}
+
+.tl-mode-icon {
+    font-size: 2.6em;
+    margin-bottom: 8px;
+}
+
+.tl-mode-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.tl-mode-text {
+    color: #ccc;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.tl-start-mode-btn {
+    width: 100%;
+    padding: 13px 18px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: filter 0.2s, transform 0.15s;
+}
+
+.tl-start-mode-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.tl-start-mode-btn.challenge-btn {
+    background: linear-gradient(135deg, #ff9800, #e65100);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.35);
+}
+
+.tl-start-mode-btn.endless-btn {
+    background: linear-gradient(135deg, #00acc1, #006064);
+    box-shadow: 0 4px 12px rgba(0, 172, 193, 0.35);
+}
+
+/* ==========================================
+   TIMELINE GAME SCREEN
+   ========================================== */
+#timeline-game-screen {
+    max-width: 98vw;
+    margin: 0 auto;
+    padding: 8px 16px 25px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.tl-game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tl-header-left, .tl-header-center, .tl-header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tl-end-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tl-end-btn:hover {
+    background: #f44336;
+}
+
+.tl-badge {
+    background: rgba(255, 152, 0, 0.18);
+    color: #ffb74d;
+    border: 1px solid rgba(255, 152, 0, 0.45);
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.tl-badge.secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ccc;
+    border-color: #444;
+}
+
+.tl-stat-pill {
+    background: #262626;
+    border: 1px solid #444;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 0.92em;
+    color: #eee;
+    font-weight: 600;
+}
+
+.tl-stat-pill.highlight {
+    background: rgba(255, 152, 0, 0.15);
+    border-color: #ff9800;
+    color: #ffcc80;
+}
+
+/* --- Upper Stage (Mystery Card & Feedback) --- */
+.tl-upper-stage {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tl-mystery-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tl-mystery-instructions {
+    font-size: 1.05em;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.tl-mystery-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+/* Die zu erratende Karte oben in der Mitte (etwas größer als Zeitstrahl-Karten) */
+.tl-mystery-card {
+    width: 155px;
+    background: linear-gradient(160deg, #2b2b2b, #1c1c1c);
+    border: 2px solid #ff9800;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 18px rgba(255, 152, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.tl-mystery-card:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7), 0 0 24px rgba(255, 152, 0, 0.45);
+}
+
+.tl-mystery-card:active, .tl-mystery-card.dragging {
+    cursor: grabbing;
+    opacity: 0.65;
+    transform: scale(0.96);
+}
+
+.tl-mystery-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle at center, #3a2810 0%, #161616 75%);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 152, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.tl-mystery-qmark {
+    font-size: 3.6em;
+    font-weight: 900;
+    color: #ff9800;
+    text-shadow: 0 0 16px rgba(255, 152, 0, 0.6);
+    line-height: 1;
+}
+
+.tl-sound-wave {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 16px;
+    margin-top: 6px;
+}
+
+.tl-sound-wave span {
+    width: 4px;
+    background: #ffb74d;
+    border-radius: 2px;
+    animation: tlWave 0.9s infinite ease-in-out;
+}
+
+.tl-sound-wave span:nth-child(1) { height: 6px; animation-delay: 0s; }
+.tl-sound-wave span:nth-child(2) { height: 14px; animation-delay: 0.2s; }
+.tl-sound-wave span:nth-child(3) { height: 10px; animation-delay: 0.4s; }
+.tl-sound-wave span:nth-child(4) { height: 16px; animation-delay: 0.1s; }
+
+.tl-sound-wave.paused span {
+    animation-play-state: paused;
+    height: 4px !important;
+    opacity: 0.4;
+}
+
+@keyframes tlWave {
+    0%, 100% { transform: scaleY(0.45); }
+    50% { transform: scaleY(1.1); }
+}
+
+.tl-mystery-label {
+    font-size: 0.82em;
+    color: #ddd;
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.tl-mystery-drag-hint {
+    font-size: 0.78em;
+    color: #ffb74d;
+    background: rgba(255, 152, 0, 0.14);
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tl-audio-side-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.tl-audio-btn {
+    background: #2c2c2c;
+    color: #eee;
+    border: 1px solid #4a4a4a;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 0.88em;
+    cursor: pointer;
+    width: 170px;
+    text-align: left;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.tl-audio-btn:hover {
+    background: #3a3a3a;
+    border-color: #777;
+}
+
+.tl-admin-hint {
+    font-family: monospace;
+    font-size: 0.82em;
+    color: #00e676;
+    background: rgba(0, 230, 118, 0.1);
+    border: 1px solid rgba(0, 230, 118, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 220px;
+    text-align: left;
+}
+
+/* --- Feedback / Pfeil-Tipp Banner --- */
+.tl-feedback-banner {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.05em;
+    animation: fadeIn 0.25s ease-out;
+    max-width: 680px;
+}
+
+.tl-feedback-banner.hint-older,
+.tl-feedback-banner.hint-younger {
+    background: rgba(255, 152, 0, 0.16);
+    border: 2px solid #ff9800;
+    color: #ffe0b2;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.25);
+}
+
+.tl-hint-arrow {
+    font-size: 1.6em;
+    line-height: 1;
+    display: inline-block;
+}
+
+.tl-feedback-banner.hint-older .tl-hint-arrow {
+    animation: nudgeLeft 0.8s infinite ease-in-out;
+}
+
+.tl-feedback-banner.hint-younger .tl-hint-arrow {
+    animation: nudgeRight 0.8s infinite ease-in-out;
+}
+
+@keyframes nudgeLeft {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-6px); }
+}
+
+@keyframes nudgeRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(6px); }
+}
+
+/* --- Runden-Erfolg & Game Over Boxen --- */
+.tl-round-action-box {
+    background: rgba(40, 167, 69, 0.14);
+    border: 1px solid rgba(40, 167, 69, 0.5);
+    border-radius: 12px;
+    padding: 16px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    animation: fadeIn 0.25s ease-out;
+}
+
+.tl-success-headline {
+    font-size: 1.15em;
+    color: #a5d6a7;
+    font-weight: bold;
+}
+
+.tl-next-btn {
+    background: linear-gradient(135deg, #0088ff, #005bb5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 24px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 136, 255, 0.35);
+    transition: filter 0.15s, transform 0.15s;
+}
+
+.tl-next-btn:hover {
+    filter: brightness(1.12);
+    transform: translateY(-1px);
+}
+
+.tl-gameover-box {
+    background: #1e1e1e;
+    border: 2px solid #444;
+    border-radius: 14px;
+    padding: 20px 28px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.65);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.tl-gameover-box h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.5em;
+}
+
+.tl-gameover-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.tl-lost-song-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: #282828;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin: 12px auto;
+    max-width: 420px;
+    text-align: left;
+}
+
+.tl-lost-song-preview img {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* ==========================================
+   DYNAMISCHER ZEITSTRAHL & KARTEN-DESIGN
+   ========================================== */
+.tl-board-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tl-axis-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 0.85em;
+    color: #999;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tl-board-wrapper {
+    position: relative;
+    background: #161616;
+    border: 2px solid #2e2e2e;
+    border-radius: 14px;
+    padding: 24px 68px;
+    min-height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.tl-board-wrapper.drag-active {
+    border-color: rgba(255, 152, 0, 0.65);
+    background: #1a1814;
+}
+
+.tl-axis-line {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    top: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #333 0%, #555 50%, #333 100%);
+    border-radius: 2px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.tl-track {
+    --tl-card-width: 136px;
+    --tl-card-gap: 12px;
+    --tl-shift-dist: 56px;
+    --tl-base-font: 12px;
+
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--tl-card-gap);
+    min-height: 195px;
+    padding: 6px 10px;
+}
+
+/* --- EINZELNE KARTE AUF DEM ZEITSTRAHL ---
+   Reihenfolge von oben nach unten:
+   1. Albumcover (breitestes Objekt in der Karte)
+   2. Titel (gekürzt bei Überlänge, verbreitert niemals die Karte!)
+   3. Interpret
+   4. Entstehungsjahr (1-2 Schriftgrößen größer & fett)
+*/
+.tl-card {
+    width: var(--tl-card-width);
+    min-width: var(--tl-card-width);
+    max-width: var(--tl-card-width);
+    background: #242424;
+    border: 1.5px solid #3d3d3d;
+    border-radius: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.55);
+    transition: transform 0.26s cubic-bezier(0.2, 0.85, 0.25, 1),
+                width 0.25s ease,
+                min-width 0.25s ease,
+                max-width 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.tl-card:hover {
+    border-color: #666;
+}
+
+/* Animation: Karten machen Platz beim Hovern mit der gezogenen Karte */
+.tl-card.shift-left {
+    transform: translateX(calc(var(--tl-shift-dist) * -1));
+}
+
+.tl-card.shift-right {
+    transform: translateX(var(--tl-shift-dist));
+}
+
+/* Frisch richtig eingeordnete Karte hervorheben */
+.tl-card.newly-placed {
+    border-color: #2ecc71;
+    box-shadow: 0 0 18px rgba(46, 204, 113, 0.45), 0 5px 15px rgba(0, 0, 0, 0.55);
+    animation: cardPopIn 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+@keyframes cardPopIn {
+    0% { transform: scale(0.8); opacity: 0.3; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* 1. Albumcover (oben, breitestes Objekt in der Karte) */
+.tl-card-cover-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #111;
+    margin-bottom: 7px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.tl-card-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+/* 2. Titel (unter dem Cover, feste Breite, max 2 Zeilen mit Ellipsis) */
+.tl-card-title {
+    width: 100%;
+    font-size: var(--tl-base-font);
+    font-weight: 700;
+    color: #f5f5f5;
+    line-height: 1.22;
+    margin-bottom: 3px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    text-align: center;
+    min-height: calc(var(--tl-base-font) * 2.44);
+}
+
+/* 3. Interpret (darunter, 1 Zeile mit Ellipsis) */
+.tl-card-artist {
+    width: 100%;
+    font-size: calc(var(--tl-base-font) * 0.9);
+    color: #aaa;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+/* 4. Entstehungsjahr (ganz unten, 1-2 Schriftgrößen größer & fett) */
+.tl-card-year {
+    width: 100%;
+    font-size: calc(var(--tl-base-font) * 1.45);
+    font-weight: 800;
+    color: #ffb74d;
+    background: rgba(255, 152, 0, 0.14);
+    border: 1px solid rgba(255, 152, 0, 0.35);
+    border-radius: 6px;
+    padding: 3px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.15;
+    margin-top: auto;
+}
+
+.tl-card.newly-placed .tl-card-year {
+    color: #69f0ae;
+    background: rgba(46, 204, 113, 0.18);
+    border-color: rgba(46, 204, 113, 0.5);
+}
+
+/* --- Drop-Indikator (leuchtende Vorschau-Lücke zwischen den Karten) --- */
+.tl-drop-indicator {
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    width: calc(var(--tl-card-width) * 0.78);
+    transform: translateX(-50%);
+    border: 2px dashed #ff9800;
+    background: rgba(255, 152, 0, 0.12);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffb74d;
+    font-weight: bold;
+    font-size: 0.85em;
+    pointer-events: none;
+    opacity: 0;
+    transition: left 0.18s cubic-bezier(0.2, 0.85, 0.25, 1), opacity 0.15s ease;
+    box-shadow: 0 0 18px rgba(255, 152, 0, 0.25);
+    z-index: 5;
+}
+
+.tl-drop-indicator.visible {
+    opacity: 1;
+}
+
+
+/* ==========================================
+   PROFI & EXPERTE ZUSATZ-STYLING (TIMELINE)
+   ========================================== */
+
+.tl-pro-guess-panel {
+    background: #1f1f1f;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 560px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tl-tasks-checklist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.tl-task-chip {
+    font-size: 0.82em;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 14px;
+    background: #2b2b2b;
+    border: 1px solid #484848;
+    color: #bbb;
+    transition: all 0.2s ease;
+}
+
+.tl-task-chip.done {
+    background: rgba(46, 204, 113, 0.18);
+    border-color: #2ecc71;
+    color: #69f0ae;
+}
+
+.tl-pro-inputs-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.tl-pro-inputs-row input[type="text"],
+.tl-pro-inputs-row input[type="number"] {
+    padding: 9px 12px;
+    font-size: 0.95em;
+    background: #2b2b2b;
+    border: 1.5px solid #4a4a4a;
+    border-radius: 6px;
+    color: white;
+    width: 175px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.tl-pro-inputs-row input[type="number"] {
+    width: 135px;
+    text-align: center;
+}
+
+.tl-pro-inputs-row input:focus {
+    outline: none;
+    border-color: #ff9800;
+}
+
+.tl-pro-inputs-row input.input-solved {
+    background-color: rgba(40, 167, 69, 0.28) !important;
+    border-color: #2ecc71 !important;
+    color: #a5d6a7 !important;
+    font-weight: bold;
+}
+
+.tl-pro-inputs-row input.input-wrong {
+    border-color: #ff5252 !important;
+    background-color: rgba(255, 82, 82, 0.18) !important;
+    animation: tlShake 0.35s ease;
+}
+
+@keyframes tlShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.tl-submit-guess-btn {
+    background: #ff0055;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 18px;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: filter 0.15s, transform 0.1s;
+}
+
+.tl-submit-guess-btn:hover {
+    filter: brightness(1.12);
+}
+
+.tl-hints-display-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 100%;
+}
+
+.tl-letter-hint {
+    color: #ffc107;
+    font-family: monospace;
+    font-size: 1.08em;
+    margin: 2px 0;
+    min-height: 0;
+    word-break: break-all;
+}
+
+.tl-range-hint {
+    color: #4dd0e1;
+    font-size: 0.92em;
+    font-weight: bold;
+    background: rgba(0, 188, 212, 0.12);
+    border: 1px solid rgba(0, 188, 212, 0.4);
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin: 3px 0 0 0;
+}
+
+.tl-endless-hints-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 2px;
+}
+
+.tl-hint-btn {
+    background: #ffc107;
+    color: #111;
+    font-weight: bold;
+    font-size: 0.85em;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.15s, transform 0.1s;
+}
+
+.tl-hint-btn:hover:not(:disabled) {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+.tl-hint-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.tl-hint-btn.range-btn {
+    background: linear-gradient(135deg, #00acc1, #00838f);
+    color: white;
+}
+
+/* Wenn die Mystery-Karte im Profi-Modus bereits im Zeitstrahl abgelegt wurde, aber Titel/Interpret noch fehlen */
+.tl-mystery-card.placed-waiting {
+    border-color: #2ecc71;
+    cursor: default;
+    opacity: 0.85;
+    box-shadow: 0 4px 14px rgba(46, 204, 113, 0.25);
+}
+
+.tl-mystery-card.placed-waiting:hover {
+    transform: none;
+}
+
+.tl-mystery-card.expert-no-drag {
+    cursor: default;
+}
+
+.tl-mystery-card.expert-no-drag:hover {
+    transform: none;
+}
+
+/* Teilweise verdeckte Karte auf dem Zeitstrahl (Profi-Modus: Zeitstrahl schon gelöst, aber Titel/Interpret noch offen) */
+.tl-card.pending-details {
+    border-color: #ff9800;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.35);
+}
+
+.tl-card-cover-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #33240f 0%, #151515 80%);
+    color: #ff9800;
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+/* Permanenter Bereichs-Tipp Indikator im Experten-Endlos-Modus */
+.tl-drop-indicator.range-hint-active {
+    opacity: 1;
+    border-color: #00e5ff;
+    background: rgba(0, 229, 255, 0.15);
+    color: #84ffff;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.35);
+}
